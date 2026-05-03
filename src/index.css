@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #f9f9ff;
+  color: #151c27;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Type badge colors */
+.badge-verb    { background: #e8eaf6; color: #3949ab; }
+.badge-noun    { background: #e8f5e9; color: #2e7d32; }
+.badge-adj     { background: #fce4ec; color: #c62828; }
+.badge-adv     { background: #fff8e1; color: #f57f17; }
+.badge-prep    { background: #e3f2fd; color: #1565c0; }
+.badge-conj    { background: #f3e5f5; color: #6a1b9a; }
+.badge-art     { background: #e0f2f1; color: #00695c; }
+.badge-pron    { background: #fff3e0; color: #e65100; }
+.badge-det     { background: #efebe9; color: #4e342e; }
+.badge-num     { background: #e8eaf6; color: #283593; }
+
+/* Hide-translation mode */
+.hide-trans .cell-translation {
+  color: transparent !important;
+  background: #e2e8f8;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+.hide-trans .cell-translation:hover {
+  color: #434655 !important;
+  background: transparent;
+}
+
+/* Learned row */
+.row-learned { opacity: 0.45; }
+.row-learned .cell-word { text-decoration: line-through; }
+
+/* Milestone banner rows */
+.milestone-row td {
+  background: linear-gradient(135deg, #e0f2f1 0%, #e8f5e9 100%);
+  border-top: 2px solid #97f3ea;
+  border-bottom: 2px solid #97f3ea;
+}
+
+/* Table hover */
+.word-row:hover { background: #f0f3ff; }
+
+/* Filter chip active state */
+.filter-chip.active {
+  background: #4d5c8d;
+  color: white;
+}
+
+/* Smooth transitions */
+.word-row { transition: opacity 0.15s ease; }
