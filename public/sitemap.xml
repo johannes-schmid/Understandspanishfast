@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://mostcommonspanish.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mostcommonspanish.com/level-test</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mostcommonspanish.com/words/most-common-spanish-words</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mostcommonspanish.com/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostcommonspanish.com/blog/the-power-of-the-first-100-words</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostcommonspanish.com/blog/cracking-the-1500</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mostcommonspanish.com/blog/how-many-spanish-words-to-be-fluent</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
