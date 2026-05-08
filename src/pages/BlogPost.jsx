@@ -1,14 +1,26 @@
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 
-export default function BlogPost({ slug, title, description, category, readTime, datePublished = '2026-05-01', dateModified = '2026-05-07', heroCallout, sidebar, children }) {
+export default function BlogPost({ slug, title, description, category, readTime, datePublished = '2026-05-01', dateModified = '2026-05-07', author = 'Johannes Schmid', heroCallout, sidebar, children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
-    author: { '@type': 'Organization', name: 'Most Common Spanish' },
-    publisher: { '@type': 'Organization', name: 'Most Common Spanish' },
+    image: 'https://mostcommonspanish.com/og-default.svg',
+    author: {
+      '@type': 'Person',
+      name: author,
+      url: 'https://mostcommonspanish.com/about',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Most Common Spanish',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://mostcommonspanish.com/icon.svg',
+      },
+    },
     datePublished,
     dateModified,
     mainEntityOfPage: `https://mostcommonspanish.com/blog/${slug}`,

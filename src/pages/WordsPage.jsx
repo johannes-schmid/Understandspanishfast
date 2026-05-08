@@ -55,7 +55,17 @@ export default function WordsPage() {
         '@type': 'Article',
         headline: '1000 Most Common Spanish Words — Frequency List with Translations',
         description: 'The 1,000 most common Spanish words ranked by real-world frequency. Includes translations, parts of speech, and comprehension milestones.',
-        author: { '@type': 'Organization', name: 'Most Common Spanish' },
+        image: 'https://mostcommonspanish.com/og-default.svg',
+        author: {
+          '@type': 'Person',
+          name: 'Johannes Schmid',
+          url: 'https://mostcommonspanish.com/about',
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Most Common Spanish',
+          logo: { '@type': 'ImageObject', url: 'https://mostcommonspanish.com/icon.svg' },
+        },
         datePublished: '2026-01-01',
         dateModified: '2026-05-07',
       },

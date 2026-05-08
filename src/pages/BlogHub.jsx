@@ -46,7 +46,7 @@ export default function BlogHub() {
 
   return (
     <div className="bg-background text-on-background min-h-screen">
-      <SEO title="Blog — Cracking the 1,500" description="Expert insights and linguistic shortcuts for mastering Spanish vocabulary efficiently." canonical="/blog" jsonLd={jsonLd} />
+      <SEO title="Blog" description="Articles on learning Spanish faster: high-frequency vocabulary strategy, comprehension thresholds, and the science of word frequency." canonical="/blog" jsonLd={jsonLd} />
 
       <main className="max-w-7xl mx-auto px-6 md:px-8 pt-32 pb-16">
         <div className="mb-16 text-center md:text-left">

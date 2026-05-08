@@ -14,3 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </HelmetProvider>
   </React.StrictMode>
 )
+
+// Signal to the prerender plugin (puppeteer) that the page is ready to snapshot.
+// Wait two frames so React + Helmet have flushed to the DOM.
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    document.dispatchEvent(new Event('render-event'))
+  })
+})

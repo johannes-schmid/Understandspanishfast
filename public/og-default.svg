@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="100%" stop-color="#FFE8CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g font-family="Lexend, system-ui, -apple-system, Segoe UI, sans-serif" fill="#0F172A">
+    <text x="80" y="160" font-size="34" font-weight="600" fill="#FF8C00" letter-spacing="2">MOST COMMON SPANISH</text>
+    <text x="80" y="290" font-size="84" font-weight="700">Master 1,500 words.</text>
+    <text x="80" y="390" font-size="84" font-weight="700">Understand 80%.</text>
+    <text x="80" y="490" font-size="32" font-weight="400" fill="#475569">High-frequency Spanish vocabulary,</text>
+    <text x="80" y="535" font-size="32" font-weight="400" fill="#475569">ranked by real-world usage.</text>
+    <text x="80" y="585" font-size="24" font-weight="500" fill="#FF8C00">mostcommonspanish.com</text>
+  </g>
+</svg>
