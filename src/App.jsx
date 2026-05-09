@@ -9,6 +9,8 @@ import BlogHub from './pages/BlogHub'
 import Post100Words from './pages/posts/Post100Words'
 import PostCracking1500 from './pages/posts/PostCracking1500'
 import PostHowManyWords from './pages/posts/PostHowManyWords'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
@@ -35,6 +37,8 @@ export default function App() {
         <Route path="/blog/the-power-of-the-first-100-words" element={<Post100Words />} />
         <Route path="/blog/cracking-the-1500" element={<PostCracking1500 />} />
         <Route path="/blog/how-many-spanish-words-to-be-fluent" element={<PostHowManyWords />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
       </Routes>
       <Footer />
     </>

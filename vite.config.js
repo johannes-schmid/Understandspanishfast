@@ -10,6 +10,8 @@ const ROUTES = [
   '/blog/the-power-of-the-first-100-words',
   '/blog/cracking-the-1500',
   '/blog/how-many-spanish-words-to-be-fluent',
+  '/privacy',
+  '/terms',
 ]
 
 export default defineConfig({
