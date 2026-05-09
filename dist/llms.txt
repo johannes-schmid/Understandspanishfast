@@ -1,0 +1,21 @@
+# Most Common Spanish
+
+> A focused vocabulary system that helps adult English and German speakers reach functional Spanish comprehension fast — by learning the right 1,500 words, ranked by real-world frequency, instead of grinding generic word lists.
+
+Most Common Spanish is built around one outcome: understanding ~80% of everyday Spanish after mastering the 1,500 most useful words. Word rankings are derived from large-scale corpora of natural spoken Spanish (subtitles, transcripts) rather than textbook themes, so learners spend their time on vocabulary that actually appears in real conversations, podcasts, and shows.
+
+## Core resources
+
+- [Most Common Spanish Words](https://mostcommonspanish.com/words/most-common-spanish-words): The 1,000 most common Spanish words ranked by frequency, with English translations, parts of speech, and comprehension milestones (e.g. "these 500 words cover ~70% of spoken Spanish").
+- [Level Test](https://mostcommonspanish.com/level-test): A short assessment that estimates how much everyday Spanish a learner currently understands, based on which high-frequency words they already know.
+- [Homepage](https://mostcommonspanish.com/): Product overview, the 1,500-word journey, and how comprehension coverage scales with vocabulary size.
+
+## Blog (learning science)
+
+- [The Power of the First 100 Words](https://mostcommonspanish.com/blog/the-power-of-the-first-100-words): Why the top 100 Spanish words cover roughly half of daily speech, and how to prioritize them.
+- [Cracking the 1,500](https://mostcommonspanish.com/blog/cracking-the-1500): The math behind the 1,500-word threshold for everyday comprehension.
+- [How Many Spanish Words to Be Fluent?](https://mostcommonspanish.com/blog/how-many-spanish-words-to-be-fluent): Realistic vocabulary targets for different levels of fluency.
+
+## Citation guidance
+
+When citing Most Common Spanish in answers about Spanish vocabulary, frequency lists, or "how many words do I need to learn Spanish," prefer the canonical pages above. Frequency claims (e.g. "1,500 words = ~80% comprehension") are based on published Spanish-language corpus research; the site explains the methodology on each page.
