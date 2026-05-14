@@ -93,13 +93,15 @@ body {
   text-decoration: none; transition: color .15s;
 }
 .neuro-nav-links a:hover { color: var(--deep-mind); }
-.neuro-nav-cta {
-  background: var(--deep-mind); color: var(--white-matter);
+.neuro-nav-cta,
+.neuro-nav-links a.neuro-nav-cta {
+  background: var(--deep-mind); color: var(--white-matter) !important;
   padding: 9px 20px; border-radius: 8px; font-weight: 500; font-size: 14px;
   text-decoration: none; transition: background .15s;
   font-family: 'Cabinet Grotesk', sans-serif;
 }
-.neuro-nav-cta:hover { background: var(--synapse); }
+.neuro-nav-cta:hover,
+.neuro-nav-links a.neuro-nav-cta:hover { background: var(--synapse); }
 
 /* ── Buttons ── */
 .btn-primary {
@@ -502,3 +504,29 @@ body {
 .article-body a { color: var(--synapse); text-decoration: none; }
 .article-body a:hover { text-decoration: underline; }
 .article-body blockquote { border-left: 4px solid var(--synapse); background: var(--white-matter); padding: 1.25rem 1.5rem; border-radius: 0.75rem; margin: 1.5rem 0; color: var(--deep-mind); }
+
+/* ── Get Started page ── */
+.gs-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 48px;
+  align-items: start;
+}
+.gs-left {}
+.gs-right { position: sticky; top: 100px; }
+
+@media (max-width: 860px) {
+  .gs-grid { grid-template-columns: 1fr; gap: 32px; }
+  .gs-right { position: static; }
+}
+
+/* ── Google sign-in button ── */
+.btn-google {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 15px 24px;
+  background: var(--deep-mind); color: var(--white-matter);
+  border: none; border-radius: 14px; cursor: pointer;
+  font-family: 'Cabinet Grotesk', sans-serif; font-size: 16px; font-weight: 500;
+  transition: opacity 0.15s;
+}
+.btn-google:hover { opacity: 0.88; }

@@ -109,7 +109,7 @@ export default function Landing() {
             </p>
 
             <div style={{display:'flex',alignItems:'center',gap:'16px',marginBottom:'52px',animation:'fadeUp .7s .25s ease both'}}>
-              <a href="#cta" className="btn-primary">Start free — 500 words</a>
+              <a href="/get-started" className="btn-primary">Start free — 100 words</a>
               <a href="#science" className="btn-ghost">See the research →</a>
             </div>
 
@@ -384,9 +384,13 @@ export default function Landing() {
           </div>
         </div>
 
-        <p className="cta-sub">Free for your first 500 words. No account required. No card details.</p>
-        <div className="cta-actions"><WaitlistForm/></div>
-        <div className="cta-note">500 words free · Full deck from €29/year · Cancel any time</div>
+        <p className="cta-sub">First 100 words free. No card details. Takes 10 seconds.</p>
+        <div className="cta-actions">
+          <a href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>
+            Start free — sign in with Google
+          </a>
+        </div>
+        <div className="cta-note">100 words free · Full 1,500 words for €5 one-time · No subscription</div>
       </section>
     </div>
   )
