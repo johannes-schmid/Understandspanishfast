@@ -6,6 +6,7 @@ import { articles } from '@/data/articles'
 import ProgressRing from '@/components/ProgressRing'
 import ActivityHeatmap from '@/components/ActivityHeatmap'
 import ArticleCard from '@/components/ArticleCard'
+import UnlockTracker from '@/components/UnlockTracker'
 
 export const dynamic = 'force-dynamic'
 export const metadata = { title: 'Dashboard | Neuro' }
@@ -84,13 +85,16 @@ export default async function DashboardPage({ searchParams }) {
       <div style={{ maxWidth: '720px', margin: '0 auto', padding: '0 24px' }}>
 
         {justUnlocked && (
-          <div style={{
-            background: 'var(--signal-light)', border: '1px solid var(--signal)',
-            borderRadius: '12px', padding: '14px 20px', marginBottom: '32px',
-            color: 'var(--signal)', fontSize: '15px'
-          }}>
-            Full access unlocked. All 1,500 words are now yours.
-          </div>
+          <>
+            <UnlockTracker />
+            <div style={{
+              background: 'var(--signal-light)', border: '1px solid var(--signal)',
+              borderRadius: '12px', padding: '14px 20px', marginBottom: '32px',
+              color: 'var(--signal)', fontSize: '15px'
+            }}>
+              Full access unlocked. All 1,500 words are now yours.
+            </div>
+          </>
         )}
 
         {/* Greeting */}

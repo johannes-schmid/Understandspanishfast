@@ -1,10 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ArticleReader from '@/components/ArticleReader'
+import { trackEvent } from '@/lib/analytics'
 
 export default function ReadingClient({ articles, initialArticle, knownRanks, seenRanks }) {
   const [selected, setSelected] = useState(initialArticle)
+
+  useEffect(() => { trackEvent('reading_started') }, [])
 
   if (articles.length === 0) {
     return (

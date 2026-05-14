@@ -3,6 +3,7 @@ import { redirect, notFound } from 'next/navigation'
 import { articles } from '@/data/articles'
 import WordToken from '@/components/WordToken'
 import Link from 'next/link'
+import ArticleTracker from '@/components/ArticleTracker'
 
 export async function generateStaticParams() {
   return articles.map(a => ({ slug: a.slug }))
@@ -47,6 +48,8 @@ export default async function ArticlePage({ params }) {
   return (
     <main style={{ minHeight: '100dvh', background: 'var(--cream)', paddingTop: '80px', paddingBottom: '80px' }}>
       <div style={{ maxWidth: '680px', margin: '0 auto', padding: '0 24px' }}>
+
+        <ArticleTracker slug={slug} />
 
         <Link href="/dashboard" style={{
           display: 'inline-flex', alignItems: 'center', gap: '6px',

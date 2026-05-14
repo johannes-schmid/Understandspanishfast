@@ -1,11 +1,15 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { trackEvent } from '@/lib/analytics'
 
 export default function PaywallModal() {
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => { trackEvent('paywall_shown') }, [])
+
   async function handleUpgrade() {
+    trackEvent('upgrade_clicked')
     setLoading(true)
     try {
       const res = await fetch('/api/checkout', { method: 'POST' })

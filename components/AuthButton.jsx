@@ -1,9 +1,11 @@
 'use client'
 
 import { createClient } from '@/lib/supabase/client'
+import { trackEvent } from '@/lib/analytics'
 
 export function SignInButton({ className, children }) {
   async function handleSignIn() {
+    trackEvent('sign_up')
     const supabase = createClient()
     await supabase.auth.signInWithOAuth({
       provider: 'google',

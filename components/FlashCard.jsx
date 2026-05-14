@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import PaywallModal from '@/components/PaywallModal'
 import { audioMap } from '@/data/audioMap'
 import { sentenceAudioMap } from '@/data/sentenceAudioMap'
+import { trackEvent } from '@/lib/analytics'
 
 const FREE_LIMIT = 100
 const NEW_WORD_SOFT_CAP = 15
@@ -90,6 +91,7 @@ export default function FlashCard({
       if (!hasFlippedOnce.current) {
         hasFlippedOnce.current = true
         setShowFlipHint(false)
+        trackEvent('session_started')
       }
     }
   }, [flipped, ttsEnabled, card, cardFront])
@@ -123,6 +125,7 @@ export default function FlashCard({
 
   function handleAnswer(status) {
     if (!card) return
+    trackEvent('card_reviewed', { rating: status, word_rank: card.rank })
     saveProgress(card.rank, status)
     const [current, ...rest] = queue
 
