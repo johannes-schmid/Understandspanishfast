@@ -26,6 +26,11 @@ export default function NavbarClient({ user }) {
               </Link>
             </li>
             <li>
+              <Link href="/reading" style={{ color: path.startsWith('/reading') ? 'var(--deep-mind)' : undefined }}>
+                Reading
+              </Link>
+            </li>
+            <li>
               <SignOutButton className="neuro-nav-cta" style={{ background: 'transparent', border: '1px solid var(--cortex)', color: 'var(--cortex)' }}>
                 Sign out
               </SignOutButton>
