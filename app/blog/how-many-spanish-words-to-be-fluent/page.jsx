@@ -18,13 +18,14 @@ export default function PostHowManyWords() {
       heroCallout={{ value: '1,500', label: 'The functional fluency threshold' }}
       sidebar={
         <>
-          <SidebarCallout icon="psychology" title="Quick reference">
-            <ul className="space-y-2">
-              <li className="flex justify-between text-sm"><span>Tourist survival</span><b className="text-on-surface">~250</b></li>
-              <li className="flex justify-between text-sm"><span>Hold a conversation</span><b className="text-on-surface">~500</b></li>
-              <li className="flex justify-between text-sm"><span>Follow shows w/ subs</span><b className="text-on-surface">~1,000</b></li>
-              <li className="flex justify-between text-sm"><span>Functional fluency</span><b className="text-[#FF8C00]">~1,500</b></li>
-              <li className="flex justify-between text-sm"><span>Native-like reading</span><b className="text-on-surface">~5,000</b></li>
+          <SidebarCallout title="Quick reference">
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {[['Tourist survival','~250'],['Hold a conversation','~500'],['Follow shows w/ subs','~1,000'],['Functional fluency','~1,500'],['Native-like reading','~5,000']].map(([label, val], i) => (
+                <li key={label} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span>{label}</span>
+                  <b style={{ color: i === 3 ? 'var(--synapse)' : 'var(--deep-mind)' }}>{val}</b>
+                </li>
+              ))}
             </ul>
           </SidebarCallout>
           <ProTip>An average native speaker uses about 5,000 unique words in daily life — but the top 1,500 cover 80% of those occurrences.</ProTip>

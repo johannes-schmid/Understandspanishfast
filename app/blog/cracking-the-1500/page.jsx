@@ -18,13 +18,14 @@ export default function PostCracking1500() {
       heroCallout={{ value: '80%', label: 'Comprehension at 1,500 words' }}
       sidebar={
         <>
-          <SidebarCallout icon="trending_up" title="The Coverage Curve">
-            <ul className="space-y-2">
-              <li className="flex justify-between text-sm"><span>100 words</span><b className="text-on-surface">~47%</b></li>
-              <li className="flex justify-between text-sm"><span>500 words</span><b className="text-on-surface">~63%</b></li>
-              <li className="flex justify-between text-sm"><span>1,000 words</span><b className="text-on-surface">~74%</b></li>
-              <li className="flex justify-between text-sm"><span>1,500 words</span><b className="text-[#FF8C00]">~80%</b></li>
-              <li className="flex justify-between text-sm"><span>5,000 words</span><b className="text-on-surface">~92%</b></li>
+          <SidebarCallout title="The Coverage Curve">
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {[['100 words','~47%'],['500 words','~63%'],['1,000 words','~74%'],['1,500 words','~80%'],['5,000 words','~92%']].map(([label, val], i) => (
+                <li key={label} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                  <span>{label}</span>
+                  <b style={{ color: i === 3 ? 'var(--synapse)' : 'var(--deep-mind)' }}>{val}</b>
+                </li>
+              ))}
             </ul>
           </SidebarCallout>
           <ProTip>The jump from 1,500 to 5,000 takes 3× the effort for half the gain. 1,500 is the optimal stopping point for "fluency-with-effort".</ProTip>

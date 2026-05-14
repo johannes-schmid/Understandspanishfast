@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Blog — Neuro',
   description: 'Articles on learning Spanish faster: high-frequency vocabulary strategy, comprehension thresholds, and the science of word frequency.',
   alternates: { canonical: 'https://mostcommonspanish.com/blog' },
 }
@@ -22,6 +22,8 @@ export const POSTS = [
     category: 'Learning Science',
     badge: 'Featured',
     readTime: '8 min read',
+    stat: '50%',
+    statLabel: 'of speech from 100 words',
     featured: true,
   },
   {
@@ -31,6 +33,8 @@ export const POSTS = [
     category: 'Method',
     badge: 'Essential',
     readTime: '10 min read',
+    stat: '80%',
+    statLabel: 'comprehension at 1,500 words',
   },
   {
     slug: 'how-many-spanish-words-to-be-fluent',
@@ -39,6 +43,8 @@ export const POSTS = [
     category: 'Research',
     badge: 'Popular',
     readTime: '7 min read',
+    stat: '1,500',
+    statLabel: 'the functional fluency threshold',
   },
 ]
 
@@ -47,90 +53,140 @@ export default function BlogHub() {
   const rest = POSTS.filter((p) => p !== featured)
 
   return (
-    <div className="bg-background text-on-background min-h-screen">
+    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <main className="max-w-7xl mx-auto px-6 md:px-8 pt-32 pb-16">
-        <div className="mb-16 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-semibold text-on-surface mb-3 tracking-tight">Cracking the 1,500</h1>
-          <p className="text-lg text-on-surface-variant max-w-2xl">
-            Expert insights, linguistic shortcuts, and the psychological roadmap to mastering Spanish's most critical vocabulary.
+      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
+
+        {/* Header */}
+        <div style={{ marginBottom: '64px' }}>
+          <div className="s-eye">From the blog</div>
+          <h1 style={{
+            fontFamily: "'Fraunces', serif", fontWeight: 900,
+            fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
+            lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
+          }}>
+            The science of<br />learning faster.
+          </h1>
+          <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '480px', lineHeight: 1.7 }}>
+            No fluff. Frequency-first strategy, comprehension research, and the data behind getting fluent fast.
           </p>
         </div>
 
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16">
-          <Link href={`/blog/${featured.slug}`} className="lg:col-span-8 group cursor-pointer bg-white rounded-[2rem] overflow-hidden shadow-sm bento-card no-underline text-on-surface">
-            <div className="aspect-[16/9] overflow-hidden relative bg-gradient-to-br from-orange-100 via-white to-blue-100">
-              <PostHero title={featured.title} />
-              <div className="absolute top-6 left-6 flex gap-2">
-                <span className="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-semibold">{featured.badge}</span>
-                <span className="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-semibold">{featured.category}</span>
-              </div>
+        {/* Featured post */}
+        <Link href={`/blog/${featured.slug}`} style={{
+          display: 'grid', gridTemplateColumns: '1fr auto',
+          gap: '0', background: 'var(--deep-mind)',
+          borderRadius: '20px', overflow: 'hidden',
+          textDecoration: 'none', marginBottom: '24px',
+          transition: 'transform .2s, box-shadow .2s',
+          boxShadow: '0 8px 32px rgba(28,26,58,0.12)',
+        }}>
+          <div style={{ padding: '48px 48px 48px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
+              <span style={{
+                background: 'rgba(83,74,183,0.3)', color: 'var(--mauve)',
+                fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
+                textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
+              }}>{featured.badge}</span>
+              <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{featured.readTime}</span>
             </div>
-            <div className="p-8">
-              <div className="flex items-center gap-2 mb-3 text-on-surface-variant text-sm">
-                <span className="material-symbols-rounded text-[18px]">schedule</span>
-                <span>{featured.readTime}</span>
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-on-surface mb-3 group-hover:text-[#FF8C00] transition-colors">{featured.title}</h2>
-              <p className="text-on-surface-variant mb-6">{featured.excerpt}</p>
-              <span className="inline-flex items-center gap-2 text-[#FF8C00] font-semibold">
-                Read article
-                <span className="material-symbols-rounded">arrow_forward</span>
-              </span>
-            </div>
-          </Link>
-
-          <div className="lg:col-span-4 bg-primary-container text-on-primary-container p-8 rounded-[2rem] flex flex-col justify-between">
-            <div>
-              <span className="material-symbols-rounded text-[48px] mb-4 block">auto_awesome</span>
-              <h3 className="text-2xl font-semibold mb-3">Mastery Path</h3>
-              <p className="opacity-90 mb-6">Want to accelerate your journey to 1,500 words? Take the 2-minute Word Reach test.</p>
-            </div>
-            <Link href="/level-test" className="bg-on-primary-fixed text-primary-fixed py-3 px-6 rounded-full font-semibold self-start hover:scale-95 transition-transform no-underline">
-              Test your level
-            </Link>
+            <h2 style={{
+              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontSize: 'clamp(26px, 3vw, 38px)', letterSpacing: '-1px',
+              lineHeight: 1.1, color: 'var(--white-matter)', marginBottom: '16px',
+            }}>{featured.title}</h2>
+            <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, marginBottom: '28px', maxWidth: '520px' }}>
+              {featured.excerpt}
+            </p>
+            <span style={{
+              display: 'inline-flex', alignItems: 'center', gap: '6px',
+              fontSize: '14px', fontWeight: 500, color: 'var(--mauve)',
+            }}>Read article →</span>
           </div>
-        </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div style={{
+            background: 'rgba(255,255,255,0.04)',
+            borderLeft: '0.5px solid rgba(255,255,255,0.06)',
+            padding: '48px 48px', display: 'flex', flexDirection: 'column',
+            justifyContent: 'center', alignItems: 'center', minWidth: '220px',
+          }}>
+            <div style={{
+              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontSize: '64px', letterSpacing: '-2px', lineHeight: 1,
+              color: 'var(--mauve)', marginBottom: '8px',
+            }}>{featured.stat}</div>
+            <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', textAlign: 'center', lineHeight: 1.5 }}>
+              {featured.statLabel}
+            </div>
+          </div>
+        </Link>
+
+        {/* Secondary posts */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '64px' }}>
           {rest.map((p) => (
-            <Link key={p.slug} href={`/blog/${p.slug}`} className="bg-white rounded-[2rem] overflow-hidden bento-card group cursor-pointer no-underline text-on-surface">
-              <div className="aspect-square bg-gradient-to-br from-orange-100 via-white to-blue-100 overflow-hidden relative">
-                <PostHero title={p.title} />
+            <Link key={p.slug} href={`/blog/${p.slug}`} style={{
+              background: 'var(--white-matter)', borderRadius: '20px',
+              border: '0.5px solid rgba(28,26,58,0.09)',
+              padding: '36px', textDecoration: 'none',
+              display: 'flex', flexDirection: 'column', gap: '0',
+              transition: 'transform .2s, box-shadow .2s',
+              boxShadow: '0 4px 16px rgba(28,26,58,0.06)',
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                <span style={{
+                  background: 'var(--fog)', color: 'var(--synapse)',
+                  fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
+                  textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
+                }}>{p.category}</span>
+                <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{p.readTime}</span>
               </div>
-              <div className="p-6">
-                <div className="flex justify-between items-center mb-2">
-                  <span className="bg-surface-container text-secondary px-3 py-1 rounded-full text-xs font-semibold">{p.category}</span>
-                  <span className="text-on-surface-variant text-xs">{p.readTime}</span>
-                </div>
-                <h3 className="text-xl font-semibold text-on-surface mb-2 group-hover:text-[#FF8C00] transition-colors">{p.title}</h3>
-                <p className="text-on-surface-variant text-sm">{p.excerpt}</p>
+
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px', marginBottom: '12px' }}>
+                <h3 style={{
+                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontSize: '22px', letterSpacing: '-0.5px', lineHeight: 1.15,
+                  color: 'var(--deep-mind)', flex: 1,
+                }}>{p.title}</h3>
+                <div style={{
+                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontSize: '36px', letterSpacing: '-1px', lineHeight: 1,
+                  color: 'var(--mauve)', flexShrink: 0,
+                }}>{p.stat}</div>
               </div>
+
+              <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, marginBottom: '24px' }}>
+                {p.excerpt}
+              </p>
+              <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--synapse)', marginTop: 'auto' }}>
+                Read article →
+              </span>
             </Link>
           ))}
-        </section>
+        </div>
 
-        <section className="bg-secondary-container rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-          <div className="flex-1">
-            <h2 className="text-3xl font-semibold text-on-secondary-container mb-2 tracking-tight">Don't miss a word.</h2>
-            <p className="text-on-secondary-container/80">Join the waitlist and get early access plus the weekly "Word Bucket" — 10 essential words and 1 deep dive.</p>
+        {/* CTA */}
+        <div style={{
+          background: 'var(--deep-mind)', borderRadius: '20px',
+          padding: '56px 64px', display: 'flex',
+          justifyContent: 'space-between', alignItems: 'center', gap: '32px',
+        }}>
+          <div>
+            <div className="s-eye" style={{ color: 'var(--mauve)' }}>Not just reading</div>
+            <h2 style={{
+              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
+              color: 'var(--white-matter)', marginBottom: '10px',
+            }}>Start applying it.</h2>
+            <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, maxWidth: '400px' }}>
+              Join the waitlist and get early access — plus the weekly "Word Bucket": 10 essential words and one deep dive.
+            </p>
           </div>
-          <Link href="/#waitlist" className="bg-primary text-on-primary py-4 px-8 rounded-full font-semibold hover:bg-primary-container hover:text-on-primary-container transition-colors no-underline whitespace-nowrap">
+          <Link href="/#cta" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
             Join the waitlist
           </Link>
-        </section>
-      </main>
-    </div>
-  )
-}
+        </div>
 
-function PostHero({ title }) {
-  return (
-    <div className="absolute inset-0 flex items-center justify-center p-6">
-      <div className="text-center">
-        <span className="material-symbols-rounded text-[80px] text-[#FF8C00]/40">auto_stories</span>
-        <p className="text-slate-700 font-semibold mt-2 line-clamp-2">{title}</p>
       </div>
     </div>
   )

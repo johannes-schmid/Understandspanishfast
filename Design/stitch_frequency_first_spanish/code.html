@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;700;900&amp;family=Hanken+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#534ab7",
+                        "surface-bright": "#fcf8ff",
+                        "inverse-primary": "#c5c0ff",
+                        "on-primary-fixed-variant": "#3f35a3",
+                        "outline": "#787584",
+                        "cream": "#F2EDE4",
+                        "nerve": "#C07050",
+                        "cortex": "#7B7FA8",
+                        "on-surface": "#1c1b22",
+                        "surface-container-highest": "#e5e1eb",
+                        "on-primary-fixed": "#140067",
+                        "background": "#fcf8ff",
+                        "surface-variant": "#e5e1eb",
+                        "primary": "#3b309e",
+                        "surface-dim": "#dcd8e2",
+                        "on-background": "#1c1b22",
+                        "secondary-fixed": "#e3dfff",
+                        "surface-container-low": "#f6f2fc",
+                        "on-tertiary": "#ffffff",
+                        "synapse": "#534AB7",
+                        "primary-fixed": "#e3dfff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#5c597d",
+                        "secondary-fixed-dim": "#c6c2ec",
+                        "signal": "#2D7A5F",
+                        "dendrite": "#D4537E",
+                        "purple-mid": "#7F77DD",
+                        "tertiary-fixed": "#ffdcc3",
+                        "on-secondary": "#ffffff",
+                        "deep-mind": "#1C1A3A",
+                        "tertiary": "#683500",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "mauve": "#B07FA8",
+                        "surface": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "purple-dark": "#3C3489",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#2f1500",
+                        "outline-variant": "#c8c4d5",
+                        "tertiary-container": "#8a4900",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#d1ccff",
+                        "secondary-container": "#d7d3fd",
+                        "on-surface-variant": "#474553",
+                        "on-secondary-fixed": "#1a1837",
+                        "amber": "#EF9F27",
+                        "primary-fixed-dim": "#c5c0ff",
+                        "signal-light": "#E1F5EE",
+                        "on-secondary-fixed-variant": "#454365",
+                        "surface-tint": "#584fbc",
+                        "cream-dark": "#E8E0D4",
+                        "surface-container": "#f0ecf6",
+                        "fog": "#EAE8F5",
+                        "surface-container-high": "#ebe6f0",
+                        "error-container": "#ffdad6",
+                        "secondary": "#5d5b7e",
+                        "white-matter": "#FAF7F2",
+                        "inverse-on-surface": "#f3eff9",
+                        "inverse-surface": "#312f37",
+                        "on-tertiary-container": "#ffc69a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-h": "56px",
+                        "xl": "96px",
+                        "xs": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "section-v": "96px",
+                        "hero-top": "140px",
+                        "lg": "48px",
+                        "base": "4px"
+                    },
+                    "fontFamily": {
+                        "stat-display": ["Fraunces"],
+                        "section-title": ["Fraunces"],
+                        "ui-nav": ["Hanken Grotesk"],
+                        "body-main": ["Hanken Grotesk"],
+                        "body-strong": ["Hanken Grotesk"],
+                        "ui-label": ["Hanken Grotesk"],
+                        "card-word": ["Fraunces"],
+                        "hero-display": ["Fraunces"],
+                        "sub-headline": ["Fraunces"]
+                    },
+                    "fontSize": {
+                        "stat-display": ["30px", {"lineHeight": "1.0", "letterSpacing": "-0.5px", "fontWeight": "700"}],
+                        "section-title": ["clamp(36px, 4vw, 54px)", {"lineHeight": "1.05", "letterSpacing": "-1.5px", "fontWeight": "900"}],
+                        "ui-nav": ["14px", {"lineHeight": "1.0", "fontWeight": "400"}],
+                        "body-main": ["17px", {"lineHeight": "1.65", "fontWeight": "300"}],
+                        "body-strong": ["17px", {"lineHeight": "1.65", "fontWeight": "500"}],
+                        "ui-label": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.08em", "fontWeight": "500"}],
+                        "card-word": ["52px", {"lineHeight": "1.0", "letterSpacing": "-2px", "fontWeight": "900"}],
+                        "hero-display": ["clamp(52px, 6.5vw, 86px)", {"lineHeight": "1.0", "letterSpacing": "-2.5px", "fontWeight": "900"}],
+                        "sub-headline": ["20px", {"lineHeight": "1.2", "letterSpacing": "-0.3px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F2EDE4;
+            color: #1c1b22;
+        }
+        .text-outline-0-5 { -webkit-text-stroke: 0.5px currentColor; }
+        .no-gamification-border { border: 0.5px solid #c8c4d5; }
+    </style>
+</head>
+<body class="font-body-main selection:bg-synapse/20">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 backdrop-blur-md bg-cream/90 border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-section-h px-md max-w-7xl mx-auto">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-deep-mind" data-icon="psychology">psychology</span>
+<span class="font-stat-display text-stat-display font-bold text-deep-mind">Neuro.</span>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="font-ui-nav text-ui-nav text-synapse font-bold" href="#">Learn</a>
+<a class="font-ui-nav text-ui-nav text-cortex hover:text-synapse transition-colors" href="#">Science</a>
+<a class="font-ui-nav text-ui-nav text-cortex hover:text-synapse transition-colors" href="#">Pricing</a>
+<a class="font-ui-nav text-ui-nav text-cortex hover:text-synapse transition-colors" href="#">About</a>
+</nav>
+<button class="bg-deep-mind text-white-matter px-md py-sm rounded-[10px] font-ui-nav text-ui-nav hover:bg-synapse hover:-translate-y-px transition-all active:scale-95">
+                Start Learning
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-hero-top pb-xl px-md bg-cream overflow-hidden relative">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-lg items-center">
+<div class="lg:col-span-7 relative z-10">
+<h1 class="font-hero-display text-hero-display text-deep-mind leading-[0.95]">
+                        Respect <br/>
+                        your brain, <br/>
+                        not your <br/>
+<span class="relative inline-flex items-center">
+                            screen time
+                            <svg class="absolute -bottom-2 left-0 w-full text-synapse" fill="none" viewbox="0 0 400 20" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 15.5C50 5.5 150 2.5 398 10.5" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+</svg>
+</span>
+</h1>
+<div class="mt-lg flex items-center gap-md">
+<div class="flex items-center gap-xs px-sm py-xs border border-deep-mind/20 rounded-full bg-white-matter/50">
+<svg class="text-mauve" fill="none" height="24" viewbox="0 0 24 24" width="24">
+<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle>
+<path d="M12 8V16M8 12H16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+<span class="font-stat-display text-xl text-deep-mind">3,000</span>
+</div>
+<p class="font-sub-headline text-sub-headline text-on-surface-variant max-w-sm">
+                            Master the frequency-weighted core of Spanish without the dopamine loops.
+                        </p>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<!-- Squiggle Accents -->
+<div class="absolute -top-12 -left-12 w-24 h-24 text-synapse opacity-30">
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 100 100"><path d="M10 50 Q 25 10 50 50 T 90 50"></path></svg>
+</div>
+<div class="absolute -bottom-8 -right-8 w-32 h-32 text-mauve opacity-20">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke-dasharray="4 4"></circle></svg>
+</div>
+<div class="relative bg-white-matter rounded-xl p-base no-gamification-border shadow-[0_24px_64px_rgba(28,26,58,0.16)]">
+<img alt="Scientific visualization of neural pathways connecting within a human brain silhouette, emphasizing learning and retention." class="w-full h-auto rounded-lg grayscale-[0.2]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL00MkAXa1FLfm7r3OsOrskFXgCMMOoEuXVW0MRcHshdtHgfh7Krs3mwkuIy_myTjv4UTKcQivsYzqgy7gRZinFVMOSYp7QYR-bAgob98ltei4k_bVESzw-CcXpTKUuJFmHNz1BVXqvAE8U-MBNMSoz13flTooNaeTMuO7uljU9ak_rgon91AwitULNMSlntvzWjt1-M7fJEPzI4IUWA-j-muBqz8OdwoJd6vWYtvQEXOiLMHTSylMbClOow57cC3DD65lw_wcSFsw"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-cream-dark py-md overflow-hidden whitespace-nowrap">
+<div class="flex animate-[scroll_30s_linear_infinite] gap-lg items-center px-md">
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">Based on Zipf's Law</span>
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">Retention-First Architecture</span>
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">No Gamification</span>
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">Cerebral Focus</span>
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">Neural Syncing</span>
+<span class="px-md py-xs bg-white-matter/50 rounded-full font-ui-label text-ui-label text-on-surface-variant no-gamification-border uppercase tracking-widest">Linguistic Economy</span>
+</div>
+</section>
+<!-- Science Section -->
+<section class="py-xl px-md bg-cream">
+<div class="max-w-4xl mx-auto space-y-md">
+<div class="mb-lg">
+<h2 class="font-section-title text-section-title text-deep-mind mb-sm">The Science of Selection.</h2>
+<p class="font-body-main text-body-main text-on-surface-variant">We don't teach you language; we teach you the most statistically significant 0.1% of it.</p>
+</div>
+<!-- Finding Card 1 -->
+<div class="bg-white-matter p-lg no-gamification-border rounded-lg flex flex-col md:flex-row gap-lg items-start">
+<div class="font-stat-display text-synapse text-[64px] leading-none shrink-0">80%</div>
+<div>
+<h3 class="font-sub-headline text-sub-headline text-deep-mind mb-base">Frequency Dominance</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                            Computational linguistics confirms that the first 1,000 words in Spanish cover 80% of all daily communication. We prioritize your cognitive energy where it yields the highest return.
+                        </p>
+</div>
+</div>
+<!-- Finding Card 2 -->
+<div class="bg-white-matter p-lg no-gamification-border rounded-lg flex flex-col md:flex-row gap-lg items-start">
+<div class="font-stat-display text-mauve text-[64px] leading-none shrink-0">4.2x</div>
+<div>
+<h3 class="font-sub-headline text-sub-headline text-deep-mind mb-base">Spaced Retrieval</h3>
+<p class="font-body-main text-body-main text-on-surface-variant">
+                            Neuro-scientific studies show that spaced retrieval practice leads to 4.2x higher long-term retention than traditional "binge-learning" models used by popular apps.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-xl px-md bg-deep-mind text-white-matter">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-section-title text-section-title text-white-matter mb-xl text-center">Optimized Input.</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Step 01 -->
+<div class="space-y-md">
+<div class="w-16 h-16 flex items-center justify-center border border-white-matter/20 rounded-full">
+<span class="material-symbols-outlined text-synapse" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="font-ui-label text-ui-label text-cortex uppercase tracking-widest">01 / Input</div>
+<h3 class="font-sub-headline text-sub-headline">Frequency-First</h3>
+<p class="font-body-main text-body-main text-surface-variant/70">
+                            We curate sentences that use the most common Spanish words in high-context environments. No nonsensical phrases.
+                        </p>
+</div>
+<!-- Step 02 -->
+<div class="space-y-md">
+<div class="w-16 h-16 flex items-center justify-center border border-white-matter/20 rounded-full">
+<span class="material-symbols-outlined text-mauve" style="font-variation-settings: 'FILL' 1;">radio_button_checked</span>
+</div>
+<div class="font-ui-label text-ui-label text-cortex uppercase tracking-widest">02 / Processing</div>
+<h3 class="font-sub-headline text-sub-headline">Active Retrieval</h3>
+<p class="font-body-main text-body-main text-surface-variant/70">
+                            Our cards force active recall, not passive recognition. You don't match pictures; you construct meaning from memory.
+                        </p>
+</div>
+<!-- Step 03 -->
+<div class="space-y-md">
+<div class="w-16 h-16 flex items-center justify-center border border-white-matter/20 rounded-full">
+<span class="material-symbols-outlined text-signal" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="font-ui-label text-ui-label text-cortex uppercase tracking-widest">03 / Consolidation</div>
+<h3 class="font-sub-headline text-sub-headline">Sleep Sync</h3>
+<p class="font-body-main text-body-main text-surface-variant/70">
+                            Schedule your study blocks to align with your natural circadian rhythms for maximum synaptic consolidation overnight.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Coverage Section -->
+<section class="py-xl px-md bg-white-matter">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-section-title text-section-title text-deep-mind mb-md">Measurable Fluency.</h2>
+<p class="font-body-main text-body-main text-on-surface-variant mb-lg">
+                        Stop counting streaks and start measuring linguistic coverage. We track every word against a corpus of 1.2 billion Spanish data points to tell you exactly how much of a newspaper or film you can understand.
+                    </p>
+<div class="space-y-sm">
+<div class="flex justify-between font-ui-label text-ui-label uppercase">
+<span>Linguistic Coverage</span>
+<span class="text-synapse font-bold">95%</span>
+</div>
+<div class="h-1.5 w-full bg-cream rounded-full overflow-hidden relative">
+<div class="h-full bg-synapse rounded-full" style="width: 95%;"></div>
+<div class="absolute top-0 left-[80%] h-full w-[1px] bg-white-matter/50"></div>
+<div class="absolute top-0 left-[98%] h-full w-[1px] bg-white-matter/50"></div>
+</div>
+<div class="flex justify-between text-[9px] font-ui-label text-cortex uppercase">
+<span>Daily conversation (80%)</span>
+<span>Native fluency (98%)</span>
+</div>
+</div>
+</div>
+<div class="relative p-lg no-gamification-border rounded-xl bg-cream-dark/30">
+<img class="w-full h-auto rounded-lg" data-alt="A macro photograph of an open architectural book with minimal text and heavy paper stock. The lighting is soft morning sun from a nearby window, casting delicate long shadows across the textured pages. The overall mood is quiet, academic, and extremely focused, reflecting the editorial minimalism of the Neuro brand language." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ3vrX4lzn0Eo9ugAUKE0StqJZgahptRO5_WbLAvK5My_rnlGvM3zczlmxIU1-weoBqmConxqNKi-qn9c-LeaqvMHYUHBp8sS5uqoQd3Iqm0De06iaXb4bU3d8imxVoRxM2Hd9wqf2Klby4i4lHsJr6BSYG-NRihXBkhE00ygT9kBRoIKq_cV6iP49LS019P0cX4iA7S_QO0A2Maxo2KNvvc8xtK-SED8kOf_HBS3smRFk7cSpqynmfIsruensDSrw0t0R5bN5kkGf"/>
+</div>
+</div>
+</section>
+<!-- Philosophy Grid -->
+<section class="py-xl px-md bg-cream-dark">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-base border-collapse">
+<!-- Left: Anti-Features -->
+<div class="bg-white-matter p-lg no-gamification-border space-y-md">
+<div class="font-ui-label text-ui-label text-dendrite uppercase tracking-widest flex items-center gap-xs">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+                            What we removed
+                        </div>
+<h3 class="font-sub-headline text-sub-headline text-deep-mind">No fake progress.</h3>
+<ul class="space-y-sm font-body-main text-body-main text-on-surface-variant">
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-dendrite rounded-full"></span> No badges or confetti</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-dendrite rounded-full"></span> No leaderboard pressure</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-dendrite rounded-full"></span> No pushy notifications</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-dendrite rounded-full"></span> No ads or data harvesting</li>
+</ul>
+</div>
+<!-- Right: Philosophy -->
+<div class="bg-white-matter p-lg no-gamification-border space-y-md">
+<div class="font-ui-label text-ui-label text-signal uppercase tracking-widest flex items-center gap-xs">
+<span class="material-symbols-outlined" data-icon="check">check</span>
+                            What we prioritize
+                        </div>
+<h3 class="font-sub-headline text-sub-headline text-deep-mind">Real coverage.</h3>
+<ul class="space-y-sm font-body-main text-body-main text-on-surface-variant">
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-signal rounded-full"></span> Cognitive load balance</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-signal rounded-full"></span> Semantic depth</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-signal rounded-full"></span> Respect for time</li>
+<li class="flex items-center gap-sm"><span class="w-1.5 h-1.5 bg-signal rounded-full"></span> Long-term neuro-plasticity</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Section -->
+<section class="py-xl px-md bg-cream">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-section-title text-section-title text-deep-mind mb-sm">Sustainable Learning.</h2>
+<p class="font-body-main text-body-main text-on-surface-variant">Simple, direct pricing. No dark patterns.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<!-- Standard -->
+<div class="bg-white-matter p-xl no-gamification-border rounded-xl flex flex-col">
+<div class="font-ui-label text-ui-label text-cortex uppercase tracking-widest mb-sm">The Foundation</div>
+<div class="font-stat-display text-stat-display text-deep-mind mb-lg">$9/mo</div>
+<ul class="space-y-md font-body-main text-body-main text-on-surface-variant mb-xl">
+<li>3,000 Core Word Access</li>
+<li>Standard Spaced Retrieval</li>
+<li>95% Coverage Tracking</li>
+</ul>
+<button class="mt-auto w-full py-md no-gamification-border rounded-[10px] font-ui-nav text-ui-nav text-deep-mind hover:bg-cream transition-colors">Choose Foundation</button>
+</div>
+<!-- Featured -->
+<div class="bg-deep-mind p-xl rounded-xl flex flex-col relative border-2 border-synapse">
+<div class="absolute -top-4 right-8 bg-synapse text-white-matter px-md py-xs rounded-full font-ui-label text-ui-label uppercase tracking-widest">Most sensible</div>
+<div class="font-ui-label text-ui-label text-cortex uppercase tracking-widest mb-sm">The Master</div>
+<div class="font-stat-display text-stat-display text-white-matter mb-lg">$14/mo</div>
+<ul class="space-y-md font-body-main text-body-main text-surface-variant/80 mb-xl">
+<li>Full Linguistic Corpus (10k+ Words)</li>
+<li>Neural Sleep-Sync Integration</li>
+<li>Advanced Syntax Analytics</li>
+<li>Personalized Retrieval Curves</li>
+</ul>
+<button class="mt-auto w-full py-md bg-synapse text-white-matter rounded-[10px] font-ui-nav text-ui-nav hover:bg-purple-mid transition-all active:scale-95">Go Mastery</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-cream-dark py-xl border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-lg gap-md max-w-7xl mx-auto">
+<div class="flex items-center gap-sm">
+<span class="font-stat-display text-sub-headline text-deep-mind">Neuro.</span>
+<span class="font-body-main text-on-surface-variant text-sm">© 2024 Neuro. Cerebral Spanish Learning.</span>
+</div>
+<nav class="flex gap-lg">
+<a class="font-body-main text-body-main text-on-surface-variant hover:text-synapse underline transition-all" href="#">Philosophy</a>
+<a class="font-body-main text-body-main text-on-surface-variant hover:text-synapse underline transition-all" href="#">Science</a>
+<a class="font-body-main text-body-main text-on-surface-variant hover:text-synapse underline transition-all" href="#">Privacy</a>
+<a class="font-body-main text-body-main text-on-surface-variant hover:text-synapse underline transition-all" href="#">Terms</a>
+</nav>
+</div>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 w-full z-50 bg-cream border-t border-outline-variant/20 md:hidden">
+<div class="flex justify-around items-center py-sm px-md">
+<a class="flex flex-col items-center gap-xs text-synapse font-bold" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-ui-label text-ui-label">Learn</span>
+</a>
+<a class="flex flex-col items-center gap-xs text-cortex" href="#">
+<span class="material-symbols-outlined" data-icon="science">science</span>
+<span class="font-ui-label text-ui-label">Science</span>
+</a>
+<a class="flex flex-col items-center gap-xs text-cortex" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-ui-label text-ui-label">Pricing</span>
+</a>
+<a class="flex flex-col items-center gap-xs text-cortex" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-ui-label text-ui-label">About</span>
+</a>
+</div>
+</nav>
+</body></html>

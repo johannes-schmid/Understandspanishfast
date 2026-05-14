@@ -18,12 +18,12 @@ export default function Post100Words() {
       heroCallout={{ value: '50%', label: 'Daily coverage with just 100 words' }}
       sidebar={
         <>
-          <SidebarCallout icon="shopping_basket" title="The Essential Bucket">
-            <p className="mb-4">Our research identifies the 100 words that appear with the highest frequency in natural Spanish speech. We call this the <b>Essential Bucket</b>.</p>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-on-surface text-sm"><span className="material-symbols-rounded text-tertiary text-base">check_circle</span> High-frequency verbs (ser, ir, estar)</li>
-              <li className="flex items-center gap-2 text-on-surface text-sm"><span className="material-symbols-rounded text-tertiary text-base">check_circle</span> Essential connectors (y, pero, porque)</li>
-              <li className="flex items-center gap-2 text-on-surface text-sm"><span className="material-symbols-rounded text-tertiary text-base">check_circle</span> Common determiners (el, la, un)</li>
+          <SidebarCallout title="The Essential Bucket">
+            <p style={{ marginBottom: '12px' }}>Our research identifies the 100 words that appear with the highest frequency in natural Spanish speech. We call this the <b>Essential Bucket</b>.</p>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+              <li>✓ High-frequency verbs (ser, ir, estar)</li>
+              <li>✓ Essential connectors (y, pero, porque)</li>
+              <li>✓ Common determiners (el, la, un)</li>
             </ul>
           </SidebarCallout>
           <ProTip>Focus on <b>active recall</b> rather than passive reading. Try to use 5 of these words in a sentence today.</ProTip>

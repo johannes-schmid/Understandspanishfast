@@ -2,23 +2,13 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="w-full py-16 px-8 mt-24 border-t border-slate-200 bg-slate-50">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
-        <div className="flex flex-col gap-4">
-          <Link href="/" className="flex items-center gap-2 no-underline">
-            <img src="/icon.svg" alt="" width="28" height="28" className="rounded-lg" />
-            <span className="text-xl font-bold text-slate-800">Most Common <span className="text-[#FF8C00]">Spanish</span></span>
-          </Link>
-          <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
-            © 2026 Most Common Spanish. Master the 1,500 words that unlock real-world Spanish.
-          </p>
-        </div>
-        <div className="flex flex-wrap gap-x-12 gap-y-4">
-          <Link href="/level-test" className="text-slate-500 hover:text-[#FF8C00] transition-colors font-medium text-sm">Level Test</Link>
-          <Link href="/words/most-common-spanish-words" className="text-slate-500 hover:text-[#FF8C00] transition-colors font-medium text-sm">1000 Words</Link>
-          <Link href="/blog" className="text-slate-500 hover:text-[#FF8C00] transition-colors font-medium text-sm">Blog</Link>
-          <a href="/#waitlist" className="text-slate-500 hover:text-[#FF8C00] transition-colors font-medium text-sm">Waitlist</a>
-        </div>
+    <footer className="neuro-footer">
+      <a href="/" className="footer-logo">neuro<span>.</span></a>
+      <p className="footer-tag">"The app that respects your brain more than your screen time."</p>
+      <div className="footer-links">
+        <Link href="/privacy">Privacy</Link>
+        <Link href="/terms">Terms</Link>
+        <span style={{fontSize:'13px',color:'var(--cortex)'}}>Built in Barcelona · 2026</span>
       </div>
     </footer>
   )

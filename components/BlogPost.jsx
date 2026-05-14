@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
-export default function BlogPost({ slug, title, description, category, readTime, datePublished = '2026-05-01', dateModified = '2026-05-07', author = 'Johannes Schmid', heroCallout, sidebar, children }) {
+export default function BlogPost({
+  slug, title, description, category, readTime,
+  datePublished = '2026-05-01', dateModified = '2026-05-07',
+  author = 'Johannes Schmid', heroCallout, sidebar, children,
+}) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
     image: 'https://mostcommonspanish.com/og-default.svg',
-    author: {
-      '@type': 'Person',
-      name: author,
-      url: 'https://mostcommonspanish.com/about',
-    },
+    author: { '@type': 'Person', name: author, url: 'https://mostcommonspanish.com/about' },
     publisher: {
       '@type': 'Organization',
       name: 'Most Common Spanish',
@@ -23,81 +23,122 @@ export default function BlogPost({ slug, title, description, category, readTime,
   }
 
   return (
-    <div className="bg-background text-on-background">
+    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <main className="max-w-7xl mx-auto px-6 md:px-8 pt-32 pb-16">
-        <p className="text-sm text-on-surface-variant mb-4">
-          <Link href="/blog" className="hover:text-[#FF8C00]">← Back to blog</Link>
-        </p>
+      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
 
-        <header className="mb-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div className="lg:col-span-7">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-semibold">{category}</span>
-                <span className="text-on-surface-variant text-sm">{readTime}</span>
-              </div>
-              <h1 className="text-4xl md:text-5xl font-semibold text-on-surface mb-4 tracking-tight leading-tight">{title}</h1>
-              <p className="text-lg text-on-surface-variant leading-relaxed">{description}</p>
+        {/* Back link */}
+        <Link href="/blog" className="blog-back-link">← Back to blog</Link>
+
+        {/* Header */}
+        <header style={{ marginBottom: '64px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+            <span style={{
+              background: 'var(--fog)', color: 'var(--synapse)',
+              fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
+              textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
+            }}>{category}</span>
+            <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{readTime}</span>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '48px', alignItems: 'start' }}>
+            <div>
+              <h1 style={{
+                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontSize: 'clamp(36px, 4vw, 56px)', letterSpacing: '-2px',
+                lineHeight: 1.05, color: 'var(--deep-mind)', marginBottom: '20px',
+              }}>{title}</h1>
+              <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, maxWidth: '560px' }}>
+                {description}
+              </p>
             </div>
-            <div className="lg:col-span-5 relative">
-              <div className="aspect-square rounded-[2rem] overflow-hidden shadow-lg border-4 border-white bg-gradient-to-br from-orange-100 via-white to-blue-100 flex items-center justify-center">
-                <span className="material-symbols-rounded text-[120px] text-[#FF8C00]/40">auto_stories</span>
-              </div>
-              {heroCallout && (
-                <div className="absolute -bottom-6 -left-2 bg-secondary-container p-5 rounded-2xl shadow-lg max-w-[220px]">
-                  <p className="text-2xl font-semibold text-on-secondary-container">{heroCallout.value}</p>
-                  <p className="text-sm text-on-secondary-container">{heroCallout.label}</p>
+
+            {heroCallout && (
+              <div style={{
+                background: 'var(--deep-mind)', borderRadius: '20px',
+                padding: '32px 36px', textAlign: 'center', minWidth: '180px', flexShrink: 0,
+              }}>
+                <div style={{
+                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontSize: '56px', letterSpacing: '-2px', lineHeight: 1,
+                  color: 'var(--mauve)', marginBottom: '10px',
+                }}>{heroCallout.value}</div>
+                <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.5 }}>
+                  {heroCallout.label}
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <aside className="lg:col-span-4 order-2 lg:order-1">
-            <div className="sticky top-28 space-y-6">{sidebar}</div>
+        {/* Body: sidebar + article */}
+        <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '64px', alignItems: 'start' }}>
+
+          {/* Sidebar */}
+          <aside style={{ position: 'sticky', top: '100px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {sidebar}
           </aside>
-          <article className="lg:col-span-8 order-1 lg:order-2">
-            <div className="article-body text-on-surface-variant text-lg leading-relaxed space-y-6">
+
+          {/* Article */}
+          <article>
+            <div className="article-body" style={{ fontSize: '17px', color: 'var(--cortex)', lineHeight: 1.75 }}>
               {children}
             </div>
 
-            <section className="bg-secondary-container rounded-[2rem] p-10 text-center mt-12 relative overflow-hidden">
-              <h3 className="text-3xl font-semibold text-on-secondary-container mb-3 tracking-tight">Ready to master these words?</h3>
-              <p className="text-on-secondary-container/80 mb-6 max-w-xl mx-auto">Take the 3-minute Word Reach test to see exactly which words you already know.</p>
-              <div className="flex flex-col sm:flex-row justify-center gap-3">
-                <Link href="/level-test" className="bg-primary-container text-on-primary-container px-8 py-3 rounded-full font-semibold shadow-sm hover:brightness-110 active:scale-95 transition-all no-underline">
-                  Start Level Test
-                </Link>
-                <Link href="/#waitlist" className="bg-white text-secondary px-8 py-3 rounded-full font-semibold shadow-sm hover:bg-surface transition-all no-underline">
-                  Join Waitlist
-                </Link>
+            {/* Bottom CTA */}
+            <div style={{
+              background: 'var(--deep-mind)', borderRadius: '20px',
+              padding: '48px 40px', textAlign: 'center', marginTop: '64px',
+            }}>
+              <div className="s-eye" style={{ color: 'var(--mauve)' }}>Ready to build on this?</div>
+              <h3 style={{
+                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
+                color: 'var(--white-matter)', marginBottom: '12px',
+              }}>Find out where you stand.</h3>
+              <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '28px', lineHeight: 1.65 }}>
+                Take the 2-minute Word Reach test — see exactly which words you already know.
+              </p>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                <Link href="/level-test" className="btn-primary">Take the level test</Link>
+                <Link href="/#cta" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Join the waitlist →</Link>
               </div>
-            </section>
+            </div>
           </article>
         </div>
-      </main>
+      </div>
     </div>
   )
 }
 
-export function SidebarCallout({ icon, title, children }) {
+export function SidebarCallout({ title, children }) {
   return (
-    <section className="bg-surface-container-high p-6 rounded-2xl border border-outline-variant">
-      <span className="material-symbols-rounded text-[#FF8C00] mb-2 block">{icon}</span>
-      <h3 className="text-xl font-semibold text-on-surface mb-2">{title}</h3>
-      <div className="text-on-surface-variant text-sm leading-relaxed">{children}</div>
-    </section>
+    <div style={{
+      background: 'var(--white-matter)', border: '0.5px solid rgba(28,26,58,0.09)',
+      borderRadius: '16px', padding: '24px',
+    }}>
+      <h3 style={{
+        fontFamily: "'Fraunces', serif", fontWeight: 700,
+        fontSize: '18px', letterSpacing: '-0.3px', color: 'var(--deep-mind)',
+        marginBottom: '14px',
+      }}>{title}</h3>
+      <div style={{ fontSize: '14px', color: 'var(--cortex)', lineHeight: 1.65 }}>{children}</div>
+    </div>
   )
 }
 
 export function ProTip({ children }) {
   return (
-    <section className="bg-primary-fixed p-6 rounded-2xl">
-      <p className="text-xs text-on-primary-fixed font-bold uppercase tracking-wider mb-2">Pro Tip</p>
-      <p className="text-on-primary-fixed">{children}</p>
-    </section>
+    <div style={{
+      background: 'var(--fog)', borderLeft: '3px solid var(--synapse)',
+      borderRadius: '12px', padding: '18px 20px',
+    }}>
+      <div style={{
+        fontSize: '10px', fontWeight: 500, letterSpacing: '.1em',
+        textTransform: 'uppercase', color: 'var(--synapse)', marginBottom: '8px',
+      }}>Pro tip</div>
+      <p style={{ fontSize: '14px', color: 'var(--deep-mind)', lineHeight: 1.65, fontWeight: 300 }}>{children}</p>
+    </div>
   )
 }
