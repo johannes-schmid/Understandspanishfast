@@ -47,6 +47,7 @@ export default async function StudyPage() {
     meanings: w.meanings,
     example_es: w.example_es ?? null,
     example_en: w.example_en ?? null,
+    image: w.image ?? null,
   }))
 
   // Due reviews first, then new words (no progress row)

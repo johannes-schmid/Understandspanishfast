@@ -307,6 +307,20 @@ export default function FlashCard({
             <p style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.4)', marginBottom: '20px' }}>
               {cardFront === 'spanish' ? 'English' : 'Spanish'}
             </p>
+            {card.image && (
+              <div style={{
+                width: '140px', height: '140px', marginBottom: '18px',
+                borderRadius: '60% 40% 55% 45% / 45% 55% 40% 60%',
+                overflow: 'hidden', flexShrink: 0,
+                boxShadow: '0 4px 24px rgba(120, 100, 220, 0.35)',
+              }}>
+                <img
+                  src={`/word-images/${card.image}`}
+                  alt={card.word}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
+            )}
             <p style={{ fontFamily: 'Fraunces', fontSize: 'clamp(28px, 6vw, 44px)', fontWeight: 700, color: 'var(--purple-mid)', marginBottom: '16px', lineHeight: 1.1 }}>
               {backText}
             </p>

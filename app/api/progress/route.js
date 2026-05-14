@@ -34,9 +34,44 @@ export async function POST(request) {
     )
 
   if (error) {
-    // Check constraint blocks saves until migration is run in Supabase — return ok so session continues
     if (error.code === '23514') return NextResponse.json({ ok: true, pending_migration: true })
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
-  return NextResponse.json({ ok: true })
+
+  // Update study_activity for today — try with cards_reviewed, fall back to date-only
+  const todayIso = new Date().toISOString().slice(0, 10)
+
+  const { data: todayRow, error: fetchErr } = await supabase
+    .from('study_activity')
+    .select('cards_reviewed')
+    .eq('user_id', user.id)
+    .eq('date', todayIso)
+    .maybeSingle()
+
+  if (fetchErr) {
+    console.error('[study_activity] fetch error:', fetchErr.message, fetchErr.code)
+  }
+
+  const newCount = (todayRow?.cards_reviewed ?? 0) + 1
+  const { error: upsertErr } = await supabase
+    .from('study_activity')
+    .upsert(
+      { user_id: user.id, date: todayIso, cards_reviewed: newCount },
+      { onConflict: 'user_id,date' }
+    )
+
+  if (upsertErr) {
+    console.error('[study_activity] upsert error:', upsertErr.message, upsertErr.code)
+    // Fallback: try without cards_reviewed in case column doesn't exist yet
+    if (upsertErr.code === '42703') {
+      const { error: fallbackErr } = await supabase
+        .from('study_activity')
+        .upsert({ user_id: user.id, date: todayIso }, { onConflict: 'user_id,date' })
+      if (fallbackErr) {
+        console.error('[study_activity] fallback error:', fallbackErr.message, fallbackErr.code)
+      }
+    }
+  }
+
+  return NextResponse.json({ ok: true, activity: { date: todayIso, cards_reviewed: newCount } })
 }

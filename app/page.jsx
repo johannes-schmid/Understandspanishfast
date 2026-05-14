@@ -87,11 +87,11 @@ export default function Landing() {
               lineHeight: 1.0, letterSpacing: '-2.5px', color: 'var(--deep-mind)',
               marginBottom: '28px', animation: 'fadeUp .7s .05s ease both',
             }}>
-              <div>Respect your</div>
-              <div>brain,</div>
-              <div>not your</div>
+              <div>Stop collecting</div>
+              <div>streaks.</div>
+              <div>Start collecting</div>
               <div style={{display:'inline-flex',flexDirection:'column',alignItems:'flex-start'}}>
-                <span>screen time.</span>
+                <span>words that matter.</span>
                 <svg viewBox="0 0 340 14" fill="none" style={{width:'100%',marginTop:'6px'}} preserveAspectRatio="none">
                   <path d="M2 10 C80 3 200 2 338 7" stroke="#534AB7" strokeWidth="4" strokeLinecap="round"/>
                 </svg>
