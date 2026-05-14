@@ -22,6 +22,13 @@ export default async function DashboardPage({ searchParams }) {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
+  // Stripe redirects here with ?unlocked=true after successful payment
+  if ((await searchParams).unlocked === 'true') {
+    await supabase
+      .from('user_settings')
+      .upsert({ user_id: user.id, unlocked: true }, { onConflict: 'user_id' })
+  }
+
   const fourMonthsAgo = new Date()
   fourMonthsAgo.setDate(fourMonthsAgo.getDate() - 112)
   const fourMonthsAgoIso = fourMonthsAgo.toISOString().slice(0, 10)

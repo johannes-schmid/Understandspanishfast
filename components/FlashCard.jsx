@@ -315,7 +315,7 @@ export default function FlashCard({
                 boxShadow: '0 4px 24px rgba(120, 100, 220, 0.35)',
               }}>
                 <img
-                  src={`/word-images/${card.image}`}
+                  src={`/word-images/${card.image.replace(/\.(jpg|jpeg|png)$/i, '.webp')}`}
                   alt={card.word}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />

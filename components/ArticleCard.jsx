@@ -35,7 +35,7 @@ function ArticleImage({ slug }) {
     }}>
       {!errored && (
         <img
-          src={`/article-images/${slug}.png`}
+          src={`/article-images/${slug}.webp`}
           alt=""
           onError={() => setErrored(true)}
           style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}

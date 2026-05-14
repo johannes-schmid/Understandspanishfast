@@ -63,6 +63,19 @@ export default async function ArticlePage({ params }) {
           {article.description}
         </p>
 
+        {/* Hero image */}
+        <div style={{
+          width: '100%', height: '260px', borderRadius: '16px',
+          overflow: 'hidden', marginBottom: '28px',
+          background: 'var(--fog)',
+        }}>
+          <img
+            src={`/article-images/${article.slug}.webp`}
+            alt={article.title}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        </div>
+
         {/* Legend */}
         <div style={{
           display: 'flex', gap: '16px', flexWrap: 'wrap',
