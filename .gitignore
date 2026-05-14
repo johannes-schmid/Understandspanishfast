@@ -1,5 +1,5 @@
 node_modules/
-# dist/ is committed — Vercel serves pre-built files directly
+.next/
 .DS_Store
 *.bak
 .claude/

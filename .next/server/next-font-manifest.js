@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/johannesschmid/Desktop/Development Project/UnderstandSpanishFast/app/layout\":[\"static/media/793968fa3513f5d6-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
