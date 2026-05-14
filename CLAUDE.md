@@ -1,5 +1,48 @@
 # CLAUDE.md
 
+## Dev Server
+
+```
+PATH="/opt/homebrew/bin:$PATH" npm run dev
+```
+
+Runs Next.js dev server at `http://localhost:3000` (or 3001 if 3000 is taken). Hot reload is built-in.
+
+---
+
+## Directory Map
+
+| Path | What lives there |
+|------|-----------------|
+| `app/` | Next.js App Router pages (page.jsx per route) |
+| `components/` | Shared components (Navbar, Footer, WaitlistForm, BlogPost, LevelTestClient, WordsPageClient) |
+| `data/words.js` | High-frequency Spanish word list data |
+| `public/` | Static assets (robots.txt, sitemap, llms.txt, OG images, icons) |
+| `words/` | Legacy static HTML word pages |
+| `Design/` | Design references and mockups |
+| `SEO-STRATEGY.md` | Full SEO keyword and content strategy |
+| `SITE-STRUCTURE.md` | URL structure and page hierarchy plan |
+
+---
+
+## Success / Failure Log
+
+**What worked:**
+- Next.js App Router + Tailwind — clean migration from Vite/React Router
+- Adding Privacy/Terms pages to fix GSC 404 errors
+- Google Analytics via `next/script` with `strategy="afterInteractive"` in layout
+- `jsconfig.json` with `@/*` path alias pointing to project root
+- `postcss.config.cjs` (CJS extension required when `"type": "module"` is set in package.json)
+- Node 20 via Homebrew (`/opt/homebrew/bin`) — system Node is v14 and won't work
+
+**What failed / watch out for:**
+- `metadata` export cannot be in a `'use client'` component — must split into server wrapper + client component
+- `postcss.config.js` with ESM export breaks Next.js — rename to `.cjs` and use `module.exports`
+- `src/pages/` directory gets picked up by Next.js as Pages Router — deleted old Vite source files entirely
+- Run npm with `PATH="/opt/homebrew/bin:$PATH"` — system npm is broken (Node 14 compatibility issue)
+
+---
+
 ## 🧠 Project Overview
 
 This project is a prototype for a language learning product focused on one core outcome:
@@ -257,17 +300,6 @@ If a feature does not directly contribute to this goal, it should not be include
 
 After every finished change, Chrome automatically opens with the latest `index.html`.
 This is wired via a `Stop` hook in `.claude/settings.json` — not AI behaviour, so it executes regardless of what Claude says.
-
-### Local Server
-
-Always spin up a local HTTP server before testing any pages. Use:
-
-```
-python3 -m http.server 8080 --directory "/Users/johannesschmid/Desktop/Development Project/UnderstandSpanishFast"
-```
-
-Then open pages at `http://localhost:8080/` (index) or `http://localhost:8080/words/most-common-spanish-words.html` etc.
-This ensures root-relative links (e.g. `/words/`) resolve correctly — opening HTML files directly via `file://` breaks these links.
 
 ---
 
