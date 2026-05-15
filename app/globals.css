@@ -83,15 +83,23 @@ body {
   border-bottom: 0.5px solid rgba(28,26,58,0.1);
 }
 .neuro-nav-logo {
-  font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px;
+  font-family: var(--font-fraunces), serif; font-weight: 700; font-size: 22px;
   color: var(--deep-mind); letter-spacing: -0.5px; text-decoration: none;
 }
 .neuro-nav-logo span { color: var(--synapse); }
 .neuro-nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .neuro-nav-links a {
-  font-size: 14px; font-weight: 400; color: var(--deep-mind);
-  text-decoration: none; transition: color .15s;
+  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--deep-mind); text-decoration: none; transition: color .15s;
+  text-transform: uppercase; letter-spacing: 0.06em;
 }
+.neuro-nav-login {
+  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 500;
+  color: var(--deep-mind); text-transform: uppercase; letter-spacing: 0.06em;
+  background: none; border: 1.5px solid var(--deep-mind); border-radius: 8px;
+  padding: 7px 16px; cursor: pointer; transition: background .15s, color .15s;
+}
+.neuro-nav-login:hover { background: var(--deep-mind); color: var(--white-matter); }
 .neuro-nav-links a:hover { color: var(--deep-mind); }
 .neuro-nav-cta,
 .neuro-nav-links a.neuro-nav-cta {
@@ -146,7 +154,7 @@ body {
 .coverage-tiles { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 .hero-deco { position: absolute; pointer-events: none; }
 .hero-title {
-  font-family: 'Fraunces', serif; font-weight: 900;
+  font-family: var(--font-fraunces), serif; font-weight: 900;
   font-size: clamp(52px, 6.5vw, 86px);
   line-height: 1.0; letter-spacing: -2.5px; color: var(--deep-mind); margin-bottom: 28px;
 }
@@ -160,7 +168,7 @@ body {
 .hero-proof { display: flex; align-items: center; gap: 24px; }
 .proof-stat { display: flex; flex-direction: column; }
 .proof-num {
-  font-family: 'Fraunces', serif; font-weight: 700; font-size: 30px;
+  font-family: var(--font-fraunces), serif; font-weight: 700; font-size: 30px;
   color: var(--deep-mind); letter-spacing: -0.5px; line-height: 1;
 }
 .proof-label { font-size: 12px; color: rgba(28,26,58,0.6); margin-top: 3px; }
@@ -180,7 +188,7 @@ body {
 .word-tag { font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--cortex); }
 .word-num { font-size: 11px; color: rgba(123,127,168,0.45); }
 .card-word {
-  font-family: 'Fraunces', serif; font-weight: 900; font-size: 52px;
+  font-family: var(--font-fraunces), serif; font-weight: 900; font-size: 52px;
   color: var(--white-matter); letter-spacing: -2px; line-height: 1; margin-bottom: 9px;
 }
 .card-phon { font-size: 14px; color: var(--cortex); font-weight: 300; }
@@ -189,7 +197,7 @@ body {
   border: 0.5px solid rgba(28,26,58,0.08); border-top: none;
 }
 .card-trans {
-  font-family: 'Fraunces', serif; font-weight: 500; font-size: 19px;
+  font-family: var(--font-fraunces), serif; font-weight: 500; font-size: 19px;
   color: var(--mauve); margin-bottom: 8px; letter-spacing: -0.3px;
 }
 .card-ex {
@@ -213,7 +221,7 @@ body {
   border-radius: 14px; padding: 16px 18px;
 }
 .s-label { font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: rgba(28,26,58,0.55); margin-bottom: 8px; }
-.s-val { font-family: 'Fraunces', serif; font-weight: 700; font-size: 30px; color: var(--deep-mind); letter-spacing: -0.5px; line-height: 1; margin-bottom: 3px; }
+.s-val { font-family: var(--font-fraunces), serif; font-weight: 700; font-size: 30px; color: var(--deep-mind); letter-spacing: -0.5px; line-height: 1; margin-bottom: 3px; }
 .s-sub { font-size: 12px; color: rgba(28,26,58,0.6); }
 .prog { height: 5px; background: var(--cream-dark); border-radius: 99px; overflow: hidden; margin-top: 8px; }
 .prog-fill { height: 100%; border-radius: 99px; }
@@ -245,7 +253,7 @@ body {
 .neuro-section { padding: 96px 56px; }
 .s-eye { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--synapse); margin-bottom: 16px; }
 .s-title {
-  font-family: 'Fraunces', serif; font-weight: 900;
+  font-family: var(--font-fraunces), serif; font-weight: 900;
   font-size: clamp(36px, 4vw, 54px); letter-spacing: -1.5px; line-height: 1.05;
   color: var(--deep-mind); max-width: 580px; margin-bottom: 20px;
 }
@@ -272,8 +280,8 @@ body {
   transition: border-color .2s, transform .2s;
 }
 .finding-card:hover { border-color: rgba(83,74,183,0.28); transform: translateY(-3px); }
-.f-num { font-family: 'Fraunces', serif; font-weight: 900; font-size: 44px; letter-spacing: -1.5px; line-height: 1; margin-bottom: 10px; }
-.f-num-lg { font-family: 'Fraunces', serif; font-weight: 900; font-size: 64px; letter-spacing: -2px; line-height: 1; flex-shrink: 0; min-width: 120px; }
+.f-num { font-family: var(--font-fraunces), serif; font-weight: 900; font-size: 44px; letter-spacing: -1.5px; line-height: 1; margin-bottom: 10px; }
+.f-num-lg { font-family: var(--font-fraunces), serif; font-weight: 900; font-size: 64px; letter-spacing: -2px; line-height: 1; flex-shrink: 0; min-width: 120px; }
 .f-label { font-size: 15px; font-weight: 500; color: var(--deep-mind); margin-bottom: 6px; }
 .f-body { font-size: 13px; font-weight: 300; color: var(--deep-mind); line-height: 1.6; }
 .f-src { font-size: 11px; color: rgba(123,127,168,.5); margin-top: 13px; }
@@ -291,7 +299,7 @@ body {
 .step:hover { background: rgba(83,74,183,0.15); }
 .step-num { font-size: 11px; font-weight: 500; letter-spacing: .1em; color: var(--cortex); margin-bottom: 12px; }
 .step-icon { font-size: 36px; line-height: 1; margin-bottom: 16px; }
-.step-title { font-family: 'Fraunces', serif; font-weight: 700; font-size: 18px; color: var(--white-matter); letter-spacing: -0.3px; margin-bottom: 10px; }
+.step-title { font-family: var(--font-fraunces), serif; font-weight: 700; font-size: 18px; color: var(--white-matter); letter-spacing: -0.3px; margin-bottom: 10px; }
 .step-body { font-size: 14px; font-weight: 300; color: rgba(242,237,228,0.72); line-height: 1.65; }
 
 /* ── Coverage ── */
@@ -318,7 +326,7 @@ body {
 }
 .milestone:first-child { padding-top: 0; }
 .milestone:last-child { border-bottom: none; }
-.m-pct { font-family: 'Fraunces', serif; font-weight: 900; font-size: 36px; letter-spacing: -1px; line-height: 1; }
+.m-pct { font-family: var(--font-fraunces), serif; font-weight: 900; font-size: 36px; letter-spacing: -1px; line-height: 1; }
 .m-words { font-size: 13px; font-weight: 500; color: var(--deep-mind); margin-bottom: 3px; }
 .m-desc { font-size: 13px; font-weight: 300; color: var(--cortex); line-height: 1.5; }
 .m-bar { height: 3px; border-radius: 99px; margin-top: 10px; }
@@ -358,7 +366,7 @@ body {
 }
 .p-tier { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: rgba(28,26,58,0.55); margin-bottom: 14px; }
 .price-card.featured .p-tier { color: var(--mauve); }
-.p-amt { font-family: 'Fraunces', serif; font-weight: 900; font-size: 38px; letter-spacing: -1px; line-height: 1; color: var(--deep-mind); margin-bottom: 3px; }
+.p-amt { font-family: var(--font-fraunces), serif; font-weight: 900; font-size: 38px; letter-spacing: -1px; line-height: 1; color: var(--deep-mind); margin-bottom: 3px; }
 .price-card.featured .p-amt { color: var(--white-matter); }
 .p-period { font-size: 13px; color: rgba(28,26,58,0.6); margin-bottom: 16px; }
 .p-desc { font-size: 13px; font-weight: 300; color: rgba(28,26,58,0.65); line-height: 1.6; }
@@ -367,7 +375,7 @@ body {
 /* ── CTA ── */
 .cta-section { padding: 120px 56px; text-align: center; background: var(--cream); position: relative; overflow: hidden; }
 .cta-title {
-  font-family: 'Fraunces', serif; font-weight: 900;
+  font-family: var(--font-fraunces), serif; font-weight: 900;
   font-size: clamp(40px, 5.5vw, 70px); letter-spacing: -2px; line-height: 1.0;
   color: var(--deep-mind); margin: 0 auto 20px; max-width: 720px;
 }
@@ -383,7 +391,7 @@ body {
   display: flex; align-items: center; justify-content: space-between;
   background: var(--cream-dark);
 }
-.footer-logo { font-family: 'Fraunces', serif; font-weight: 700; font-size: 18px; color: var(--deep-mind); text-decoration: none; }
+.footer-logo { font-family: var(--font-fraunces), serif; font-weight: 700; font-size: 18px; color: var(--deep-mind); text-decoration: none; }
 .footer-logo span { color: var(--synapse); }
 .footer-tag { font-size: 13px; color: rgba(28,26,58,0.6); }
 .footer-links { display: flex; align-items: center; gap: 20px; }

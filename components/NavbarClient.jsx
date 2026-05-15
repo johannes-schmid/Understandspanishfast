@@ -37,9 +37,16 @@ export default function NavbarClient({ user }) {
             </li>
           </>
         ) : (
-          <li>
-            <a href="/get-started" className="neuro-nav-cta">Start free</a>
-          </li>
+          <>
+            <li>
+              <SignInButton className="neuro-nav-login">
+                Log in
+              </SignInButton>
+            </li>
+            <li>
+              <a href="/get-started" className="neuro-nav-cta">Start free</a>
+            </li>
+          </>
         )}
       </ul>
     </nav>

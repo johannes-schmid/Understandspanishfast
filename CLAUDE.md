@@ -10,6 +10,28 @@ Runs Next.js dev server at `http://localhost:3000` (or 3001 if 3000 is taken). H
 
 ---
 
+## Visual Verification with Puppeteer
+
+Puppeteer is installed as a dev dependency. Use it to screenshot pages and verify UI changes before reporting done.
+
+```js
+const puppeteer = require('puppeteer');
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.setViewport({ width: 1440, height: 900 });
+  await page.goto('http://localhost:3000', { waitUntil: 'networkidle2' });
+  await page.screenshot({ path: '/tmp/screenshot.png', fullPage: false });
+  await browser.close();
+})();
+```
+
+Run with: `PATH="/opt/homebrew/bin:$PATH" node -e "<script above>"`
+
+Then read `/tmp/screenshot.png` to inspect the result visually.
+
+---
+
 ## Directory Map
 
 | Path | What lives there |

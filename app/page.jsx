@@ -410,30 +410,32 @@ function HeroStat({ num, label }) {
 function WordPoster() {
   return (
     <div style={{position:'relative',height:'460px'}}>
-      {/* Logo element as decorative backdrop */}
-      <Image
-        src="/logo-element.png"
-        alt=""
-        width={260}
-        height={260}
-        style={{
-          position:'absolute',top:'-10px',right:'-10px',
-          opacity:0.12,
-          filter:'blur(1px)',
-          pointerEvents:'none',
-          zIndex:0,
-          objectFit:'contain',
-        }}
-      />
 
       {/* Main word card */}
       <div style={{
         position:'absolute',top:'30px',left:'20px',right:'20px',
-        background:'var(--deep-mind)',borderRadius:'20px',
+        background:'rgba(28,26,58,0.82)',borderRadius:'20px',
         padding:'32px 36px 28px',
+        backdropFilter:'blur(12px)', WebkitBackdropFilter:'blur(12px)',
         boxShadow:'0 24px 64px rgba(28,26,58,0.22), 0 4px 16px rgba(28,26,58,0.1)',
-        zIndex:1,
+        zIndex:1, overflow:'visible',
       }}>
+        <Image
+          src="/logo-element.png"
+          alt=""
+          width={360}
+          height={360}
+          priority
+          sizes="360px"
+          style={{
+            position:'absolute',
+            top:'-240px',
+            right:'-120px',
+            opacity:0.28,
+            pointerEvents:'none',
+            zIndex:0,
+          }}
+        />
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
           <span style={{fontSize:'11px',fontWeight:500,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--cortex)'}}>verb · high frequency</span>
           <span style={{fontSize:'11px',color:'rgba(123,127,168,0.45)'}}>#847</span>
