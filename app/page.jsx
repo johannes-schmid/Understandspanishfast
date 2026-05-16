@@ -1,36 +1,79 @@
 import Image from 'next/image'
-import WaitlistForm from '@/components/WaitlistForm'
+import Link from 'next/link'
+import HomepageWordPreview from '@/components/HomepageWordPreview'
 
 export const metadata = {
-  title: 'Neuro — Spanish worth keeping',
-  description: 'Master 3,000 frequency-ranked Spanish words. Understand 95% of spoken Spanish with science-backed spaced repetition — no gamification, no nonsense.',
+  title: 'Most Common Spanish Words — Frequency-Ranked Vocabulary List',
+  description: 'The most common Spanish words, ranked by real-world frequency. Master them and understand the vast majority of spoken Spanish. Free to start — no gamification.',
   alternates: { canonical: 'https://mostcommonspanish.com/' },
   openGraph: { url: 'https://mostcommonspanish.com/' },
 }
 
-const jsonLd = {
+const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
-  name: 'Neuro',
+  name: 'Most Common Spanish',
   url: 'https://mostcommonspanish.com/',
-  description: 'Master the 3,000 most useful Spanish words and understand 95% of spoken Spanish.',
+  description: 'The most common Spanish words, ranked by real-world frequency.',
 }
 
-/* Wave divider — smooth cubic bezier variants */
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are the most common Spanish words?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The most common Spanish words are function words and high-frequency verbs that appear in virtually every sentence: ser (to be), estar (to be), ir (to go), tener (to have), hacer (to do/make), poder (to be able to), decir (to say), and querer (to want). These words appear so frequently because language is built on a small core of repeated vocabulary — the top words alone account for half of everything you will ever hear in Spanish.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many Spanish words do I need to be fluent?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'You need approximately 1,500 high-frequency Spanish words for functional fluency — the point where you understand around 80% of everyday spoken Spanish. At 3,000 words you reach 95% coverage, where context-guessing works reliably and conversations feel effortless.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many Spanish words do I need to be conversational?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Around 500 of the most common Spanish words is enough to hold a basic conversation — topics like your day, work, and family. This gives you roughly 63% lexical coverage of everyday Spanish.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long does it take to learn the most common Spanish words?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'With 15–20 minutes of focused daily practice using spaced repetition, most adults reach 1,500 words in 4–8 months. The first 100 words — which cover 50% of all Spanish you will hear — typically take 1–2 weeks.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why learn Spanish words by frequency instead of by topic?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Frequency-ranked lists prioritize words by how often they actually appear in real Spanish. Most language apps and textbooks teach words alphabetically or by theme (food, travel, etc.), which means you spend equal time on rare words and essential ones. A frequency list ensures every word you learn is as useful as possible.',
+      },
+    },
+  ],
+}
+
 function Wave({ from, to, height = 90, shape = 'dome' }) {
   const h = height
   let d
   if (shape === 'dome') {
-    // Symmetric smooth dome
     d = `M0,${h} C480,0 960,0 1440,${h} L1440,${h} L0,${h} Z`
   } else if (shape === 'swave') {
-    // Smooth S — rises left, dips right
     d = `M0,${h} C320,0 640,${h} 1080,${h * 0.15} C1260,0 1380,${h * 0.4} 1440,${h} L1440,${h} L0,${h} Z`
   } else if (shape === 'tilt') {
-    // Smooth left-lean: high on left, flows down to right
     d = `M0,${h * 0.1} C480,${h * 0.05} 900,${h * 0.6} 1440,${h} L1440,${h} L0,${h} Z`
   } else if (shape === 'shallow') {
-    // Very gentle dome
     d = `M0,${h} C480,${h * 0.2} 960,${h * 0.2} 1440,${h} L1440,${h} L0,${h} Z`
   }
   return (
@@ -45,35 +88,20 @@ function Wave({ from, to, height = 90, shape = 'dome' }) {
 export default function Landing() {
   return (
     <div>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── HERO ── */}
       <section className="hero-section">
-        {/* Squiggles */}
+        {/* Decorative SVGs */}
         <svg style={{position:'absolute',top:'120px',left:'52px',pointerEvents:'none'}} width="72" height="40" viewBox="0 0 72 40" fill="none">
           <path d="M4 32 Q18 4 36 20 Q54 36 68 8" stroke="#B07FA8" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
         <svg style={{position:'absolute',top:'200px',left:'180px',pointerEvents:'none'}} width="44" height="44" viewBox="0 0 44 44" fill="none">
           <circle cx="22" cy="22" r="20" stroke="#534AB7" strokeWidth="1" strokeDasharray="4 3"/>
         </svg>
-        <svg style={{position:'absolute',bottom:'260px',left:'56px',pointerEvents:'none'}} width="56" height="56" viewBox="0 0 56 56" fill="none">
-          <path d="M8 28 Q14 4 28 14 Q42 24 48 8" stroke="#2D7A5F" strokeWidth="1.5" strokeLinecap="round"/>
-          <path d="M42 5 L49 8 L44 14" stroke="#2D7A5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
-        <svg style={{position:'absolute',top:'160px',right:'44%',pointerEvents:'none'}} width="36" height="60" viewBox="0 0 36 60" fill="none">
-          <path d="M18 4 Q32 16 18 28 Q4 40 18 56" stroke="#C07050" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
-        <svg style={{position:'absolute',bottom:'180px',left:'38%',pointerEvents:'none'}} width="80" height="32" viewBox="0 0 80 32" fill="none">
-          <path d="M4 16 Q20 4 40 16 Q60 28 76 16" stroke="#534AB7" strokeWidth="1" strokeLinecap="round" strokeDasharray="5 3"/>
-        </svg>
-        <svg style={{position:'absolute',top:'300px',right:'54%',pointerEvents:'none'}} width="28" height="28" viewBox="0 0 28 28" fill="none">
-          <path d="M14 2 L17 10 L26 10 L19 15 L22 23 L14 18 L6 23 L9 15 L2 10 L11 10Z" fill="#EF9F27" opacity="0.7"/>
-        </svg>
         <svg style={{position:'absolute',top:'155px',right:'52px',pointerEvents:'none'}} width="52" height="52" viewBox="0 0 52 52" fill="none">
           <circle cx="26" cy="26" r="24" stroke="#B07FA8" strokeWidth="1" strokeDasharray="3 4"/>
-        </svg>
-        <svg style={{position:'absolute',bottom:'200px',right:'64px',pointerEvents:'none'}} width="68" height="36" viewBox="0 0 68 36" fill="none">
-          <path d="M4 28 Q18 4 34 18 Q50 32 64 8" stroke="#534AB7" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
         <svg style={{position:'absolute',top:'420px',right:'48px',pointerEvents:'none'}} width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path d="M10 1 L12 7 L19 7 L13 11 L16 18 L10 14 L4 18 L7 11 L1 7 L8 7Z" fill="#EF9F27"/>
@@ -81,44 +109,49 @@ export default function Landing() {
 
         <div className="hero-inner">
           <div>
+            <div style={{
+              display: 'inline-block', fontSize: '12px', fontWeight: 500,
+              letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--synapse)',
+              marginBottom: '20px', animation: 'fadeUp .6s .0s ease both',
+            }}>
+              Frequency-ranked · Free to start
+            </div>
+
             <h1 style={{
               fontFamily: "'Fraunces', serif", fontWeight: 900,
-              fontSize: 'clamp(52px, 6.5vw, 84px)',
+              fontSize: 'clamp(48px, 6vw, 78px)',
               lineHeight: 1.0, letterSpacing: '-2.5px', color: 'var(--deep-mind)',
-              marginBottom: '28px', animation: 'fadeUp .7s .05s ease both',
+              marginBottom: '24px', animation: 'fadeUp .7s .05s ease both',
             }}>
-              <div>Stop collecting</div>
-              <div>streaks.</div>
-              <div>Start collecting</div>
+              <div>The most common</div>
               <div style={{display:'inline-flex',flexDirection:'column',alignItems:'flex-start'}}>
-                <span>words that matter.</span>
-                <svg viewBox="0 0 340 14" fill="none" style={{width:'100%',marginTop:'6px'}} preserveAspectRatio="none">
-                  <path d="M2 10 C80 3 200 2 338 7" stroke="#534AB7" strokeWidth="4" strokeLinecap="round"/>
+                <span>Spanish words.</span>
+                <svg viewBox="0 0 360 14" fill="none" style={{width:'100%',marginTop:'6px'}} preserveAspectRatio="none">
+                  <path d="M2 10 C90 3 220 2 358 7" stroke="#534AB7" strokeWidth="4" strokeLinecap="round"/>
                 </svg>
               </div>
+              <div style={{color:'var(--synapse)'}}>Learn them. Understand Spanish.</div>
             </h1>
 
             <p style={{
-              fontSize:'17px', fontWeight:300, color:'var(--deep-mind)',
-              lineHeight:1.65, maxWidth:'420px', marginBottom:'36px',
-              animation:'fadeUp .7s .15s ease both',
+              fontSize: '17px', fontWeight: 300, color: 'var(--deep-mind)',
+              lineHeight: 1.65, maxWidth: '440px', marginBottom: '36px',
+              animation: 'fadeUp .7s .15s ease both',
             }}>
-              Most apps teach you Spanish. Neuro teaches you the{' '}
-              <strong style={{color:'var(--deep-mind)',fontWeight:500}}>right words</strong>, in the{' '}
-              <strong style={{color:'var(--deep-mind)',fontWeight:500}}>right order</strong>, using the science of how memory actually works.
+              Other tools teach you whatever. This one starts with the words that appear most often in real spoken Spanish — and builds from there.
             </p>
 
-            <div style={{display:'flex',alignItems:'center',gap:'16px',marginBottom:'52px',animation:'fadeUp .7s .25s ease both'}}>
-              <a href="/get-started" className="btn-primary">Start free — 100 words</a>
-              <a href="#science" className="btn-ghost">See the research →</a>
+            <div style={{display:'flex',alignItems:'center',gap:'16px',marginBottom:'48px',animation:'fadeUp .7s .25s ease both',flexWrap:'wrap'}}>
+              <a href="/get-started" className="btn-primary">Start free →</a>
+              <a href="#word-list" className="btn-ghost">See the word list ↓</a>
             </div>
 
-            <div style={{display:'flex',alignItems:'center',gap:'24px',animation:'fadeUp .7s .35s ease both'}}>
-              <HeroStat num="3,000" label="words for 95% fluency"/>
+            <div style={{display:'flex',alignItems:'center',gap:'24px',animation:'fadeUp .7s .35s ease both',flexWrap:'wrap'}}>
+              <HeroStat num="Frequency" label="ranked by real usage"/>
               <div style={{width:'0.5px',height:'36px',background:'rgba(28,26,58,0.15)'}}/>
               <HeroStat num="15 min" label="per day, that's it"/>
               <div style={{width:'0.5px',height:'36px',background:'rgba(28,26,58,0.15)'}}/>
-              <HeroStat num="0" label="badges, points, nonsense"/>
+              <HeroStat num="Free" label="to start, no card"/>
             </div>
           </div>
 
@@ -128,226 +161,242 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* Wave: cream → white-matter */}
+      {/* Wave cream → white-matter */}
       <Wave from="var(--cream)" to="var(--white-matter)" height={55} shape="dome"/>
 
-      {/* ── SCIENCE ── */}
-      <section id="science" className="science-section">
+      {/* ── HOW MANY WORDS ── */}
+      <section style={{ background: 'var(--white-matter)', padding: '80px 0 60px' }}>
         <div className="section-inner">
-          <div className="s-eye">Why this works</div>
+          <div className="s-eye">Coverage milestones</div>
           <h2 className="s-title">
-            <div>Built on</div>
-            <div style={{display:'flex',alignItems:'center',gap:'10px',flexWrap:'wrap'}}>
-              real{' '}
-              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" style={{display:'inline-block',verticalAlign:'middle'}}>
-                <path d="M19 3 L23 14 L35 14 L26 21 L29 32 L19 25 L9 32 L12 21 L3 14 L15 14Z" fill="#EF9F27"/>
-              </svg>
-              {' '}science.
-            </div>
+            How many Spanish words<br/>do you actually need?
           </h2>
+          <p className="s-body" style={{ marginBottom: '48px' }}>
+            Language isn't evenly distributed. A small number of words appear again and again — master those and you unlock the majority of real Spanish.
+          </p>
+
+          <div style={{
+            background: 'var(--cream)', borderRadius: '20px',
+            padding: '32px 36px', border: '0.5px solid rgba(28,26,58,0.08)', marginBottom: '20px',
+          }}>
+            {/* Track */}
+            <div style={{ height: '12px', background: 'var(--cream-dark)', borderRadius: '99px', position: 'relative', marginBottom: '32px' }}>
+              <div style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '95%', background: 'linear-gradient(90deg, var(--mauve) 0%, var(--synapse) 55%, #2D7A5F 100%)', borderRadius: '99px' }}/>
+            </div>
+            <div className="coverage-tiles">
+              <MilestoneTile pct="Tourist" sub="~250 words" color="var(--mauve)" bg="#EDD8EA" border="rgba(176,127,168,0.2)"
+                desc="Order food, ask for directions. You're transacting, not conversing." />
+              <MilestoneTile pct="Conversational" sub="~500 words" color="var(--synapse)" bg="#E8E6F8" border="rgba(83,74,183,0.2)"
+                desc="Hold a basic chat about your day, work, family. Around 63% of everyday Spanish." />
+              <MilestoneTile pct="Fluent" sub="~1,500 words" color="var(--synapse)" bg="#C8C2F0" border="rgba(83,74,183,0.3)" featured
+                desc="Understand ~80% of spoken Spanish. Follow shows, chat naturally." />
+              <MilestoneTile pct="Near-native" sub="~3,000 words" color="var(--signal)" bg="var(--white-matter)" border="rgba(28,26,58,0.08)"
+                desc="Context-guessing works. Jokes land. 95%+ comprehension." />
+            </div>
+          </div>
+
+          <p style={{ fontSize: '13px', color: 'var(--cortex)', textAlign: 'center' }}>
+            Based on lexical frequency research. Coverage figures are estimates from spoken Spanish corpus data.
+          </p>
+        </div>
+      </section>
+
+      {/* Wave white-matter → cream */}
+      <Wave from="var(--white-matter)" to="var(--cream)" height={45} shape="shallow"/>
+
+      {/* ── WORD LIST PREVIEW ── */}
+      <section id="word-list" style={{ background: 'var(--cream)', padding: '80px 0' }}>
+        <div className="section-inner">
+          <div className="s-eye">The frequency list</div>
+          <h2 className="s-title">
+            The most common Spanish words,<br/>ranked by how often they appear
+          </h2>
+          <p className="s-body" style={{ marginBottom: '36px' }}>
+            Not alphabetical. Not by theme. Ranked by real-world usage — so every word you learn is more useful than the last. Click any word to see it in a sentence.
+          </p>
+
+          <HomepageWordPreview />
+
+          <div style={{ textAlign: 'center', marginTop: '28px' }}>
+            <Link href="/words/most-common-spanish-words" className="btn-ghost" style={{ fontSize: '14px' }}>
+              View full interactive list →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Wave cream → deep-mind */}
+      <Wave from="var(--cream)" to="var(--deep-mind)" height={90} shape="swave"/>
+
+      {/* ── WHY FREQUENCY ── */}
+      <section style={{ background: 'var(--deep-mind)', padding: '80px 0' }}>
+        <div className="section-inner">
+          <div className="s-eye" style={{ color: 'var(--mauve)' }}>Why frequency-first</div>
+          <h2 className="s-title" style={{ color: 'var(--white-matter)' }}>
+            Other lists teach you<br/><em style={{ fontStyle: 'italic', color: 'var(--mauve)' }}>giraffe</em> before <em style={{ fontStyle: 'normal', color: 'var(--synapse)' }}>but</em>.<br/>This one doesn't.
+          </h2>
+          <p className="s-body" style={{ color: 'rgba(123,127,168,.85)', marginBottom: '48px' }}>
+            Language follows a power law: a tiny number of words carry the vast majority of meaning. Apps and textbooks ignore this. We don't.
+          </p>
 
           <div className="science-grid">
-            <ScienceCard
-              num="80%" numColor="#534AB7" dotColor="#534AB7" bg="#C8C2F0"
-              emoji="🎯" rotate={-2}
-              label="1 in 5 words ruins it."
-              body="At 80% coverage you hit an unknown word every 5 seconds. Context-guessing stops working. You need 95% before Spanish feels effortless — that's 3,000 words."
+            <FreqCard
+              stat="50%" color="#B07FA8" bg="rgba(176,127,168,0.12)" border="rgba(176,127,168,0.2)"
+              title="The first words cover half of everything"
+              body="The most frequent Spanish words alone account for around 50% of all running speech. Learn them first and your comprehension jumps immediately."
             />
-            <ScienceCard
-              num="4.2×" numColor="#8A5A84" dotColor="#8A5A84" bg="#E0C8DC"
-              emoji="🧠" rotate={1.5}
-              label="The struggle IS the learning."
-              body="Retrieving a word from memory — even wrongly — builds 4.2× stronger retention than re-reading. Every Neuro card makes you try before you see."
+            <FreqCard
+              stat="Zipf's Law" color="#534AB7" bg="rgba(83,74,183,0.12)" border="rgba(83,74,183,0.2)"
+              title="Word frequency isn't random"
+              body="The most common word appears roughly twice as often as the second most common, three times as often as the third. This pattern is why frequency lists work."
             />
-            <ScienceCard
-              num="9%" numColor="#A05A38" dotColor="#A05A38" bg="#EED0BA"
-              emoji="🏅" rotate={1.8}
-              label="Badges add 9%. We skip them."
-              body="Points and XP spike short-term engagement but only lift long-term retention by 9%. We skip the performance and keep the retention."
-            />
-            <ScienceCard
-              num="8h" numColor="#A03060" dotColor="#A03060" bg="#F0C4D4"
-              emoji="🌙" rotate={-1.5}
-              label="Your pillow teaches too."
-              body="Sleep actively replays new vocabulary and cements it. Reviewing before bed — even 5 cards — outperforms an afternoon session of 30."
+            <FreqCard
+              stat="~10,000" color="#2D7A5F" bg="rgba(45,122,95,0.12)" border="rgba(45,122,95,0.2)"
+              title="Headwords unlock word families"
+              body="Learning a word in its root form gives you access to all its conjugated forms. Mastering the core list unlocks many times more real-world vocabulary."
             />
           </div>
         </div>
       </section>
 
-      {/* Wave: white-matter → deep-mind */}
-      <Wave from="var(--white-matter)" to="var(--deep-mind)" height={110} shape="swave"/>
+      {/* Wave deep-mind → cream */}
+      <Wave from="var(--deep-mind)" to="var(--cream)" height={90} shape="tilt"/>
+
+      {/* ── OUTCOMES ── */}
+      <section style={{ background: 'var(--cream)', padding: '80px 0' }}>
+        <div className="section-inner">
+          <div className="s-eye">What you'll be able to do</div>
+          <h2 className="s-title">
+            Real milestones.<br/>No fake progress.
+          </h2>
+          <p className="s-body" style={{ marginBottom: '48px' }}>
+            Most apps celebrate streaks. We show you what you can actually understand — and what's next.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+            {[
+              { stage: 'First words', icon: '👋', desc: 'Catch the gist of what\'s being said. Recognise greetings, numbers, common requests.' },
+              { stage: 'Basic conversation', icon: '💬', desc: 'Hold a chat about your day, family, work. Ask for directions. Order confidently.' },
+              { stage: 'Functional fluency', icon: '📺', desc: 'Follow a Netflix show. Understand news headlines. Chat without constantly translating.' },
+              { stage: 'Near-native', icon: '📖', desc: 'Read novels without a dictionary. Catch jokes, slang, regional dialects.' },
+            ].map(({ stage, icon, desc }) => (
+              <div key={stage} style={{
+                background: 'var(--white-matter)', borderRadius: '16px',
+                padding: '28px 24px', border: '0.5px solid rgba(28,26,58,0.08)',
+              }}>
+                <div style={{ fontSize: '36px', marginBottom: '12px' }}>{icon}</div>
+                <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '16px', color: 'var(--deep-mind)', marginBottom: '8px' }}>{stage}</div>
+                <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6 }}>{desc}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Wave cream → cream-dark */}
+      <Wave from="var(--cream)" to="var(--cream-dark)" height={45} shape="shallow"/>
 
       {/* ── HOW IT WORKS ── */}
-      <section id="how" className="how-section">
+      <section style={{ background: 'var(--cream-dark)', padding: '80px 0' }}>
         <div className="section-inner">
-          <div className="s-eye" style={{color:'var(--mauve)'}}>How it works</div>
-          <h2 className="s-title" style={{color:'var(--white-matter)',maxWidth:'100%'}}>
-            <div>Four things.</div>
-            <div style={{display:'flex',alignItems:'center',gap:'8px'}}>
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <rect x="3" y="3" width="28" height="28" rx="6" fill="rgba(176,127,168,.2)" stroke="#B07FA8" strokeWidth="1"/>
-                <path d="M9 17 L15 23 L25 11" stroke="#B07FA8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-              In the right order.
-            </div>
-          </h2>
-          <p className="s-body" style={{color:'rgba(123,127,168,.85)'}}>No grammar. No courses. No levels. Just the words you need, reviewed at exactly the right time.</p>
+          <div className="s-eye">How it works</div>
+          <h2 className="s-title">Three things. In the right order.</h2>
+          <p className="s-body" style={{ marginBottom: '48px' }}>No grammar lessons. No levels. No gamification. Just the words you need, reviewed at exactly the right time.</p>
 
           <div className="steps-grid">
             <div className="step">
               <div className="step-num">01</div>
               <div className="step-icon">📊</div>
-              <div className="step-title">Frequency-first</div>
-              <div className="step-body">Words ranked by real-world usage. The top 3,000 cover 95% of conversation. You learn what actually matters.</div>
+              <div className="step-title">Learn by frequency</div>
+              <div className="step-body">Start with the words that appear most in real Spanish. Every word you learn is more useful than the one before it.</div>
             </div>
             <div className="step">
               <div className="step-num">02</div>
-              <div className="step-icon">🔍</div>
-              <div className="step-title">Retrieve before reveal</div>
-              <div className="step-body">Spanish word first. Try to recall it before the answer appears. That friction is exactly what builds memory.</div>
+              <div className="step-icon">🔁</div>
+              <div className="step-title">Spaced repetition</div>
+              <div className="step-body">Words are reviewed at increasing intervals — just before you'd forget them. Hard words come back sooner. Solid ones later.</div>
             </div>
             <div className="step">
               <div className="step-num">03</div>
-              <div className="step-icon">📅</div>
-              <div className="step-title">Spaced repetition</div>
-              <div className="step-body">Reviews scheduled at the exact interval that maximises retention. Hard words sooner. Solid words later.</div>
+              <div className="step-icon">📈</div>
+              <div className="step-title">Track your comprehension</div>
+              <div className="step-body">Watch your coverage % climb as you learn. Not a streak counter — a real measure of what you can understand.</div>
             </div>
-            <div className="step">
-              <div className="step-num">04</div>
-              <div className="step-icon">🌙</div>
-              <div className="step-title">Sleep & protect</div>
-              <div className="step-body">5 cards before bed beats 30 in the afternoon. Sleep replays vocabulary for free while you rest.</div>
-            </div>
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '48px' }}>
+            <a href="/get-started" className="btn-primary">Start free — takes 10 seconds</a>
           </div>
         </div>
       </section>
 
-      {/* Wave: deep-mind → cream */}
-      <Wave from="var(--deep-mind)" to="var(--cream)" height={110} shape="tilt"/>
+      {/* Wave cream-dark → white-matter */}
+      <Wave from="var(--cream-dark)" to="var(--white-matter)" height={45} shape="dome"/>
 
-      {/* ── COVERAGE ── */}
-      <section className="coverage-wrap">
-        <div className="section-inner">
-          <div className="s-eye">Coverage milestones</div>
-          <h2 className="s-title">
-            <div>Honest targets.</div>
-            <div style={{display:'flex',alignItems:'center',gap:'8px',flexWrap:'wrap'}}>
-              No{' '}
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <rect x="2" y="2" width="30" height="30" rx="7" fill="#FBEAF0" stroke="#D4537E" strokeWidth="1"/>
-                <path d="M9 9 L25 25 M25 9 L9 25" stroke="#D4537E" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-              {' '}fake progress.
-            </div>
-          </h2>
-          <p className="s-body" style={{marginBottom:'48px'}}>Most apps celebrate 80% as fluency. Here's what each number actually feels like.</p>
+      {/* ── VS. OTHER APPROACHES ── */}
+      <section style={{ background: 'var(--white-matter)', padding: '80px 0' }}>
+        <div className="section-inner" style={{ maxWidth: '780px' }}>
+          <div className="s-eye">How we're different</div>
+          <h2 className="s-title">Frequency-first vs. everything else</h2>
 
-          {/* Coverage bar — full width, prominent */}
-          <div style={{background:'var(--white-matter)',borderRadius:'20px',padding:'32px 36px',border:'0.5px solid rgba(28,26,58,0.08)',marginBottom:'20px'}}>
-            <div style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',marginBottom:'16px'}}>
-              <span style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'22px',color:'var(--deep-mind)',letterSpacing:'-0.5px'}}>How many words do you actually need?</span>
-            </div>
-            {/* Track */}
-            <div style={{height:'14px',background:'var(--cream-dark)',borderRadius:'99px',position:'relative',marginBottom:'20px'}}>
-              <div style={{position:'absolute',top:0,left:0,height:'100%',width:'95%',background:'linear-gradient(90deg, var(--mauve) 0%, var(--synapse) 60%, #2D7A5F 100%)',borderRadius:'99px'}}/>
-              {/* Marker 80% */}
-              <div style={{position:'absolute',top:'-8px',left:'80%',transform:'translateX(-50%)',display:'flex',flexDirection:'column',alignItems:'center',gap:'3px'}}>
-                <div style={{width:'2px',height:'30px',background:'var(--deep-mind)',borderRadius:'1px'}}/>
-              </div>
-              {/* Marker 95% */}
-              <div style={{position:'absolute',top:'-8px',left:'95%',transform:'translateX(-50%)',display:'flex',flexDirection:'column',alignItems:'center'}}>
-                <div style={{width:'2px',height:'30px',background:'var(--deep-mind)',borderRadius:'1px'}}/>
-              </div>
-            </div>
-            {/* Labels under bar */}
-            <div className="coverage-tiles">
-              <div style={{padding:'16px 18px',background:'#EDD8EA',borderRadius:'12px',borderLeft:'3px solid var(--mauve)'}}>
-                <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'28px',color:'var(--mauve)',letterSpacing:'-0.5px',lineHeight:1}}>80%</div>
-                <div style={{fontSize:'12px',fontWeight:500,color:'var(--deep-mind)',margin:'4px 0 2px'}}>~1,000 words · A2</div>
-                <div style={{fontSize:'12px',fontWeight:300,color:'rgba(28,26,58,0.6)',lineHeight:1.5}}>1 word in 5 is still unknown. Conversations tire you out.</div>
-                <div style={{fontSize:'11px',color:'var(--dendrite)',marginTop:'6px',fontWeight:500}}>⚠ Duolingo stops here.</div>
-              </div>
-              <div style={{padding:'16px 18px',background:'#C8C2F0',borderRadius:'12px',borderLeft:'3px solid var(--synapse)',boxShadow:'0 0 0 2px var(--synapse)'}}>
-                <div style={{display:'flex',alignItems:'center',gap:'8px',marginBottom:'2px'}}>
-                  <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'28px',color:'var(--synapse)',letterSpacing:'-0.5px',lineHeight:1}}>95%</div>
-                  <span style={{background:'var(--synapse)',color:'var(--white-matter)',fontSize:'10px',fontWeight:500,padding:'2px 8px',borderRadius:'99px'}}>the goal</span>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', borderRadius: '16px', overflow: 'hidden', border: '0.5px solid rgba(28,26,58,0.12)', marginTop: '40px' }}>
+            <div style={{ background: 'var(--cream-dark)', padding: '24px', borderRight: '0.5px solid rgba(28,26,58,0.1)' }}>
+              <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--cortex)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '.07em' }}>Random vocab apps</div>
+              {['Alphabetical or thematic order','You might learn giraffe before but','Gamification over comprehension','No sense of real-world coverage','Slow path to understanding real Spanish'].map(t => (
+                <div key={t} style={{ display: 'flex', gap: '10px', marginBottom: '12px', fontSize: '14px', color: 'var(--cortex)', fontWeight: 300 }}>
+                  <span style={{ color: 'var(--dendrite)', flexShrink: 0 }}>✕</span>{t}
                 </div>
-                <div style={{fontSize:'12px',fontWeight:500,color:'var(--deep-mind)',margin:'4px 0 2px'}}>~3,000 words · B2</div>
-                <div style={{fontSize:'12px',fontWeight:300,color:'rgba(28,26,58,0.65)',lineHeight:1.5}}>Context-guessing works. Conversations feel effortless.</div>
-              </div>
-              <div style={{padding:'16px 18px',background:'var(--white-matter)',borderRadius:'12px',borderLeft:'3px solid var(--signal)',border:'0.5px solid rgba(28,26,58,0.08)'}}>
-                <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'28px',color:'var(--signal)',letterSpacing:'-0.5px',lineHeight:1}}>98%</div>
-                <div style={{fontSize:'12px',fontWeight:500,color:'var(--deep-mind)',margin:'4px 0 2px'}}>~5,000 words · C1</div>
-                <div style={{fontSize:'12px',fontWeight:300,color:'rgba(28,26,58,0.6)',lineHeight:1.5}}>Near-native. You catch jokes, dialects, fast speech.</div>
-              </div>
+              ))}
+            </div>
+            <div style={{ background: 'var(--fog)', padding: '24px' }}>
+              <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--synapse)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '.07em' }}>Frequency-first</div>
+              {['Ranked by real-world usage','Every word more useful than the last','Comprehension % always visible','Science-backed spaced repetition','Fastest path to understanding real Spanish'].map(t => (
+                <div key={t} style={{ display: 'flex', gap: '10px', marginBottom: '12px', fontSize: '14px', color: 'var(--deep-mind)', fontWeight: 300 }}>
+                  <span style={{ color: 'var(--signal)', flexShrink: 0 }}>✓</span>{t}
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Wave: cream → cream-dark */}
-      <Wave from="var(--cream)" to="var(--cream-dark)" height={45} shape="shallow"/>
+      {/* Wave white-matter → cream */}
+      <Wave from="var(--white-matter)" to="var(--cream)" height={45} shape="shallow"/>
 
-      {/* ── PHILOSOPHY + PRICING ── */}
-      <section id="pricing" className="pricing-section">
-        <div className="section-inner">
-          <div className="s-eye">The philosophy</div>
-          <h2 className="s-title">
-            <div>Tired of</div>
-            <div style={{display:'flex',alignItems:'center',gap:'8px',flexWrap:'wrap'}}>
-              fake{' '}
-              <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-                <path d="M8 18 Q18 5 28 18 Q18 31 8 18Z" fill="#EF9F27" opacity="0.85"/>
-              </svg>
-              {' '}progress?
-            </div>
-          </h2>
+      {/* ── FAQ ── */}
+      <section style={{ background: 'var(--cream)', padding: '80px 0' }}>
+        <div className="section-inner" style={{ maxWidth: '720px' }}>
+          <div className="s-eye">Common questions</div>
+          <h2 className="s-title" style={{ marginBottom: '40px' }}>FAQ</h2>
 
-          <div className="anti-grid">
-            <div className="anti-card anti-no">
-              <div className="anti-label" style={{color:'rgba(28,26,58,0.6)'}}>
-                <div className="anti-dot" style={{background:'rgba(123,127,168,.25)'}}/>
-                What we don't do
-              </div>
-              <ul className="anti-list">
-                {['Points, badges, XP, leaderboards','Celebrations when you finish','Streak copy that praises you','Grammar lessons or courses','Social features','Notifications designed to addict','Fake levels that feel like progress'].map(t => (
-                  <li key={t}><span className="mark">✕</span>{t}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="anti-card anti-yes">
-              <div className="anti-label" style={{color:'var(--mauve)'}}>
-                <div className="anti-dot" style={{background:'var(--mauve)'}}/>
-                What we do instead
-              </div>
-              <ul className="anti-list">
-                {['3,000 frequency-ordered words, nothing else','Spaced repetition that actually works','Honest coverage %, always visible','Absurd example sentences (they stick)','Bedtime mode — review before sleep','Loss aversion framing, not praise','One-time annual pricing, no nonsense'].map(t => (
-                  <li key={t}><span className="mark">✓</span>{t}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="pricing-grid">
-            <div className="price-card">
-              <div className="p-tier">Free</div>
-              <div className="p-amt">€0</div>
-              <div className="p-period">forever</div>
-              <div className="p-desc">First 500 words. A1–A2 core. Enough to see if this is for you.</div>
-            </div>
-            <div className="price-card featured">
-              <div className="price-badge">Most sensible</div>
-              <div className="p-tier">Annual</div>
-              <div className="p-amt">€29</div>
-              <div className="p-period">per year</div>
-              <div className="p-desc">Full 5,000-word deck. Less than one Spanish class. More impact than ten.</div>
-            </div>
-          </div>
+          {[
+            {
+              q: 'What are the most common Spanish words?',
+              a: 'The most common Spanish words are high-frequency verbs and function words: ser, estar, ir, tener, hacer, poder, decir, querer. These appear so often because language is built on a small repeated core — the top words alone cover about half of everything you\'ll hear.',
+            },
+            {
+              q: 'How many Spanish words do I need to be fluent?',
+              a: 'Around 1,500 high-frequency words gets you to functional fluency — roughly 80% of everyday spoken Spanish. At 3,000 words you reach 95% coverage, where conversations feel effortless and context-guessing works reliably.',
+            },
+            {
+              q: 'How many Spanish words to be conversational?',
+              a: 'About 500 words is enough to hold a basic conversation about your day, work, and family. That gives you around 63% lexical coverage of everyday Spanish.',
+            },
+            {
+              q: 'How long does it take to learn the most common Spanish words?',
+              a: 'With 15–20 minutes of focused daily practice, most adults reach the functional fluency threshold in 4–8 months. The first 100 words — which cover roughly 50% of all Spanish you\'ll hear — usually take 1–2 weeks.',
+            },
+            {
+              q: 'Why learn by frequency instead of by topic?',
+              a: 'Topic-based lists (food, travel, etc.) teach you words by convenience, not usefulness. Frequency lists ensure every word you learn is as high-value as possible. You spend zero time on rare words until you\'ve covered the ones that actually appear in real Spanish.',
+            },
+          ].map(({ q, a }) => (
+            <FaqItem key={q} q={q} a={a} />
+          ))}
         </div>
       </section>
 
-      {/* ── CTA ── */}
+      {/* ── FINAL CTA ── */}
       <section className="cta-section" id="cta">
         <svg style={{position:'absolute',top:'44px',left:'80px',pointerEvents:'none'}} width="68" height="68" viewBox="0 0 68 68" fill="none">
           <path d="M10 58 Q18 16 34 34 Q50 52 58 10" stroke="#B07FA8" strokeWidth="1.5" strokeLinecap="round"/>
@@ -355,42 +404,23 @@ export default function Landing() {
         <svg style={{position:'absolute',top:'56px',right:'96px',pointerEvents:'none'}} width="54" height="54" viewBox="0 0 54 54" fill="none">
           <circle cx="27" cy="27" r="25" stroke="#534AB7" strokeWidth="1" strokeDasharray="4 3"/>
         </svg>
-        <svg style={{position:'absolute',bottom:'76px',left:'120px',pointerEvents:'none'}} width="62" height="34" viewBox="0 0 62 34" fill="none">
-          <path d="M4 17 Q17 4 31 17 Q45 30 58 17" stroke="#2D7A5F" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
         <svg style={{position:'absolute',bottom:'60px',right:'80px',pointerEvents:'none'}} width="32" height="32" viewBox="0 0 32 32" fill="none">
           <path d="M16 2 L19 11 L29 11 L21 17 L24 26 L16 20 L8 26 L11 17 L3 11 L13 11Z" fill="#EF9F27" opacity="0.7"/>
         </svg>
 
         <div className="cta-title">
-          <div style={{display:'flex',justifyContent:'center'}}>Stop collecting</div>
-          <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:'10px'}}>
-            <svg width="42" height="42" viewBox="0 0 42 42" fill="none">
-              <path d="M21 3 L25 15 L38 15 L28 23 L32 35 L21 27 L10 35 L14 23 L4 15 L17 15Z" fill="none" stroke="#EF9F27" strokeWidth="1.5" strokeLinejoin="round"/>
-            </svg>
-            streaks.
-          </div>
-          <div style={{display:'flex',justifyContent:'center'}}>Start collecting</div>
-          <div style={{display:'flex',justifyContent:'center',alignItems:'center',gap:'10px'}}>
-            words that{' '}
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <circle cx="20" cy="20" r="18" fill="#534AB7" opacity="0.1"/>
-              <path d="M10 20 Q20 9 30 20" stroke="#534AB7" strokeWidth="2" strokeLinecap="round"/>
-              <circle cx="10" cy="20" r="2.5" fill="#534AB7"/>
-              <circle cx="30" cy="20" r="2.5" fill="#534AB7"/>
-              <path d="M14 28 Q20 35 26 28" stroke="#534AB7" strokeWidth="2" strokeLinecap="round"/>
-            </svg>
-            <span style={{color:'var(--synapse)'}}>matter.</span>
-          </div>
+          <div style={{display:'flex',justifyContent:'center'}}>Start with the</div>
+          <div style={{display:'flex',justifyContent:'center',color:'var(--synapse)'}}>most common words.</div>
+          <div style={{display:'flex',justifyContent:'center'}}>Learn Spanish that sticks.</div>
         </div>
 
-        <p className="cta-sub">First 100 words free. No card details. Takes 10 seconds.</p>
+        <p className="cta-sub">Free to start. No card required. Takes 10 seconds.</p>
         <div className="cta-actions">
           <a href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>
-            Start free — sign in with Google
+            Sign up free — start learning now
           </a>
         </div>
-        <div className="cta-note">100 words free · Full 1,500 words for €5 one-time · No subscription</div>
+        <div className="cta-note">Free account · Full list from €5 one-time · No subscription</div>
       </section>
     </div>
   )
@@ -400,157 +430,115 @@ export default function Landing() {
 
 function HeroStat({ num, label }) {
   return (
-    <div style={{display:'flex',flexDirection:'column'}}>
-      <span style={{fontFamily:"'Fraunces', serif",fontWeight:700,fontSize:'30px',color:'var(--deep-mind)',letterSpacing:'-0.5px',lineHeight:1}}>{num}</span>
-      <span style={{fontSize:'12px',color:'var(--cortex)',marginTop:'3px'}}>{label}</span>
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <span style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '22px', color: 'var(--deep-mind)', letterSpacing: '-0.5px', lineHeight: 1 }}>{num}</span>
+      <span style={{ fontSize: '12px', color: 'var(--cortex)', marginTop: '3px' }}>{label}</span>
     </div>
   )
 }
 
 function WordPoster() {
   return (
-    <div style={{position:'relative',height:'460px'}}>
-
-      {/* Main word card */}
+    <div style={{ position: 'relative', height: '440px' }}>
       <div style={{
-        position:'absolute',top:'30px',left:'20px',right:'20px',
-        background:'rgba(28,26,58,0.82)',borderRadius:'20px',
-        padding:'32px 36px 28px',
-        backdropFilter:'blur(12px)', WebkitBackdropFilter:'blur(12px)',
-        boxShadow:'0 24px 64px rgba(28,26,58,0.22), 0 4px 16px rgba(28,26,58,0.1)',
-        zIndex:1, overflow:'visible',
+        position: 'absolute', top: '30px', left: '20px', right: '20px',
+        background: 'rgba(28,26,58,0.85)', borderRadius: '20px',
+        padding: '32px 36px 28px',
+        backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)',
+        boxShadow: '0 24px 64px rgba(28,26,58,0.22)',
+        zIndex: 1,
       }}>
         <Image
           src="/logo-element.png"
           alt=""
-          width={360}
-          height={360}
+          width={320}
+          height={320}
           priority
-          sizes="360px"
-          style={{
-            position:'absolute',
-            top:'-240px',
-            right:'-120px',
-            opacity:0.28,
-            pointerEvents:'none',
-            zIndex:0,
-          }}
+          sizes="320px"
+          style={{ position: 'absolute', top: '-200px', right: '-100px', opacity: 0.22, pointerEvents: 'none', zIndex: 0 }}
         />
-        <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:'12px'}}>
-          <span style={{fontSize:'11px',fontWeight:500,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--cortex)'}}>verb · high frequency</span>
-          <span style={{fontSize:'11px',color:'rgba(123,127,168,0.45)'}}>#847</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+          <span style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.07em', textTransform: 'uppercase', color: 'var(--cortex)' }}>verb · most common</span>
+          <span style={{ fontSize: '11px', color: 'rgba(123,127,168,0.45)' }}>#1</span>
         </div>
-        <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'64px',color:'var(--white-matter)',letterSpacing:'-3px',lineHeight:1,marginBottom:'8px'}}>
-          recordar
+        <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '60px', color: 'var(--white-matter)', letterSpacing: '-3px', lineHeight: 1, marginBottom: '8px' }}>
+          ser
         </div>
-        <div style={{fontSize:'14px',color:'var(--cortex)',fontWeight:300,marginBottom:'20px'}}>re · cor · dár</div>
-        <div style={{background:'rgba(255,255,255,0.07)',borderRadius:'12px',padding:'14px 16px'}}>
-          <div style={{fontFamily:"'Fraunces', serif",fontWeight:500,fontSize:'18px',color:'var(--mauve)',marginBottom:'6px',letterSpacing:'-0.3px'}}>to remember / to remind</div>
-          <div style={{fontSize:'13px',color:'var(--cortex)',fontWeight:300,lineHeight:1.55,borderLeft:'2px solid rgba(255,255,255,0.1)',paddingLeft:'10px'}}>
-            Mi abuela recuerda todos los chistes malos — y los cuenta igual.
+        <div style={{ fontSize: '14px', color: 'var(--cortex)', fontWeight: 300, marginBottom: '20px' }}>sér</div>
+        <div style={{ background: 'rgba(255,255,255,0.07)', borderRadius: '12px', padding: '14px 16px' }}>
+          <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 500, fontSize: '18px', color: 'var(--mauve)', marginBottom: '6px', letterSpacing: '-0.3px' }}>to be (permanent)</div>
+          <div style={{ fontSize: '13px', color: 'var(--cortex)', fontWeight: 300, lineHeight: 1.55, borderLeft: '2px solid rgba(255,255,255,0.1)', paddingLeft: '10px' }}>
+            Mi hermano es médico. — My brother is a doctor.
           </div>
         </div>
       </div>
 
-      {/* Floating accent cards */}
       <div style={{
-        position:'absolute',bottom:'60px',right:'-10px',
-        background:'var(--white-matter)',borderRadius:'12px',
-        padding:'14px 18px',border:'0.5px solid rgba(28,26,58,0.09)',
-        boxShadow:'0 8px 24px rgba(28,26,58,0.1)',
-        zIndex:2,minWidth:'140px',
+        position: 'absolute', bottom: '55px', right: '-10px',
+        background: 'var(--white-matter)', borderRadius: '12px',
+        padding: '14px 18px', border: '0.5px solid rgba(28,26,58,0.09)',
+        boxShadow: '0 8px 24px rgba(28,26,58,0.1)', zIndex: 2, minWidth: '140px',
       }}>
-        <div style={{fontSize:'11px',fontWeight:500,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--cortex)',marginBottom:'6px'}}>Coverage</div>
-        <div style={{fontFamily:"'Fraunces', serif",fontWeight:700,fontSize:'28px',color:'var(--synapse)',letterSpacing:'-0.5px',lineHeight:1}}>74%</div>
-        <div style={{fontSize:'11px',color:'var(--cortex)',marginTop:'3px'}}>of spoken Spanish</div>
-        <div style={{height:'4px',background:'var(--cream-dark)',borderRadius:'99px',marginTop:'8px'}}>
-          <div style={{height:'100%',width:'74%',background:'var(--synapse)',borderRadius:'99px'}}/>
+        <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.07em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '6px' }}>Your coverage</div>
+        <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '28px', color: 'var(--synapse)', letterSpacing: '-0.5px', lineHeight: 1 }}>74%</div>
+        <div style={{ fontSize: '11px', color: 'var(--cortex)', marginTop: '3px' }}>of spoken Spanish</div>
+        <div style={{ height: '4px', background: 'var(--cream-dark)', borderRadius: '99px', marginTop: '8px' }}>
+          <div style={{ height: '100%', width: '74%', background: 'var(--synapse)', borderRadius: '99px' }}/>
         </div>
-      </div>
-
-      <div style={{
-        position:'absolute',bottom:'0px',left:'0px',
-        background:'var(--white-matter)',borderRadius:'12px',
-        padding:'14px 18px',border:'0.5px solid rgba(28,26,58,0.09)',
-        boxShadow:'0 8px 24px rgba(28,26,58,0.1)',
-        zIndex:2,
-      }}>
-        <div style={{fontSize:'11px',fontWeight:500,letterSpacing:'.07em',textTransform:'uppercase',color:'var(--cortex)',marginBottom:'6px'}}>Streak</div>
-        <div style={{fontFamily:"'Fraunces', serif",fontWeight:700,fontSize:'28px',color:'var(--dendrite)',letterSpacing:'-0.5px',lineHeight:1}}>12</div>
-        <div style={{fontSize:'11px',color:'var(--cortex)',marginTop:'3px'}}>Don't break it.</div>
-        <div style={{display:'flex',gap:'3px',marginTop:'8px'}}>
-          {['✓','✓','✓','✓','✓'].map((c,i)=>(
-            <div key={i} style={{width:'20px',height:'20px',borderRadius:'4px',background:'var(--signal-light)',color:'var(--signal)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'9px',fontWeight:500}}>{c}</div>
-          ))}
-          <div style={{width:'20px',height:'20px',borderRadius:'4px',background:'var(--synapse)',color:'var(--white-matter)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'9px',fontWeight:500}}>T</div>
-          <div style={{width:'20px',height:'20px',borderRadius:'4px',background:'var(--cream-dark)',color:'var(--cortex)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'9px',fontWeight:500}}>S</div>
-        </div>
-      </div>
-
-      <svg style={{position:'absolute',top:'0px',left:'-30px',zIndex:0,pointerEvents:'none'}} width="40" height="60" viewBox="0 0 40 60" fill="none">
-        <path d="M20 4 Q36 16 20 28 Q4 40 20 56" stroke="#B07FA8" strokeWidth="1.5" strokeLinecap="round"/>
-      </svg>
-      <svg style={{position:'absolute',top:'-10px',left:'30%',zIndex:0,pointerEvents:'none'}} width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2 L14 8 L21 8 L15 12 L18 19 L12 15 L6 19 L9 12 L3 8 L10 8Z" fill="#EF9F27"/>
-      </svg>
-    </div>
-  )
-}
-
-function ScienceCard({ num, numColor, dotColor, bg, emoji, label, body, rotate = 0 }) {
-  return (
-    <div className="science-card" style={{
-      background: bg, borderRadius: '24px',
-      padding: '36px 28px 32px', position: 'relative', overflow: 'hidden',
-      transform: `rotate(${rotate}deg)`,
-      textAlign: 'center',
-      boxShadow: '0 8px 28px rgba(28,26,58,0.10)',
-    }}>
-      {/* Dashed inner frame */}
-      <div style={{
-        position:'absolute', inset:'10px', borderRadius:'18px',
-        border:`2px dashed ${dotColor || numColor}`,
-        opacity: 0.35, pointerEvents:'none',
-      }}/>
-      {/* Corner dots */}
-      {[['top','left'],['top','right'],['bottom','left'],['bottom','right']].map(([v,h]) => (
-        <div key={v+h} style={{
-          position:'absolute', [v]:'18px', [h]:'18px',
-          width:'7px', height:'7px', borderRadius:'50%',
-          background: dotColor || numColor, opacity:0.55,
-        }}/>
-      ))}
-
-      <div style={{position:'relative', zIndex:1}}>
-        <div style={{fontSize:'44px',lineHeight:1,marginBottom:'14px'}}>{emoji}</div>
-        <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'60px',letterSpacing:'-2.5px',lineHeight:1,color:numColor,marginBottom:'10px'}}>{num}</div>
-        <div style={{fontSize:'15px',fontWeight:600,color:'var(--deep-mind)',marginBottom:'10px',letterSpacing:'-0.2px'}}>{label}</div>
-        <div style={{fontSize:'13px',fontWeight:300,color:'rgba(28,26,58,0.68)',lineHeight:1.6}}>{body}</div>
       </div>
     </div>
   )
 }
 
-function MilestoneTile({ pct, words, level, desc, color, bg, border, note, featured }) {
+function MilestoneTile({ pct, sub, color, bg, border, desc, featured }) {
   return (
     <div style={{
-      background: bg, borderRadius: '20px', padding: '28px 24px',
+      background: bg, borderRadius: '16px', padding: '20px',
       border: `0.5px solid ${border}`, position: 'relative',
-      ...(featured ? {boxShadow:'0 0 0 2.5px var(--synapse)'} : {}),
+      ...(featured ? { boxShadow: '0 0 0 2px var(--synapse)' } : {}),
     }}>
       {featured && (
         <div style={{
-          position:'absolute',top:'-11px',left:'50%',transform:'translateX(-50%)',
-          background:'var(--synapse)',color:'var(--white-matter)',
-          fontSize:'10px',fontWeight:500,padding:'3px 14px',borderRadius:'99px',whiteSpace:'nowrap',
-          fontFamily:"'Cabinet Grotesk', sans-serif",
+          position: 'absolute', top: '-11px', left: '50%', transform: 'translateX(-50%)',
+          background: 'var(--synapse)', color: 'var(--white-matter)',
+          fontSize: '10px', fontWeight: 500, padding: '3px 14px', borderRadius: '99px', whiteSpace: 'nowrap',
         }}>The target</div>
       )}
-      <div style={{fontFamily:"'Fraunces', serif",fontWeight:900,fontSize:'52px',letterSpacing:'-2px',lineHeight:1,color:color,marginBottom:'8px'}}>{pct}</div>
-      <div style={{fontSize:'13px',fontWeight:500,color:'var(--deep-mind)',marginBottom:'2px'}}>{words}</div>
-      <div style={{fontSize:'11px',fontWeight:500,letterSpacing:'.05em',textTransform:'uppercase',color:color,marginBottom:'10px'}}>{level}</div>
-      <div style={{fontSize:'13px',fontWeight:300,color:'rgba(28,26,58,0.6)',lineHeight:1.55}}>{desc}</div>
-      {note && <div style={{fontSize:'11px',color:'var(--dendrite)',marginTop:'10px',fontWeight:500}}>{note}</div>}
+      <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '18px', color, marginBottom: '4px' }}>{pct}</div>
+      <div style={{ fontSize: '12px', fontWeight: 500, color: 'var(--deep-mind)', marginBottom: '8px' }}>{sub}</div>
+      <div style={{ fontSize: '13px', fontWeight: 300, color: 'rgba(28,26,58,0.65)', lineHeight: 1.55 }}>{desc}</div>
     </div>
+  )
+}
+
+function FreqCard({ stat, color, bg, border, title, body }) {
+  return (
+    <div style={{
+      background: bg, borderRadius: '20px', padding: '32px 28px',
+      border: `1px solid ${border}`,
+    }}>
+      <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '36px', color, letterSpacing: '-1px', marginBottom: '12px', lineHeight: 1 }}>{stat}</div>
+      <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>{title}</div>
+      <div style={{ fontSize: '13px', fontWeight: 300, color: 'rgba(123,127,168,0.85)', lineHeight: 1.6 }}>{body}</div>
+    </div>
+  )
+}
+
+function FaqItem({ q, a }) {
+  return (
+    <details style={{ borderBottom: '0.5px solid rgba(28,26,58,0.1)', paddingBottom: '0' }}>
+      <summary style={{
+        padding: '20px 0', cursor: 'pointer', listStyle: 'none',
+        fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '17px',
+        color: 'var(--deep-mind)', letterSpacing: '-0.3px',
+        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+      }}>
+        {q}
+        <span style={{ fontSize: '20px', color: 'var(--cortex)', flexShrink: 0, marginLeft: '16px' }}>+</span>
+      </summary>
+      <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, paddingBottom: '20px', marginTop: '4px' }}>
+        {a}
+      </p>
+    </details>
   )
 }
