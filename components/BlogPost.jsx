@@ -102,7 +102,7 @@ export default function BlogPost({
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
                 <Link href="/level-test" className="btn-primary">Take the level test</Link>
-                <Link href="/#cta" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Join the waitlist →</Link>
+                <Link href="/get-started" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Sign up free →</Link>
               </div>
             </div>
           </article>

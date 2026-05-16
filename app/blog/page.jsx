@@ -179,11 +179,11 @@ export default function BlogHub() {
               color: 'var(--white-matter)', marginBottom: '10px',
             }}>Start applying it.</h2>
             <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, maxWidth: '400px' }}>
-              Join the waitlist and get early access — plus the weekly "Word Bucket": 10 essential words and one deep dive.
+              Create a free account and start learning the exact words that matter — ranked by real-world frequency.
             </p>
           </div>
-          <Link href="/#cta" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
-            Join the waitlist
+          <Link href="/get-started" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
+            Sign up free
           </Link>
         </div>
 

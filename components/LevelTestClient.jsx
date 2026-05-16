@@ -324,10 +324,10 @@ export default function LevelTestClient() {
               marginBottom: '8px',
             }}>Ready to close the gap?</div>
             <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, marginBottom: '20px' }}>
-              Join the waitlist for early access and a personalised vocabulary path.
+              Create a free account and start learning the exact words you're missing.
             </p>
-            <Link href="/#cta" className="btn-primary" style={{ display: 'block', textAlign: 'center' }}>
-              Join the waitlist
+            <Link href="/get-started" className="btn-primary" style={{ display: 'block', textAlign: 'center' }}>
+              Sign up free
             </Link>
           </div>
         </div>

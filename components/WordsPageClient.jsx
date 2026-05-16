@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import WaitlistForm from '@/components/WaitlistForm'
 import { WORDS, MILESTONES, MILESTONE_TEXT, TYPE_LABEL } from '@/data/words'
 
 const FILTERS = [
@@ -135,7 +134,7 @@ export default function WordsPageClient() {
             <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6, marginBottom: '16px' }}>
               No card required. No gamification.
             </p>
-            <WaitlistForm label="Start free →" />
+            <Link href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Sign up free →</Link>
           </div>
         </div>
 
@@ -398,7 +397,7 @@ export default function WordsPageClient() {
               </Link>
             </div>
           </div>
-          <WaitlistForm label="Get early access — free" />
+          <Link href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Create free account</Link>
         </div>
 
         {/* FAQ */}
