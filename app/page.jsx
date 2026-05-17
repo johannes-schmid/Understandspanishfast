@@ -93,17 +93,17 @@ export default function Landing() {
 
       {/* ── HERO ── */}
       <section className="hero-section">
-        {/* Decorative SVGs */}
-        <svg style={{position:'absolute',top:'120px',left:'52px',pointerEvents:'none'}} width="72" height="40" viewBox="0 0 72 40" fill="none">
+        {/* Decorative SVGs — hidden on mobile via .hero-deco-svg */}
+        <svg className="hero-deco-svg" style={{position:'absolute',top:'120px',left:'52px',pointerEvents:'none'}} width="72" height="40" viewBox="0 0 72 40" fill="none">
           <path d="M4 32 Q18 4 36 20 Q54 36 68 8" stroke="#B07FA8" strokeWidth="1.5" strokeLinecap="round"/>
         </svg>
-        <svg style={{position:'absolute',top:'200px',left:'180px',pointerEvents:'none'}} width="44" height="44" viewBox="0 0 44 44" fill="none">
+        <svg className="hero-deco-svg" style={{position:'absolute',top:'200px',left:'180px',pointerEvents:'none'}} width="44" height="44" viewBox="0 0 44 44" fill="none">
           <circle cx="22" cy="22" r="20" stroke="#534AB7" strokeWidth="1" strokeDasharray="4 3"/>
         </svg>
-        <svg style={{position:'absolute',top:'155px',right:'52px',pointerEvents:'none'}} width="52" height="52" viewBox="0 0 52 52" fill="none">
+        <svg className="hero-deco-svg" style={{position:'absolute',top:'155px',right:'52px',pointerEvents:'none'}} width="52" height="52" viewBox="0 0 52 52" fill="none">
           <circle cx="26" cy="26" r="24" stroke="#B07FA8" strokeWidth="1" strokeDasharray="3 4"/>
         </svg>
-        <svg style={{position:'absolute',top:'420px',right:'48px',pointerEvents:'none'}} width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <svg className="hero-deco-svg" style={{position:'absolute',top:'420px',right:'48px',pointerEvents:'none'}} width="20" height="20" viewBox="0 0 20 20" fill="none">
           <path d="M10 1 L12 7 L19 7 L13 11 L16 18 L10 14 L4 18 L7 11 L1 7 L8 7Z" fill="#EF9F27"/>
         </svg>
 
@@ -165,7 +165,7 @@ export default function Landing() {
       <Wave from="var(--cream)" to="var(--white-matter)" height={55} shape="dome"/>
 
       {/* ── HOW MANY WORDS ── */}
-      <section style={{ background: 'var(--white-matter)', padding: '80px 0 60px' }}>
+      <section className="page-section" style={{ background: 'var(--white-matter)', padding: '80px 0 60px' }}>
         <div className="section-inner">
           <div className="s-eye">Coverage milestones</div>
           <h2 className="s-title">
@@ -175,7 +175,7 @@ export default function Landing() {
             Language isn't evenly distributed. A small number of words appear again and again — master those and you unlock the majority of real Spanish.
           </p>
 
-          <div style={{
+          <div className="coverage-box" style={{
             background: 'var(--cream)', borderRadius: '20px',
             padding: '32px 36px', border: '0.5px solid rgba(28,26,58,0.08)', marginBottom: '20px',
           }}>
@@ -205,7 +205,7 @@ export default function Landing() {
       <Wave from="var(--white-matter)" to="var(--cream)" height={45} shape="shallow"/>
 
       {/* ── WORD LIST PREVIEW ── */}
-      <section id="word-list" style={{ background: 'var(--cream)', padding: '80px 0' }}>
+      <section id="word-list" className="page-section" style={{ background: 'var(--cream)', padding: '80px 0' }}>
         <div className="section-inner">
           <div className="s-eye">The frequency list</div>
           <h2 className="s-title">
@@ -229,7 +229,7 @@ export default function Landing() {
       <Wave from="var(--cream)" to="var(--deep-mind)" height={90} shape="swave"/>
 
       {/* ── WHY FREQUENCY ── */}
-      <section style={{ background: 'var(--deep-mind)', padding: '80px 0' }}>
+      <section className="page-section" style={{ background: 'var(--deep-mind)', padding: '80px 0' }}>
         <div className="section-inner">
           <div className="s-eye" style={{ color: 'var(--mauve)' }}>Why frequency-first</div>
           <h2 className="s-title" style={{ color: 'var(--white-matter)' }}>
@@ -263,7 +263,7 @@ export default function Landing() {
       <Wave from="var(--deep-mind)" to="var(--cream)" height={90} shape="tilt"/>
 
       {/* ── OUTCOMES ── */}
-      <section style={{ background: 'var(--cream)', padding: '80px 0' }}>
+      <section className="page-section" style={{ background: 'var(--cream)', padding: '80px 0' }}>
         <div className="section-inner">
           <div className="s-eye">What you'll be able to do</div>
           <h2 className="s-title">
@@ -297,7 +297,7 @@ export default function Landing() {
       <Wave from="var(--cream)" to="var(--cream-dark)" height={45} shape="shallow"/>
 
       {/* ── HOW IT WORKS ── */}
-      <section style={{ background: 'var(--cream-dark)', padding: '80px 0' }}>
+      <section className="page-section" style={{ background: 'var(--cream-dark)', padding: '80px 0' }}>
         <div className="section-inner">
           <div className="s-eye">How it works</div>
           <h2 className="s-title">Three things. In the right order.</h2>
@@ -334,12 +334,12 @@ export default function Landing() {
       <Wave from="var(--cream-dark)" to="var(--white-matter)" height={45} shape="dome"/>
 
       {/* ── VS. OTHER APPROACHES ── */}
-      <section style={{ background: 'var(--white-matter)', padding: '80px 0' }}>
+      <section className="page-section" style={{ background: 'var(--white-matter)', padding: '80px 0' }}>
         <div className="section-inner" style={{ maxWidth: '780px' }}>
           <div className="s-eye">How we're different</div>
           <h2 className="s-title">Frequency-first vs. everything else</h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', borderRadius: '16px', overflow: 'hidden', border: '0.5px solid rgba(28,26,58,0.12)', marginTop: '40px' }}>
+          <div className="compare-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0', borderRadius: '16px', overflow: 'hidden', border: '0.5px solid rgba(28,26,58,0.12)', marginTop: '40px' }}>
             <div style={{ background: 'var(--cream-dark)', padding: '24px', borderRight: '0.5px solid rgba(28,26,58,0.1)' }}>
               <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--cortex)', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '.07em' }}>Random vocab apps</div>
               {['Alphabetical or thematic order','You might learn giraffe before but','Gamification over comprehension','No sense of real-world coverage','Slow path to understanding real Spanish'].map(t => (
@@ -364,7 +364,7 @@ export default function Landing() {
       <Wave from="var(--white-matter)" to="var(--cream)" height={45} shape="shallow"/>
 
       {/* ── FAQ ── */}
-      <section style={{ background: 'var(--cream)', padding: '80px 0' }}>
+      <section className="page-section" style={{ background: 'var(--cream)', padding: '80px 0' }}>
         <div className="section-inner" style={{ maxWidth: '720px' }}>
           <div className="s-eye">Common questions</div>
           <h2 className="s-title" style={{ marginBottom: '40px' }}>FAQ</h2>
@@ -474,7 +474,7 @@ function WordPoster() {
       </div>
 
       <div style={{
-        position: 'absolute', bottom: '55px', right: '-10px',
+        position: 'absolute', bottom: '55px', right: '0',
         background: 'var(--white-matter)', borderRadius: '12px',
         padding: '14px 18px', border: '0.5px solid rgba(28,26,58,0.09)',
         boxShadow: '0 8px 24px rgba(28,26,58,0.1)', zIndex: 2, minWidth: '140px',
