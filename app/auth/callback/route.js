@@ -1,10 +1,14 @@
 import { createServerClient } from '@supabase/ssr'
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET(request) {
   const { searchParams, origin } = new URL(request.url)
   const code = searchParams.get('code')
   const next = searchParams.get('next') ?? '/dashboard'
+
+  console.log('[auth/callback] code present:', !!code, '| cookies:', request.cookies.getAll().map(c => c.name))
 
   if (code) {
     const pendingCookies = []
@@ -21,6 +25,8 @@ export async function GET(request) {
     )
 
     const { error } = await supabase.auth.exchangeCodeForSession(code)
+
+    console.log('[auth/callback] exchange error:', error?.message ?? 'none', '| pending cookies:', pendingCookies.map(c => c.name))
 
     if (!error) {
       const response = NextResponse.redirect(`${origin}${next}`)
