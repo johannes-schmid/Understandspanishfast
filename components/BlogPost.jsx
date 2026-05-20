@@ -26,7 +26,7 @@ export default function BlogPost({
     <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
+      <div className="blog-page-wrap">
 
         {/* Back link */}
         <Link href="/blog" className="blog-back-link">← Back to blog</Link>
@@ -42,7 +42,7 @@ export default function BlogPost({
             <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{readTime}</span>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '48px', alignItems: 'start' }}>
+          <div className="blog-header-grid">
             <div>
               <h1 style={{
                 fontFamily: "'Fraunces', serif", fontWeight: 900,
@@ -55,9 +55,9 @@ export default function BlogPost({
             </div>
 
             {heroCallout && (
-              <div style={{
+              <div className="blog-hero-callout" style={{
                 background: 'var(--deep-mind)', borderRadius: '20px',
-                padding: '32px 36px', textAlign: 'center', minWidth: '180px', flexShrink: 0,
+                padding: '32px 36px', textAlign: 'center',
               }}>
                 <div style={{
                   fontFamily: "'Fraunces', serif", fontWeight: 900,
@@ -73,7 +73,7 @@ export default function BlogPost({
         </header>
 
         {/* Body: sidebar + article */}
-        <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr', gap: '64px', alignItems: 'start' }}>
+        <div className="blog-body-grid">
 
           {/* Sidebar */}
           <aside style={{ position: 'sticky', top: '100px', display: 'flex', flexDirection: 'column', gap: '16px' }}>

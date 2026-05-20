@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Blog — Neuro',
+  title: 'Blog — comprendo.',
   description: 'Articles on learning Spanish faster: high-frequency vocabulary strategy, comprehension thresholds, and the science of word frequency.',
   alternates: { canonical: 'https://mostcommonspanish.com/blog' },
 }
@@ -56,7 +56,7 @@ export default function BlogHub() {
     <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
+      <div className="blog-page-wrap">
 
         {/* Header */}
         <div style={{ marginBottom: '64px' }}>
@@ -74,9 +74,8 @@ export default function BlogHub() {
         </div>
 
         {/* Featured post */}
-        <Link href={`/blog/${featured.slug}`} style={{
-          display: 'grid', gridTemplateColumns: '1fr auto',
-          gap: '0', background: 'var(--deep-mind)',
+        <Link href={`/blog/${featured.slug}`} className="blog-featured-card" style={{
+          background: 'var(--deep-mind)',
           borderRadius: '20px', overflow: 'hidden',
           textDecoration: 'none', marginBottom: '24px',
           transition: 'transform .2s, box-shadow .2s',
@@ -105,11 +104,10 @@ export default function BlogHub() {
             }}>Read article →</span>
           </div>
 
-          <div style={{
+          <div className="blog-featured-stat" style={{
             background: 'rgba(255,255,255,0.04)',
             borderLeft: '0.5px solid rgba(255,255,255,0.06)',
-            padding: '48px 48px', display: 'flex', flexDirection: 'column',
-            justifyContent: 'center', alignItems: 'center', minWidth: '220px',
+            padding: '48px',
           }}>
             <div style={{
               fontFamily: "'Fraunces', serif", fontWeight: 900,
@@ -123,7 +121,7 @@ export default function BlogHub() {
         </Link>
 
         {/* Secondary posts */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '64px' }}>
+        <div className="blog-posts-grid">
           {rest.map((p) => (
             <Link key={p.slug} href={`/blog/${p.slug}`} style={{
               background: 'var(--white-matter)', borderRadius: '20px',
@@ -166,10 +164,9 @@ export default function BlogHub() {
         </div>
 
         {/* CTA */}
-        <div style={{
+        <div className="blog-cta-banner" style={{
           background: 'var(--deep-mind)', borderRadius: '20px',
-          padding: '56px 64px', display: 'flex',
-          justifyContent: 'space-between', alignItems: 'center', gap: '32px',
+          padding: '56px 64px',
         }}>
           <div>
             <div className="s-eye" style={{ color: 'var(--mauve)' }}>Not just reading</div>
