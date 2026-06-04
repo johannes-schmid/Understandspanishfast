@@ -138,7 +138,7 @@ export default function Landing() {
               lineHeight: 1.65, maxWidth: '440px', marginBottom: '36px',
               animation: 'fadeUp .7s .15s ease both',
             }}>
-              Other tools teach you whatever. This one starts with the words that appear most often in real spoken Spanish — and builds from there.
+              Other apps teach words at random. This one starts with the most common Spanish words — the few hundred that appear most in real speech — so you understand around 80% of everyday conversations with your first 1,500.
             </p>
 
             <div style={{display:'flex',alignItems:'center',gap:'16px',marginBottom:'48px',animation:'fadeUp .7s .25s ease both',flexWrap:'wrap'}}>
@@ -147,9 +147,9 @@ export default function Landing() {
             </div>
 
             <div style={{display:'flex',alignItems:'center',gap:'24px',animation:'fadeUp .7s .35s ease both',flexWrap:'wrap'}}>
-              <HeroStat num="Frequency" label="ranked by real usage"/>
+              <HeroStat num="1,500 words" label="≈ 80% of spoken Spanish"/>
               <div style={{width:'0.5px',height:'36px',background:'rgba(28,26,58,0.15)'}}/>
-              <HeroStat num="15 min" label="per day, that's it"/>
+              <HeroStat num="15 min" label="a day, that's it"/>
               <div style={{width:'0.5px',height:'36px',background:'rgba(28,26,58,0.15)'}}/>
               <HeroStat num="Free" label="to start, no card"/>
             </div>
@@ -212,7 +212,7 @@ export default function Landing() {
             The most common Spanish words,<br/>ranked by how often they appear
           </h2>
           <p className="s-body" style={{ marginBottom: '36px' }}>
-            Not alphabetical. Not by theme. Ranked by real-world usage — so every word you learn is more useful than the last. Click any word to see it in a sentence.
+            Not alphabetical. Not by theme. Ranked by real-world usage — so every word you learn is more useful than the last. Click any word to see it in a sentence, or read exactly <Link href="/blog/how-many-spanish-words-to-be-fluent" style={{ color: 'var(--synapse)', fontWeight: 500, textDecoration: 'underline' }}>how many Spanish words you need to be fluent</Link>.
           </p>
 
           <HomepageWordPreview />
