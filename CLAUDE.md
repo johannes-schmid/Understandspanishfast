@@ -44,6 +44,124 @@ Then read `/tmp/screenshot.png` to inspect the result visually.
 | `Design/` | Design references and mockups |
 | `SEO-STRATEGY.md` | Full SEO keyword and content strategy |
 | `SITE-STRUCTURE.md` | URL structure and page hierarchy plan |
+| `SEO/Keywords.csv` | Master keyword list with volume/difficulty data |
+| `SEO/used-keywords.md` | Primary keywords already used in blog posts (never reuse) |
+| `SEO/humour.md` | Brand humour style guide for blog writing |
+| `SEO/voice.md` | Brand voice/tone guide for blog writing |
+| `SEO/opinions.md` | Opinionated takes to weave into blog posts |
+| `SEO/stats.md` | Key stats and data points to reference in posts |
+| `SEO/stories.md` | Personal anecdotes and stories to draw from |
+
+---
+
+## Blog Post Creation Standard
+
+Follow this exact process every time a new blog post is created.
+
+### Step 1 — Keyword Selection
+- Open `SEO/Keywords.csv` and pick one primary keyword (not in `SEO/used-keywords.md`)
+- **Filters:** keyword difficulty ≤30, search volume ≥100, informational intent only (not transactional/navigational)
+- Pick 4–5 secondary keywords that form a coherent cluster (from CSV or invent related ones)
+- After writing the post, add the primary keyword to `SEO/used-keywords.md` — never use it again
+
+### Step 2 — SERP Research (do before writing)
+- Search Google for the primary keyword
+- Open and analyze the top 3 ranking pages
+- Record: their format (listicle, guide, tutorial, comparison), word count, and topics covered
+- The post must match their format and be within 10% of their average word count
+
+### Step 3 — Content Requirements
+- Cover every topic the top 3 results all discuss
+- Add 1–2 extra topics they missed (differentiation)
+- Answer the main question directly at the top (optimizes for featured snippet / AI Overview)
+- Include an FAQ section using questions from "People Also Ask" on the SERP
+
+### Step 4 — Voice & Style
+Apply all four style files before writing:
+- `SEO/voice.md` — tone, sentence structure, reading level
+- `SEO/humour.md` — when and how to be funny
+- `SEO/opinions.md` — opinionated angles to include
+- `SEO/stats.md` — relevant stats to weave in
+- `SEO/stories.md` — relevant stories or anecdotes to open with or reference
+
+### Step 5 — Images
+- Use the Pexels API to find relevant images for the post
+- Place one image above each H2 section where it adds value
+- Use descriptive, keyword-relevant alt text on every image
+
+### Step 6 — SEO Non-Negotiables
+Every blog post file must include:
+- `<title>` with primary keyword near the front
+- `<meta description>` (~155 chars, includes primary keyword)
+- Canonical URL
+- Open Graph tags (title, description, image)
+- `Article` or `BlogPosting` JSON-LD schema with `datePublished` and `dateModified`
+- At least one internal link to a related page on the site
+
+### Step 7 — File & Route
+- Create the post at `app/blog/[slug]/page.jsx` using the Next.js App Router
+- Export `generateMetadata()` for all meta/OG tags (server component — no `'use client'`)
+- Split into server wrapper + client component if interactivity is needed
+
+---
+
+## SEO Master Checklist
+
+A structured status tracker for all SEO work on this project, derived from the masterclass framework. Update checkboxes as items are completed.
+
+### Keyword Research Rules
+Every keyword used must pass all three filters before being written about:
+- Keyword difficulty ≤30 (realistic chance to rank)
+- Search volume ≥100/month (enough traffic to matter)
+- Informational intent (how/what/why queries — not buy/hire/find)
+- Build a cluster: 1 root keyword + 4–5 secondary keywords per post
+
+### On-Page SEO Checklist (apply to every blog post)
+Claude must verify each item before declaring a post done:
+- [ ] Primary keyword appears in the first 100 words
+- [ ] Exactly one H1 on the page
+- [ ] H2s used for each major section
+- [ ] 4–8 FAQ questions sourced from "People Also Ask" on the SERP
+- [ ] 2–3 internal links to related posts on this site
+- [ ] 2–3 external links to authoritative sources
+- [ ] Meta title ≤60 chars, primary keyword near the front
+- [ ] Meta description ~155 chars, includes primary keyword
+- [ ] Every image has descriptive, keyword-relevant alt text
+- [ ] `BlogPosting` JSON-LD schema with `datePublished` + `dateModified`
+- [ ] Canonical URL set
+- [ ] Open Graph tags (title, description, image)
+
+### Technical SEO Status
+- [x] Next.js App Router — pages pre-rendered as static HTML
+- [x] `public/sitemap.xml` — updated 2026-06-04, covers all 13 blog posts + all landing pages
+- [x] `public/robots.txt` in place
+- [x] `public/llms.txt` for AI crawler access
+- [x] Google Analytics wired up
+- [x] `/spanish-vocabulary-app` landing page created (primary keyword: "spanish vocabulary app", WebApplication + FAQPage schema)
+- [x] Google Search Console verified
+- [ ] **TODO** — Submit updated `sitemap.xml` to Google Search Console (sitemap was updated 2026-06-04 — resubmit)
+- [ ] **TODO** — Run Google Lighthouse audit; target 90+ on all 4 categories (Performance, Accessibility, Best Practices, SEO). Paste the full report into Claude and iterate until fixed.
+
+### Content Publishing Cadence
+Do not publish all blog posts at once — sudden content spikes are a Google red flag.
+- Week 1–2: 1 post/day max
+- Week 3–4: 2 posts/day max
+- Month 2+: 3 posts/day max
+- Use GSC "Request Indexing" on each new URL after publish (limit: ~10/day)
+
+### GSC Indexing Workflow (after every new page)
+1. Go to Google Search Console
+2. Paste the new page URL into the top search bar
+3. Click "Request Indexing" — indexed within ~24h
+4. Rate limit: ~10 requests/day
+
+### Off-Page SEO (backlinks — do later)
+Not a current priority. When ready:
+- **Broken backlink swap**: audit a competitor in SEMrush → find their broken outbound links → offer your page as replacement
+- **Guest posting**: search `[topic] "write for us"` on Google → pitch a post with a backlink
+- **HARO / journalist queries**: answer expert questions; journalist includes your link in their article
+- **Paid placements**: some authority domains accept sponsored posts with a backlink (~$100–$1000)
+- **NEVER** use PBN services or bulk cheap backlinks — Google detects and permanently penalises
 
 ---
 
