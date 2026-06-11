@@ -18,10 +18,12 @@ function GoogleIcon() {
   )
 }
 
-export default async function LoginPage() {
+export default async function LoginPage({ searchParams }) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  if (user) redirect('/dashboard')
+  const from = (await searchParams)?.from
+  if (user) redirect(from === 'app' ? '/auth/app-redirect' : '/dashboard')
+  const redirectPath = from === 'app' ? '/auth/app-redirect' : undefined
 
   return (
     <main style={{
@@ -63,7 +65,7 @@ export default async function LoginPage() {
           Sign in to pick up where you left off.
         </p>
 
-        <SignInButton className="btn-google" style={{ width: '100%', justifyContent: 'center' }}>
+        <SignInButton className="btn-google" style={{ width: '100%', justifyContent: 'center' }} redirectPath={redirectPath}>
           <GoogleIcon />
           Sign in with Google
         </SignInButton>

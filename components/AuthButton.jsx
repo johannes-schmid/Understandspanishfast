@@ -3,15 +3,16 @@
 import { createClient } from '@/lib/supabase/client'
 import { trackEvent } from '@/lib/analytics'
 
-export function SignInButton({ className, children }) {
+export function SignInButton({ className, children, redirectPath }) {
   async function handleSignIn() {
     trackEvent('sign_up')
     const supabase = createClient()
+    const callbackUrl = redirectPath
+      ? `${window.location.origin}/auth/callback?next=${encodeURIComponent(redirectPath)}`
+      : `${window.location.origin}/auth/callback`
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: {
-        redirectTo: `${window.location.origin}/auth/callback`,
-      },
+      options: { redirectTo: callbackUrl },
     })
   }
 
