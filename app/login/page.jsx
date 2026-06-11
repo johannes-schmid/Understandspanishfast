@@ -21,9 +21,14 @@ function GoogleIcon() {
 export default async function LoginPage({ searchParams }) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
-  const from = (await searchParams)?.from
-  if (user) redirect(from === 'app' ? '/auth/app-redirect' : '/dashboard')
-  const redirectPath = from === 'app' ? '/auth/app-redirect' : undefined
+  const params = await searchParams
+  const from = params?.from
+  const redirectUrl = params?.redirectUrl  // app's deep link URL passed through
+  const appRedirectPath = redirectUrl
+    ? `/auth/app-redirect?redirectUrl=${encodeURIComponent(redirectUrl)}`
+    : '/auth/app-redirect'
+  if (user) redirect(from === 'app' ? appRedirectPath : '/dashboard')
+  const redirectPath = from === 'app' ? appRedirectPath : undefined
 
   return (
     <main style={{

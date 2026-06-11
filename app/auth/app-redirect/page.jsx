@@ -1,16 +1,18 @@
 'use client'
 
 import { useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 
-export default function AppRedirectPage() {
+function AppRedirect() {
+  const searchParams = useSearchParams()
+
   useEffect(() => {
-    // Open the app via deep link
-    window.location.href = 'mostcommonspanish://auth-success'
-    // Fallback: if app isn't installed, redirect to App Store after delay
-    setTimeout(() => {
-      window.location.href = 'https://mostcommonspanish.com'
-    }, 2500)
-  }, [])
+    const redirectUrl = searchParams.get('redirectUrl')
+    if (redirectUrl) {
+      window.location.href = redirectUrl
+    }
+  }, [searchParams])
 
   return (
     <main style={{
@@ -38,5 +40,13 @@ export default function AppRedirectPage() {
         Returning you to the app…
       </p>
     </main>
+  )
+}
+
+export default function AppRedirectPage() {
+  return (
+    <Suspense>
+      <AppRedirect />
+    </Suspense>
   )
 }
