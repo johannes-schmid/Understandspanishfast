@@ -6,17 +6,17 @@
 
 /* ── Neuro Design Tokens ── */
 :root {
-  --synapse:      #534AB7;
-  --deep-mind:    #1C1A3A;
-  --cortex:       #7B7FA8;
-  --fog:          #EAE8F5;
-  --cream:        #F2EDE4;
-  --cream-dark:   #E8E0D4;
-  --white-matter: #FAF7F2;
+  --synapse:      #6B66C9;
+  --deep-mind:    #211D3F;
+  --cortex:       #8B8676;
+  --fog:          #E2E0F4;
+  --cream:        #EAE3D7;
+  --cream-dark:   #E3DCCF;
+  --white-matter: #FAF6EE;
   --mauve:        #B07FA8;
   --dendrite:     #D4537E;
   --nerve:        #C07050;
-  --signal:       #2D7A5F;
+  --signal:       #2F7D5C;
   --signal-light: #E1F5EE;
   --amber:        #EF9F27;
   --purple-mid:   #7F77DD;
@@ -77,6 +77,45 @@ body {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
+@keyframes floaty {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50%      { transform: translateY(-14px) rotate(-5deg); }
+}
+@keyframes floaty2 {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* ── Landing (glow-up) layout ── */
+.lp-wrap { overflow: hidden; }
+.lp-section { max-width: 1180px; margin: 0 auto; padding: 40px 32px 70px; }
+.lp-hero { position: relative; max-width: 1180px; margin: 0 auto; padding: 70px 32px 80px; }
+.lp-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; position: relative; }
+.lp-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+.lp-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
+.lp-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.lp-qr { display: grid; grid-template-columns: auto 1fr; gap: 56px; align-items: center; position: relative; }
+.lp-dark-round { border-radius: 48px; position: relative; overflow: hidden; }
+.lp-faq details { border-bottom: 1px solid rgba(33,29,63,.1); }
+.lp-faq summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 4px; font-weight: 600; font-size: 17px; color: var(--deep-mind); }
+.lp-faq .faqp { flex: none; font-weight: 300; font-size: 26px; color: var(--synapse); transition: transform .2s; line-height: 1; }
+.lp-faq details[open] .faqp { transform: rotate(45deg); }
+.lp-faq .faqa { padding: 0 4px 22px; font-size: 15px; line-height: 1.65; color: #6b6558; max-width: 680px; }
+
+@media (max-width: 900px) {
+  .lp-hero { padding: 44px 20px 56px; }
+  .lp-hero-grid { grid-template-columns: 1fr; gap: 36px; }
+  .lp-section { padding: 32px 20px 52px; }
+  .lp-3, .lp-2 { grid-template-columns: 1fr; }
+  .lp-4 { grid-template-columns: 1fr 1fr; }
+  .lp-qr { grid-template-columns: 1fr; gap: 32px; justify-items: center; text-align: center; }
+  .lp-how-pad { padding: 52px 24px !important; }
+  .lp-pad { padding: 60px 20px !important; }
+}
+@media (max-width: 560px) {
+  .lp-4 { grid-template-columns: 1fr; }
+  .lp-hero-visual { display: none; }
+}
 
 /* ── Navigation ── */
 .neuro-nav {
@@ -92,29 +131,28 @@ body {
   color: var(--deep-mind); letter-spacing: -0.5px; text-decoration: none;
 }
 .neuro-nav-logo span { color: var(--synapse); }
-.neuro-nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.neuro-nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
 .neuro-nav-links a {
-  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 500;
-  color: var(--deep-mind); text-decoration: none; transition: color .15s;
-  text-transform: uppercase; letter-spacing: 0.06em;
+  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 600;
+  color: var(--cortex); text-decoration: none; transition: color .15s;
 }
 .neuro-nav-login {
-  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 500;
-  color: var(--deep-mind); text-transform: uppercase; letter-spacing: 0.06em;
-  background: none; border: 1.5px solid var(--deep-mind); border-radius: 8px;
-  padding: 7px 16px; cursor: pointer; transition: background .15s, color .15s;
+  font-family: var(--font-inter), sans-serif; font-size: 13px; font-weight: 600;
+  color: var(--deep-mind);
+  background: none; border: 1px solid rgba(33,29,63,.2); border-radius: 11px;
+  padding: 9px 16px; cursor: pointer; transition: background .15s, color .15s;
 }
 .neuro-nav-login:hover { background: var(--deep-mind); color: var(--white-matter); }
 .neuro-nav-links a:hover { color: var(--deep-mind); }
 .neuro-nav-cta,
 .neuro-nav-links a.neuro-nav-cta {
-  background: var(--deep-mind); color: var(--white-matter) !important;
-  padding: 9px 20px; border-radius: 8px; font-weight: 500; font-size: 14px;
-  text-decoration: none; transition: background .15s;
+  background: linear-gradient(135deg, #211d3f, #413a78); color: var(--white-matter) !important;
+  padding: 10px 20px; border-radius: 11px; font-weight: 700; font-size: 13px;
+  text-decoration: none; transition: opacity .15s, transform .1s;
   font-family: 'Cabinet Grotesk', sans-serif;
 }
 .neuro-nav-cta:hover,
-.neuro-nav-links a.neuro-nav-cta:hover { background: var(--synapse); }
+.neuro-nav-links a.neuro-nav-cta:hover { opacity: .92; transform: translateY(-1px); }
 
 /* ── Buttons ── */
 .btn-primary {

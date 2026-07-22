@@ -14,7 +14,7 @@ const FILTERS = [
 ]
 
 const TYPE_COLORS = {
-  'v.':    { bg: '#EDE8FB', color: '#534AB7' },
+  'v.':    { bg: '#E2E0F4', color: '#4F4AA8' },
   'n.':    { bg: '#E1F5EE', color: '#2D7A5F' },
   'adj.':  { bg: '#F4D8E8', color: '#A03060' },
   'adv.':  { bg: '#FEF3C7', color: '#92400E' },
@@ -170,7 +170,7 @@ export default function HomepageWordPreview() {
             {/* CTA overlay */}
             <div style={{
               position: 'absolute', inset: 0,
-              background: 'linear-gradient(to bottom, rgba(242,237,228,0) 0%, rgba(242,237,228,0.85) 40%, rgba(242,237,228,0.97) 100%)',
+              background: 'linear-gradient(to bottom, rgba(234,227,215,0) 0%, rgba(234,227,215,0.85) 40%, rgba(234,227,215,0.97) 100%)',
               display: 'flex', flexDirection: 'column', alignItems: 'center',
               justifyContent: 'flex-end', padding: '32px 24px 28px',
               textAlign: 'center',
