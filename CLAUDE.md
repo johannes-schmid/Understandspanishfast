@@ -39,6 +39,10 @@ Then read `/tmp/screenshot.png` to inspect the result visually.
 | `app/` | Next.js App Router pages (page.jsx per route) |
 | `components/` | Shared components (Navbar, Footer, WaitlistForm, BlogPost, LevelTestClient, WordsPageClient) |
 | `data/words.js` | High-frequency Spanish word list data |
+| `workflows/` | Vercel Workflow (WDK) definitions — `buildPack.js` is the DurableAgent that builds AI vocab packs |
+| `lib/packTools.js` | The agent's `"use step"` tool bodies (fetch/extract/search/download/analyze/define/save) |
+| `lib/corpus.js`, `lib/spanishText.js`, `lib/subdl.js`, `lib/packArtifacts.js`, `lib/packProgress.js` | Pack-builder support: corpus map, tokenizer, Subdl subtitle client (search + unzip .srt), inter-step artifact store, progress stream |
+| `app/packs/` | Packs UI — list, `new` (builder), `[id]` (study a pack) |
 | `public/` | Static assets (robots.txt, sitemap, llms.txt, OG images, icons) |
 | `words/` | Legacy static HTML word pages |
 | `Design/` | Design references and mockups |
@@ -174,8 +178,13 @@ Not a current priority. When ready:
 - `jsconfig.json` with `@/*` path alias pointing to project root
 - `postcss.config.cjs` (CJS extension required when `"type": "module"` is set in package.json)
 - Node 20 via Homebrew (`/opt/homebrew/bin`) — system Node is v14 and won't work
+- AI Vocab Packs (agentic): Vercel Workflow DevKit (`workflow` + `@workflow/ai` `DurableAgent`) + `unpdf`. `withWorkflow(nextConfig)` in `next.config.mjs`; WDK auto-generates `/.well-known/workflow/*` routes and reports "N steps, 1 workflow" on build. Agent = haiku loop over deterministic `"use step"` tools; definitions via one sonnet `Output.object` call. Tools return metadata + opaque refs only — raw text/candidates stashed in `pack_build_artifacts` (never sent to the LLM). Progress streamed on a `'progress'` WDK namespace as NDJSON, read by `PackBuilderClient`.
 
 **What failed / watch out for:**
+- WDK requires the DB migration `004_vocab_packs.sql` applied + a `pack-uploads` Storage bucket + `SUBDL_API_KEY` (subtitles via Subdl; download is a ZIP unzipped with `fflate`, free tier ~300 downloads/day per IP) before the pack builder works end-to-end.
+- Workflow steps run outside the request/cookie context — they MUST use the service-role client (`lib/supabase/admin.js`), never the cookie-based `createClient()`.
+- `unpdf` build warning "Accessing import.meta directly is unsupported" is benign (bundled pdf.js); loaded via dynamic `import('unpdf')` inside the step.
+- `next.config.mjs` gains a `turbopack` key from `withWorkflow` that Next 14 flags as "Unrecognized" — harmless warning.
 - `metadata` export cannot be in a `'use client'` component — must split into server wrapper + client component
 - `postcss.config.js` with ESM export breaks Next.js — rename to `.cjs` and use `module.exports`
 - `src/pages/` directory gets picked up by Next.js as Pages Router — deleted old Vite source files entirely

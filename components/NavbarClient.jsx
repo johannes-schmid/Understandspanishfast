@@ -40,6 +40,11 @@ export default function NavbarClient({ user }) {
                 </Link>
               </li>
               <li>
+                <Link href="/packs" style={{ color: path.startsWith('/packs') ? 'var(--deep-mind)' : undefined }}>
+                  Packs
+                </Link>
+              </li>
+              <li>
                 <Link href="/reading" style={{ color: path.startsWith('/reading') ? 'var(--deep-mind)' : undefined }}>
                   Reading
                 </Link>
@@ -86,6 +91,7 @@ export default function NavbarClient({ user }) {
           {user ? (
             <>
               <Link href="/dashboard" className="mobile-menu-link">Dashboard</Link>
+              <Link href="/packs" className="mobile-menu-link">Packs</Link>
               <Link href="/reading" className="mobile-menu-link">Reading</Link>
               <div style={{ marginTop: '8px' }}>
                 <SignOutButton className="mobile-menu-btn-outline">Sign out</SignOutButton>

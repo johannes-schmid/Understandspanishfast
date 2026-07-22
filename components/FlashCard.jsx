@@ -135,20 +135,30 @@ export default function FlashCard({
     return () => window.removeEventListener('keydown', onKey)
   }, [flipped, handleFlip])
 
-  async function saveProgress(rank, status) {
+  async function saveProgress(card, status) {
     if (anonymous) return  // no persistence for logged-out trial
-    if (rank == null) return  // isExtra cards: exposure only, not SRS-tracked
-    await fetch('/api/progress', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ word_rank: rank, status }),
-    })
+    if (card.rank != null) {
+      // Corpus word (default deck or corpus word in a pack) — global SRS by rank.
+      await fetch('/api/progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ word_rank: card.rank, status }),
+      })
+    } else if (card.pack_word_id) {
+      // Non-corpus pack word — SRS by pack_word_id.
+      await fetch('/api/pack-progress', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ pack_word_id: card.pack_word_id, status }),
+      })
+    }
+    // else: situational exposure-only card, not SRS-tracked
   }
 
   function handleAnswer(status) {
     if (!card) return
     trackEvent('card_reviewed', { rating: status, word_rank: card.rank })
-    saveProgress(card.rank, status)
+    saveProgress(card, status)
     setReviewedCount(n => n + 1)
     const [current, ...rest] = queue
 

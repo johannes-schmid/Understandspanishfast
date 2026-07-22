@@ -3,27 +3,12 @@ import { NextResponse } from 'next/server'
 import { generateObject } from 'ai'
 import { createOpenAI } from '@ai-sdk/openai'
 import { z } from 'zod'
-import { words } from '@/data/words'
+import { normalise, corpusMap } from '@/lib/corpus'
 
 // Local dev: @ai-sdk/openai. On Vercel: swap model string to 'anthropic/claude-haiku-4.5'
 // and add AI_GATEWAY_API_KEY for gateway routing + observability.
 const openai = createOpenAI({ apiKey: process.env.OPENAI_API_KEY })
 const MODEL = process.env.AI_GATEWAY_API_KEY ? 'anthropic/claude-haiku-4.5' : openai('gpt-4o-mini')
-
-// Normalise for fuzzy corpus matching (strip accents, lowercase)
-function normalise(str) {
-  return str
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .trim()
-}
-
-// Build lookup map once at module scope (cold-start cost only)
-const corpusMap = new Map()
-for (const w of words) {
-  corpusMap.set(normalise(w.word), w)
-}
 
 const SeedItemSchema = z.object({
   es: z.string().describe('Spanish word or short phrase'),
