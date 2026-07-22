@@ -1,0 +1,32 @@
+{
+  "projectId": "c5fab606-06f7-444b-aead-1a5a2be16bf0",
+  "shape": "package",
+  "pkg": "understand-spanish-fast",
+  "globalName": "USF",
+  "tsconfig": "jsconfig.json",
+  "srcDir": "components",
+  "componentSrcMap": {
+    "Button": "components/ui/button.jsx",
+    "Card": "components/ui/card.jsx",
+    "Badge": "components/ui/badge.jsx",
+    "Input": "components/ui/input.jsx",
+    "WordToken": "components/WordToken.jsx",
+    "ProgressRing": "components/ProgressRing.jsx"
+  },
+  "cssEntry": ".design-sync/ds-styles.css",
+  "overrides": {
+    "Button": {
+      "cardMode": "column"
+    },
+    "Card": {
+      "cardMode": "column"
+    },
+    "Input": {
+      "cardMode": "column"
+    },
+    "ProgressRing": {
+      "cardMode": "column"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

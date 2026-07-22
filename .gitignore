@@ -4,3 +4,11 @@ node_modules/
 *.bak
 .claude/
 .vercel
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
+.env
+.env.local
+mobile/.expo/

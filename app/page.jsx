@@ -142,7 +142,7 @@ export default function Landing() {
             </p>
 
             <div style={{display:'flex',alignItems:'center',gap:'16px',marginBottom:'48px',animation:'fadeUp .7s .25s ease both',flexWrap:'wrap'}}>
-              <a href="/get-started" className="btn-primary">Start free →</a>
+              <a href="/practice" className="btn-primary">Start free →</a>
               <a href="#word-list" className="btn-ghost">See the word list ↓</a>
             </div>
 
@@ -325,13 +325,69 @@ export default function Landing() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '48px' }}>
-            <a href="/get-started" className="btn-primary">Start free — takes 10 seconds</a>
+            <a href="/practice" className="btn-primary">Start free — takes 10 seconds</a>
           </div>
         </div>
       </section>
 
-      {/* Wave cream-dark → white-matter */}
-      <Wave from="var(--cream-dark)" to="var(--white-matter)" height={45} shape="dome"/>
+      {/* Wave cream-dark → deep-mind */}
+      <Wave from="var(--cream-dark)" to="var(--deep-mind)" height={45} shape="dome"/>
+
+      {/* ── APP CLIP ── */}
+      <section className="page-section" style={{ background: 'var(--deep-mind)', padding: '80px 0' }}>
+        <div className="section-inner" style={{ maxWidth: '860px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="app-clip-grid">
+
+            {/* Left: QR code */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+              <div style={{
+                background: '#F5F3EE', borderRadius: '24px', padding: '20px',
+                boxShadow: '0 16px 48px rgba(0,0,0,0.4)',
+              }}>
+                <Image
+                  src="/qr-practice.png"
+                  alt="QR code to open Spanish vocabulary practice on iOS"
+                  width={220}
+                  height={220}
+                  style={{ borderRadius: '8px', display: 'block' }}
+                />
+              </div>
+              <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.35)', textTransform: 'uppercase', letterSpacing: '0.08em', textAlign: 'center' }}>
+                Point your iPhone camera here
+              </p>
+            </div>
+
+            {/* Right: copy */}
+            <div>
+              <div style={{ fontSize: '12px', fontWeight: 600, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--mauve)', marginBottom: '16px' }}>
+                iOS App Clip — no download needed
+              </div>
+              <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: 'clamp(32px, 4vw, 46px)', color: 'var(--white-matter)', lineHeight: 1.05, letterSpacing: '-1.5px', marginBottom: '20px' }}>
+                Scan. Practice.<br/>No install required.
+              </h2>
+              <p style={{ fontSize: '16px', fontWeight: 300, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, marginBottom: '28px' }}>
+                Point your iPhone camera at the QR code and start learning the most common Spanish words instantly — directly in iOS, without downloading an app.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {[
+                  { icon: '🆓', text: 'First 20 words free — no account, no credit card' },
+                  { icon: '💾', text: 'Create a free account to save your progress' },
+                  { icon: '🔓', text: 'Unlock all 1,500 words for €5 — one-time' },
+                ].map(({ icon, text }) => (
+                  <div key={text} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                    <span style={{ fontSize: '18px', lineHeight: 1.4 }}>{icon}</span>
+                    <span style={{ fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>{text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Wave deep-mind → white-matter */}
+      <Wave from="var(--deep-mind)" to="var(--white-matter)" height={45} shape="dome"/>
 
       {/* ── VS. OTHER APPROACHES ── */}
       <section className="page-section" style={{ background: 'var(--white-matter)', padding: '80px 0' }}>
@@ -416,7 +472,7 @@ export default function Landing() {
 
         <p className="cta-sub">Free to start. No card required. Takes 10 seconds.</p>
         <div className="cta-actions">
-          <a href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>
+          <a href="/practice" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>
             Sign up free — start learning now
           </a>
         </div>

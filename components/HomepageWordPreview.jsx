@@ -181,7 +181,7 @@ export default function HomepageWordPreview() {
               <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '20px' }}>
                 Create a free account to access all words, track your progress, and see your comprehension %.
               </p>
-              <Link href="/get-started" className="btn-primary">
+              <Link href="/practice" className="btn-primary">
                 Sign up free — it takes 10 seconds
               </Link>
             </div>

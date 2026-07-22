@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Most Common Spanish",
+    "slug": "mostcommonspanish",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F5F3EE"
+    },
+    "ios": {
+      "bundleIdentifier": "com.mostcommonspanish.app",
+      "supportsTablet": false,
+      "associatedDomains": [
+        "appclips:mostcommonspanish.com"
+      ],
+      "infoPlist": {
+        "NSUserNotificationsUsageDescription": "We send daily reminders so you never miss a Spanish practice session."
+      }
+    },
+    "android": {
+      "package": "com.mostcommonspanish.app",
+      "permissions": [
+        "NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#534AB7",
+          "sounds": []
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "scheme": "mostcommonspanish"
+  }
+}

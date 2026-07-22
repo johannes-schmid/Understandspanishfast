@@ -3,36 +3,24 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-function LockIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-    </svg>
-  )
-}
+const FALLBACK_GRADIENTS = [
+  'linear-gradient(150deg,#E7D4AD,#CBB489 55%,#8F7FAE)',
+  'linear-gradient(150deg,#B7B0CF,#6F8A72 60%,#3F5A55)',
+  'linear-gradient(150deg,#E6A35C,#C76B52 55%,#4A3F6B)',
+]
 
-function UnlockIcon() {
-  return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-      <path d="M7 11V7a5 5 0 0 1 9.9-1" />
-    </svg>
-  )
+function hashSlug(slug) {
+  let h = 0
+  for (let i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0
+  return h
 }
 
 function ArticleImage({ slug }) {
   const [errored, setErrored] = useState(false)
+  const gradient = FALLBACK_GRADIENTS[hashSlug(slug) % FALLBACK_GRADIENTS.length]
 
   return (
-    <div style={{
-      width: '100%',
-      height: '140px',
-      borderRadius: '12px 12px 0 0',
-      overflow: 'hidden',
-      background: 'var(--fog)',
-      flexShrink: 0,
-    }}>
+    <div style={{ width: '100%', height: '96px', background: gradient, flexShrink: 0 }}>
       {!errored && (
         <img
           src={`/article-images/${slug}.webp`}
@@ -54,62 +42,47 @@ export default function ArticleCard({ article, knownCount }) {
   const readiness = totalUnique > 0 ? Math.round((knownInArticle / totalUnique) * 100) : 0
   const isAccessible = readiness >= 30
 
-  const saturation = Math.max(15, readiness)
-  const cardOpacity = isAccessible ? 1 : 0.55 + (readiness / 100) * 0.38
-
   return (
     <Link
       href={`/articles/${article.slug}`}
       style={{
-        display: 'flex',
-        flexDirection: 'column',
+        display: 'block',
         textDecoration: 'none',
         background: 'var(--white-matter)',
         borderRadius: '14px',
-        border: `1px solid ${isAccessible ? 'var(--cream-dark)' : '#E0DCDC'}`,
-        opacity: cardOpacity,
-        filter: `saturate(${saturation}%)`,
-        transition: 'opacity 0.3s, filter 0.3s',
+        border: '1px solid rgba(28,26,58,.07)',
         overflow: 'hidden',
+        opacity: isAccessible ? 1 : 0.72,
+        transition: 'opacity 0.3s, transform 0.2s, box-shadow 0.2s',
       }}
     >
       <ArticleImage slug={article.slug} />
 
-      <div style={{ padding: '14px 16px 16px' }}>
-        {/* Readiness bar */}
-        <div style={{ height: '3px', background: '#EEE', borderRadius: '2px', marginBottom: '12px' }}>
+      <div style={{ padding: '13px 15px 15px' }}>
+        <div style={{
+          fontSize: '9.5px', fontWeight: 600, letterSpacing: '.06em',
+          color: isAccessible ? 'var(--signal)' : 'var(--sand)', marginBottom: '6px',
+        }}>
+          {readiness}% READY
+        </div>
+
+        <div style={{ height: '4px', background: 'var(--lilac)', borderRadius: '2px', marginBottom: '11px' }}>
           <div style={{
-            height: '100%',
-            borderRadius: '2px',
-            background: readiness >= 80 ? 'var(--signal)' : readiness >= 50 ? '#E8A838' : 'var(--synapse)',
-            width: `${readiness}%`,
+            width: `${readiness}%`, height: '100%', borderRadius: '2px',
+            background: readiness >= 80 ? 'var(--signal)' : 'var(--gold)',
             transition: 'width 0.5s ease',
           }} />
         </div>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '5px', marginBottom: '6px' }}>
-          <span style={{ color: isAccessible ? 'var(--signal)' : 'var(--cortex)' }}>
-            {isAccessible ? <UnlockIcon /> : <LockIcon />}
-          </span>
-          <span style={{
-            fontSize: '10px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase',
-            color: isAccessible ? 'var(--signal)' : 'var(--cortex)',
-          }}>
-            {readiness}% ready
-          </span>
-        </div>
-
-        <p style={{ fontFamily: 'Fraunces', fontSize: '15px', fontWeight: 700, color: 'var(--deep-mind)', lineHeight: 1.3, marginBottom: '4px' }}>
+        <div style={{
+          fontFamily: 'var(--font-fraunces), serif', fontWeight: 700,
+          fontSize: '15px', color: 'var(--deep-mind)', lineHeight: 1.3,
+        }}>
           {article.title}
-        </p>
-
-        <p style={{ fontSize: '11px', color: 'var(--cortex)', lineHeight: 1.4, marginBottom: '10px' }}>
+        </div>
+        <div style={{ fontSize: '12px', color: '#8B8676', marginTop: '3px', lineHeight: 1.4 }}>
           {article.description}
-        </p>
-
-        <p style={{ fontSize: '11px', color: 'var(--cortex)' }}>
-          {knownInArticle}/{totalUnique} words known
-        </p>
+        </div>
       </div>
     </Link>
   )

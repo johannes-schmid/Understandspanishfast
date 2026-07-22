@@ -5,15 +5,34 @@ import FlashCard from '@/components/FlashCard'
 
 export const metadata = { title: 'Study | Neuro' }
 
+function localIso(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
+
+function computeStreak(countMap) {
+  const cursor = new Date()
+  cursor.setHours(0, 0, 0, 0)
+
+  // A streak survives today not being studied yet — start from yesterday in that case.
+  if (!(countMap.get(localIso(cursor)) > 0)) cursor.setDate(cursor.getDate() - 1)
+
+  let streak = 0
+  while (countMap.get(localIso(cursor)) > 0) {
+    streak++
+    cursor.setDate(cursor.getDate() - 1)
+  }
+  return streak
+}
+
 export default async function StudyPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
 
-  const today = new Date()
-  today.setHours(0, 0, 0, 0)
+  const streakWindowStart = new Date()
+  streakWindowStart.setDate(streakWindowStart.getDate() - 400)
 
-  const [progressResult, settingsResult] = await Promise.all([
+  const [progressResult, settingsResult, activityResult] = await Promise.all([
     supabase
       .from('user_word_progress')
       .select('word_rank, status')
@@ -23,6 +42,11 @@ export default async function StudyPage() {
       .select('card_front, unlocked, tts_enabled')
       .eq('user_id', user.id)
       .maybeSingle(),
+    supabase
+      .from('study_activity')
+      .select('date, cards_reviewed')
+      .eq('user_id', user.id)
+      .gte('date', localIso(streakWindowStart)),
   ])
 
   const allProgress = progressResult.data ?? []
@@ -31,6 +55,10 @@ export default async function StudyPage() {
   const knownRanks = allProgress
     .filter(r => ['good', 'easy'].includes(r.status))
     .map(r => r.word_rank)
+
+  const activityMap = new Map((activityResult.data ?? []).map(r => [r.date, r.cards_reviewed ?? 0]))
+  const streak = computeStreak(activityMap)
+  const todayCount = activityMap.get(localIso(new Date())) ?? 0
 
   // These require the migration — default to empty until columns exist
   const dueRanks = new Set()
@@ -68,8 +96,8 @@ export default async function StudyPage() {
   const initialQueue = [...dueWords, ...newWords]
 
   return (
-    <main style={{ minHeight: '100dvh', background: 'var(--cream)', paddingTop: '80px', paddingBottom: '80px' }}>
-      <div style={{ maxWidth: '520px', margin: '0 auto', padding: '0 24px' }}>
+    <main style={{ minHeight: '100dvh', background: 'var(--cream)', paddingTop: '76px' }}>
+      <div className="app-wrap">
         <FlashCard
           initialQueue={initialQueue}
           knownRanks={knownRanks}
@@ -78,6 +106,8 @@ export default async function StudyPage() {
           initialTtsEnabled={ttsEnabled}
           newTodayCount={newTodayCount}
           dueCount={dueWords.length}
+          streak={streak}
+          todayCount={todayCount}
         />
       </div>
     </main>

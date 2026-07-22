@@ -56,7 +56,7 @@ export default function NavbarClient({ user }) {
                 <SignInButton className="neuro-nav-login">Log in</SignInButton>
               </li>
               <li>
-                <a href="/get-started" className="neuro-nav-cta">Start free</a>
+                <a href="/practice" className="neuro-nav-cta">Start free</a>
               </li>
             </>
           )}
@@ -64,7 +64,7 @@ export default function NavbarClient({ user }) {
 
         {/* Mobile: right side — CTA + burger */}
         <div className="mobile-nav-right">
-          <a href="/get-started" className="neuro-nav-cta mobile-cta">Start free</a>
+          <a href="/practice" className="neuro-nav-cta mobile-cta">Start free</a>
           <button
             className="burger-btn"
             onClick={() => setOpen(o => !o)}
@@ -94,7 +94,7 @@ export default function NavbarClient({ user }) {
           ) : (
             <div className="mobile-menu-actions">
               <SignInButton className="mobile-menu-btn-outline">Log in</SignInButton>
-              <a href="/get-started" className="mobile-menu-btn-primary">Start free →</a>
+              <a href="/practice" className="mobile-menu-btn-primary">Start free →</a>
             </div>
           )}
         </nav>

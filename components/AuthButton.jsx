@@ -3,7 +3,7 @@
 import { createClient } from '@/lib/supabase/client'
 import { trackEvent } from '@/lib/analytics'
 
-export function SignInButton({ className, children, redirectPath }) {
+export function SignInButton({ className, children, redirectPath, style }) {
   async function handleSignIn() {
     trackEvent('sign_up')
     const supabase = createClient()
@@ -17,7 +17,7 @@ export function SignInButton({ className, children, redirectPath }) {
   }
 
   return (
-    <button onClick={handleSignIn} className={className}>
+    <button onClick={handleSignIn} className={className} style={style}>
       {children ?? 'Sign in with Google'}
     </button>
   )

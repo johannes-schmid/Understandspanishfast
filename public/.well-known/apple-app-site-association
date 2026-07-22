@@ -1,0 +1,19 @@
+{
+  "appclips": {
+    "apps": ["REPLACE_WITH_TEAM_ID.com.mostcommonspanish.app.Clip"]
+  },
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["REPLACE_WITH_TEAM_ID.com.mostcommonspanish.app"],
+        "components": [
+          {
+            "/": "/practice*",
+            "comment": "App Clip trigger path"
+          }
+        ]
+      }
+    ]
+  }
+}
