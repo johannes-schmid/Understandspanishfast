@@ -89,7 +89,7 @@ body {
 /* ── Landing (glow-up) layout ── */
 .lp-wrap { overflow: hidden; }
 .lp-section { max-width: 1180px; margin: 0 auto; padding: 40px 32px 70px; }
-.lp-hero { position: relative; max-width: 1180px; margin: 0 auto; padding: 70px 32px 80px; }
+.lp-hero { position: relative; max-width: 1180px; margin: 0 auto; padding: 124px 32px 80px; }
 .lp-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; position: relative; }
 .lp-3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
 .lp-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; }
@@ -103,7 +103,7 @@ body {
 .lp-faq .faqa { padding: 0 4px 22px; font-size: 15px; line-height: 1.65; color: #6b6558; max-width: 680px; }
 
 @media (max-width: 900px) {
-  .lp-hero { padding: 44px 20px 56px; }
+  .lp-hero { padding: 96px 20px 56px; }
   .lp-hero-grid { grid-template-columns: 1fr; gap: 36px; }
   .lp-section { padding: 32px 20px 52px; }
   .lp-3, .lp-2 { grid-template-columns: 1fr; }
