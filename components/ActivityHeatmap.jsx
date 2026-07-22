@@ -1,5 +1,7 @@
 'use client'
 
+import { isoOf, toCountMap, computeStreak, cardsThisWeek } from '@/lib/userStats'
+
 const WEEKS = 21
 const SHOW_DOW = [1, 4] // Mon, Thu
 
@@ -11,10 +13,6 @@ function getColor(count) {
   if (count === 0) return EMPTY
   if (count < 5) return LIGHT
   return FULL
-}
-
-function isoOf(d) {
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
 function buildGrid(countMap) {
@@ -40,34 +38,8 @@ function buildGrid(countMap) {
   return cols
 }
 
-function computeStreak(countMap) {
-  const cursor = new Date()
-  cursor.setHours(0, 0, 0, 0)
-
-  // A streak survives today not being studied yet — start from yesterday in that case.
-  if (!(countMap.get(isoOf(cursor)) > 0)) cursor.setDate(cursor.getDate() - 1)
-
-  let streak = 0
-  while (countMap.get(isoOf(cursor)) > 0) {
-    streak++
-    cursor.setDate(cursor.getDate() - 1)
-  }
-  return streak
-}
-
-function cardsThisWeek(countMap) {
-  const cursor = new Date()
-  cursor.setHours(0, 0, 0, 0)
-  let total = 0
-  for (let i = 0; i < 7; i++) {
-    total += countMap.get(isoOf(cursor)) ?? 0
-    cursor.setDate(cursor.getDate() - 1)
-  }
-  return total
-}
-
 export default function ActivityHeatmap({ activityData = [] }) {
-  const countMap = new Map(activityData.map(r => [r.date, r.count]))
+  const countMap = toCountMap(activityData)
   const grid = buildGrid(countMap)
   const streak = computeStreak(countMap)
   const weekTotal = cardsThisWeek(countMap)

@@ -1,15 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-
-const TOTAL = 1500
-
-const MILESTONES = [
-  { words: 100,  label: 'Basics' },
-  { words: 500,  label: 'Simple stories' },
-  { words: 1000, label: 'TV dialogue' },
-  { words: 1500, label: 'Full foundation' },
-]
+import { TOTAL_WORDS as TOTAL, nextMilestone as findNextMilestone } from '@/lib/userStats'
 
 const LEGEND = [
   { color: 'var(--signal)', label: 'Known' },
@@ -29,8 +21,8 @@ export default function ProgressRing({ learned = 0, learning = 0 }) {
   const learningPct = Math.min((anim.learning / TOTAL) * 100, Math.max(0, 100 - knownPct))
   const ringEnd = knownPct + learningPct
 
-  const nextMilestone = MILESTONES.find(m => m.words > learned)
-  const wordsUntil = nextMilestone ? nextMilestone.words - learned : 0
+  const nextMilestone = findNextMilestone(learned)
+  const wordsUntil = nextMilestone?.wordsUntil ?? 0
 
   const milestoneText = nextMilestone ? (
     <>

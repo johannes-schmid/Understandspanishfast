@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { words as WORDS } from '@/data/words'
+import { coveragePct } from '@/lib/userStats'
 
 const TIERS = [
   { from: 1,    to: 100,  label: 'Essential',    sample: 5 },
@@ -51,10 +52,6 @@ function levelLabel(reach) {
   if (reach < 1000) return 'B1 — Conversational'
   if (reach < 1500) return 'B2 — Fluent'
   return 'C1 — Mastery'
-}
-
-function coveragePct(reach) {
-  return Math.min(95, Math.round(reach / 3000 * 95))
 }
 
 export default function LevelTestClient() {

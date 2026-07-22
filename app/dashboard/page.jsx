@@ -8,6 +8,7 @@ import ActivityHeatmap from '@/components/ActivityHeatmap'
 import ArticleCard from '@/components/ArticleCard'
 import UnlockTracker from '@/components/UnlockTracker'
 import ReviewHeroCard from '@/components/ReviewHeroCard'
+import { splitProgress } from '@/lib/userStats'
 
 export const dynamic = 'force-dynamic'
 export const metadata = { title: 'Dashboard | Neuro' }
@@ -58,23 +59,13 @@ export default async function DashboardPage({ searchParams }) {
   ])
 
   const allProgress = progressResult.data ?? []
-  const now = new Date()
 
-  const knownSet = new Set(
-    allProgress.filter(r => ['good', 'easy'].includes(r.status)).map(r => r.word_rank)
-  )
-  const learningSet = new Set(
-    allProgress.filter(r => ['again', 'hard'].includes(r.status)).map(r => r.word_rank)
-  )
-  const learned = knownSet.size
-  const learning = learningSet.size
+  const { knownSet, learningSet, knownCount: learned, learningCount: learning, dueCount } =
+    splitProgress(allProgress)
+
   const unlocked = settingsResult.data?.unlocked ?? false
   const name = user.user_metadata?.full_name?.split(' ')[0] ?? 'there'
   const activityData = (activityResult.data ?? []).map(r => ({ date: r.date, count: r.cards_reviewed ?? 0 }))
-
-  const dueCount = allProgress.filter(r =>
-    r.next_review && new Date(r.next_review) <= now
-  ).length
 
   const wordLimit = unlocked ? 1500 : 100
   const unseenCount = Math.min(20,
