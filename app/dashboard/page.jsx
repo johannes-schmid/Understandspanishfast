@@ -1,14 +1,14 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
-import { words } from '@/data/words'
 import { articles } from '@/data/articles'
 import ProgressRing from '@/components/ProgressRing'
 import ActivityHeatmap from '@/components/ActivityHeatmap'
 import ArticleCard from '@/components/ArticleCard'
 import UnlockTracker from '@/components/UnlockTracker'
 import ReviewHeroCard from '@/components/ReviewHeroCard'
-import { splitProgress } from '@/lib/userStats'
+import DashboardPackSwitcher from '@/components/DashboardPackSwitcher'
+import { resolveActivePack, listSwitcherPacks, computePackStats } from '@/lib/activePack'
 
 export const dynamic = 'force-dynamic'
 export const metadata = { title: 'Dashboard | Most Common Spanish' }
@@ -41,11 +41,7 @@ export default async function DashboardPage({ searchParams }) {
   activityStart.setDate(activityStart.getDate() - ACTIVITY_DAYS)
   const activityStartIso = activityStart.toISOString().slice(0, 10)
 
-  const [progressResult, settingsResult, activityResult] = await Promise.all([
-    supabase
-      .from('user_word_progress')
-      .select('word_rank, status, next_review')
-      .eq('user_id', user.id),
+  const [settingsResult, activityResult] = await Promise.all([
     supabase
       .from('user_settings')
       .select('unlocked')
@@ -58,21 +54,18 @@ export default async function DashboardPage({ searchParams }) {
       .gte('date', activityStartIso),
   ])
 
-  const allProgress = progressResult.data ?? []
-
-  const { knownSet, learningSet, knownCount: learned, learningCount: learning, dueCount } =
-    splitProgress(allProgress)
-
   const unlocked = settingsResult.data?.unlocked ?? false
   const name = user.user_metadata?.full_name?.split(' ')[0] ?? 'there'
   const activityData = (activityResult.data ?? []).map(r => ({ date: r.date, count: r.cards_reviewed ?? 0 }))
 
-  const wordLimit = unlocked ? 1500 : 100
-  const unseenCount = Math.min(20,
-    words.filter(w => w.rank <= wordLimit && !knownSet.has(w.rank) && !learningSet.has(w.rank)).length
-  )
+  // The active pack drives the dashboard stats, hero, ring and study queue.
+  const activePack = await resolveActivePack(supabase, user.id)
+  const [packStats, switcherPacks] = await Promise.all([
+    computePackStats(supabase, user.id, activePack, { unlocked }),
+    listSwitcherPacks(supabase, user.id),
+  ])
 
-  const nextWord = words.find(w => w.rank <= wordLimit && !knownSet.has(w.rank)) ?? null
+  const { known: learned, learning, due: dueCount, unseen: unseenCount, nextWord, total: packTotal } = packStats
   const hasCards = dueCount > 0 || unseenCount > 0
 
   const stats = [
@@ -119,6 +112,8 @@ export default async function DashboardPage({ searchParams }) {
                   <div className="dash-stat-label">{stat.label}</div>
                 </div>
               ))}
+              {/* Active-pack switcher — drives the stats, hero, ring and study queue */}
+              <DashboardPackSwitcher activePack={activePack} packs={switcherPacks} />
             </div>
           </div>
 
@@ -132,14 +127,14 @@ export default async function DashboardPage({ searchParams }) {
                 hasCards={hasCards}
               />
             </div>
-            <ProgressRing learned={learned} learning={learning} />
+            <ProgressRing learned={learned} learning={learning} total={packTotal} />
           </div>
 
           {/* Streak strip */}
           <ActivityHeatmap activityData={activityData} />
 
-          {/* AI-powered themed session entry */}
-          <Link href="/seed" className="dash-ai" style={{ textDecoration: 'none' }}>
+          {/* AI-powered themed session entry — now the pack builder's Topic mode */}
+          <Link href="/packs/new?tab=topic" className="dash-ai" style={{ textDecoration: 'none' }}>
             <div style={{
               background: 'linear-gradient(135deg, #2A1F4A 0%, #1A2842 100%)',
               borderRadius: '16px', padding: '18px 22px',

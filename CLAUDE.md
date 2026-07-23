@@ -42,6 +42,11 @@ Then read `/tmp/screenshot.png` to inspect the result visually.
 | `workflows/` | Vercel Workflow (WDK) definitions — `buildPack.js` is the DurableAgent that builds AI vocab packs |
 | `lib/packTools.js` | The agent's `"use step"` tool bodies (fetch/extract/search/download/analyze/define/save) |
 | `lib/corpus.js`, `lib/spanishText.js`, `lib/subdl.js`, `lib/packArtifacts.js`, `lib/packProgress.js` | Pack-builder support: corpus map, tokenizer, Subdl subtitle client (search + unzip .srt), inter-step artifact store, progress stream |
+| `lib/activePack.js` | Resolves the user's active pack (`user_settings.active_pack_id`; null = default 1500 corpus) + computes its dashboard stats/study queue. Drives dashboard hero/ring/stats and `/study`. |
+| `lib/packLimit.js` | Free-pack gate: free accounts get 1 AI pack; the €5 `user_settings.unlocked` flag lifts it. |
+| `app/api/packs/curation/[buildId]/`, `app/api/packs/save/`, `app/api/user/active-pack/` | Curation payload fetch; save selected words (sets new pack active); switch active pack |
+| `components/PackBuilderClient.jsx` | 4-state builder: source → building animation → review/curate (tap words) → done/confetti |
+| `components/DashboardPackSwitcher.jsx`, `components/PackPaywallModal.jsx` | Dashboard "Now studying" active-pack card; €5 paywall shown when the free pack is used |
 | `app/packs/` | Packs UI — list, `new` (builder), `[id]` (study a pack) |
 | `public/` | Static assets (robots.txt, sitemap, llms.txt, OG images, icons) |
 | `words/` | Legacy static HTML word pages |
@@ -172,6 +177,7 @@ Not a current priority. When ready:
 ## Success / Failure Log
 
 **What worked:**
+- Packs redesign (2026-07-23): integrated the `Packs.dc.html` design. Split the pack builder from autonomous auto-save into **analyze → curate → save**: the agent's final tool is now `prepareCuration` (in `lib/packTools.js`), which stores a `curation` artifact (auto-selected words keyed by canonical **lemma** + an in-context token stream) and emits a `curate` progress event instead of saving. `PackBuilderClient` reads the stream, GETs `/api/packs/curation/[buildId]`, shows the tap-to-select review UI, then POSTs `/api/packs/save` (authoritative free-pack gate; sets the new pack active). Added the **active pack** concept: `user_settings.active_pack_id` (migration `006`), `lib/activePack.js` re-drives the dashboard hero/ring/stats and `/study` (custom active pack → redirects to `/packs/[id]`). Dashboard shows `DashboardPackSwitcher`; free-pack limit reuses the €5 `unlocked` flag via `lib/packLimit.js`. Design keyframes + `.dash-switcher{order:0}` + `.pack-curate-grid` responsive rule added to `globals.css`. Build: "16 steps, 1 workflow". **Requires migration `006_active_pack.sql` applied in Supabase before dashboard/packs/save work.**
 - SEO growth pass (2026-07-23): built the `/words` frequency hub (`/words`, top-100, top-500, verbs, spanish-frequency-list) from `data/words.js` via a shared server component `components/WordListPage.jsx`; fixed the flagship words page (removed `display:none` cloaking, deduped conflicting JSON-LD, single H1); consolidated brand to "Most Common Spanish"; dynamic `app/sitemap.js` (replaces static file); real OG PNG; blog `RelatedPosts` cross-linking; email-gated PDF lead magnet (`app/api/lead-magnet` + `005_pdf_leads.sql` + `components/PdfDownloadForm.jsx`). Reconciled comprehension numbers to top-1,000 = ~74%, 1,500 = ~80%. Details in memory `project_seo_log.md`.
 - Next.js App Router + Tailwind — clean migration from Vite/React Router
 - Adding Privacy/Terms pages to fix GSC 404 errors
@@ -183,6 +189,9 @@ Not a current priority. When ready:
 
 **What failed / watch out for:**
 - WDK requires the DB migration `004_vocab_packs.sql` applied + a `pack-uploads` Storage bucket + `SUBDL_API_KEY` (subtitles via Subdl; download is a ZIP unzipped with `fflate`, free tier ~300 downloads/day per IP) before the pack builder works end-to-end.
+- **DurableAgent model MUST be a serializable STRING id (gateway), never a provider SDK instance** — it crosses a `use step` boundary (`doStreamStep`), so an instance throws "Failed to serialize step arguments at path .args[1]". `AGENT_MODEL`/`AGENT_MODEL_STRONG` are now plain gateway strings (`anthropic/claude-haiku-4.5`), which means the **agentic sources (url/pdf/srt) require `AI_GATEWAY_API_KEY`** locally and on Vercel. **Topic packs bypass the agent** (deterministic `prepareTopicCurationStep` using `TOPIC_MODEL` = openai instance locally / gateway string in prod), so they work locally with just `OPENAI_API_KEY`.
+- Never run `npm run build` while `npm run dev` is live — they share `.next` and the build clobbers the dev server (500s / vendor-chunks errors). Restart dev + `rm -rf .next` to recover.
+- `/seed` (themed session) is merged into the pack builder's **Topic** tab and now redirects to `/packs/new?tab=topic`; it creates a saved pack via the curate→save flow instead of an ephemeral deck. `ThemedSeedClient.jsx` + `/api/ai/seed` are now unused by the app.
 - Workflow steps run outside the request/cookie context — they MUST use the service-role client (`lib/supabase/admin.js`), never the cookie-based `createClient()`.
 - `unpdf` build warning "Accessing import.meta directly is unsupported" is benign (bundled pdf.js); loaded via dynamic `import('unpdf')` inside the step.
 - `next.config.mjs` gains a `turbopack` key from `withWorkflow` that Next 14 flags as "Unrecognized" — harmless warning.

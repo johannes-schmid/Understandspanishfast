@@ -9,7 +9,7 @@ const LEGEND = [
   { color: '#D3D0EA',       label: 'Upcoming' },
 ]
 
-export default function ProgressRing({ learned = 0, learning = 0 }) {
+export default function ProgressRing({ learned = 0, learning = 0, total = TOTAL }) {
   const [anim, setAnim] = useState({ learned: 0, learning: 0 })
 
   useEffect(() => {
@@ -17,14 +17,19 @@ export default function ProgressRing({ learned = 0, learning = 0 }) {
     return () => clearTimeout(t)
   }, [learned, learning])
 
-  const knownPct = Math.min((anim.learned / TOTAL) * 100, 100)
-  const learningPct = Math.min((anim.learning / TOTAL) * 100, Math.max(0, 100 - knownPct))
+  const knownPct = Math.min((anim.learned / total) * 100, 100)
+  const learningPct = Math.min((anim.learning / total) * 100, Math.max(0, 100 - knownPct))
   const ringEnd = knownPct + learningPct
 
-  const nextMilestone = findNextMilestone(learned)
+  const isCorpus = total === TOTAL
+  const nextMilestone = isCorpus ? findNextMilestone(learned) : null
   const wordsUntil = nextMilestone?.wordsUntil ?? 0
 
-  const milestoneText = nextMilestone ? (
+  const milestoneText = !isCorpus ? (
+    learned >= total
+      ? <b style={{ color: 'var(--signal)' }}>Pack complete</b>
+      : <><b style={{ color: 'var(--deep-mind)' }}>{Math.max(0, total - learned)} words</b>{' '}left in this pack</>
+  ) : nextMilestone ? (
     <>
       <b style={{ color: 'var(--deep-mind)' }}>{wordsUntil} words</b>
       {' '}until <span style={{ color: 'var(--iris)' }}>{nextMilestone.label}</span>
@@ -48,8 +53,8 @@ export default function ProgressRing({ learned = 0, learning = 0 }) {
       >
         <div className="dash-ring-inner">
           <span className="dash-ring-value">{learned}</span>
-          <span className="dash-ring-sub u-desk">of 1,500 words</span>
-          <span className="dash-ring-sub u-mob">/ 1,500</span>
+          <span className="dash-ring-sub u-desk">of {total.toLocaleString()} words</span>
+          <span className="dash-ring-sub u-mob">/ {total.toLocaleString()}</span>
         </div>
       </div>
 

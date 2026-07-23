@@ -10,5 +10,13 @@ export async function DELETE(request, { params }) {
   // RLS restricts deletion to the owner; pack_words + progress cascade.
   const { error } = await supabase.from('vocab_packs').delete().eq('id', id).eq('user_id', user.id)
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+
+  // If the deleted pack was active, fall back to the default pack.
+  await supabase
+    .from('user_settings')
+    .update({ active_pack_id: null })
+    .eq('user_id', user.id)
+    .eq('active_pack_id', id)
+
   return NextResponse.json({ ok: true })
 }

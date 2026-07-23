@@ -10,6 +10,11 @@ export default function NavbarClient({ user }) {
   const path = usePathname()
   const [open, setOpen] = useState(false)
 
+  // The pack builder is a dark full-bleed surface — give the nav a matching dark
+  // treatment there so the light cream bar doesn't clash against it.
+  const darkSurface = path === '/packs/new'
+  const activeColor = darkSurface ? '#fff' : 'var(--deep-mind)'
+
   // Close menu on route change
   useEffect(() => { setOpen(false) }, [path])
 
@@ -21,7 +26,7 @@ export default function NavbarClient({ user }) {
 
   return (
     <>
-      <nav className="neuro-nav">
+      <nav className={`neuro-nav${darkSurface ? ' neuro-nav--dark' : ''}`}>
         <Link href="/" className="neuro-nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <Image src="/icon.svg" alt="" width={28} height={28} style={{ objectFit: 'contain' }} />
           <span>Most Common Spanish</span>
@@ -29,28 +34,30 @@ export default function NavbarClient({ user }) {
 
         {/* Desktop links */}
         <ul className="neuro-nav-links">
-          <li><Link href="/blog" style={{ color: path.startsWith('/blog') ? 'var(--deep-mind)' : undefined }}>Blog</Link></li>
-          <li><Link href="/level-test" style={{ color: path === '/level-test' ? 'var(--deep-mind)' : undefined }}>Level test</Link></li>
-          <li><Link href="/words/most-common-spanish-words" style={{ color: path.startsWith('/words') ? 'var(--deep-mind)' : undefined }}>Word list</Link></li>
+          <li><Link href="/blog" style={{ color: path.startsWith('/blog') ? activeColor : undefined }}>Blog</Link></li>
+          <li><Link href="/level-test" style={{ color: path === '/level-test' ? activeColor : undefined }}>Level test</Link></li>
+          <li><Link href="/words/most-common-spanish-words" style={{ color: path.startsWith('/words') ? activeColor : undefined }}>Word list</Link></li>
           {user ? (
             <>
               <li>
-                <Link href="/dashboard" style={{ color: path.startsWith('/dashboard') || path.startsWith('/study') ? 'var(--deep-mind)' : undefined }}>
+                <Link href="/dashboard" style={{ color: path.startsWith('/dashboard') || path.startsWith('/study') ? activeColor : undefined }}>
                   Dashboard
                 </Link>
               </li>
               <li>
-                <Link href="/packs" style={{ color: path.startsWith('/packs') ? 'var(--deep-mind)' : undefined }}>
+                <Link href="/packs" style={{ color: path.startsWith('/packs') ? activeColor : undefined }}>
                   Packs
                 </Link>
               </li>
               <li>
-                <Link href="/reading" style={{ color: path.startsWith('/reading') ? 'var(--deep-mind)' : undefined }}>
+                <Link href="/reading" style={{ color: path.startsWith('/reading') ? activeColor : undefined }}>
                   Reading
                 </Link>
               </li>
               <li>
-                <SignOutButton className="neuro-nav-cta" style={{ background: 'transparent', border: '1px solid var(--cortex)', color: 'var(--cortex)' }}>
+                <SignOutButton className="neuro-nav-cta" style={darkSurface
+                  ? { background: 'rgba(255,255,255,.1)', border: '1px solid rgba(255,255,255,.3)', color: '#fff' }
+                  : { background: 'transparent', border: '1px solid var(--cortex)', color: 'var(--cortex)' }}>
                   Sign out
                 </SignOutButton>
               </li>
