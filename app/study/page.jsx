@@ -2,6 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { words } from '@/data/words'
 import FlashCard from '@/components/FlashCard'
+import { resolveActivePack } from '@/lib/activePack'
 
 export const metadata = { title: 'Study | Most Common Spanish' }
 
@@ -28,6 +29,11 @@ export default async function StudyPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/')
+
+  // Studying always studies the active pack. A custom active pack has its own
+  // study page (which builds the queue from that pack's words).
+  const activePack = await resolveActivePack(supabase, user.id)
+  if (!activePack.isDefault) redirect(`/packs/${activePack.id}`)
 
   const streakWindowStart = new Date()
   streakWindowStart.setDate(streakWindowStart.getDate() - 400)

@@ -3,6 +3,7 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { NextResponse } from 'next/server'
 import { start } from 'workflow/api'
 import { buildPackWorkflow } from '@/workflows/buildPack'
+import { canBuildPack } from '@/lib/packLimit'
 
 export const maxDuration = 60
 
@@ -13,6 +14,16 @@ export async function POST(request) {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
+
+  // Free accounts get one AI pack; the €5 unlock lifts the limit. Pre-check here
+  // so we don't spend an agent run only to block the save.
+  const { allowed } = await canBuildPack(supabase, user.id)
+  if (!allowed) {
+    return NextResponse.json(
+      { error: "You've used your free pack. Unlock for unlimited packs.", paywall: true },
+      { status: 402 },
+    )
+  }
 
   const buildId = crypto.randomUUID()
   const contentType = request.headers.get('content-type') || ''
@@ -53,6 +64,10 @@ export async function POST(request) {
         episode: body.episode != null ? Number(body.episode) : undefined,
         year: body.year != null ? Number(body.year) : undefined,
       }
+    } else if (body.source_type === 'topic') {
+      const scenario = (body.scenario || '').trim().slice(0, 300)
+      if (!scenario) return NextResponse.json({ error: 'describe a situation first' }, { status: 400 })
+      source = { type: 'topic', scenario, label: scenario }
     } else {
       return NextResponse.json({ error: 'unknown source_type' }, { status: 400 })
     }

@@ -3,7 +3,7 @@ import { getWritable } from 'workflow'
 import { z } from 'zod'
 import {
   fetchUrlStep, extractPdfStep, searchSubtitlesStep, downloadSubtitlesStep,
-  analyzeTextStep, generateDefinitionsStep, savePackStep, TARGET,
+  analyzeTextStep, generateDefinitionsStep, prepareCurationStep, prepareTopicCurationStep, TARGET,
 } from '@/lib/packTools'
 import { AGENT_MODEL, AGENT_MODEL_STRONG } from '@/lib/aiModels'
 
@@ -11,22 +11,30 @@ function describeSource(source) {
   if (source.type === 'url') {
     return `Build a Spanish vocabulary pack from this web page: ${source.url}
 
-Steps: call fetchUrl with that URL. If it returns ok:false or langGuess is not "es", explain briefly that you couldn't build a pack and stop. Otherwise call analyzeText with the returned sourceRef, then generateDefinitions with the candidatesRef, then savePack with a short descriptive title (name the topic of the page).`
+Steps: call fetchUrl with that URL. If it returns ok:false or langGuess is not "es", explain briefly that you couldn't build a pack and stop. Otherwise call analyzeText with the returned sourceRef, then generateDefinitions with the candidatesRef, then prepareCuration with a short descriptive title (name the topic of the page).`
   }
   if (source.type === 'pdf') {
     return `Build a Spanish vocabulary pack from the uploaded PDF document (filename: ${source.label || 'document.pdf'}).
 
-Steps: call extractPdf (it takes no arguments). If ok:false, explain and stop. Otherwise call analyzeText with the sourceRef, then generateDefinitions with the candidatesRef, then savePack with a short descriptive title.`
+Steps: call extractPdf (it takes no arguments). If ok:false, explain and stop. Otherwise call analyzeText with the sourceRef, then generateDefinitions with the candidatesRef, then prepareCuration with a short descriptive title.`
   }
   const ep = source.season != null || source.episode != null
     ? ` (season ${source.season ?? '?'}, episode ${source.episode ?? '?'})` : ''
   return `Build a Spanish vocabulary pack from subtitles for the series "${source.query}"${ep}.
 
-Steps: call searchSubtitles. From the results, choose the single BEST Spanish subtitle: prefer a Spanish (language "ES") result whose releaseName matches the requested title and season/episode; avoid hearing-impaired versions unless nothing else fits. Call downloadSubtitles with that result's url. If it fails, try the next-best result once. Then call analyzeText with the sourceRef, generateDefinitions with the candidatesRef, and savePack with a short descriptive title (include the series name).`
+Steps: call searchSubtitles. From the results, choose the single BEST Spanish subtitle: prefer a Spanish (language "ES") result whose releaseName matches the requested title and season/episode; avoid hearing-impaired versions unless nothing else fits. Call downloadSubtitles with that result's url. If it fails, try the next-best result once. Then call analyzeText with the sourceRef, generateDefinitions with the candidatesRef, and prepareCuration with a short descriptive title (include the series name).`
 }
 
 export async function buildPackWorkflow({ userId, buildId, source }) {
   'use workflow'
+
+  // Topic packs generate vocabulary directly from a scenario description — no
+  // source to fetch/analyze, so they skip the agent and its string-model gateway
+  // requirement entirely.
+  if (source.type === 'topic') {
+    await prepareTopicCurationStep(buildId, source.scenario, userId)
+    return []
+  }
 
   const agent = new DurableAgent({
     model: AGENT_MODEL,
@@ -35,9 +43,9 @@ export async function buildPackWorkflow({ userId, buildId, source }) {
 You orchestrate tools; you do NOT do the linguistic work yourself. Deterministic tools handle text extraction, frequency analysis, exclusion of already-known words, and definition writing — never invent, translate, or filter words yourself.
 
 Rules:
-- Always finish by calling savePack. The task is done once a pack is saved.
-- Aim for a pack of ${TARGET.min}-${TARGET.max} words. If analyzeText reports fewer than ${TARGET.min} new words, you MAY acquire one more source (another URL, or the next episode) and analyze it too before saving — but only once. If still low, save what you have.
-- If a source is unusable (ok:false, wrong language, empty), briefly explain and stop without saving.
+- Always finish by calling prepareCuration. The task is done once the words are prepared for review.
+- Aim for ${TARGET.min}-${TARGET.max} new words. If analyzeText reports fewer than ${TARGET.min} new words, you MAY acquire one more source (another URL, or the next episode) and analyze it too before preparing — but only once. If still low, prepare what you have.
+- If a source is unusable (ok:false, wrong language, empty), briefly explain and stop without preparing.
 - Choose a concise, human title for the pack describing the source content.
 - Recoverable tool failures come back as { ok:false, reason }. React to them; do not repeat the exact same failing call.`,
     tools: {
@@ -75,15 +83,15 @@ Rules:
         inputSchema: z.object({ candidatesRef: z.string() }),
         execute: ({ candidatesRef }) => generateDefinitionsStep(buildId, candidatesRef, userId),
       },
-      savePack: {
-        description: 'Persist the final vocabulary pack. Call last, with a short human title.',
+      prepareCuration: {
+        description: 'Prepare the found words for the user to review before the pack is saved. Call last, with a short human title.',
         inputSchema: z.object({
           candidatesRef: z.string(),
           entriesRef: z.string().optional(),
           title: z.string(),
         }),
         execute: ({ candidatesRef, entriesRef, title }) =>
-          savePackStep(buildId, {
+          prepareCurationStep(buildId, {
             candidatesRef, entriesRef, title,
             sourceType: source.type,
             sourceLabel: source.label || source.url || source.query || null,

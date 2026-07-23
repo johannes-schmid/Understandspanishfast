@@ -70,9 +70,11 @@ export default function ReviewHeroCard({ word, dueCount = 0, queueCount = 0, has
             <span style={{ fontSize: '10px', fontWeight: 600, letterSpacing: '.16em', color: '#8B86C9' }}>
               {dueCount > 0 ? 'READY TO REVIEW' : 'READY TO LEARN'}
             </span>
-            <span style={{ fontSize: '11px', fontWeight: 600, color: 'rgba(255,255,255,.45)' }}>
-              #{word.rank} in queue
-            </span>
+            {word.rank != null && (
+              <span style={{ fontSize: '11px', fontWeight: 600, color: 'rgba(255,255,255,.45)' }}>
+                #{word.rank} in queue
+              </span>
+            )}
           </div>
 
           <div style={{ position: 'relative' }}>
