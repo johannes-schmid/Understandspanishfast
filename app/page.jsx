@@ -114,27 +114,29 @@ export default function Landing() {
           </div>
 
           {/* Hero flashcard */}
-          <div className="lp-hero-visual" style={{ position: 'relative', height: '420px' }}>
+          <div className="lp-hero-visual" style={{ position: 'relative', height: '420px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%)', width: '340px', height: '300px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(125,120,214,.4),transparent 68%)' }} />
-            <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%,-50%) rotate(-5deg)', width: '330px', background: 'linear-gradient(135deg,#1b1836 0%,#2c2658 55%,#413a78 100%)', borderRadius: '22px', padding: '36px 32px', color: '#fff', boxShadow: '0 40px 80px -30px rgba(33,29,63,.7)', animation: 'floaty 6s ease-in-out infinite', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', right: '-40px', top: '-40px', width: '180px', height: '180px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(213,154,43,.35),transparent 68%)' }} />
-              <div style={{ position: 'relative' }}>
-                <div style={{ fontWeight: 600, fontSize: '10px', letterSpacing: '.18em', color: 'rgba(255,255,255,.4)', marginBottom: '26px' }}>ESPAÑOL · #1</div>
-                <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: '60px', lineHeight: 1, letterSpacing: '-2px' }}>ser</div>
-                <div style={{ fontFamily: SERIF, fontStyle: 'italic', fontWeight: 400, fontSize: '18px', color: 'rgba(255,255,255,.55)', marginTop: '10px' }}>to be · verb</div>
-                <div style={{ marginTop: '34px' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 500, fontSize: '11px', color: 'rgba(255,255,255,.45)', marginBottom: '6px' }}>
-                    <span>Learned</span><span>appears in ~1 of 25 words</span>
-                  </div>
-                  <div style={{ height: '6px', background: 'rgba(255,255,255,.14)', borderRadius: '3px' }}>
-                    <div style={{ width: '88%', height: '100%', background: 'linear-gradient(90deg,#f3d38a,#d59a2b)', borderRadius: '3px' }} />
+            <div style={{ position: 'relative', width: '330px' }}>
+              <div style={{ transform: 'rotate(-5deg)', background: 'linear-gradient(135deg,#1b1836 0%,#2c2658 55%,#413a78 100%)', borderRadius: '22px', padding: '36px 32px', color: '#fff', boxShadow: '0 40px 80px -30px rgba(33,29,63,.7)', animation: 'floaty 6s ease-in-out infinite', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', right: '-40px', top: '-40px', width: '180px', height: '180px', borderRadius: '50%', background: 'radial-gradient(circle,rgba(213,154,43,.35),transparent 68%)' }} />
+                <div style={{ position: 'relative' }}>
+                  <div style={{ fontWeight: 600, fontSize: '10px', letterSpacing: '.18em', color: 'rgba(255,255,255,.4)', marginBottom: '26px' }}>ESPAÑOL · #1</div>
+                  <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: '60px', lineHeight: 1, letterSpacing: '-2px' }}>ser</div>
+                  <div style={{ fontFamily: SERIF, fontStyle: 'italic', fontWeight: 400, fontSize: '18px', color: 'rgba(255,255,255,.55)', marginTop: '10px' }}>to be · verb</div>
+                  <div style={{ marginTop: '34px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 500, fontSize: '11px', color: 'rgba(255,255,255,.45)', marginBottom: '6px' }}>
+                      <span>Learned</span><span>appears in ~1 of 25 words</span>
+                    </div>
+                    <div style={{ height: '6px', background: 'rgba(255,255,255,.14)', borderRadius: '3px' }}>
+                      <div style={{ width: '88%', height: '100%', background: 'linear-gradient(90deg,#f3d38a,#d59a2b)', borderRadius: '3px' }} />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div style={{ position: 'absolute', right: '6px', bottom: '34px', background: 'var(--white-matter)', border: '1px solid rgba(33,29,63,.08)', borderRadius: '16px', padding: '14px 18px', boxShadow: '0 20px 40px -18px rgba(33,29,63,.4)', animation: 'floaty2 5s ease-in-out infinite', textAlign: 'center' }}>
-              <div style={{ fontWeight: 700, fontSize: '26px', color: '#2f7d5c' }}>74%</div>
-              <div style={{ fontWeight: 500, fontSize: '10px', color: '#a49c8c', letterSpacing: '.04em' }}>of daily Spanish<br />you can now read</div>
+              <div style={{ position: 'absolute', right: '-24px', bottom: '-12px', background: 'var(--white-matter)', border: '1px solid rgba(33,29,63,.08)', borderRadius: '16px', padding: '14px 18px', boxShadow: '0 20px 40px -18px rgba(33,29,63,.4)', animation: 'floaty2 5s ease-in-out infinite', textAlign: 'center' }}>
+                <div style={{ fontWeight: 700, fontSize: '26px', color: '#2f7d5c' }}>74%</div>
+                <div style={{ fontWeight: 500, fontSize: '10px', color: '#a49c8c', letterSpacing: '.04em' }}>of daily Spanish<br />you can now read</div>
+              </div>
             </div>
           </div>
         </div>
