@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { words } from '@/data/words'
 import FlashCard from '@/components/FlashCard'
 
-export const metadata = { title: 'Study | Neuro' }
+export const metadata = { title: 'Study | Most Common Spanish' }
 
 function localIso(d) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`

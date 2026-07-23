@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Blog — comprendo.',
+  title: 'Blog — Most Common Spanish',
   description: 'Articles on learning Spanish faster: high-frequency vocabulary strategy, comprehension thresholds, and the science of word frequency.',
   alternates: { canonical: 'https://mostcommonspanish.com/blog' },
 }

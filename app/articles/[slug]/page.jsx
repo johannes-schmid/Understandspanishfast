@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params
   const article = articles.find(a => a.slug === slug)
   if (!article) return {}
-  return { title: `${article.title} | Neuro` }
+  return { title: `${article.title} | Most Common Spanish` }
 }
 
 function getWordStatus(rank, knownSet, learningSet) {

@@ -4,7 +4,7 @@ import { words } from '@/data/words'
 import FlashCard from '@/components/FlashCard'
 
 export const metadata = {
-  title: 'Practice Spanish free — no account needed | Neuro',
+  title: 'Practice Spanish free — no account needed | Most Common Spanish',
   description: 'Start learning the most common Spanish words right now. No sign-up required — practice your first 10 words free, then create an account to keep going.',
 }
 

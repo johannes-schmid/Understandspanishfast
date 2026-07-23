@@ -11,7 +11,7 @@ import ReviewHeroCard from '@/components/ReviewHeroCard'
 import { splitProgress } from '@/lib/userStats'
 
 export const dynamic = 'force-dynamic'
-export const metadata = { title: 'Dashboard | Neuro' }
+export const metadata = { title: 'Dashboard | Most Common Spanish' }
 
 const ACTIVITY_DAYS = 21 * 7
 
