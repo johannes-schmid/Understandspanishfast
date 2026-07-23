@@ -23,7 +23,7 @@ export default function NavbarClient({ user }) {
     <>
       <nav className="neuro-nav">
         <Link href="/" className="neuro-nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Image src="/logo-element.png" alt="" width={28} height={28} style={{ objectFit: 'contain' }} />
+          <Image src="/icon.svg" alt="" width={28} height={28} style={{ objectFit: 'contain' }} />
           <span>Most Common Spanish</span>
         </Link>
 

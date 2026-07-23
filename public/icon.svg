@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Most Common Spanish">
-  <rect width="64" height="64" rx="16" fill="#FF8C00"/>
-  <rect x="14" y="16" width="10" height="32" rx="5" fill="#ffffff"/>
-  <rect x="27" y="24" width="10" height="24" rx="5" fill="#ffffff" opacity="0.85"/>
-  <rect x="40" y="32" width="10" height="16" rx="5" fill="#ffffff" opacity="0.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Most Common Spanish">
+  <rect x="30" y="16" width="56" height="42" rx="9" fill="#9a93e0" transform="rotate(9 58 37)"/>
+  <rect x="14" y="38" width="64" height="48" rx="10" fill="#534ab7"/>
+  <path d="M14 48 a10 10 0 0 1 10 -10 h10 v20 h-20 z" fill="#ef9f27"/>
+  <rect x="42" y="50" width="28" height="5" rx="2.5" fill="#faf7f2" opacity="0.95"/>
+  <rect x="42" y="62" width="19" height="5" rx="2.5" fill="#faf7f2" opacity="0.5"/>
 </svg>

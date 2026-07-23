@@ -38,8 +38,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${inter.variable}`}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="apple-touch-icon" href="/icon.svg" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
         <meta name="theme-color" content="#F2EDE4" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
