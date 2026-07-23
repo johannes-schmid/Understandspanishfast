@@ -256,7 +256,7 @@ export default function Landing() {
         <h2 style={{ ...H2, marginBottom: '36px' }}>Frequency-first vs. everything else.</h2>
         <div className="lp-2">
           <div style={{ background: 'linear-gradient(160deg,#ecebf7,#f6f2e9)', border: '1px solid rgba(107,102,201,.25)', borderRadius: '20px', padding: '30px' }}>
-            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: '19px', color: 'var(--deep-mind)', marginBottom: '20px' }}>comprendo<span style={{ color: '#7d78d6' }}>.</span></div>
+            <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: '19px', color: 'var(--deep-mind)', marginBottom: '20px' }}>Most Common Spanish</div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '13px' }}>
               {['Learn the highest-impact words first', 'Comprehension you can measure', 'Reading unlocked as you go', 'Calm, no dark patterns'].map(t => (
                 <div key={t} style={{ display: 'flex', gap: '11px', fontWeight: 500, fontSize: '14px', color: 'var(--deep-mind)' }}>
@@ -296,6 +296,31 @@ export default function Landing() {
             <div className="faqa">{a}</div>
           </details>
         ))}
+      </section>
+
+      {/* ── GUIDES & WORD LISTS ── */}
+      <section className="lp-section" style={{ paddingTop: '60px' }}>
+        <div style={EYE}>EXPLORE</div>
+        <h2 style={{ ...H2, marginBottom: '28px' }}>Word lists & guides.</h2>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '12px' }}>
+          {[
+            { href: '/words', t: 'All Spanish word lists', d: 'Frequency-ranked vocabulary hub' },
+            { href: '/words/top-100-spanish-words', t: 'Top 100 Spanish words', d: '~50% of everyday speech' },
+            { href: '/words/most-common-spanish-verbs', t: 'Most common Spanish verbs', d: 'The 150 verbs that matter most' },
+            { href: '/words/spanish-frequency-list', t: 'Frequency list & method', d: 'How coverage really works' },
+            { href: '/blog/how-many-spanish-words-to-be-fluent', t: 'How many words to be fluent?', d: 'The real answer' },
+            { href: '/blog/best-podcasts-for-learning-spanish', t: 'Best podcasts to learn Spanish', d: 'Ranked by level' },
+          ].map((c) => (
+            <Link key={c.href} href={c.href} style={{
+              display: 'block', textDecoration: 'none',
+              background: 'var(--white-matter)', borderRadius: '14px',
+              border: '1px solid rgba(28,26,58,0.09)', padding: '18px 20px',
+            }}>
+              <div style={{ fontWeight: 600, fontSize: '15px', color: 'var(--deep-mind)', marginBottom: '4px' }}>{c.t}</div>
+              <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)' }}>{c.d}</div>
+            </Link>
+          ))}
+        </div>
       </section>
 
       {/* ── FINAL CTA ── */}

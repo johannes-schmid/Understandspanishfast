@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { WORDS, MILESTONES, MILESTONE_TEXT, TYPE_LABEL } from '@/data/words'
+import PdfDownloadForm from '@/components/PdfDownloadForm'
 
 const FILTERS = [
   { key: 'all',  label: 'All' },
@@ -68,34 +69,8 @@ export default function WordsPageClient() {
     setExpanded(prev => prev === rank ? null : rank)
   }
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'Article',
-        headline: '1500 Most Common Spanish Words — Frequency List with Translations',
-        description: 'The 1,500 most common Spanish words ranked by real-world frequency. Includes translations, example sentences, and comprehension milestones.',
-        image: 'https://mostcommonspanish.com/og-default.svg',
-        author: { '@type': 'Person', name: 'Johannes Schmid', url: 'https://mostcommonspanish.com/about' },
-        publisher: { '@type': 'Organization', name: 'Neuro', logo: { '@type': 'ImageObject', url: 'https://mostcommonspanish.com/icon.svg' } },
-        datePublished: '2026-01-01',
-        dateModified: '2026-05-14',
-      },
-      {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mostcommonspanish.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Words', item: 'https://mostcommonspanish.com/words/' },
-          { '@type': 'ListItem', position: 3, name: '1500 Most Common Spanish Words', item: 'https://mostcommonspanish.com/words/most-common-spanish-words' },
-        ],
-      },
-    ],
-  }
-
   return (
     <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
       <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
 
         {/* Header + inline CTA */}
@@ -107,11 +82,17 @@ export default function WordsPageClient() {
               fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
               lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
             }}>
-              1,500 most common<br />Spanish words.
+              The 1,000 most common<br />Spanish words.
             </h1>
             <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '520px', lineHeight: 1.7 }}>
-              Ranked by real-world usage. Learn these and you'll understand ~80% of everyday spoken Spanish.
-              Click any word to see example sentences.
+              Ranked by real-world frequency. The top 1,000 cover ~74% of everyday spoken Spanish;
+              work through all 1,500 here and you'll reach ~80%. Click any word to see example sentences.
+            </p>
+            <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '520px', lineHeight: 1.7, marginTop: '12px' }}>
+              Jump to: <Link href="/words/top-100-spanish-words" style={{ color: 'var(--synapse)' }}>Top 100</Link>
+              {' · '}<Link href="/words/top-500-spanish-words" style={{ color: 'var(--synapse)' }}>Top 500</Link>
+              {' · '}<Link href="/words/most-common-spanish-verbs" style={{ color: 'var(--synapse)' }}>Verbs</Link>
+              {' · '}<Link href="/words/spanish-frequency-list" style={{ color: 'var(--synapse)' }}>How this list is built</Link>
             </p>
           </div>
 
@@ -143,6 +124,11 @@ export default function WordsPageClient() {
           <StatCard label="Words learned" value={learnedCount.toLocaleString()} color="var(--deep-mind)" />
           <StatCard label="Comprehension" value={`~${coverage}%`} color="var(--synapse)" sub="of spoken Spanish" />
           <StatCard label="Words on this list" value={WORDS.length.toLocaleString()} color="var(--deep-mind)" />
+        </div>
+
+        {/* Lead magnet */}
+        <div style={{ maxWidth: '560px', marginBottom: '32px' }}>
+          <PdfDownloadForm source="most-common-spanish-words" />
         </div>
 
         {/* Controls */}

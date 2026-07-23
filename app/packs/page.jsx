@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import PacksList from '@/components/PacksList'
 
-export const metadata = { title: 'Packs | Neuro' }
+export const metadata = { title: 'Packs | Most Common Spanish' }
 
 export default async function PacksPage() {
   const supabase = await createClient()

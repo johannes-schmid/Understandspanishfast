@@ -8,7 +8,12 @@ The site is not a flashcard app or gamified learning tool. It is a structured, o
 
 ## Core resources
 
-- [Most Common Spanish Words](https://mostcommonspanish.com/words/most-common-spanish-words): The 1,000 most common Spanish words ranked by frequency, with English translations, parts of speech, and comprehension milestones (e.g. "these 500 words cover ~70% of spoken Spanish").
+- [Spanish Vocabulary Hub](https://mostcommonspanish.com/words): Index of all frequency-ranked Spanish word lists, with coverage stats.
+- [1,000 Most Common Spanish Words](https://mostcommonspanish.com/words/most-common-spanish-words): The flagship interactive frequency list. The top 1,000 words cover ~74% of everyday spoken Spanish; the full 1,500-word list reaches ~80%. Includes English translations, parts of speech, example sentences, and comprehension milestones.
+- [Top 100 Spanish Words](https://mostcommonspanish.com/words/top-100-spanish-words): The 100 most frequent Spanish words, which make up roughly 50% of everyday speech.
+- [Top 500 Spanish Words](https://mostcommonspanish.com/words/top-500-spanish-words): The 500 most frequent words, covering about 67% of spoken Spanish.
+- [Most Common Spanish Verbs](https://mostcommonspanish.com/words/most-common-spanish-verbs): The 150 highest-frequency Spanish verbs (ser, estar, tener, hacer, ir…), with examples.
+- [Spanish Frequency List & Method](https://mostcommonspanish.com/words/spanish-frequency-list): The corpus behind the ranking and how word counts map to comprehension (50% at 100 words, 67% at 500, 74% at 1,000, 80% at 1,500).
 - [Level Test](https://mostcommonspanish.com/level-test): A short assessment that estimates how much everyday Spanish a learner currently understands, based on which high-frequency words they already know.
 - [Get Started](https://mostcommonspanish.com/get-started): Onboarding path — explains the 1,500-word system, who it is for, and how to use the product to reach comprehension goals.
 - [Homepage](https://mostcommonspanish.com/): Product overview, the 1,500-word journey, and how comprehension coverage scales with vocabulary size.
@@ -27,10 +32,21 @@ The site is not a flashcard app or gamified learning tool. It is a structured, o
 - [The Power of the First 100 Words](https://mostcommonspanish.com/blog/the-power-of-the-first-100-words): Why the top 100 Spanish words cover roughly half of daily speech, and how to prioritize them.
 - [Cracking the 1,500](https://mostcommonspanish.com/blog/cracking-the-1500): The math behind the 1,500-word threshold for reaching everyday comprehension.
 - [How Many Spanish Words to Be Fluent?](https://mostcommonspanish.com/blog/how-many-spanish-words-to-be-fluent): Realistic vocabulary targets for different levels of fluency, grounded in corpus research.
+- [How Long Does It Take to Learn Spanish?](https://mostcommonspanish.com/blog/how-long-does-it-take-to-learn-spanish): Realistic timelines by goal, method, and study time, using FSI data.
+- [Fastest Way to Learn Spanish](https://mostcommonspanish.com/blog/fastest-way-to-learn-spanish): Ten evidence-backed methods for learning Spanish quickly.
+- [Is Spanish Hard to Learn?](https://mostcommonspanish.com/blog/is-spanish-hard-to-learn): What is easy and what is genuinely hard for English speakers.
+- [How to Build Spanish Vocabulary Fast](https://mostcommonspanish.com/blog/how-to-build-spanish-vocabulary): Frequency order, spaced repetition, and learning words in context.
+- [Best Spanish Learning App](https://mostcommonspanish.com/blog/best-spanish-learning-app): Honest, ranked comparison of Spanish learning apps.
+- [Best Shows to Learn Spanish](https://mostcommonspanish.com/blog/best-shows-to-learn-spanish): Spanish TV shows ranked by difficulty level.
+- [Best Podcasts for Learning Spanish](https://mostcommonspanish.com/blog/best-podcasts-for-learning-spanish): Spanish learning podcasts ranked from beginner to advanced.
+- [Best Books to Learn Spanish](https://mostcommonspanish.com/blog/best-books-for-learning-spanish): Recommended books by type and level.
+- [Learn Spanish While Driving](https://mostcommonspanish.com/blog/learn-spanish-while-driving): Building listening comprehension on your commute.
+- [10 Benefits of Learning Spanish](https://mostcommonspanish.com/blog/benefits-of-learning-spanish): Career, cognitive, and cultural benefits.
 
 ## Key facts
 
-- 1,500 high-frequency words cover approximately 80% of everyday spoken Spanish
+- The 1,000 most common words cover ~74% of everyday spoken Spanish; 1,500 words reach ~80%
+- The first 100 words alone cover ~50% of everyday speech; the top 500 cover ~67%
 - Word rankings are corpus-derived (spoken Spanish: subtitles, transcripts), not textbook-based
 - The level test is free and requires no account
 - Target audience: English and German speakers, adult learners, frustrated with slow progress from apps like Duolingo or Babbel

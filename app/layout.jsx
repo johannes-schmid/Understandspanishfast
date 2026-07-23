@@ -20,16 +20,17 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL('https://mostcommonspanish.com'),
   title: {
-    default: 'Neuro — Spanish worth keeping',
-    template: '%s | Neuro',
+    default: 'Most Common Spanish Words — Frequency-Ranked Vocabulary List',
+    template: '%s | Most Common Spanish',
   },
-  description: 'Learn the most common Spanish words ranked by real-world frequency. Master 3,000 high-frequency words and understand 95% of spoken Spanish — fast.',
+  description: 'Learn the most common Spanish words ranked by real-world frequency. The top 1,000 cover ~74% of everyday Spanish; 1,500 gets you to ~80% — the fastest path to real comprehension.',
   openGraph: {
-    siteName: 'Neuro',
-    images: ['/og-default.svg'],
+    siteName: 'Most Common Spanish',
+    images: ['/og-default.png'],
   },
   twitter: {
     card: 'summary_large_image',
+    images: ['/og-default.png'],
   },
 }
 

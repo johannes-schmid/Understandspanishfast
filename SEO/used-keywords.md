@@ -17,3 +17,16 @@ Primary keywords already used as the primary target in a blog post. Never use th
 | benefits of learning spanish | benefits-of-learning-spanish | 2026-06-04 |
 | best books for learning spanish | best-books-for-learning-spanish | 2026-06-04 |
 | how to build spanish vocabulary | how-to-build-spanish-vocabulary | 2026-06-04 |
+
+## Word-page primary keywords (the /words hub)
+
+Frequency/word-list pages under `/words/`. Distinct SERP from blog posts — do not build blog posts targeting these.
+
+| Keyword | Route | Date Added |
+|---------|-------|------------|
+| spanish vocabulary | /words | 2026-07-23 |
+| top 100 spanish words | /words/top-100-spanish-words | 2026-07-23 |
+| top 500 spanish words | /words/top-500-spanish-words | 2026-07-23 |
+| most common spanish verbs | /words/most-common-spanish-verbs | 2026-07-23 |
+| spanish frequency list | /words/spanish-frequency-list | 2026-07-23 |
+| most common spanish words / 1000 most common spanish words | /words/most-common-spanish-words | 2026-05 |

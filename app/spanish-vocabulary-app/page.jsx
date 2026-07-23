@@ -9,14 +9,14 @@ export const metadata = {
     description: 'The Spanish vocabulary app that teaches words by frequency order and tracks your comprehension %. Learn the 1,500 words that cover 80% of everyday Spanish.',
     url: 'https://mostcommonspanish.com/spanish-vocabulary-app',
     type: 'website',
-    images: [{ url: 'https://mostcommonspanish.com/og-default.svg' }],
+    images: [{ url: 'https://mostcommonspanish.com/og-default.png' }],
   },
 }
 
 const appSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'comprendo.',
+  name: 'Most Common Spanish',
   url: 'https://mostcommonspanish.com',
   description: 'A Spanish vocabulary app that ranks words by real-world frequency and tracks your comprehension percentage. Learn the 1,500 most important Spanish words in the right order.',
   applicationCategory: 'EducationalApplication',
@@ -45,7 +45,7 @@ const faqSchema = {
       name: 'What is the best Spanish vocabulary app?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'The best Spanish vocabulary app for comprehension is one that teaches words by frequency order — starting with the most commonly used words first. Apps like comprendo. pre-rank 1,500+ words by how often they appear in real spoken Spanish, so every minute of study gives you maximum return. Most popular apps like Duolingo teach by theme (food, travel, numbers), which is less efficient for building real comprehension quickly.',
+        text: 'The best Spanish vocabulary app for comprehension is one that teaches words by frequency order — starting with the most commonly used words first. Apps like Most Common Spanish pre-rank 1,500+ words by how often they appear in real spoken Spanish, so every minute of study gives you maximum return. Most popular apps like Duolingo teach by theme (food, travel, numbers), which is less efficient for building real comprehension quickly.',
       },
     },
     {
@@ -249,7 +249,7 @@ export default function SpanishVocabularyApp() {
               background: 'var(--deep-mind)', padding: '16px 24px', minWidth: '560px',
             }}>
               <div style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(250,247,242,0.4)', textTransform: 'uppercase', letterSpacing: '.07em' }}>Feature</div>
-              {['Duolingo', 'Anki', 'Babbel', 'comprendo.'].map((name, i) => (
+              {['Duolingo', 'Anki', 'Babbel', 'Most Common Spanish'].map((name, i) => (
                 <div key={name} style={{
                   fontSize: i === 3 ? '13px' : '12px',
                   fontWeight: i === 3 ? 600 : 500,
@@ -433,7 +433,7 @@ export default function SpanishVocabularyApp() {
           {[
             {
               q: 'What is the best Spanish vocabulary app?',
-              a: 'The best Spanish vocabulary app is one that teaches words in frequency order — starting with the most commonly used words first. comprendo. pre-ranks 1,500+ words by how often they appear in real spoken Spanish, with spaced repetition built in and a live comprehension percentage so you always know where you stand.',
+              a: 'The best Spanish vocabulary app is one that teaches words in frequency order — starting with the most commonly used words first. Most Common Spanish pre-ranks 1,500+ words by how often they appear in real spoken Spanish, with spaced repetition built in and a live comprehension percentage so you always know where you stand.',
             },
             {
               q: 'How many Spanish words do I need to learn?',
@@ -441,11 +441,11 @@ export default function SpanishVocabularyApp() {
             },
             {
               q: 'Is this app better than Duolingo for vocabulary?',
-              a: 'For vocabulary specifically, yes. Duolingo organises words by theme rather than frequency, which means you learn less-common words before mastering the high-frequency ones that appear in almost every sentence. comprendo. teaches words in the order that builds real comprehension fastest. You can read a full comparison in our guide to the best Spanish learning apps.',
+              a: 'For vocabulary specifically, yes. Duolingo organises words by theme rather than frequency, which means you learn less-common words before mastering the high-frequency ones that appear in almost every sentence. Most Common Spanish teaches words in the order that builds real comprehension fastest. You can read a full comparison in our guide to the best Spanish learning apps.',
             },
             {
               q: 'How is this different from Anki?',
-              a: 'Anki is a powerful general-purpose flashcard tool — but you have to find or build your own Spanish deck, decide what order to learn words, and configure the spaced repetition settings yourself. comprendo. is purpose-built for Spanish vocabulary: the deck is pre-built, words are frequency-ranked, and spaced repetition is pre-configured. You open it and start learning in seconds.',
+              a: 'Anki is a powerful general-purpose flashcard tool — but you have to find or build your own Spanish deck, decide what order to learn words, and configure the spaced repetition settings yourself. Most Common Spanish is purpose-built for Spanish vocabulary: the deck is pre-built, words are frequency-ranked, and spaced repetition is pre-configured. You open it and start learning in seconds.',
             },
             {
               q: 'How long does it take to reach 80% Spanish comprehension?',

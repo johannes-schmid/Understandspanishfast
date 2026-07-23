@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import ThemedSeedClient from '@/components/ThemedSeedClient'
 
-export const metadata = { title: 'Themed Session | Neuro' }
+export const metadata = { title: 'Themed Session | Most Common Spanish' }
 
 export default async function SeedPage() {
   const supabase = await createClient()

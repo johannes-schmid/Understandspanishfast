@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import FlashCard from '@/components/FlashCard'
 
-export const metadata = { title: 'Study Pack | Neuro' }
+export const metadata = { title: 'Study Pack | Most Common Spanish' }
 
 export default async function PackStudyPage({ params }) {
   const { id } = await params

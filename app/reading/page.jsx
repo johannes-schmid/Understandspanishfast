@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { articles } from '@/data/articles'
 import ReadingClient from '@/components/ReadingClient'
 
-export const metadata = { title: 'Reading | Neuro' }
+export const metadata = { title: 'Reading | Most Common Spanish' }
 
 export default async function ReadingPage({ searchParams }) {
   const supabase = await createClient()

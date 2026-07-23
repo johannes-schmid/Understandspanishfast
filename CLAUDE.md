@@ -172,6 +172,7 @@ Not a current priority. When ready:
 ## Success / Failure Log
 
 **What worked:**
+- SEO growth pass (2026-07-23): built the `/words` frequency hub (`/words`, top-100, top-500, verbs, spanish-frequency-list) from `data/words.js` via a shared server component `components/WordListPage.jsx`; fixed the flagship words page (removed `display:none` cloaking, deduped conflicting JSON-LD, single H1); consolidated brand to "Most Common Spanish"; dynamic `app/sitemap.js` (replaces static file); real OG PNG; blog `RelatedPosts` cross-linking; email-gated PDF lead magnet (`app/api/lead-magnet` + `005_pdf_leads.sql` + `components/PdfDownloadForm.jsx`). Reconciled comprehension numbers to top-1,000 = ~74%, 1,500 = ~80%. Details in memory `project_seo_log.md`.
 - Next.js App Router + Tailwind — clean migration from Vite/React Router
 - Adding Privacy/Terms pages to fix GSC 404 errors
 - Google Analytics via `next/script` with `strategy="afterInteractive"` in layout

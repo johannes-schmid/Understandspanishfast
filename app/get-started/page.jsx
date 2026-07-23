@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation'
 import { SignInButton } from '@/components/AuthButton'
 
 export const metadata = {
-  title: 'Get started free | Neuro',
+  title: 'Get started free | Most Common Spanish',
   description: 'Start understanding real Spanish today. Learn the 1,500 most useful words with science-backed flashcards and real comprehension tracking.',
 }
 

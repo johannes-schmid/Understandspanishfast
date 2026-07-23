@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer className="neuro-footer">
-      <a href="/" className="footer-logo">comprendo<span>.</span></a>
+      <a href="/" className="footer-logo">Most Common Spanish</a>
       <p className="footer-tag">"The app that respects your brain more than your screen time."</p>
       <div className="footer-links">
         <Link href="/privacy">Privacy</Link>
