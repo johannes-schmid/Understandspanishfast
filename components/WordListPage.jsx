@@ -10,7 +10,7 @@ function Stat({ label, value, sub, color = 'var(--deep-mind)' }) {
       border: '0.5px solid rgba(28,26,58,0.09)', padding: '24px 28px',
     }}>
       <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '8px' }}>{label}</div>
-      <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>{value}</div>
+      <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>{value}</div>
       {sub && <div style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cortex)' }}>{sub}</div>}
     </div>
   )
@@ -87,7 +87,7 @@ export default function WordListPage({
         {/* Header */}
         <div className="s-eye">{eyebrow}</div>
         <h1 style={{
-          fontFamily: "'Fraunces', serif", fontWeight: 900,
+          fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
           fontSize: 'clamp(38px, 5vw, 58px)', letterSpacing: '-2px',
           lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '16px',
         }}>{title}</h1>
@@ -167,7 +167,7 @@ export default function WordListPage({
         {faqs.length > 0 && (
           <section style={{ marginBottom: '56px' }}>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
               color: 'var(--deep-mind)', marginBottom: '20px',
             }}>Frequently asked questions</h2>
@@ -192,7 +192,7 @@ export default function WordListPage({
         }}>
           <div className="s-eye" style={{ color: 'var(--mauve)' }}>Learn these, don't just read them</div>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontWeight: 900,
+            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
             fontSize: 'clamp(26px, 3vw, 34px)', letterSpacing: '-1px', lineHeight: 1.1,
             color: 'var(--white-matter)', marginBottom: '12px',
           }}>Turn this list into real comprehension.</h2>
@@ -200,7 +200,7 @@ export default function WordListPage({
             Free for your first 500 words, with spaced repetition built in. Or take the 2-minute level test to see which words you already know.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
-            <Link href="/get-started" className="btn-primary" style={{ textDecoration: 'none' }}>Create free account</Link>
+            <Link href="/study" className="btn-primary" style={{ textDecoration: 'none' }}>Start free flashcards</Link>
             <Link href="/level-test" className="btn-ghost" style={{ color: 'var(--mauve)', textDecoration: 'none' }}>Take the level test →</Link>
           </div>
         </div>

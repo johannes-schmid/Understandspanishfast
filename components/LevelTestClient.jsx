@@ -2,8 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { words as WORDS } from '@/data/words'
-import { coveragePct } from '@/lib/userStats'
+import { coveragePct } from '@/lib/coverage'
 
 const TIERS = [
   { from: 1,    to: 100,  label: 'Essential',    sample: 5 },
@@ -14,7 +13,7 @@ const TIERS = [
   { from: 1501, to: 2000, label: 'Beyond',       sample: 5 },
 ]
 
-function pickWords() {
+function pickWords(WORDS) {
   const out = []
   TIERS.forEach((t) => {
     const pool = WORDS.filter((w) => w.rank >= t.from && w.rank <= t.to)
@@ -54,8 +53,8 @@ function levelLabel(reach) {
   return 'C1 — Mastery'
 }
 
-export default function LevelTestClient() {
-  const [deck] = useState(() => pickWords())
+export default function LevelTestClient({ pool }) {
+  const [deck] = useState(() => pickWords(pool))
   const [idx, setIdx] = useState(0)
   const [answers, setAnswers] = useState([])
   const done = idx >= deck.length
@@ -87,7 +86,7 @@ export default function LevelTestClient() {
       <section style={{ padding: '120px 56px 56px', textAlign: 'center' }}>
         <div className="s-eye">2-minute test</div>
         <h1 style={{
-          fontFamily: "'Fraunces', serif", fontWeight: 900,
+          fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
           fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
           lineHeight: 1.05, color: 'var(--deep-mind)', marginBottom: '16px',
         }}>
@@ -140,7 +139,7 @@ export default function LevelTestClient() {
                   {current.tier} · rank #{current.rank}
                 </div>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: 'clamp(52px, 7vw, 80px)', letterSpacing: '-3px',
                   lineHeight: 1, color: 'var(--white-matter)', marginBottom: '10px',
                 }}>{current.word}</div>
@@ -157,7 +156,7 @@ export default function LevelTestClient() {
                   onClick={() => answer(false)}
                   style={{
                     padding: '16px', borderRadius: '12px', border: '0.5px solid rgba(28,26,58,0.12)',
-                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "'Cabinet Grotesk', sans-serif",
+                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "var(--font-cabinet), sans-serif",
                     fontSize: '15px', fontWeight: 500, cursor: 'pointer', transition: 'background .15s, transform .1s',
                   }}
                   onMouseEnter={e => e.currentTarget.style.background = 'var(--cream-dark)'}
@@ -170,7 +169,7 @@ export default function LevelTestClient() {
                   style={{
                     padding: '16px', borderRadius: '12px', border: 'none',
                     background: 'var(--deep-mind)', color: 'var(--white-matter)',
-                    fontFamily: "'Cabinet Grotesk', sans-serif",
+                    fontFamily: "var(--font-cabinet), sans-serif",
                     fontSize: '15px', fontWeight: 500, cursor: 'pointer', transition: 'background .15s, transform .1s',
                   }}
                   onMouseEnter={e => e.currentTarget.style.background = 'var(--synapse)'}
@@ -194,7 +193,7 @@ export default function LevelTestClient() {
                   textTransform: 'uppercase', padding: '5px 16px', borderRadius: '99px', marginBottom: '20px',
                 }}>Test complete</div>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '80px', letterSpacing: '-3px', lineHeight: 1,
                   color: 'var(--synapse)', marginBottom: '8px',
                 }}>{reach}</div>
@@ -223,7 +222,7 @@ export default function LevelTestClient() {
                   onClick={restart}
                   style={{
                     padding: '14px', borderRadius: '12px', border: '0.5px solid rgba(28,26,58,0.12)',
-                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "'Cabinet Grotesk', sans-serif",
+                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "var(--font-cabinet), sans-serif",
                     fontSize: '14px', fontWeight: 500, cursor: 'pointer',
                   }}
                 >
@@ -232,7 +231,7 @@ export default function LevelTestClient() {
                 <Link href="/words/most-common-spanish-words" style={{
                   padding: '14px', borderRadius: '12px', border: 'none',
                   background: 'var(--deep-mind)', color: 'var(--white-matter)',
-                  fontFamily: "'Cabinet Grotesk', sans-serif",
+                  fontFamily: "var(--font-cabinet), sans-serif",
                   fontSize: '14px', fontWeight: 500, textDecoration: 'none',
                   textAlign: 'center', display: 'block',
                 }}>
@@ -277,7 +276,7 @@ export default function LevelTestClient() {
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 14px', background: 'var(--cream)', borderRadius: '10px' }}>
                 <span style={{ fontSize: '13px', color: 'var(--deep-mind)' }}>Next milestone</span>
                 <span style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 700,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
                   fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--synapse)',
                 }}>{milestone}</span>
               </div>
@@ -316,15 +315,15 @@ export default function LevelTestClient() {
             border: '0.5px solid rgba(83,74,183,0.15)',
           }}>
             <div style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 700,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
               fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--deep-mind)',
               marginBottom: '8px',
             }}>Ready to close the gap?</div>
             <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, marginBottom: '20px' }}>
-              Create a free account and start learning the exact words you're missing.
+              Start learning the exact words you're missing. Free flashcards, no account.
             </p>
-            <Link href="/get-started" className="btn-primary" style={{ display: 'block', textAlign: 'center' }}>
-              Sign up free
+            <Link href="/study" className="btn-primary" style={{ display: 'block', textAlign: 'center' }}>
+              Start free flashcards
             </Link>
           </div>
         </div>

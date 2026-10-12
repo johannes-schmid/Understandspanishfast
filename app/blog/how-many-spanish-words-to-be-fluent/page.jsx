@@ -172,7 +172,7 @@ export default function PostHowManyWords() {
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
                 <span style={{ fontWeight: 700, fontSize: '15px', color: i === 3 ? '#fff' : 'var(--deep-mind)' }}>{label}</span>
-                <span style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, color: i === 3 ? 'var(--mauve)' : 'var(--synapse)', fontSize: '14px' }}>{words} &nbsp;·&nbsp; {coverage}</span>
+                <span style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 700, color: i === 3 ? 'var(--mauve)' : 'var(--synapse)', fontSize: '14px' }}>{words} &nbsp;·&nbsp; {coverage}</span>
               </div>
               <div style={{ height: '5px', background: i === 3 ? 'rgba(255,255,255,0.15)' : '#e0ddd6', borderRadius: '99px', overflow: 'hidden', margin: '8px 0' }}>
                 <div style={{ width: `${pct}%`, height: '100%', background: i === 3 ? 'var(--mauve)' : 'var(--synapse)', borderRadius: '99px' }} />

@@ -22,7 +22,7 @@ const CARDS = [
 const FAQS = [
   { q: 'What is the most efficient way to learn Spanish vocabulary?', a: 'Learn words in frequency order — most common first. Because a small set of words makes up most of everyday speech, learning by frequency means every word you study is one you will actually hear. The top 1,000 words alone cover about 74% of spoken Spanish.' },
   { q: 'How many Spanish words should I learn?', a: 'Aim for the 1,500 most common words. That covers roughly 80% of everyday spoken Spanish — the threshold where conversations and shows become followable. The first 500 already get you to about 67%.' },
-  { q: 'Are these vocabulary lists free?', a: 'Yes. Every list here is free to read, search, and use, with translations and example sentences. A free account adds spaced-repetition practice on the top 500 words.' },
+  { q: 'Are these vocabulary lists free?', a: 'Yes. Every list here is free to read, search, and use, with translations and example sentences. The free flashcards add spaced-repetition practice on the top 500 words.' },
 ]
 
 const jsonLd = {
@@ -61,7 +61,7 @@ export default function Page() {
         </nav>
 
         <div className="s-eye">Spanish vocabulary</div>
-        <h1 style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: 'clamp(38px, 5vw, 58px)', letterSpacing: '-2px', lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '20px' }}>
+        <h1 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: 'clamp(38px, 5vw, 58px)', letterSpacing: '-2px', lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '20px' }}>
           Learn Spanish vocabulary<br />in the right order.
         </h1>
         <p style={{ fontSize: '18px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, maxWidth: '620px', marginBottom: '44px' }}>
@@ -78,7 +78,7 @@ export default function Page() {
               border: '0.5px solid rgba(28,26,58,0.09)', padding: '26px 28px',
             }}>
               <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'var(--synapse)', marginBottom: '10px' }}>{c.coverage}</div>
-              <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2 }}>{c.title}</div>
+              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2 }}>{c.title}</div>
               <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6 }}>{c.desc}</p>
             </Link>
           ))}
@@ -89,7 +89,7 @@ export default function Page() {
         </div>
 
         <section style={{ marginBottom: '56px' }}>
-          <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--deep-mind)', marginBottom: '20px' }}>
+          <h2 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--deep-mind)', marginBottom: '20px' }}>
             Frequently asked questions
           </h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>

@@ -25,7 +25,7 @@ const appSchema = {
     '@type': 'Offer',
     price: '0',
     priceCurrency: 'USD',
-    description: 'Free to start. Full list from €5 one-time.',
+    description: 'First 100 words free, no account. All 1,500 free with an email.',
   },
   featureList: [
     'Frequency-ranked Spanish vocabulary',
@@ -139,7 +139,7 @@ export default function SpanishVocabularyApp() {
             </div>
 
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: 'clamp(44px, 6vw, 72px)',
               lineHeight: 1.0, letterSpacing: '-2.5px', color: 'var(--deep-mind)',
               marginBottom: '28px',
@@ -162,7 +162,7 @@ export default function SpanishVocabularyApp() {
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="/get-started" className="btn-primary" style={{ fontSize: '16px', padding: '15px 30px' }}>
+              <a href="/study" className="btn-primary" style={{ fontSize: '16px', padding: '15px 30px' }}>
                 Start learning free →
               </a>
               <Link href="/words/most-common-spanish-words" className="btn-ghost">
@@ -171,7 +171,7 @@ export default function SpanishVocabularyApp() {
             </div>
 
             <p style={{ fontSize: '13px', color: 'var(--cortex)', marginTop: '16px' }}>
-              Free to start · Full list from €5 one-time · No subscription
+              First 100 words free · No account · No subscription
             </p>
           </div>
         </div>
@@ -218,11 +218,11 @@ export default function SpanishVocabularyApp() {
                 border: `0.5px solid ${color}22`,
               }}>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '13px', color, marginBottom: '12px', letterSpacing: '.05em',
                 }}>{num}</div>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 700,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
                   fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2,
                 }}>{title}</div>
                 <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
@@ -296,7 +296,7 @@ export default function SpanishVocabularyApp() {
               padding: '32px 28px', border: '1px solid rgba(83,74,183,0.2)',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: 'var(--synapse)', marginBottom: '14px', lineHeight: 1,
               }}>Frequency-first</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -313,7 +313,7 @@ export default function SpanishVocabularyApp() {
               padding: '32px 28px', border: '1px solid rgba(176,127,168,0.2)',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: 'var(--mauve)', marginBottom: '14px', lineHeight: 1,
               }}>Spaced repetition</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -330,7 +330,7 @@ export default function SpanishVocabularyApp() {
               padding: '32px 28px', border: '1px solid rgba(45,122,95,0.2)',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: '#4CAF87', marginBottom: '14px', lineHeight: 1,
               }}>Comprehension %</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -388,12 +388,12 @@ export default function SpanishVocabularyApp() {
                 <div style={{
                   width: '36px', height: '36px', borderRadius: '50%',
                   background: 'var(--fog)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '16px',
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '16px',
                   color: 'var(--synapse)', flexShrink: 0,
                 }}>{n}</div>
                 <div>
                   <div style={{
-                    fontFamily: "'Fraunces', serif", fontWeight: 700,
+                    fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
                     fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '6px',
                   }}>{title}</div>
                   <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
@@ -403,7 +403,7 @@ export default function SpanishVocabularyApp() {
           </div>
 
           <div style={{ marginTop: '48px', padding: '28px 32px', background: 'var(--fog)', borderRadius: '16px' }}>
-            <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '18px', color: 'var(--deep-mind)', marginBottom: '10px' }}>
+            <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '18px', color: 'var(--deep-mind)', marginBottom: '10px' }}>
               The research behind it
             </div>
             <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, margin: 0 }}>
@@ -455,7 +455,7 @@ export default function SpanishVocabularyApp() {
             <details key={q} style={{ borderBottom: '0.5px solid rgba(28,26,58,0.1)', paddingBottom: '0' }}>
               <summary style={{
                 padding: '20px 0', cursor: 'pointer', listStyle: 'none',
-                fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '17px',
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '17px',
                 color: 'var(--deep-mind)', letterSpacing: '-0.3px',
                 display: 'flex', justifyContent: 'space-between', alignItems: 'center',
               }}>
@@ -491,11 +491,11 @@ export default function SpanishVocabularyApp() {
           Free to start — your percentage starts climbing from session one.
         </p>
         <div className="cta-actions">
-          <a href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', fontSize: '16px', padding: '15px 30px' }}>
+          <a href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', fontSize: '16px', padding: '15px 30px' }}>
             Start learning free →
           </a>
         </div>
-        <div className="cta-note">Free account · Full list from €5 one-time · No subscription</div>
+        <div className="cta-note">Free · No account · No subscription</div>
       </section>
     </div>
   )

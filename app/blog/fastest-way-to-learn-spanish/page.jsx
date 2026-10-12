@@ -213,7 +213,7 @@ export default function PostFastestWay() {
               display: 'grid', gridTemplateColumns: '48px 1fr', gap: '16px',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '28px',
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '28px',
                 color: i === 0 ? 'var(--mauve)' : 'var(--synapse)', lineHeight: 1, alignSelf: 'start',
               }}>{n}</div>
               <div>

@@ -164,7 +164,7 @@ export default function PostBenefits() {
               display: 'grid', gridTemplateColumns: '48px 1fr', gap: '16px',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '26px',
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '26px',
                 color: i === 0 ? 'var(--mauve)' : 'var(--synapse)', lineHeight: 1, alignSelf: 'start',
               }}>{n}</div>
               <div>

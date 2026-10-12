@@ -243,7 +243,7 @@ export default function PostIsSpanishHard() {
             { level: 'C1', time: '2–4 years', what: 'Near-native, 5,000+ words' },
           ].map(({ level, time, what }) => (
             <div key={level} style={{ background: 'var(--fog)', borderRadius: '14px', padding: '18px' }}>
-              <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '28px', color: 'var(--synapse)', lineHeight: 1, marginBottom: '8px' }}>{level}</div>
+              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '28px', color: 'var(--synapse)', lineHeight: 1, marginBottom: '8px' }}>{level}</div>
               <div style={{ fontWeight: 700, fontSize: '13px', color: 'var(--deep-mind)', marginBottom: '6px' }}>{time}</div>
               <div style={{ fontSize: '12px', color: 'var(--cortex)', lineHeight: 1.5 }}>{what}</div>
             </div>

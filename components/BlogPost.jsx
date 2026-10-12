@@ -47,7 +47,7 @@ function RelatedPosts({ slug }) {
   return (
     <section style={{ marginTop: '56px' }}>
       <h2 style={{
-        fontFamily: "'Fraunces', serif", fontWeight: 900,
+        fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
         fontSize: '26px', letterSpacing: '-0.5px', color: 'var(--deep-mind)', marginBottom: '18px',
       }}>Keep reading</h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '12px', marginBottom: '18px' }}>
@@ -112,7 +112,7 @@ export default function BlogPost({
           <div className="blog-header-grid">
             <div>
               <h1 style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: 'clamp(36px, 4vw, 56px)', letterSpacing: '-2px',
                 lineHeight: 1.05, color: 'var(--deep-mind)', marginBottom: '20px',
               }}>{title}</h1>
@@ -127,7 +127,7 @@ export default function BlogPost({
                 padding: '32px 36px', textAlign: 'center',
               }}>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '56px', letterSpacing: '-2px', lineHeight: 1,
                   color: 'var(--mauve)', marginBottom: '10px',
                 }}>{heroCallout.value}</div>
@@ -162,7 +162,7 @@ export default function BlogPost({
             }}>
               <div className="s-eye" style={{ color: 'var(--mauve)' }}>Ready to build on this?</div>
               <h3 style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
                 color: 'var(--white-matter)', marginBottom: '12px',
               }}>Find out where you stand.</h3>
@@ -171,7 +171,7 @@ export default function BlogPost({
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
                 <Link href="/level-test" className="btn-primary">Take the level test</Link>
-                <Link href="/get-started" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Sign up free →</Link>
+                <Link href="/study" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Start free flashcards →</Link>
               </div>
             </div>
           </article>
@@ -188,7 +188,7 @@ export function SidebarCallout({ title, children }) {
       borderRadius: '16px', padding: '24px',
     }}>
       <h3 style={{
-        fontFamily: "'Fraunces', serif", fontWeight: 700,
+        fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
         fontSize: '18px', letterSpacing: '-0.3px', color: 'var(--deep-mind)',
         marginBottom: '14px',
       }}>{title}</h3>

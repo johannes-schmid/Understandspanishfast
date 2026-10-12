@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { WORDS, MILESTONES, MILESTONE_TEXT, TYPE_LABEL } from '@/data/words'
+import { TYPE_LABEL } from '@/data/wordTypes'
 import PdfDownloadForm from '@/components/PdfDownloadForm'
 
 const FILTERS = [
@@ -34,7 +34,7 @@ function getLearned() {
   catch { return new Set() }
 }
 
-export default function WordsPageClient() {
+export default function WordsPageClient({ words: WORDS, milestones: MILESTONES, milestoneText: MILESTONE_TEXT }) {
   const [learned, setLearned]     = useState(getLearned)
   const [filter, setFilter]       = useState('all')
   const [query, setQuery]         = useState('')
@@ -78,7 +78,7 @@ export default function WordsPageClient() {
           <div>
             <div className="s-eye">Frequency list</div>
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
               lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
             }}>
@@ -106,7 +106,7 @@ export default function WordsPageClient() {
               Free — 500 words
             </div>
             <div style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: '20px', letterSpacing: '-0.5px', lineHeight: 1.15,
               color: 'var(--white-matter)', marginBottom: '6px',
             }}>
@@ -115,7 +115,7 @@ export default function WordsPageClient() {
             <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6, marginBottom: '16px' }}>
               No card required. No gamification.
             </p>
-            <Link href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Sign up free →</Link>
+            <Link href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Start free flashcards →</Link>
           </div>
         </div>
 
@@ -154,7 +154,7 @@ export default function WordsPageClient() {
                   height: '44px', borderRadius: '10px',
                   border: '1.5px solid rgba(28,26,58,0.12)',
                   background: 'var(--cream)', color: 'var(--deep-mind)',
-                  fontSize: '15px', fontFamily: "'Cabinet Grotesk', sans-serif",
+                  fontSize: '15px', fontFamily: "var(--font-cabinet), sans-serif",
                   fontWeight: 300, outline: 'none', transition: 'border-color .15s',
                 }}
                 onFocus={e => e.target.style.borderColor = 'var(--synapse)'}
@@ -169,7 +169,7 @@ export default function WordsPageClient() {
                 background: hideTrans ? 'var(--fog)' : 'var(--cream)',
                 color: hideTrans ? 'var(--synapse)' : 'var(--cortex)',
                 fontSize: '14px', fontWeight: 500, cursor: 'pointer',
-                fontFamily: "'Cabinet Grotesk', sans-serif",
+                fontFamily: "var(--font-cabinet), sans-serif",
                 transition: 'all .15s', whiteSpace: 'nowrap',
               }}
             >
@@ -187,7 +187,7 @@ export default function WordsPageClient() {
                   background: filter === f.key ? 'var(--deep-mind)' : 'transparent',
                   color: filter === f.key ? 'var(--white-matter)' : 'var(--cortex)',
                   fontSize: '13px', fontWeight: 500, cursor: 'pointer',
-                  fontFamily: "'Cabinet Grotesk', sans-serif",
+                  fontFamily: "var(--font-cabinet), sans-serif",
                   transition: 'all .15s',
                 }}
               >
@@ -262,7 +262,7 @@ export default function WordsPageClient() {
                         </td>
                         <td style={{
                           padding: '13px 16px', fontWeight: 600, color: 'var(--deep-mind)', fontSize: '16px',
-                          fontFamily: "'Cabinet Grotesk', sans-serif",
+                          fontFamily: "var(--font-cabinet), sans-serif",
                           textDecoration: isLearned ? 'line-through' : 'none',
                         }}>
                           {w.word}
@@ -360,7 +360,7 @@ export default function WordsPageClient() {
             <div>
               <div className="s-eye" style={{ color: 'var(--mauve)' }}>Stop collecting streaks</div>
               <h2 style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: 'clamp(28px, 3.5vw, 40px)', letterSpacing: '-1px', lineHeight: 1.05,
                 color: 'var(--white-matter)', marginBottom: '12px',
               }}>
@@ -375,7 +375,7 @@ export default function WordsPageClient() {
               border: '0.5px solid rgba(255,255,255,0.07)',
               padding: '28px 32px', minWidth: '220px', flexShrink: 0,
             }}>
-              <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '48px', letterSpacing: '-1.5px', lineHeight: 1, color: 'var(--mauve)', marginBottom: '4px' }}>€0</div>
+              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '48px', letterSpacing: '-1.5px', lineHeight: 1, color: 'var(--mauve)', marginBottom: '4px' }}>€0</div>
               <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '4px' }}>500 words, forever free</div>
               <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--signal)', marginBottom: '20px' }}>Full deck from €29/year</div>
               <Link href="/level-test" style={{ fontSize: '13px', color: 'rgba(123,127,168,0.7)', textDecoration: 'none', display: 'block', marginBottom: '12px' }}>
@@ -383,20 +383,20 @@ export default function WordsPageClient() {
               </Link>
             </div>
           </div>
-          <Link href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Create free account</Link>
+          <Link href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Start free flashcards</Link>
         </div>
 
         {/* FAQ */}
         <section>
           <h2 style={{
-            fontFamily: "'Fraunces', serif", fontWeight: 900,
+            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
             fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
             color: 'var(--deep-mind)', marginBottom: '24px',
           }}>FAQ</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <Faq q="How many Spanish words do I need to be conversational?" a="Around 1,000 of the most frequent words covers ~74% of everyday spoken Spanish. With 1,500 you reach roughly 80% — enough to follow most conversations and shows without constant guessing." />
             <Faq q="Where does this frequency list come from?" a="The list is compiled from large Spanish-language corpora — primarily TV/film subtitles and spoken-language sources — to reflect what real speakers actually say, not what textbooks teach." />
-            <Faq q="Is this list free?" a="Yes — the full 1,500-word list is free to read, search, filter, and mark as learned. No signup required. The free app account gives you spaced repetition on the top 500 words." />
+            <Faq q="Is this list free?" a="Yes — the full 1,500-word list is free to read, search, filter, and mark as learned. No signup required. The free flashcards give you spaced repetition on the top 500 words." />
             <Faq q="What's the difference between this and Duolingo?" a="Duolingo teaches words in a fixed lesson order, mixing useful and obscure vocabulary. This list is ranked purely by frequency, so every word you learn directly increases your real-world comprehension." />
             <Faq q="Why 1,500 words and not 1,000 or 2,000?" a="1,500 is the threshold where comprehension jumps from 'constantly guessing' to 'mostly following'. Below it you're swimming against the current. Above it, context-guessing kicks in and learning accelerates naturally." />
           </div>
@@ -418,7 +418,7 @@ function StatCard({ label, value, color, sub }) {
       <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '8px' }}>
         {label}
       </div>
-      <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>
+      <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>
         {value}
       </div>
       {sub && <div style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cortex)' }}>{sub}</div>}

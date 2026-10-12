@@ -1,4 +1,5 @@
 import WordsPageClient from '@/components/WordsPageClient'
+import { WORDS, MILESTONES, MILESTONE_TEXT } from '@/data/words'
 
 export const metadata = {
   title: '1000 Most Common Spanish Words — Frequency List',
@@ -34,7 +35,7 @@ export default function WordsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <WordsPageClient />
+      <WordsPageClient words={WORDS} milestones={MILESTONES} milestoneText={MILESTONE_TEXT} />
     </>
   )
 }

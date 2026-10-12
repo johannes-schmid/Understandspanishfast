@@ -55,7 +55,7 @@ const jsonLd = {
   ],
 }
 
-const H2 = { fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: 'clamp(26px, 3vw, 34px)', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--deep-mind)', margin: '48px 0 18px' }
+const H2 = { fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: 'clamp(26px, 3vw, 34px)', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--deep-mind)', margin: '48px 0 18px' }
 const P = { fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.75, marginBottom: '18px' }
 
 export default function Page() {
@@ -71,7 +71,7 @@ export default function Page() {
         </nav>
 
         <div className="s-eye">Method &amp; sources</div>
-        <h1 style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '-2px', lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '20px' }}>
+        <h1 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: 'clamp(36px, 5vw, 56px)', letterSpacing: '-2px', lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '20px' }}>
           The Spanish frequency list, and how it maps to comprehension.
         </h1>
         <p style={{ ...P, fontSize: '19px' }}>
@@ -148,7 +148,7 @@ export default function Page() {
         </div>
 
         <div style={{ background: 'var(--deep-mind)', borderRadius: '20px', padding: '44px 40px', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '30px', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--white-matter)', marginBottom: '12px' }}>
+          <h2 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '30px', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--white-matter)', marginBottom: '12px' }}>
             See where you stand.
           </h2>
           <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '26px' }}>

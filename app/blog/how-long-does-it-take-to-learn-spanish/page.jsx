@@ -195,7 +195,7 @@ export default function PostHowLong() {
           { val: '480h',     label: 'Realistic hours to conversational fluency' },
         ].map(({ val, label }) => (
           <div key={label} style={{ background: 'var(--deep-mind)', padding: '28px 20px', textAlign: 'center' }}>
-            <div style={{ fontFamily: "'Fraunces', serif", fontWeight: 900, fontSize: '36px', color: 'var(--mauve)', letterSpacing: '-1px', lineHeight: 1 }}>{val}</div>
+            <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '36px', color: 'var(--mauve)', letterSpacing: '-1px', lineHeight: 1 }}>{val}</div>
             <div style={{ fontSize: '12px', color: 'var(--cortex)', marginTop: '8px', lineHeight: 1.5 }}>{label}</div>
           </div>
         ))}
@@ -220,7 +220,7 @@ export default function PostHowLong() {
             borderRadius: '14px', padding: '18px 20px',
           }}>
             <div style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '13px',
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '13px',
               color: i === 2 ? 'var(--mauve)' : 'var(--synapse)', lineHeight: 1.2,
             }}>{m.time}</div>
             <div style={{ fontSize: '28px', textAlign: 'center' }}>{m.icon}</div>

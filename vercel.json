@@ -1,8 +1,5 @@
 {
   "redirects": [
     { "source": "/compare/vs-duolingo", "destination": "/", "permanent": false }
-  ],
-  "crons": [
-    { "path": "/api/cron/retention", "schedule": "0 9 * * *" }
   ]
 }

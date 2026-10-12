@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { words } from '@/data/words'
 
 const PREVIEW_COUNT = 30
 const FILTERS = [
@@ -30,7 +29,7 @@ function typeKey(pos) {
   return 'other'
 }
 
-export default function HomepageWordPreview() {
+export default function HomepageWordPreview({ words, total }) {
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('all')
   const [expanded, setExpanded] = useState(null)
@@ -67,7 +66,7 @@ export default function HomepageWordPreview() {
               width: '100%', padding: '10px 14px 10px 40px',
               borderRadius: '8px', border: '1.5px solid rgba(28,26,58,0.15)',
               background: 'var(--white-matter)', color: 'var(--deep-mind)',
-              fontSize: '14px', fontFamily: "'Cabinet Grotesk', sans-serif",
+              fontSize: '14px', fontFamily: "var(--font-cabinet), sans-serif",
               fontWeight: 300, outline: 'none',
             }}
             onFocus={e => e.target.style.borderColor = 'var(--synapse)'}
@@ -79,7 +78,7 @@ export default function HomepageWordPreview() {
             <button key={f.key} onClick={() => setFilter(f.key)} style={{
               padding: '8px 14px', borderRadius: '8px', fontSize: '13px',
               fontWeight: 500, cursor: 'pointer', border: 'none',
-              fontFamily: "'Cabinet Grotesk', sans-serif",
+              fontFamily: "var(--font-cabinet), sans-serif",
               background: filter === f.key ? 'var(--deep-mind)' : 'var(--cream-dark)',
               color: filter === f.key ? 'var(--white-matter)' : 'var(--cortex)',
               transition: 'background .15s, color .15s',
@@ -176,13 +175,13 @@ export default function HomepageWordPreview() {
               textAlign: 'center',
             }}>
               <p style={{ fontSize: '16px', fontWeight: 500, color: 'var(--deep-mind)', marginBottom: '6px' }}>
-                {filtered.length - PREVIEW_COUNT} more words in the full list
+                {((!search && filter === 'all') ? total : filtered.length) - PREVIEW_COUNT} more words in the full list
               </p>
               <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '20px' }}>
-                Create a free account to access all words, track your progress, and see your comprehension %.
+                Study them as flashcards with native audio. Your progress and comprehension % save in your browser.
               </p>
-              <Link href="/practice" className="btn-primary">
-                Sign up free — it takes 10 seconds
+              <Link href="/study" className="btn-primary">
+                Start the first 100 free
               </Link>
             </div>
           </div>

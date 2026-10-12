@@ -162,7 +162,7 @@ export default function BlogHub() {
         <div style={{ marginBottom: '64px' }}>
           <div className="s-eye">From the blog</div>
           <h1 style={{
-            fontFamily: "'Fraunces', serif", fontWeight: 900,
+            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
             fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
             lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
           }}>
@@ -191,7 +191,7 @@ export default function BlogHub() {
               <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{featured.readTime}</span>
             </div>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: 'clamp(26px, 3vw, 38px)', letterSpacing: '-1px',
               lineHeight: 1.1, color: 'var(--white-matter)', marginBottom: '16px',
             }}>{featured.title}</h2>
@@ -210,7 +210,7 @@ export default function BlogHub() {
             padding: '48px',
           }}>
             <div style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: '64px', letterSpacing: '-2px', lineHeight: 1,
               color: 'var(--mauve)', marginBottom: '8px',
             }}>{featured.stat}</div>
@@ -242,12 +242,12 @@ export default function BlogHub() {
 
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px', marginBottom: '12px' }}>
                 <h3 style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '22px', letterSpacing: '-0.5px', lineHeight: 1.15,
                   color: 'var(--deep-mind)', flex: 1,
                 }}>{p.title}</h3>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '36px', letterSpacing: '-1px', lineHeight: 1,
                   color: 'var(--mauve)', flexShrink: 0,
                 }}>{p.stat}</div>
@@ -271,16 +271,16 @@ export default function BlogHub() {
           <div>
             <div className="s-eye" style={{ color: 'var(--mauve)' }}>Not just reading</div>
             <h2 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
               color: 'var(--white-matter)', marginBottom: '10px',
             }}>Start applying it.</h2>
             <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, maxWidth: '400px' }}>
-              Create a free account and start learning the exact words that matter — ranked by real-world frequency.
+              Start with the 100 words that cover half of everyday Spanish. Free flashcards, no account.
             </p>
           </div>
-          <Link href="/get-started" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
-            Sign up free
+          <Link href="/study" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
+            Start free flashcards
           </Link>
         </div>
 

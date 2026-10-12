@@ -24,7 +24,7 @@ export default function WaitlistForm({ label = 'Get early access' }) {
         padding: '14px 24px', borderRadius: '10px',
         background: 'var(--signal-light)', color: 'var(--signal)',
         fontSize: '15px', fontWeight: 500,
-        fontFamily: "'Cabinet Grotesk', sans-serif",
+        fontFamily: "var(--font-cabinet), sans-serif",
       }}>
         ✓ You're on the list. We'll be in touch.
       </div>
@@ -44,7 +44,7 @@ export default function WaitlistForm({ label = 'Get early access' }) {
           padding: '13px 20px', borderRadius: '10px',
           border: '1.5px solid rgba(28,26,58,0.15)',
           background: 'var(--white-matter)', color: 'var(--deep-mind)',
-          fontSize: '15px', fontFamily: "'Cabinet Grotesk', sans-serif",
+          fontSize: '15px', fontFamily: "var(--font-cabinet), sans-serif",
           fontWeight: 300, outline: 'none',
         }}
         onFocus={e => e.target.style.borderColor = 'var(--synapse)'}

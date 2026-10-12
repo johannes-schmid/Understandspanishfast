@@ -83,7 +83,7 @@ export default function VsAnki() {
             </div>
 
             <h1 style={{
-              fontFamily: "'Fraunces', serif", fontWeight: 900,
+              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
               fontSize: 'clamp(44px, 6vw, 72px)',
               lineHeight: 1.0, letterSpacing: '-2.5px', color: 'var(--deep-mind)',
               marginBottom: '28px',
@@ -106,7 +106,7 @@ export default function VsAnki() {
             </p>
 
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="/get-started" className="btn-primary" style={{ fontSize: '16px', padding: '15px 30px' }}>
+              <a href="/study" className="btn-primary" style={{ fontSize: '16px', padding: '15px 30px' }}>
                 Switch from Anki — it's free →
               </a>
               <Link href="/words/most-common-spanish-words" className="btn-ghost">
@@ -157,11 +157,11 @@ export default function VsAnki() {
                 border: `0.5px solid ${color}22`,
               }}>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 900,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                   fontSize: '13px', color, marginBottom: '12px', letterSpacing: '.05em',
                 }}>{num}</div>
                 <div style={{
-                  fontFamily: "'Fraunces', serif", fontWeight: 700,
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
                   fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2,
                 }}>{title}</div>
                 <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
@@ -238,7 +238,7 @@ export default function VsAnki() {
               gridColumn: 'span 1',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: 'var(--mauve)', marginBottom: '14px', lineHeight: 1,
               }}>No setup</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -254,7 +254,7 @@ export default function VsAnki() {
               padding: '32px 28px', border: '1px solid rgba(83,74,183,0.2)',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: 'var(--synapse)', marginBottom: '14px', lineHeight: 1,
               }}>Frequency-first</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -270,7 +270,7 @@ export default function VsAnki() {
               padding: '32px 28px', border: '1px solid rgba(45,122,95,0.2)',
             }}>
               <div style={{
-                fontFamily: "'Fraunces', serif", fontWeight: 900,
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
                 fontSize: '32px', color: '#4CAF87', marginBottom: '14px', lineHeight: 1,
               }}>Real progress</div>
               <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
@@ -327,12 +327,12 @@ export default function VsAnki() {
                 <div style={{
                   width: '36px', height: '36px', borderRadius: '50%',
                   background: 'var(--fog)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '16px',
+                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '16px',
                   color: 'var(--synapse)', flexShrink: 0,
                 }}>{n}</div>
                 <div>
                   <div style={{
-                    fontFamily: "'Fraunces', serif", fontWeight: 700,
+                    fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
                     fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '6px',
                   }}>{title}</div>
                   <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
@@ -376,7 +376,7 @@ export default function VsAnki() {
             <details key={q} style={{ borderBottom: '0.5px solid rgba(28,26,58,0.1)', paddingBottom: '0' }}>
               <summary style={{
                 padding: '20px 0', cursor: 'pointer', listStyle: 'none',
-                fontFamily: "'Fraunces', serif", fontWeight: 700, fontSize: '17px',
+                fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '17px',
                 color: 'var(--deep-mind)', letterSpacing: '-0.3px',
                 display: 'flex', justifyContent: 'space-between', alignItems: 'center',
               }}>
@@ -409,11 +409,11 @@ export default function VsAnki() {
 
         <p className="cta-sub">Free to start. No deck building. Your comprehension % starts climbing from session one.</p>
         <div className="cta-actions">
-          <a href="/get-started" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', fontSize: '16px', padding: '15px 30px' }}>
+          <a href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', fontSize: '16px', padding: '15px 30px' }}>
             Switch from Anki — it's free →
           </a>
         </div>
-        <div className="cta-note">Free account · Full list from €5 one-time · No subscription</div>
+        <div className="cta-note">Free · No account · No subscription</div>
       </section>
     </div>
   )

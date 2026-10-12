@@ -199,7 +199,7 @@ export default function Post100Words() {
                 <span key={w} style={{
                   background: 'var(--deep-mind)', color: 'var(--mauve)',
                   borderRadius: '6px', padding: '4px 10px',
-                  fontFamily: "'Fraunces', serif", fontSize: '14px', fontWeight: 600,
+                  fontFamily: "var(--font-fraunces), serif", fontSize: '14px', fontWeight: 600,
                   fontStyle: 'italic',
                 }}>{w}</span>
               ))}

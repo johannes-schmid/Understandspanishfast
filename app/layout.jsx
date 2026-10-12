@@ -2,19 +2,26 @@ import './globals.css'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { Fraunces, Inter } from 'next/font/google'
+import { Fraunces } from 'next/font/google'
+import localFont from 'next/font/local'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
-  weight: ['700', '900'],
+  weight: ['500', '700', '900'],
   display: 'swap',
   variable: '--font-fraunces',
 })
 
-const inter = Inter({
-  subsets: ['latin'],
+const cabinet = localFont({
+  src: [
+    { path: './fonts/CabinetGrotesk-300.woff2', weight: '300' },
+    { path: './fonts/CabinetGrotesk-400.woff2', weight: '400' },
+    { path: './fonts/CabinetGrotesk-500.woff2', weight: '500' },
+    { path: './fonts/CabinetGrotesk-700.woff2', weight: '700' },
+    { path: './fonts/CabinetGrotesk-800.woff2', weight: '800' },
+  ],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-cabinet',
 })
 
 export const metadata = {
@@ -36,13 +43,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${cabinet.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
         <meta name="theme-color" content="#F2EDE4" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5PBVCJEM6E" strategy="afterInteractive" />
@@ -58,11 +64,6 @@ export default function RootLayout({ children }) {
             t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
           })(window, document, "clarity", "script", "wr0vqt3izm");
-        `}</Script>
-        <Script id="material-symbols" strategy="afterInteractive">{`
-          var l=document.createElement('link');l.rel='stylesheet';
-          l.href='https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200';
-          document.head.appendChild(l);
         `}</Script>
         <Navbar />
         {children}
