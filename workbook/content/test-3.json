@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi hermano quiere ____ su casa y mudarse al centro.",
+      "answer": "vender",
+      "base": "vender",
+      "en": "My brother wants to sell his house and move downtown."
+    },
+    {
+      "es": "¿Cuánto ____ el tren en llegar al aeropuerto?",
+      "answer": "tarda",
+      "base": "tardar",
+      "en": "How long does the train take to get to the airport?"
+    },
+    {
+      "es": "Después de correr, me ____ mucho las piernas.",
+      "answer": "duelen",
+      "base": "doler",
+      "en": "After running, my legs really hurt."
+    },
+    {
+      "es": "Lo siento, hoy estoy muy ____ en el trabajo.",
+      "answer": "ocupada",
+      "base": "ocupado",
+      "en": "Sorry, I'm very busy at work today."
+    },
+    {
+      "es": "Mi abuela ____ en un pueblo pequeño del norte.",
+      "answer": "nació",
+      "base": "nacer",
+      "en": "My grandmother was born in a small town in the north."
+    },
+    {
+      "es": "No tengo ____, puedo esperar un rato más.",
+      "answer": "prisa",
+      "base": "prisa",
+      "en": "I'm not in a hurry, I can wait a while longer."
+    },
+    {
+      "es": "El técnico vino ayer a ____ la lavadora.",
+      "answer": "arreglar",
+      "base": "arreglar",
+      "en": "The technician came yesterday to fix the washing machine."
+    },
+    {
+      "es": "Mis padres están muy ____ de mi hermana.",
+      "answer": "orgullosos",
+      "base": "orgulloso",
+      "en": "My parents are very proud of my sister."
+    },
+    {
+      "es": "Tengo una ____ con el dentista el lunes.",
+      "answer": "cita",
+      "base": "cita",
+      "en": "I have an appointment with the dentist on Monday."
+    },
+    {
+      "es": "¿Prefieres ____ en casa o en un restaurante?",
+      "answer": "cenar",
+      "base": "cenar",
+      "en": "Do you prefer to have dinner at home or at a restaurant?"
+    }
+  ],
+  "translate": [
+    {
+      "en": "My husband forgot my birthday.",
+      "es": "Mi marido olvidó mi cumpleaños."
+    },
+    {
+      "en": "The store is open, but the exit is on the right.",
+      "es": "La tienda está abierta, pero la salida está a la derecha."
+    },
+    {
+      "en": "I'm tired, but the party was a lot of fun.",
+      "es": "Estoy cansado, pero la fiesta fue muy divertida."
+    },
+    {
+      "en": "Our flight leaves early tomorrow.",
+      "es": "Nuestro vuelo sale temprano mañana."
+    },
+    {
+      "en": "I usually throw the trash out after dinner.",
+      "es": "Suelo tirar la basura después de la cena."
+    }
+  ]
+}

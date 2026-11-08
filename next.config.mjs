@@ -6,6 +6,7 @@ const REMOVED_APP_ROUTES = [
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  experimental: { outputFileTracingIncludes: { '/api/workbook/download': ['./workbook/out/*.pdf'] } },
   images: { formats: ['image/avif', 'image/webp'] },
   async redirects() {
     return [

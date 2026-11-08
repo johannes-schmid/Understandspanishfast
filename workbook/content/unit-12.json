@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Cuánto vas a ____ en llegar a la oficina?",
+      "answer": "tardar",
+      "base": "tardar",
+      "en": "How long will it take you to get to the office?"
+    },
+    {
+      "es": "Mi hermana ____ mucho a sus hijos cuando viaja por trabajo.",
+      "answer": "extraña",
+      "base": "extrañar",
+      "en": "My sister misses her kids a lot when she travels for work."
+    },
+    {
+      "es": "Esta noche vamos a ____ en un restaurante cerca de casa.",
+      "answer": "cenar",
+      "base": "cenar",
+      "en": "Tonight we're going to have dinner at a restaurant near home."
+    },
+    {
+      "es": "Tengo una ____ con el dentista el jueves por la tarde.",
+      "answer": "cita",
+      "base": "una cita",
+      "en": "I have an appointment with the dentist on Thursday afternoon."
+    },
+    {
+      "es": "Mi ____ cocina mucho mejor que yo.",
+      "answer": "esposo",
+      "base": "un esposo",
+      "en": "My husband cooks much better than I do."
+    },
+    {
+      "es": "La ____ desde nuestro hotel es increíble.",
+      "answer": "vista",
+      "base": "vista",
+      "en": "The view from our hotel is incredible."
+    },
+    {
+      "es": "No te preocupes, te llamo ____.",
+      "answer": "enseguida",
+      "base": "enseguida",
+      "en": "Don't worry, I'll call you right away."
+    },
+    {
+      "es": "Es ____ llevar el pasaporte para viajar.",
+      "answer": "necesario",
+      "base": "necesario",
+      "en": "You need to bring your passport to travel."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The meeting is in the big room.",
+      "es": "La reunión es en la sala grande."
+    },
+    {
+      "en": "My boyfriend is very funny.",
+      "es": "Mi novio es muy gracioso."
+    },
+    {
+      "en": "We decided to take the subway.",
+      "es": "Decidimos tomar el metro."
+    },
+    {
+      "en": "I swear it was a joke!",
+      "es": "¡Te juro que era una broma!"
+    }
+  ],
+  "story": {
+    "title": "La sorpresa de Marta",
+    "text": "El viernes era el cumpleaños de Marta y su (1), Luis, quería darle una gran (2). Habló con sus amigas y (3) prepararon todo en secreto: comida, música y un pastel (4), su color favorito. Luis le dijo a Marta que tenían una (5) a las ocho en un restaurante del (6). Allí esperaban todos sus amigos. Pasó una hora y Marta no llegaba. Luis la llamó, preocupado. —¿Dónde estás? —En el sofá —contestó ella—. Pensé que era una (7). ¡Tú nunca me invitas a (8)! Desde ese día, Luis la invita todos los viernes.",
+    "answers": [
+      "novio",
+      "sorpresa",
+      "ellas",
+      "azul",
+      "cita",
+      "centro",
+      "broma",
+      "cenar"
+    ],
+    "en": "Luis plans a surprise birthday dinner for his girlfriend Marta, but she never shows up because she thought his dinner invitation was a joke."
+  }
+}

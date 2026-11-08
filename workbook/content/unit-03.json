@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Dónde ____ las llaves del coche?",
+      "answer": "pusiste",
+      "base": "poner",
+      "en": "Where did you put the car keys?"
+    },
+    {
+      "es": "Mi hijo ____ en un banco desde marzo.",
+      "answer": "trabaja",
+      "base": "trabajar",
+      "en": "My son has worked at a bank since March."
+    },
+    {
+      "es": "No ____ a nadie en esta ciudad.",
+      "answer": "conozco",
+      "base": "conocer",
+      "en": "I don't know anyone in this city."
+    },
+    {
+      "es": "Siempre ____ el autobús por cinco minutos.",
+      "answer": "pierdo",
+      "base": "perder",
+      "en": "I always miss the bus by five minutes."
+    },
+    {
+      "es": "¿Estás ____ de que la tienda abre hoy?",
+      "answer": "seguro",
+      "base": "seguro",
+      "en": "Are you sure the shop opens today?"
+    },
+    {
+      "es": "Mi abuela ____ en el mismo pueblo toda su vida.",
+      "answer": "vivió",
+      "base": "vivir",
+      "en": "My grandmother lived in the same town her whole life."
+    },
+    {
+      "es": "Necesitamos más ____ para el viaje.",
+      "answer": "dinero",
+      "base": "dinero",
+      "en": "We need more money for the trip."
+    },
+    {
+      "es": "No ____ lo que dice el médico.",
+      "answer": "entiendo",
+      "base": "entender",
+      "en": "I don't understand what the doctor is saying."
+    }
+  ],
+  "translate": [
+    {
+      "en": "We always eat at the same place.",
+      "es": "Siempre comemos en el mismo lugar."
+    },
+    {
+      "en": "Nobody listens to me at work.",
+      "es": "Nadie me escucha en el trabajo."
+    },
+    {
+      "en": "Can you help me tomorrow?",
+      "es": "¿Puedes ayudarme mañana?"
+    },
+    {
+      "en": "I need a new phone too.",
+      "es": "Yo también necesito un teléfono nuevo."
+    }
+  ],
+  "story": {
+    "title": "El nombre olvidado",
+    "text": "Ayer conocí a una mujer muy simpática en una fiesta. Hablamos casi una (1) sobre trabajo, viajes y la (2) en general. Al final me preguntó: «¿Y tú cómo te llamas?». Le dije mi (3), claro. Pero yo no recordaba el suyo, ¡y ella me lo había dicho en el (4) momento! Pasé toda la noche (5) a alguien que la conociera, pero (6) sabía nada. (7), en casa, mi hermana vio una foto de la fiesta y se rió: «¡Es Lucía, tu compañera del colegio!». Ella se acordaba de (8) perfectamente.",
+    "answers": [
+      "hora",
+      "vida",
+      "nombre",
+      "primer",
+      "buscando",
+      "nadie",
+      "Después",
+      "mí"
+    ],
+    "en": "At a party, the narrator chats for an hour with a woman whose name they forgot, only to learn later that she was an old school classmate who remembered them perfectly."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Este restaurante es muy bueno, pero un poco ____.",
+      "answer": "caro",
+      "base": "caro",
+      "en": "This restaurant is very good, but a bit expensive."
+    },
+    {
+      "es": "¿Llevas el ____? Lo necesitas en el aeropuerto.",
+      "answer": "pasaporte",
+      "base": "un pasaporte",
+      "en": "Do you have your passport? You need it at the airport."
+    },
+    {
+      "es": "Mi abuela me enseñó a ____ cuando era joven.",
+      "answer": "coser",
+      "base": "coser",
+      "en": "My grandmother taught me to sew when I was young."
+    },
+    {
+      "es": "Hago ____ tres veces por semana después del trabajo.",
+      "answer": "ejercicio",
+      "base": "ejercicio",
+      "en": "I exercise three times a week after work."
+    },
+    {
+      "es": "Nos casamos en ____ del año pasado.",
+      "answer": "septiembre",
+      "base": "septiembre",
+      "en": "We got married last September."
+    },
+    {
+      "es": "¿____ algo diferente en mi pelo?",
+      "answer": "Notas",
+      "base": "notar",
+      "en": "Do you notice anything different about my hair?"
+    },
+    {
+      "es": "Mi hermano está ____ porque mamá me regaló un coche.",
+      "answer": "celoso",
+      "base": "celoso",
+      "en": "My brother is jealous because Mom gave me a car."
+    },
+    {
+      "es": "Ayer me quedé ____ en el ascensor durante dos horas.",
+      "answer": "atrapado",
+      "base": "atrapado",
+      "en": "Yesterday I got stuck in the elevator for two hours."
+    }
+  ],
+  "translate": [
+    {
+      "en": "My father worked in a factory for thirty years.",
+      "es": "Mi padre trabajó en una fábrica durante treinta años."
+    },
+    {
+      "en": "Spring is my favorite season.",
+      "es": "La primavera es mi estación favorita."
+    },
+    {
+      "en": "We're going to celebrate with a special dinner.",
+      "es": "Vamos a celebrar con una cena especial."
+    },
+    {
+      "en": "Put your coat in the wardrobe.",
+      "es": "Pon tu abrigo en el armario."
+    }
+  ],
+  "story": {
+    "title": "La ropa vieja de papá",
+    "text": "Cada sábado, mi marido abre el (1) y dice: «No tengo nada que ponerme». Ayer decidí ayudarlo. Sacamos todo: camisas viejas, un (2) roto y unas (3) de hace veinte años. «Hay que (4) todo esto», le dije. Él me miró con tristeza. Entonces llegó nuestra hija de diecinueve años, vio la ropa y gritó con (5): «¡Papá, esto vuelve a estar de (6)!». Se llevó casi todo. Hoy ella va a (7) la ropa de su padre en una fiesta. Mi marido no hizo ningún (8), pero esta mañana lo vi mirando las perchas vacías con una sonrisa.",
+    "answers": [
+      "armario",
+      "cinturón",
+      "botas",
+      "botar",
+      "alegría",
+      "moda",
+      "lucir",
+      "comentario"
+    ],
+    "en": "A wife tries to throw out her husband's old clothes, but their daughter happily takes them all because they're back in fashion."
+  }
+}

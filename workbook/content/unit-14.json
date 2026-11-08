@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mañana es el ____ de mi madre y no tengo regalo.",
+      "answer": "cumpleaños",
+      "base": "cumpleaños",
+      "en": "Tomorrow is my mother's birthday and I don't have a present."
+    },
+    {
+      "es": "Me ____ la cabeza desde esta mañana.",
+      "answer": "duele",
+      "base": "doler",
+      "en": "I've had a headache since this morning."
+    },
+    {
+      "es": "Mi padre está muy ____ de su trabajo.",
+      "answer": "orgulloso",
+      "base": "orgulloso",
+      "en": "My father is very proud of his work."
+    },
+    {
+      "es": "¿Por qué no ____ a mis mensajes?",
+      "answer": "respondes",
+      "base": "responder",
+      "en": "Why don't you answer my messages?"
+    },
+    {
+      "es": "Siempre me levanto ____ para ir al trabajo.",
+      "answer": "temprano",
+      "base": "temprano",
+      "en": "I always get up early to go to work."
+    },
+    {
+      "es": "Mi hermano estudia medicina en la ____.",
+      "answer": "universidad",
+      "base": "universidad",
+      "en": "My brother studies medicine at university."
+    },
+    {
+      "es": "No ____ la comida; podemos comerla mañana.",
+      "answer": "tires",
+      "base": "tirar",
+      "en": "Don't throw the food away; we can eat it tomorrow."
+    },
+    {
+      "es": "La ____ de mi prima fue en la playa.",
+      "answer": "boda",
+      "base": "boda",
+      "en": "My cousin's wedding was on the beach."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I can't stand this heat.",
+      "es": "No aguanto este calor."
+    },
+    {
+      "en": "Who is going to drive tonight?",
+      "es": "¿Quién va a manejar esta noche?"
+    },
+    {
+      "en": "We ate everything except the fish.",
+      "es": "Comimos todo salvo el pescado."
+    },
+    {
+      "en": "Did you find out the truth?",
+      "es": "¿Descubriste la verdad?"
+    }
+  ],
+  "story": {
+    "title": "El regalo misterioso",
+    "text": "Para el cumpleaños de mi socia Laura, todos en la oficina compramos un (1) especial: un pequeño robot que limpia la casa. Laura llegó (2), abrió la caja y casi empezó a (3) de alegría. Esa noche, el robot empezó a moverse solo (4) del salón, con muchísima (5). Laura pensó que era un (6). Llamó a su marido, pero él no sabía (7) el aparato. Al final, descubrieron el problema: alguien había cambiado el (8) de la aplicación desde la oficina. ¡Fue Carlos, que siempre hace bromas!",
+    "answers": [
+      "regalo",
+      "temprano",
+      "llorar",
+      "alrededor",
+      "energía",
+      "fantasma",
+      "arreglar",
+      "código"
+    ],
+    "en": "Laura's coworkers give her a cleaning robot for her birthday, and when it starts moving around by itself at night she thinks it's a ghost, until they discover a prankster colleague changed its code."
+  }
+}

@@ -90,12 +90,12 @@ const breadcrumbSchema = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -194,8 +194,8 @@ export default function PostHowLong() {
           { val: '#1',       label: 'Easiest language tier for English speakers' },
           { val: '480h',     label: 'Realistic hours to conversational fluency' },
         ].map(({ val, label }) => (
-          <div key={label} style={{ background: 'var(--deep-mind)', padding: '28px 20px', textAlign: 'center' }}>
-            <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '36px', color: 'var(--mauve)', letterSpacing: '-1px', lineHeight: 1 }}>{val}</div>
+          <div key={label} style={{ background: 'var(--paper)', padding: '28px 20px', textAlign: 'center' }}>
+            <div style={{ fontFamily: "var(--sans)", fontWeight: 900, fontSize: '36px', color: 'var(--deep-mind)', letterSpacing: '-1px', lineHeight: 1 }}>{val}</div>
             <div style={{ fontSize: '12px', color: 'var(--cortex)', marginTop: '8px', lineHeight: 1.5 }}>{label}</div>
           </div>
         ))}
@@ -214,19 +214,18 @@ export default function PostHowLong() {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', margin: '32px 0' }}>
         {MILESTONES.map((m, i) => (
           <div key={m.label} style={{
-            display: 'grid', gridTemplateColumns: '80px 48px 1fr',
+            display: 'grid', gridTemplateColumns: '80px 1fr',
             alignItems: 'center', gap: '16px',
-            background: i === 2 ? 'var(--deep-mind)' : 'var(--fog)',
+            background: i === 2 ? 'var(--hl)' : 'var(--fog)',
             borderRadius: '14px', padding: '18px 20px',
           }}>
             <div style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '13px',
+              fontFamily: "var(--sans)", fontWeight: 700, fontSize: '13px',
               color: i === 2 ? 'var(--mauve)' : 'var(--synapse)', lineHeight: 1.2,
             }}>{m.time}</div>
-            <div style={{ fontSize: '28px', textAlign: 'center' }}>{m.icon}</div>
             <div>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '4px' }}>
-                <span style={{ fontWeight: 700, fontSize: '15px', color: i === 2 ? '#fff' : 'var(--deep-mind)' }}>{m.label}</span>
+                <span style={{ fontWeight: 700, fontSize: '15px', color: i === 2 ? 'var(--deep-mind)' : 'var(--deep-mind)' }}>{m.label}</span>
                 <span style={{ fontSize: '11px', fontWeight: 600, color: i === 2 ? 'var(--mauve)' : 'var(--synapse)', letterSpacing: '.04em', textTransform: 'uppercase' }}>{m.words}</span>
               </div>
               <div style={{ fontSize: '13px', color: i === 2 ? 'var(--cortex)' : 'var(--cortex)', lineHeight: 1.5 }}>{m.detail}</div>
@@ -247,8 +246,8 @@ export default function PostHowLong() {
                 <span style={{ fontWeight: 700, fontSize: '14px', color: 'var(--deep-mind)' }}>{time} / day</span>
                 <span style={{ fontWeight: 700, fontSize: '14px', color: 'var(--synapse)' }}>{months} to fluency</span>
               </div>
-              <div style={{ height: '6px', background: '#e0ddd6', borderRadius: '99px', overflow: 'hidden' }}>
-                <div style={{ width: `${pct}%`, height: '100%', background: 'var(--synapse)', borderRadius: '99px', transition: 'width .3s' }} />
+              <div style={{ height: '6px', background: 'var(--track)', borderRadius: '99px', overflow: 'hidden' }}>
+                <div style={{ width: `${pct}%`, height: '100%', background: 'var(--synapse)', borderRadius: '99px' }} />
               </div>
             </div>
           )
@@ -272,10 +271,10 @@ export default function PostHowLong() {
               <span style={{ fontWeight: 600, color: 'var(--deep-mind)' }}>{words} words</span>
               <span style={{ fontWeight: 700, color: i === 3 ? 'var(--synapse)' : 'var(--cortex)', fontSize: i === 3 ? '15px' : '13px' }}>{pct}%</span>
             </div>
-            <div style={{ height: i === 3 ? '10px' : '7px', background: '#e0ddd6', borderRadius: '99px', overflow: 'hidden' }}>
+            <div style={{ height: i === 3 ? '10px' : '7px', background: 'var(--track)', borderRadius: '99px', overflow: 'hidden' }}>
               <div style={{
                 width: `${pct}%`, height: '100%', borderRadius: '99px',
-                background: i === 3 ? 'var(--synapse)' : i === 4 ? 'var(--deep-mind)' : '#b8b4ac',
+                background: i === 3 ? 'var(--synapse)' : i === 4 ? 'var(--deep-mind)' : 'var(--bar-muted)',
               }} />
             </div>
           </div>
@@ -291,7 +290,6 @@ export default function PostHowLong() {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '12px', margin: '28px 0' }}>
         {REASONS_EASY.map(({ icon, title, body }) => (
           <div key={title} style={{ background: 'var(--fog)', borderRadius: '14px', padding: '20px' }}>
-            <div style={{ fontSize: '28px', marginBottom: '10px' }}>{icon}</div>
             <div style={{ fontWeight: 700, fontSize: '14px', color: 'var(--deep-mind)', marginBottom: '6px' }}>{title}</div>
             <div style={{ fontSize: '13px', color: 'var(--cortex)', lineHeight: 1.6 }}>{body}</div>
           </div>
@@ -324,13 +322,13 @@ export default function PostHowLong() {
         <div>
           <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--synapse)', marginBottom: '8px' }}>What Duolingo gives you</div>
           {['Consistent daily habit', 'A2/B1 level after full course', 'Good for 10–15 min sessions', 'Decent vocabulary introduction'].map(t => (
-            <div key={t} style={{ fontSize: '13px', color: 'var(--cortex)', padding: '5px 0', borderBottom: '1px solid #e0ddd6' }}>✓ {t}</div>
+            <div key={t} style={{ fontSize: '13px', color: 'var(--cortex)', padding: '5px 0', borderBottom: '1px solid var(--track)' }}>✓ {t}</div>
           ))}
         </div>
         <div>
-          <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', color: '#b05a5a', marginBottom: '8px' }}>What Duolingo misses</div>
+          <div style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '.1em', textTransform: 'uppercase', color: 'var(--coral-ink)', marginBottom: '8px' }}>What Duolingo misses</div>
           {["Teaches topics, not frequency", "3–5 yrs to fluency alone", "High dropout after month 3", "Can't handle real conversations"].map(t => (
-            <div key={t} style={{ fontSize: '13px', color: 'var(--cortex)', padding: '5px 0', borderBottom: '1px solid #e0ddd6' }}>✗ {t}</div>
+            <div key={t} style={{ fontSize: '13px', color: 'var(--cortex)', padding: '5px 0', borderBottom: '1px solid var(--track)' }}>✗ {t}</div>
           ))}
         </div>
       </div>
@@ -340,12 +338,10 @@ export default function PostHowLong() {
       <h2>Can you learn Spanish while driving or sleeping?</h2>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', margin: '28px 0' }}>
         <div style={{ background: 'var(--fog)', borderRadius: '14px', padding: '20px' }}>
-          <div style={{ fontSize: '22px', marginBottom: '10px' }}>🚗</div>
           <div style={{ fontWeight: 700, color: 'var(--deep-mind)', marginBottom: '8px' }}>While driving — Yes</div>
           <div style={{ fontSize: '13px', color: 'var(--cortex)', lineHeight: 1.6 }}>Audio methods genuinely work for spoken comprehension. Spanish podcasts designed for learners are excellent in the 300–800 word range. Won't teach reading or writing, but trains your ear.</div>
         </div>
         <div style={{ background: 'var(--fog)', borderRadius: '14px', padding: '20px' }}>
-          <div style={{ fontSize: '22px', marginBottom: '10px' }}>😴</div>
           <div style={{ fontWeight: 700, color: 'var(--deep-mind)', marginBottom: '8px' }}>While sleeping — No</div>
           <div style={{ fontSize: '13px', color: 'var(--cortex)', lineHeight: 1.6 }}>No credible evidence that passive audio during sleep transfers into usable language memory. Sleep consolidates what you learned while awake — it doesn't load new material.</div>
         </div>

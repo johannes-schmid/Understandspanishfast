@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Hace mucho ____ hoy; voy a abrir la ventana.",
+      "answer": "calor",
+      "base": "calor",
+      "en": "It's really hot today; I'm going to open the window."
+    },
+    {
+      "es": "¿Puedes hablar más ____, por favor?",
+      "answer": "despacio",
+      "base": "despacio",
+      "en": "Can you speak more slowly, please?"
+    },
+    {
+      "es": "Mi jefe me ____ a cenar el viernes pasado.",
+      "answer": "invitó",
+      "base": "invitar",
+      "en": "My boss invited me to dinner last Friday."
+    },
+    {
+      "es": "Hoy no tengo ____ de trabajar.",
+      "answer": "ganas",
+      "base": "ganas",
+      "en": "I don't feel like working today."
+    },
+    {
+      "es": "El ____ del piso quiere subir el alquiler.",
+      "answer": "dueño",
+      "base": "un dueño una dueña",
+      "en": "The landlord wants to raise the rent."
+    },
+    {
+      "es": "Tengo que terminar el ____ antes del lunes.",
+      "answer": "informe",
+      "base": "un informe",
+      "en": "I have to finish the report before Monday."
+    },
+    {
+      "es": "Mi hermana tiene la ____ muy sensible al sol.",
+      "answer": "piel",
+      "base": "piel",
+      "en": "My sister's skin is very sensitive to the sun."
+    },
+    {
+      "es": "Quiero ____ a qué hora sale el tren.",
+      "answer": "averiguar",
+      "base": "averiguar",
+      "en": "I want to find out what time the train leaves."
+    }
+  ],
+  "translate": [
+    {
+      "en": "Don't blame your brother; it was my fault.",
+      "es": "No culpes a tu hermano; fue culpa mía."
+    },
+    {
+      "en": "The main problem is money.",
+      "es": "El problema principal es el dinero."
+    },
+    {
+      "en": "My computer is very slow today.",
+      "es": "Mi computadora está muy lenta hoy."
+    },
+    {
+      "en": "This suitcase weighs too much.",
+      "es": "Esta maleta pesa demasiado."
+    }
+  ],
+  "story": {
+    "title": "La cena con los suegros",
+    "text": "Marta invitó a cenar a los padres de su novio. Tenía mucha (1): su suegro es un hombre serio y su suegra es muy exigente. Preparó todo con cuidado, sin olvidar ni un (2). Puso flores en la mesa y sirvió el vino en las mejores (3). Su suegro, (4) en el sofá, no decía nada. Marta pensó: «Esto es (5)». Entonces el perro bajó la (6) con un zapato del suegro en la boca. Todos se rieron y el suegro dijo: «¡Qué perro tan (7)!». Al final, la cena fue un gran (8), gracias al perro.",
+    "answers": [
+      "presión",
+      "detalle",
+      "copas",
+      "sentado",
+      "grave",
+      "escalera",
+      "encantador",
+      "éxito"
+    ],
+    "en": "Marta nervously hosts her boyfriend's serious parents for dinner, and the evening is saved when the dog walks in carrying her father-in-law's shoe."
+  }
+}

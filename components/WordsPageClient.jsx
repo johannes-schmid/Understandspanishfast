@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useRef, useEffect, Fragment } from 'react'
 import Link from 'next/link'
 import { TYPE_LABEL } from '@/data/wordTypes'
-import PdfDownloadForm from '@/components/PdfDownloadForm'
+import { Arrow, CoverageBars, Crumbs, Offline, FaqSection, Closing } from '@/components/WordListPage'
 
 const FILTERS = [
   { key: 'all',  label: 'All' },
@@ -15,42 +15,43 @@ const FILTERS = [
 ]
 const OTHER_TYPES = new Set(['prep', 'conj', 'art', 'pron', 'det', 'num', 'other'])
 
-const TYPE_COLOR = {
-  verb:  { bg: '#EDE8FB', color: 'var(--synapse)' },
-  noun:  { bg: '#E1F5EE', color: 'var(--signal)' },
-  adj:   { bg: '#F4D8E8', color: '#A03060' },
-  adv:   { bg: '#FEF3C7', color: '#92400E' },
-  prep:  { bg: 'var(--fog)', color: 'var(--synapse)' },
-  conj:  { bg: 'var(--fog)', color: 'var(--synapse)' },
-  art:   { bg: 'var(--cream-dark)', color: 'var(--cortex)' },
-  pron:  { bg: 'var(--cream-dark)', color: 'var(--cortex)' },
-  det:   { bg: 'var(--cream-dark)', color: 'var(--cortex)' },
-  num:   { bg: 'var(--cream-dark)', color: 'var(--cortex)' },
-  other: { bg: 'var(--cream-dark)', color: 'var(--cortex)' },
-}
+const FAQS = [
+  { q: 'How many Spanish words do I need to be conversational?', a: 'Around 1,000 of the most frequent words covers ~74% of everyday spoken Spanish. With 1,500 you reach roughly 80%, enough to follow most conversations and shows without constant guessing.' },
+  { q: 'Where does this frequency list come from?', a: 'The list is compiled from large Spanish-language corpora, primarily TV and film subtitles and spoken-language sources, to reflect what real speakers actually say, not what textbooks teach.' },
+  { q: 'Is this list free?', a: 'Yes. The full 1,500-word list is free to read, search, filter and mark as learned, with no signup. To practise, try the flashcards for free, or work through all 1,500 words on paper with the Top 1,500 workbook.' },
+  { q: 'What’s the difference between this and Duolingo?', a: 'Duolingo teaches words in a fixed lesson order, mixing useful and obscure vocabulary. This list is ranked purely by frequency, so every word you learn directly increases your real-world comprehension.' },
+  { q: 'Why 1,500 words and not 1,000 or 2,000?', a: '1,500 is the threshold where comprehension jumps from constantly guessing to mostly following. Below it you’re swimming against the current. Above it, context-guessing kicks in and learning accelerates naturally.' },
+]
 
 function getLearned() {
   try { return new Set(JSON.parse(localStorage.getItem('usf_learned') || '[]')) }
   catch { return new Set() }
 }
 
+function Tick() {
+  return <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fcfcff" strokeWidth="3.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+}
+
 export default function WordsPageClient({ words: WORDS, milestones: MILESTONES, milestoneText: MILESTONE_TEXT }) {
-  const [learned, setLearned]     = useState(getLearned)
+  const [learned, setLearned]     = useState(() => new Set())
   const [filter, setFilter]       = useState('all')
   const [query, setQuery]         = useState('')
   const [hideTrans, setHideTrans] = useState(false)
-  const [expanded, setExpanded]   = useState(null)
+  const [playing, setPlaying]     = useState(null)
+  const audio = useRef(null)
+
+  useEffect(() => { setLearned(getLearned()) }, [])
 
   const filtered = useMemo(() => {
-    const q = query.toLowerCase()
+    const q = query.trim().toLowerCase()
     return WORDS.filter((w) => {
-      const matchSearch = !q || w.word.toLowerCase().includes(q) || w.translation.toLowerCase().includes(q)
+      const matchSearch = !q || w.word.toLowerCase().includes(q) || w.meanings.some((m) => m.toLowerCase().includes(q))
       let matchFilter = true
       if (filter === 'other') matchFilter = OTHER_TYPES.has(w.type)
       else if (filter !== 'all') matchFilter = w.type === filter
       return matchSearch && matchFilter
     })
-  }, [filter, query])
+  }, [WORDS, filter, query])
 
   const showAll      = filter === 'all' && !query
   const learnedCount = learned.size
@@ -60,395 +61,139 @@ export default function WordsPageClient({ words: WORDS, milestones: MILESTONES, 
     setLearned((prev) => {
       const next = new Set(prev)
       if (next.has(rank)) next.delete(rank); else next.add(rank)
-      localStorage.setItem('usf_learned', JSON.stringify([...next]))
+      try { localStorage.setItem('usf_learned', JSON.stringify([...next])) } catch {}
       return next
     })
   }
 
-  function toggleExpanded(rank) {
-    setExpanded(prev => prev === rank ? null : rank)
+  function play(w) {
+    if (!w.audio) return
+    if (audio.current) audio.current.pause()
+    audio.current = new Audio(`/audio/${encodeURIComponent(w.audio)}`)
+    setPlaying(w.rank)
+    audio.current.onended = () => setPlaying(null)
+    audio.current.play().catch(() => setPlaying(null))
   }
 
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
-      <div style={{ maxWidth: '1160px', margin: '0 auto', padding: '120px 56px 80px' }}>
+    <div className="cl cl-home">
+      <div className="wrap pg">
+        <Crumbs items={[{ href: '/', label: 'Home' }, { href: '/words', label: 'Spanish Words' }, { label: '1000 Most Common Spanish Words' }]} />
 
-        {/* Header + inline CTA */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '32px', marginBottom: '48px', flexWrap: 'wrap' }}>
+        <div className="pg-head">
           <div>
-            <div className="s-eye">Frequency list</div>
-            <h1 style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
-              lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
-            }}>
-              The 1,000 most common<br />Spanish words.
-            </h1>
-            <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '520px', lineHeight: 1.7 }}>
+            <h1 className="pg-h1">The 1,000 most common Spanish words</h1>
+            <p className="lead">
               Ranked by real-world frequency. The top 1,000 cover ~74% of everyday spoken Spanish;
-              work through all 1,500 here and you'll reach ~80%. Click any word to see example sentences.
+              work through all 1,500 here and you’ll reach ~80%. Each word has its meaning, an example sentence and native audio.
             </p>
-            <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '520px', lineHeight: 1.7, marginTop: '12px' }}>
-              Jump to: <Link href="/words/top-100-spanish-words" style={{ color: 'var(--synapse)' }}>Top 100</Link>
-              {' · '}<Link href="/words/top-500-spanish-words" style={{ color: 'var(--synapse)' }}>Top 500</Link>
-              {' · '}<Link href="/words/most-common-spanish-verbs" style={{ color: 'var(--synapse)' }}>Verbs</Link>
-              {' · '}<Link href="/words/spanish-frequency-list" style={{ color: 'var(--synapse)' }}>How this list is built</Link>
-            </p>
-          </div>
-
-          {/* Top CTA card */}
-          <div style={{
-            background: 'var(--deep-mind)', borderRadius: '16px',
-            padding: '24px 28px', flexShrink: 0, maxWidth: '300px',
-            border: '0.5px solid rgba(83,74,183,0.3)',
-          }}>
-            <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--mauve)', marginBottom: '8px' }}>
-              Free — 500 words
+            <div className="cta-row">
+              <Link className="btn btn-navy" href="/study">Start for free <Arrow /></Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
             </div>
-            <div style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: '20px', letterSpacing: '-0.5px', lineHeight: 1.15,
-              color: 'var(--white-matter)', marginBottom: '6px',
-            }}>
-              Learn them with spaced repetition.
+          </div>
+          <aside className="card facts">
+            <div className="facts-top">
+              <div>
+                <div className="facts-num tab">~74%</div>
+                <div className="facts-lbl">of everyday spoken Spanish</div>
+              </div>
+              <span className="mono tab">{WORDS.length.toLocaleString('en')} WORDS</span>
             </div>
-            <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6, marginBottom: '16px' }}>
-              No card required. No gamification.
-            </p>
-            <Link href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Start free flashcards →</Link>
-          </div>
+            <CoverageBars level={1000} />
+            <p className="facts-note">Share of words in everyday spoken Spanish you’ll recognise after learning the top N.</p>
+          </aside>
         </div>
 
-        {/* Stats row */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px', marginBottom: '32px' }}>
-          <StatCard label="Words learned" value={learnedCount.toLocaleString()} color="var(--deep-mind)" />
-          <StatCard label="Comprehension" value={`~${coverage}%`} color="var(--synapse)" sub="of spoken Spanish" />
-          <StatCard label="Words on this list" value={WORDS.length.toLocaleString()} color="var(--deep-mind)" />
-        </div>
+        <nav className="sibs" aria-label="Related word lists">
+          <Link href="/words/top-100-spanish-words">Top 100</Link>
+          <Link href="/words/top-500-spanish-words">Top 500</Link>
+          <Link href="/words/most-common-spanish-verbs">Common verbs</Link>
+          <Link href="/words/spanish-frequency-list">How this list is built</Link>
+        </nav>
 
-        {/* Lead magnet */}
-        <div style={{ maxWidth: '560px', marginBottom: '32px' }}>
-          <PdfDownloadForm source="most-common-spanish-words" />
-        </div>
-
-        {/* Controls */}
-        <div style={{
-          background: 'var(--white-matter)', borderRadius: '16px',
-          border: '0.5px solid rgba(28,26,58,0.09)',
-          padding: '20px 24px', marginBottom: '16px',
-          display: 'flex', flexDirection: 'column', gap: '14px',
-        }}>
-          <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ position: 'relative', flex: 1, minWidth: '200px' }}>
-              <span style={{
-                position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)',
-                color: 'var(--cortex)', fontSize: '16px', pointerEvents: 'none',
-              }}>🔍</span>
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search Spanish or English…"
-                style={{
-                  width: '100%', paddingLeft: '40px', paddingRight: '16px',
-                  height: '44px', borderRadius: '10px',
-                  border: '1.5px solid rgba(28,26,58,0.12)',
-                  background: 'var(--cream)', color: 'var(--deep-mind)',
-                  fontSize: '15px', fontFamily: "var(--font-cabinet), sans-serif",
-                  fontWeight: 300, outline: 'none', transition: 'border-color .15s',
-                }}
-                onFocus={e => e.target.style.borderColor = 'var(--synapse)'}
-                onBlur={e => e.target.style.borderColor = 'rgba(28,26,58,0.12)'}
-              />
+        <div className="card list-card wl" id="list">
+          <div className="list-bar">
+            <div className="seg" role="group" aria-label="Word type">
+              {FILTERS.map((f) => (
+                <button key={f.key} type="button" className={filter === f.key ? 'on' : undefined} aria-pressed={filter === f.key} onClick={() => setFilter(f.key)}>{f.label}</button>
+              ))}
             </div>
-            <button
-              onClick={() => setHideTrans(v => !v)}
-              style={{
-                height: '44px', padding: '0 20px', borderRadius: '10px',
-                border: hideTrans ? '1.5px solid var(--synapse)' : '1.5px solid rgba(28,26,58,0.12)',
-                background: hideTrans ? 'var(--fog)' : 'var(--cream)',
-                color: hideTrans ? 'var(--synapse)' : 'var(--cortex)',
-                fontSize: '14px', fontWeight: 500, cursor: 'pointer',
-                fontFamily: "var(--font-cabinet), sans-serif",
-                transition: 'all .15s', whiteSpace: 'nowrap',
-              }}
-            >
-              {hideTrans ? 'Show translations' : 'Hide & test yourself'}
-            </button>
+            <div className="wl-tools">
+              <button type="button" className="btn btn-ghost btn-sm" aria-pressed={hideTrans} onClick={() => setHideTrans((v) => !v)}>{hideTrans ? 'Show English' : 'Hide English'}</button>
+              <label className="search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+                <span className="sr-only">Search words</span>
+                <input type="search" placeholder="Search Spanish or English" value={query} onChange={(e) => setQuery(e.target.value)} />
+              </label>
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {FILTERS.map(f => (
-              <button
-                key={f.key}
-                onClick={() => setFilter(f.key)}
-                style={{
-                  padding: '6px 16px', borderRadius: '99px',
-                  border: filter === f.key ? 'none' : '0.5px solid rgba(28,26,58,0.12)',
-                  background: filter === f.key ? 'var(--deep-mind)' : 'transparent',
-                  color: filter === f.key ? 'var(--white-matter)' : 'var(--cortex)',
-                  fontSize: '13px', fontWeight: 500, cursor: 'pointer',
-                  fontFamily: "var(--font-cabinet), sans-serif",
-                  transition: 'all .15s',
-                }}
-              >
-                {f.label}
-              </button>
-            ))}
-            <span style={{ fontSize: '13px', color: 'var(--cortex)', marginLeft: 'auto', alignSelf: 'center' }}>
-              {filtered.length.toLocaleString()} words
-            </span>
-          </div>
-        </div>
 
-        {/* Word table */}
-        <div style={{
-          background: 'var(--white-matter)', borderRadius: '16px',
-          border: '0.5px solid rgba(28,26,58,0.09)', overflow: 'hidden',
-          marginBottom: '48px',
-        }}>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+          <div className="wl-progress">
+            <span className="mono tab"><b>{learnedCount.toLocaleString('en')}</b> LEARNED</span>
+            <div className="p-track" aria-hidden="true"><div className="p-fill" style={{ transform: `scaleX(${Math.min(1, learnedCount / 1500)})` }} /></div>
+            <span className="mono tab">~{coverage}% COVERAGE · {filtered.length.toLocaleString('en')} SHOWN</span>
+          </div>
+
+          {filtered.length === 0 ? (
+            <p className="list-empty">No words match “{query}”. Try the English meaning instead.</p>
+          ) : (
+            <table>
               <thead>
-                <tr style={{ background: 'var(--cream-dark)', borderBottom: '1px solid rgba(28,26,58,0.08)' }}>
-                  {['#', 'Spanish', 'English', 'Type', ''].map((h, i) => (
-                    <th key={i} style={{
-                      padding: '10px 16px', fontSize: '11px', fontWeight: 500,
-                      letterSpacing: '.08em', textTransform: 'uppercase',
-                      color: 'var(--cortex)',
-                      width: i === 0 ? '60px' : i === 3 ? '130px' : i === 4 ? '48px' : undefined,
-                      textAlign: i === 4 ? 'right' : 'left',
-                    }}>{h}</th>
-                  ))}
-                </tr>
+                <tr><th>Rank</th><th>Word</th><th>Type</th><th>Meaning</th><th>Example</th><th><span className="sr-only">Audio and learned</span></th></tr>
               </thead>
               <tbody>
-                {filtered.map((w, idx) => {
-                  const isLearned  = learned.has(w.rank)
-                  const isExpanded = expanded === w.rank
-                  const milestone  = showAll && MILESTONES[w.rank - 1]
-                  const tc         = TYPE_COLOR[w.type] || TYPE_COLOR.other
-
+                {filtered.map((w) => {
+                  const isLearned = learned.has(w.rank)
+                  const milestone = showAll && MILESTONES[w.rank - 1]
                   return (
                     <Fragment key={w.rank}>
-                      {milestone && (
-                        <tr>
-                          <td colSpan={5} style={{
-                            padding: '10px 16px', fontSize: '13px', fontWeight: 500,
-                            background: 'linear-gradient(90deg, var(--fog) 0%, var(--cream) 100%)',
-                            borderTop: '2px solid var(--synapse)',
-                            borderBottom: '1px solid rgba(83,74,183,0.15)',
-                            color: 'var(--synapse)',
-                          }}>
-                            🎯 {MILESTONE_TEXT[w.rank - 1]}
-                          </td>
-                        </tr>
-                      )}
-
-                      {/* Main word row */}
-                      <tr
-                        onClick={() => toggleExpanded(w.rank)}
-                        style={{
-                          borderTop: '0.5px solid rgba(28,26,58,0.06)',
-                          opacity: isLearned ? 0.4 : 1,
-                          cursor: 'pointer',
-                          transition: 'background .1s, opacity .15s',
-                          background: isExpanded ? 'var(--fog)' : 'transparent',
-                        }}
-                        onMouseEnter={e => { if (!isExpanded) e.currentTarget.style.background = 'var(--cream)' }}
-                        onMouseLeave={e => { if (!isExpanded) e.currentTarget.style.background = 'transparent' }}
-                      >
-                        <td style={{ padding: '13px 16px', fontSize: '13px', color: 'var(--cortex)', fontVariantNumeric: 'tabular-nums' }}>
-                          {w.rank}
+                      <tr className={isLearned ? 'learned' : undefined}>
+                        <td className="rk tab">#{w.rank}</td>
+                        <td className="w">{w.word}{!hideTrans && <span className="w-sub">{w.translation}</span>}</td>
+                        <td className="pos">{(TYPE_LABEL[w.type] || w.type).toLowerCase()}</td>
+                        <td className={`mn${hideTrans ? ' hide-en' : ''}`}><span>{w.meanings.slice(0, 3).join(', ')}</span></td>
+                        <td className={`ex${hideTrans ? ' hide-en' : ''}`}>
+                          {w.example_es && <><span className="es">{w.example_es}</span>{w.example_en && <small><span>{w.example_en}</span></small>}</>}
                         </td>
-                        <td style={{
-                          padding: '13px 16px', fontWeight: 600, color: 'var(--deep-mind)', fontSize: '16px',
-                          fontFamily: "var(--font-cabinet), sans-serif",
-                          textDecoration: isLearned ? 'line-through' : 'none',
-                        }}>
-                          {w.word}
-                        </td>
-                        <td style={{ padding: '13px 16px', fontSize: '14px', fontWeight: 300 }}>
-                          <span style={{
-                            color: hideTrans ? 'transparent' : 'var(--cortex)',
-                            background: hideTrans ? 'rgba(83,74,183,0.1)' : 'transparent',
-                            borderRadius: hideTrans ? '4px' : '0',
-                            padding: hideTrans ? '2px 8px' : '0',
-                            cursor: hideTrans ? 'pointer' : 'default',
-                            userSelect: hideTrans ? 'none' : 'auto',
-                            transition: 'color .1s',
-                          }}
-                            onMouseEnter={e => { if (hideTrans) e.currentTarget.style.color = 'var(--cortex)' }}
-                            onMouseLeave={e => { if (hideTrans) e.currentTarget.style.color = 'transparent' }}
-                          >
-                            {w.meanings.length > 1 ? w.meanings.join(' · ') : w.translation}
-                          </span>
-                        </td>
-                        <td style={{ padding: '13px 16px' }}>
-                          <span style={{
-                            display: 'inline-block', padding: '3px 10px', borderRadius: '99px',
-                            fontSize: '11px', fontWeight: 500,
-                            background: tc.bg, color: tc.color,
-                          }}>
-                            {TYPE_LABEL[w.type] || w.type}
-                          </span>
-                        </td>
-                        <td style={{ padding: '13px 16px', textAlign: 'right' }}>
-                          <button
-                            onClick={(e) => { e.stopPropagation(); toggleLearned(w.rank) }}
-                            aria-label={isLearned ? 'Mark as not learned' : 'Mark as learned'}
-                            style={{
-                              background: 'none', border: 'none', cursor: 'pointer', padding: '4px',
-                              color: isLearned ? 'var(--signal)' : 'rgba(28,26,58,0.2)',
-                              fontSize: '16px', lineHeight: 1, transition: 'color .15s',
-                              display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            }}
-                            onMouseEnter={e => { if (!learned.has(w.rank)) e.currentTarget.style.color = 'var(--signal)' }}
-                            onMouseLeave={e => { if (!learned.has(w.rank)) e.currentTarget.style.color = 'rgba(28,26,58,0.2)' }}
-                          >
-                            {isLearned ? '✓' : '○'}
-                          </button>
+                        <td className="acts-cell">
+                          <div className="acts">
+                            {w.audio && (
+                              <button type="button" className={`chk${playing === w.rank ? ' on' : ''}`} aria-label={`Play ${w.word}`} onClick={() => play(w)}>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill={playing === w.rank ? '#fcfcff' : '#14204a'} aria-hidden="true"><path d="M7 4.5v15l13-7.5z" /></svg>
+                              </button>
+                            )}
+                            <button type="button" className={`chk${isLearned ? ' on' : ''}`} aria-pressed={isLearned} aria-label={isLearned ? `Mark ${w.word} as not learned` : `Mark ${w.word} as learned`} onClick={() => toggleLearned(w.rank)}>
+                              {isLearned && <Tick />}
+                            </button>
+                          </div>
                         </td>
                       </tr>
-
-                      {/* Expanded example row */}
-                      {isExpanded && (
-                        <tr>
-                          <td colSpan={5} style={{
-                            padding: '0 16px 16px 60px',
-                            background: 'var(--fog)',
-                            borderBottom: '0.5px solid rgba(83,74,183,0.15)',
-                          }}>
-                            {w.example_es && (
-                              <div style={{
-                                borderLeft: '2px solid var(--synapse)',
-                                paddingLeft: '14px',
-                              }}>
-                                <div style={{ fontSize: '15px', fontWeight: 400, color: 'var(--deep-mind)', marginBottom: '4px' }}>
-                                  {w.example_es}
-                                </div>
-                                <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)' }}>
-                                  {w.example_en}
-                                </div>
-                              </div>
-                            )}
-                          </td>
+                      {milestone && (
+                        <tr className="ms-row">
+                          <td colSpan={6}><span className="mono tab">TOP {w.rank.toLocaleString('en')}</span>{MILESTONE_TEXT[w.rank - 1].split('— ')[1]}</td>
                         </tr>
                       )}
-
-                        </Fragment>
+                    </Fragment>
                   )
                 })}
-
-                {filtered.length === 0 && (
-                  <tr>
-                    <td colSpan={5} style={{ padding: '48px 16px', textAlign: 'center', color: 'var(--cortex)', fontSize: '15px' }}>
-                      No words match.
-                    </td>
-                  </tr>
-                )}
               </tbody>
             </table>
-          </div>
+          )}
         </div>
 
-        {/* Bottom CTA */}
-        <div style={{
-          background: 'var(--deep-mind)', borderRadius: '20px',
-          padding: '56px 64px', marginBottom: '64px',
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '48px', flexWrap: 'wrap', marginBottom: '36px' }}>
-            <div>
-              <div className="s-eye" style={{ color: 'var(--mauve)' }}>Stop collecting streaks</div>
-              <h2 style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: 'clamp(28px, 3.5vw, 40px)', letterSpacing: '-1px', lineHeight: 1.05,
-                color: 'var(--white-matter)', marginBottom: '12px',
-              }}>
-                Start collecting words<br />that actually stick.
-              </h2>
-              <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, maxWidth: '400px' }}>
-                Free for your first 500 words. Spaced repetition built in. No badges, no nonsense — just the words you need to understand real Spanish.
-              </p>
-            </div>
-            <div style={{
-              background: 'rgba(255,255,255,0.04)', borderRadius: '14px',
-              border: '0.5px solid rgba(255,255,255,0.07)',
-              padding: '28px 32px', minWidth: '220px', flexShrink: 0,
-            }}>
-              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '48px', letterSpacing: '-1.5px', lineHeight: 1, color: 'var(--mauve)', marginBottom: '4px' }}>€0</div>
-              <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '4px' }}>500 words, forever free</div>
-              <div style={{ fontSize: '13px', fontWeight: 500, color: 'var(--signal)', marginBottom: '20px' }}>Full deck from €29/year</div>
-              <Link href="/level-test" style={{ fontSize: '13px', color: 'rgba(123,127,168,0.7)', textDecoration: 'none', display: 'block', marginBottom: '12px' }}>
-                → Test your level first
-              </Link>
-            </div>
+        <section className="sec-sm">
+          <div className="sec-head">
+            <h2>Take the list offline</h2>
+            <p className="lead">Get the top 1,000 as a free PDF, or work through all 1,500 words on paper with the workbook.</p>
           </div>
-          <Link href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none' }}>Start free flashcards</Link>
-        </div>
-
-        {/* FAQ */}
-        <section>
-          <h2 style={{
-            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-            fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
-            color: 'var(--deep-mind)', marginBottom: '24px',
-          }}>FAQ</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <Faq q="How many Spanish words do I need to be conversational?" a="Around 1,000 of the most frequent words covers ~74% of everyday spoken Spanish. With 1,500 you reach roughly 80% — enough to follow most conversations and shows without constant guessing." />
-            <Faq q="Where does this frequency list come from?" a="The list is compiled from large Spanish-language corpora — primarily TV/film subtitles and spoken-language sources — to reflect what real speakers actually say, not what textbooks teach." />
-            <Faq q="Is this list free?" a="Yes — the full 1,500-word list is free to read, search, filter, and mark as learned. No signup required. The free flashcards give you spaced repetition on the top 500 words." />
-            <Faq q="What's the difference between this and Duolingo?" a="Duolingo teaches words in a fixed lesson order, mixing useful and obscure vocabulary. This list is ranked purely by frequency, so every word you learn directly increases your real-world comprehension." />
-            <Faq q="Why 1,500 words and not 1,000 or 2,000?" a="1,500 is the threshold where comprehension jumps from 'constantly guessing' to 'mostly following'. Below it you're swimming against the current. Above it, context-guessing kicks in and learning accelerates naturally." />
-          </div>
+          <Offline source="most-common-spanish-words" />
         </section>
 
-      </div>
-    </div>
-  )
-}
+        <FaqSection faqs={FAQS} />
 
-function Fragment({ children }) { return <>{children}</> }
-
-function StatCard({ label, value, color, sub }) {
-  return (
-    <div style={{
-      background: 'var(--white-matter)', borderRadius: '16px',
-      border: '0.5px solid rgba(28,26,58,0.09)', padding: '24px 28px',
-    }}>
-      <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '8px' }}>
-        {label}
+        <Closing />
       </div>
-      <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>
-        {value}
-      </div>
-      {sub && <div style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cortex)' }}>{sub}</div>}
-    </div>
-  )
-}
-
-function Faq({ q, a }) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div
-      onClick={() => setOpen(v => !v)}
-      style={{
-        background: 'var(--white-matter)', borderRadius: '14px',
-        border: open ? '0.5px solid rgba(83,74,183,0.3)' : '0.5px solid rgba(28,26,58,0.09)',
-        padding: '20px 24px', cursor: 'pointer',
-        transition: 'border-color .15s',
-      }}
-    >
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px' }}>
-        <span style={{ fontSize: '15px', fontWeight: 500, color: 'var(--deep-mind)' }}>{q}</span>
-        <span style={{
-          color: 'var(--cortex)', fontSize: '16px', flexShrink: 0,
-          transition: 'transform .2s', transform: open ? 'rotate(180deg)' : 'none',
-          display: 'inline-block',
-        }}>↓</span>
-      </div>
-      {open && (
-        <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, marginTop: '12px' }}>{a}</p>
-      )}
     </div>
   )
 }

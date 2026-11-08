@@ -4,6 +4,14 @@ import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { coveragePct } from '@/lib/coverage'
 
+function Arrow() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+}
+
+function Icon({ d }) {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={d} /></svg>
+}
+
 const TIERS = [
   { from: 1,    to: 100,  label: 'Essential',    sample: 5 },
   { from: 101,  to: 250,  label: 'Fundamental',  sample: 5 },
@@ -54,16 +62,19 @@ function levelLabel(reach) {
 }
 
 export default function LevelTestClient({ pool }) {
-  const [deck] = useState(() => pickWords(pool))
+  const [deck, setDeck] = useState(null)
+  useEffect(() => { setDeck(pickWords(pool)) }, [pool])
   const [idx, setIdx] = useState(0)
   const [answers, setAnswers] = useState([])
-  const done = idx >= deck.length
+  const ready = !!deck
+  const done = ready && idx >= deck.length
 
-  const reach = useMemo(() => computeReach(answers, deck), [answers, deck])
+  const reach = useMemo(() => (deck ? computeReach(answers, deck) : 0), [answers, deck])
   const milestone = nextMilestone(reach)
   const level = levelLabel(reach)
   const gap = Math.max(0, 1500 - reach)
-  const progressPct = Math.round((idx / deck.length) * 100)
+  const total = deck ? deck.length : 25
+  const progressPct = Math.round((idx / total) * 100)
 
   useEffect(() => {
     if (done) {
@@ -77,257 +88,102 @@ export default function LevelTestClient({ pool }) {
   }
 
   const restart = () => { setIdx(0); setAnswers([]); window.scrollTo({ top: 0 }) }
-  const current = deck[idx]
+  const current = deck ? deck[idx] : null
+
+  const showPct = Math.min(100, Math.round(reach / 800 * 100))
 
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
+    <div className="cl cl-home">
+      <div className="wrap pg">
+        <div className="pg-head solo">
+          <div>
+            <h1 className="pg-h1">How much Spanish do you <span className="soft">actually know</span></h1>
+            <p className="lead">We show you frequency-ranked words. You say whether you’d recognise each one. We estimate your vocabulary and how much everyday Spanish you already follow.</p>
+          </div>
+        </div>
 
-      {/* Hero */}
-      <section style={{ padding: '120px 56px 56px', textAlign: 'center' }}>
-        <div className="s-eye">2-minute test</div>
-        <h1 style={{
-          fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-          fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
-          lineHeight: 1.05, color: 'var(--deep-mind)', marginBottom: '16px',
-        }}>
-          How much Spanish<br />do you actually know?
-        </h1>
-        <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '420px', margin: '0 auto', lineHeight: 1.7 }}>
-          We show you frequency-ranked words. You say whether you'd recognise each one. We calculate your reach.
-        </p>
-      </section>
-
-      {/* Main content */}
-      <section style={{
-        maxWidth: '1160px', margin: '0 auto', padding: '0 56px 80px',
-        display: 'grid', gridTemplateColumns: '1fr 340px', gap: '24px', alignItems: 'start',
-      }}>
-
-        {/* Quiz card */}
-        <div style={{
-          background: 'var(--white-matter)', borderRadius: '20px',
-          border: '0.5px solid rgba(28,26,58,0.09)',
-          padding: '40px', boxShadow: '0 8px 32px rgba(28,26,58,0.07)',
-        }}>
-
-          {!done ? (
-            <>
-              {/* Progress bar */}
-              <div style={{ marginBottom: '36px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                  <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{idx} of {deck.length} words</span>
-                  <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--synapse)' }}>{progressPct}%</span>
+        <section className="lt">
+          <div className="card quiz">
+            {!done ? (
+              <>
+                <div className="q-meta">
+                  <span className="mono tab">WORD {idx + 1} OF {total}</span>
+                  <span className="mono tab">{progressPct}%</span>
                 </div>
-                <div style={{ height: '5px', background: 'var(--cream-dark)', borderRadius: '99px', overflow: 'hidden' }}>
-                  <div style={{
-                    height: '100%', width: `${progressPct}%`,
-                    background: 'var(--synapse)', borderRadius: '99px',
-                    transition: 'width .3s ease',
-                  }} />
-                </div>
-              </div>
+                <div className="q-bar" aria-hidden="true"><i style={{ transform: `scaleX(${idx / total})` }} /></div>
 
-              {/* Word display */}
-              <div style={{
-                background: 'var(--deep-mind)', borderRadius: '16px',
-                padding: '48px 40px', textAlign: 'center', marginBottom: '24px',
-              }}>
-                <div style={{
-                  fontSize: '11px', fontWeight: 500, letterSpacing: '.08em',
-                  textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '20px',
-                }}>
-                  {current.tier} · rank #{current.rank}
+                <div className="panel q-stage" aria-live="polite">
+                  {current ? (
+                    <>
+                      <div className="mono tab">{current.tier.toUpperCase()} · RANK #{current.rank}</div>
+                      <div className="q-big" lang="es">{current.word}</div>
+                    </>
+                  ) : (
+                    <>
+                      <div className="mono">PICKING WORDS</div>
+                      <div className="q-big ghost" aria-hidden="true">palabra</div>
+                    </>
+                  )}
                 </div>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: 'clamp(52px, 7vw, 80px)', letterSpacing: '-3px',
-                  lineHeight: 1, color: 'var(--white-matter)', marginBottom: '10px',
-                }}>{current.word}</div>
-                {current.type && (
-                  <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', fontStyle: 'italic' }}>
-                    {current.type}
-                  </div>
-                )}
-              </div>
 
-              {/* Answer buttons */}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: '16px' }}>
-                <button
-                  onClick={() => answer(false)}
-                  style={{
-                    padding: '16px', borderRadius: '12px', border: '0.5px solid rgba(28,26,58,0.12)',
-                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "var(--font-cabinet), sans-serif",
-                    fontSize: '15px', fontWeight: 500, cursor: 'pointer', transition: 'background .15s, transform .1s',
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.background = 'var(--cream-dark)'}
-                  onMouseLeave={e => e.currentTarget.style.background = 'var(--cream)'}
-                >
-                  ✕ Not yet
-                </button>
-                <button
-                  onClick={() => answer(true)}
-                  style={{
-                    padding: '16px', borderRadius: '12px', border: 'none',
-                    background: 'var(--deep-mind)', color: 'var(--white-matter)',
-                    fontFamily: "var(--font-cabinet), sans-serif",
-                    fontSize: '15px', fontWeight: 500, cursor: 'pointer', transition: 'background .15s, transform .1s',
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.background = 'var(--synapse)'}
-                  onMouseLeave={e => e.currentTarget.style.background = 'var(--deep-mind)'}
-                >
-                  ✓ I know it
-                </button>
-              </div>
-
-              <p style={{ fontSize: '12px', color: 'var(--cortex)', textAlign: 'center', lineHeight: 1.6 }}>
-                Be honest — we don't ask you to translate, just whether you'd recognise it in context.
-              </p>
-            </>
-          ) : (
-            <>
-              {/* Results */}
-              <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-                <div style={{
-                  display: 'inline-block', background: 'var(--signal-light)', color: 'var(--signal)',
-                  fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
-                  textTransform: 'uppercase', padding: '5px 16px', borderRadius: '99px', marginBottom: '20px',
-                }}>Test complete</div>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: '80px', letterSpacing: '-3px', lineHeight: 1,
-                  color: 'var(--synapse)', marginBottom: '8px',
-                }}>{reach}</div>
-                <div style={{ fontSize: '18px', fontWeight: 300, color: 'var(--deep-mind)', marginBottom: '4px' }}>
-                  words reach
+                <div className="q-btns">
+                  <button type="button" className="btn btn-ghost" disabled={!ready} onClick={() => answer(false)}><Icon d="M6 6l12 12M18 6 6 18" />Not yet</button>
+                  <button type="button" className="btn btn-navy" disabled={!ready} onClick={() => answer(true)}><Icon d="M20 6 9 17l-5-5" />I know it</button>
                 </div>
-                <div style={{ fontSize: '14px', color: 'var(--cortex)' }}>{level}</div>
-              </div>
 
-              <div style={{
-                background: 'var(--cream)', borderRadius: '14px',
-                padding: '20px 24px', marginBottom: '24px',
-              }}>
-                <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.07em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '10px' }}>
-                  What this means
-                </div>
-                <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--deep-mind)', lineHeight: 1.7 }}>
-                  You can recognise roughly the top <strong>{reach}</strong> most-frequent Spanish words —
-                  about <strong>{coveragePct(reach)}%</strong> coverage of everyday spoken Spanish.
-                  You need {gap > 0 ? <><strong>{gap.toLocaleString()} more words</strong> to hit the fluency threshold.</> : <><strong>functional fluency</strong> — keep going!</>}
+                <p className="q-hint">Be honest. You don’t need to translate it, only recognise it in context.</p>
+              </>
+            ) : (
+              <div className="res">
+                <span className="chip">TEST COMPLETE</span>
+                <div className="res-num tab">{reach.toLocaleString('en')}</div>
+                <div className="res-sub">words in your reach</div>
+                <div className="res-lvl">{level}</div>
+
+                <p className="res-body">
+                  You recognise roughly the top <strong>{reach.toLocaleString('en')}</strong> most frequent Spanish words,
+                  about <strong>{coveragePct(reach)}%</strong> of everyday spoken Spanish.{' '}
+                  {gap > 0
+                    ? <>You need <strong>{gap.toLocaleString('en')} more words</strong> to reach the 1,500-word threshold.</>
+                    : <>You’re past the 1,500-word threshold for <strong>functional fluency</strong>.</>}
                 </p>
-              </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
-                <button
-                  onClick={restart}
-                  style={{
-                    padding: '14px', borderRadius: '12px', border: '0.5px solid rgba(28,26,58,0.12)',
-                    background: 'var(--cream)', color: 'var(--cortex)', fontFamily: "var(--font-cabinet), sans-serif",
-                    fontSize: '14px', fontWeight: 500, cursor: 'pointer',
-                  }}
-                >
-                  Retake test
-                </button>
-                <Link href="/words/most-common-spanish-words" style={{
-                  padding: '14px', borderRadius: '12px', border: 'none',
-                  background: 'var(--deep-mind)', color: 'var(--white-matter)',
-                  fontFamily: "var(--font-cabinet), sans-serif",
-                  fontSize: '14px', fontWeight: 500, textDecoration: 'none',
-                  textAlign: 'center', display: 'block',
-                }}>
-                  See the word list
-                </Link>
+                <div className="cta-row">
+                  <Link className="btn btn-navy" href="/study">Start for free <Arrow /></Link>
+                  <button type="button" className="btn btn-ghost" onClick={restart}>Retake test</button>
+                </div>
+                <p className="q-hint"><Link className="tlink" href="/words/most-common-spanish-words">See the full word list</Link></p>
               </div>
-            </>
-          )}
-        </div>
-
-        {/* Right panel */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-
-          {/* Live estimate */}
-          <div style={{
-            background: 'var(--white-matter)', borderRadius: '20px',
-            border: '0.5px solid rgba(28,26,58,0.09)',
-            padding: '28px',
-          }}>
-            <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.07em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '20px' }}>
-              Real-time estimate
-            </div>
-
-            <div style={{ marginBottom: '20px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
-                <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>Word reach</span>
-                <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--synapse)' }}>{reach}</span>
-              </div>
-              <div style={{ height: '6px', background: 'var(--cream-dark)', borderRadius: '99px', overflow: 'hidden' }}>
-                <div style={{
-                  height: '100%', width: `${Math.min(100, reach / 1500 * 100)}%`,
-                  background: 'var(--synapse)', borderRadius: '99px', transition: 'width .4s ease',
-                }} />
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '4px' }}>
-                <span style={{ fontSize: '11px', color: 'var(--cortex)' }}>0</span>
-                <span style={{ fontSize: '11px', color: 'var(--cortex)' }}>1,500</span>
-              </div>
-            </div>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 14px', background: 'var(--cream)', borderRadius: '10px' }}>
-                <span style={{ fontSize: '13px', color: 'var(--deep-mind)' }}>Next milestone</span>
-                <span style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
-                  fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--synapse)',
-                }}>{milestone}</span>
-              </div>
-              <div style={{ padding: '12px 14px', background: 'var(--cream)', borderRadius: '10px' }}>
-                <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>
-                  Gap to fluency: <strong style={{ color: 'var(--deep-mind)' }}>{gap.toLocaleString()} words</strong>
-                </span>
-              </div>
-            </div>
+            )}
           </div>
 
-          {/* Content unlock */}
-          <div style={{
-            background: 'var(--deep-mind)', borderRadius: '20px', padding: '28px',
-          }}>
-            <div style={{
-              fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
-              textTransform: 'uppercase', color: 'var(--mauve)', marginBottom: '12px',
-            }}>Content unlock</div>
-            <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--white-matter)', lineHeight: 1.6, marginBottom: '16px' }}>
-              You're <strong style={{ color: 'var(--mauve)', fontWeight: 700 }}>
-                {Math.min(100, Math.round(reach / 800 * 100))}%
-              </strong> ready for <em>Money Heist</em> Season 1.
-            </p>
-            <div style={{ height: '4px', background: 'rgba(255,255,255,0.08)', borderRadius: '99px', overflow: 'hidden' }}>
-              <div style={{
-                height: '100%', width: `${Math.min(100, Math.round(reach / 800 * 100))}%`,
-                background: 'var(--mauve)', borderRadius: '99px', transition: 'width .4s ease',
-              }} />
+          <aside className="side">
+            <div className="card est">
+              <span className="mono">LIVE ESTIMATE</span>
+              <div className="est-num"><b className="tab">{reach.toLocaleString('en')}</b><span>words in reach</span></div>
+              <div className="p-track" aria-hidden="true"><div className="p-fill" style={{ transform: `scaleX(${Math.min(1, reach / 1500)})` }} /></div>
+              <div className="est-scale"><span className="mono tab">0</span><span className="mono tab">1,500</span></div>
+              <div className="est-rows">
+                <div className="est-row"><span>Next milestone</span><b className="tab">{milestone.toLocaleString('en')}</b></div>
+                <div className="est-row"><span>Gap to 1,500</span><b className="tab">{gap.toLocaleString('en')}</b></div>
+              </div>
             </div>
-          </div>
 
-          {/* CTA */}
-          <div style={{
-            background: 'var(--fog)', borderRadius: '20px', padding: '28px',
-            border: '0.5px solid rgba(83,74,183,0.15)',
-          }}>
-            <div style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
-              fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--deep-mind)',
-              marginBottom: '8px',
-            }}>Ready to close the gap?</div>
-            <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, marginBottom: '20px' }}>
-              Start learning the exact words you're missing. Free flashcards, no account.
-            </p>
-            <Link href="/study" className="btn-primary" style={{ display: 'block', textAlign: 'center' }}>
-              Start free flashcards
-            </Link>
-          </div>
-        </div>
-      </section>
+            <div className="card show">
+              <span className="mono">READY FOR TV</span>
+              <p>You’re <b className="tab">{showPct}%</b> ready for <em>Money Heist</em> season 1.</p>
+              <div className="p-track" aria-hidden="true"><div className="p-fill" style={{ transform: `scaleX(${showPct / 100})` }} /></div>
+            </div>
+
+            <div className="card gap-card">
+              <h2>Close the gap</h2>
+              <p>Learn the exact words you’re missing, in frequency order. Try the flashcards for free, or work through all 1,500 on paper.</p>
+              <Link className="btn btn-navy" href="/study">Start for free</Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+            </div>
+          </aside>
+        </section>
+      </div>
     </div>
   )
 }

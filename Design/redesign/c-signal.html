@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Most Common Spanish — Signal</title>
+<meta name="description" content="The most common Spanish words, ranked by real-world frequency. Free flashcards, level test and word lists. Printable workbooks from €5.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F1E8;--bg-2:#EFE9DD;--surface:#FBF8F2;
+  --ink:#1C1A3A;--ink-2:#45425F;--ink-3:#5F5C78;
+  --line:rgba(28,26,58,.11);--line-2:rgba(28,26,58,.18);
+  --indigo:#534AB7;--indigo-2:#6B66C9;--indigo-3:#8E89DC;--fog:#E6E3F3;
+  --navy:#1C1A3A;--navy-2:#232048;--navy-line:rgba(226,224,244,.12);--on-navy:#ECEAF6;--on-navy-2:#A9A6C9;
+  --gold:#D59A2B;--gold-ink:#8A5E0C;--gold-soft:#F3DDB0;
+  --ease-out:cubic-bezier(.23,1,.32,1);--ease-io:cubic-bezier(.77,0,.175,1);
+  --sans:'Geist',ui-sans-serif,system-ui,sans-serif;--mono:'Geist Mono',ui-monospace,monospace;
+  --wrap:1200px;--r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","cv11"}
+::selection{background:rgba(107,102,201,.28);color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--indigo-2);outline-offset:3px;border-radius:6px}
+h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+.tab,.mono{font-variant-numeric:tabular-nums}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--surface);padding:8px 12px;border-radius:8px;z-index:50}
+.skip:focus{left:12px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border-radius:11px;font:600 15px/1 var(--sans);letter-spacing:-.01em;text-decoration:none;border:0;cursor:pointer;transition:transform 160ms var(--ease-out),background-color 200ms ease,box-shadow 200ms ease;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--indigo);color:#FBF8F2;box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 8px 20px -10px rgba(83,74,183,.7)}
+.btn-gold{background:var(--gold);color:#1C1A3A;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 10px 22px -12px rgba(10,8,30,.55)}
+.btn-ghost-d{background:rgba(236,234,246,.06);color:var(--on-navy);box-shadow:inset 0 0 0 1px rgba(236,234,246,.2)}
+@media (hover:hover) and (pointer:fine){
+  .btn-primary:hover{background:#4840A3}
+  .btn-gold:hover{background:#E0A73A}
+  .btn-ghost-d:hover{background:rgba(236,234,246,.12)}
+}
+.link{display:inline-flex;align-items:center;gap:6px;font-weight:500;color:var(--indigo);text-decoration:underline;text-decoration-color:rgba(83,74,183,.3);text-underline-offset:4px;transition:text-decoration-color 200ms ease}
+.link:hover{text-decoration-color:var(--indigo)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(245,241,232,.78);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;gap:28px;height:64px}
+.brand{display:flex;white-space:nowrap;align-items:center;gap:10px;text-decoration:none;font-weight:600;letter-spacing:-.02em;font-size:16px}
+.brand-mark{width:28px;height:28px;border-radius:8px;background:var(--navy);display:grid;place-items:center}
+.nav-links{display:flex;gap:4px;margin-left:12px}
+.nav-links a{font-size:14px;font-weight:500;color:var(--ink-2);text-decoration:none;padding:8px 12px;border-radius:8px;display:flex;align-items:center;gap:8px;transition:background-color 200ms ease,color 200ms ease}
+.nav-links a:hover{background:rgba(28,26,58,.05);color:var(--ink)}
+.nav-links a.is-new span{font:500 11px/1 var(--mono);color:var(--gold-ink);background:rgba(213,154,43,.14);padding:4px 5px;border-radius:4px}
+.nav-cta{margin-left:auto;display:flex;align-items:center;gap:14px}
+.nav-cta .btn{height:38px;font-size:14px;padding:0 15px;border-radius:9px}
+.nav-burger{display:none;width:40px;height:40px;border-radius:9px;border:1px solid var(--line-2);background:transparent;align-items:center;justify-content:center;color:var(--ink)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:72px 0 96px}
+.hero::before{content:"";position:absolute;inset:-20% -10% 0;pointer-events:none;background:
+  radial-gradient(48% 60% at 12% 8%,rgba(107,102,201,.30),transparent 70%),
+  radial-gradient(40% 50% at 92% 0%,rgba(83,74,183,.20),transparent 70%),
+  radial-gradient(42% 44% at 70% 72%,rgba(213,154,43,.16),transparent 72%),
+  linear-gradient(transparent 70%,var(--bg) 96%)}
+.hero::after{content:"";position:absolute;inset:0;-webkit-mask-image:linear-gradient(#000 60%,transparent);mask-image:linear-gradient(#000 60%,transparent);pointer-events:none;opacity:.35;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .11 0 0 0 0 .1 0 0 0 0 .23 0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hero-grid{position:relative;display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.2vw,68px);line-height:1.02;letter-spacing:-.04em;font-weight:600}
+.hero h1 .n{color:var(--indigo);font-variant-numeric:tabular-nums}
+.hero-lead{margin-top:22px;font-size:18px;line-height:1.6;color:var(--ink-2);max-width:470px}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:32px}
+.hero-proof{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px;padding-top:22px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-3)}
+.hero-proof span{display:flex;align-items:center;gap:7px}
+.hero-proof svg{color:var(--indigo-2)}
+
+.chart-card{position:relative;background:rgba(251,248,242,.82);border:1px solid var(--line);border-radius:20px;padding:22px 22px 16px;box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 30px 60px -30px rgba(28,26,58,.35),0 8px 18px -10px rgba(28,26,58,.12)}
+.cc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:0 6px 6px}
+.cc-title{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.cc-title small{display:block;font-weight:400;color:var(--ink-3);font-size:13px;margin-top:2px;letter-spacing:0}
+.cc-read{text-align:right;font-variant-numeric:tabular-nums;min-width:150px}
+.cc-read b{display:block;font-size:30px;line-height:1;letter-spacing:-.03em;font-weight:600}
+.cc-read b i{font-style:normal;color:var(--ink-3);font-weight:500;font-size:16px;margin-left:2px}
+.cc-read > span{font-size:12.5px;color:var(--ink-3)}
+.cc-foot{display:flex;justify-content:space-between;gap:12px;padding:6px 6px 0;font-size:12px;color:var(--ink-3);border-top:1px solid var(--line);margin-top:4px;padding-top:12px}
+.cc-foot .key{display:flex;gap:16px}
+.cc-foot .key span{white-space:nowrap;display:flex;align-items:center;gap:6px}
+.cc-foot .key i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.ch{width:100%;height:auto;display:block;touch-action:pan-y;cursor:crosshair;overflow:visible}
+.chm{display:none}
+.ch-grid{stroke:var(--line);stroke-dasharray:2 4}
+.ch-tick{fill:var(--ink-3);font-family:var(--mono);font-variant-numeric:tabular-nums}
+.ch-band{fill:rgba(107,102,201,.07)}
+.ch-line{fill:none;stroke:var(--indigo);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.ch-drop{stroke:var(--indigo-2);stroke-opacity:.35;stroke-dasharray:2 3}
+.ch-drop-g{stroke:var(--gold);stroke-opacity:.55;stroke-dasharray:2 3}
+.ch-dot{fill:var(--surface);stroke:var(--indigo);stroke-width:2.4}
+.ch-dot-g{fill:var(--gold);stroke:var(--surface);stroke-width:2.4}
+.ch-val{fill:var(--ink);font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.ch-cur-line{stroke:var(--ink);stroke-opacity:.35;stroke-width:1}
+.ch-cur-dot{fill:var(--ink);stroke:var(--surface);stroke-width:2}
+.ch-cursor{transition:opacity 150ms ease}
+@media (prefers-reduced-motion:no-preference){
+  .ch-line{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1400ms var(--ease-io) 200ms forwards}
+  .ch-area{opacity:0;animation:fade 700ms ease-out 900ms forwards}
+  .ch-dot,.ch-dot-g,.ch-val{opacity:0;animation:fade 400ms ease-out forwards}
+  .ch-dot,.ch-val{animation-delay:520ms}
+  .chart-card [class*="ch-dot-g"],.chart-card .ch-val:nth-of-type(n+2){animation-delay:1100ms}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+
+/* section scaffolding */
+.sec{padding:112px 0}
+.sec-head{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:end;margin-bottom:48px}
+.sec h2{font-size:clamp(30px,3.6vw,46px);line-height:1.06;letter-spacing:-.035em}
+.lead{font-size:17px;line-height:1.6;color:var(--ink-2);max-width:56ch}
+
+/* ledger */
+.ledger{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ledger th{font:500 12.5px/1 var(--sans);color:var(--ink-3);text-align:left;padding:0 16px 14px 0;border-bottom:1px solid var(--line-2)}
+.ledger td{padding:20px 16px 20px 0;border-bottom:1px solid var(--line);vertical-align:middle}
+.ledger tr:last-child td{border-bottom:0}
+.lg-n{font-size:28px;font-weight:600;letter-spacing:-.03em;width:120px}
+.lg-bar{width:30%}
+.lg-track{height:8px;border-radius:4px;background:var(--fog);overflow:hidden}
+.lg-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--indigo),var(--indigo-2))}
+.ledger tr:not(:first-child) .lg-fill{background:linear-gradient(90deg,var(--indigo) 0%,var(--indigo-2) 80%,var(--gold) 100%)}
+.lg-p{font-size:18px;font-weight:600;width:80px;letter-spacing:-.02em}
+.lg-what{color:var(--ink-2);font-size:15px}
+.lg-tool{font-size:13px;color:var(--ink-3);text-align:right;white-space:nowrap;padding-right:0!important}
+.ledger tr:first-child .lg-tool{color:var(--indigo);font-weight:500}
+.ledger-note{margin-top:18px;font-size:13px;color:var(--ink-3)}
+
+/* word list */
+.wl-shell{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -36px rgba(28,26,58,.4)}
+.wl-bar{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.seg{display:inline-flex;padding:3px;background:var(--bg-2);border-radius:10px;gap:2px}
+.seg button{border:0;background:transparent;font:500 13.5px/1 var(--sans);color:var(--ink-3);padding:8px 12px;border-radius:8px;cursor:pointer;transition:background-color 200ms ease,color 200ms ease,box-shadow 200ms ease}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px rgba(28,26,58,.12),0 0 0 1px var(--line)}
+.wl-search{flex:1;min-width:180px;display:flex;align-items:center;gap:8px;height:38px;padding:0 12px;border-radius:10px;border:1px solid var(--line);color:var(--ink-3);font-size:14px;background:var(--bg)}
+.tgl{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink-2);cursor:pointer;user-select:none}
+.tgl input{appearance:none;width:34px;height:20px;border-radius:10px;background:#D4CFE6;position:relative;margin:0;cursor:pointer;transition:background-color 200ms ease}
+.tgl input::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--surface);box-shadow:0 1px 2px rgba(28,26,58,.3);transition:transform 200ms var(--ease-out)}
+.tgl input:checked{background:var(--indigo)}
+.tgl input:checked::after{transform:translateX(14px)}
+.wl{width:100%;border-collapse:collapse}
+.wl td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15px}
+.wl tr:last-child td{border-bottom:0}
+.wl tr{transition:background-color 150ms ease}
+.wl tr:hover{background:rgba(107,102,201,.04)}
+.wl-rank{font-family:var(--mono);font-size:13px!important;color:var(--ink-3);width:64px;padding-top:18px!important}
+.wl-word{width:200px}
+.wl-word span{display:block;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.wl-word em{font-style:normal;font-size:12.5px;color:var(--ink-3)}
+.wl-mean{width:230px;color:var(--ink-2);padding-top:18px!important}
+.wl-ex .es{display:block;color:var(--ink)}
+.wl-ex .en{display:block;color:var(--ink-3);font-size:14px;margin-top:2px;transition:opacity 200ms ease}
+.hide-en .wl-ex .en{opacity:0}
+.hide-en .wl-mean{color:transparent;text-shadow:0 0 8px rgba(28,26,58,.35)}
+.wl-play{width:56px;text-align:right}
+.wl-play button{width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--indigo);display:inline-grid;place-items:center;cursor:pointer;transition:transform 160ms var(--ease-out),background-color 200ms ease}
+.wl-play button:hover{background:var(--fog)}
+.wl-play button:active{transform:scale(.94)}
+.wl-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px;border-top:1px solid var(--line);background:var(--bg);font-size:14px;color:var(--ink-3)}
+.wl-fade td{opacity:.45}
+
+/* tools */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tool{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;position:relative;overflow:hidden}
+.tool h3{font-size:22px;letter-spacing:-.025em}
+.tool p{color:var(--ink-2);margin-top:8px;font-size:15px;max-width:44ch}
+.tool .link{margin-top:18px;font-size:14.5px}
+.tool-fc{grid-column:span 2;display:grid;grid-template-columns:5fr 7fr;gap:40px;align-items:end;padding-bottom:0;background:linear-gradient(180deg,var(--surface),#F3EFF8)}
+.tool-fc > div:first-child{align-self:center;padding-bottom:30px}
+.tool h3.big{font-size:28px;line-height:1.1}
+.fc-stats{display:flex;gap:28px;margin-top:26px;font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.fc-stats b{display:block;font-size:22px;color:var(--ink);font-weight:600;letter-spacing:-.02em}
+.pdf{grid-column:span 2;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:22px 30px}
+.pdf-l{display:flex;align-items:center;gap:20px}
+.pdf-doc{width:46px;height:58px;border-radius:4px 8px 4px 4px;background:var(--navy);display:grid;place-items:end start;padding:6px;font:600 13px/1 var(--sans);color:#F4F2FA;box-shadow:0 10px 18px -10px rgba(28,26,58,.6);flex:none}
+.pdf h3{font-size:18px}
+.pdf p{margin-top:2px}
+.pdf form{display:flex;gap:8px;flex:none}
+.pdf input{height:46px;width:260px;border-radius:11px;border:1px solid var(--line-2);background:var(--bg);padding:0 14px;font:400 15px var(--sans);color:var(--ink)}
+.pdf input::placeholder{color:var(--ink-3)}
+.pdf input:focus{outline:none;border-color:var(--indigo-2);box-shadow:0 0 0 3px rgba(107,102,201,.18)}
+.fc-stage{display:flex;align-items:flex-end;justify-content:center;gap:0;margin-top:32px;position:relative;min-height:300px}
+.fc{width:min(360px,100%);border-radius:18px 18px 0 0;padding:26px 26px 22px;position:relative}
+.fc-back{position:absolute;bottom:0;width:min(330px,88%);height:250px;background:var(--fog);border-radius:18px 18px 0 0;transform:translateY(-22px) rotate(-4deg);opacity:.9}
+.fc-front{background:var(--navy);color:var(--on-navy);min-height:280px;box-shadow:0 -20px 40px -24px rgba(28,26,58,.5);display:flex;flex-direction:column}
+.fc-row{display:flex;justify-content:space-between;font:500 12px/1 var(--mono);color:var(--on-navy-2)}
+.fc-word{font-size:52px;font-weight:600;letter-spacing:-.04em;margin-top:36px}
+.fc-ex{color:var(--on-navy-2);font-size:15px;margin-top:6px}
+.fc-acts{display:flex;gap:8px;margin-top:auto;padding-top:28px}
+.fc-acts span{flex:1;text-align:center;font-size:13px;font-weight:500;padding:11px 0;border-radius:10px;background:rgba(236,234,246,.07);box-shadow:inset 0 0 0 1px var(--navy-line)}
+.fc-acts span:last-child{background:var(--indigo);box-shadow:none;color:#FBF8F2}
+.lt-q{margin-top:22px;padding:18px;border-radius:12px;background:var(--bg);border:1px solid var(--line)}
+.lt-q b{display:block;font-weight:500;font-size:15px;margin-bottom:12px}
+.lt-q b em{font-style:normal;font-weight:600;color:var(--indigo)}
+.lt-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.lt-opts span{font-size:14px;padding:10px 12px;border-radius:9px;background:var(--surface);border:1px solid var(--line)}
+.lt-opts span.ok{border-color:var(--indigo-2);box-shadow:0 0 0 3px rgba(107,102,201,.14);color:var(--indigo);font-weight:500}
+.lt-meter{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-3);margin-top:12px;font-variant-numeric:tabular-nums}
+.wls{margin:18px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.wls li a{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--line);text-decoration:none;font-size:15px;font-weight:500;transition:color 200ms ease,padding 200ms var(--ease-out)}
+.wls li a span{font:400 13px/1 var(--mono);color:var(--ink-3)}
+.wls li a:hover{color:var(--indigo)}
+
+/* shop band */
+.band{background:var(--navy);color:var(--on-navy);position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(50% 40% at 85% 0%,rgba(107,102,201,.28),transparent 70%),
+  radial-gradient(40% 30% at 5% 30%,rgba(213,154,43,.10),transparent 70%)}
+.band .wrap{position:relative}
+.band h2{color:#F4F2FA}
+.band .lead{color:var(--on-navy-2)}
+.shop-top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:28px}
+.shop-top .facts{display:flex;gap:28px;font-size:13.5px;color:var(--on-navy-2);flex-shrink:0}
+.shop-top .facts b{display:block;color:#F4F2FA;font-size:22px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.spine-wrap{position:relative;margin-bottom:-2px}
+.spine{display:block;width:100%;height:190px}
+.sp-line{fill:none;stroke:url(#spfade);stroke-width:2.4;vector-effect:non-scaling-stroke}
+.sp-drop{stroke:var(--gold);stroke-opacity:.45;stroke-dasharray:3 4;vector-effect:non-scaling-stroke}
+.sp-dot{fill:var(--gold)}
+.sp-halo{fill:none;stroke:var(--gold);stroke-opacity:.3;vector-effect:non-scaling-stroke}
+.sp-val{display:none}
+.spine-labels{position:absolute;inset:0;pointer-events:none}
+.spine-labels span{position:absolute;transform:translate(22px,-62%);font-size:20px;font-weight:600;letter-spacing:-.02em;color:#F4F2FA;font-variant-numeric:tabular-nums;white-space:nowrap}
+.spine-labels span small{display:block;font-size:12px;font-weight:400;color:var(--on-navy-2);letter-spacing:0}
+.shelf{display:grid;grid-template-columns:repeat(4,1fr);column-gap:1.6667%;row-gap:20px;align-items:stretch}
+.bk{background:linear-gradient(180deg,rgba(236,234,246,.05),rgba(236,234,246,.02));border:1px solid var(--navy-line);border-radius:18px;padding:20px;display:flex;flex-direction:column;transition:border-color 200ms ease,background-color 200ms ease}
+.bk:hover{border-color:rgba(236,234,246,.22)}
+.bk-flag{border-color:rgba(213,154,43,.55);background:linear-gradient(180deg,rgba(213,154,43,.10),rgba(213,154,43,.02) 60%);box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.bk-reach{display:none;align-items:center;gap:8px;font-size:13px;color:var(--on-navy-2);margin-bottom:14px;font-variant-numeric:tabular-nums}
+.bk-reach strong{color:#F4F2FA}
+.bk-dot{width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(213,154,43,.2)}
+.cv{aspect-ratio:3/4;border-radius:6px 12px 12px 6px;padding:18px 18px 16px;display:flex;flex-direction:column;position:relative;overflow:hidden;box-shadow:inset 6px 0 0 rgba(0,0,0,.14),inset 7px 0 0 rgba(255,255,255,.06),0 18px 30px -16px rgba(0,0,0,.6);transition:transform 300ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.bk:hover .cv{transform:translateY(-4px) rotate(-.6deg)}}
+.cv-top{display:flex;justify-content:space-between;font:500 10px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.06em;opacity:.75}
+.cv-num{font-size:clamp(48px,4.8vw,68px);font-weight:600;letter-spacing:-.05em;line-height:.9;margin-top:auto;font-variant-numeric:tabular-nums}
+.cv-sub{font-size:13px;font-weight:500;margin-top:6px;opacity:.85}
+.cv-curve{width:100%;height:auto;margin-top:14px}
+.cv-all{fill:none;stroke-width:1.4;opacity:.3}
+.cv-part{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round}
+.cv-pt{fill:var(--gold)}
+.cv-foot{display:flex;justify-content:space-between;font:500 10.5px/1 var(--mono);margin-top:12px;padding-top:10px;border-top:1px solid currentColor;border-top-color:rgba(255,255,255,.18);opacity:.85;font-variant-numeric:tabular-nums}
+.cv-navy{background:linear-gradient(160deg,#2A2660,#14122B);color:#F4F2FA}
+.cv-navy .cv-all{stroke:#F4F2FA}
+.cv-navy::after{content:"";position:absolute;right:-40%;top:-30%;width:90%;height:70%;background:radial-gradient(closest-side,rgba(213,154,43,.35),transparent);pointer-events:none}
+.cv-indigo{background:linear-gradient(160deg,#5E58BE,#433C9C);color:#F7F5FC}
+.cv-indigo .cv-all{stroke:#F7F5FC}
+.cv-plum{background:linear-gradient(160deg,#3B3570,#26224E);color:#EEECF8}
+.cv-plum .cv-all{stroke:#EEECF8}
+.cv-paper{background:linear-gradient(160deg,#F6F1E6,#E7DFCF);color:var(--ink)}
+.cv-paper .cv-all{stroke:var(--ink)}
+.cv-paper .cv-part{stroke:#B97F14}.cv-paper .cv-pt{fill:#B97F14}
+.cv-paper .cv-foot{border-top-color:rgba(28,26,58,.18)}
+.bk-body{display:flex;flex-direction:column;flex:1;margin-top:20px}
+.bk-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.bk h3{font-size:21px;color:#F4F2FA;letter-spacing:-.025em}
+.bk-tag{font:500 11px/1 var(--mono);color:var(--navy);background:var(--gold);padding:5px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.bk-pitch{font-size:14.5px;color:var(--on-navy-2);margin-top:8px;min-height:3.1em}
+.bk ul{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:9px}
+.bk li{display:flex;gap:9px;font-size:13.5px;line-height:1.45;color:#D9D6EC}
+.bk li svg{flex:none;margin-top:2px;color:var(--indigo-3)}
+.bk-flag li svg{color:var(--gold)}
+.bk-meta{display:flex;justify-content:space-between;font-size:12px;color:var(--on-navy-2);margin-top:auto;padding-top:20px;font-variant-numeric:tabular-nums}
+.bk-buy{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;padding-top:14px;border-top:1px solid var(--navy-line)}
+.bk-price{font-size:26px;font-weight:600;letter-spacing:-.03em;color:#F4F2FA}
+.bk-buy .btn{height:42px;font-size:14px;padding:0 16px}
+.bundle{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:20px;padding:16px 20px;border-radius:14px;border:1px dashed rgba(236,234,246,.2);font-size:14px;color:var(--on-navy-2)}
+.bundle b{color:#F4F2FA;font-weight:600}
+
+/* method */
+.method{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center;margin-top:96px;padding-top:72px;border-top:1px solid var(--navy-line)}
+.method h3{font-size:clamp(26px,3vw,36px);line-height:1.1;letter-spacing:-.03em;color:#F4F2FA}
+.method > div > p{color:var(--on-navy-2);margin-top:14px;font-size:16px}
+.passes{margin-top:30px;display:grid;gap:0;border-top:1px solid var(--navy-line)}
+.pass{display:grid;grid-template-columns:76px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--navy-line);align-items:baseline}
+.pass .k{font:500 12px/1 var(--mono);color:var(--gold);letter-spacing:.02em}
+.pass b{font-weight:600;color:#F4F2FA;font-size:16px}
+.pass p{color:var(--on-navy-2);font-size:14px;margin-top:3px}
+.pass .d{font:400 12px/1 var(--mono);color:var(--on-navy-2);white-space:nowrap}
+.spread{display:grid;grid-template-columns:1fr 1fr;background:#F7F3EA;border-radius:6px;box-shadow:0 40px 80px -30px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.04);color:var(--ink);transform:perspective(1600px) rotateX(4deg) rotateY(-6deg);transform-origin:center;position:relative}
+.spread::after{content:"";position:absolute;left:50%;top:0;bottom:0;width:40px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(28,26,58,.10) 45%,rgba(28,26,58,.16) 50%,rgba(28,26,58,.10) 55%,transparent);pointer-events:none}
+.pg{padding:24px 22px 20px;font-size:11px;line-height:1.4}
+.pg-hd{display:flex;justify-content:space-between;font:500 9.5px/1 var(--mono);color:var(--ink-3);text-transform:uppercase;letter-spacing:.06em;padding-bottom:10px;border-bottom:1px solid var(--line-2)}
+.pg h4{margin:14px 0 4px;font-size:17px;letter-spacing:-.02em;font-weight:600}
+.pg .pg-s{color:var(--ink-3);font-size:10.5px;margin-bottom:12px}
+.pg-cols{display:grid;grid-template-columns:26px 1fr 1.2fr 18px 18px 18px;gap:6px;font:500 8.5px/1 var(--mono);color:var(--ink-3);text-transform:uppercase;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.pg-row{display:grid;grid-template-columns:26px 1fr 1.2fr 18px 18px 18px;gap:6px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.pg-r{font-family:var(--mono);color:var(--ink-3);font-size:9.5px}
+.pg-w{font-weight:600;font-size:12px}
+.pg-m{color:var(--ink-2);font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pg-box{width:12px;height:12px;border:1px solid var(--line-2);border-radius:3px;justify-self:center}
+.pg-row:nth-child(-n+3) .pg-box:first-of-type{background:var(--indigo);border-color:var(--indigo)}
+.pg-row:nth-child(-n+2) .pg-box:nth-of-type(2){background:var(--indigo);border-color:var(--indigo)}
+.pg ol{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.pg ol li{display:grid;grid-template-columns:16px 1fr;gap:6px;font-size:11.5px;line-height:1.55}
+.pg-n{font-family:var(--mono);color:var(--gold-ink);font-size:10px;padding-top:2px}
+.pg-blank{display:inline-block;width:62px;border-bottom:1px solid var(--ink-2);margin:0 2px;transform:translateY(-2px)}
+.pg-cal{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:16px}
+.pg-cal span{border:1px solid var(--line-2);border-radius:5px;padding:7px 6px;font:500 9px/1.2 var(--mono);color:var(--ink-3);text-transform:uppercase}
+.pg-cal span b{display:block;font:600 13px/1 var(--sans);color:var(--ink);margin-top:4px;text-transform:none}
+.pg-cal span.on{border-color:var(--gold);background:rgba(213,154,43,.10)}
+.pg-num{display:flex;justify-content:space-between;margin-top:16px;font:500 9px/1 var(--mono);color:var(--ink-3)}
+.method-cta{display:flex;align-items:center;gap:18px;margin-top:30px;flex-wrap:wrap}
+.method-cta span{font-size:13.5px;color:var(--on-navy-2)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:4fr 8fr;gap:56px}
+.faq-list{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+.fq{padding:22px 0;border-top:1px solid var(--line)}
+.fq h3{font-size:16.5px;letter-spacing:-.015em;line-height:1.35}
+.fq p{margin-top:8px;color:var(--ink-2);font-size:15px}
+
+/* footer */
+.foot{border-top:1px solid var(--line);background:var(--bg-2);padding:56px 0 40px;font-size:14px;color:var(--ink-3)}
+.foot-top{display:grid;grid-template-columns:5fr 7fr;gap:56px}
+.foot-top p{margin-top:12px;max-width:38ch}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.foot-cols b{display:block;color:var(--ink);font-weight:600;font-size:13.5px;margin-bottom:10px}
+.foot-cols a{display:block;text-decoration:none;padding:4px 0;color:var(--ink-3);transition:color 200ms ease}
+.foot-cols a:hover{color:var(--ink)}
+.foot-bot{display:flex;justify-content:space-between;gap:20px;margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:13px}
+
+/* responsive */
+@media (max-width:1080px){
+  .hero-grid,.sec-head,.method,.faq,.foot-top{grid-template-columns:1fr;gap:36px}
+  .tools{grid-template-columns:1fr 1fr}
+  .tool-fc{grid-template-columns:1fr;gap:0}
+  .shelf{grid-template-columns:1fr 1fr;column-gap:20px}
+  .spine-wrap{display:none}
+  .bk-reach{display:flex}
+  .shop-top{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .nav-links,.nav-cta .link{display:none}
+  .nav-burger{display:inline-flex}
+  .nav-cta{gap:8px}
+  .nav-in{gap:12px}
+  .brand{font-size:15px}
+  .nav-cta .btn{padding:0 12px}
+  .hero{padding:40px 0 64px}
+  .hero h1{font-size:40px}
+  .hero-lead{font-size:16.5px}
+  .hero-ctas{gap:14px}
+  .hero-ctas .btn{width:100%;justify-content:center}
+  .chart-card{padding:16px 12px 12px;border-radius:16px}
+  .chd{display:none}.chm{display:block}
+  .cc-read b{font-size:24px}
+  .cc-read{min-width:0}
+  .cc-foot{flex-direction:column;gap:8px}
+  .sec{padding:72px 0}
+  .sec-head{margin-bottom:28px}
+  .ledger thead{display:none}
+  .ledger,.ledger tbody,.ledger tr,.ledger td{display:block}
+  .ledger tr{display:grid;grid-template-columns:auto 1fr auto;column-gap:14px;row-gap:8px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+  .ledger td{padding:0!important;border:0}
+  .lg-n{font-size:22px;width:auto}
+  .lg-bar{width:auto}
+  .lg-p{width:auto;text-align:right}
+  .lg-what,.lg-tool{grid-column:1/-1;text-align:left!important}
+  .lg-what{font-size:14.5px}
+  .wl-bar{gap:10px}
+  .wl-search{order:3;flex-basis:100%}
+  .wl td{padding:13px 12px}
+  .wl-rank{width:40px}
+  .wl-mean,.wl-play{display:none}
+  .wl-word{width:auto}
+  .wl tr{display:grid;grid-template-columns:40px 1fr}
+  .wl-ex{grid-column:2;padding-top:0!important;font-size:14px!important}
+  .wl tr td{border-bottom:0}
+  .wl tr{border-bottom:1px solid var(--line)}
+  .wl-foot{flex-direction:column;align-items:flex-start}
+  .wl tbody tr:nth-child(n+7){display:none}
+  .tools{grid-template-columns:1fr}
+  .tool-fc,.pdf{grid-column:auto}
+  .pdf{flex-direction:column;align-items:stretch;padding:22px}
+  .pdf form{flex-direction:column}
+  .pdf input{width:100%}
+  .pdf .btn{justify-content:center}
+  .tool-fc > div:first-child{padding-bottom:0}
+  .fc-stats{gap:20px}
+  .tool{padding:22px}
+  .fc-stage{min-height:250px;margin-top:24px}
+  .fc-front{min-height:240px}
+  .fc-word{font-size:42px;margin-top:24px}
+  .shelf{grid-template-columns:1fr}
+  .bk{display:grid;grid-template-columns:120px 1fr;column-gap:16px;padding:16px}
+  .bk-reach{grid-column:1/-1}
+  .bk .cv{padding:10px 10px 9px;align-self:start}
+  .bk .cv-top,.bk .cv-foot,.bk .cv-sub{display:none}
+  .bk .cv-num{font-size:34px}
+  .bk .cv-curve{margin-top:6px}
+  .bk-body{margin-top:0}
+  .bk-pitch{min-height:0}
+  .bk ul,.bk-meta,.bk-buy{grid-column:1/-1}
+  .bk-body{display:contents}
+  .bk-intro{grid-column:2;align-self:start}
+  .bk ul{margin-top:18px}
+  .bk-buy .btn{flex:1;justify-content:center}
+  .shop-top .facts{gap:20px}
+  .bundle{flex-direction:column;align-items:flex-start}
+  .method{margin-top:64px;padding-top:56px}
+  .pass{grid-template-columns:64px 1fr}
+  .pass .d{grid-column:2}
+  .spread{grid-template-columns:1fr;transform:none}
+  .spread::after{display:none}
+  .pg+.pg{border-top:1px dashed var(--line-2)}
+  .faq-list{grid-template-columns:1fr}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  .foot-bot{flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){*{transition-duration:0ms!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="brand" aria-label="Most Common Spanish, home">
+      <span class="brand-mark"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14C3 6 5.5 4.2 9 3.4S14 2.6 14 2.4" stroke="#F4F2FA" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="3.4" r="1.7" fill="#D59A2B"/></svg></span>
+      Most Common Spanish
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#list">Word lists</a>
+      <a href="#tools">Flashcards</a>
+      <a href="#tools">Level test</a>
+      <a href="#workbooks" class="is-new">Workbooks <span>€5</span></a>
+      <a href="#">Blog</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#workbooks" class="link">Workbooks</a>
+      <a href="#" class="btn btn-primary">Start free</a>
+      <button class="nav-burger" type="button" aria-label="Open menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Half of all Spanish is <span class="n">100</span> words. Start&nbsp;there.</h1>
+      <p class="hero-lead">Every word ranked by how often native speakers actually use it. Learn them in order and your comprehension climbs the curve: 500 words reach 67%, 1,500 reach 80%.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Start the first 100 free
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#tools" class="link">Take the 3-minute level test</a>
+      </div>
+      <div class="hero-proof">
+        <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>No account</span>
+        <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Native audio</span>
+        <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Workbooks from €5</span>
+      </div>
+    </div>
+
+    <figure class="chart-card" style="margin:0">
+      <div class="cc-head">
+        <div class="cc-title">Words learned → everyday Spanish understood<small>Drag across the curve</small></div>
+        <div class="cc-read" aria-live="polite"><b><span id="rd-p">67</span><i>%</i></b><span><span id="rd-n">500</span> words learned</span></div>
+      </div>
+      <svg class="ch chd" viewBox="0 0 640 420" role="img" aria-label="Coverage curve: 100 words cover about 50% of everyday Spanish, 500 words 67%, 1,000 words 74%, 1,500 words 80%, 2,000 words about 84%." data-l="52" data-r="28" data-w="640" data-t="34" data-b="44" data-h="420">
+    <defs><linearGradient id="fill-chd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6B66C9" stop-opacity=".26"/><stop offset="1" stop-color="#6B66C9" stop-opacity="0"/></linearGradient></defs>
+    <line x1="52" x2="612" y1="290.5" y2="290.5" class="ch-grid"/><text x="42" y="295.05" text-anchor="end" class="ch-tick" font-size="12">25%</text><line x1="52" x2="612" y1="205" y2="205" class="ch-grid"/><text x="42" y="209.55" text-anchor="end" class="ch-tick" font-size="12">50%</text><line x1="52" x2="612" y1="119.5" y2="119.5" class="ch-grid"/><text x="42" y="124.05" text-anchor="end" class="ch-tick" font-size="12">75%</text><line x1="52" x2="612" y1="34" y2="34" class="ch-grid"/><text x="42" y="38.55" text-anchor="end" class="ch-tick" font-size="12">100%</text><text x="52" y="399" text-anchor="start" class="ch-tick" font-size="12">0</text><text x="192" y="399" text-anchor="middle" class="ch-tick" font-size="12">500</text><text x="332" y="399" text-anchor="middle" class="ch-tick" font-size="12">1,000</text><text x="472" y="399" text-anchor="middle" class="ch-tick" font-size="12">1,500</text><text x="612" y="399" text-anchor="end" class="ch-tick" font-size="12">2,000</text>
+    <rect x="52" y="34" width="28" height="342" class="ch-band"/>
+    <path d="M52.0 376.0L52.6 367.6L53.1 358.8L53.7 349.8L54.2 340.8L54.8 331.8L55.4 323.1L55.9 314.9L56.5 307.1L57.0 300.1L57.6 293.9L58.2 288.5L58.7 283.6L59.3 279.2L59.8 275.2L60.4 271.5L61.0 268.2L61.5 265.2L62.1 262.5L62.6 259.9L63.2 257.5L63.8 255.2L64.3 252.9L64.9 250.7L65.4 248.4L66.0 246.0L66.6 243.7L67.1 241.4L67.7 239.1L68.2 237.0L68.8 234.9L69.4 232.8L69.9 230.9L70.5 229.0L71.0 227.1L71.6 225.4L72.2 223.6L72.7 222.0L73.3 220.4L73.8 218.8L74.4 217.3L75.0 215.9L75.5 214.5L76.1 213.2L76.6 211.9L77.2 210.6L77.8 209.4L78.3 208.2L78.9 207.1L79.4 206.0L80.0 205.0L80.6 204.0L81.1 203.0L81.7 202.1L82.2 201.1L82.8 200.2L83.4 199.4L83.9 198.5L84.5 197.7L85.0 196.9L85.6 196.2L88.4 192.7L91.2 189.8L94.0 187.4L96.8 185.4L99.6 183.7L102.4 182.3L105.2 181.1L108.0 180.0L110.8 179.0L113.6 178.0L116.4 176.9L119.2 175.7L122.0 174.2L124.8 172.7L127.6 171.2L130.4 169.7L133.2 168.3L136.0 167.0L138.8 165.7L141.6 164.4L144.4 163.2L147.2 162.0L150.0 160.8L152.8 159.7L155.6 158.6L158.4 157.6L161.2 156.5L164.0 155.5L166.8 154.6L169.6 153.6L172.4 152.7L175.2 151.8L178.0 151.0L180.8 150.1L183.6 149.3L186.4 148.5L189.2 147.7L192.0 146.9L194.8 146.1L197.6 145.3L200.4 144.6L203.2 143.9L206.0 143.2L208.8 142.5L211.6 141.9L214.4 141.3L217.2 140.6L220.0 140.0L222.8 139.5L225.6 138.9L228.4 138.4L231.2 137.8L234.0 137.3L236.8 136.8L239.6 136.3L242.4 135.8L245.2 135.4L248.0 134.9L250.8 134.5L253.6 134.0L256.4 133.6L259.2 133.2L262.0 132.8L264.8 132.3L267.6 131.9L270.4 131.5L273.2 131.2L276.0 130.8L278.8 130.4L281.6 130.0L284.4 129.6L287.2 129.3L290.0 128.9L292.8 128.5L295.6 128.1L298.4 127.8L301.2 127.4L304.0 127.0L306.8 126.6L309.6 126.2L312.4 125.8L315.2 125.4L318.0 125.0L320.8 124.6L323.6 124.2L326.4 123.8L329.2 123.4L332.0 122.9L334.8 122.5L337.6 122.0L340.4 121.6L343.2 121.1L346.0 120.7L348.8 120.3L351.6 119.8L354.4 119.4L357.2 118.9L360.0 118.5L362.8 118.0L365.6 117.6L368.4 117.2L371.2 116.7L374.0 116.3L376.8 115.9L379.6 115.4L382.4 115.0L385.2 114.6L388.0 114.1L390.8 113.7L393.6 113.3L396.4 112.9L399.2 112.4L402.0 112.0L404.8 111.6L407.6 111.2L410.4 110.8L413.2 110.4L416.0 110.0L418.8 109.5L421.6 109.1L424.4 108.7L427.2 108.3L430.0 107.9L432.8 107.6L435.6 107.2L438.4 106.8L441.2 106.4L444.0 106.0L446.8 105.6L449.6 105.3L452.4 104.9L455.2 104.5L458.0 104.2L460.8 103.8L463.6 103.4L466.4 103.1L469.2 102.7L472.0 102.4L474.8 102.1L477.6 101.7L480.4 101.4L483.2 101.1L486.0 100.8L488.8 100.4L491.6 100.1L494.4 99.8L497.2 99.5L500.0 99.2L502.8 98.9L505.6 98.6L508.4 98.4L511.2 98.1L514.0 97.8L516.8 97.5L519.6 97.2L522.4 97.0L525.2 96.7L528.0 96.4L530.8 96.2L533.6 95.9L536.4 95.6L539.2 95.4L542.0 95.1L544.8 94.9L547.6 94.6L550.4 94.4L553.2 94.1L556.0 93.9L558.8 93.6L561.6 93.4L564.4 93.1L567.2 92.9L570.0 92.6L572.8 92.4L575.6 92.1L578.4 91.9L581.2 91.6L584.0 91.3L586.8 91.1L589.6 90.8L592.4 90.6L595.2 90.3L598.0 90.1L600.8 89.8L603.6 89.5L606.4 89.3L609.2 89.0L612.0 88.7L612.0 376L52 376Z" fill="url(#fill-chd)" class="ch-area"/>
+    <path d="M52.0 376.0L52.6 367.6L53.1 358.8L53.7 349.8L54.2 340.8L54.8 331.8L55.4 323.1L55.9 314.9L56.5 307.1L57.0 300.1L57.6 293.9L58.2 288.5L58.7 283.6L59.3 279.2L59.8 275.2L60.4 271.5L61.0 268.2L61.5 265.2L62.1 262.5L62.6 259.9L63.2 257.5L63.8 255.2L64.3 252.9L64.9 250.7L65.4 248.4L66.0 246.0L66.6 243.7L67.1 241.4L67.7 239.1L68.2 237.0L68.8 234.9L69.4 232.8L69.9 230.9L70.5 229.0L71.0 227.1L71.6 225.4L72.2 223.6L72.7 222.0L73.3 220.4L73.8 218.8L74.4 217.3L75.0 215.9L75.5 214.5L76.1 213.2L76.6 211.9L77.2 210.6L77.8 209.4L78.3 208.2L78.9 207.1L79.4 206.0L80.0 205.0L80.6 204.0L81.1 203.0L81.7 202.1L82.2 201.1L82.8 200.2L83.4 199.4L83.9 198.5L84.5 197.7L85.0 196.9L85.6 196.2L88.4 192.7L91.2 189.8L94.0 187.4L96.8 185.4L99.6 183.7L102.4 182.3L105.2 181.1L108.0 180.0L110.8 179.0L113.6 178.0L116.4 176.9L119.2 175.7L122.0 174.2L124.8 172.7L127.6 171.2L130.4 169.7L133.2 168.3L136.0 167.0L138.8 165.7L141.6 164.4L144.4 163.2L147.2 162.0L150.0 160.8L152.8 159.7L155.6 158.6L158.4 157.6L161.2 156.5L164.0 155.5L166.8 154.6L169.6 153.6L172.4 152.7L175.2 151.8L178.0 151.0L180.8 150.1L183.6 149.3L186.4 148.5L189.2 147.7L192.0 146.9L194.8 146.1L197.6 145.3L200.4 144.6L203.2 143.9L206.0 143.2L208.8 142.5L211.6 141.9L214.4 141.3L217.2 140.6L220.0 140.0L222.8 139.5L225.6 138.9L228.4 138.4L231.2 137.8L234.0 137.3L236.8 136.8L239.6 136.3L242.4 135.8L245.2 135.4L248.0 134.9L250.8 134.5L253.6 134.0L256.4 133.6L259.2 133.2L262.0 132.8L264.8 132.3L267.6 131.9L270.4 131.5L273.2 131.2L276.0 130.8L278.8 130.4L281.6 130.0L284.4 129.6L287.2 129.3L290.0 128.9L292.8 128.5L295.6 128.1L298.4 127.8L301.2 127.4L304.0 127.0L306.8 126.6L309.6 126.2L312.4 125.8L315.2 125.4L318.0 125.0L320.8 124.6L323.6 124.2L326.4 123.8L329.2 123.4L332.0 122.9L334.8 122.5L337.6 122.0L340.4 121.6L343.2 121.1L346.0 120.7L348.8 120.3L351.6 119.8L354.4 119.4L357.2 118.9L360.0 118.5L362.8 118.0L365.6 117.6L368.4 117.2L371.2 116.7L374.0 116.3L376.8 115.9L379.6 115.4L382.4 115.0L385.2 114.6L388.0 114.1L390.8 113.7L393.6 113.3L396.4 112.9L399.2 112.4L402.0 112.0L404.8 111.6L407.6 111.2L410.4 110.8L413.2 110.4L416.0 110.0L418.8 109.5L421.6 109.1L424.4 108.7L427.2 108.3L430.0 107.9L432.8 107.6L435.6 107.2L438.4 106.8L441.2 106.4L444.0 106.0L446.8 105.6L449.6 105.3L452.4 104.9L455.2 104.5L458.0 104.2L460.8 103.8L463.6 103.4L466.4 103.1L469.2 102.7L472.0 102.4L474.8 102.1L477.6 101.7L480.4 101.4L483.2 101.1L486.0 100.8L488.8 100.4L491.6 100.1L494.4 99.8L497.2 99.5L500.0 99.2L502.8 98.9L505.6 98.6L508.4 98.4L511.2 98.1L514.0 97.8L516.8 97.5L519.6 97.2L522.4 97.0L525.2 96.7L528.0 96.4L530.8 96.2L533.6 95.9L536.4 95.6L539.2 95.4L542.0 95.1L544.8 94.9L547.6 94.6L550.4 94.4L553.2 94.1L556.0 93.9L558.8 93.6L561.6 93.4L564.4 93.1L567.2 92.9L570.0 92.6L572.8 92.4L575.6 92.1L578.4 91.9L581.2 91.6L584.0 91.3L586.8 91.1L589.6 90.8L592.4 90.6L595.2 90.3L598.0 90.1L600.8 89.8L603.6 89.5L606.4 89.3L609.2 89.0L612.0 88.7" class="ch-line" pathLength="1"/>
+    <line x1="80" x2="80" y1="205" y2="376" class="ch-drop"/>
+      <circle cx="80" cy="205" r="6" class="ch-dot"/>
+      <text x="90" y="209" text-anchor="start" class="ch-val" font-size="16">50%</text><line x1="192" x2="192" y1="146.85999999999999" y2="376" class="ch-drop-g"/>
+      <circle cx="192" cy="146.85999999999999" r="6" class="ch-dot-g"/>
+      <text x="192" y="130.85999999999999" text-anchor="middle" class="ch-val" font-size="16">67%</text><line x1="332" x2="332" y1="122.92000000000002" y2="376" class="ch-drop-g"/>
+      <circle cx="332" cy="122.92000000000002" r="6" class="ch-dot-g"/>
+      <text x="332" y="106.92000000000002" text-anchor="middle" class="ch-val" font-size="16">74%</text><line x1="472" x2="472" y1="102.39999999999998" y2="376" class="ch-drop-g"/>
+      <circle cx="472" cy="102.39999999999998" r="6" class="ch-dot-g"/>
+      <text x="472" y="86.39999999999998" text-anchor="middle" class="ch-val" font-size="16">80%</text><line x1="612" x2="612" y1="88.72000000000003" y2="376" class="ch-drop-g"/>
+      <circle cx="612" cy="88.72000000000003" r="6" class="ch-dot-g"/>
+      <text x="616" y="72.72000000000003" text-anchor="end" class="ch-val" font-size="16">~84%</text>
+    <g class="ch-cursor" opacity="0"><line class="ch-cur-line" y1="34" y2="376"/><circle r="5" class="ch-cur-dot"/></g>
+  </svg>
+      <svg class="ch chm" viewBox="0 0 360 300" role="img" aria-label="Coverage curve: 100 words cover about 50% of everyday Spanish, 500 words 67%, 1,000 words 74%, 1,500 words 80%, 2,000 words about 84%." data-l="40" data-r="18" data-w="360" data-t="30" data-b="38" data-h="300">
+    <defs><linearGradient id="fill-chm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6B66C9" stop-opacity=".26"/><stop offset="1" stop-color="#6B66C9" stop-opacity="0"/></linearGradient></defs>
+    <line x1="40" x2="342" y1="204" y2="204" class="ch-grid"/><text x="30" y="208.2" text-anchor="end" class="ch-tick" font-size="11">25%</text><line x1="40" x2="342" y1="146" y2="146" class="ch-grid"/><text x="30" y="150.2" text-anchor="end" class="ch-tick" font-size="11">50%</text><line x1="40" x2="342" y1="88" y2="88" class="ch-grid"/><text x="30" y="92.2" text-anchor="end" class="ch-tick" font-size="11">75%</text><line x1="40" x2="342" y1="30" y2="30" class="ch-grid"/><text x="30" y="34.2" text-anchor="end" class="ch-tick" font-size="11">100%</text><text x="40" y="284" text-anchor="start" class="ch-tick" font-size="11">0</text><text x="115.5" y="284" text-anchor="middle" class="ch-tick" font-size="11">500</text><text x="191" y="284" text-anchor="middle" class="ch-tick" font-size="11">1,000</text><text x="266.5" y="284" text-anchor="middle" class="ch-tick" font-size="11">1,500</text><text x="342" y="284" text-anchor="end" class="ch-tick" font-size="11">2,000</text>
+    <rect x="40" y="30" width="15.100000000000001" height="232" class="ch-band"/>
+    <path d="M40.0 262.0L40.3 256.3L40.6 250.3L40.9 244.2L41.2 238.1L41.5 232.0L41.8 226.1L42.1 220.5L42.4 215.3L42.7 210.5L43.0 206.3L43.3 202.6L43.6 199.3L43.9 196.3L44.2 193.6L44.5 191.1L44.8 188.9L45.1 186.9L45.4 185.0L45.7 183.2L46.0 181.6L46.3 180.0L46.6 178.5L46.9 177.0L47.2 175.4L47.5 173.8L47.9 172.2L48.2 170.7L48.5 169.1L48.8 167.7L49.1 166.3L49.4 164.9L49.7 163.5L50.0 162.3L50.3 161.0L50.6 159.8L50.9 158.6L51.2 157.5L51.5 156.4L51.8 155.4L52.1 154.4L52.4 153.4L52.7 152.4L53.0 151.5L53.3 150.7L53.6 149.8L53.9 149.0L54.2 148.2L54.5 147.4L54.8 146.7L55.1 146.0L55.4 145.3L55.7 144.6L56.0 144.0L56.3 143.4L56.6 142.8L56.9 142.2L57.2 141.6L57.5 141.1L57.8 140.5L58.1 140.0L59.6 137.7L61.1 135.7L62.6 134.0L64.2 132.7L65.7 131.5L67.2 130.6L68.7 129.8L70.2 129.0L71.7 128.4L73.2 127.7L74.7 126.9L76.2 126.1L77.8 125.1L79.3 124.1L80.8 123.1L82.3 122.1L83.8 121.1L85.3 120.2L86.8 119.3L88.3 118.4L89.8 117.6L91.3 116.8L92.8 116.0L94.4 115.3L95.9 114.5L97.4 113.8L98.9 113.1L100.4 112.5L101.9 111.8L103.4 111.2L104.9 110.5L106.4 109.9L108.0 109.3L109.5 108.8L111.0 108.2L112.5 107.6L114.0 107.1L115.5 106.6L117.0 106.0L118.5 105.5L120.0 105.0L121.5 104.5L123.1 104.1L124.6 103.6L126.1 103.2L127.6 102.8L129.1 102.3L130.6 101.9L132.1 101.5L133.6 101.2L135.1 100.8L136.6 100.4L138.2 100.1L139.7 99.7L141.2 99.4L142.7 99.1L144.2 98.8L145.7 98.4L147.2 98.1L148.7 97.8L150.2 97.6L151.7 97.3L153.3 97.0L154.8 96.7L156.3 96.4L157.8 96.2L159.3 95.9L160.8 95.6L162.3 95.4L163.8 95.1L165.3 94.9L166.8 94.6L168.3 94.4L169.9 94.1L171.4 93.9L172.9 93.6L174.4 93.3L175.9 93.1L177.4 92.8L178.9 92.6L180.4 92.3L181.9 92.0L183.4 91.8L185.0 91.5L186.5 91.2L188.0 90.9L189.5 90.6L191.0 90.3L192.5 90.0L194.0 89.7L195.5 89.4L197.0 89.1L198.6 88.8L200.1 88.5L201.6 88.2L203.1 87.9L204.6 87.6L206.1 87.3L207.6 87.0L209.1 86.7L210.6 86.4L212.1 86.1L213.6 85.8L215.2 85.5L216.7 85.2L218.2 84.9L219.7 84.7L221.2 84.4L222.7 84.1L224.2 83.8L225.7 83.5L227.2 83.2L228.8 82.9L230.3 82.6L231.8 82.4L233.3 82.1L234.8 81.8L236.3 81.5L237.8 81.2L239.3 81.0L240.8 80.7L242.3 80.4L243.9 80.2L245.4 79.9L246.9 79.6L248.4 79.4L249.9 79.1L251.4 78.8L252.9 78.6L254.4 78.3L255.9 78.1L257.4 77.8L258.9 77.6L260.5 77.3L262.0 77.1L263.5 76.9L265.0 76.6L266.5 76.4L268.0 76.2L269.5 75.9L271.0 75.7L272.5 75.5L274.1 75.3L275.6 75.1L277.1 74.9L278.6 74.7L280.1 74.4L281.6 74.2L283.1 74.0L284.6 73.9L286.1 73.7L287.6 73.5L289.1 73.3L290.7 73.1L292.2 72.9L293.7 72.7L295.2 72.5L296.7 72.4L298.2 72.2L299.7 72.0L301.2 71.8L302.7 71.6L304.3 71.5L305.8 71.3L307.3 71.1L308.8 71.0L310.3 70.8L311.8 70.6L313.3 70.4L314.8 70.3L316.3 70.1L317.8 69.9L319.4 69.8L320.9 69.6L322.4 69.4L323.9 69.2L325.4 69.1L326.9 68.9L328.4 68.7L329.9 68.6L331.4 68.4L332.9 68.2L334.4 68.0L336.0 67.8L337.5 67.7L339.0 67.5L340.5 67.3L342.0 67.1L342.0 262L40 262Z" fill="url(#fill-chm)" class="ch-area"/>
+    <path d="M40.0 262.0L40.3 256.3L40.6 250.3L40.9 244.2L41.2 238.1L41.5 232.0L41.8 226.1L42.1 220.5L42.4 215.3L42.7 210.5L43.0 206.3L43.3 202.6L43.6 199.3L43.9 196.3L44.2 193.6L44.5 191.1L44.8 188.9L45.1 186.9L45.4 185.0L45.7 183.2L46.0 181.6L46.3 180.0L46.6 178.5L46.9 177.0L47.2 175.4L47.5 173.8L47.9 172.2L48.2 170.7L48.5 169.1L48.8 167.7L49.1 166.3L49.4 164.9L49.7 163.5L50.0 162.3L50.3 161.0L50.6 159.8L50.9 158.6L51.2 157.5L51.5 156.4L51.8 155.4L52.1 154.4L52.4 153.4L52.7 152.4L53.0 151.5L53.3 150.7L53.6 149.8L53.9 149.0L54.2 148.2L54.5 147.4L54.8 146.7L55.1 146.0L55.4 145.3L55.7 144.6L56.0 144.0L56.3 143.4L56.6 142.8L56.9 142.2L57.2 141.6L57.5 141.1L57.8 140.5L58.1 140.0L59.6 137.7L61.1 135.7L62.6 134.0L64.2 132.7L65.7 131.5L67.2 130.6L68.7 129.8L70.2 129.0L71.7 128.4L73.2 127.7L74.7 126.9L76.2 126.1L77.8 125.1L79.3 124.1L80.8 123.1L82.3 122.1L83.8 121.1L85.3 120.2L86.8 119.3L88.3 118.4L89.8 117.6L91.3 116.8L92.8 116.0L94.4 115.3L95.9 114.5L97.4 113.8L98.9 113.1L100.4 112.5L101.9 111.8L103.4 111.2L104.9 110.5L106.4 109.9L108.0 109.3L109.5 108.8L111.0 108.2L112.5 107.6L114.0 107.1L115.5 106.6L117.0 106.0L118.5 105.5L120.0 105.0L121.5 104.5L123.1 104.1L124.6 103.6L126.1 103.2L127.6 102.8L129.1 102.3L130.6 101.9L132.1 101.5L133.6 101.2L135.1 100.8L136.6 100.4L138.2 100.1L139.7 99.7L141.2 99.4L142.7 99.1L144.2 98.8L145.7 98.4L147.2 98.1L148.7 97.8L150.2 97.6L151.7 97.3L153.3 97.0L154.8 96.7L156.3 96.4L157.8 96.2L159.3 95.9L160.8 95.6L162.3 95.4L163.8 95.1L165.3 94.9L166.8 94.6L168.3 94.4L169.9 94.1L171.4 93.9L172.9 93.6L174.4 93.3L175.9 93.1L177.4 92.8L178.9 92.6L180.4 92.3L181.9 92.0L183.4 91.8L185.0 91.5L186.5 91.2L188.0 90.9L189.5 90.6L191.0 90.3L192.5 90.0L194.0 89.7L195.5 89.4L197.0 89.1L198.6 88.8L200.1 88.5L201.6 88.2L203.1 87.9L204.6 87.6L206.1 87.3L207.6 87.0L209.1 86.7L210.6 86.4L212.1 86.1L213.6 85.8L215.2 85.5L216.7 85.2L218.2 84.9L219.7 84.7L221.2 84.4L222.7 84.1L224.2 83.8L225.7 83.5L227.2 83.2L228.8 82.9L230.3 82.6L231.8 82.4L233.3 82.1L234.8 81.8L236.3 81.5L237.8 81.2L239.3 81.0L240.8 80.7L242.3 80.4L243.9 80.2L245.4 79.9L246.9 79.6L248.4 79.4L249.9 79.1L251.4 78.8L252.9 78.6L254.4 78.3L255.9 78.1L257.4 77.8L258.9 77.6L260.5 77.3L262.0 77.1L263.5 76.9L265.0 76.6L266.5 76.4L268.0 76.2L269.5 75.9L271.0 75.7L272.5 75.5L274.1 75.3L275.6 75.1L277.1 74.9L278.6 74.7L280.1 74.4L281.6 74.2L283.1 74.0L284.6 73.9L286.1 73.7L287.6 73.5L289.1 73.3L290.7 73.1L292.2 72.9L293.7 72.7L295.2 72.5L296.7 72.4L298.2 72.2L299.7 72.0L301.2 71.8L302.7 71.6L304.3 71.5L305.8 71.3L307.3 71.1L308.8 71.0L310.3 70.8L311.8 70.6L313.3 70.4L314.8 70.3L316.3 70.1L317.8 69.9L319.4 69.8L320.9 69.6L322.4 69.4L323.9 69.2L325.4 69.1L326.9 68.9L328.4 68.7L329.9 68.6L331.4 68.4L332.9 68.2L334.4 68.0L336.0 67.8L337.5 67.7L339.0 67.5L340.5 67.3L342.0 67.1" class="ch-line" pathLength="1"/>
+    <line x1="55.1" x2="55.1" y1="146" y2="262" class="ch-drop"/>
+      <circle cx="55.1" cy="146" r="4.5" class="ch-dot"/>
+      <text x="65.1" y="150" text-anchor="start" class="ch-val" font-size="13">50%</text><line x1="115.5" x2="115.5" y1="106.56" y2="262" class="ch-drop-g"/>
+      <circle cx="115.5" cy="106.56" r="4.5" class="ch-dot-g"/>
+      <text x="115.5" y="90.56" text-anchor="middle" class="ch-val" font-size="13">67%</text><line x1="191" x2="191" y1="90.32" y2="262" class="ch-drop-g"/>
+      <circle cx="191" cy="90.32" r="4.5" class="ch-dot-g"/>
+      <text x="191" y="74.32" text-anchor="middle" class="ch-val" font-size="13">74%</text><line x1="266.5" x2="266.5" y1="76.39999999999998" y2="262" class="ch-drop-g"/>
+      <circle cx="266.5" cy="76.39999999999998" r="4.5" class="ch-dot-g"/>
+      <text x="266.5" y="60.39999999999998" text-anchor="middle" class="ch-val" font-size="13">80%</text><line x1="342" x2="342" y1="67.12" y2="262" class="ch-drop-g"/>
+      <circle cx="342" cy="67.12" r="4.5" class="ch-dot-g"/>
+      <text x="346" y="51.120000000000005" text-anchor="end" class="ch-val" font-size="13">~84%</text>
+    <g class="ch-cursor" opacity="0"><line class="ch-cur-line" y1="30" y2="262"/><circle r="5" class="ch-cur-dot"/></g>
+  </svg>
+      <figcaption class="cc-foot">
+        <div class="key"><span><i style="background:var(--indigo-2);opacity:.5"></i>Free flashcards</span><span><i style="background:var(--gold)"></i>Workbook milestones</span></div>
+        <span>Coverage of spoken-Spanish corpora. 2,000 is approximate.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec" id="coverage" style="padding-top:64px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>How many words do you actually need?</h2>
+      <p class="lead">Fewer than you think. Spanish runs on a small core. Each 500 words below is one workbook, and each one moves your comprehension a measurable step.</p>
+    </div>
+    <table class="ledger">
+      <thead><tr><th>Words</th><th colspan="2">Coverage</th><th>What it unlocks</th><th style="text-align:right">Where to learn them</th></tr></thead>
+      <tbody><tr><td class="lg-n">100</td><td class="lg-bar"><div class="lg-track"><div class="lg-fill" style="width:50%"></div></div></td><td class="lg-p">50%</td><td class="lg-what">Half of every sentence you hear</td><td class="lg-tool">Free flashcards</td></tr><tr><td class="lg-n">500</td><td class="lg-bar"><div class="lg-track"><div class="lg-fill" style="width:67%"></div></div></td><td class="lg-p">67%</td><td class="lg-what">Basic conversation: your day, work, family</td><td class="lg-tool">Top 500 workbook</td></tr><tr><td class="lg-n">1,000</td><td class="lg-bar"><div class="lg-track"><div class="lg-fill" style="width:74%"></div></div></td><td class="lg-p">74%</td><td class="lg-what">Everyday conversation without stalling</td><td class="lg-tool">Top 1,000 workbook</td></tr><tr><td class="lg-n">1,500</td><td class="lg-bar"><div class="lg-track"><div class="lg-fill" style="width:80%"></div></div></td><td class="lg-p">80%</td><td class="lg-what">Subtitles, news, simple books</td><td class="lg-tool">Top 1,500 workbook</td></tr><tr><td class="lg-n">2,000</td><td class="lg-bar"><div class="lg-track"><div class="lg-fill" style="width:84%"></div></div></td><td class="lg-p">~84%</td><td class="lg-what">Real content feels comfortable</td><td class="lg-tool">Top 2,000 workbook</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="sec" id="list" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The list, ranked by real usage.</h2>
+      <p class="lead">Counted across millions of words of spoken Spanish. Rank 1 is <em>ser</em>, not <em>jirafa</em>. Every word comes with native audio and a sentence you would actually hear.</p>
+    </div>
+    <div class="wl-shell" id="wl">
+      <div class="wl-bar">
+        <div class="seg" role="group" aria-label="Filter by word type">
+          <button type="button" aria-pressed="true" data-f="all">All</button>
+          <button type="button" aria-pressed="false" data-f="verb">Verbs</button>
+          <button type="button" aria-pressed="false" data-f="other">Everything else</button>
+        </div>
+        <div class="wl-search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4-4"/></svg>Search 1,500 words</div>
+        <label class="tgl"><input type="checkbox" id="tgl-en" checked>Show English</label>
+      </div>
+      <table class="wl"><tbody><tr data-pos="verb">
+  <td class="wl-rank">001</td>
+  <td class="wl-word"><span>ser</span><em>verb</em></td>
+  <td class="wl-mean">to be (permanent), being</td>
+  <td class="wl-ex"><span class="es">Mi hermano es médico.</span><span class="en">My brother is a doctor.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for ser"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">002</td>
+  <td class="wl-word"><span>estar</span><em>verb</em></td>
+  <td class="wl-mean">to be (temporary), to be located</td>
+  <td class="wl-ex"><span class="es">La sopa está fría.</span><span class="en">The soup is cold.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for estar"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">003</td>
+  <td class="wl-word"><span>ir</span><em>verb</em></td>
+  <td class="wl-mean">to go, to match</td>
+  <td class="wl-ex"><span class="es">Mañana vamos al cine.</span><span class="en">Tomorrow we are going to the movies.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for ir"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">004</td>
+  <td class="wl-word"><span>tener</span><em>verb</em></td>
+  <td class="wl-mean">to have, to hold</td>
+  <td class="wl-ex"><span class="es">¿Tienes tiempo para hablar?</span><span class="en">Do you have time to talk?</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for tener"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">005</td>
+  <td class="wl-word"><span>haber</span><em>verb</em></td>
+  <td class="wl-mean">to have, to be (there is/are)</td>
+  <td class="wl-ex"><span class="es">He terminado el proyecto a tiempo.</span><span class="en">I have finished the project on time.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for haber"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="other">
+  <td class="wl-rank">006</td>
+  <td class="wl-word"><span>qué</span><em>pronoun</em></td>
+  <td class="wl-mean">what, how</td>
+  <td class="wl-ex"><span class="es">¿Qué quieres?</span><span class="en">What do you want?</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for qué"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">007</td>
+  <td class="wl-word"><span>hacer</span><em>verb</em></td>
+  <td class="wl-mean">to do, to make</td>
+  <td class="wl-ex"><span class="es">¡Hazlo! No tengas miedo.</span><span class="en">Do it! Don't be afraid.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for hacer"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">008</td>
+  <td class="wl-word"><span>poder</span><em>verb</em></td>
+  <td class="wl-mean">to be able to, power</td>
+  <td class="wl-ex"><span class="es">No puedo abrir la puerta.</span><span class="en">I can't open the door.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for poder"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="other">
+  <td class="wl-rank">009</td>
+  <td class="wl-word"><span>te</span><em>pronoun</em></td>
+  <td class="wl-mean">you, yourself</td>
+  <td class="wl-ex"><span class="es">Te vi ayer en el mercado.</span><span class="en">I saw you yesterday at the market.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for te"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="other">
+  <td class="wl-rank">010</td>
+  <td class="wl-word"><span>con</span><em>preposition</em></td>
+  <td class="wl-mean">with</td>
+  <td class="wl-ex"><span class="es">Voy al cine con mis amigos.</span><span class="en">I'm going to the movies with my friends.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for con"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">011</td>
+  <td class="wl-word"><span>decir</span><em>verb</em></td>
+  <td class="wl-mean">to say, to tell</td>
+  <td class="wl-ex"><span class="es">Ella dice que vendrá mañana.</span><span class="en">She says she will come tomorrow.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for decir"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr><tr data-pos="verb">
+  <td class="wl-rank">012</td>
+  <td class="wl-word"><span>querer</span><em>verb</em></td>
+  <td class="wl-mean">to want, to love</td>
+  <td class="wl-ex"><span class="es">Quiero un café, por favor.</span><span class="en">I want a coffee, please.</span></td>
+  <td class="wl-play"><button type="button" aria-label="Play audio for querer"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg></button></td>
+</tr></tbody></table>
+      <div class="wl-foot"><span class="tab">The top of 1,500 ranked words</span><a href="#" class="link">Open the full interactive list →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="tools" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Free tools. No account.</h2>
+      <p class="lead">Start with the first 100 words today. Find out where you are on the curve. Browse any list. Progress stays in your browser.</p>
+    </div>
+    <div class="tools">
+      <article class="tool tool-fc">
+        <div>
+          <h3 class="big">Flashcards in frequency order</h3>
+          <p>Spaced repetition over the ranked list, with native audio on every card. The first 100 words are free and cover half of what you hear.</p>
+          <div class="fc-stats"><span><b>100</b>free cards</span><span><b>~50%</b>of spoken Spanish</span><span><b>0</b>sign-ups</span></div>
+          <a href="#" class="link">Open flashcards →</a>
+        </div>
+        <div class="fc-stage">
+          <div class="fc-back"></div>
+          <div class="fc fc-front">
+            <div class="fc-row"><span>#12 · verb</span><span>Card 12 / 100</span></div>
+            <div class="fc-word">querer</div>
+            <div class="fc-ex">Quiero un café, por favor.</div>
+            <div class="fc-acts"><span>Again</span><span>Hard</span><span>Got it</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="tool">
+        <h3>Level test</h3>
+        <p>About 3 minutes. It tells you which rank to start from, so you skip what you know.</p>
+        <div class="lt-q">
+          <b>What does <em>sin embargo</em> mean?</b>
+          <div class="lt-opts"><span>without luggage</span><span class="ok">however</span><span>in any case</span><span>right away</span></div>
+          <div class="lt-meter"><span>Question 9 of 30</span><span>Estimated level: ~650 words</span></div>
+        </div>
+        <a href="#" class="link">Take the test →</a>
+      </article>
+      <article class="tool">
+        <h3>Word lists</h3>
+        <p>Filter, mark as known, hide translations.</p>
+        <ul class="wls">
+          <li><a href="#">Top 100 Spanish words <span>100</span></a></li>
+          <li><a href="#">Top 500 Spanish words <span>500</span></a></li>
+          <li><a href="#">Most common Spanish verbs <span>312</span></a></li>
+          <li><a href="#">Spanish frequency list <span>1,500</span></a></li>
+        </ul>
+      </article>
+      <article class="tool pdf">
+        <div class="pdf-l"><span class="pdf-doc">100</span><div><h3>Free PDF: the top 100 words</h3><p>One printable page with all 100, ranked, with translations. Sent to your inbox.</p></div></div>
+        <form onsubmit="return false"><input type="email" placeholder="you@email.com" aria-label="Email address" required><button class="btn btn-primary" type="submit">Send me the PDF</button></form>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band sec" id="workbooks">
+  <div class="wrap">
+    <div class="shop-top">
+      <div>
+        <h2>Workbooks. One for each step up the curve.</h2>
+        <p class="lead" style="margin-top:14px">Printable PDFs, €5 each. Each picks up where the last one ends, so you climb 500 words at a time and always know what you can understand next.</p>
+      </div>
+      <div class="facts"><span><b>€5</b>per workbook</span><span><b>500</b>words each</span><span><b>PDF</b>print or tablet</span></div>
+    </div>
+
+    <div class="spine-wrap">
+      <svg class="spine" viewBox="0 0 1200 210" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="spfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6B66C9" stop-opacity=".35"/><stop offset="1" stop-color="#6B66C9" stop-opacity="0"/></linearGradient>
+    <linearGradient id="spfade" x1="0" x2="1"><stop offset="0" stop-color="#8E89DC" stop-opacity="0"/><stop offset=".12" stop-color="#8E89DC"/><stop offset="1" stop-color="#8E89DC"/></linearGradient></defs>
+    <path d="M-16.1 169.7L-10.0 167.8L-3.9 165.8L2.2 163.8L8.3 161.8L14.4 160.0L20.5 158.2L26.6 156.4L32.7 154.7L38.8 153.1L44.9 151.5L51.0 150.0L57.1 148.5L63.2 147.1L69.3 145.7L75.4 144.3L81.5 143.0L87.6 141.7L93.7 140.5L99.8 139.3L105.9 138.1L112.0 136.9L118.1 135.8L124.2 134.7L130.3 133.6L136.4 132.5L142.5 131.5L148.6 130.4L154.7 129.4L160.8 128.5L166.9 127.5L173.0 126.6L179.1 125.7L185.2 124.8L191.3 124.0L197.4 123.2L203.5 122.4L209.6 121.6L215.7 120.9L221.8 120.2L227.9 119.4L234.0 118.8L240.1 118.1L246.2 117.4L252.3 116.8L258.4 116.2L264.5 115.6L270.6 115.0L276.7 114.4L282.8 113.8L288.9 113.3L295.0 112.7L301.1 112.2L307.2 111.6L313.3 111.1L319.4 110.6L325.5 110.1L331.6 109.6L337.7 109.1L343.8 108.6L349.9 108.1L356.0 107.6L362.1 107.1L368.2 106.6L374.3 106.1L380.4 105.6L386.5 105.1L392.6 104.5L398.7 104.0L404.8 103.5L410.9 103.0L417.0 102.4L423.1 101.9L429.2 101.4L435.3 100.8L441.4 100.2L447.5 99.6L453.6 99.0L459.7 98.5L465.8 97.9L471.9 97.3L478.0 96.7L484.1 96.1L490.2 95.5L496.3 94.9L502.4 94.3L508.5 93.7L514.6 93.2L520.7 92.6L526.8 92.0L532.9 91.4L539.0 90.8L545.1 90.3L551.2 89.7L557.3 89.1L563.4 88.5L569.5 88.0L575.6 87.4L581.7 86.8L587.8 86.3L593.9 85.7L600.0 85.1L606.1 84.6L612.2 84.0L618.3 83.5L624.4 82.9L630.5 82.4L636.6 81.9L642.7 81.3L648.8 80.8L654.9 80.3L661.0 79.7L667.1 79.2L673.2 78.7L679.3 78.2L685.4 77.7L691.5 77.2L697.6 76.7L703.7 76.2L709.8 75.7L715.9 75.2L722.0 74.7L728.1 74.2L734.2 73.8L740.3 73.3L746.4 72.8L752.5 72.4L758.6 71.9L764.7 71.5L770.8 71.0L776.9 70.6L783.0 70.2L789.1 69.8L795.2 69.3L801.3 68.9L807.4 68.5L813.5 68.1L819.6 67.8L825.7 67.4L831.8 67.0L837.9 66.6L844.0 66.2L850.1 65.9L856.2 65.5L862.3 65.1L868.4 64.8L874.5 64.4L880.6 64.1L886.7 63.7L892.8 63.4L898.9 63.0L905.0 62.7L911.1 62.4L917.2 62.0L923.3 61.7L929.4 61.4L935.5 61.0L941.6 60.7L947.7 60.4L953.8 60.0L959.9 59.7L966.0 59.3L972.1 59.0L978.2 58.7L984.3 58.3L990.4 58.0L996.5 57.7L1002.6 57.3L1008.7 57.0L1014.8 56.7L1020.9 56.3L1027.0 56.0L1033.1 55.6L1039.2 55.3L1045.3 54.9L1051.4 54.5L1057.5 54.2L1057.5 210L-16.099999999999994 210Z" fill="url(#spfill)"/>
+    <path d="M-16.1 169.7L-10.0 167.8L-3.9 165.8L2.2 163.8L8.3 161.8L14.4 160.0L20.5 158.2L26.6 156.4L32.7 154.7L38.8 153.1L44.9 151.5L51.0 150.0L57.1 148.5L63.2 147.1L69.3 145.7L75.4 144.3L81.5 143.0L87.6 141.7L93.7 140.5L99.8 139.3L105.9 138.1L112.0 136.9L118.1 135.8L124.2 134.7L130.3 133.6L136.4 132.5L142.5 131.5L148.6 130.4L154.7 129.4L160.8 128.5L166.9 127.5L173.0 126.6L179.1 125.7L185.2 124.8L191.3 124.0L197.4 123.2L203.5 122.4L209.6 121.6L215.7 120.9L221.8 120.2L227.9 119.4L234.0 118.8L240.1 118.1L246.2 117.4L252.3 116.8L258.4 116.2L264.5 115.6L270.6 115.0L276.7 114.4L282.8 113.8L288.9 113.3L295.0 112.7L301.1 112.2L307.2 111.6L313.3 111.1L319.4 110.6L325.5 110.1L331.6 109.6L337.7 109.1L343.8 108.6L349.9 108.1L356.0 107.6L362.1 107.1L368.2 106.6L374.3 106.1L380.4 105.6L386.5 105.1L392.6 104.5L398.7 104.0L404.8 103.5L410.9 103.0L417.0 102.4L423.1 101.9L429.2 101.4L435.3 100.8L441.4 100.2L447.5 99.6L453.6 99.0L459.7 98.5L465.8 97.9L471.9 97.3L478.0 96.7L484.1 96.1L490.2 95.5L496.3 94.9L502.4 94.3L508.5 93.7L514.6 93.2L520.7 92.6L526.8 92.0L532.9 91.4L539.0 90.8L545.1 90.3L551.2 89.7L557.3 89.1L563.4 88.5L569.5 88.0L575.6 87.4L581.7 86.8L587.8 86.3L593.9 85.7L600.0 85.1L606.1 84.6L612.2 84.0L618.3 83.5L624.4 82.9L630.5 82.4L636.6 81.9L642.7 81.3L648.8 80.8L654.9 80.3L661.0 79.7L667.1 79.2L673.2 78.7L679.3 78.2L685.4 77.7L691.5 77.2L697.6 76.7L703.7 76.2L709.8 75.7L715.9 75.2L722.0 74.7L728.1 74.2L734.2 73.8L740.3 73.3L746.4 72.8L752.5 72.4L758.6 71.9L764.7 71.5L770.8 71.0L776.9 70.6L783.0 70.2L789.1 69.8L795.2 69.3L801.3 68.9L807.4 68.5L813.5 68.1L819.6 67.8L825.7 67.4L831.8 67.0L837.9 66.6L844.0 66.2L850.1 65.9L856.2 65.5L862.3 65.1L868.4 64.8L874.5 64.4L880.6 64.1L886.7 63.7L892.8 63.4L898.9 63.0L905.0 62.7L911.1 62.4L917.2 62.0L923.3 61.7L929.4 61.4L935.5 61.0L941.6 60.7L947.7 60.4L953.8 60.0L959.9 59.7L966.0 59.3L972.1 59.0L978.2 58.7L984.3 58.3L990.4 58.0L996.5 57.7L1002.6 57.3L1008.7 57.0L1014.8 56.7L1020.9 56.3L1027.0 56.0L1033.1 55.6L1039.2 55.3L1045.3 54.9L1051.4 54.5L1057.5 54.2" class="sp-line"/>
+    <line x1="142.5" x2="142.5" y1="139.45454545454544" y2="210" class="sp-drop"/>
+    <circle cx="142.5" cy="131.45454545454544" r="7" class="sp-dot"/><circle cx="142.5" cy="131.45454545454544" r="15" class="sp-halo"/>
+    <text x="164.5" y="138.45454545454544" class="sp-val">67%</text><line x1="447.5" x2="447.5" y1="107.63636363636363" y2="210" class="sp-drop"/>
+    <circle cx="447.5" cy="99.63636363636363" r="7" class="sp-dot"/><circle cx="447.5" cy="99.63636363636363" r="15" class="sp-halo"/>
+    <text x="469.5" y="106.63636363636363" class="sp-val">74%</text><line x1="752.5" x2="752.5" y1="80.36363636363636" y2="210" class="sp-drop"/>
+    <circle cx="752.5" cy="72.36363636363636" r="7" class="sp-dot"/><circle cx="752.5" cy="72.36363636363636" r="15" class="sp-halo"/>
+    <text x="774.5" y="79.36363636363636" class="sp-val">80%</text><line x1="1057.5" x2="1057.5" y1="62.18181818181819" y2="210" class="sp-drop"/>
+    <circle cx="1057.5" cy="54.18181818181819" r="7" class="sp-dot"/><circle cx="1057.5" cy="54.18181818181819" r="15" class="sp-halo"/>
+    <text x="1079.5" y="61.18181818181819" class="sp-val">~84%</text>
+  </svg>
+      <div class="spine-labels" id="sp-labels"></div>
+    </div>
+    <div class="shelf"><article class="bk bk-flag">
+  <div class="bk-reach"><span class="bk-dot"></span>Reaches <strong>67%</strong> coverage</div>
+  <div class="cv cv-navy" aria-hidden="true">
+  <div class="cv-top"><span>Most Common Spanish</span><span>Workbook</span></div>
+  <div class="cv-num">500</div>
+  <div class="cv-sub">most common words</div>
+  <svg viewBox="0 0 100 60" class="cv-curve" aria-hidden="true"><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6L72.4 15.6L72.9 15.5L73.3 15.5L73.8 15.4L74.2 15.4L74.6 15.3L75.1 15.3L75.5 15.2L76.0 15.2L76.4 15.2L76.8 15.1L77.3 15.1L77.7 15.0L78.2 15.0L78.6 15.0L79.0 14.9L79.5 14.9L79.9 14.8L80.4 14.8L80.8 14.8L81.2 14.7L81.7 14.7L82.1 14.7L82.6 14.6L83.0 14.6L83.4 14.5L83.9 14.5L84.3 14.5L84.8 14.4L85.2 14.4L85.6 14.4L86.1 14.3L86.5 14.3L87.0 14.3L87.4 14.2L87.8 14.2L88.3 14.2L88.7 14.1L89.2 14.1L89.6 14.0L90.0 14.0L90.5 14.0L90.9 13.9L91.4 13.9L91.8 13.9L92.2 13.8L92.7 13.8L93.1 13.8L93.6 13.7L94.0 13.7" class="cv-all cv-navy"/><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8" class="cv-part"/><circle cx="28" cy="21.839999999999996" r="2.6" class="cv-pt"/></svg>
+  <div class="cv-foot"><span>Ranks 1–500</span><span>67%</span></div>
+</div>
+  <div class="bk-body">
+    <div class="bk-intro"><div class="bk-head"><h3>Top 500</h3><span class="bk-tag">Start here</span></div>
+    <p class="bk-pitch">The core. Two-thirds of everyday Spanish, drilled until it is automatic.</p></div>
+    <ul><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>10 units of 50 words, each one built for one week</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>The three-pass mastery method, printed into every unit</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>1,500 gap-fill and recall exercises using real sentences</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Review calendar, answer key, mastery tracker</span></li></ul>
+    <div class="bk-meta"><span>164 pages</span><span>A4 + US Letter PDF</span></div>
+    <div class="bk-buy"><span class="bk-price">€5</span><a href="#" class="btn btn-gold">Buy — €5</a></div>
+  </div>
+</article><article class="bk">
+  <div class="bk-reach"><span class="bk-dot"></span>Reaches <strong>74%</strong> coverage</div>
+  <div class="cv cv-indigo" aria-hidden="true">
+  <div class="cv-top"><span>Most Common Spanish</span><span>Workbook</span></div>
+  <div class="cv-num">1,000</div>
+  <div class="cv-sub">most common words</div>
+  <svg viewBox="0 0 100 60" class="cv-curve" aria-hidden="true"><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6L72.4 15.6L72.9 15.5L73.3 15.5L73.8 15.4L74.2 15.4L74.6 15.3L75.1 15.3L75.5 15.2L76.0 15.2L76.4 15.2L76.8 15.1L77.3 15.1L77.7 15.0L78.2 15.0L78.6 15.0L79.0 14.9L79.5 14.9L79.9 14.8L80.4 14.8L80.8 14.8L81.2 14.7L81.7 14.7L82.1 14.7L82.6 14.6L83.0 14.6L83.4 14.5L83.9 14.5L84.3 14.5L84.8 14.4L85.2 14.4L85.6 14.4L86.1 14.3L86.5 14.3L87.0 14.3L87.4 14.2L87.8 14.2L88.3 14.2L88.7 14.1L89.2 14.1L89.6 14.0L90.0 14.0L90.5 14.0L90.9 13.9L91.4 13.9L91.8 13.9L92.2 13.8L92.7 13.8L93.1 13.8L93.6 13.7L94.0 13.7" class="cv-all cv-indigo"/><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5" class="cv-part"/><circle cx="50" cy="18.480000000000004" r="2.6" class="cv-pt"/></svg>
+  <div class="cv-foot"><span>Ranks 501–1,000</span><span>74%</span></div>
+</div>
+  <div class="bk-body">
+    <div class="bk-intro"><div class="bk-head"><h3>Top 1,000</h3></div>
+    <p class="bk-pitch">Picks up at word 501. Everyday conversation stops stalling.</p></div>
+    <ul><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>10 units of 50 words</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Gap-fill, recall and translation drills</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Answer key and tracker</span></li></ul>
+    <div class="bk-meta"><span>132 pages</span><span>A4 + US Letter PDF</span></div>
+    <div class="bk-buy"><span class="bk-price">€5</span><a href="#" class="btn btn-ghost-d">Buy — €5</a></div>
+  </div>
+</article><article class="bk">
+  <div class="bk-reach"><span class="bk-dot"></span>Reaches <strong>80%</strong> coverage</div>
+  <div class="cv cv-plum" aria-hidden="true">
+  <div class="cv-top"><span>Most Common Spanish</span><span>Workbook</span></div>
+  <div class="cv-num">1,500</div>
+  <div class="cv-sub">most common words</div>
+  <svg viewBox="0 0 100 60" class="cv-curve" aria-hidden="true"><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6L72.4 15.6L72.9 15.5L73.3 15.5L73.8 15.4L74.2 15.4L74.6 15.3L75.1 15.3L75.5 15.2L76.0 15.2L76.4 15.2L76.8 15.1L77.3 15.1L77.7 15.0L78.2 15.0L78.6 15.0L79.0 14.9L79.5 14.9L79.9 14.8L80.4 14.8L80.8 14.8L81.2 14.7L81.7 14.7L82.1 14.7L82.6 14.6L83.0 14.6L83.4 14.5L83.9 14.5L84.3 14.5L84.8 14.4L85.2 14.4L85.6 14.4L86.1 14.3L86.5 14.3L87.0 14.3L87.4 14.2L87.8 14.2L88.3 14.2L88.7 14.1L89.2 14.1L89.6 14.0L90.0 14.0L90.5 14.0L90.9 13.9L91.4 13.9L91.8 13.9L92.2 13.8L92.7 13.8L93.1 13.8L93.6 13.7L94.0 13.7" class="cv-all cv-plum"/><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6" class="cv-part"/><circle cx="72" cy="15.599999999999994" r="2.6" class="cv-pt"/></svg>
+  <div class="cv-foot"><span>Ranks 1,001–1,500</span><span>80%</span></div>
+</div>
+  <div class="bk-body">
+    <div class="bk-intro"><div class="bk-head"><h3>Top 1,500</h3></div>
+    <p class="bk-pitch">The fluency base. Subtitles and news start making sense.</p></div>
+    <ul><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>10 units of 50 words</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Reading passages built only from known words</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Answer key and tracker</span></li></ul>
+    <div class="bk-meta"><span>132 pages</span><span>A4 + US Letter PDF</span></div>
+    <div class="bk-buy"><span class="bk-price">€5</span><a href="#" class="btn btn-ghost-d">Buy — €5</a></div>
+  </div>
+</article><article class="bk">
+  <div class="bk-reach"><span class="bk-dot"></span>Reaches <strong>~84%</strong> coverage</div>
+  <div class="cv cv-paper" aria-hidden="true">
+  <div class="cv-top"><span>Most Common Spanish</span><span>Workbook</span></div>
+  <div class="cv-num">2,000</div>
+  <div class="cv-sub">most common words</div>
+  <svg viewBox="0 0 100 60" class="cv-curve" aria-hidden="true"><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6L72.4 15.6L72.9 15.5L73.3 15.5L73.8 15.4L74.2 15.4L74.6 15.3L75.1 15.3L75.5 15.2L76.0 15.2L76.4 15.2L76.8 15.1L77.3 15.1L77.7 15.0L78.2 15.0L78.6 15.0L79.0 14.9L79.5 14.9L79.9 14.8L80.4 14.8L80.8 14.8L81.2 14.7L81.7 14.7L82.1 14.7L82.6 14.6L83.0 14.6L83.4 14.5L83.9 14.5L84.3 14.5L84.8 14.4L85.2 14.4L85.6 14.4L86.1 14.3L86.5 14.3L87.0 14.3L87.4 14.2L87.8 14.2L88.3 14.2L88.7 14.1L89.2 14.1L89.6 14.0L90.0 14.0L90.5 14.0L90.9 13.9L91.4 13.9L91.8 13.9L92.2 13.8L92.7 13.8L93.1 13.8L93.6 13.7L94.0 13.7" class="cv-all cv-paper"/><path d="M6.0 54.0L6.1 52.8L6.2 51.6L6.3 50.3L6.4 49.1L6.4 47.8L6.5 46.6L6.6 45.4L6.7 44.3L6.8 43.3L6.9 42.5L7.0 41.7L7.1 41.0L7.1 40.4L7.2 39.8L7.3 39.3L7.4 38.9L7.5 38.5L7.6 38.1L7.7 37.7L7.8 37.4L7.8 37.0L7.9 36.7L8.0 36.4L8.1 36.1L8.2 35.8L8.3 35.4L8.4 35.1L8.5 34.8L8.6 34.5L8.6 34.2L8.7 33.9L8.8 33.6L8.9 33.4L9.0 33.1L9.1 32.9L9.2 32.6L9.3 32.4L9.3 32.2L9.4 31.9L9.5 31.7L9.6 31.5L9.7 31.3L9.8 31.1L9.9 31.0L10.0 30.8L10.0 30.6L10.1 30.5L10.2 30.3L10.3 30.1L10.4 30.0L10.5 29.9L10.6 29.7L10.7 29.6L10.8 29.5L10.8 29.3L10.9 29.2L11.0 29.1L11.1 29.0L11.2 28.9L11.3 28.8L11.7 28.3L12.2 27.9L12.6 27.5L13.0 27.2L13.5 27.0L13.9 26.8L14.4 26.6L14.8 26.5L15.2 26.3L15.7 26.2L16.1 26.1L16.6 25.9L17.0 25.7L17.4 25.5L17.9 25.3L18.3 25.0L18.8 24.9L19.2 24.7L19.6 24.5L20.1 24.3L20.5 24.1L21.0 24.0L21.4 23.8L21.8 23.6L22.3 23.5L22.7 23.3L23.2 23.2L23.6 23.1L24.0 22.9L24.5 22.8L24.9 22.7L25.4 22.5L25.8 22.4L26.2 22.3L26.7 22.2L27.1 22.1L27.6 22.0L28.0 21.8L28.4 21.7L28.9 21.6L29.3 21.5L29.8 21.4L30.2 21.3L30.6 21.2L31.1 21.1L31.5 21.1L32.0 21.0L32.4 20.9L32.8 20.8L33.3 20.7L33.7 20.6L34.2 20.6L34.6 20.5L35.0 20.4L35.5 20.4L35.9 20.3L36.4 20.2L36.8 20.2L37.2 20.1L37.7 20.0L38.1 20.0L38.6 19.9L39.0 19.9L39.4 19.8L39.9 19.7L40.3 19.7L40.8 19.6L41.2 19.6L41.6 19.5L42.1 19.5L42.5 19.4L43.0 19.4L43.4 19.3L43.8 19.3L44.3 19.2L44.7 19.2L45.2 19.1L45.6 19.1L46.0 19.0L46.5 18.9L46.9 18.9L47.4 18.8L47.8 18.8L48.2 18.7L48.7 18.7L49.1 18.6L49.6 18.5L50.0 18.5L50.4 18.4L50.9 18.4L51.3 18.3L51.8 18.2L52.2 18.2L52.6 18.1L53.1 18.0L53.5 18.0L54.0 17.9L54.4 17.9L54.8 17.8L55.3 17.7L55.7 17.7L56.2 17.6L56.6 17.6L57.0 17.5L57.5 17.4L57.9 17.4L58.4 17.3L58.8 17.2L59.2 17.2L59.7 17.1L60.1 17.1L60.6 17.0L61.0 17.0L61.4 16.9L61.9 16.8L62.3 16.8L62.8 16.7L63.2 16.7L63.6 16.6L64.1 16.5L64.5 16.5L65.0 16.4L65.4 16.4L65.8 16.3L66.3 16.3L66.7 16.2L67.2 16.2L67.6 16.1L68.0 16.1L68.5 16.0L68.9 15.9L69.4 15.9L69.8 15.8L70.2 15.8L70.7 15.7L71.1 15.7L71.6 15.6L72.0 15.6L72.4 15.6L72.9 15.5L73.3 15.5L73.8 15.4L74.2 15.4L74.6 15.3L75.1 15.3L75.5 15.2L76.0 15.2L76.4 15.2L76.8 15.1L77.3 15.1L77.7 15.0L78.2 15.0L78.6 15.0L79.0 14.9L79.5 14.9L79.9 14.8L80.4 14.8L80.8 14.8L81.2 14.7L81.7 14.7L82.1 14.7L82.6 14.6L83.0 14.6L83.4 14.5L83.9 14.5L84.3 14.5L84.8 14.4L85.2 14.4L85.6 14.4L86.1 14.3L86.5 14.3L87.0 14.3L87.4 14.2L87.8 14.2L88.3 14.2L88.7 14.1L89.2 14.1L89.6 14.0L90.0 14.0L90.5 14.0L90.9 13.9L91.4 13.9L91.8 13.9L92.2 13.8L92.7 13.8L93.1 13.8L93.6 13.7L94.0 13.7" class="cv-part"/><circle cx="94" cy="13.68" r="2.6" class="cv-pt"/></svg>
+  <div class="cv-foot"><span>Ranks 1,501–2,000</span><span>~84%</span></div>
+</div>
+  <div class="bk-body">
+    <div class="bk-intro"><div class="bk-head"><h3>Top 2,000</h3></div>
+    <p class="bk-pitch">The long tail that makes real content comfortable.</p></div>
+    <ul><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>10 units of 50 words</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Mixed review across all 2,000</span></li><li><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Answer key and tracker</span></li></ul>
+    <div class="bk-meta"><span>132 pages</span><span>A4 + US Letter PDF</span></div>
+    <div class="bk-buy"><span class="bk-price">€5</span><a href="#" class="btn btn-ghost-d">Buy — €5</a></div>
+  </div>
+</article></div>
+
+    <div class="method">
+      <div>
+        <h3>Inside Top 500: a method, not a word dump.</h3>
+        <p>Every unit runs the same three passes over 50 words, spaced across three weeks. Tick the boxes. When all three are ticked, the word is yours.</p>
+        <div class="passes">
+          <div class="pass"><span class="k">Pass 1</span><div><b>Recognise</b><p>Read the word in a real sentence, match it to its meaning.</p></div><span class="d">Day 1</span></div>
+          <div class="pass"><span class="k">Pass 2</span><div><b>Recall</b><p>Cover the English. Produce the Spanish from memory.</p></div><span class="d">Day 3 · 7</span></div>
+          <div class="pass"><span class="k">Pass 3</span><div><b>Use</b><p>Fill the gap, then write your own sentence with it.</p></div><span class="d">Day 21</span></div>
+        </div>
+        <div class="method-cta"><a href="#" class="btn btn-gold">Buy Top 500 — €5</a><span>Instant PDF download</span></div>
+      </div>
+      <div class="spread" aria-label="Sample spread from the Top 500 workbook, unit 4">
+        <div class="pg">
+          <div class="pg-hd"><span>Unit 4</span><span>Ranks 151–200</span></div>
+          <h4>Word table</h4>
+          <div class="pg-s">Tick a box each time you complete a pass.</div>
+          <div class="pg-cols"><span>#</span><span>Spanish</span><span>English</span><span>1</span><span>2</span><span>3</span></div>
+          <div class="pg-row"><span class="pg-r">151</span><span class="pg-w">entrar</span><span class="pg-m">to enter</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">152</span><span class="pg-w">papá</span><span class="pg-m">dad</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">153</span><span class="pg-w">ninguno</span><span class="pg-m">none</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">154</span><span class="pg-w">madre</span><span class="pg-m">mother</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">155</span><span class="pg-w">trabajo</span><span class="pg-m">work</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">156</span><span class="pg-w">tres</span><span class="pg-m">three</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">157</span><span class="pg-w">importar</span><span class="pg-m">to matter</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div><div class="pg-row"><span class="pg-r">158</span><span class="pg-w">menos</span><span class="pg-m">less</span><span class="pg-box"></span><span class="pg-box"></span><span class="pg-box"></span></div>
+          <div class="pg-num"><span>Top 500 Workbook</span><span>46</span></div>
+        </div>
+        <div class="pg">
+          <div class="pg-hd"><span>Pass 3 · Use</span><span>Day 21</span></div>
+          <h4>Fill the gap</h4>
+          <div class="pg-s">Write the missing word. Then write one sentence of your own.</div>
+          <ol><li><span class="pg-n">1</span><span>Me <span class="pg-blank"></span> tu opinión.</span></li><li><span class="pg-n">2</span><span><span class="pg-blank"></span> en la casa antes de que empezara la tormenta.</span></li><li><span class="pg-n">3</span><span>Necesito <span class="pg-blank"></span> azúcar para la receta.</span></li><li><span class="pg-n">4</span><span>Ven <span class="pg-blank"></span> al cine esta noche.</span></li></ol>
+          <div class="pg-cal"><span>Day 1<b>Recognise</b></span><span>Day 3<b>Recall</b></span><span>Day 7<b>Recall</b></span><span class="on">Day 21<b>Use</b></span></div>
+          <div class="pg-num"><span>Answers p. 158</span><span>47</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap faq">
+    <h2>Questions</h2>
+    <div class="faq-list"><div class="fq"><h3>How many Spanish words do I need to understand everyday conversation?</h3><p>About 1,500 high-frequency words gets you to roughly 80% of everyday spoken Spanish. 500 is enough for basic conversation; that already covers about 67%.</p></div><div class="fq"><h3>Are the flashcards and level test really free?</h3><p>Yes. The first 100 flashcards, the level test and every word list are free, with no account. Your progress stays in your browser.</p></div><div class="fq"><h3>What exactly is in a workbook?</h3><p>A printable PDF: 10 units of 50 ranked words, exercises built from real example sentences, a review calendar, an answer key and a mastery tracker. Print at home or work on a tablet.</p></div><div class="fq"><h3>Which workbook should I start with?</h3><p>Top 500, unless the level test says you already know most of those words. Each workbook starts where the previous one ends.</p></div><div class="fq"><h3>Do the workbooks repeat the free flashcards?</h3><p>They use the same ranked list, so they line up. The flashcards train recognition; the workbooks add written recall and production, which is where words stick.</p></div><div class="fq"><h3>Can I get a refund?</h3><p>If a workbook is not what you expected, email us within 14 days and we refund the €5.</p></div></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="#" class="brand" style="color:var(--ink)"><span class="brand-mark"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 14C3 6 5.5 4.2 9 3.4S14 2.6 14 2.4" stroke="#F4F2FA" stroke-width="1.8" stroke-linecap="round"/><circle cx="9" cy="3.4" r="1.7" fill="#D59A2B"/></svg></span>Most Common Spanish</a>
+        <p>The most common Spanish words, in the order they are actually used.</p>
+      </div>
+      <div class="foot-cols">
+        <div><b>Learn</b><a href="#">Flashcards</a><a href="#">Level test</a><a href="#">Free PDF: top 100</a></div>
+        <div><b>Word lists</b><a href="#">Top 100</a><a href="#">Top 500</a><a href="#">Common verbs</a><a href="#">Frequency list</a></div>
+        <div><b>Workbooks</b><a href="#">Top 500</a><a href="#">Top 1,000</a><a href="#">Top 1,500</a><a href="#">Top 2,000</a></div>
+      </div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Most Common Spanish</span><span><a href="#" style="text-decoration:none">Privacy</a> · <a href="#" style="text-decoration:none">Terms</a> · <a href="#" style="text-decoration:none">Blog</a></span></div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const S = [[0,0],[2,2.5],[4,5],[6,7.7],[8,10.3],[10,12.9],[12,15.5],[14,17.9],[16,20.1],[18,22.2],[20,24],[22,25.6],[24,27],[26,28.3],[28,29.5],[30,30.5],[32,31.5],[34,32.4],[36,33.2],[38,33.9],[40,34.7],[42,35.3],[44,36],[46,36.6],[48,37.3],[50,38],[52,38.7],[54,39.4],[56,40],[58,40.7],[60,41.3],[62,41.9],[64,42.4],[66,43],[68,43.5],[70,44],[72,44.5],[74,45],[76,45.5],[78,46],[80,46.4],[82,46.8],[84,47.2],[86,47.6],[88,48],[90,48.4],[92,48.7],[94,49],[96,49.4],[98,49.7],[100,50],[102,50.3],[104,50.6],[106,50.9],[108,51.1],[110,51.4],[112,51.6],[114,51.9],[116,52.1],[118,52.4],[120,52.6],[130,53.6],[140,54.4],[150,55.2],[160,55.7],[170,56.2],[180,56.6],[190,57],[200,57.3],[210,57.6],[220,57.9],[230,58.2],[240,58.6],[250,59],[260,59.5],[270,59.9],[280,60.3],[290,60.7],[300,61.1],[310,61.5],[320,61.9],[330,62.2],[340,62.6],[350,62.9],[360,63.2],[370,63.6],[380,63.9],[390,64.2],[400,64.5],[410,64.7],[420,65],[430,65.3],[440,65.5],[450,65.8],[460,66],[470,66.3],[480,66.5],[490,66.8],[500,67],[510,67.2],[520,67.4],[530,67.7],[540,67.9],[550,68.1],[560,68.3],[570,68.5],[580,68.6],[590,68.8],[600,69],[610,69.2],[620,69.3],[630,69.5],[640,69.6],[650,69.8],[660,69.9],[670,70.1],[680,70.2],[690,70.4],[700,70.5],[710,70.6],[720,70.8],[730,70.9],[740,71],[750,71.1],[760,71.2],[770,71.4],[780,71.5],[790,71.6],[800,71.7],[810,71.8],[820,71.9],[830,72],[840,72.1],[850,72.3],[860,72.4],[870,72.5],[880,72.6],[890,72.7],[900,72.8],[910,72.9],[920,73],[930,73.1],[940,73.3],[950,73.4],[960,73.5],[970,73.6],[980,73.7],[990,73.9],[1000,74],[1010,74.1],[1020,74.3],[1030,74.4],[1040,74.5],[1050,74.6],[1060,74.8],[1070,74.9],[1080,75],[1090,75.2],[1100,75.3],[1110,75.4],[1120,75.6],[1130,75.7],[1140,75.8],[1150,75.9],[1160,76.1],[1170,76.2],[1180,76.3],[1190,76.4],[1200,76.6],[1210,76.7],[1220,76.8],[1230,76.9],[1240,77.1],[1250,77.2],[1260,77.3],[1270,77.4],[1280,77.6],[1290,77.7],[1300,77.8],[1310,77.9],[1320,78],[1330,78.1],[1340,78.3],[1350,78.4],[1360,78.5],[1370,78.6],[1380,78.7],[1390,78.8],[1400,78.9],[1410,79.1],[1420,79.2],[1430,79.3],[1440,79.4],[1450,79.5],[1460,79.6],[1470,79.7],[1480,79.8],[1490,79.9],[1500,80],[1510,80.1],[1520,80.2],[1530,80.3],[1540,80.4],[1550,80.5],[1560,80.6],[1570,80.7],[1580,80.8],[1590,80.8],[1600,80.9],[1610,81],[1620,81.1],[1630,81.2],[1640,81.3],[1650,81.3],[1660,81.4],[1670,81.5],[1680,81.6],[1690,81.7],[1700,81.7],[1710,81.8],[1720,81.9],[1730,82],[1740,82],[1750,82.1],[1760,82.2],[1770,82.3],[1780,82.3],[1790,82.4],[1800,82.5],[1810,82.6],[1820,82.6],[1830,82.7],[1840,82.8],[1850,82.9],[1860,82.9],[1870,83],[1880,83.1],[1890,83.2],[1900,83.2],[1910,83.3],[1920,83.4],[1930,83.5],[1940,83.5],[1950,83.6],[1960,83.7],[1970,83.8],[1980,83.8],[1990,83.9],[2000,84]]
+  const lerp = n => { for (let i = 1; i < S.length; i++) if (S[i][0] >= n) { const [a, pa] = S[i - 1], [b, pb] = S[i]; return pa + (pb - pa) * (n - a) / (b - a) } return S[S.length - 1][1] }
+  const rdP = document.getElementById('rd-p'), rdN = document.getElementById('rd-n')
+  const setRead = n => { rdN.textContent = n.toLocaleString('en-US'); rdP.textContent = Math.round(lerp(n)) }
+  document.querySelectorAll('svg.ch').forEach(svg => {
+    const L = +svg.dataset.l, R = +svg.dataset.r, W = +svg.dataset.w, H = +svg.dataset.h, T = +svg.dataset.t, B = +svg.dataset.b
+    const cur = svg.querySelector('.ch-cursor'), ln = cur.querySelector('line'), dot = cur.querySelector('circle')
+    const move = e => {
+      const r = svg.getBoundingClientRect(), vx = (e.clientX - r.left) / r.width * W
+      let n = Math.round(Math.max(0, Math.min(2000, (vx - L) / (W - L - R) * 2000)) / 10) * 10
+      const x = L + n / 2000 * (W - L - R), y = H - B - lerp(n) / 100 * (H - B - T)
+      ln.setAttribute('x1', x); ln.setAttribute('x2', x); dot.setAttribute('cx', x); dot.setAttribute('cy', y)
+      cur.setAttribute('opacity', 1); setRead(n)
+    }
+    svg.addEventListener('pointermove', move)
+    svg.addEventListener('pointerdown', move)
+    svg.addEventListener('pointerleave', () => { cur.setAttribute('opacity', 0); setRead(500) })
+  })
+
+  const wl = document.getElementById('wl')
+  wl.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+    wl.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b))
+    wl.querySelectorAll('tbody tr').forEach(tr => { tr.hidden = b.dataset.f !== 'all' && tr.dataset.pos !== b.dataset.f })
+  }))
+  document.getElementById('tgl-en').addEventListener('change', e => wl.classList.toggle('hide-en', !e.target.checked))
+
+  const labels = document.getElementById('sp-labels')
+  const spine = document.querySelector('svg.spine')
+  if (spine) {
+    const pts = [[500, 67, 'Top 500'], [1000, 74, 'Top 1,000'], [1500, 80, 'Top 1,500'], [2000, 84, 'Top 2,000']]
+    labels.innerHTML = pts.map(([n, p, t]) => {
+      const x = (142.5 + (n - 500) * 0.61) / 1200 * 100, y = (186 - ((p - 55) / 33) * 150) / 210 * 100
+      return `<span style="left:${x}%;top:${y}%">${n === 2000 ? '~' : ''}${p}%<small>after ${t}</small></span>`
+    }).join('')
+  }
+})()
+</script>
+</body>
+</html>

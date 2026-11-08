@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "Mis hijos ____ muy rápido; ya no les queda la ropa.",
+      "answer": "crecen",
+      "base": "crecer",
+      "en": "My kids are growing so fast; their clothes don't fit anymore."
+    },
+    {
+      "es": "No te ____ con ese pelo tan corto.",
+      "answer": "reconocí",
+      "base": "reconocer",
+      "en": "I didn't recognize you with such short hair."
+    },
+    {
+      "es": "Hay una cola muy larga en la ____ de la calle.",
+      "answer": "esquina",
+      "base": "esquina",
+      "en": "There's a very long line on the street corner."
+    },
+    {
+      "es": "La empresa me hizo una ____ de trabajo en Madrid.",
+      "answer": "oferta",
+      "base": "oferta",
+      "en": "The company made me a job offer in Madrid."
+    },
+    {
+      "es": "Por favor, ____ la luz antes de dormir.",
+      "answer": "apaga",
+      "base": "apagar",
+      "en": "Please turn off the light before going to sleep."
+    },
+    {
+      "es": "Este sofá es muy ____ para ver películas.",
+      "answer": "cómodo",
+      "base": "cómodo",
+      "en": "This sofa is very comfortable for watching movies."
+    },
+    {
+      "es": "Mañana voy a ____ a mi madre al aeropuerto.",
+      "answer": "recoger",
+      "base": "recoger",
+      "en": "Tomorrow I'm going to pick up my mother at the airport."
+    },
+    {
+      "es": "La reunión fue tan ____ que casi me duermo.",
+      "answer": "aburrida",
+      "base": "aburrido",
+      "en": "The meeting was so boring that I almost fell asleep."
+    },
+    {
+      "es": "Ayer ____ mucho de la cena con mis amigos.",
+      "answer": "disfruté",
+      "base": "disfrutar",
+      "en": "I really enjoyed dinner with my friends yesterday."
+    },
+    {
+      "es": "Necesito un poco más de ____ con mi nuevo empleado.",
+      "answer": "paciencia",
+      "base": "paciencia",
+      "en": "I need a bit more patience with my new employee."
+    }
+  ],
+  "translate": [
+    {
+      "en": "My neighbor is pregnant and she is very happy.",
+      "es": "Mi vecina está embarazada y está muy feliz."
+    },
+    {
+      "en": "We usually have breakfast at home and have lunch at work.",
+      "es": "Normalmente desayunamos en casa y almorzamos en el trabajo."
+    },
+    {
+      "en": "I left my wallet and my cell phone in the car.",
+      "es": "Dejé mi cartera y mi celular en el carro."
+    },
+    {
+      "en": "On Saturday we're going to visit a castle near the border.",
+      "es": "El sábado vamos a visitar un castillo cerca de la frontera."
+    },
+    {
+      "en": "The company wants to hire more employees this season.",
+      "es": "La empresa quiere contratar a más empleados esta temporada."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Siempre me pongo ____ antes de hablar en público.",
+      "answer": "nervioso",
+      "base": "nervioso",
+      "en": "I always get nervous before speaking in public."
+    },
+    {
+      "es": "Mi ____ cumple noventa años este domingo.",
+      "answer": "abuela",
+      "base": "abuela",
+      "en": "My grandmother turns ninety this Sunday."
+    },
+    {
+      "es": "¿A qué hora sale tu ____ para Madrid?",
+      "answer": "vuelo",
+      "base": "vuelo",
+      "en": "What time does your flight to Madrid leave?"
+    },
+    {
+      "es": "Olvidé ____ el móvil y ahora no tiene batería.",
+      "answer": "cargar",
+      "base": "cargar",
+      "en": "I forgot to charge my phone and now the battery is dead."
+    },
+    {
+      "es": "¿El supermercado está ____ los domingos?",
+      "answer": "abierto",
+      "base": "abierto",
+      "en": "Is the supermarket open on Sundays?"
+    },
+    {
+      "es": "Mi hijo ____ en un hospital pequeño de Lima.",
+      "answer": "nació",
+      "base": "nacer",
+      "en": "My son was born in a small hospital in Lima."
+    },
+    {
+      "es": "Si tienes alguna ____, pregúntame después de la clase.",
+      "answer": "duda",
+      "base": "duda",
+      "en": "If you have any questions, ask me after class."
+    },
+    {
+      "es": "Ayer llegué a casa muy ____ después del trabajo.",
+      "answer": "cansada",
+      "base": "cansado",
+      "en": "Yesterday I got home very tired after work."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The keys are under the table.",
+      "es": "Las llaves están debajo de la mesa."
+    },
+    {
+      "en": "My neighbor is very kind.",
+      "es": "Mi vecina es muy amable."
+    },
+    {
+      "en": "Tonight we're having dinner with friends.",
+      "es": "Esta noche tenemos una cena con amigos."
+    },
+    {
+      "en": "Cheers! To your new job.",
+      "es": "¡Salud! Por tu nuevo trabajo."
+    }
+  ],
+  "story": {
+    "title": "Una sorpresa de aniversario",
+    "text": "Para nuestro aniversario, reservé una (1) en un restaurante (2) del centro. Mi mujer llevaba un (3) nuevo y yo estaba un poco (4), porque quería darle una sorpresa. El camarero fue muy (5) y nos dio el mejor (6), junto a la ventana. Al final, saqué una cajita y ella se puso blanca. ¿Un anillo? No: dos billetes de avión. Nuestro (7) a Roma salía a las seis de la mañana siguiente. Ella me miró y dijo: «¡Qué bonito! Pero mañana trabajo». (8), cambiamos la fecha y brindamos con una sonrisa: ¡salud!",
+    "answers": [
+      "cena",
+      "antiguo",
+      "vestido",
+      "nervioso",
+      "amable",
+      "asiento",
+      "vuelo",
+      "Finalmente"
+    ],
+    "en": "A man surprises his wife at their anniversary dinner with plane tickets to Rome, only to learn she has to work the next morning, so they change the date and toast anyway."
+  }
+}

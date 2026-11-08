@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Siempre ____ café con tostadas antes de ir al trabajo.",
+      "answer": "desayuno",
+      "base": "desayunar",
+      "en": "I always have coffee and toast for breakfast before going to work."
+    },
+    {
+      "es": "Mi hermano vive en un ____ cerca del centro.",
+      "answer": "barrio",
+      "base": "un barrio",
+      "en": "My brother lives in a neighborhood near the center."
+    },
+    {
+      "es": "Olvidé la ____ del wifi otra vez.",
+      "answer": "clave",
+      "base": "una clave",
+      "en": "I forgot the wifi password again."
+    },
+    {
+      "es": "No pude dormir por el ruido de la ____.",
+      "answer": "lluvia",
+      "base": "lluvia",
+      "en": "I couldn't sleep because of the sound of the rain."
+    },
+    {
+      "es": "¿Qué ____ tú de la nueva jefa?",
+      "answer": "opinas",
+      "base": "opinar",
+      "en": "What do you think of the new boss?"
+    },
+    {
+      "es": "Todavía no estoy ____ para el examen.",
+      "answer": "preparado",
+      "base": "preparado",
+      "en": "I'm still not ready for the exam."
+    },
+    {
+      "es": "Esa maleta azul ____ a mi madre.",
+      "answer": "pertenece",
+      "base": "pertenecer",
+      "en": "That blue suitcase belongs to my mother."
+    },
+    {
+      "es": "Me encanta el ____ del pan recién hecho.",
+      "answer": "olor",
+      "base": "un olor",
+      "en": "I love the smell of freshly baked bread."
+    }
+  ],
+  "translate": [
+    {
+      "en": "We crossed the street to go to the park.",
+      "es": "Cruzamos la calle para ir al parque."
+    },
+    {
+      "en": "My boss is in a bad mood today.",
+      "es": "Mi jefe está de mal humor hoy."
+    },
+    {
+      "en": "I bought a white shirt for the meeting.",
+      "es": "Compré una camisa blanca para la junta."
+    },
+    {
+      "en": "My goal this year is to save a lot.",
+      "es": "Mi meta este año es ahorrar muchísimo."
+    }
+  ],
+  "story": {
+    "title": "La maleta equivocada",
+    "text": "El viernes, Laura llegó al hotel para una (1) importante de su empresa. Abrió su (2) y no encontró su ropa: dentro había una nariz roja, un sombrero enorme y un (3) de plástico. ¡Era la maleta de un payaso! Qué (4). No tenía otra (5) para la reunión, así que se presentó con la camiseta del viaje. Sintió mucha (6), pero contó la historia y todos empezaron a (7). Esa noche, el payaso la llamó: él tenía su ropa elegante y necesitaba sus cosas para el (8) del sábado.",
+    "answers": [
+      "junta",
+      "maleta",
+      "juguete",
+      "lío",
+      "camisa",
+      "vergüenza",
+      "reír",
+      "espectáculo"
+    ],
+    "en": "Laura arrives at a business meeting with a clown's suitcase instead of her own, turns her embarrassment into laughter, and later gets a call from the clown who needs his things for his show."
+  }
+}

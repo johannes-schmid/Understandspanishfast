@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi vecino siempre me ____ café por la mañana.",
+      "answer": "ofrece",
+      "base": "ofrecer",
+      "en": "My neighbor always offers me coffee in the morning."
+    },
+    {
+      "es": "Mi hijo ____ treinta años el viernes.",
+      "answer": "cumple",
+      "base": "cumplir",
+      "en": "My son turns thirty on Friday."
+    },
+    {
+      "es": "____ duermo muy mal por el trabajo.",
+      "answer": "Últimamente",
+      "base": "últimamente",
+      "en": "Lately I've been sleeping badly because of work."
+    },
+    {
+      "es": "Ponte a la ____, hace mucho calor.",
+      "answer": "sombra",
+      "base": "una sombra",
+      "en": "Get in the shade, it's really hot."
+    },
+    {
+      "es": "Mi hermana está ____ y espera gemelos.",
+      "answer": "embarazada",
+      "base": "embarazada",
+      "en": "My sister is pregnant and expecting twins."
+    },
+    {
+      "es": "La entrada al museo es ____ los domingos.",
+      "answer": "gratis",
+      "base": "gratis",
+      "en": "Entry to the museum is free on Sundays."
+    },
+    {
+      "es": "No me gusta ____ en avión de noche.",
+      "answer": "viajar",
+      "base": "viajar",
+      "en": "I don't like flying at night."
+    },
+    {
+      "es": "Te espero en la ____ del banco.",
+      "answer": "esquina",
+      "base": "una esquina",
+      "en": "I'll wait for you on the corner by the bank."
+    }
+  ],
+  "translate": [
+    {
+      "en": "Lately my knee hurts a lot.",
+      "es": "Últimamente me duele mucho la rodilla."
+    },
+    {
+      "en": "Who are those guests?",
+      "es": "¿Quiénes son aquellos invitados?"
+    },
+    {
+      "en": "We need to discuss the price of the property.",
+      "es": "Tenemos que discutir el precio de la propiedad."
+    },
+    {
+      "en": "He's a liar; that fact is false.",
+      "es": "Es un mentiroso; ese dato es falso."
+    }
+  ],
+  "story": {
+    "title": "La cena del viernes",
+    "text": "El viernes organicé una cena en casa. Tenía seis (1) y preparé mi (2) favorito: pollo con arroz. Mi (3) trajo una (4) de vino muy cara. Yo, nervioso, decidí (5) el pollo, porque estaba un poco quemado, y pedí comida china por teléfono. Todos dijeron que la cena era excelente. (6), mi vecino miró la bolsa del restaurante en la cocina y la (7). «¡Eres un (8)!», gritó riendo. «Yo pido allí todos los martes. ¡Tu pollo seguro que estaba mejor!»",
+    "answers": [
+      "invitados",
+      "plato",
+      "vecino",
+      "botella",
+      "esconder",
+      "De repente",
+      "reconoció",
+      "mentiroso"
+    ],
+    "en": "A nervious host hides his burnt chicken and serves takeaway Chinese food instead, but his neighbor recognizes the restaurant bag because he orders there every week."
+  }
+}

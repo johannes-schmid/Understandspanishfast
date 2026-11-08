@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Puedo ____ con tarjeta o solo en efectivo?",
+      "answer": "pagar",
+      "base": "pagar",
+      "en": "Can I pay by card or only in cash?"
+    },
+    {
+      "es": "Mi ____ me dio el viernes libre.",
+      "answer": "jefe",
+      "base": "jefe",
+      "en": "My boss gave me Friday off."
+    },
+    {
+      "es": "Este ejercicio es más ____ de lo que parece.",
+      "answer": "difícil",
+      "base": "difícil",
+      "en": "This exercise is harder than it looks."
+    },
+    {
+      "es": "Mi ordenador no ____ desde ayer.",
+      "answer": "funciona",
+      "base": "funcionar",
+      "en": "My computer hasn't been working since yesterday."
+    },
+    {
+      "es": "Siempre ____ a mis padres los fines de semana.",
+      "answer": "cuido",
+      "base": "cuidar",
+      "en": "I always look after my parents on weekends."
+    },
+    {
+      "es": "Anoche ____ mucho vino en la cena.",
+      "answer": "bebimos",
+      "base": "beber",
+      "en": "Last night we drank a lot of wine at dinner."
+    },
+    {
+      "es": "El ____ tren sale a las siete y media.",
+      "answer": "próximo",
+      "base": "próximo",
+      "en": "The next train leaves at half past seven."
+    },
+    {
+      "es": "No ____ en él; siempre miente.",
+      "answer": "confío",
+      "base": "confiar",
+      "en": "I don't trust him; he always lies."
+    },
+    {
+      "es": "Mañana te ____ las fotos del viaje.",
+      "answer": "enviaré",
+      "base": "enviar",
+      "en": "I'll send you the photos from the trip tomorrow."
+    },
+    {
+      "es": "Tengo un ____ de cabeza muy fuerte.",
+      "answer": "dolor",
+      "base": "dolor",
+      "en": "I have a really bad headache."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I want to buy a new bed for my room.",
+      "es": "Quiero comprar una cama nueva para mi habitación."
+    },
+    {
+      "en": "My sister lives far from the city, in a small town.",
+      "es": "Mi hermana vive lejos de la ciudad, en un pueblo pequeño."
+    },
+    {
+      "en": "Please close the door; it's very cold outside.",
+      "es": "Por favor, cierra la puerta; hace mucho frío afuera."
+    },
+    {
+      "en": "The doctor says I'm sick and I need to rest.",
+      "es": "El médico dice que estoy enfermo y necesito descansar."
+    },
+    {
+      "en": "I lost the key, and besides, my phone doesn't work.",
+      "es": "Perdí la llave y, además, mi teléfono no funciona."
+    }
+  ]
+}

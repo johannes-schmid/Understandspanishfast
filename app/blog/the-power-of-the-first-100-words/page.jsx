@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -153,9 +153,9 @@ export default function Post100Words() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             The top 100 most frequent Spanish words account for roughly <strong>50% of all spoken Spanish</strong>. Learning these words first — before colors, animals, or themed vocabulary — is the highest-return move in language learning. Most adults can nail them in 2–4 weeks.
           </p>
         </div>
@@ -197,9 +197,9 @@ export default function Post100Words() {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               {words.map(w => (
                 <span key={w} style={{
-                  background: 'var(--deep-mind)', color: 'var(--mauve)',
+                  background: 'var(--paper)', color: 'var(--deep-mind)',
                   borderRadius: '6px', padding: '4px 10px',
-                  fontFamily: "var(--font-fraunces), serif", fontSize: '14px', fontWeight: 600,
+                  fontFamily: "var(--sans)", fontSize: '14px', fontWeight: 600,
                   fontStyle: 'italic',
                 }}>{w}</span>
               ))}

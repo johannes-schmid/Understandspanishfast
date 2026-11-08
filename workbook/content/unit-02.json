@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Te ____ en la puerta del restaurante a las nueve.",
+      "answer": "espero",
+      "base": "esperar",
+      "en": "I'll wait for you at the restaurant door at nine."
+    },
+    {
+      "es": "Mi madre ____ ayuda con la compra del sábado.",
+      "answer": "necesita",
+      "base": "necesitar",
+      "en": "My mother needs help with Saturday's shopping."
+    },
+    {
+      "es": "Mi jefe ____ contesta los correos los viernes.",
+      "answer": "nunca",
+      "base": "nunca",
+      "en": "My boss never answers emails on Fridays."
+    },
+    {
+      "es": "¿Te ____ el café sin azúcar?",
+      "answer": "gusta",
+      "base": "gustar",
+      "en": "Do you like your coffee without sugar?"
+    },
+    {
+      "es": "El avión ____ tarde por el mal tiempo.",
+      "answer": "llegó",
+      "base": "llegar",
+      "en": "The plane arrived late because of the bad weather."
+    },
+    {
+      "es": "Por fin ____ un piso cerca del trabajo.",
+      "answer": "encontramos",
+      "base": "encontrar",
+      "en": "We finally found a flat near work."
+    },
+    {
+      "es": "Hoy no tengo ____ para comer.",
+      "answer": "tiempo",
+      "base": "tiempo",
+      "en": "I don't have time to eat today."
+    },
+    {
+      "es": "Mi hermano ____ de Londres el lunes.",
+      "answer": "vuelve",
+      "base": "volver",
+      "en": "My brother is coming back from London on Monday."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I never drink coffee at night.",
+      "es": "Nunca tomo café por la noche."
+    },
+    {
+      "en": "Who is your best friend?",
+      "es": "¿Quién es tu mejor amigo?"
+    },
+    {
+      "en": "We need two days without work.",
+      "es": "Necesitamos dos días sin trabajo."
+    },
+    {
+      "en": "Excuse me, sir, where is the station?",
+      "es": "Perdone, señor, ¿dónde está la estación?"
+    }
+  ],
+  "story": {
+    "title": "La llamada de las tres",
+    "text": "Mi amigo Pablo me (1) a las tres de la mañana. —¿(2) es? —pregunté medio dormido. —Soy yo. Estoy en la puerta de tu (3). No encuentro mis llaves. —¿Y por qué no vas a un hotel? —Porque salí (4) la cartera. Bajé a abrir. Pablo (5) muy cansado, así que le preparé el sofá. Por la mañana, tomó un café y (6) a su casa. Una hora después, me escribió otra (7): «¿Sabes qué? Las llaves estaban en mi chaqueta. (8) estuvieron toda la noche.»",
+    "answers": [
+      "llamó",
+      "Quién",
+      "casa",
+      "sin",
+      "parecía",
+      "volvió",
+      "vez",
+      "Ahí"
+    ],
+    "en": "A friend calls at 3 a.m. because he has lost his keys and sleeps on the narrator's sofa, only to discover the next day that the keys were in his jacket all along."
+  }
+}

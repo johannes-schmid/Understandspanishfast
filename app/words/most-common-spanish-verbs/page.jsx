@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import WordListPage from '@/components/WordListPage'
 import { words } from '@/data/words'
 
@@ -30,7 +31,6 @@ const FAQS = [
 export default function Page() {
   return (
     <WordListPage
-      eyebrow="Verbs"
       title="The most common Spanish verbs"
       slug="most-common-spanish-verbs"
       coverage="Top 150"
@@ -43,7 +43,7 @@ export default function Page() {
           the most comprehension per verb learned. Below are the <strong>150 most common Spanish verbs</strong>,
           ranked by real-world frequency, each with its meaning and an example sentence. Start at the top —
           ser, estar, tener, hacer, ir — and work down. For all parts of speech, see the{' '}
-          <a href="/words/most-common-spanish-words" style={{ color: 'var(--synapse)' }}>full frequency list</a>.
+          <Link href="/words/most-common-spanish-words" className="tlink">full frequency list</Link>.
         </>
       }
       words={verbs}

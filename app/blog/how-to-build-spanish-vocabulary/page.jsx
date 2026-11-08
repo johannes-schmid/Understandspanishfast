@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -161,9 +161,9 @@ export default function PostVocabulary() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             The fastest way to build Spanish vocabulary: <strong>learn in frequency order</strong> using spaced repetition (Anki), study 10–15 new words/day, and supplement with real Spanish input to reinforce words in context. Learning the most common words first — not thematic vocabulary — is the single biggest accelerator.
           </p>
         </div>
@@ -187,15 +187,15 @@ export default function PostVocabulary() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', margin: '32px 0' }}>
           {METHODS.map(({ title, priority, body }, i) => (
             <div key={title} style={{
-              background: i < 2 ? 'var(--deep-mind)' : 'var(--fog)',
+              background: i < 2 ? 'var(--hl)' : 'var(--fog)',
               borderRadius: '16px', padding: '22px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px', flexWrap: 'wrap', gap: '8px' }}>
-                <div style={{ fontWeight: 700, fontSize: '16px', color: i < 2 ? '#fff' : 'var(--deep-mind)' }}>{title}</div>
+                <div style={{ fontWeight: 700, fontSize: '16px', color: i < 2 ? 'var(--deep-mind)' : 'var(--deep-mind)' }}>{title}</div>
                 <span style={{
                   fontSize: '10px', fontWeight: 700, padding: '3px 10px', borderRadius: '99px', letterSpacing: '.05em', textTransform: 'uppercase',
-                  background: i < 2 ? 'var(--mauve)' : 'rgba(0,0,0,0.08)',
-                  color: i < 2 ? '#1a1208' : 'var(--synapse)',
+                  background: i < 2 ? 'var(--paper)' : 'var(--chip-bg)',
+                  color: i < 2 ? 'var(--coral-ink)' : 'var(--synapse)',
                 }}>{priority}</span>
               </div>
               <div style={{ fontSize: '14px', color: 'var(--cortex)', lineHeight: 1.6 }}>{body}</div>

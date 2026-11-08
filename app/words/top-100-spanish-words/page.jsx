@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import WordListPage from '@/components/WordListPage'
 import { words } from '@/data/words'
 
@@ -27,8 +28,8 @@ const FAQS = [
 export default function Page() {
   return (
     <WordListPage
-      eyebrow="Top 100"
       title="The top 100 Spanish words"
+      level={100}
       slug="top-100-spanish-words"
       coverage="~50%"
       breadcrumbName="Top 100 Spanish words"
@@ -40,7 +41,7 @@ export default function Page() {
           Spanish. Remarkably, just these 100 words make up around <strong>half of everything you'll hear</strong> in
           everyday conversation. That's why they're the single highest-value place to start. Each word below
           includes its English meaning and an example sentence. When you're ready, continue to the{' '}
-          <a href="/words/most-common-spanish-words" style={{ color: 'var(--synapse)' }}>full 1,000-word list</a>.
+          <Link href="/words/most-common-spanish-words" className="tlink">full 1,000-word list</Link>.
         </>
       }
       words={top100}

@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Me pasas una ____ de café, por favor?",
+      "answer": "taza",
+      "base": "una taza",
+      "en": "Can you pass me a cup of coffee, please?"
+    },
+    {
+      "es": "Normalmente ____ con mis compañeros en la oficina.",
+      "answer": "almuerzo",
+      "base": "almorzar",
+      "en": "I usually have lunch with my coworkers at the office."
+    },
+    {
+      "es": "Necesitamos ____ a otro camarero para el verano.",
+      "answer": "contratar",
+      "base": "contratar",
+      "en": "We need to hire another waiter for the summer."
+    },
+    {
+      "es": "Con mi hija pequeña hay que tener mucha ____.",
+      "answer": "paciencia",
+      "base": "paciencia",
+      "en": "You need a lot of patience with my little daughter."
+    },
+    {
+      "es": "¿Me puedes ____ algún restaurante bueno cerca de aquí?",
+      "answer": "sugerir",
+      "base": "sugerir",
+      "en": "Can you suggest a good restaurant near here?"
+    },
+    {
+      "es": "El ____ llegó tarde y los jugadores empezaron sin él.",
+      "answer": "entrenador",
+      "base": "un entrenador",
+      "en": "The coach arrived late and the players started without him."
+    },
+    {
+      "es": "Mi madre siempre ____ de sus vacaciones en la playa.",
+      "answer": "disfruta",
+      "base": "disfrutar",
+      "en": "My mother always enjoys her beach holidays."
+    },
+    {
+      "es": "Las toallas ____ están en el armario del baño.",
+      "answer": "limpias",
+      "base": "limpio",
+      "en": "The clean towels are in the bathroom cupboard."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The package arrived this morning.",
+      "es": "El paquete llegó esta mañana."
+    },
+    {
+      "en": "Congratulations on your new job!",
+      "es": "¡Felicitaciones por tu nuevo trabajo!"
+    },
+    {
+      "en": "We went to the pool after lunch.",
+      "es": "Fuimos a la piscina después de almorzar."
+    },
+    {
+      "en": "The library closes at midnight.",
+      "es": "La biblioteca cierra a medianoche."
+    }
+  ],
+  "story": {
+    "title": "El paquete misterioso",
+    "text": "El lunes, Marta recibió un (1) enorme por (2). No recordaba haber comprado nada. Dentro había un (3) antiguo, cubierto de (4), y una nota: «¡(5)! Usted es la (6) del concurso». Marta nunca participaba en concursos. Llamó por (7) a su hermana, que se rió: «Fui yo. Te inscribí el año pasado y me hice una (8): no decírtelo hasta que ganaras». Marta miró el espejo y suspiró. Ahora tenía un premio feo, una hermana mentirosa y ningún sitio en casa para colgarlo.",
+    "answers": [
+      "paquete",
+      "correo",
+      "espejo",
+      "polvo",
+      "Felicitaciones",
+      "ganadora",
+      "teléfono",
+      "promesa"
+    ],
+    "en": "Marta receives a dusty old mirror as a contest prize, only to learn her sister secretly entered her, and now she has an ugly prize and nowhere to hang it."
+  }
+}

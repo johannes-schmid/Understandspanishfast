@@ -1,0 +1,115 @@
+/* Clarity: /study sample and /workbook product page (scoped under .cl) */
+
+/* study */
+.cl.study-page{min-height:100dvh;padding-bottom:72px}
+.cl .study-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px;align-items:start;padding-top:40px}
+.cl .study-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
+.cl .study-h1{font-size:clamp(30px,3.4vw,42px);line-height:1.05;letter-spacing:-.04em;font-weight:800}
+.cl .study-sub{color:var(--ink-2);margin-top:8px;font-size:16px}
+.cl .study-tool{flex:none;width:44px;height:44px;border-radius:12px;border:0;background:var(--paper);box-shadow:0 0 0 1px var(--line) inset;color:var(--ink-3);display:grid;place-items:center;cursor:pointer;transition:transform 160ms var(--ease-out),color 160ms ease}
+.cl .study-tool.on{color:var(--navy)}
+.cl .study-tool:active{transform:scale(.95)}
+.cl .study-steps{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin-bottom:18px}
+.cl .study-steps i{height:6px;border-radius:6px;background:var(--peri-1);transition:background-color 300ms ease}
+.cl .study-steps i.on{background:var(--navy)}
+
+.cl .study-card{position:relative;min-height:400px;padding:26px 30px 40px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;display:flex;flex-direction:column;box-shadow:var(--shadow-2)}
+.cl .study-card.flipped{cursor:default}
+.cl .study-meta{display:flex;justify-content:space-between;color:var(--ink-3)}
+.cl .study-inner{margin:auto 0;text-align:center;padding-top:28px;animation:cardIn 240ms var(--ease-out) both}
+.cl .study-word{font-size:clamp(52px,7vw,80px);font-weight:800;letter-spacing:-.05em;line-height:1}
+.cl .study-pos{margin-top:12px;color:var(--ink-3);font-size:14px;font-weight:600}
+.cl .study-hint{margin-top:34px;color:var(--ink-3);font-size:14px}
+.cl .study-answer{margin-top:26px;padding-top:22px;border-top:1px dashed var(--line);font-size:clamp(24px,3vw,30px);font-weight:700;letter-spacing:-.02em;color:var(--coral-ink)}
+.cl .study-example{margin:18px auto 0;max-width:440px}
+.cl .study-example .es{font-size:17px;font-weight:600}
+.cl .study-example .en{font-size:15px;color:var(--ink-3);margin-top:4px}
+.cl .study-replay{position:absolute;right:18px;bottom:18px;width:40px;height:40px;border-radius:12px;border:0;background:var(--paper-2);box-shadow:0 0 0 1px var(--line-2) inset;color:var(--navy);display:grid;place-items:center;cursor:pointer;transition:transform 160ms var(--ease-out)}
+.cl .study-replay:active{transform:scale(.94)}
+.cl .study-reveal{width:100%;justify-content:center;margin-top:14px;height:56px}
+.cl .study-reveal .mono,.cl .study-rating .mono{font-size:10.5px;opacity:.6}
+.cl .study-ratings{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.cl .study-rating{height:56px;border:0;border-radius:14px;background:var(--paper);box-shadow:0 0 0 1px var(--line) inset;font:700 15px/1 var(--sans);color:var(--navy);display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:transform 160ms var(--ease-out),box-shadow 160ms ease;animation:cardIn 200ms var(--ease-out) both}
+.cl .study-rating:nth-child(2){animation-delay:30ms}.cl .study-rating:nth-child(3){animation-delay:60ms}.cl .study-rating:nth-child(4){animation-delay:90ms}
+.cl .study-rating:active{transform:scale(.96)}
+.cl .study-rating.again{color:var(--coral-ink)}
+.cl .study-rating.good,.cl .study-rating.easy{color:var(--green)}
+@media (hover:hover) and (pointer:fine){
+  .cl .study-rating:hover{box-shadow:0 0 0 1.5px var(--navy) inset}
+  .cl .study-tool:hover{color:var(--navy)}
+}
+
+.cl .study-side{display:flex;flex-direction:column;gap:14px;position:sticky;top:96px}
+.cl .study-book{padding:22px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.cl .study-book h2{font-size:18px;letter-spacing:-.02em;line-height:1.2}
+.cl .study-book p{font-size:14px;color:var(--ink-2);margin:6px 0 12px;line-height:1.5}
+.cl .study-book .link{font-size:14px}
+.cl .study-book .cover.sm{width:96px;padding:10px 9px}
+.cl .study-book .cover.sm .cover-num{font-size:24px}
+.cl .study-book .cover.sm .cover-t{font-size:8.5px}
+.cl .study-book .cover.sm .cover-bars{top:24px;right:8px;height:34px;gap:2px}
+.cl .study-book .cover.sm .cover-bars i{width:4px}
+.cl .study-keys{padding:18px 22px;display:grid;gap:8px;font-size:14px;color:var(--ink-2)}
+.cl kbd{font:500 12px var(--mono);background:var(--paper-2);box-shadow:0 0 0 1px var(--line) inset;border-radius:6px;padding:2px 7px;color:var(--navy)}
+
+.cl .study-done{padding:36px;display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;box-shadow:var(--shadow-2);animation:cardIn 280ms var(--ease-out) both}
+.cl .study-done h2{font-size:32px;letter-spacing:-.035em;line-height:1.1}
+.cl .study-done p{color:var(--ink-2);margin:12px 0 24px;font-size:16px}
+.cl .study-forward{margin:18px 0 0 !important;font-size:14px !important;color:var(--ink-3) !important}
+.cl .study-msg{padding:40px;display:grid;gap:12px;justify-items:start}
+.cl .study-msg h1{font-size:30px;letter-spacing:-.03em}
+.cl .study-skel{height:460px;background:linear-gradient(90deg,var(--paper-2),var(--paper),var(--paper-2));background-size:200% 100%;animation:skel 1.4s ease-in-out infinite}
+.cl .study-skel.side{height:200px}
+@keyframes skel{from{background-position:100% 0}to{background-position:-100% 0}}
+
+@media (max-width:900px){
+  .cl .study-grid{grid-template-columns:1fr;padding-top:24px}
+  .cl .study-side{position:static}
+  .cl .study-keys{display:none}
+  .cl .study-card{min-height:360px;padding:20px 20px 36px}
+  .cl .study-ratings{gap:8px}
+  .cl .study-rating .mono,.cl .study-reveal .mono{display:none}
+  .cl .study-done{grid-template-columns:1fr;padding:26px 22px;gap:24px;justify-items:start}
+}
+
+/* workbook product page */
+.cl .wb-hero{padding:56px 0 72px}
+.cl .wb-hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.cl .wb-cover-panel{height:600px;display:grid;place-items:center}
+.cl .wb-cover-panel .cover{width:300px;padding:28px 26px}
+.cl .wb-cover-panel .cover .cover-num{font-size:92px}
+.cl .wb-cover-panel .cover .cover-t{font-size:17px}
+.cl .wb-cover-panel .cover .cover-bars{top:60px;right:24px;height:100px;gap:6px}
+.cl .wb-cover-panel .cover .cover-bars i{width:12px}
+.cl .wb-h1{font-size:clamp(38px,4.4vw,58px)}
+.cl .wb-hero .lead{margin:22px 0 22px}
+.cl .wb-hero .proof{margin:0 0 26px}
+.cl .wb-note{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--coral-ink);background:var(--coral-soft);padding:8px 12px;border-radius:10px;margin-bottom:18px}
+.cl .wb-buy{padding:24px;max-width:420px}
+.cl .wb-buy .price{margin:0 0 16px}
+.cl .wb-inside{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cl .wb-inside .card{padding:24px}
+.cl .wb-inside b{display:block;font-size:18px;letter-spacing:-.02em}
+.cl .wb-inside span{display:block;color:var(--ink-2);font-size:14.5px;margin-top:6px}
+.cl .wb-previews{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.cl .wb-prev{margin:0}
+.cl .wb-page{border-radius:10px;overflow:hidden;box-shadow:0 0 0 1px var(--line-2),var(--shadow-2);background:#fff;transform:rotate(-.6deg);transition:transform 300ms var(--ease-out)}
+.cl .wb-prev:nth-child(2) .wb-page{transform:rotate(.5deg)}
+.cl .wb-page img{display:block;width:100%;height:auto}
+.cl .wb-prev figcaption{margin-top:18px}
+.cl .wb-prev figcaption b{display:block;font-size:17px;letter-spacing:-.02em}
+.cl .wb-prev figcaption span{display:block;color:var(--ink-2);font-size:14.5px;margin-top:4px}
+.cl .wb-method{grid-template-columns:repeat(4,1fr);margin-top:0}
+@media (hover:hover) and (pointer:fine){.cl .wb-prev:hover .wb-page{transform:rotate(0) translateY(-4px)}}
+@media (max-width:900px){
+  .cl .wb-hero{padding:24px 0 48px}
+  .cl .wb-hero-grid{grid-template-columns:1fr;gap:28px}
+  .cl .wb-cover-panel{height:420px}
+  .cl .wb-cover-panel .cover{width:220px;padding:20px 18px}
+  .cl .wb-cover-panel .cover .cover-num{font-size:64px}
+  .cl .wb-cover-panel .cover .cover-t{font-size:13px}
+  .cl .wb-inside,.cl .wb-previews{grid-template-columns:1fr}
+  .cl .wb-method{grid-template-columns:1fr 1fr}
+  .cl .wb-buy{max-width:none}
+}
+.cl .wb-thanks{max-width:980px}.cl .wb-thanks .wb-start{text-align:left;margin-top:16px}

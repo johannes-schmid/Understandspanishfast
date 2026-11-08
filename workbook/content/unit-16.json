@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Necesito ____ para el examen de mañana.",
+      "answer": "estudiar",
+      "base": "estudiar",
+      "en": "I need to study for tomorrow's exam."
+    },
+    {
+      "es": "¿Puedes ____ otra vez cómo funciona esto?",
+      "answer": "explicar",
+      "base": "explicar",
+      "en": "Can you explain again how this works?"
+    },
+    {
+      "es": "El ____ de la gasolina subió otra vez.",
+      "answer": "precio",
+      "base": "un precio",
+      "en": "The price of gas went up again."
+    },
+    {
+      "es": "Este fin de semana solo quiero ____ en casa.",
+      "answer": "descansar",
+      "base": "descansar",
+      "en": "This weekend I just want to rest at home."
+    },
+    {
+      "es": "Mi jefa está muy ____ con mi trabajo.",
+      "answer": "contenta",
+      "base": "contento",
+      "en": "My boss is very pleased with my work."
+    },
+    {
+      "es": "Tengo un ____ de ropa sucia en mi cuarto.",
+      "answer": "montón",
+      "base": "un montón",
+      "en": "I have a pile of dirty clothes in my room."
+    },
+    {
+      "es": "La ____ de mis amigos vive en la ciudad.",
+      "answer": "mayoría",
+      "base": "mayoría",
+      "en": "Most of my friends live in the city."
+    },
+    {
+      "es": "¿Quién es ____ hombre de la camisa roja?",
+      "answer": "aquel",
+      "base": "aquel",
+      "en": "Who is that man over there in the red shirt?"
+    }
+  ],
+  "translate": [
+    {
+      "en": "The hotel has a private beach.",
+      "es": "El hotel tiene una playa privada."
+    },
+    {
+      "en": "My wife speaks French very well.",
+      "es": "Mi esposa habla francés muy bien."
+    },
+    {
+      "en": "We walked across the bridge.",
+      "es": "Cruzamos el puente a pie."
+    },
+    {
+      "en": "Do you want a cup of tea?",
+      "es": "¿Quieres una taza de té?"
+    }
+  ],
+  "story": {
+    "title": "Una cena inolvidable",
+    "text": "Marcos quería pedirle matrimonio a Lucía. Tardó semanas en (1) el (2) perfecto, pero al final compró uno de oro. Esa noche fueron a un restaurante muy (3). Para (4) sospechas, Marcos escondió la joya dentro del postre. Pero Lucía tenía hambre y (5) el pastel en dos segundos. De repente, se quedó muy seria. Marcos, nervioso, se arrodilló (6) de ella. —¿Te casas conmigo? —¡Sí! —dijo ella—. Pero creo que me lo comí. Al final, fue una noche (7): ahora tienen una boda, una historia divertida y un (8) de fotos del hospital.",
+    "answers": [
+      "elegir",
+      "anillo",
+      "agradable",
+      "evitar",
+      "apuró",
+      "delante",
+      "estupenda",
+      "montón"
+    ],
+    "en": "Marcos hides an engagement ring in Lucía's dessert, she eats it too fast and swallows the ring, but she still says yes and they end up with a great story and lots of hospital photos."
+  }
+}

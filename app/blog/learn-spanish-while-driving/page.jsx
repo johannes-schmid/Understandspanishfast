@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -138,9 +138,9 @@ export default function PostDriving() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             Yes — you can genuinely learn Spanish while driving. Audio-only methods like <strong>Pimsleur</strong>, <strong>Coffee Break Spanish</strong>, and <strong>Language Transfer</strong> are designed for exactly this. A 30-minute daily commute adds up to ~180 hours/year of listening input. Combine it with 15 minutes of vocabulary study at a desk and you have a complete learning routine.
           </p>
         </div>
@@ -187,7 +187,7 @@ export default function PostDriving() {
                 <div key={name} style={{ background: 'var(--fog)', borderRadius: '14px', padding: '20px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
                     <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--deep-mind)' }}>{name}</div>
-                    <span style={{ fontSize: '11px', fontWeight: 600, background: 'rgba(0,0,0,0.06)', borderRadius: '99px', padding: '3px 10px', color: 'var(--cortex)' }}>{type}</span>
+                    <span style={{ fontSize: '11px', fontWeight: 600, background: 'var(--chip-bg)', borderRadius: '99px', padding: '3px 10px', color: 'var(--cortex)' }}>{type}</span>
                   </div>
                   <div style={{ fontSize: '14px', color: 'var(--cortex)', lineHeight: 1.6 }}>{why}</div>
                 </div>

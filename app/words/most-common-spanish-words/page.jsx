@@ -1,5 +1,7 @@
 import WordsPageClient from '@/components/WordsPageClient'
-import { WORDS, MILESTONES, MILESTONE_TEXT } from '@/data/words'
+import { WORDS, MILESTONES, MILESTONE_TEXT, words } from '@/data/words'
+
+const listWords = WORDS.map((w, i) => ({ ...w, audio: words[i]?.audio ?? null }))
 
 export const metadata = {
   title: '1000 Most Common Spanish Words — Frequency List',
@@ -35,7 +37,7 @@ export default function WordsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <WordsPageClient words={WORDS} milestones={MILESTONES} milestoneText={MILESTONE_TEXT} />
+      <WordsPageClient words={listWords} milestones={MILESTONES} milestoneText={MILESTONE_TEXT} />
     </>
   )
 }

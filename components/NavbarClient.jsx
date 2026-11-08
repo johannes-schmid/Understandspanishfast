@@ -1,15 +1,23 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
 const LINKS = [
-  { href: '/words/most-common-spanish-words', label: 'Word list', match: '/words' },
+  { href: '/words/most-common-spanish-words', label: 'Word lists', match: '/words' },
   { href: '/level-test', label: 'Level test', match: '/level-test' },
+  { href: '/workbook', label: 'Workbook', match: '/workbook', isNew: true },
   { href: '/blog', label: 'Blog', match: '/blog' },
 ]
+
+export function BrandMark() {
+  return (
+    <span className="brand-mark" aria-hidden="true">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="1" y="2" width="4" height="14" rx="1.5" fill="#fcfcff" /><rect x="7" y="7" width="4" height="9" rx="1.5" fill="#fcfcff" opacity=".7" /><rect x="13" y="11" width="4" height="5" rx="1.5" fill="#f26b3a" /></svg>
+    </span>
+  )
+}
 
 export default function NavbarClient() {
   const path = usePathname()
@@ -34,27 +42,27 @@ export default function NavbarClient() {
 
   return (
     <>
-      <nav className={`neuro-nav${scrolled ? ' neuro-nav--scrolled' : ''}`}>
-        <Link href="/" className="neuro-nav-logo" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <Image src="/icon.svg" alt="" width={28} height={28} style={{ objectFit: 'contain' }} priority />
-          <span>Most Common Spanish</span>
+      <nav className={`neuro-nav cl${scrolled ? ' neuro-nav--scrolled' : ''}`}>
+        <Link href="/" className="neuro-nav-logo">
+          <BrandMark />
+          Most Common Spanish
         </Link>
 
         <ul className="neuro-nav-links">
           {LINKS.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} aria-current={isActive(l.match) ? 'page' : undefined} className={isActive(l.match) ? 'is-active' : undefined}>
+              <Link href={l.href} aria-current={isActive(l.match) ? 'page' : undefined} className={[isActive(l.match) && 'is-active', l.isNew && 'new'].filter(Boolean).join(' ') || undefined}>
                 {l.label}
               </Link>
             </li>
           ))}
           <li>
-            <Link href="/study" className="neuro-nav-cta">Start free</Link>
+            <Link href="/study" className="neuro-nav-cta">Start for free</Link>
           </li>
         </ul>
 
         <div className="mobile-nav-right">
-          <Link href="/study" className="neuro-nav-cta mobile-cta">Start free</Link>
+          <Link href="/study" className="neuro-nav-cta mobile-cta">Start for free</Link>
           <button
             className="burger-btn"
             onClick={() => setOpen(o => !o)}
@@ -68,13 +76,13 @@ export default function NavbarClient() {
         </div>
       </nav>
 
-      <div className={`mobile-menu ${open ? 'mobile-menu--open' : ''}`}>
+      <div className={`mobile-menu cl ${open ? 'mobile-menu--open' : ''}`}>
         <nav className="mobile-menu-links">
           {LINKS.map((l) => (
             <Link key={l.href} href={l.href} className="mobile-menu-link">{l.label}</Link>
           ))}
           <div className="mobile-menu-actions">
-            <Link href="/study" className="mobile-menu-btn-primary">Start the first 100 words →</Link>
+            <Link href="/study" className="mobile-menu-btn-primary">Start for free</Link>
           </div>
         </nav>
       </div>

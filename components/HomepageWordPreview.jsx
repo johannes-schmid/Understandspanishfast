@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import Link from 'next/link'
 
-const PREVIEW_COUNT = 30
+const ROWS = 10
 const FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'verb', label: 'Verbs' },
@@ -11,188 +11,95 @@ const FILTERS = [
   { key: 'adj', label: 'Adjectives' },
   { key: 'adv', label: 'Adverbs' },
 ]
+const POS_LABEL = { 'v.': 'verb', 'n.': 'noun', 'adj.': 'adjective', 'adv.': 'adverb', 'prep.': 'preposition', 'conj.': 'conjunction', 'pron.': 'pronoun', 'det.': 'determiner', 'art.': 'article', 'interj.': 'interjection', 'num.': 'number' }
 
-const TYPE_COLORS = {
-  'v.':    { bg: '#E2E0F4', color: '#4F4AA8' },
-  'n.':    { bg: '#E1F5EE', color: '#2D7A5F' },
-  'adj.':  { bg: '#F4D8E8', color: '#A03060' },
-  'adv.':  { bg: '#FEF3C7', color: '#92400E' },
-}
-
-function typeKey(pos) {
-  if (!pos) return 'other'
+function typeKey(pos = '') {
   const p = pos.toLowerCase()
   if (p.startsWith('v')) return 'verb'
-  if (p.startsWith('n')) return 'noun'
+  if (p.startsWith('n.')) return 'noun'
   if (p.startsWith('adj')) return 'adj'
   if (p.startsWith('adv')) return 'adv'
   return 'other'
 }
 
+function Arrow() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+}
+
 export default function HomepageWordPreview({ words, total }) {
   const [search, setSearch] = useState('')
   const [filter, setFilter] = useState('all')
-  const [expanded, setExpanded] = useState(null)
+  const [hideEn, setHideEn] = useState(false)
+  const [playing, setPlaying] = useState(null)
+  const audio = useRef(null)
 
-  const filtered = words.filter(w => {
-    const matchSearch = !search ||
-      w.word.toLowerCase().includes(search.toLowerCase()) ||
-      (w.meanings || []).some(m => m.toLowerCase().includes(search.toLowerCase()))
-    const matchFilter = filter === 'all' || typeKey(w.pos) === filter
-    return matchSearch && matchFilter
-  })
+  const filtered = useMemo(() => {
+    const q = search.trim().toLowerCase()
+    return words.filter((w) =>
+      (filter === 'all' || typeKey(w.pos) === filter) &&
+      (!q || w.word.toLowerCase().includes(q) || (w.meanings || []).some((m) => m.toLowerCase().includes(q)))
+    )
+  }, [words, search, filter])
 
-  const preview = filtered.slice(0, PREVIEW_COUNT)
-  const hasMore = filtered.length > PREVIEW_COUNT
+  const rows = filtered.slice(0, ROWS)
+
+  function play(w) {
+    if (!w.audio) return
+    if (audio.current) audio.current.pause()
+    audio.current = new Audio(`/audio/${encodeURIComponent(w.audio)}`)
+    setPlaying(w.rank)
+    audio.current.onended = () => setPlaying(null)
+    audio.current.play().catch(() => setPlaying(null))
+  }
 
   return (
-    <div>
-      {/* Controls */}
-      <div style={{
-        display: 'flex', gap: '12px', flexWrap: 'wrap',
-        alignItems: 'center', marginBottom: '16px',
-      }}>
-        <div style={{ position: 'relative', flex: '1', minWidth: '200px', maxWidth: '320px' }}>
-          <svg style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}
-            width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cortex)" strokeWidth="2" strokeLinecap="round">
-            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-          </svg>
-          <input
-            type="text"
-            placeholder="Search Spanish or English…"
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{
-              width: '100%', padding: '10px 14px 10px 40px',
-              borderRadius: '8px', border: '1.5px solid rgba(28,26,58,0.15)',
-              background: 'var(--white-matter)', color: 'var(--deep-mind)',
-              fontSize: '14px', fontFamily: "var(--font-cabinet), sans-serif",
-              fontWeight: 300, outline: 'none',
-            }}
-            onFocus={e => e.target.style.borderColor = 'var(--synapse)'}
-            onBlur={e => e.target.style.borderColor = 'rgba(28,26,58,0.15)'}
-          />
-        </div>
-        <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-          {FILTERS.map(f => (
-            <button key={f.key} onClick={() => setFilter(f.key)} style={{
-              padding: '8px 14px', borderRadius: '8px', fontSize: '13px',
-              fontWeight: 500, cursor: 'pointer', border: 'none',
-              fontFamily: "var(--font-cabinet), sans-serif",
-              background: filter === f.key ? 'var(--deep-mind)' : 'var(--cream-dark)',
-              color: filter === f.key ? 'var(--white-matter)' : 'var(--cortex)',
-              transition: 'background .15s, color .15s',
-            }}>
-              {f.label}
-            </button>
+    <div className="card list-card">
+      <div className="list-bar">
+        <div className="seg" role="group" aria-label="Word type">
+          {FILTERS.map((f) => (
+            <button key={f.key} type="button" className={filter === f.key ? 'on' : undefined} aria-pressed={filter === f.key} onClick={() => setFilter(f.key)}>{f.label}</button>
           ))}
         </div>
-      </div>
-
-      {/* Table */}
-      <div style={{ borderRadius: '12px', overflow: 'hidden', border: '0.5px solid rgba(28,26,58,0.1)' }}>
-        {/* Header */}
-        <div style={{
-          display: 'grid', gridTemplateColumns: '48px 1fr 1fr 80px',
-          padding: '10px 16px', background: 'var(--cream-dark)',
-          fontSize: '11px', fontWeight: 500, textTransform: 'uppercase',
-          letterSpacing: '.07em', color: 'var(--cortex)',
-        }}>
-          <span>#</span><span>Spanish</span><span>English</span><span>Type</span>
+        <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+          <button type="button" className="btn btn-ghost btn-sm" aria-pressed={hideEn} onClick={() => setHideEn((h) => !h)}>{hideEn ? 'Show English' : 'Hide English'}</button>
+          <label className="search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <span className="sr-only">Search words</span>
+            <input type="search" placeholder={`Search ${words.length} words`} value={search} onChange={(e) => setSearch(e.target.value)} />
+          </label>
         </div>
-
-        {preview.map((w, i) => {
-          const colors = TYPE_COLORS[w.pos] || { bg: 'var(--fog)', color: 'var(--synapse)' }
-          const isExpanded = expanded === w.rank
-          return (
-            <div key={w.rank}>
-              <div
-                onClick={() => setExpanded(isExpanded ? null : w.rank)}
-                style={{
-                  display: 'grid', gridTemplateColumns: '48px 1fr 1fr 80px',
-                  padding: '12px 16px', cursor: 'pointer',
-                  background: i % 2 === 0 ? 'var(--white-matter)' : 'var(--cream)',
-                  borderTop: '0.5px solid rgba(28,26,58,0.06)',
-                  transition: 'background .1s',
-                }}
-                onMouseEnter={e => e.currentTarget.style.background = 'var(--fog)'}
-                onMouseLeave={e => e.currentTarget.style.background = i % 2 === 0 ? 'var(--white-matter)' : 'var(--cream)'}
-              >
-                <span style={{ fontSize: '13px', color: 'var(--cortex)', alignSelf: 'center' }}>{w.rank}</span>
-                <span style={{ fontSize: '16px', fontWeight: 500, color: 'var(--deep-mind)', alignSelf: 'center' }}>{w.word}</span>
-                <span style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', alignSelf: 'center' }}>
-                  {(w.meanings || []).slice(0, 2).join(' · ')}
-                </span>
-                <span style={{ alignSelf: 'center' }}>
-                  <span style={{
-                    display: 'inline-block', padding: '2px 8px', borderRadius: '6px',
-                    fontSize: '11px', fontWeight: 500,
-                    background: colors.bg, color: colors.color,
-                  }}>{w.pos}</span>
-                </span>
-              </div>
-              {isExpanded && (w.example_es || w.example_en) && (
-                <div style={{
-                  padding: '10px 16px 12px 64px',
-                  background: 'var(--fog)',
-                  borderTop: '0.5px solid rgba(28,26,58,0.06)',
-                  fontSize: '13px', fontWeight: 300,
-                }}>
-                  {w.example_es && <div style={{ color: 'var(--deep-mind)', marginBottom: '3px', fontStyle: 'italic' }}>{w.example_es}</div>}
-                  {w.example_en && <div style={{ color: 'var(--cortex)' }}>{w.example_en}</div>}
-                </div>
-              )}
-            </div>
-          )
-        })}
-
-        {/* Blur paywall overlay */}
-        {hasMore && !search && (
-          <div style={{ position: 'relative' }}>
-            {/* Fake faded rows for depth */}
-            {[...Array(6)].map((_, i) => (
-              <div key={i} style={{
-                display: 'grid', gridTemplateColumns: '48px 1fr 1fr 80px',
-                padding: '12px 16px',
-                background: i % 2 === 0 ? 'var(--white-matter)' : 'var(--cream)',
-                borderTop: '0.5px solid rgba(28,26,58,0.06)',
-                opacity: 1 - i * 0.18,
-                filter: `blur(${i * 1.2}px)`,
-                pointerEvents: 'none',
-              }}>
-                <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{PREVIEW_COUNT + i + 1}</span>
-                <span style={{ fontSize: '16px', fontWeight: 500, color: 'var(--deep-mind)' }}>{'─'.repeat(5 + (i % 3))}</span>
-                <span style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)' }}>{'─'.repeat(8 + (i % 4))}</span>
-                <span><span style={{ display: 'inline-block', padding: '2px 8px', borderRadius: '6px', fontSize: '11px', background: 'var(--cream-dark)', color: 'transparent' }}>v.</span></span>
-              </div>
-            ))}
-            {/* CTA overlay */}
-            <div style={{
-              position: 'absolute', inset: 0,
-              background: 'linear-gradient(to bottom, rgba(234,227,215,0) 0%, rgba(234,227,215,0.85) 40%, rgba(234,227,215,0.97) 100%)',
-              display: 'flex', flexDirection: 'column', alignItems: 'center',
-              justifyContent: 'flex-end', padding: '32px 24px 28px',
-              textAlign: 'center',
-            }}>
-              <p style={{ fontSize: '16px', fontWeight: 500, color: 'var(--deep-mind)', marginBottom: '6px' }}>
-                {((!search && filter === 'all') ? total : filtered.length) - PREVIEW_COUNT} more words in the full list
-              </p>
-              <p style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '20px' }}>
-                Study them as flashcards with native audio. Your progress and comprehension % save in your browser.
-              </p>
-              <Link href="/study" className="btn-primary">
-                Start the first 100 free
-              </Link>
-            </div>
-          </div>
-        )}
       </div>
 
-      {search && filtered.length === 0 && (
-        <p style={{ textAlign: 'center', color: 'var(--cortex)', padding: '24px', fontSize: '14px' }}>
-          No words found for "{search}"
-        </p>
+      {rows.length === 0 ? (
+        <p className="list-empty">No words match “{search}”. Try the English meaning instead.</p>
+      ) : (
+        <table>
+          <thead><tr><th>Rank</th><th>Word</th><th>Type</th><th>Meaning</th><th>Example</th><th><span className="sr-only">Audio</span></th></tr></thead>
+          <tbody>
+            {rows.map((w) => (
+              <tr key={w.rank}>
+                <td className="rk tab">#{w.rank}</td>
+                <td className="w">{w.word}{!hideEn && <span className="w-sub">{w.meanings?.[0]}</span>}</td>
+                <td className="pos">{POS_LABEL[w.pos] || w.pos}</td>
+                <td className={`mn${hideEn ? ' hide-en' : ''}`}><span>{(w.meanings || []).slice(0, 2).join(', ')}</span></td>
+                <td className={`ex${hideEn ? ' hide-en' : ''}`}>{w.example_es}{w.example_en && <small><span>{w.example_en}</span></small>}</td>
+                <td>
+                  {w.audio && (
+                    <button type="button" className={`chk${playing === w.rank ? ' on' : ''}`} aria-label={`Play ${w.word}`} onClick={() => play(w)}>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill={playing === w.rank ? '#fcfcff' : '#14204a'} aria-hidden="true"><path d="M7 4.5v15l13-7.5z" /></svg>
+                    </button>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       )}
+
+      <div className="list-foot">
+        <span className="tab">Showing {rows.length} of {total.toLocaleString('en')} · native audio on every word</span>
+        <Link className="link" href="/words/most-common-spanish-words">See the full interactive list <Arrow /></Link>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi ____ trabaja en un banco del centro.",
+      "answer": "marido",
+      "base": "un marido",
+      "en": "My husband works at a bank downtown."
+    },
+    {
+      "es": "¿Puedes sacar la ____ esta noche?",
+      "answer": "basura",
+      "base": "basura",
+      "en": "Can you take out the trash tonight?"
+    },
+    {
+      "es": "Quiero ____ mi coche antes del verano.",
+      "answer": "vender",
+      "base": "vender",
+      "en": "I want to sell my car before the summer."
+    },
+    {
+      "es": "Tengo mucha ____; vamos a comer algo.",
+      "answer": "hambre",
+      "base": "hambre",
+      "en": "I'm really hungry; let's go eat something."
+    },
+    {
+      "es": "Mi oficina está en el tercer ____ del edificio.",
+      "answer": "piso",
+      "base": "un piso",
+      "en": "My office is on the third floor of the building."
+    },
+    {
+      "es": "¿Me puedes ____ la foto por correo?",
+      "answer": "mandar",
+      "base": "mandar",
+      "en": "Can you send me the photo by email?"
+    },
+    {
+      "es": "Lo siento, estaba ____ sobre la hora de la reunión.",
+      "answer": "equivocado",
+      "base": "equivocado",
+      "en": "Sorry, I was wrong about the time of the meeting."
+    },
+    {
+      "es": "Hace mucho ____ hoy; ponte un abrigo.",
+      "answer": "frío",
+      "base": "frío",
+      "en": "It's very cold today; put on a coat."
+    }
+  ],
+  "translate": [
+    {
+      "en": "My colleague prefers to work from home.",
+      "es": "Mi compañero prefiere trabajar en casa."
+    },
+    {
+      "en": "Yesterday we danced until midnight.",
+      "es": "Ayer bailamos hasta medianoche."
+    },
+    {
+      "en": "The bank is on the right, next to the building.",
+      "es": "El banco está a la derecha, al lado del edificio."
+    },
+    {
+      "en": "That's a lie, and you know it.",
+      "es": "Eso es una mentira, y lo sabes."
+    }
+  ],
+  "story": {
+    "title": "La cena de Navidad",
+    "text": "En (1) siempre cenamos en casa de mi madre. Este año, mi (2) cocinó un pavo enorme y lo puso en la (3) del comedor. Todos teníamos mucha (4). Mi hermano dijo: «Voy a abrir la (5), hace mucho calor». Cuando volvimos con los platos, la (6) del pavo había desaparecido. Mi madre miró a mi hermano. Mi hermano miró a mi cuñado. Nadie dijo nada; hubo un largo (7). Entonces vimos al (8) del vecino en el jardín, muy feliz y con la barriga llena.",
+    "answers": [
+      "Navidad",
+      "marido",
+      "mesa",
+      "hambre",
+      "ventana",
+      "mitad",
+      "silencio",
+      "gato"
+    ],
+    "en": "At a family Christmas dinner, half the turkey vanishes and everyone suspects each other, until they spot the neighbour's very satisfied cat in the garden."
+  }
+}

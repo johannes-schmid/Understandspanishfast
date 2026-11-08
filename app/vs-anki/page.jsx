@@ -7,6 +7,29 @@ export const metadata = {
   openGraph: { url: 'https://mostcommonspanish.com/vs-anki' },
 }
 
+const FAQ = [
+  {
+    q: 'Is this better than Anki for learning Spanish?',
+    a: 'For Spanish vocabulary specifically, yes. Anki is a general-purpose flashcard tool: you find or build your own deck, decide the order, and track your own progress. The Top 1,500 workbook is built for one job. The words are already ranked by real-world frequency, the review schedule is part of the method, and you always know how much everyday Spanish your words cover.',
+  },
+  {
+    q: 'Do I need to build decks like in Anki?',
+    a: 'No. The list is already built: the 1,500 most frequent Spanish words, ranked by how often they appear in real spoken Spanish, each with an example sentence. You start at word #1 and work forward in 30 units of 50.',
+  },
+  {
+    q: 'Does this use spaced repetition like Anki?',
+    a: 'Yes, on paper. Every unit runs through four passes (read, recall, use, review), and each unit comes back for a check on day 3 and day 7. A review test every 250 words catches anything that slipped. There is nothing to configure.',
+  },
+  {
+    q: 'Can I import my existing Anki progress?',
+    a: 'No. The workbook starts at the most frequent word and moves down the list. If you have already used Anki for Spanish, the early units will feel like review. Take the unit tests and skip ahead once you pass them.',
+  },
+  {
+    q: 'What does the comprehension percentage mean?',
+    a: 'It estimates how much of everyday spoken Spanish is made up of the words you know. The top 100 words cover around 50% of everyday speech. At 1,500 words you are at roughly 80%. The numbers come from lexical frequency corpus research.',
+  },
+]
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -16,7 +39,7 @@ const faqSchema = {
       name: 'Is this better than Anki for learning Spanish?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'For Spanish specifically, yes. Anki is a general-purpose flashcard tool — you have to find or build your own decks, decide what order to learn words, and track your own progress. This app is purpose-built for Spanish vocabulary: words are pre-ranked by real-world frequency, spaced repetition is built in, and your comprehension percentage is calculated automatically. You open the app and start learning in seconds.',
+        text: FAQ[0].a,
       },
     },
     {
@@ -24,7 +47,7 @@ const faqSchema = {
       name: 'Do I need to build decks like in Anki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'No. The deck is already built — 1,500+ high-frequency Spanish words ranked by how often they appear in real spoken Spanish. You start with the words that give you the most comprehension the fastest, in the right order, from day one.',
+        text: FAQ[1].a,
       },
     },
     {
@@ -32,388 +55,147 @@ const faqSchema = {
       name: 'Does this use spaced repetition like Anki?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. The spaced repetition algorithm works the same way: words are reviewed at increasing intervals, just before you would forget them. Hard words come back sooner. Words you know well are spaced further apart. The difference is that it\'s pre-configured for Spanish vocabulary — you never have to touch a setting.',
+        text: FAQ[2].a,
       },
     },
   ],
 }
 
-function Wave({ from, to, height = 90, shape = 'dome' }) {
-  const h = height
-  let d
-  if (shape === 'dome') {
-    d = `M0,${h} C480,0 960,0 1440,${h} L1440,${h} L0,${h} Z`
-  } else if (shape === 'swave') {
-    d = `M0,${h} C320,0 640,${h} 1080,${h * 0.15} C1260,0 1380,${h * 0.4} 1440,${h} L1440,${h} L0,${h} Z`
-  } else if (shape === 'tilt') {
-    d = `M0,${h * 0.1} C480,${h * 0.05} 900,${h * 0.6} 1440,${h} L1440,${h} L0,${h} Z`
-  } else if (shape === 'shallow') {
-    d = `M0,${h} C480,${h * 0.2} 960,${h * 0.2} 1440,${h} L1440,${h} L0,${h} Z`
-  }
-  return (
-    <div style={{ background: from, lineHeight: 0, display: 'block', marginBottom: '-1px' }}>
-      <svg viewBox={`0 0 1440 ${h}`} style={{ width: '100%', display: 'block' }} preserveAspectRatio="none" fill="none">
-        <path d={d} fill={to} />
-      </svg>
-    </div>
-  )
-}
+const Check = () => (
+  <svg className="ct-yes" width="18" height="18" viewBox="0 0 18 18" fill="none" role="img" aria-label="Yes"><path d="M4 9.5l3.2 3L14 5.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+)
+const Cross = () => (
+  <svg className="ct-no" width="16" height="16" viewBox="0 0 16 16" fill="none" role="img" aria-label="No"><path d="M4.5 4.5l7 7M11.5 4.5l-7 7" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+)
+const Mark = ({ v }) => (v === true ? <Check /> : v === false ? <Cross /> : <span className="ct-part">{v}</span>)
+
+const ROWS = [
+  ['Spaced review', true, 'Day 3 + day 7'],
+  ['Ready to use, no setup', false, true],
+  ['Frequency-ranked vocabulary', false, true],
+  ['Pre-built Spanish content', false, true],
+  ['Shows your coverage of everyday Spanish', false, true],
+  ['Knows what to teach next', false, true],
+  ['Active recall in writing', false, true],
+  ['Free to try', 'Desktop, Android', '10-card sample'],
+]
 
 export default function VsAnki() {
   return (
-    <div>
+    <div className="cl cl-home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* ── HERO ── */}
-      <section className="hero-section" style={{ paddingBottom: '80px' }}>
-        <div className="hero-inner" style={{ gridTemplateColumns: '1fr', maxWidth: '760px', gap: '0' }}>
-          <div>
-            <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: '8px',
-              fontSize: '12px', fontWeight: 500, letterSpacing: '.08em',
-              textTransform: 'uppercase', color: 'var(--synapse)',
-              marginBottom: '24px',
-            }}>
-              <span style={{
-                background: 'var(--fog)', color: 'var(--synapse)',
-                padding: '3px 10px', borderRadius: '99px', fontSize: '11px',
-              }}>Anki alternative</span>
-              <span style={{ color: 'var(--cortex)' }}>·</span>
-              <span style={{ color: 'var(--cortex)' }}>built for Spanish</span>
-            </div>
-
-            <h1 style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: 'clamp(44px, 6vw, 72px)',
-              lineHeight: 1.0, letterSpacing: '-2.5px', color: 'var(--deep-mind)',
-              marginBottom: '28px',
-            }}>
-              Anki for Spanish.<br />
-              <span style={{ color: 'var(--synapse)' }}>Without the setup.</span>
-            </h1>
-
-            <p style={{
-              fontSize: '19px', fontWeight: 300, color: 'var(--deep-mind)',
-              lineHeight: 1.65, maxWidth: '560px', marginBottom: '16px',
-            }}>
-              You know spaced repetition works. You've tried Anki. But you spent more time managing decks than actually learning Spanish.
-            </p>
-            <p style={{
-              fontSize: '19px', fontWeight: 300, color: 'var(--deep-mind)',
-              lineHeight: 1.65, maxWidth: '560px', marginBottom: '44px',
-            }}>
-              This has everything Anki does for Spanish — frequency-ranked, pre-built, with live comprehension tracking. Open it and start learning in 10 seconds.
-            </p>
-
-            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="/study" className="btn-primary" style={{ fontSize: '16px', padding: '15px 30px' }}>
-                Switch from Anki — it's free →
-              </a>
-              <Link href="/words/most-common-spanish-words" className="btn-ghost">
-                See the word list ↓
-              </Link>
-            </div>
+      <section className="ct-hero">
+        <div className="wrap">
+          <h1 className="h1">Anki for Spanish<br /><span className="soft">Without the setup</span></h1>
+          <p className="lead">You know spaced repetition works. You&rsquo;ve tried Anki. But you spent more time managing decks than actually learning Spanish.</p>
+          <p className="lead">The Top 1,500 workbook gives you what Anki gives you for Spanish, already done: the right words, in frequency order, with the review schedule built into the method.</p>
+          <div className="cta-row">
+            <Link className="btn btn-navy" href="/study">Start for free</Link>
+            <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
           </div>
+          <ul className="proof">
+            <li><span className="dot" />1,500 words ranked by frequency</li>
+            <li><span className="dot" />Reviews on day 3 and day 7</li>
+            <li><span className="dot" />€5 printable PDF</li>
+          </ul>
         </div>
       </section>
 
-      <Wave from="var(--cream)" to="var(--white-matter)" height={50} shape="dome" />
-
-      {/* ── PAIN POINTS ── */}
-      <section className="page-section" style={{ background: 'var(--white-matter)', padding: '80px 0' }}>
-        <div className="section-inner" style={{ maxWidth: '860px' }}>
-          <div className="s-eye">Why Anki users quit</div>
-          <h2 className="s-title">You didn't fail Anki.<br />Anki failed you.</h2>
-          <p className="s-body">
-            Anki is a brilliant tool — for people who already know how to learn. For Spanish specifically, it puts every hard decision on you.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px' }}>
+      <section className="sec ct-sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2>You didn&rsquo;t fail Anki<br />Anki failed you</h2>
+            <p className="lead">Anki is a brilliant tool for people who already know how to learn. For Spanish specifically, it puts every hard decision on you.</p>
+          </div>
+          <div className="card ct-trio">
             {[
-              {
-                num: '01',
-                title: 'Deck building is a full-time job',
-                body: 'You spent hours finding the "best" Spanish deck on AnkiWeb. Half the cards had typos. The other half taught you words you\'d never hear in a real conversation.',
-                color: 'var(--dendrite)',
-                bg: 'rgba(212,83,126,0.06)',
-              },
-              {
-                num: '02',
-                title: 'No order. No strategy.',
-                body: 'Most Anki decks are alphabetical or themed. You learned "aardvark" before "but." Frequency-ranked learning isn\'t the default — it has to be manually configured.',
-                color: 'var(--nerve)',
-                bg: 'rgba(192,112,80,0.06)',
-              },
-              {
-                num: '03',
-                title: '500 reviews. No idea what you can understand.',
-                body: 'Anki tells you how many cards you\'ve reviewed. It doesn\'t tell you what percentage of real Spanish you can now understand. Progress feels invisible.',
-                color: 'var(--cortex)',
-                bg: 'rgba(123,127,168,0.08)',
-              },
-            ].map(({ num, title, body, color, bg }) => (
-              <div key={num} style={{
-                background: bg, borderRadius: '16px', padding: '28px 24px',
-                border: `0.5px solid ${color}22`,
-              }}>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: '13px', color, marginBottom: '12px', letterSpacing: '.05em',
-                }}>{num}</div>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
-                  fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2,
-                }}>{title}</div>
-                <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
-              </div>
+              { title: 'Deck building is a full-time job', body: 'You spent hours finding the "best" Spanish deck on AnkiWeb. Half the cards had typos. The other half taught you words you\'d never hear in a real conversation.' },
+              { title: 'No order, no strategy', body: 'Most Anki decks are alphabetical or themed. You learned "aardvark" before "but." Frequency-ranked learning isn\'t the default. It has to be manually configured.' },
+              { title: '500 reviews, no idea what you understand', body: 'Anki tells you how many cards you\'ve reviewed. It doesn\'t tell you what percentage of real Spanish you can now understand. Progress feels invisible.' },
+            ].map(({ title, body }) => (
+              <div key={title} className="ct-trio-item"><h3>{title}</h3><p>{body}</p></div>
             ))}
           </div>
         </div>
       </section>
 
-      <Wave from="var(--white-matter)" to="var(--cream)" height={45} shape="shallow" />
+      <section className="sec ct-sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2>Anki vs this</h2>
+            <p className="lead">Same principle, spaced recall. The difference is everything you no longer have to decide yourself.</p>
+          </div>
+          <div className="card ct-table-card">
+            <table className="ct-table ct-compare">
+              <thead><tr><th scope="col">Feature</th><th scope="col">Anki</th><th scope="col" className="ct-us">Top 1,500 workbook</th></tr></thead>
+              <tbody>
+                {ROWS.map(([feature, anki, us]) => (
+                  <tr key={feature}><td>{feature}</td><td><Mark v={anki} /></td><td className="ct-us"><Mark v={us} /></td></tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-      {/* ── COMPARISON TABLE ── */}
-      <section className="page-section" style={{ background: 'var(--cream)', padding: '80px 0' }}>
-        <div className="section-inner" style={{ maxWidth: '780px' }}>
-          <div className="s-eye">Head to head</div>
-          <h2 className="s-title">Anki vs. this</h2>
-
-          <div style={{ marginTop: '40px', borderRadius: '16px', overflow: 'hidden', border: '0.5px solid rgba(28,26,58,0.12)' }}>
-            {/* Header */}
-            <div style={{
-              display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
-              background: 'var(--deep-mind)', padding: '16px 24px',
-            }}>
-              <div style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(250,247,242,0.4)', textTransform: 'uppercase', letterSpacing: '.07em' }}>Feature</div>
-              <div style={{ fontSize: '12px', fontWeight: 500, color: 'rgba(250,247,242,0.4)', textTransform: 'uppercase', letterSpacing: '.07em', textAlign: 'center' }}>Anki</div>
-              <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--mauve)', textTransform: 'uppercase', letterSpacing: '.07em', textAlign: 'center' }}>This</div>
-            </div>
-
+      <section className="sec ct-sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2>The three things Anki never solved</h2>
+          </div>
+          <div className="ct-feats">
             {[
-              ['Spaced repetition', true, true],
-              ['Ready in 10 seconds', false, true],
-              ['Frequency-ranked vocabulary', false, true],
-              ['Pre-built Spanish content', false, true],
-              ['Live comprehension %', false, true],
-              ['Knows what to teach next', false, true],
-              ['Works on mobile', 'partial', true],
-              ['Free to start', true, true],
-            ].map(([feature, anki, us], i) => (
-              <div key={feature} style={{
-                display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
-                padding: '15px 24px', alignItems: 'center',
-                background: i % 2 === 0 ? 'var(--white-matter)' : 'var(--cream)',
-                borderBottom: '0.5px solid rgba(28,26,58,0.06)',
-              }}>
-                <div style={{ fontSize: '14px', fontWeight: 400, color: 'var(--deep-mind)' }}>{feature}</div>
-                <div style={{ textAlign: 'center' }}>
-                  {anki === true && <span style={{ color: 'var(--signal)', fontSize: '16px' }}>✓</span>}
-                  {anki === false && <span style={{ color: 'var(--dendrite)', fontSize: '14px', opacity: 0.6 }}>✕</span>}
-                  {anki === 'partial' && <span style={{ color: 'var(--cortex)', fontSize: '12px' }}>Partial</span>}
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  {us && <span style={{ color: 'var(--signal)', fontSize: '16px', fontWeight: 700 }}>✓</span>}
-                </div>
-              </div>
+              { t: 'No setup', s: 'Open it and start', b: 'No deck importing, no settings, no deciding what to study. The 1,500 most important Spanish words are already there, in the right order, with an example sentence for each.' },
+              { t: 'Frequency-first', s: 'Every word earns its place', b: 'Words are ranked by how often they appear in real spoken Spanish, not alphabetically and not by theme. Word #1 is more useful than word #2. No Anki deck guarantees that.' },
+              { t: 'Real progress', s: 'Not reviews, coverage', b: 'Progress is measured in coverage of everyday Spanish, not card counts. The first 100 words get you to about half. The full 1,500 get you to about 80%.' },
+            ].map(({ t, s, b }) => (
+              <div key={t} className="card ct-feat"><h3>{t}</h3><p className="ct-feat-sub">{s}</p><p>{b}</p></div>
             ))}
           </div>
         </div>
       </section>
 
-      <Wave from="var(--cream)" to="var(--deep-mind)" height={90} shape="swave" />
-
-      {/* ── WHAT YOU GET ── */}
-      <section className="page-section" style={{ background: 'var(--deep-mind)', padding: '80px 0' }}>
-        <div className="section-inner">
-          <div className="s-eye" style={{ color: 'var(--mauve)' }}>What's different</div>
-          <h2 className="s-title" style={{ color: 'var(--white-matter)' }}>
-            The three things<br />Anki never solved.
-          </h2>
-
-          <div className="science-grid" style={{ marginTop: '8px' }}>
-            <div style={{
-              background: 'rgba(176,127,168,0.12)', borderRadius: '20px',
-              padding: '32px 28px', border: '1px solid rgba(176,127,168,0.2)',
-              gridColumn: 'span 1',
-            }}>
-              <div style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: '32px', color: 'var(--mauve)', marginBottom: '14px', lineHeight: 1,
-              }}>No setup</div>
-              <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
-                Open it. Start learning.
-              </div>
-              <div style={{ fontSize: '13px', fontWeight: 300, color: 'rgba(123,127,168,0.85)', lineHeight: 1.65 }}>
-                No deck importing. No settings to configure. No deciding what to study. The 1,500 most important Spanish words are already there, in the right order, waiting for you.
-              </div>
-            </div>
-
-            <div style={{
-              background: 'rgba(83,74,183,0.12)', borderRadius: '20px',
-              padding: '32px 28px', border: '1px solid rgba(83,74,183,0.2)',
-            }}>
-              <div style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: '32px', color: 'var(--synapse)', marginBottom: '14px', lineHeight: 1,
-              }}>Frequency-first</div>
-              <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
-                Every word earns its place.
-              </div>
-              <div style={{ fontSize: '13px', fontWeight: 300, color: 'rgba(123,127,168,0.85)', lineHeight: 1.65 }}>
-                Words are ranked by how often they appear in real spoken Spanish — not alphabetically, not by theme. Word #1 is more useful than word #2. Always. No Anki deck on earth guarantees that.
-              </div>
-            </div>
-
-            <div style={{
-              background: 'rgba(45,122,95,0.12)', borderRadius: '20px',
-              padding: '32px 28px', border: '1px solid rgba(45,122,95,0.2)',
-            }}>
-              <div style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: '32px', color: '#4CAF87', marginBottom: '14px', lineHeight: 1,
-              }}>Real progress</div>
-              <div style={{ fontSize: '15px', fontWeight: 600, color: 'var(--white-matter)', marginBottom: '10px' }}>
-                Not reviews. Comprehension.
-              </div>
-              <div style={{ fontSize: '13px', fontWeight: 300, color: 'rgba(123,127,168,0.85)', lineHeight: 1.65 }}>
-                After every session you see your comprehension percentage — how much of real spoken Spanish you can now understand. Not a card count. Not a streak. Something that actually means something.
-              </div>
-            </div>
+      <section className="sec ct-sec">
+        <div className="wrap">
+          <div className="sec-head">
+            <h2>Same method as Anki<br />Done right for Spanish</h2>
+            <p className="lead">Spaced recall works. We didn&rsquo;t reinvent it. We removed everything you had to do yourself in Anki.</p>
           </div>
-        </div>
-      </section>
-
-      <Wave from="var(--deep-mind)" to="var(--cream)" height={90} shape="tilt" />
-
-      {/* ── HOW IT WORKS ── */}
-      <section className="page-section" style={{ background: 'var(--cream)', padding: '80px 0' }}>
-        <div className="section-inner" style={{ maxWidth: '680px' }}>
-          <div className="s-eye">How it works</div>
-          <h2 className="s-title">Same method as Anki.<br />Done right for Spanish.</h2>
-          <p className="s-body">
-            Spaced repetition works. We didn't reinvent it — we just removed everything you had to do yourself in Anki.
-          </p>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+          <div className="method ct-steps">
             {[
-              {
-                n: '1',
-                title: 'See a word',
-                body: 'A Spanish word appears. You try to recall the meaning before revealing it — same as Anki.',
-              },
-              {
-                n: '2',
-                title: 'Rate yourself',
-                body: 'Was it easy, hard, or did you blank? Your rating determines when this word comes back.',
-              },
-              {
-                n: '3',
-                title: 'The algorithm spaces your reviews',
-                body: 'Hard words return in hours. Solid words return in days, then weeks. Nothing is wasted.',
-              },
-              {
-                n: '4',
-                title: 'Watch your comprehension climb',
-                body: 'Every word you lock in adds to your % of real spoken Spanish. The number keeps growing.',
-              },
-            ].map(({ n, title, body }, i, arr) => (
-              <div key={n} style={{
-                display: 'grid', gridTemplateColumns: '40px 1fr',
-                gap: '20px', alignItems: 'start',
-                padding: '24px 0',
-                borderBottom: i < arr.length - 1 ? '0.5px solid rgba(28,26,58,0.08)' : 'none',
-              }}>
-                <div style={{
-                  width: '36px', height: '36px', borderRadius: '50%',
-                  background: 'var(--fog)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '16px',
-                  color: 'var(--synapse)', flexShrink: 0,
-                }}>{n}</div>
-                <div>
-                  <div style={{
-                    fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
-                    fontSize: '17px', color: 'var(--deep-mind)', marginBottom: '6px',
-                  }}>{title}</div>
-                  <div style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65 }}>{body}</div>
-                </div>
-              </div>
+              { n: 'PASS 1', t: 'Read', b: 'Word, meaning and a real sentence. Say it out loud.' },
+              { n: 'PASS 2', t: 'Recall', b: 'Fold the page and write the meaning from memory, same as flipping an Anki card.' },
+              { n: 'PASS 3', t: 'Use', b: 'Fill the gap in a fresh sentence so the word sticks in context.' },
+              { n: 'PASS 4', t: 'Review', b: 'Check the unit again on day 3 and day 7. 45 of 50 means it is mastered.' },
+            ].map(({ n, t, b }) => (
+              <div key={n} className="step"><span className="mono">{n}</span><b>{t}</b><p>{b}</p></div>
             ))}
           </div>
         </div>
       </section>
 
-      <Wave from="var(--cream)" to="var(--cream-dark)" height={45} shape="shallow" />
-
-      {/* ── FAQ ── */}
-      <section className="page-section" style={{ background: 'var(--cream-dark)', padding: '80px 0' }}>
-        <div className="section-inner" style={{ maxWidth: '680px' }}>
-          <div className="s-eye">Common questions</div>
-          <h2 className="s-title" style={{ marginBottom: '40px' }}>FAQ</h2>
-
-          {[
-            {
-              q: 'Is this better than Anki for learning Spanish?',
-              a: 'For Spanish specifically, yes. Anki is a general-purpose tool — you have to find decks, configure settings, and decide what to learn. This is purpose-built: words are pre-ranked by real frequency, SRS is pre-configured, and your comprehension percentage is tracked automatically. You start learning in seconds, not hours.',
-            },
-            {
-              q: 'Do I need to build decks like in Anki?',
-              a: 'No. The deck is already built — 1,500+ high-frequency Spanish words ranked by how often they appear in real spoken Spanish. You start with the most impactful words first, in the right order, from day one.',
-            },
-            {
-              q: 'Does this use spaced repetition like Anki?',
-              a: 'Yes. Words are reviewed at increasing intervals, just before you\'d forget them. Hard words come back sooner, easy ones are spaced further apart. The difference is it\'s pre-configured for Spanish — you never touch a setting.',
-            },
-            {
-              q: 'Can I import my existing Anki progress?',
-              a: 'Not currently. The word list is standardised so everyone starts from the same frequency baseline. If you\'ve been using Anki for Spanish, you\'ll likely move through the early words quickly — they\'ll feel like review.',
-            },
-            {
-              q: 'What does the comprehension percentage mean?',
-              a: 'It\'s an estimate of what percentage of real spoken Spanish you can understand based on the words you\'ve learned. Learn the top 100 words and you can understand around 50% of everyday speech. At 1,500 words you\'re at roughly 80%. This is based on lexical frequency corpus research.',
-            },
-          ].map(({ q, a }) => (
-            <details key={q} style={{ borderBottom: '0.5px solid rgba(28,26,58,0.1)', paddingBottom: '0' }}>
-              <summary style={{
-                padding: '20px 0', cursor: 'pointer', listStyle: 'none',
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '17px',
-                color: 'var(--deep-mind)', letterSpacing: '-0.3px',
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              }}>
-                {q}
-                <span style={{ fontSize: '20px', color: 'var(--cortex)', flexShrink: 0, marginLeft: '16px' }}>+</span>
-              </summary>
-              <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, paddingBottom: '20px', marginTop: '4px' }}>
-                {a}
-              </p>
-            </details>
-          ))}
+      <section className="sec ct-sec">
+        <div className="wrap">
+          <div className="sec-head"><h2>FAQ</h2></div>
+          <div className="faq">
+            {FAQ.map(({ q, a }) => (
+              <div key={q} className="card faq-item"><h3>{q}</h3><p>{a}</p></div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <Wave from="var(--cream-dark)" to="var(--white-matter)" height={45} shape="dome" />
-
-      {/* ── FINAL CTA ── */}
-      <section className="cta-section" id="cta">
-        <svg className="hero-deco-svg" style={{position:'absolute',top:'44px',left:'80px',pointerEvents:'none'}} width="68" height="68" viewBox="0 0 68 68" fill="none">
-          <path d="M10 58 Q18 16 34 34 Q50 52 58 10" stroke="#B07FA8" strokeWidth="1.5" strokeLinecap="round"/>
-        </svg>
-        <svg className="hero-deco-svg" style={{position:'absolute',top:'56px',right:'96px',pointerEvents:'none'}} width="54" height="54" viewBox="0 0 54 54" fill="none">
-          <circle cx="27" cy="27" r="25" stroke="#534AB7" strokeWidth="1" strokeDasharray="4 3"/>
-        </svg>
-
-        <div className="cta-title">
-          <div style={{display:'flex',justifyContent:'center'}}>Anki taught you the method.</div>
-          <div style={{display:'flex',justifyContent:'center',color:'var(--synapse)'}}>This does the rest.</div>
+      <section className="ct-end">
+        <div className="wrap">
+          <div className="panel close">
+            <h2>Anki taught you the method<br /><span className="soft">This does the rest</span></h2>
+            <div className="cta-row">
+              <Link className="btn btn-navy" href="/study">Start for free</Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+            </div>
+          </div>
         </div>
-
-        <p className="cta-sub">Free to start. No deck building. Your comprehension % starts climbing from session one.</p>
-        <div className="cta-actions">
-          <a href="/study" className="btn-primary" style={{ display: 'inline-block', textDecoration: 'none', fontSize: '16px', padding: '15px 30px' }}>
-            Switch from Anki — it's free →
-          </a>
-        </div>
-        <div className="cta-note">Free · No account · No subscription</div>
       </section>
     </div>
   )

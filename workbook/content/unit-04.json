@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Puedes ____ pan cuando vuelvas del trabajo?",
+      "answer": "traer",
+      "base": "traer",
+      "en": "Can you bring bread when you come back from work?"
+    },
+    {
+      "es": "Mi ____ llama a nuestra madre cada domingo.",
+      "answer": "hermano",
+      "base": "un hermano",
+      "en": "My brother calls our mother every Sunday."
+    },
+    {
+      "es": "¿Ya estás ____? El taxi está esperando.",
+      "answer": "listo",
+      "base": "listo",
+      "en": "Are you ready yet? The taxi is waiting."
+    },
+    {
+      "es": "Esta ____ trabajo todos los días hasta las ocho.",
+      "answer": "semana",
+      "base": "una semana",
+      "en": "This week I'm working every day until eight."
+    },
+    {
+      "es": "No me ____ el dinero; quiero un trabajo interesante.",
+      "answer": "importa",
+      "base": "importar",
+      "en": "Money doesn't matter to me; I want an interesting job."
+    },
+    {
+      "es": "Hoy comí ____ y me duele el estómago.",
+      "answer": "demasiado",
+      "base": "demasiado",
+      "en": "I ate too much today and my stomach hurts."
+    },
+    {
+      "es": "El tren es muy ____; llegamos con una hora de retraso.",
+      "answer": "lento",
+      "base": "lento",
+      "en": "The train is really slow; we arrived an hour late."
+    },
+    {
+      "es": "¿A qué hora ____ la reunión mañana?",
+      "answer": "empieza",
+      "base": "empezar",
+      "en": "What time does the meeting start tomorrow?"
+    }
+  ],
+  "translate": [
+    {
+      "en": "I'll call you later.",
+      "es": "Te llamo luego."
+    },
+    {
+      "en": "Do you want to come with me?",
+      "es": "¿Quieres venir conmigo?"
+    },
+    {
+      "en": "My mom still works at the hospital.",
+      "es": "Mi mamá aún trabaja en el hospital."
+    },
+    {
+      "en": "I can't remember where I left the keys.",
+      "es": "No recuerdo dónde dejé las llaves."
+    }
+  ],
+  "story": {
+    "title": "La cena de cumpleaños",
+    "text": "Cada año, mi (1) cena en mi casa para el cumpleaños de mi papá. Este año quise cocinar algo especial, pero todo salió (2): la carne estaba dura y el arroz, frío. A las ocho, alguien llamó a la (3). Era mi (4) Pablo con tres pizzas. «Mamá me llamó hace una (5)», me dijo. «Dice que (6) recuerda tu última cena.» Todos se rieron, menos yo. Luego mi papá probó mi carne y dijo que era la mejor de su vida. ¿Está (7) o solo es muy amable? (8) nunca lo sepa.",
+    "answers": [
+      "familia",
+      "mal",
+      "puerta",
+      "hermano",
+      "semana",
+      "aún",
+      "loco",
+      "Quizá"
+    ],
+    "en": "A birthday dinner goes wrong, but the narrator's brother arrives with pizzas because their mother remembered the last disaster, and only the dad praises the food."
+  }
+}

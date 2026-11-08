@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿____ cuesta un café en esta ciudad?",
+      "answer": "Cuánto",
+      "base": "cuánto",
+      "en": "How much does a coffee cost in this city?"
+    },
+    {
+      "es": "Siempre ____ el nombre de mi jefe nuevo.",
+      "answer": "olvido",
+      "base": "olvidar",
+      "en": "I always forget my new boss's name."
+    },
+    {
+      "es": "Son las nueve y mi marido ____ está en la oficina.",
+      "answer": "todavía",
+      "base": "todavía",
+      "en": "It's nine o'clock and my husband is still at the office."
+    },
+    {
+      "es": "Hoy llegué ____ al trabajo por el tráfico.",
+      "answer": "tarde",
+      "base": "tarde",
+      "en": "Today I got to work late because of the traffic."
+    },
+    {
+      "es": "¿Me ____ un momento? Tengo una llamada.",
+      "answer": "disculpas",
+      "base": "disculpar",
+      "en": "Could you excuse me for a moment? I have a call."
+    },
+    {
+      "es": "Mi hermana ____ más dinero que yo.",
+      "answer": "gana",
+      "base": "ganar",
+      "en": "My sister earns more money than I do."
+    },
+    {
+      "es": "Anoche solo ____ cuatro horas.",
+      "answer": "dormí",
+      "base": "dormir",
+      "en": "Last night I only slept four hours."
+    },
+    {
+      "es": "Bebe más ____ cuando hace calor.",
+      "answer": "agua",
+      "base": "agua",
+      "en": "Drink more water when it's hot."
+    }
+  ],
+  "translate": [
+    {
+      "en": "Maybe we can eat together tomorrow.",
+      "es": "Quizás podamos comer juntos mañana."
+    },
+    {
+      "en": "Don't worry, it's not serious.",
+      "es": "No te preocupes, no es serio."
+    },
+    {
+      "en": "I almost forgot your birthday.",
+      "es": "Casi olvido tu cumpleaños."
+    },
+    {
+      "en": "Which city do you live in?",
+      "es": "¿En qué ciudad vives?"
+    }
+  ],
+  "story": {
+    "title": "La contraseña",
+    "text": "Mi madre tiene setenta años y un teléfono nuevo. Ayer me llamó muy (1): «Hija, tengo un problema. (2) la contraseña». Le pregunté qué palabra usó. «No sé, (3) el nombre del perro». Probamos durante (4) una hora. Nada. Ella empezó a tener (5) de perder todas sus fotos. (6) yo buscaba soluciones en internet, ella fue a la cocina a (7) algo. Volvió muy (8) con un papel en la mano: «Contraseña: nombre del perro, con mayúscula». Nosotras escribíamos «toby», no «Toby».",
+    "answers": [
+      "seria",
+      "Olvidé",
+      "quizás",
+      "casi",
+      "miedo",
+      "Mientras",
+      "comer",
+      "feliz"
+    ],
+    "en": "A woman and her mother spend an hour trying to recover a forgotten phone password, only to discover it was the dog's name with a capital letter, written on a note in the kitchen."
+  }
+}

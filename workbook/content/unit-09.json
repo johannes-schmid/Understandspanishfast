@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi hija me ____ todos los días a las seis.",
+      "answer": "despierta",
+      "base": "despertar",
+      "en": "My daughter wakes me up every day at six."
+    },
+    {
+      "es": "No encuentro las ____ del coche.",
+      "answer": "llaves",
+      "base": "una llave",
+      "en": "I can't find the car keys."
+    },
+    {
+      "es": "Tengo un ____ de cabeza terrible.",
+      "answer": "dolor",
+      "base": "un dolor",
+      "en": "I have a terrible headache."
+    },
+    {
+      "es": "¿Qué quieres ____ con la cena?",
+      "answer": "beber",
+      "base": "beber",
+      "en": "What do you want to drink with dinner?"
+    },
+    {
+      "es": "Mi hermano nunca dice la verdad; siempre ____.",
+      "answer": "miente",
+      "base": "mentir",
+      "en": "My brother never tells the truth; he always lies."
+    },
+    {
+      "es": "El próximo mes hacemos un ____ a Italia.",
+      "answer": "viaje",
+      "base": "un viaje",
+      "en": "Next month we're taking a trip to Italy."
+    },
+    {
+      "es": "Te dejé un ____ en el teléfono.",
+      "answer": "mensaje",
+      "base": "un mensaje",
+      "en": "I left you a message on your phone."
+    },
+    {
+      "es": "Mi madre está ____ y hoy no puede trabajar.",
+      "answer": "enferma",
+      "base": "enfermo",
+      "en": "My mother is sick and can't work today."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I trust my doctor.",
+      "es": "Confío en mi médico."
+    },
+    {
+      "en": "Last night the phone rang three times.",
+      "es": "Anoche el teléfono sonó tres veces."
+    },
+    {
+      "en": "We need a room for three people.",
+      "es": "Necesitamos una habitación para tres personas."
+    },
+    {
+      "en": "It's hard to forgive a friend.",
+      "es": "Es duro perdonar a un amigo."
+    }
+  ],
+  "story": {
+    "title": "Las llaves perdidas",
+    "text": "(1) mi esposa y yo volvimos tarde de un (2) al campo. En la puerta, nadie encontraba la (3). Empezamos a (4): ella decía que yo la tenía, yo decía que la tenía ella. Revisamos toda la (5) en las maletas, pero nada. Entonces mi teléfono empezó a (6). Era un (7) de nuestro vecino: «¿Buscan algo? Su llave está (8) del coche desde esta mañana». Mi esposa me miró, yo la miré, y los dos nos reímos durante cinco minutos. Ahora el vecino tiene una copia, por si acaso.",
+    "answers": [
+      "Anoche",
+      "viaje",
+      "llave",
+      "pelear",
+      "ropa",
+      "sonar",
+      "mensaje",
+      "encima"
+    ],
+    "en": "After a trip, a couple argue over who lost the house key, until a neighbour texts them that it has been sitting on top of their car all day."
+  }
+}

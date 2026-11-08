@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "El restaurante está ____ los lunes.",
+      "answer": "cerrado",
+      "base": "cerrado",
+      "en": "The restaurant is closed on Mondays."
+    },
+    {
+      "es": "Mi ____ Carlos viene a cenar el sábado.",
+      "answer": "primo",
+      "base": "un primo",
+      "en": "My cousin Carlos is coming to dinner on Saturday."
+    },
+    {
+      "es": "Tienes que ____ el contrato antes del viernes.",
+      "answer": "firmar",
+      "base": "firmar",
+      "en": "You have to sign the contract before Friday."
+    },
+    {
+      "es": "¿Me puedes ____ el correo antes de enviarlo?",
+      "answer": "revisar",
+      "base": "revisar",
+      "en": "Can you check the email before I send it?"
+    },
+    {
+      "es": "Esta semana tengo el ____ de noche en el hospital.",
+      "answer": "turno",
+      "base": "un turno",
+      "en": "This week I have the night shift at the hospital."
+    },
+    {
+      "es": "La nevera está ____; hay que ir al supermercado.",
+      "answer": "vacía",
+      "base": "vacío",
+      "en": "The fridge is empty; we need to go to the supermarket."
+    },
+    {
+      "es": "¿Por qué no me ____ cuando te llamé ayer?",
+      "answer": "contestaste",
+      "base": "contestar",
+      "en": "Why didn't you answer when I called you yesterday?"
+    },
+    {
+      "es": "Perdí el ____ de las siete y llegué tarde.",
+      "answer": "autobús",
+      "base": "un autobús",
+      "en": "I missed the seven o'clock bus and arrived late."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The kitchen is very small.",
+      "es": "La cocina es muy pequeña."
+    },
+    {
+      "en": "Obviously, I need a bigger size.",
+      "es": "Obviamente, necesito un tamaño más grande."
+    },
+    {
+      "en": "Please don't shout, the baby is sleeping.",
+      "es": "Por favor, no grites, el bebé está durmiendo."
+    },
+    {
+      "en": "We're going to the beach on Sunday.",
+      "es": "Vamos a la playa el domingo."
+    }
+  ],
+  "story": {
+    "title": "Un domingo sin pan",
+    "text": "Anoche tuve una (1): no había (2) en toda la ciudad. Por la mañana fui a la panadería de siempre, pero estaba (3). En la puerta había un cartel: «Hoy no abrimos por la (4) de anoche». Volví a casa muy (5) y con el estómago (6). Mi mujer me esperaba en la (7) con una sonrisa extraña. «¿Puedes (8) qué hice ayer por la tarde?», me preguntó. Abrió el horno y sacó un pan enorme, todavía caliente. Resulta que mi sueño no era tan malo, sino un aviso. Desde ese día, ella hace el pan y yo lavo los platos.",
+    "answers": [
+      "pesadilla",
+      "pan",
+      "cerrada",
+      "tormenta",
+      "enojado",
+      "vacío",
+      "cocina",
+      "adivinar"
+    ],
+    "en": "After dreaming of a world without bread and finding his bakery closed, a hungry, grumpy man comes home to discover his wife has baked a huge loaf herself."
+  }
+}

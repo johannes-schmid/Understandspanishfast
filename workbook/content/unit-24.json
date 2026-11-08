@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Hay mucho ____ en el centro los lunes por la mañana.",
+      "answer": "tráfico",
+      "base": "tráfico",
+      "en": "There's a lot of traffic downtown on Monday mornings."
+    },
+    {
+      "es": "¿Puedes ____ a los niños del colegio hoy?",
+      "answer": "recoger",
+      "base": "recoger",
+      "en": "Can you pick the kids up from school today?"
+    },
+    {
+      "es": "Lo van a ____ por llegar siempre tarde.",
+      "answer": "despedir",
+      "base": "despedir",
+      "en": "They're going to fire him for always being late."
+    },
+    {
+      "es": "Este libro es muy ____ para aprender español.",
+      "answer": "útil",
+      "base": "útil",
+      "en": "This book is very useful for learning Spanish."
+    },
+    {
+      "es": "Perdí mi ____ con todas las tarjetas en el tren.",
+      "answer": "cartera",
+      "base": "cartera",
+      "en": "I lost my wallet with all my cards on the train."
+    },
+    {
+      "es": "Había una ____ muy larga en el supermercado.",
+      "answer": "cola",
+      "base": "una cola",
+      "en": "There was a very long line at the supermarket."
+    },
+    {
+      "es": "La farmacia está ____ del banco.",
+      "answer": "enfrente",
+      "base": "enfrente",
+      "en": "The pharmacy is across from the bank."
+    },
+    {
+      "es": "Me duele el ____ derecho después de nadar.",
+      "answer": "hombro",
+      "base": "un hombro",
+      "en": "My right shoulder hurts after swimming."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The concert was amazing.",
+      "es": "El concierto fue impresionante."
+    },
+    {
+      "en": "I'm going to visit my sister on Saturday.",
+      "es": "Voy a visitar a mi hermana el sábado."
+    },
+    {
+      "en": "The meeting was really boring.",
+      "es": "La reunión fue muy aburrida."
+    },
+    {
+      "en": "We need to plan the trip.",
+      "es": "Necesitamos planear el viaje."
+    }
+  ],
+  "story": {
+    "title": "La sorpresa de cumpleaños",
+    "text": "El (1) por la mañana, Laura quiso (2) a su marido, Andrés, por su cumpleaños. Fue (3) al mercado y compró vino y un (4) francés carísimo. Luego preparó la mesa en el (5) y encendió una (6) en la tarta. Cuando Andrés entró, miró la tarta con una (7) muy extraña. «¿Qué pasa?», preguntó Laura. Él revisó el calendario en su (8) y sonrió: «Mi amor, me encanta, pero mi cumpleaños es el mes que viene». Al final, decidieron celebrarlo dos veces.",
+    "answers": [
+      "domingo",
+      "sorprender",
+      "deprisa",
+      "queso",
+      "salón",
+      "vela",
+      "mirada",
+      "celular"
+    ],
+    "en": "Laura prepares a surprise birthday celebration for her husband on Sunday, only to discover his birthday is actually next month, so they decide to celebrate twice."
+  }
+}

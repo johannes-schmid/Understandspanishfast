@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -160,9 +160,9 @@ export default function PostBooks() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             Best beginner book: <strong>Madrigal's Magic Key to Spanish</strong>. Best vocabulary reference: <strong>Frequency Dictionary of Spanish</strong> (Mark Davies). First reader: <strong>Pobre Ana</strong>. First native novel at B2: <strong>El alquimista</strong>. The most effective stack is a grammar book + frequency dictionary + Anki for spaced repetition review.
           </p>
         </div>

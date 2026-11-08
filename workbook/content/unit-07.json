@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi ____ trabaja en un banco en Madrid.",
+      "answer": "tío",
+      "base": "tío",
+      "en": "My uncle works at a bank in Madrid."
+    },
+    {
+      "es": "¿____ empieza tu nuevo trabajo?",
+      "answer": "Cuándo",
+      "base": "cuándo",
+      "en": "When does your new job start?"
+    },
+    {
+      "es": "Quiero ____ una casa cerca del mar.",
+      "answer": "comprar",
+      "base": "comprar",
+      "en": "I want to buy a house near the sea."
+    },
+    {
+      "es": "Hace frío ____, lleva una chaqueta.",
+      "answer": "afuera",
+      "base": "afuera",
+      "en": "It's cold outside, take a jacket."
+    },
+    {
+      "es": "Vamos a ____ un poco después de comer.",
+      "answer": "caminar",
+      "base": "caminar",
+      "en": "Let's walk a bit after lunch."
+    },
+    {
+      "es": "La reunión va a ____ a las diez.",
+      "answer": "comenzar",
+      "base": "comenzar",
+      "en": "The meeting is going to start at ten."
+    },
+    {
+      "es": "Me ____ la comida de mi abuela.",
+      "answer": "encanta",
+      "base": "encantar",
+      "en": "I love my grandmother's cooking."
+    },
+    {
+      "es": "Mi hermano es ____ y ya tiene su propio negocio.",
+      "answer": "joven",
+      "base": "joven",
+      "en": "My brother is young and already has his own business."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The next bus arrives at five.",
+      "es": "El próximo autobús llega a las cinco."
+    },
+    {
+      "en": "I promise to call you tomorrow.",
+      "es": "Te prometo llamarte mañana."
+    },
+    {
+      "en": "Although it's expensive, I want to buy this book.",
+      "es": "Aunque es caro, quiero comprar este libro."
+    },
+    {
+      "en": "My sister got married last year.",
+      "es": "Mi hermana se casó el año pasado."
+    }
+  ],
+  "story": {
+    "title": "La fiesta sorpresa",
+    "text": "El sábado fue el cumpleaños de mi (1) Laura. Ella cumplía cuarenta años y yo quería hacer algo especial. Organicé una (2) sorpresa en mi casa e invité a treinta amigos. Mi madre preparó mucha (3): tortillas, ensaladas y un pastel (4) con chocolate. Todos esperamos en silencio, muy (5), con las luces apagadas. A las nueve, escuchamos la puerta. Encendimos las luces y gritamos: «¡Sorpresa!». Pero no era Laura. Era el vecino, que venía a pedir (6) porque su perro estaba en la calle. En (7), Laura estaba en otra fiesta... ¡la suya! Su marido también le preparó una. Ahora tenemos que celebrar dos veces. ¡El (8) año, hablamos antes!",
+    "answers": [
+      "hermana",
+      "fiesta",
+      "comida",
+      "blanco",
+      "tranquilos",
+      "ayuda",
+      "realidad",
+      "próximo"
+    ],
+    "en": "A woman throws a surprise party for her sister's fortieth birthday, but the neighbour walks in instead, because the sister is at another surprise party her husband organised."
+  }
+}

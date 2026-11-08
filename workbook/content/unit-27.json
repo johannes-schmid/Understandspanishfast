@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Me duele mucho la ____ y no puedo hablar.",
+      "answer": "garganta",
+      "base": "garganta",
+      "en": "My throat really hurts and I can't talk."
+    },
+    {
+      "es": "¿Quieres ____ una pizza conmigo esta noche?",
+      "answer": "compartir",
+      "base": "compartir",
+      "en": "Do you want to share a pizza with me tonight?"
+    },
+    {
+      "es": "Mi madre ____ a sus nietos.",
+      "answer": "adora",
+      "base": "adorar",
+      "en": "My mother adores her grandchildren."
+    },
+    {
+      "es": "Pídele al camarero un ____ de agua fría.",
+      "answer": "vaso",
+      "base": "un vaso",
+      "en": "Ask the waiter for a glass of cold water."
+    },
+    {
+      "es": "A mi camisa le falta un ____.",
+      "answer": "botón",
+      "base": "un botón",
+      "en": "My shirt is missing a button."
+    },
+    {
+      "es": "Todavía tengo una ____ con el banco.",
+      "answer": "deuda",
+      "base": "una deuda",
+      "en": "I still have a debt with the bank."
+    },
+    {
+      "es": "Hace frío; ponte la ____ antes de salir.",
+      "answer": "chaqueta",
+      "base": "una chaqueta",
+      "en": "It's cold; put on your jacket before you go out."
+    },
+    {
+      "es": "La receta es muy ____: solo necesitas tres ingredientes.",
+      "answer": "sencilla",
+      "base": "sencillo",
+      "en": "The recipe is very simple: you only need three ingredients."
+    }
+  ],
+  "translate": [
+    {
+      "en": "My sister has an interview with the mayor.",
+      "es": "Mi hermana tiene una entrevista con el alcalde."
+    },
+    {
+      "en": "Lunch is ready.",
+      "es": "El almuerzo está listo."
+    },
+    {
+      "en": "Can you repeat the question, please?",
+      "es": "¿Puedes repetir la pregunta, por favor?"
+    },
+    {
+      "en": "I don't know how to swim.",
+      "es": "No sé nadar."
+    }
+  ],
+  "story": {
+    "title": "La entrevista",
+    "text": "El lunes Marta tenía una (1) importante. Se puso su mejor (2) y salió temprano, pero el metro estaba cerrado por obras y tuvo que buscar otra (3). Llegó corriendo, con la (4) seca, y pidió un (5) de agua. En la sala había una (6) de diez candidatos nerviosos. Para relajarse, Marta contó un (7) malo sobre jefes. Nadie se rió, excepto un señor mayor con una gran (8). Más tarde descubrió que ese señor era el director de la empresa. Le dieron el trabajo. Ahora él le cuenta chistes todos los días.",
+    "answers": [
+      "entrevista",
+      "chaqueta",
+      "ruta",
+      "garganta",
+      "vaso",
+      "fila",
+      "chiste",
+      "sonrisa"
+    ],
+    "en": "Marta arrives late and nervous to a job interview, tells a bad joke about bosses that only the company director laughs at, and gets the job."
+  }
+}

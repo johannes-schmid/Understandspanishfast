@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Me puedes ____ las fotos de la boda?",
+      "answer": "enviar",
+      "base": "enviar",
+      "en": "Can you send me the photos from the wedding?"
+    },
+    {
+      "es": "Mis padres viven bastante ____ de la ciudad.",
+      "answer": "lejos",
+      "base": "lejos",
+      "en": "My parents live quite far from the city."
+    },
+    {
+      "es": "Yo no fumo y mi esposa ____.",
+      "answer": "tampoco",
+      "base": "tampoco",
+      "en": "I don't smoke, and neither does my wife."
+    },
+    {
+      "es": "¿Tienes tiempo ____ este fin de semana?",
+      "answer": "libre",
+      "base": "libre",
+      "en": "Do you have any free time this weekend?"
+    },
+    {
+      "es": "Ayer me ____ la cartera en el metro.",
+      "answer": "robaron",
+      "base": "robar",
+      "en": "Yesterday someone stole my wallet on the metro."
+    },
+    {
+      "es": "¿A qué hora ____ el banco los sábados?",
+      "answer": "cierra",
+      "base": "cerrar",
+      "en": "What time does the bank close on Saturdays?"
+    },
+    {
+      "es": "Mi hijo ____ las verduras, pero se las come.",
+      "answer": "odia",
+      "base": "odiar",
+      "en": "My son hates vegetables, but he eats them."
+    },
+    {
+      "es": "Esta semana tengo ____ trabajo en la oficina.",
+      "answer": "bastante",
+      "base": "bastante",
+      "en": "I have quite a lot of work at the office this week."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The bed in the hotel was very comfortable.",
+      "es": "La cama del hotel era muy cómoda."
+    },
+    {
+      "en": "Where are you going on vacation?",
+      "es": "¿Adónde vas de vacaciones?"
+    },
+    {
+      "en": "My older brother lives in another country.",
+      "es": "Mi hermano mayor vive en otro país."
+    },
+    {
+      "en": "Sorry, I'm very sleepy today.",
+      "es": "Perdón, hoy tengo mucho sueño."
+    }
+  ],
+  "story": {
+    "title": "El vecino famoso",
+    "text": "Mi vecino Tomás es muy (1) y siempre lleva gafas de sol. Es un poco (2): casi nunca habla con nadie. Un día leí una (3) en internet: ¡un actor famoso vivía en mi (4)! En la (5) aparecía un hombre igual a Tomás. Esa noche fui al cine a ver su última (6). Al día siguiente, Tomás me preguntó: «¿Me ayudas a (7) esta caja? Pesa mucho». Mientras subíamos, le pregunté si era el actor. Se rió: «No, soy su doble. Él hace las escenas fáciles. Yo soy el que salta del (8)».",
+    "answers": [
+      "alto",
+      "raro",
+      "noticia",
+      "calle",
+      "foto",
+      "película",
+      "subir",
+      "avión"
+    ],
+    "en": "The narrator suspects their quiet neighbour is a famous actor, but he turns out to be the actor's stunt double who does the dangerous jumps from planes."
+  }
+}

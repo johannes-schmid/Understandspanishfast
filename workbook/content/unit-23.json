@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Puedes ____ la televisión antes de dormir?",
+      "answer": "apagar",
+      "base": "apagar",
+      "en": "Can you turn off the TV before going to sleep?"
+    },
+    {
+      "es": "Mi madre me ____ un reloj por mi cumpleaños.",
+      "answer": "regaló",
+      "base": "regalar",
+      "en": "My mother gave me a watch for my birthday."
+    },
+    {
+      "es": "Los sábados compramos fruta fresca en el ____.",
+      "answer": "mercado",
+      "base": "un mercado",
+      "en": "On Saturdays we buy fresh fruit at the market."
+    },
+    {
+      "es": "No tengo ____, ¿puedo pagar con tarjeta?",
+      "answer": "efectivo",
+      "base": "efectivo",
+      "en": "I don't have any cash. Can I pay by card?"
+    },
+    {
+      "es": "Después de comer tanto, me duele el ____.",
+      "answer": "estómago",
+      "base": "un estómago",
+      "en": "After eating so much, my stomach hurts."
+    },
+    {
+      "es": "Mi hermano está buscando ____ desde hace seis meses.",
+      "answer": "empleo",
+      "base": "un empleo",
+      "en": "My brother has been looking for a job for six months."
+    },
+    {
+      "es": "¿Quieres dar un ____ por la playa esta tarde?",
+      "answer": "paseo",
+      "base": "un paseo",
+      "en": "Do you want to go for a walk on the beach this afternoon?"
+    },
+    {
+      "es": "Mañana tengo un ____ de inglés y no he estudiado.",
+      "answer": "examen",
+      "base": "un examen",
+      "en": "Tomorrow I have an English exam and I haven't studied."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I often cook chicken on Mondays.",
+      "es": "A menudo cocino pollo los lunes."
+    },
+    {
+      "en": "This sofa is very comfortable.",
+      "es": "Este sofá es muy cómodo."
+    },
+    {
+      "en": "Are you willing to work on Saturday?",
+      "es": "¿Estás dispuesto a trabajar el sábado?"
+    },
+    {
+      "en": "We need a break.",
+      "es": "Necesitamos un descanso."
+    }
+  ],
+  "story": {
+    "title": "Un lunes difícil",
+    "text": "El (1) por la mañana, Laura salió hacia la casa de campo de sus padres. En la (2), una (3) del coche se pinchó y tuvo que esperar dos horas. Cuando por fin llegó, quería (4) en el (5) con un café. Pero su padre gritó: «¡Hay una (6) debajo de la mesa!». Laura saltó, tiró la mesa y una gran (7) de (8) cayó sobre su vestido. Al final, la «serpiente» era la cadena vieja del perro. Su padre se rio: «Necesito gafas nuevas». Laura decidió volver a la ciudad: allí, por lo menos, solo hay tráfico.",
+    "answers": [
+      "lunes",
+      "carretera",
+      "rueda",
+      "relajarse",
+      "jardín",
+      "serpiente",
+      "cantidad",
+      "azúcar"
+    ],
+    "en": "After a flat tyre on the way to her parents' country house, Laura's relaxing coffee in the garden is ruined when her father mistakes the dog's old chain for a snake."
+  }
+}

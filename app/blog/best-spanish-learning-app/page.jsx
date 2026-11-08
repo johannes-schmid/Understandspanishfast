@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -181,9 +181,9 @@ export default function PostBestApp() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             The <strong>best Spanish learning app</strong> depends on your goal: <strong>Duolingo</strong> for habit-building, <strong>Anki</strong> for vocabulary, <strong>Pimsleur</strong> for speaking and audio, <strong>Babbel</strong> for structured beginner lessons, and <strong>Language Transfer</strong> for the best free course. No single app gets you to fluency — but the right combination gets you there faster.
           </p>
         </div>
@@ -220,12 +220,12 @@ export default function PostBestApp() {
 
         {APPS.map((app, i) => (
           <div key={app.name} style={{
-            background: i === 0 ? 'var(--deep-mind)' : 'var(--fog)',
+            background: i === 0 ? 'var(--hl)' : 'var(--fog)',
             borderRadius: '16px', padding: '24px', margin: '16px 0',
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
               <div>
-                <span style={{ fontWeight: 800, fontSize: '18px', color: i === 0 ? '#fff' : 'var(--deep-mind)' }}>{app.name}</span>
+                <span style={{ fontWeight: 800, fontSize: '18px', color: i === 0 ? 'var(--deep-mind)' : 'var(--deep-mind)' }}>{app.name}</span>
                 <span style={{
                   marginLeft: '12px', fontSize: '11px', fontWeight: 700, letterSpacing: '.06em',
                   textTransform: 'uppercase', color: i === 0 ? 'var(--mauve)' : 'var(--synapse)',
@@ -233,19 +233,19 @@ export default function PostBestApp() {
               </div>
               <span style={{
                 fontSize: '11px', fontWeight: 700, padding: '3px 10px', borderRadius: '99px',
-                background: app.free ? 'rgba(100,200,100,0.15)' : 'rgba(200,100,100,0.10)',
-                color: app.free ? '#2d7a2d' : '#7a3030',
+                background: app.free ? 'var(--ok-bg)' : 'var(--chip-bg)',
+                color: app.free ? 'var(--ok-ink)' : 'var(--cortex)',
               }}>{app.free ? 'Free' : 'Paid'}</span>
             </div>
             <p style={{ fontSize: '14px', color: i === 0 ? 'var(--cortex)' : 'var(--cortex)', lineHeight: 1.6, margin: '0 0 12px' }}>{app.summary}</p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '12px' }}>
-              <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: '8px', padding: '10px 12px' }}>
+              <div style={{ background: 'var(--paper)', borderRadius: '8px', padding: '10px 12px' }}>
                 <div style={{ fontWeight: 700, color: i === 0 ? 'var(--mauve)' : 'var(--synapse)', marginBottom: '4px' }}>Best for</div>
-                <div style={{ color: i === 0 ? '#ccc' : 'var(--cortex)', lineHeight: 1.5 }}>{app.best}</div>
+                <div style={{ color: i === 0 ? 'var(--cortex)' : 'var(--cortex)', lineHeight: 1.5 }}>{app.best}</div>
               </div>
-              <div style={{ background: 'rgba(255,255,255,0.06)', borderRadius: '8px', padding: '10px 12px' }}>
-                <div style={{ fontWeight: 700, color: '#b05a5a', marginBottom: '4px' }}>Weakness</div>
-                <div style={{ color: i === 0 ? '#ccc' : 'var(--cortex)', lineHeight: 1.5 }}>{app.weakness}</div>
+              <div style={{ background: 'var(--paper)', borderRadius: '8px', padding: '10px 12px' }}>
+                <div style={{ fontWeight: 700, color: 'var(--coral-ink)', marginBottom: '4px' }}>Weakness</div>
+                <div style={{ color: i === 0 ? 'var(--cortex)' : 'var(--cortex)', lineHeight: 1.5 }}>{app.weakness}</div>
               </div>
             </div>
           </div>

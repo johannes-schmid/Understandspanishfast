@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi novio me ____ en la mejilla antes de irse al trabajo.",
+      "answer": "besó",
+      "base": "besar",
+      "en": "My boyfriend kissed me on the cheek before leaving for work."
+    },
+    {
+      "es": "El ____ no funciona, así que subimos por la escalera.",
+      "answer": "ascensor",
+      "base": "ascensor",
+      "en": "The elevator isn't working, so we took the stairs."
+    },
+    {
+      "es": "Esta maleta es demasiado ____ para llevarla sola.",
+      "answer": "pesada",
+      "base": "pesado",
+      "en": "This suitcase is too heavy for me to carry alone."
+    },
+    {
+      "es": "¿Te ____ en el color de sus ojos?",
+      "answer": "fijaste",
+      "base": "fijarse",
+      "en": "Did you notice the color of his eyes?"
+    },
+    {
+      "es": "Mi vecino paga muchos ____ por su casa.",
+      "answer": "impuestos",
+      "base": "impuesto",
+      "en": "My neighbor pays a lot of taxes on his house."
+    },
+    {
+      "es": "Nos ____ mucho en la boda de mi prima.",
+      "answer": "divertimos",
+      "base": "divertirse",
+      "en": "We had a lot of fun at my cousin's wedding."
+    },
+    {
+      "es": "Los domingos salgo a ____ con mi perro por el parque.",
+      "answer": "pasear",
+      "base": "pasear",
+      "en": "On Sundays I go for a walk with my dog in the park."
+    },
+    {
+      "es": "Este jugo tiene un ____ muy raro.",
+      "answer": "sabor",
+      "base": "sabor",
+      "en": "This juice has a very strange taste."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I go to the gym after work.",
+      "es": "Voy al gimnasio después del trabajo."
+    },
+    {
+      "en": "Don't hide the truth from me.",
+      "es": "No me ocultes la verdad."
+    },
+    {
+      "en": "The previous apartment had two bedrooms.",
+      "es": "El apartamento anterior tenía dos dormitorios."
+    },
+    {
+      "en": "My boss is annoyed with me today.",
+      "es": "Mi jefe está molesto conmigo hoy."
+    }
+  ],
+  "story": {
+    "title": "Un gran pescador",
+    "text": "Cada sábado, mi marido se va a (1) al lago con sus amigos. Dice que es muy (2), pero siempre vuelve con las manos vacías y solo una (3) de cerveza. Sus amigos lo llaman (4). Este sábado, por fin, llegó a casa con un pez enorme. «¡Mira mi (5) por tanta paciencia!», gritó. Yo me (6) en el pez: todavía tenía la etiqueta del supermercado. No dije nada. Él quería (7) a todos, y yo no iba a arruinar su gran día. Ahora la foto del pez está en un (8) en el salón.",
+    "answers": [
+      "pescar",
+      "emocionante",
+      "lata",
+      "perdedor",
+      "recompensa",
+      "fijé",
+      "engañar",
+      "marco"
+    ],
+    "en": "A man who never catches anything finally comes home with a huge fish, but his wife notices the supermarket label and kindly says nothing, so the photo now hangs framed in the living room."
+  }
+}

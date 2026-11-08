@@ -6,36 +6,37 @@ export const metadata = {
 
 export default function Privacy() {
   return (
-    <main className="max-w-2xl mx-auto px-6 py-20">
-      <h1 className="text-3xl font-bold mb-8">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 mb-8">Last updated: May 2026</p>
+    <main className="cl cl-home">
+      <div className="wrap ct-legal">
+        <header className="ct-legal-head">
+          <h1 className="post-title">Privacy Policy</h1>
+          <p className="post-meta">Last updated: November 2026</p>
+        </header>
 
-      <section className="space-y-6 text-gray-700 leading-relaxed">
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">What we collect</h2>
-          <p>When you sign up for early access, we collect your email address. We use Google Analytics to understand how visitors use the site (pages viewed, time on site). No personally identifiable information is shared with analytics.</p>
-        </div>
+        <section className="card post-sheet">
+          <div className="post-body">
+            <h2>What we collect</h2>
+            <p>There are no accounts on this site, so we don&rsquo;t store a profile, password or payment details. We collect three things:</p>
+            <ul>
+              <li><b>Your email address</b>, only if you enter it in the free PDF download form.</li>
+              <li><b>Flashcard progress</b>, which is saved in your own browser (localStorage) so the free sample remembers where you left off. It never leaves your device and you can clear it by clearing your browser data.</li>
+              <li><b>Usage analytics.</b> We use Google Analytics to understand how visitors use the site (pages viewed, time on site) and Microsoft Clarity to see, in aggregate, how people interact with pages. No personally identifiable information is shared with these tools.</li>
+            </ul>
 
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">How we use your data</h2>
-          <p>Your email is used only to send product updates and early access invitations. We do not sell or share your email with third parties.</p>
-        </div>
+            <h2>How we use your data</h2>
+            <p>If you request the free PDF, your email address is stored with our email provider, Resend, and used to send you the PDF and occasional updates about Most Common Spanish. We do not sell or share your email with third parties.</p>
 
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Cookies</h2>
-          <p>We use cookies for analytics (Google Analytics). You can disable cookies in your browser settings at any time.</p>
-        </div>
+            <h2>Cookies</h2>
+            <p>We use cookies for analytics (Google Analytics and Microsoft Clarity). You can disable cookies in your browser settings at any time.</p>
 
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Your rights</h2>
-          <p>You can request deletion of your data at any time by emailing us at <a href="mailto:hello@mostcommonspanish.com" className="underline">hello@mostcommonspanish.com</a>.</p>
-        </div>
+            <h2>Your rights</h2>
+            <p>You can request deletion of your data at any time by emailing us at <a href="mailto:hello@mostcommonspanish.com">hello@mostcommonspanish.com</a>.</p>
 
-        <div>
-          <h2 className="text-xl font-semibold text-gray-900 mb-2">Contact</h2>
-          <p>Questions? Email <a href="mailto:hello@mostcommonspanish.com" className="underline">hello@mostcommonspanish.com</a>.</p>
-        </div>
-      </section>
+            <h2>Contact</h2>
+            <p>Questions? Email <a href="mailto:hello@mostcommonspanish.com">hello@mostcommonspanish.com</a>.</p>
+          </div>
+        </section>
+      </div>
     </main>
   )
 }

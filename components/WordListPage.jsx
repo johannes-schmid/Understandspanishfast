@@ -3,16 +3,94 @@ import PdfDownloadForm from '@/components/PdfDownloadForm'
 
 const BASE = 'https://mostcommonspanish.com'
 
-function Stat({ label, value, sub, color = 'var(--deep-mind)' }) {
+const POS_LABEL = { 'v.': 'verb', 'n.': 'noun', 'adj.': 'adjective', 'adv.': 'adverb', 'prep.': 'preposition', 'conj.': 'conjunction', 'pron.': 'pronoun', 'det.': 'determiner', 'art.': 'article', 'interj.': 'interjection', 'num.': 'number' }
+
+export const COVERAGE_BARS = [
+  { n: 100, label: '100', pct: '50%', w: 50 },
+  { n: 500, label: '500', pct: '67%', w: 67 },
+  { n: 1000, label: '1,000', pct: '74%', w: 74 },
+  { n: 1500, label: '1,500', pct: '80%', w: 80 },
+]
+
+export function Arrow() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+}
+
+export function CoverageBars({ level }) {
   return (
-    <div style={{
-      background: 'var(--white-matter)', borderRadius: '16px',
-      border: '0.5px solid rgba(28,26,58,0.09)', padding: '24px 28px',
-    }}>
-      <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--cortex)', marginBottom: '8px' }}>{label}</div>
-      <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '38px', letterSpacing: '-1px', lineHeight: 1, color, marginBottom: sub ? '4px' : 0 }}>{value}</div>
-      {sub && <div style={{ fontSize: '12px', fontWeight: 300, color: 'var(--cortex)' }}>{sub}</div>}
+    <div className="bars" role="img" aria-label="Share of everyday Spanish covered: 100 words 50%, 500 words 67%, 1,000 words 74%, 1,500 words 80%.">
+      {COVERAGE_BARS.map((c) => (
+        <div key={c.n} className={`bar${c.n === level ? ' key' : ''}`}>
+          <span className="mono tab">{c.label}</span>
+          <div className="track"><div className="fill" style={{ width: `${c.w}%` }} /></div>
+          <span className="pct tab">{c.pct}</span>
+        </div>
+      ))}
     </div>
+  )
+}
+
+export function Crumbs({ items }) {
+  return (
+    <nav className="crumbs" aria-label="Breadcrumb">
+      {items.map((it, i) => (
+        <span key={it.label} style={{ display: 'contents' }}>
+          {i > 0 && <span className="sep" aria-hidden="true">/</span>}
+          {it.href ? <Link href={it.href}>{it.label}</Link> : <span aria-current="page">{it.label}</span>}
+        </span>
+      ))}
+    </nav>
+  )
+}
+
+export function Offline({ source }) {
+  return (
+    <div className="offline">
+      <div className="pdf-slot"><PdfDownloadForm source={source} /></div>
+      <div className="card wb">
+        <div className="cover sm" aria-hidden="true">
+          <span className="mono">MOST COMMON SPANISH</span>
+          <div className="cover-bars"><i style={{ height: '30%' }} /><i style={{ height: '50%' }} /><i style={{ height: '72%' }} /><i style={{ height: '100%' }} /></div>
+          <div className="cover-num tab">1,500</div>
+          <div className="cover-t">The Top 1,500 Workbook</div>
+        </div>
+        <div>
+          <div className="free-tag mono">PRINTABLE PDF · €5</div>
+          <h3>The Top 1,500 workbook</h3>
+          <p>All 1,500 words in ranked order, in 30 short units with exercises and an answer key. Print it and work through it with a pen.</p>
+          <div className="cta-row">
+            <Link className="btn btn-ghost btn-sm" href="/workbook">Get the workbook <Arrow /></Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export function FaqSection({ faqs, title = 'Questions and answers' }) {
+  return (
+    <section className="sec-sm">
+      <div className="sec-head"><h2>{title}</h2></div>
+      <div className="faq">
+        {faqs.map((f) => (
+          <div key={f.q} className="card faq-item"><h3>{f.q}</h3><p>{f.a}</p></div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export function Closing({ title = 'Learn these words instead of just reading them' }) {
+  return (
+    <section className="sec-sm" style={{ paddingBottom: 24 }}>
+      <div className="panel close">
+        <h2>{title}</h2>
+        <div className="cta-row">
+          <Link className="btn btn-navy" href="/study">Start for free <Arrow /></Link>
+          <Link className="btn btn-ghost" href="/level-test">Take the level test</Link>
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -21,11 +99,11 @@ function Stat({ label, value, sub, color = 'var(--deep-mind)' }) {
  * with example sentences, coverage stats, sibling cross-links, FAQ, and JSON-LD.
  */
 export default function WordListPage({
-  eyebrow = 'Frequency list',
   title,
   intro,
   words,
   coverage,
+  level,
   slug,
   breadcrumbName,
   schemaName,
@@ -68,143 +146,86 @@ export default function WordListPage({
   } : null
 
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
+    <div className="cl cl-home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
-      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '120px 56px 80px' }}>
+      <div className="wrap pg">
+        <Crumbs items={[{ href: '/', label: 'Home' }, { href: '/words', label: 'Spanish Words' }, { label: breadcrumbName || title }]} />
 
-        {/* Breadcrumb */}
-        <nav style={{ fontSize: '13px', color: 'var(--cortex)', marginBottom: '28px' }}>
-          <Link href="/" style={{ color: 'var(--cortex)' }}>Home</Link>
-          {' / '}
-          <Link href="/words" style={{ color: 'var(--cortex)' }}>Spanish Words</Link>
-          {' / '}
-          <span style={{ color: 'var(--deep-mind)' }}>{breadcrumbName || title}</span>
-        </nav>
-
-        {/* Header */}
-        <div className="s-eye">{eyebrow}</div>
-        <h1 style={{
-          fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-          fontSize: 'clamp(38px, 5vw, 58px)', letterSpacing: '-2px',
-          lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '16px',
-        }}>{title}</h1>
-        <div style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '640px', lineHeight: 1.7, marginBottom: '36px' }}>
-          {intro}
-        </div>
-
-        {/* Stats */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '14px', marginBottom: '32px' }}>
-          <Stat label="Words on this list" value={words.length.toLocaleString()} />
-          <Stat label="Comprehension coverage" value={coverage} sub="of everyday spoken Spanish" color="var(--synapse)" />
-        </div>
-
-        {/* Lead magnet */}
-        <div style={{ marginBottom: '28px' }}>
-          <PdfDownloadForm source={slug} />
-        </div>
-
-        {/* Sibling cross-links */}
-        {siblings.length > 0 && (
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '28px' }}>
-            {siblings.map((s) => (
-              <Link key={s.href} href={s.href} style={{
-                padding: '7px 16px', borderRadius: '99px',
-                border: '0.5px solid rgba(28,26,58,0.14)',
-                background: 'var(--white-matter)', color: 'var(--deep-mind)',
-                fontSize: '13px', fontWeight: 500, textDecoration: 'none',
-              }}>{s.label}</Link>
-            ))}
+        <div className="pg-head">
+          <div>
+            <h1 className="pg-h1">{title}</h1>
+            <p className="lead">{intro}</p>
+            <div className="cta-row">
+              <Link className="btn btn-navy" href="/study">Start for free <Arrow /></Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+            </div>
           </div>
+          <aside className="card facts">
+            <div className="facts-top">
+              <div>
+                <div className="facts-num tab">{coverage}</div>
+                <div className="facts-lbl">{level ? 'of everyday spoken Spanish' : 'ranked by frequency'}</div>
+              </div>
+              <span className="mono tab">{words.length.toLocaleString('en')} WORDS</span>
+            </div>
+            <CoverageBars level={level} />
+            <p className="facts-note">Share of words in everyday spoken Spanish you’ll recognise after learning the top N.</p>
+          </aside>
+        </div>
+
+        {siblings.length > 0 && (
+          <nav className="sibs" aria-label="Related word lists">
+            {siblings.map((s) => <Link key={s.href} href={s.href}>{s.label}</Link>)}
+          </nav>
         )}
 
-        {/* Table */}
-        <div style={{
-          background: 'var(--white-matter)', borderRadius: '16px',
-          border: '0.5px solid rgba(28,26,58,0.09)', overflow: 'hidden', marginBottom: '48px',
-        }}>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
-              <thead>
-                <tr style={{ background: 'var(--cream-dark)', borderBottom: '1px solid rgba(28,26,58,0.08)' }}>
-                  {['#', 'Spanish', 'English', showExamples ? 'Example' : null].filter(Boolean).map((h, i) => (
-                    <th key={i} style={{
-                      padding: '10px 16px', fontSize: '11px', fontWeight: 500,
-                      letterSpacing: '.08em', textTransform: 'uppercase', color: 'var(--cortex)',
-                      width: i === 0 ? '56px' : undefined,
-                    }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {words.map((w) => (
-                  <tr key={w.rank} style={{ borderTop: '0.5px solid rgba(28,26,58,0.06)' }}>
-                    <td style={{ padding: '12px 16px', fontSize: '13px', color: 'var(--cortex)', fontVariantNumeric: 'tabular-nums' }}>{w.rank}</td>
-                    <td style={{ padding: '12px 16px', fontWeight: 600, color: 'var(--deep-mind)', fontSize: '16px' }}>{w.word}</td>
-                    <td style={{ padding: '12px 16px', fontSize: '14px', fontWeight: 300, color: 'var(--cortex)' }}>
-                      {Array.isArray(w.meanings) ? w.meanings.join(' · ') : w.meanings}
-                    </td>
+        <div className="card list-card wl">
+          <div className="list-bar">
+            <span className="wl-count tab">{words.length.toLocaleString('en')} words, most frequent first</span>
+            <Link className="link" href="/words/most-common-spanish-words">Search and mark words as learned <Arrow /></Link>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th><th>Word</th><th>Type</th><th>Meaning</th>
+                {showExamples && <th>Example</th>}
+              </tr>
+            </thead>
+            <tbody>
+              {words.map((w) => {
+                const meanings = Array.isArray(w.meanings) ? w.meanings : [w.meanings]
+                return (
+                  <tr key={w.rank}>
+                    <td className="rk tab">#{w.rank}</td>
+                    <td className="w">{w.word}<span className="w-sub">{meanings[0]}</span></td>
+                    <td className="pos">{POS_LABEL[w.pos] || w.pos}</td>
+                    <td className="mn">{meanings.slice(0, 3).join(', ')}</td>
                     {showExamples && (
-                      <td style={{ padding: '12px 16px', fontSize: '13px', fontWeight: 300, color: 'var(--cortex)' }}>
-                        {w.example_es ? (
-                          <>
-                            <span style={{ color: 'var(--deep-mind)' }}>{w.example_es}</span>
-                            {w.example_en ? <span style={{ display: 'block', opacity: 0.7 }}>{w.example_en}</span> : null}
-                          </>
-                        ) : null}
+                      <td className="ex">
+                        {w.example_es ? <><span className="es">{w.example_es}</span>{w.example_en && <small>{w.example_en}</small>}</> : null}
                       </td>
                     )}
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                )
+              })}
+            </tbody>
+          </table>
         </div>
 
-        {/* FAQ */}
-        {faqs.length > 0 && (
-          <section style={{ marginBottom: '56px' }}>
-            <h2 style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
-              color: 'var(--deep-mind)', marginBottom: '20px',
-            }}>Frequently asked questions</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
-              {faqs.map((f) => (
-                <div key={f.q} style={{
-                  background: 'var(--white-matter)', borderRadius: '14px',
-                  border: '0.5px solid rgba(28,26,58,0.09)', padding: '22px 26px',
-                }}>
-                  <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--deep-mind)', marginBottom: '10px' }}>{f.q}</h3>
-                  <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7 }}>{f.a}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {/* CTA */}
-        <div style={{
-          background: 'var(--deep-mind)', borderRadius: '20px',
-          padding: '48px 44px', textAlign: 'center',
-        }}>
-          <div className="s-eye" style={{ color: 'var(--mauve)' }}>Learn these, don't just read them</div>
-          <h2 style={{
-            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-            fontSize: 'clamp(26px, 3vw, 34px)', letterSpacing: '-1px', lineHeight: 1.1,
-            color: 'var(--white-matter)', marginBottom: '12px',
-          }}>Turn this list into real comprehension.</h2>
-          <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '26px', lineHeight: 1.65, maxWidth: '460px', margin: '0 auto 26px' }}>
-            Free for your first 500 words, with spaced repetition built in. Or take the 2-minute level test to see which words you already know.
-          </p>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
-            <Link href="/study" className="btn-primary" style={{ textDecoration: 'none' }}>Start free flashcards</Link>
-            <Link href="/level-test" className="btn-ghost" style={{ color: 'var(--mauve)', textDecoration: 'none' }}>Take the level test →</Link>
+        <section className="sec-sm">
+          <div className="sec-head">
+            <h2>Take the list offline</h2>
+            <p className="lead">Get the top 1,000 as a free PDF, or work through all 1,500 words on paper with the workbook.</p>
           </div>
-        </div>
+          <Offline source={slug} />
+        </section>
 
+        {faqs.length > 0 && <FaqSection faqs={faqs} />}
+
+        <Closing />
       </div>
     </div>
   )

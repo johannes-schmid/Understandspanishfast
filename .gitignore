@@ -13,3 +13,4 @@ ds-bundle/
 .env.local
 mobile/.expo/
 /.swc
+workbook/build/

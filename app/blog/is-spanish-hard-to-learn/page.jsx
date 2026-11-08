@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -146,9 +146,9 @@ export default function PostIsSpanishHard() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             <strong>No — Spanish is not hard to learn for English speakers.</strong> The US Foreign Service Institute classifies it as Category I — the easiest tier — requiring roughly <strong>600 hours</strong> to professional proficiency, compared to 2,200 hours for Mandarin or Arabic. It has real challenges (verb conjugations, the subjunctive, grammatical gender), but the structural similarities with English give you a significant head start.
           </p>
         </div>
@@ -186,7 +186,7 @@ export default function PostIsSpanishHard() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', margin: '32px 0' }}>
           {HARD.map(({ title, body }) => (
             <div key={title} style={{ background: 'var(--fog)', borderRadius: '14px', padding: '20px', display: 'grid', gridTemplateColumns: '24px 1fr', gap: '12px', alignItems: 'start' }}>
-              <div style={{ color: '#b05a5a', fontWeight: 800, fontSize: '16px', marginTop: '2px' }}>!</div>
+              <div style={{ color: 'var(--coral-ink)', fontWeight: 800, fontSize: '16px', marginTop: '2px' }}>!</div>
               <div>
                 <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--deep-mind)', marginBottom: '6px' }}>{title}</div>
                 <div style={{ fontSize: '14px', color: 'var(--cortex)', lineHeight: 1.6 }}>{body}</div>
@@ -243,7 +243,7 @@ export default function PostIsSpanishHard() {
             { level: 'C1', time: '2–4 years', what: 'Near-native, 5,000+ words' },
           ].map(({ level, time, what }) => (
             <div key={level} style={{ background: 'var(--fog)', borderRadius: '14px', padding: '18px' }}>
-              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '28px', color: 'var(--synapse)', lineHeight: 1, marginBottom: '8px' }}>{level}</div>
+              <div style={{ fontFamily: "var(--sans)", fontWeight: 900, fontSize: '28px', color: 'var(--synapse)', lineHeight: 1, marginBottom: '8px' }}>{level}</div>
               <div style={{ fontWeight: 700, fontSize: '13px', color: 'var(--deep-mind)', marginBottom: '6px' }}>{time}</div>
               <div style={{ fontSize: '12px', color: 'var(--cortex)', lineHeight: 1.5 }}>{what}</div>
             </div>

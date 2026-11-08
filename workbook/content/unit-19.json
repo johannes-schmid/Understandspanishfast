@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "La ____ me tomó la temperatura y me dio un vaso de agua.",
+      "answer": "enfermera",
+      "base": "enfermera",
+      "en": "The nurse took my temperature and gave me a glass of water."
+    },
+    {
+      "es": "No puedo dormir con tanto ____ en la calle.",
+      "answer": "ruido",
+      "base": "ruido",
+      "en": "I can't sleep with so much noise in the street."
+    },
+    {
+      "es": "Quiero ____ tu ayuda con la mudanza.",
+      "answer": "agradecer",
+      "base": "agradecer",
+      "en": "I want to thank you for your help with the move."
+    },
+    {
+      "es": "Perdón, me ____ de número.",
+      "answer": "equivoqué",
+      "base": "equivocar",
+      "en": "Sorry, I dialed the wrong number."
+    },
+    {
+      "es": "¿Puedes ____ la botella de agua antes de salir?",
+      "answer": "llenar",
+      "base": "llenar",
+      "en": "Can you fill the water bottle before we leave?"
+    },
+    {
+      "es": "Tengo mucha ____ en mi médico.",
+      "answer": "confianza",
+      "base": "confianza",
+      "en": "I really trust my doctor."
+    },
+    {
+      "es": "Me gusta viajar, ____ en verano.",
+      "answer": "especialmente",
+      "base": "especialmente",
+      "en": "I like traveling, especially in summer."
+    },
+    {
+      "es": "Mi hermano está ____ de su vecina.",
+      "answer": "enamorado",
+      "base": "enamorado",
+      "en": "My brother is in love with his neighbor."
+    }
+  ],
+  "translate": [
+    {
+      "en": "What a shame you can't come to dinner!",
+      "es": "¡Qué lástima que no puedas venir a cenar!"
+    },
+    {
+      "en": "The kitchen is dirty again.",
+      "es": "La cocina está sucia otra vez."
+    },
+    {
+      "en": "My colleague reads a magazine every morning.",
+      "es": "Mi colega lee una revista cada mañana."
+    },
+    {
+      "en": "We definitely need more milk.",
+      "es": "Definitivamente necesitamos más leche."
+    }
+  ],
+  "story": {
+    "title": "La fiesta de la oficina",
+    "text": "El lunes, mi jefe me dio un (1) nuevo: organizar la fiesta de la oficina. Era mi (2) vez y estaba un poco (3). Mi (4) Marta me ayudó con la comida y la música. Todo iba bien, pero el día de la fiesta el pastel llegó con un dibujo muy (5) del jefe. Cuando lo abrimos, nadie hizo ningún (6). Pensé que iba a ser un (7) total. Pero el jefe miró el pastel, se rió mucho y dijo: «Es (8) perfecto. Por fin alguien me ve como soy».",
+    "answers": [
+      "proyecto",
+      "primera",
+      "asustado",
+      "colega",
+      "feo",
+      "ruido",
+      "desastre",
+      "absolutamente"
+    ],
+    "en": "An employee organizing his first office party panics when the cake arrives with an ugly drawing of the boss, but the boss loves it and laughs."
+  }
+}

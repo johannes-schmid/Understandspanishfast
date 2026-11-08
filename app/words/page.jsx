@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import PdfDownloadForm from '@/components/PdfDownloadForm'
+import { Arrow, CoverageBars, Crumbs, Offline, FaqSection, Closing } from '@/components/WordListPage'
 
 const BASE = 'https://mostcommonspanish.com'
 const URL = `${BASE}/words`
@@ -12,17 +12,17 @@ export const metadata = {
 }
 
 const CARDS = [
-  { href: '/words/most-common-spanish-words', title: '1,000 most common Spanish words', coverage: '~74–80% coverage', desc: 'The flagship interactive frequency list. Search, filter, hide translations, and mark words as learned.' },
-  { href: '/words/top-100-spanish-words', title: 'Top 100 Spanish words', coverage: '~50% coverage', desc: 'The single highest-value place to start — 100 words that make up half of everyday speech.' },
-  { href: '/words/top-500-spanish-words', title: 'Top 500 Spanish words', coverage: '~67% coverage', desc: 'Two of every three words in conversation. The point where you stop feeling lost.' },
-  { href: '/words/most-common-spanish-verbs', title: 'Most common Spanish verbs', coverage: 'Top 150 verbs', desc: 'The verbs that carry the action of most sentences — ser, estar, tener, hacer, ir and more.' },
-  { href: '/words/spanish-frequency-list', title: 'Spanish frequency list & method', coverage: 'How the data works', desc: 'The corpus behind the ranking and exactly how word counts map to comprehension.' },
+  { href: '/words/most-common-spanish-words', title: '1,000 most common Spanish words', coverage: '~74–80% COVERAGE', desc: 'The full interactive frequency list. Search, filter by word type, hide the English to test yourself, and mark words as learned.' },
+  { href: '/words/top-100-spanish-words', title: 'Top 100 Spanish words', coverage: '~50% COVERAGE', desc: 'The highest-value place to start: 100 words that make up half of everyday speech.' },
+  { href: '/words/top-500-spanish-words', title: 'Top 500 Spanish words', coverage: '~67% COVERAGE', desc: 'Two of every three words in conversation. The point where you stop feeling lost.' },
+  { href: '/words/most-common-spanish-verbs', title: 'Most common Spanish verbs', coverage: 'TOP 150 VERBS', desc: 'The verbs that carry the action of most sentences — ser, estar, tener, hacer, ir and the rest.' },
+  { href: '/words/spanish-frequency-list', title: 'Spanish frequency list and method', coverage: 'HOW THE DATA WORKS', desc: 'The corpus behind the ranking and exactly how word counts map to comprehension.' },
 ]
 
 const FAQS = [
   { q: 'What is the most efficient way to learn Spanish vocabulary?', a: 'Learn words in frequency order — most common first. Because a small set of words makes up most of everyday speech, learning by frequency means every word you study is one you will actually hear. The top 1,000 words alone cover about 74% of spoken Spanish.' },
   { q: 'How many Spanish words should I learn?', a: 'Aim for the 1,500 most common words. That covers roughly 80% of everyday spoken Spanish — the threshold where conversations and shows become followable. The first 500 already get you to about 67%.' },
-  { q: 'Are these vocabulary lists free?', a: 'Yes. Every list here is free to read, search, and use, with translations and example sentences. The free flashcards add spaced-repetition practice on the top 500 words.' },
+  { q: 'Are these vocabulary lists free?', a: 'Yes. Every list here is free to read, search and use, with translations and example sentences. You can also try the flashcards for free, or print all 1,500 words in the Top 1,500 workbook.' },
 ]
 
 const jsonLd = {
@@ -50,57 +50,56 @@ const jsonLd = {
 }
 
 export default function Page() {
+  const [main, ...rest] = CARDS
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
+    <div className="cl cl-home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '120px 40px 80px' }}>
-        <nav style={{ fontSize: '13px', color: 'var(--cortex)', marginBottom: '28px' }}>
-          <Link href="/" style={{ color: 'var(--cortex)' }}>Home</Link>{' / '}
-          <span style={{ color: 'var(--deep-mind)' }}>Spanish Words</span>
-        </nav>
+      <div className="wrap pg">
+        <Crumbs items={[{ href: '/', label: 'Home' }, { label: 'Spanish Words' }]} />
 
-        <div className="s-eye">Spanish vocabulary</div>
-        <h1 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: 'clamp(38px, 5vw, 58px)', letterSpacing: '-2px', lineHeight: 1.02, color: 'var(--deep-mind)', marginBottom: '20px' }}>
-          Learn Spanish vocabulary<br />in the right order.
-        </h1>
-        <p style={{ fontSize: '18px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, maxWidth: '620px', marginBottom: '44px' }}>
-          Every list here is ranked by how often words actually appear in spoken Spanish — the most
-          efficient possible order to learn. Start at the top and your comprehension rises as fast as
-          it can per word learned.
-        </p>
+        <div className="pg-head solo">
+          <div>
+            <h1 className="pg-h1">Learn Spanish vocabulary <span className="soft">in the right order</span></h1>
+            <p className="lead">Every list here is ranked by how often words actually appear in spoken Spanish. Start at the top and your comprehension rises as fast as it can for every word you learn.</p>
+            <div className="cta-row">
+              <Link className="btn btn-navy" href="/study">Start for free <Arrow /></Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+            </div>
+          </div>
+        </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '16px', marginBottom: '56px' }}>
-          {CARDS.map((c) => (
-            <Link key={c.href} href={c.href} style={{
-              display: 'block', textDecoration: 'none',
-              background: 'var(--white-matter)', borderRadius: '16px',
-              border: '0.5px solid rgba(28,26,58,0.09)', padding: '26px 28px',
-            }}>
-              <div style={{ fontSize: '11px', fontWeight: 500, letterSpacing: '.06em', textTransform: 'uppercase', color: 'var(--synapse)', marginBottom: '10px' }}>{c.coverage}</div>
-              <div style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 700, fontSize: '20px', letterSpacing: '-0.5px', color: 'var(--deep-mind)', marginBottom: '10px', lineHeight: 1.2 }}>{c.title}</div>
-              <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.6 }}>{c.desc}</p>
+        <div className="hub">
+          <Link href={main.href} className="card hub-card main">
+            <div>
+              <span className="chip tab">{main.coverage}</span>
+              <h2>{main.title}</h2>
+              <p>{main.desc}</p>
+              <span className="link">Open the full list <Arrow /></span>
+            </div>
+            <CoverageBars level={1000} />
+          </Link>
+          {rest.map((c) => (
+            <Link key={c.href} href={c.href} className="card hub-card">
+              <div><span className="chip tab">{c.coverage}</span></div>
+              <h2>{c.title}</h2>
+              <p>{c.desc}</p>
+              <span className="link">Open <Arrow /></span>
             </Link>
           ))}
         </div>
 
-        <div style={{ maxWidth: '520px', marginBottom: '56px' }}>
-          <PdfDownloadForm source="words-hub" />
-        </div>
-
-        <section style={{ marginBottom: '56px' }}>
-          <h2 style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 900, fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1, color: 'var(--deep-mind)', marginBottom: '20px' }}>
-            Frequently asked questions
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {FAQS.map((f) => (
-              <div key={f.q} style={{ background: 'var(--white-matter)', borderRadius: '14px', border: '0.5px solid rgba(28,26,58,0.09)', padding: '22px 26px' }}>
-                <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--deep-mind)', marginBottom: '10px' }}>{f.q}</h3>
-                <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7 }}>{f.a}</p>
-              </div>
-            ))}
+        <section className="sec-sm">
+          <div className="sec-head">
+            <h2>Take the list offline</h2>
+            <p className="lead">Get the top 1,000 as a free PDF, or work through all 1,500 words on paper with the workbook.</p>
           </div>
+          <Offline source="words-hub" />
         </section>
+
+        <FaqSection faqs={FAQS} />
+
+        <Closing title="Start with the 100 words that cover half of Spanish" />
       </div>
     </div>
   )

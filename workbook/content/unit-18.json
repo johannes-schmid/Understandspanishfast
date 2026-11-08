@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Cuánto ____ un billete de avión a Madrid?",
+      "answer": "cuesta",
+      "base": "costar",
+      "en": "How much does a plane ticket to Madrid cost?"
+    },
+    {
+      "es": "Mi ____ vive en el campo con mi tío.",
+      "answer": "tía",
+      "base": "una tía",
+      "en": "My aunt lives in the countryside with my uncle."
+    },
+    {
+      "es": "____ llegará tarde, como siempre.",
+      "answer": "Seguramente",
+      "base": "seguramente",
+      "en": "He'll probably arrive late, as always."
+    },
+    {
+      "es": "____ el recibo, por si acaso.",
+      "answer": "Guarda",
+      "base": "guardar",
+      "en": "Keep the receipt, just in case."
+    },
+    {
+      "es": "Esta noche vemos el ____ en casa de Pedro.",
+      "answer": "partido",
+      "base": "un partido",
+      "en": "Tonight we're watching the game at Pedro's place."
+    },
+    {
+      "es": "Mi madre está ____ porque no la llamé.",
+      "answer": "preocupada",
+      "base": "preocupado",
+      "en": "My mother is worried because I didn't call her."
+    },
+    {
+      "es": "Los viernes cenamos ____ con arroz.",
+      "answer": "pescado",
+      "base": "pescado",
+      "en": "On Fridays we have fish with rice for dinner."
+    },
+    {
+      "es": "Nuestro viaje ____ del dinero que ahorremos.",
+      "answer": "depende",
+      "base": "depender",
+      "en": "Our trip depends on how much money we save."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The plane leaves the airport at nine.",
+      "es": "El avión sale del aeropuerto a las nueve."
+    },
+    {
+      "en": "I only have ten euros.",
+      "es": "Solamente tengo diez euros."
+    },
+    {
+      "en": "These trousers are too big.",
+      "es": "Este pantalón es demasiado grande."
+    },
+    {
+      "en": "Call me right away, please.",
+      "es": "Llámame inmediatamente, por favor."
+    }
+  ],
+  "story": {
+    "title": "El reloj perdido",
+    "text": "Este (1) mi (2) y yo fuimos de vacaciones a la playa. El primer día hacía mucho (3) y casi no podíamos leer. Por la tarde, ella echó un (4) a su muñeca y gritó: «¡Mi (5) nuevo no está!». Buscamos en la arena durante dos horas. Ella quería (6) al agua para buscarlo también. Yo me sentía un poco (7) con la cara en la arena delante de todos. Al final, el reloj (8) estar en su bolso, al lado de las gafas de sol. Ahora, cada vez que algo se pierde, primero miramos en el bolso.",
+    "answers": [
+      "verano",
+      "pareja",
+      "viento",
+      "vistazo",
+      "reloj",
+      "saltar",
+      "ridículo",
+      "resultó"
+    ],
+    "en": "A couple spends hours searching the beach for a lost new watch, only to find it was in her bag all along."
+  }
+}

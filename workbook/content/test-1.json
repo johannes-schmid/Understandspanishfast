@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi hermana ____ en un hospital desde el año pasado.",
+      "answer": "trabaja",
+      "base": "trabajar",
+      "en": "My sister has been working at a hospital since last year."
+    },
+    {
+      "es": "¿Me puedes ____ el pan cuando vuelvas del mercado?",
+      "answer": "traer",
+      "base": "traer",
+      "en": "Can you bring me the bread when you come back from the market?"
+    },
+    {
+      "es": "Anoche ____ mi cartera en el autobús.",
+      "answer": "perdí",
+      "base": "perder",
+      "en": "Last night I lost my wallet on the bus."
+    },
+    {
+      "es": "No puedo ir a la fiesta porque no tengo ____.",
+      "answer": "dinero",
+      "base": "dinero",
+      "en": "I can't go to the party because I don't have any money."
+    },
+    {
+      "es": "Mis padres viven en una ____ muy pequeña cerca del mar.",
+      "answer": "ciudad",
+      "base": "una ciudad",
+      "en": "My parents live in a very small town near the sea."
+    },
+    {
+      "es": "Estoy muy cansado; necesito ____ ocho horas esta noche.",
+      "answer": "dormir",
+      "base": "dormir",
+      "en": "I'm really tired; I need to sleep eight hours tonight."
+    },
+    {
+      "es": "Este restaurante es ____ que el de ayer.",
+      "answer": "mejor",
+      "base": "mejor",
+      "en": "This restaurant is better than the one yesterday."
+    },
+    {
+      "es": "¿____ cuesta el billete de tren a Madrid?",
+      "answer": "Cuánto",
+      "base": "cuánto",
+      "en": "How much is the train ticket to Madrid?"
+    },
+    {
+      "es": "Siempre ____ el nombre de mi nuevo jefe.",
+      "answer": "olvido",
+      "base": "olvidar",
+      "en": "I always forget my new boss's name."
+    },
+    {
+      "es": "La reunión va a ____ a las diez en punto.",
+      "answer": "empezar",
+      "base": "empezar",
+      "en": "The meeting is going to start at ten o'clock sharp."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I want to change jobs next year.",
+      "es": "Quiero cambiar de trabajo el próximo año."
+    },
+    {
+      "en": "My brother never arrives on time.",
+      "es": "Mi hermano nunca llega a tiempo."
+    },
+    {
+      "en": "Can you help me find my keys?",
+      "es": "¿Puedes ayudarme a encontrar mis llaves?"
+    },
+    {
+      "en": "We are going to eat with my family tonight.",
+      "es": "Vamos a comer con mi familia esta noche."
+    },
+    {
+      "en": "I don't understand why she is so worried.",
+      "es": "No entiendo por qué ella está tan preocupada."
+    }
+  ]
+}

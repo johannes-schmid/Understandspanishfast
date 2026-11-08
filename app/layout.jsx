@@ -1,8 +1,12 @@
 import './globals.css'
+import './clarity.css'
+import './clarity-words.css'
+import './clarity-content.css'
+import './clarity-study.css'
 import Script from 'next/script'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { Fraunces } from 'next/font/google'
+import { Fraunces, Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google'
 import localFont from 'next/font/local'
 
 const fraunces = Fraunces({
@@ -10,6 +14,20 @@ const fraunces = Fraunces({
   weight: ['500', '700', '900'],
   display: 'swap',
   variable: '--font-fraunces',
+})
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-jakarta',
+})
+
+const jbmono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  display: 'swap',
+  variable: '--font-jbmono',
 })
 
 const cabinet = localFont({
@@ -43,12 +61,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${cabinet.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${cabinet.variable} ${jakarta.variable} ${jbmono.variable}`}>
       <head>
         <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
-        <meta name="theme-color" content="#F2EDE4" />
+        <meta name="theme-color" content="#E8EBFB" />
       </head>
       <body>
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-5PBVCJEM6E" strategy="afterInteractive" />

@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Te puedo ____ un poco más de sopa?",
+      "answer": "servir",
+      "base": "servir",
+      "en": "Can I give you a bit more soup?"
+    },
+    {
+      "es": "No es tu ____; nadie sabía nada.",
+      "answer": "culpa",
+      "base": "culpa",
+      "en": "It's not your fault; nobody knew anything."
+    },
+    {
+      "es": "Aquí no hay ____ y no puedo llamar a nadie.",
+      "answer": "señal",
+      "base": "una señal",
+      "en": "There's no signal here, and I can't call anyone."
+    },
+    {
+      "es": "El ____ a Madrid sale a las diez.",
+      "answer": "tren",
+      "base": "un tren",
+      "en": "The train to Madrid leaves at ten."
+    },
+    {
+      "es": "Mi hermana me ____ las fotos de su boda.",
+      "answer": "mostró",
+      "base": "mostrar",
+      "en": "My sister showed me the photos from her wedding."
+    },
+    {
+      "es": "¿Te ____ si abro la ventana?",
+      "answer": "molesta",
+      "base": "molestar",
+      "en": "Do you mind if I open the window?"
+    },
+    {
+      "es": "Esta sopa de tu madre está muy ____.",
+      "answer": "rica",
+      "base": "rico",
+      "en": "Your mother's soup is really delicious."
+    },
+    {
+      "es": "No es mi novia, ____ mi hermana.",
+      "answer": "sino",
+      "base": "sino",
+      "en": "She isn't my girlfriend; she's my sister."
+    }
+  ],
+  "translate": [
+    {
+      "en": "Welcome to our home!",
+      "es": "¡Bienvenidos a nuestra casa!"
+    },
+    {
+      "en": "The bathroom is behind the kitchen.",
+      "es": "El baño está detrás de la cocina."
+    },
+    {
+      "en": "I need a permit to work here.",
+      "es": "Necesito un permiso para trabajar aquí."
+    },
+    {
+      "en": "It was a pleasure to work with you.",
+      "es": "Fue un placer trabajar contigo."
+    }
+  ],
+  "story": {
+    "title": "La cena con los suegros",
+    "text": "El sábado conocí a los padres de mi (1) Laura. Su padre es (2), así que yo estaba nervioso. Llevé una botella de (3) tinto y unas flores. —¡(4)! —dijo su madre con una sonrisa. Durante la cena, Laura puso (5) suave para (6) mis nervios. Pero cuando intenté abrir el vino, se me cayó la botella y se (7). Todo el mantel quedó (8). Yo quería desaparecer. Entonces su padre se rió y dijo: —Tranquilo, el año pasado yo hice lo mismo en casa de mis suegros. Desde ese momento, la cena fue maravillosa.",
+    "answers": [
+      "novia",
+      "abogado",
+      "vino",
+      "Bienvenido",
+      "música",
+      "calmar",
+      "rompió",
+      "rojo"
+    ],
+    "en": "A nervious man meets his girlfriend's parents, breaks a bottle of red wine all over the tablecloth, and is saved when her father admits he did the same thing a year earlier."
+  }
+}

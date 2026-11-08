@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿____ estás hoy? Te veo un poco cansado.",
+      "answer": "Cómo",
+      "base": "cómo",
+      "en": "How are you today? You look a bit tired."
+    },
+    {
+      "es": "Mi jefe ____ que la reunión es a las diez.",
+      "answer": "dice",
+      "base": "decir",
+      "en": "My boss says the meeting is at ten."
+    },
+    {
+      "es": "No ____ dónde están mis llaves.",
+      "answer": "sé",
+      "base": "saber",
+      "en": "I don't know where my keys are."
+    },
+    {
+      "es": "Si tienes tiempo, ____ a cenar con nosotros.",
+      "answer": "ven",
+      "base": "venir",
+      "en": "If you have time, come and have dinner with us."
+    },
+    {
+      "es": "Mi madre ____ muy cansada después del trabajo.",
+      "answer": "está",
+      "base": "estar",
+      "en": "My mother is very tired after work."
+    },
+    {
+      "es": "Este fin de semana vamos a ____ a mis padres.",
+      "answer": "ver",
+      "base": "ver",
+      "en": "This weekend we're going to see my parents."
+    },
+    {
+      "es": "Hoy tengo ____ trabajo en la oficina.",
+      "answer": "mucho",
+      "base": "mucho",
+      "en": "I have a lot of work at the office today."
+    },
+    {
+      "es": "¿Puedes ____ las bolsas en la cocina?",
+      "answer": "dejar",
+      "base": "dejar",
+      "en": "Can you leave the bags in the kitchen?"
+    }
+  ],
+  "translate": [
+    {
+      "en": "I want another coffee, please.",
+      "es": "Quiero otro café, por favor."
+    },
+    {
+      "en": "We can't go now.",
+      "es": "No podemos ir ahora."
+    },
+    {
+      "en": "My sister is a teacher.",
+      "es": "Mi hermana es profesora."
+    },
+    {
+      "en": "I think he's at home.",
+      "es": "Creo que está en casa."
+    }
+  ],
+  "story": {
+    "title": "La cena sorpresa",
+    "text": "Hoy es el cumpleaños de mi mujer y (1) hacer una cena especial. Llamo a mi hermano y le pregunto: «¿Tú (2) cocinar paella?». Él dice que sí, pero que está (3) ocupado. Así que busco una receta y empiezo a cocinar. Paso tres horas en la cocina. Cuando todo (4) listo, ella llega a casa. «¡Qué bien huele!», dice. Prueba la paella, me mira y no dice (5). Después saca el teléfono y pide una pizza. «(6) paella está bien, pero hoy prefiero pizza», dice. Al final, comemos pizza y mi hermano (7) a casa a comer la paella. Él dice que es la paella (8) rica de su vida.",
+    "answers": [
+      "quiero",
+      "sabes",
+      "muy",
+      "está",
+      "nada",
+      "Tu",
+      "viene",
+      "más"
+    ],
+    "en": "A man spends hours cooking paella for his wife's birthday, but she orders pizza instead, and his brother ends up happily eating the paella."
+  }
+}

@@ -148,143 +148,68 @@ export const POSTS = [
   },
 ]
 
+const Arrow = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+)
+
 export default function BlogHub() {
   const featured = POSTS.find((p) => p.featured) || POSTS[0]
   const rest = POSTS.filter((p) => p !== featured)
 
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
+    <div className="cl cl-home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="blog-page-wrap">
+      <section className="blog-hub">
+        <div className="wrap">
+          <header className="sec-head blog-hub-head">
+            <h1 className="h1">The science of learning faster</h1>
+            <p className="lead">No fluff. Frequency-first strategy, comprehension research, and the data behind getting fluent fast.</p>
+          </header>
 
-        {/* Header */}
-        <div style={{ marginBottom: '64px' }}>
-          <div className="s-eye">From the blog</div>
-          <h1 style={{
-            fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-            fontSize: 'clamp(40px, 5vw, 62px)', letterSpacing: '-2px',
-            lineHeight: 1.0, color: 'var(--deep-mind)', marginBottom: '16px',
-          }}>
-            The science of<br />learning faster.
-          </h1>
-          <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', maxWidth: '480px', lineHeight: 1.7 }}>
-            No fluff. Frequency-first strategy, comprehension research, and the data behind getting fluent fast.
-          </p>
-        </div>
-
-        {/* Featured post */}
-        <Link href={`/blog/${featured.slug}`} className="blog-featured-card" style={{
-          background: 'var(--deep-mind)',
-          borderRadius: '20px', overflow: 'hidden',
-          textDecoration: 'none', marginBottom: '24px',
-          transition: 'transform .2s, box-shadow .2s',
-          boxShadow: '0 8px 32px rgba(28,26,58,0.12)',
-        }}>
-          <div style={{ padding: '48px 48px 48px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px' }}>
-              <span style={{
-                background: 'rgba(83,74,183,0.3)', color: 'var(--mauve)',
-                fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
-                textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
-              }}>{featured.badge}</span>
-              <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{featured.readTime}</span>
+          <Link href={`/blog/${featured.slug}`} className="card blog-feat">
+            <div className="blog-feat-body">
+              <div className="post-meta"><span className="chip">{featured.category}</span><span>{featured.readTime}</span></div>
+              <h2>{featured.title}</h2>
+              <p className="lead">{featured.excerpt}</p>
+              <span className="link">Read article<Arrow /></span>
             </div>
-            <h2 style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: 'clamp(26px, 3vw, 38px)', letterSpacing: '-1px',
-              lineHeight: 1.1, color: 'var(--white-matter)', marginBottom: '16px',
-            }}>{featured.title}</h2>
-            <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, marginBottom: '28px', maxWidth: '520px' }}>
-              {featured.excerpt}
-            </p>
-            <span style={{
-              display: 'inline-flex', alignItems: 'center', gap: '6px',
-              fontSize: '14px', fontWeight: 500, color: 'var(--mauve)',
-            }}>Read article →</span>
-          </div>
-
-          <div className="blog-featured-stat" style={{
-            background: 'rgba(255,255,255,0.04)',
-            borderLeft: '0.5px solid rgba(255,255,255,0.06)',
-            padding: '48px',
-          }}>
-            <div style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: '64px', letterSpacing: '-2px', lineHeight: 1,
-              color: 'var(--mauve)', marginBottom: '8px',
-            }}>{featured.stat}</div>
-            <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', textAlign: 'center', lineHeight: 1.5 }}>
-              {featured.statLabel}
+            <div className="panel blog-feat-stat" aria-hidden="true">
+              <b className="tab">{featured.stat}</b>
+              <span>{featured.statLabel}</span>
             </div>
-          </div>
-        </Link>
-
-        {/* Secondary posts */}
-        <div className="blog-posts-grid">
-          {rest.map((p) => (
-            <Link key={p.slug} href={`/blog/${p.slug}`} style={{
-              background: 'var(--white-matter)', borderRadius: '20px',
-              border: '0.5px solid rgba(28,26,58,0.09)',
-              padding: '36px', textDecoration: 'none',
-              display: 'flex', flexDirection: 'column', gap: '0',
-              transition: 'transform .2s, box-shadow .2s',
-              boxShadow: '0 4px 16px rgba(28,26,58,0.06)',
-            }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                <span style={{
-                  background: 'var(--fog)', color: 'var(--synapse)',
-                  fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
-                  textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
-                }}>{p.category}</span>
-                <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{p.readTime}</span>
-              </div>
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px', marginBottom: '12px' }}>
-                <h3 style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: '22px', letterSpacing: '-0.5px', lineHeight: 1.15,
-                  color: 'var(--deep-mind)', flex: 1,
-                }}>{p.title}</h3>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: '36px', letterSpacing: '-1px', lineHeight: 1,
-                  color: 'var(--mauve)', flexShrink: 0,
-                }}>{p.stat}</div>
-              </div>
-
-              <p style={{ fontSize: '14px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, marginBottom: '24px' }}>
-                {p.excerpt}
-              </p>
-              <span style={{ fontSize: '13px', fontWeight: 500, color: 'var(--synapse)', marginTop: 'auto' }}>
-                Read article →
-              </span>
-            </Link>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="blog-cta-banner" style={{
-          background: 'var(--deep-mind)', borderRadius: '20px',
-          padding: '56px 64px',
-        }}>
-          <div>
-            <div className="s-eye" style={{ color: 'var(--mauve)' }}>Not just reading</div>
-            <h2 style={{
-              fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-              fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
-              color: 'var(--white-matter)', marginBottom: '10px',
-            }}>Start applying it.</h2>
-            <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.65, maxWidth: '400px' }}>
-              Start with the 100 words that cover half of everyday Spanish. Free flashcards, no account.
-            </p>
-          </div>
-          <Link href="/study" className="btn-primary" style={{ whiteSpace: 'nowrap', flexShrink: 0 }}>
-            Start free flashcards
           </Link>
-        </div>
 
-      </div>
+          <ul className="card blog-list">
+            {rest.map((p) => (
+              <li key={p.slug}>
+                <Link href={`/blog/${p.slug}`} className="blog-row">
+                  <div className="blog-row-main">
+                    <h3>{p.title}</h3>
+                    <p>{p.excerpt}</p>
+                    <div className="post-meta"><span className="chip">{p.category}</span><span>{p.readTime}</span></div>
+                  </div>
+                  <div className="blog-row-stat">
+                    <b className="tab">{p.stat}</b>
+                    <span>{p.statLabel}</span>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <section className="panel close post-cta">
+            <div>
+              <h2>Start applying it</h2>
+              <p className="lead">Start with the 100 words that cover half of everyday Spanish. Try ten real flashcards for free, or get all 1,500 in the printable workbook.</p>
+            </div>
+            <div className="cta-row">
+              <Link className="btn btn-navy" href="/study">Start for free</Link>
+              <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+            </div>
+          </section>
+        </div>
+      </section>
     </div>
   )
 }

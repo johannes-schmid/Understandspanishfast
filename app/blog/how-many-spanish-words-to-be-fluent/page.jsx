@@ -12,12 +12,12 @@ export const metadata = {
 
 function PexelsImage({ src, alt, photographer, caption }) {
   return (
-    <figure style={{ margin: '48px 0', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 8px 40px rgba(0,0,0,0.10)' }}>
-      <img src={src} alt={alt} style={{ width: '100%', display: 'block', aspectRatio: '16/7', objectFit: 'cover' }} loading="lazy" />
+    <figure className="post-fig">
+      <img src={src} alt={alt} loading="lazy" />
       {(caption || photographer) && (
-        <figcaption style={{ fontSize: '12px', color: 'var(--cortex)', padding: '10px 16px', background: 'var(--fog)', display: 'flex', justifyContent: 'space-between' }}>
+        <figcaption>
           <span>{caption}</span>
-          {photographer && <span>Photo: {photographer} / Pexels</span>}
+          {photographer && <span className="post-credit">Photo: {photographer} / Pexels</span>}
         </figcaption>
       )}
     </figure>
@@ -142,9 +142,9 @@ export default function PostHowManyWords() {
           </>
         }
       >
-        <div style={{ background: 'var(--surface, #f8f5f0)', border: '1px solid var(--border, #e5e0d8)', borderRadius: '8px', padding: '20px 24px', marginBottom: '28px' }}>
-          <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6 }}>Quick answer</p>
-          <p style={{ margin: 0, fontSize: '1.05rem' }}>
+        <div className="post-qa">
+          <p className="post-qa-label">Quick answer</p>
+          <p>
             You need <strong>~1,500 high-frequency Spanish words</strong> for functional fluency — enough to understand about <strong>80% of everyday spoken Spanish</strong>. That's the threshold where comprehension becomes natural rather than effortful. For basic conversation, 500 words is enough. For everyday fluency across most topics, aim for 3,000.
           </p>
         </div>
@@ -167,14 +167,14 @@ export default function PostHowManyWords() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', margin: '32px 0' }}>
           {THRESHOLDS.map(({ words, label, pct, coverage, detail }, i) => (
             <div key={label} style={{
-              background: i === 3 ? 'var(--deep-mind)' : 'var(--fog)',
+              background: i === 3 ? 'var(--hl)' : 'var(--fog)',
               borderRadius: '14px', padding: '18px 20px',
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
-                <span style={{ fontWeight: 700, fontSize: '15px', color: i === 3 ? '#fff' : 'var(--deep-mind)' }}>{label}</span>
-                <span style={{ fontFamily: "var(--font-fraunces), serif", fontWeight: 700, color: i === 3 ? 'var(--mauve)' : 'var(--synapse)', fontSize: '14px' }}>{words} &nbsp;·&nbsp; {coverage}</span>
+                <span style={{ fontWeight: 700, fontSize: '15px', color: i === 3 ? 'var(--deep-mind)' : 'var(--deep-mind)' }}>{label}</span>
+                <span style={{ fontFamily: "var(--sans)", fontWeight: 700, color: i === 3 ? 'var(--mauve)' : 'var(--synapse)', fontSize: '14px' }}>{words} &nbsp;·&nbsp; {coverage}</span>
               </div>
-              <div style={{ height: '5px', background: i === 3 ? 'rgba(255,255,255,0.15)' : '#e0ddd6', borderRadius: '99px', overflow: 'hidden', margin: '8px 0' }}>
+              <div style={{ height: '5px', background: i === 3 ? 'var(--track)' : 'var(--track)', borderRadius: '99px', overflow: 'hidden', margin: '8px 0' }}>
                 <div style={{ width: `${pct}%`, height: '100%', background: i === 3 ? 'var(--mauve)' : 'var(--synapse)', borderRadius: '99px' }} />
               </div>
               <div style={{ fontSize: '13px', color: i === 3 ? 'var(--cortex)' : 'var(--cortex)', lineHeight: 1.5 }}>{detail}</div>

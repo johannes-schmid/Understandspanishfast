@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "La reunión con el cliente ____ casi dos horas.",
+      "answer": "duró",
+      "base": "durar",
+      "en": "The meeting with the client lasted almost two hours."
+    },
+    {
+      "es": "Mañana tengo una ____ de trabajo en una empresa grande.",
+      "answer": "entrevista",
+      "base": "una entrevista",
+      "en": "Tomorrow I have a job interview at a big company."
+    },
+    {
+      "es": "¿Quieres ____ una pizza conmigo esta noche?",
+      "answer": "compartir",
+      "base": "compartir",
+      "en": "Do you want to share a pizza with me tonight?"
+    },
+    {
+      "es": "Mi hermano tiene muchas ____ con el banco.",
+      "answer": "deudas",
+      "base": "una deuda",
+      "en": "My brother has a lot of debts with the bank."
+    },
+    {
+      "es": "Este restaurante es muy ____ para nosotros.",
+      "answer": "caro",
+      "base": "caro",
+      "en": "This restaurant is too expensive for us."
+    },
+    {
+      "es": "No encuentro las llaves en el ____ de la chaqueta.",
+      "answer": "bolsillo",
+      "base": "un bolsillo",
+      "en": "I can't find the keys in my jacket pocket."
+    },
+    {
+      "es": "Vamos a ____ el cumpleaños de mi madre el sábado.",
+      "answer": "celebrar",
+      "base": "celebrar",
+      "en": "We're going to celebrate my mother's birthday on Saturday."
+    },
+    {
+      "es": "La pantalla de mi teléfono está ____.",
+      "answer": "rota",
+      "base": "roto",
+      "en": "My phone screen is broken."
+    },
+    {
+      "es": "Necesito renovar el ____ antes de viajar en julio.",
+      "answer": "pasaporte",
+      "base": "un pasaporte",
+      "en": "I need to renew my passport before travelling in July."
+    },
+    {
+      "es": "Los domingos me gusta ____ con el perro por el parque.",
+      "answer": "pasear",
+      "base": "pasear",
+      "en": "On Sundays I like to walk the dog in the park."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The weather is very dry in winter.",
+      "es": "El clima es muy seco en invierno."
+    },
+    {
+      "en": "I go to the gym three times a week, but it's not easy.",
+      "es": "Voy al gimnasio tres veces por semana, pero no es sencillo."
+    },
+    {
+      "en": "I have a fever and my throat hurts.",
+      "es": "Tengo fiebre y me duele la garganta."
+    },
+    {
+      "en": "We celebrated our friendship with a special lunch.",
+      "es": "Celebramos nuestra amistad con un almuerzo especial."
+    },
+    {
+      "en": "Put your coat in the wardrobe in the hallway.",
+      "es": "Pon tu abrigo en el armario del pasillo."
+    }
+  ]
+}

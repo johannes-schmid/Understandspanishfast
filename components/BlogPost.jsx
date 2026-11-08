@@ -40,29 +40,42 @@ const WORD_LINK = {
 }
 const DEFAULT_WORD_LINK = { href: '/words/most-common-spanish-words', label: 'Browse the 1,000 most common Spanish words →' }
 
+const Arrow = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+)
+
+function fmtDate(d) {
+  return new Date(`${d}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
+}
+
 function RelatedPosts({ slug }) {
   const related = (RELATED[slug] || []).filter((s) => POSTS[s])
   const wordLink = WORD_LINK[slug] || DEFAULT_WORD_LINK
   if (!related.length) return null
   return (
-    <section style={{ marginTop: '56px' }}>
-      <h2 style={{
-        fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-        fontSize: '26px', letterSpacing: '-0.5px', color: 'var(--deep-mind)', marginBottom: '18px',
-      }}>Keep reading</h2>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '12px', marginBottom: '18px' }}>
+    <section className="post-related" aria-labelledby="keep-reading">
+      <h2 id="keep-reading">Keep reading</h2>
+      <div className="guides">
         {related.map((s) => (
-          <Link key={s} href={`/blog/${s}`} style={{
-            display: 'block', textDecoration: 'none',
-            background: 'var(--white-matter)', borderRadius: '14px',
-            border: '0.5px solid rgba(28,26,58,0.09)', padding: '18px 20px',
-            fontSize: '15px', fontWeight: 500, color: 'var(--deep-mind)', lineHeight: 1.35,
-          }}>{POSTS[s]}</Link>
+          <Link key={s} href={`/blog/${s}`} className="card guide"><b>{POSTS[s]}</b><span>Read article</span></Link>
         ))}
       </div>
-      <Link href={wordLink.href} style={{ fontSize: '15px', fontWeight: 500, color: 'var(--synapse)', textDecoration: 'none' }}>
-        {wordLink.label}
-      </Link>
+      <Link href={wordLink.href} className="link post-wordlink">{wordLink.label.replace(/\s*→$/, '')}<Arrow /></Link>
+    </section>
+  )
+}
+
+export function PostCta({ title = 'Start with the 100 words that cover half of Spanish', body = 'Try ten real flashcards from the top of the frequency list, right in your browser. When you want all 1,500 on paper, the workbook is €5.' }) {
+  return (
+    <section className="panel close post-cta">
+      <div>
+        <h2>{title}</h2>
+        <p className="lead">{body}</p>
+      </div>
+      <div className="cta-row">
+        <Link className="btn btn-navy" href="/study">Start for free</Link>
+        <Link className="btn btn-ghost" href="/workbook">Get the workbook</Link>
+      </div>
     </section>
   )
 }
@@ -90,92 +103,39 @@ export default function BlogPost({
   }
 
   return (
-    <div style={{ background: 'var(--cream)', minHeight: '100dvh' }}>
+    <div className="cl cl-home cl-post">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="blog-page-wrap">
-
-        {/* Back link */}
-        <Link href="/blog" className="blog-back-link">← Back to blog</Link>
-
-        {/* Header */}
-        <header style={{ marginBottom: '64px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-            <span style={{
-              background: 'var(--fog)', color: 'var(--synapse)',
-              fontSize: '11px', fontWeight: 500, letterSpacing: '.07em',
-              textTransform: 'uppercase', padding: '4px 14px', borderRadius: '99px',
-            }}>{category}</span>
-            <span style={{ fontSize: '13px', color: 'var(--cortex)' }}>{readTime}</span>
+      <div className="wrap">
+        <header className="post-head">
+          <Link href="/blog" className="post-back">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M7 4L3 8l4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+            All articles
+          </Link>
+          <h1 className="post-title">{title}</h1>
+          <p className="lead post-dek">{description}</p>
+          <div className="post-meta">
+            <span className="chip">{category}</span>
+            <span>{readTime}</span>
+            <span aria-hidden="true">·</span>
+            <span>Updated <time dateTime={dateModified}>{fmtDate(dateModified)}</time></span>
           </div>
-
-          <div className="blog-header-grid">
-            <div>
-              <h1 style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: 'clamp(36px, 4vw, 56px)', letterSpacing: '-2px',
-                lineHeight: 1.05, color: 'var(--deep-mind)', marginBottom: '20px',
-              }}>{title}</h1>
-              <p style={{ fontSize: '17px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.7, maxWidth: '560px' }}>
-                {description}
-              </p>
-            </div>
-
-            {heroCallout && (
-              <div className="blog-hero-callout" style={{
-                background: 'var(--deep-mind)', borderRadius: '20px',
-                padding: '32px 36px', textAlign: 'center',
-              }}>
-                <div style={{
-                  fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                  fontSize: '56px', letterSpacing: '-2px', lineHeight: 1,
-                  color: 'var(--mauve)', marginBottom: '10px',
-                }}>{heroCallout.value}</div>
-                <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--cortex)', lineHeight: 1.5 }}>
-                  {heroCallout.label}
-                </div>
-              </div>
-            )}
-          </div>
+          {heroCallout && (
+            <p className="post-stat"><b className="tab">{heroCallout.value}</b><span>{heroCallout.label}</span></p>
+          )}
         </header>
 
-        {/* Body: sidebar + article */}
-        <div className="blog-body-grid">
-
-          {/* Sidebar */}
-          <aside style={{ position: 'sticky', top: '100px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {sidebar}
-          </aside>
-
-          {/* Article */}
-          <article>
-            <div className="article-body" style={{ fontSize: '17px', color: 'var(--cortex)', lineHeight: 1.75 }}>
+        <div className="post-grid">
+          <article className="card post-sheet">
+            <div className="post-body">
               {children}
             </div>
-
-            <RelatedPosts slug={slug} />
-
-            {/* Bottom CTA */}
-            <div style={{
-              background: 'var(--deep-mind)', borderRadius: '20px',
-              padding: '48px 40px', textAlign: 'center', marginTop: '64px',
-            }}>
-              <div className="s-eye" style={{ color: 'var(--mauve)' }}>Ready to build on this?</div>
-              <h3 style={{
-                fontFamily: "var(--font-fraunces), serif", fontWeight: 900,
-                fontSize: '32px', letterSpacing: '-1px', lineHeight: 1.1,
-                color: 'var(--white-matter)', marginBottom: '12px',
-              }}>Find out where you stand.</h3>
-              <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--cortex)', marginBottom: '28px', lineHeight: 1.65 }}>
-                Take the 2-minute Word Reach test — see exactly which words you already know.
-              </p>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: '12px', flexWrap: 'wrap' }}>
-                <Link href="/level-test" className="btn-primary">Take the level test</Link>
-                <Link href="/study" className="btn-ghost" style={{ color: 'var(--mauve)' }}>Start free flashcards →</Link>
-              </div>
-            </div>
           </article>
+          {sidebar && <aside className="post-aside">{sidebar}</aside>}
         </div>
+
+        <RelatedPosts slug={slug} />
+        <PostCta />
       </div>
     </div>
   )
@@ -183,31 +143,18 @@ export default function BlogPost({
 
 export function SidebarCallout({ title, children }) {
   return (
-    <div style={{
-      background: 'var(--white-matter)', border: '0.5px solid rgba(28,26,58,0.09)',
-      borderRadius: '16px', padding: '24px',
-    }}>
-      <h3 style={{
-        fontFamily: "var(--font-fraunces), serif", fontWeight: 700,
-        fontSize: '18px', letterSpacing: '-0.3px', color: 'var(--deep-mind)',
-        marginBottom: '14px',
-      }}>{title}</h3>
-      <div style={{ fontSize: '14px', color: 'var(--cortex)', lineHeight: 1.65 }}>{children}</div>
+    <div className="card post-callout">
+      <h3>{title}</h3>
+      <div className="post-callout-body">{children}</div>
     </div>
   )
 }
 
 export function ProTip({ children }) {
   return (
-    <div style={{
-      background: 'var(--fog)', borderLeft: '3px solid var(--synapse)',
-      borderRadius: '12px', padding: '18px 20px',
-    }}>
-      <div style={{
-        fontSize: '10px', fontWeight: 500, letterSpacing: '.1em',
-        textTransform: 'uppercase', color: 'var(--synapse)', marginBottom: '8px',
-      }}>Pro tip</div>
-      <p style={{ fontSize: '14px', color: 'var(--deep-mind)', lineHeight: 1.65, fontWeight: 300 }}>{children}</p>
+    <div className="post-tip">
+      <p className="post-tip-label">Pro tip</p>
+      <p>{children}</p>
     </div>
   )
 }

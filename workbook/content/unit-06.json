@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Puedo ____ con tarjeta en esta tienda?",
+      "answer": "pagar",
+      "base": "pagar",
+      "en": "Can I pay by card in this shop?"
+    },
+    {
+      "es": "Mi ____ está de vacaciones hasta el lunes.",
+      "answer": "jefa",
+      "base": "jefe",
+      "en": "My boss is on holiday until Monday."
+    },
+    {
+      "es": "La lavadora no ____ desde ayer.",
+      "answer": "funciona",
+      "base": "funcionar",
+      "en": "The washing machine hasn't worked since yesterday."
+    },
+    {
+      "es": "Nos vemos ____. ¡Buen viaje!",
+      "answer": "pronto",
+      "base": "pronto",
+      "en": "See you soon. Have a good trip!"
+    },
+    {
+      "es": "Mi hermano dejó de ____ hace dos años.",
+      "answer": "fumar",
+      "base": "fumar",
+      "en": "My brother quit smoking two years ago."
+    },
+    {
+      "es": "Este trabajo es más ____ de lo que pensaba.",
+      "answer": "difícil",
+      "base": "difícil",
+      "en": "This job is harder than I thought."
+    },
+    {
+      "es": "¿Hay una farmacia ____ de aquí?",
+      "answer": "cerca",
+      "base": "cerca",
+      "en": "Is there a pharmacy near here?"
+    },
+    {
+      "es": "Tengo una ____ sobre la factura de la luz.",
+      "answer": "pregunta",
+      "base": "pregunta",
+      "en": "I have a question about the electricity bill."
+    }
+  ],
+  "translate": [
+    {
+      "en": "Watch out, the floor is wet.",
+      "es": "Cuidado, el suelo está mojado."
+    },
+    {
+      "en": "Do you agree with your wife?",
+      "es": "¿Estás de acuerdo con tu esposa?"
+    },
+    {
+      "en": "My daughter plays the guitar really well.",
+      "es": "Mi hija toca la guitarra realmente bien."
+    },
+    {
+      "en": "We don't have enough money for the trip.",
+      "es": "No tenemos suficiente dinero para el viaje."
+    }
+  ],
+  "story": {
+    "title": "Un compañero inesperado",
+    "text": "Cada mañana salgo a (1) por el parque. Es mi (2) favorita de empezar el día. Ayer, un (3) enorme empezó a correr (4) a mí. Pensé: «¡Qué (5)! Por fin tengo un compañero». Pero después de una hora, ya no podía más. Intenté (6) al perro, pero él seguía corriendo y yo detrás. Mi (7) latía muy rápido. Al final, el perro entró en un jardín y una (8) salió de la casa. «¡Gracias por traerlo!», me dijo. «Lleva tres días perdido». Ahora tengo un trabajo nuevo: pasear a su perro cada mañana.",
+    "answers": [
+      "correr",
+      "manera",
+      "perro",
+      "junto",
+      "genial",
+      "detener",
+      "corazón",
+      "señora"
+    ],
+    "en": "A man's morning run is hijacked by a big lost dog that leads him to its owner, who now has him walking the dog every morning."
+  }
+}

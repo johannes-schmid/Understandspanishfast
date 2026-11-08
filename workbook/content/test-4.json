@@ -1,0 +1,86 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi hermano consiguió un buen ____ en un banco.",
+      "answer": "puesto",
+      "base": "puesto",
+      "en": "My brother got a good job at a bank."
+    },
+    {
+      "es": "¿Me puedes ____ cómo funciona esta máquina?",
+      "answer": "explicar",
+      "base": "explicar",
+      "en": "Can you explain to me how this machine works?"
+    },
+    {
+      "es": "Ayer no ____ el teléfono porque estaba en una reunión.",
+      "answer": "contesté",
+      "base": "contestar",
+      "en": "Yesterday I didn't answer the phone because I was in a meeting."
+    },
+    {
+      "es": "Este fin de semana quiero ____ en casa con mi familia.",
+      "answer": "descansar",
+      "base": "descansar",
+      "en": "This weekend I want to rest at home with my family."
+    },
+    {
+      "es": "El ____ de la gasolina subió otra vez este mes.",
+      "answer": "precio",
+      "base": "precio",
+      "en": "The price of gas went up again this month."
+    },
+    {
+      "es": "Mis padres están muy ____ con su nueva casa.",
+      "answer": "contentos",
+      "base": "contento",
+      "en": "My parents are very happy with their new house."
+    },
+    {
+      "es": "¿Cuánto ____ un billete de avión a Madrid?",
+      "answer": "cuesta",
+      "base": "costar",
+      "en": "How much does a plane ticket to Madrid cost?"
+    },
+    {
+      "es": "Lo siento, me ____ de número.",
+      "answer": "equivoqué",
+      "base": "equivocar",
+      "en": "Sorry, I dialed the wrong number."
+    },
+    {
+      "es": "Tienes que ____ el contrato antes del viernes.",
+      "answer": "firmar",
+      "base": "firmar",
+      "en": "You have to sign the contract before Friday."
+    },
+    {
+      "es": "La cocina está muy ____; vamos a limpiarla juntos.",
+      "answer": "sucia",
+      "base": "sucio",
+      "en": "The kitchen is really dirty; let's clean it together."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I'm worried because my aunt has a serious illness.",
+      "es": "Estoy preocupado porque mi tía tiene una enfermedad grave."
+    },
+    {
+      "en": "In summer we go to the beach with my cousins.",
+      "es": "En verano vamos a la playa con mis primos."
+    },
+    {
+      "en": "The main goal of the project is to avoid losses.",
+      "es": "El objetivo principal del proyecto es evitar pérdidas."
+    },
+    {
+      "en": "Please check the file before the client arrives.",
+      "es": "Por favor, revisa el archivo antes de que llegue el cliente."
+    },
+    {
+      "en": "There was a lot of noise at the airport.",
+      "es": "Había un montón de ruido en el aeropuerto."
+    }
+  ]
+}

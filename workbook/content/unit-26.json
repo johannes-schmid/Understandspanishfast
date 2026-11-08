@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "La película ____ casi tres horas.",
+      "answer": "duró",
+      "base": "durar",
+      "en": "The movie lasted almost three hours."
+    },
+    {
+      "es": "¿El precio de la habitación ____ el desayuno?",
+      "answer": "incluye",
+      "base": "incluir",
+      "en": "Does the room price include breakfast?"
+    },
+    {
+      "es": "Siempre dejo las llaves en el ____ del abrigo.",
+      "answer": "bolsillo",
+      "base": "bolsillo",
+      "en": "I always leave my keys in my coat pocket."
+    },
+    {
+      "es": "¿Cuál es la ____ de tu boda?",
+      "answer": "fecha",
+      "base": "fecha",
+      "en": "What's the date of your wedding?"
+    },
+    {
+      "es": "Todos ____ errores cuando aprendemos un idioma.",
+      "answer": "cometemos",
+      "base": "cometer",
+      "en": "We all make mistakes when we learn a language."
+    },
+    {
+      "es": "Mi hermana trabaja de ____ en una oficina de abogados.",
+      "answer": "asistente",
+      "base": "asistente",
+      "en": "My sister works as an assistant in a law office."
+    },
+    {
+      "es": "El ____ aquí es muy seco en verano.",
+      "answer": "clima",
+      "base": "clima",
+      "en": "The weather here is very dry in summer."
+    },
+    {
+      "es": "Mi ____ favorito es el fútbol.",
+      "answer": "deporte",
+      "base": "deporte",
+      "en": "My favourite sport is football."
+    }
+  ],
+  "translate": [
+    {
+      "en": "I need an explanation, please.",
+      "es": "Necesito una explicación, por favor."
+    },
+    {
+      "en": "We visited the museum in July.",
+      "es": "Visitamos el museo en julio."
+    },
+    {
+      "en": "My desk is at the end of the hallway.",
+      "es": "Mi escritorio está al final del pasillo."
+    },
+    {
+      "en": "I want something different for dinner tonight.",
+      "es": "Quiero algo distinto para cenar esta noche."
+    }
+  ],
+  "story": {
+    "title": "Una compra con sorpresa",
+    "text": "En julio, Marta (1) un abrigo por internet. Era un poco raro comprar ropa de invierno con este (2), pero estaba en oferta. La empresa prometió (3) el paquete en tres días. Pasaron (4) días y nada. Después de su tercer (5) de llamar, por fin habló con una (6) muy amable. Al día siguiente, el (7) llegó a su puerta. Marta abrió la caja con ilusión, pero dentro no había un abrigo: había un (8) de peluche gigante con una nota: «Gracias por su paciencia». Marta todavía no sabe si es un error o un regalo.",
+    "answers": [
+      "encargó",
+      "clima",
+      "entregar",
+      "doce",
+      "intento",
+      "asistente",
+      "pedido",
+      "conejo"
+    ],
+    "en": "Marta orders a winter coat online in July, and after a long delay and several calls, she receives a giant stuffed rabbit instead."
+  }
+}

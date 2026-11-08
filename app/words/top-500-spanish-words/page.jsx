@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import WordListPage from '@/components/WordListPage'
 import { words } from '@/data/words'
 
@@ -27,8 +28,8 @@ const FAQS = [
 export default function Page() {
   return (
     <WordListPage
-      eyebrow="Top 500"
       title="The top 500 Spanish words"
+      level={500}
       slug="top-500-spanish-words"
       coverage="~67%"
       breadcrumbName="Top 500 Spanish words"
@@ -39,7 +40,7 @@ export default function Page() {
           The 500 most common Spanish words, ranked by real-world frequency. Learn these and you'll
           recognise roughly <strong>two out of every three words</strong> in everyday spoken Spanish — enough to
           follow the shape of most conversations. Continue to the{' '}
-          <a href="/words/most-common-spanish-words" style={{ color: 'var(--synapse)' }}>full 1,000-word list</a> to
+          <Link href="/words/most-common-spanish-words" className="tlink">full 1,000-word list</Link> to
           push comprehension past 74%.
         </>
       }

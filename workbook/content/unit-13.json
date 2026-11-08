@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "Mi hermana está ____ con un médico desde hace cinco años.",
+      "answer": "casada",
+      "base": "casado",
+      "en": "My sister has been married to a doctor for five years."
+    },
+    {
+      "es": "Lo siento, mi jefe está ____ toda la mañana.",
+      "answer": "ocupado",
+      "base": "ocupado",
+      "en": "Sorry, my boss is busy all morning."
+    },
+    {
+      "es": "Los domingos ____ comer con mis padres.",
+      "answer": "suelo",
+      "base": "soler",
+      "en": "On Sundays I usually have lunch with my parents."
+    },
+    {
+      "es": "No hay ____ en el coche para otra maleta.",
+      "answer": "espacio",
+      "base": "espacio",
+      "en": "There's no room in the car for another suitcase."
+    },
+    {
+      "es": "Compré dos ____ para el concierto del sábado.",
+      "answer": "entradas",
+      "base": "una entrada",
+      "en": "I bought two tickets for Saturday's concert."
+    },
+    {
+      "es": "¿Vamos a tomar una ____ después del trabajo?",
+      "answer": "cerveza",
+      "base": "una cerveza",
+      "en": "Shall we go for a beer after work?"
+    },
+    {
+      "es": "____ el médico, debo caminar más todos los días.",
+      "answer": "Según",
+      "base": "según",
+      "en": "According to the doctor, I should walk more every day."
+    },
+    {
+      "es": "Tengo que ____ el baño antes de la fiesta.",
+      "answer": "limpiar",
+      "base": "limpiar",
+      "en": "I have to clean the bathroom before the party."
+    }
+  ],
+  "translate": [
+    {
+      "en": "My grandfather lives in the south.",
+      "es": "Mi abuelo vive en el sur."
+    },
+    {
+      "en": "The shop is full of people.",
+      "es": "La tienda está llena de gente."
+    },
+    {
+      "en": "Can you give me some advice?",
+      "es": "¿Me puedes dar un consejo?"
+    },
+    {
+      "en": "I'm in a hurry; I'll call you in a while.",
+      "es": "Tengo prisa; te llamo en un rato."
+    }
+  ],
+  "story": {
+    "title": "El traje de la boda",
+    "text": "Mañana es la boda de mi mejor amigo y no tengo (1). Salgo con (2) hacia el centro. En la tercera tienda encuentro uno (3), azul y elegante. Lo llevo a casa en una (4) enorme. Estoy cansado y creo que me (5) un descanso, así que me siento un (6) en el sofá y me duermo. Cuando despierto, veo el traje en el suelo y a mi perro durmiendo encima, muy feliz. Intento (7) el traje durante una hora, pero es imposible. Al final voy a la boda con el traje (8) de pelos. Mi amigo se ríe: «Por lo menos tu perro tiene buen gusto».",
+    "answers": [
+      "traje",
+      "prisa",
+      "precioso",
+      "bolsa",
+      "merezco",
+      "rato",
+      "limpiar",
+      "lleno"
+    ],
+    "en": "A man buys a beautiful suit for his best friend's wedding, but his dog sleeps on it and he has to go to the wedding covered in dog hair."
+  }
+}

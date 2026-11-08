@@ -1,0 +1,85 @@
+{
+  "gapFill": [
+    {
+      "es": "¿Puedes ____ los platos esta noche? Yo estoy muy cansada.",
+      "answer": "lavar",
+      "base": "lavar",
+      "en": "Can you wash the dishes tonight? I'm very tired."
+    },
+    {
+      "es": "Tengo ____ y me duele mucho la cabeza.",
+      "answer": "fiebre",
+      "base": "fiebre",
+      "en": "I have a fever and my head really hurts."
+    },
+    {
+      "es": "La ____ de mi portátil está rota.",
+      "answer": "pantalla",
+      "base": "pantalla",
+      "en": "My laptop screen is broken."
+    },
+    {
+      "es": "Bájate en la próxima ____ del autobús.",
+      "answer": "parada",
+      "base": "parada",
+      "en": "Get off at the next bus stop."
+    },
+    {
+      "es": "Son las tres de la mañana y sigo ____.",
+      "answer": "despierto",
+      "base": "despierto",
+      "en": "It's three in the morning and I'm still awake."
+    },
+    {
+      "es": "Con este tráfico, es ____ que llegue tarde hoy.",
+      "answer": "probable",
+      "base": "probable",
+      "en": "With this traffic, he'll probably be late today."
+    },
+    {
+      "es": "Mi hermano compró una ____ nueva para ir al trabajo.",
+      "answer": "moto",
+      "base": "moto",
+      "en": "My brother bought a new motorcycle to get to work."
+    },
+    {
+      "es": "Cuando estoy enferma, mi madre me hace ____ de pollo.",
+      "answer": "sopa",
+      "base": "sopa",
+      "en": "When I'm sick, my mother makes me chicken soup."
+    }
+  ],
+  "translate": [
+    {
+      "en": "The atmosphere at work is very good.",
+      "es": "El ambiente en el trabajo es muy bueno."
+    },
+    {
+      "en": "I can't resist chocolate cookies.",
+      "es": "No puedo resistir las galletas de chocolate."
+    },
+    {
+      "en": "Did she mention the meeting?",
+      "es": "¿Ella mencionó la reunión?"
+    },
+    {
+      "en": "The coffee in this office is awful.",
+      "es": "El café de esta oficina es una porquería."
+    }
+  ],
+  "story": {
+    "title": "La caja gigante",
+    "text": "El lunes recibí un (1) de la tienda: mi (2) llegaba esa tarde. ¡Una televisión nueva! A las cinco, un (3) dejó una caja (4) en mi puerta. Todos los vecinos salieron a (5) con mucha (6). Abrí la caja y, en un (7), vi el problema: la televisión estaba (8). Llamé a la tienda, enfadado. Aparentemente, no había ningún error: yo había comprado una televisión «con descuento especial». Mi vecino miró la caja y dijo: «Bueno, por lo menos la caja es excelente». Ahora mi gato duerme en ella todos los días, muy feliz.",
+    "answers": [
+      "aviso",
+      "compra",
+      "conductor",
+      "gigante",
+      "observar",
+      "curiosidad",
+      "instante",
+      "rota"
+    ],
+    "en": "A man's new TV arrives broken in a giant box because he unknowingly bought it as a damaged discount item, and now only his cat is happy with the purchase."
+  }
+}
