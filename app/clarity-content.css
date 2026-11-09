@@ -230,3 +230,39 @@
 @media (max-width:520px){
   .cl .ct-steps{grid-template-columns:1fr}
 }
+
+/* byline */
+.cl .post-byline{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;transition:text-decoration-color 160ms ease}
+@media (hover:hover) and (pointer:fine){.cl .post-byline:hover{text-decoration-color:var(--coral)}}
+
+/* email pdf form */
+.cl .pdf-form{padding:28px 30px}
+.cl .pdf-form-title{font-size:21px;letter-spacing:-.02em;margin-bottom:6px}
+.cl .pdf-form-body{color:var(--ink-2);font-size:15px;max-width:52ch;margin-bottom:18px}
+.cl .pdf-form-label{display:block;font-size:13.5px;font-weight:600;color:var(--navy);margin-bottom:8px}
+.cl .pdf-form-row{display:flex;gap:10px;flex-wrap:wrap}
+.cl .pdf-form-row input{flex:1;min-width:220px;height:48px;padding:0 16px;border-radius:var(--r-sm);border:0;box-shadow:0 0 0 1px var(--line) inset;background:var(--paper);color:var(--navy);font:500 15px var(--sans);transition:box-shadow 160ms ease}
+.cl .pdf-form-row input::placeholder{color:var(--ink-3)}
+.cl .pdf-form-row input:focus-visible{outline:none;box-shadow:0 0 0 2px var(--navy) inset}
+.cl .pdf-form-row input[aria-invalid]{box-shadow:0 0 0 2px var(--coral-ink) inset}
+.cl .pdf-form-row .btn{height:48px}
+.cl .pdf-form-err{margin-top:10px;font-size:14px;color:var(--coral-ink);font-weight:500}
+.cl .pdf-form-done{font-size:15.5px;font-weight:600;color:var(--green)}
+.cl .pdf-form-done a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:3px}
+.cl .pdf-form .fine{margin-top:10px}
+.cl .pdf-preview{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cl .pdf-preview figure{margin:0}
+.cl .pdf-preview img{display:block;width:100%;height:auto;border-radius:10px;box-shadow:0 0 0 1px var(--line-2),var(--shadow-1);background:#fff}
+.cl .pdf-preview figcaption{margin-top:10px;font-size:13.5px;color:var(--ink-3)}
+@media (max-width:760px){
+  .cl .pdf-form{padding:22px}
+  .cl .pdf-preview{grid-template-columns:1fr 1fr}
+  .cl .pdf-preview figure:last-child{display:none}
+}
+.cl .wb-sample{grid-column:1/-1;margin-top:-28px}
+.cl .anki-card{width:min(300px,80%);height:auto;border-radius:20px;box-shadow:0 0 0 1px var(--line-2),var(--shadow-2)}
+.cl .thanks-card{max-width:760px}
+.cl .thanks-card .wb-start{text-align:left;margin-top:4px}
+.cl .buy-alt{margin-top:12px;text-align:center}
+.cl .buy-alt .link{background:none;border:0;padding:0;cursor:pointer;font:600 14.5px var(--sans);color:var(--navy);text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:3px}
+.cl .wb-buy .fine a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:2px}

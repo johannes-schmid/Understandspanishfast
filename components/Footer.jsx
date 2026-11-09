@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { BrandMark } from '@/components/NavbarClient'
 
 const COLS = [
-  { h: 'Study', links: [['/study', 'Free sample'], ['/level-test', 'Level test'], ['/workbook', 'Workbook']] },
-  { h: 'Word lists', links: [['/words/top-100-spanish-words', 'Top 100'], ['/words/top-500-spanish-words', 'Top 500'], ['/words/most-common-spanish-verbs', 'Most common verbs'], ['/words/spanish-frequency-list', 'Frequency list']] },
-  { h: 'About', links: [['/blog', 'Blog'], ['/privacy', 'Privacy'], ['/terms', 'Terms']] },
+  { h: 'Study', links: [['/study', 'Free sample'], ['/level-test', 'Vocabulary test'], ['/workbook', 'Workbook'], ['/anki-spanish-deck', 'Anki deck'], ['/vs-duolingo', 'Duolingo alternative'], ['/vs-anki', 'Anki alternative']] },
+  { h: 'Word lists', links: [['/words/top-100-spanish-words', 'Top 100'], ['/words/top-500-spanish-words', 'Top 500'], ['/words/most-common-spanish-verbs', 'Most common verbs'], ['/words/spanish-frequency-list', 'Frequency list'], ['/words/most-common-spanish-words-pdf', 'Free PDF']] },
+  { h: 'About', links: [['/about', 'About'], ['/blog', 'Blog'], ['/privacy', 'Privacy'], ['/terms', 'Terms']] },
 ]
 
 export default function Footer() {

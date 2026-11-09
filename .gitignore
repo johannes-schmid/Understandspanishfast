@@ -14,3 +14,6 @@ ds-bundle/
 mobile/.expo/
 /.swc
 workbook/build/
+scripts/anki/.venv/
+.env*
+workbook/out/*.apkg

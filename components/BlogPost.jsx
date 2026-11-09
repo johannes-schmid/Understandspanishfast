@@ -15,6 +15,11 @@ const POSTS = {
   'benefits-of-learning-spanish': '10 Benefits of Learning Spanish',
   'best-books-for-learning-spanish': 'Best Books to Learn Spanish',
   'how-to-build-spanish-vocabulary': 'How to Build Spanish Vocabulary Fast',
+  'best-free-apps-to-learn-spanish': 'Free Spanish Learning Apps: What’s Actually Free',
+  'how-to-learn-spanish-as-an-adult': 'The Best Way to Learn Spanish as an Adult',
+  'which-spanish-should-i-learn': 'Which Spanish Should I Learn?',
+  'can-you-learn-spanish-by-watching-tv': 'Can You Learn Spanish by Watching TV?',
+  'how-to-start-learning-spanish': 'How to Start Learning Spanish: Your First 30 Days',
 }
 
 const RELATED = {
@@ -22,21 +27,28 @@ const RELATED = {
   'cracking-the-1500': ['how-many-spanish-words-to-be-fluent', 'the-power-of-the-first-100-words', 'how-to-build-spanish-vocabulary'],
   'how-many-spanish-words-to-be-fluent': ['cracking-the-1500', 'the-power-of-the-first-100-words', 'how-long-does-it-take-to-learn-spanish'],
   'how-long-does-it-take-to-learn-spanish': ['how-many-spanish-words-to-be-fluent', 'fastest-way-to-learn-spanish', 'is-spanish-hard-to-learn'],
-  'best-spanish-learning-app': ['best-shows-to-learn-spanish', 'best-podcasts-for-learning-spanish', 'best-books-for-learning-spanish'],
-  'fastest-way-to-learn-spanish': ['how-long-does-it-take-to-learn-spanish', 'how-to-build-spanish-vocabulary', 'best-spanish-learning-app'],
+  'best-spanish-learning-app': ['best-free-apps-to-learn-spanish', 'best-podcasts-for-learning-spanish', 'best-books-for-learning-spanish'],
+  'fastest-way-to-learn-spanish': ['how-to-learn-spanish-as-an-adult', 'how-long-does-it-take-to-learn-spanish', 'how-to-build-spanish-vocabulary'],
   'is-spanish-hard-to-learn': ['how-long-does-it-take-to-learn-spanish', 'how-many-spanish-words-to-be-fluent', 'benefits-of-learning-spanish'],
-  'best-shows-to-learn-spanish': ['best-podcasts-for-learning-spanish', 'best-books-for-learning-spanish', 'best-spanish-learning-app'],
+  'best-shows-to-learn-spanish': ['can-you-learn-spanish-by-watching-tv', 'best-podcasts-for-learning-spanish', 'best-books-for-learning-spanish'],
   'best-podcasts-for-learning-spanish': ['best-shows-to-learn-spanish', 'best-books-for-learning-spanish', 'learn-spanish-while-driving'],
   'learn-spanish-while-driving': ['best-podcasts-for-learning-spanish', 'best-shows-to-learn-spanish', 'fastest-way-to-learn-spanish'],
   'benefits-of-learning-spanish': ['is-spanish-hard-to-learn', 'how-long-does-it-take-to-learn-spanish', 'how-many-spanish-words-to-be-fluent'],
   'best-books-for-learning-spanish': ['best-shows-to-learn-spanish', 'best-podcasts-for-learning-spanish', 'best-spanish-learning-app'],
   'how-to-build-spanish-vocabulary': ['the-power-of-the-first-100-words', 'cracking-the-1500', 'how-many-spanish-words-to-be-fluent'],
+  'best-free-apps-to-learn-spanish': ['best-spanish-learning-app', 'how-to-start-learning-spanish', 'best-podcasts-for-learning-spanish'],
+  'how-to-learn-spanish-as-an-adult': ['how-to-start-learning-spanish', 'fastest-way-to-learn-spanish', 'how-long-does-it-take-to-learn-spanish'],
+  'which-spanish-should-i-learn': ['is-spanish-hard-to-learn', 'how-to-start-learning-spanish', 'best-shows-to-learn-spanish'],
+  'can-you-learn-spanish-by-watching-tv': ['best-shows-to-learn-spanish', 'cracking-the-1500', 'how-many-spanish-words-to-be-fluent'],
+  'how-to-start-learning-spanish': ['the-power-of-the-first-100-words', 'how-to-learn-spanish-as-an-adult', 'which-spanish-should-i-learn'],
 }
 
 // Most relevant word-list page per post (defaults to the flagship list).
 const WORD_LINK = {
   'the-power-of-the-first-100-words': { href: '/words/top-100-spanish-words', label: 'See the top 100 Spanish words →' },
   'how-to-build-spanish-vocabulary': { href: '/words/spanish-frequency-list', label: 'See the Spanish frequency list & method →' },
+  'how-to-start-learning-spanish': { href: '/words/top-100-spanish-words', label: 'See the top 100 Spanish words →' },
+  'can-you-learn-spanish-by-watching-tv': { href: '/level-test', label: 'Take the Spanish vocabulary test →' },
 }
 const DEFAULT_WORD_LINK = { href: '/words/most-common-spanish-words', label: 'Browse the 1,000 most common Spanish words →' }
 
@@ -84,13 +96,14 @@ export default function BlogPost({
   slug, title, description, category, readTime,
   datePublished = '2026-05-01', dateModified = '2026-05-07',
   author = 'Johannes Schmid', heroCallout, sidebar, children,
+  image = 'https://mostcommonspanish.com/og-default.png',
 }) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: title,
     description,
-    image: 'https://mostcommonspanish.com/og-default.png',
+    image,
     author: { '@type': 'Person', name: author, url: 'https://mostcommonspanish.com/about' },
     publisher: {
       '@type': 'Organization',
@@ -116,6 +129,8 @@ export default function BlogPost({
           <p className="lead post-dek">{description}</p>
           <div className="post-meta">
             <span className="chip">{category}</span>
+            <span>By <Link href="/about" className="post-byline">{author}</Link></span>
+            <span aria-hidden="true">·</span>
             <span>{readTime}</span>
             <span aria-hidden="true">·</span>
             <span>Updated <time dateTime={dateModified}>{fmtDate(dateModified)}</time></span>

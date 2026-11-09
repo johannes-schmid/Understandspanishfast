@@ -5,8 +5,8 @@ import WorkbookCover from '@/components/WorkbookCover'
 import SampleNote from '@/components/SampleNote'
 
 export const metadata = {
-  title: 'The Top 1,500 Spanish Words Workbook — Printable PDF',
-  description: 'A 119-page printable workbook for the 1,500 most common Spanish words: 30 units, gap-fills, matching, mini-stories, review tests and an answer key. €5, instant PDF download.',
+  title: 'Spanish Vocabulary Workbook PDF: Top 1,500 Words',
+  description: 'Printable Spanish vocabulary workbook PDF: the 1,500 most common words in 30 units, with exercises, review tests and an answer key. Free sample unit. €5.',
   alternates: { canonical: 'https://mostcommonspanish.com/workbook' },
   openGraph: { url: 'https://mostcommonspanish.com/workbook', images: ['/workbook/cover.webp'] },
 }
@@ -57,6 +57,10 @@ function BuyBox() {
       <form action="/api/checkout" method="POST">
         <button type="submit" className="btn btn-coral btn-block">Buy the workbook · €5</button>
       </form>
+      <form action="/api/checkout" method="POST" className="buy-alt">
+        <input type="hidden" name="product" value="bundle-1500" />
+        <button type="submit" className="link">Add the Anki deck with audio: both for €12</button>
+      </form>
       <p className="fine">Secure checkout by Stripe. Instant PDF download after payment.</p>
     </div>
   )
@@ -105,6 +109,7 @@ export default function WorkbookPage() {
           <div className="sec-head">
             <h2>Look inside the book</h2>
             <p className="lead">Real pages from the workbook. Every word, sentence and exercise is in the PDF exactly like this.</p>
+            <p className="wb-sample"><a className="link" href="/workbook/top-1500-workbook-sample-unit-1.pdf" target="_blank" rel="noopener">Download Unit 1 free (PDF, 7 pages)</a></p>
           </div>
           <div className="wb-previews">
             {PREVIEWS.map((p) => (

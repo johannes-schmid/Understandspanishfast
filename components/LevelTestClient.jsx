@@ -97,7 +97,7 @@ export default function LevelTestClient({ pool }) {
       <div className="wrap pg">
         <div className="pg-head solo">
           <div>
-            <h1 className="pg-h1">How much Spanish do you <span className="soft">actually know</span></h1>
+            <h1 className="pg-h1">Spanish vocabulary test<br /><span className="soft">How many words you really know</span></h1>
             <p className="lead">We show you frequency-ranked words. You say whether you’d recognise each one. We estimate your vocabulary and how much everyday Spanish you already follow.</p>
           </div>
         </div>
