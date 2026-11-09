@@ -7,6 +7,7 @@ const STATIC_ROUTES = [
   { path: '', priority: 1.0, changefreq: 'weekly', modified: '2026-11-08' },
   { path: 'words', priority: 0.9, changefreq: 'weekly', modified: '2026-11-08' },
   { path: 'level-test', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
+  { path: 'shop', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
   { path: 'workbook', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
   { path: 'spanish-vocabulary-app', priority: 0.8, changefreq: 'monthly', modified: '2026-11-08' },
   { path: 'vs-anki', priority: 0.8, changefreq: 'monthly', modified: '2026-11-08' },

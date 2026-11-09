@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ShopProducts from '@/components/ShopProducts'
 import HomepageWordPreview from '@/components/HomepageWordPreview'
 import { words } from '@/data/words'
 
@@ -234,52 +235,11 @@ export default function Landing() {
       <section className="sec shop" id="workbooks" style={{ paddingTop: 40 }}>
         <div className="wrap">
           <div className="sec-head">
-            <h2>The Top 1,500 workbook for €5</h2>
-            <p className="lead">One printable book for the 1,500 words that cover 80% of everyday Spanish. Short units, varied exercises and a fixed method, so you always know what to do next and when a word is learned.</p>
+            <h2>Learn the 1,500 on paper, in Anki, or both</h2>
+            <p className="lead">The words that cover 80% of everyday Spanish, in frequency order. A printable workbook with exercises, an Anki deck with audio, or the two together.</p>
           </div>
-
-          <article className="card flag">
-            <div className="flag-cover">
-              <div className="cover" role="img" aria-label="Top 1,500 workbook cover">
-                <span className="mono">MOST COMMON SPANISH</span>
-                <CoverBars />
-                <div className="cover-num tab">1,500</div>
-                <div className="cover-t">The Top 1,500 Workbook<br /><span style={{ opacity: 0.7, fontWeight: 500 }}>Words #1–1,500 · 80% coverage</span></div>
-              </div>
-            </div>
-            <div className="flag-body">
-              <div className="flag-meta"><span className="chip coral">PRINTABLE PDF</span><span className="chip">WORDS #1–1,500</span><span className="chip">≈80% COVERAGE</span></div>
-              <h3>Every word you need for everyday Spanish, on paper</h3>
-              <p className="lead">The 1,500 most frequent words, in ranked order, split into 30 units of 50. Each unit runs through the same four passes: read, recall, use, review. One unit every two or three days gets you through the book in about three months.</p>
-              <div className="method">
-                <div className="step"><span className="mono">PASS 1</span><b>Read</b><p>Word, meaning and a real sentence. Say it out loud.</p></div>
-                <div className="step"><span className="mono">PASS 2</span><b>Recall</b><p>Fold the page. Write the meaning from memory.</p></div>
-                <div className="step"><span className="mono">PASS 3</span><b>Use</b><p>Fill the gap in a fresh sentence.</p></div>
-                <div className="step"><span className="mono">PASS 4</span><b>Review</b><p>Day 3 and day 7 check. 45 of 50 = unit mastered.</p></div>
-              </div>
-              <div className="page-mini" aria-hidden="true">
-                <div className="pm-head"><span className="mono">UNIT 03 · PASS 2 · RECALL</span><span className="mono">P. 18</span></div>
-                <div className="pm-row"><span className="mono">#141</span><b>llegar</b><span className="pm-line hw">to arrive</span></div>
-                <div className="pm-row"><span className="mono">#142</span><b>mismo</b><span className="pm-line hw">same</span></div>
-                <div className="pm-row"><span className="mono">#143</span><b>dejar</b><span className="pm-line" /></div>
-              </div>
-            </div>
-            <aside className="flag-aside">
-              <div className="mono" style={{ color: 'var(--ink-3)', marginBottom: 16 }}>WHAT’S INSIDE</div>
-              <ul className="inside">
-                <li><Dot />30 units × 50 words, ranked #1–1,500</li>
-                <li><Dot />Example sentence for every word</li>
-                <li><Dot />Gap-fill, matching, translation and mini-story exercises</li>
-                <li><Dot />Review test every 250 words, plus a mastery tracker</li>
-                <li><Dot />Answer key at the back</li>
-                <li><Dot />PDF · A4 and US Letter</li>
-              </ul>
-              <div className="price"><b className="tab">€5</b><span>one-time · instant download</span></div>
-              <Link className="btn btn-coral btn-block" href="/workbook">Get the workbook · €5</Link>
-              <p className="fine">Print as many copies as you need.</p>
-            </aside>
-          </article>
-
+          <ShopProducts headingLevel="h3" />
+          <p className="fine sp-secure">One-time payment. Instant download. <Link href="/shop" style={{ color: 'var(--navy)', fontWeight: 600 }}>Compare them in the shop</Link></p>
         </div>
       </section>
 

@@ -266,3 +266,38 @@
 .cl .buy-alt{margin-top:12px;text-align:center}
 .cl .buy-alt .link{background:none;border:0;padding:0;cursor:pointer;font:600 14.5px var(--sans);color:var(--navy);text-decoration:underline;text-decoration-color:var(--coral);text-underline-offset:3px}
 .cl .wb-buy .fine a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+
+/* shop */
+.cl .sp-hero{padding-bottom:8px}
+.cl .sp-sec{padding-top:24px}
+.cl .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.cl .sp-card{display:flex;flex-direction:column;overflow:hidden;padding:0}
+.cl .sp-best{box-shadow:0 0 0 2px var(--coral),var(--shadow-2)}
+.cl .sp-visual{position:relative;height:250px;display:grid;place-items:center;
+  background:radial-gradient(220px 170px at 70% 20%,rgba(201,195,242,.95),rgba(201,195,242,0) 70%),linear-gradient(160deg,#dfe3fb,#ebe8fb)}
+.cl .sp-vis-cover .cover{width:150px;padding:16px 14px}
+.cl .sp-vis-cover .cover .cover-num{font-size:44px}
+.cl .sp-anki{display:block;height:auto;border-radius:14px;box-shadow:0 0 0 1px var(--line-2),var(--shadow-2)}
+.cl .sp-anki-md{width:142px}
+.cl .sp-anki-sm{width:112px}
+.cl .sp-vis-bundle{display:flex;align-items:center}
+.cl .sp-vis-bundle .cover{transform:rotate(-4deg);z-index:1}
+.cl .sp-vis-bundle .sp-anki{margin-left:-28px;transform:rotate(4deg) translateY(10px);position:relative;z-index:2}
+.cl .sp-flag{align-self:flex-start;margin-bottom:12px}
+.cl .sp-body{padding:26px 26px 24px;display:flex;flex-direction:column;flex:1}
+.cl .sp-name{font-size:22px;letter-spacing:-.025em;font-weight:800;line-height:1.15}
+.cl .sp-tag{color:var(--ink-2);font-size:15px;margin:6px 0 18px}
+.cl .sp-points{margin-bottom:auto}
+.cl .sp-price{margin:22px 0 14px}
+.cl .sp-price b{font-size:36px}
+.cl .sp-was{font-size:17px;font-weight:600;color:var(--ink-3)}
+.cl .sp-more{display:block;text-align:center;margin-top:12px;font-size:14px;font-weight:600;color:var(--navy);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+@media (hover:hover) and (pointer:fine){.cl .sp-more:hover{text-decoration-color:var(--coral)}}
+.cl .sp-secure{margin-top:20px}
+.cl .sp-free a{text-decoration:none;color:inherit;transition:box-shadow 200ms var(--ease-out)}
+@media (hover:hover) and (pointer:fine){.cl .sp-free a:hover{box-shadow:var(--shadow-2)}}
+@media (max-width:1000px){
+  .cl .sp-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}
+  .cl .sp-best{order:-1}
+  .cl .sp-visual{height:220px}
+}

@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 const LINKS = [
   { href: '/words/most-common-spanish-words', label: 'Word lists', match: '/words' },
   { href: '/level-test', label: 'Level test', match: '/level-test' },
-  { href: '/workbook', label: 'Workbook', match: '/workbook', isNew: true },
+  { href: '/shop', label: 'Shop', match: ['/shop', '/workbook', '/anki-spanish-deck', '/thanks'], isNew: true },
   { href: '/blog', label: 'Blog', match: '/blog' },
 ]
 
@@ -38,7 +38,7 @@ export default function NavbarClient() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const isActive = (match) => path.startsWith(match)
+  const isActive = (match) => [].concat(match).some((m) => path.startsWith(m))
 
   return (
     <>
