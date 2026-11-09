@@ -12,6 +12,16 @@ export const metadata = {
   openGraph: { title: TITLE, description: DESC, url: PAGE_URL, type: 'website', images: ['https://mostcommonspanish.com/anki/card-preview.webp'] },
 }
 
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'The Top 1,500 Spanish Words — Anki Deck',
+  description: 'A Spanish Anki deck (.apkg) of the 1,500 most frequent words in rank order, with native audio for every word and example sentence, translations and pictures.',
+  image: 'https://mostcommonspanish.com/anki/card-preview.webp',
+  brand: { '@type': 'Brand', name: 'Most Common Spanish' },
+  offers: { '@type': 'Offer', price: '9.00', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: PAGE_URL },
+}
+
 const FAQ = [
   { q: 'What is in the deck?', a: '1,500 notes, one per word, ranked #1 to #1,500 by frequency. Each note has the word with its article, meaning, part of speech, an example sentence with translation, audio for the word and the sentence, and a picture for about 1,200 of the words.' },
   { q: 'Which card types does it make?', a: 'Two per word: Spanish to English (recognise it) and English to Spanish (say it). If you only want recognition, suspend the second card type in the browser in one click.' },
@@ -38,6 +48,7 @@ const INSIDE = [
 export default function AnkiDeck() {
   return (
     <div className="cl cl-home">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="hero wb-hero">
