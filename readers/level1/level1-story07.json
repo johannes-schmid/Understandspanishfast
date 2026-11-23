@@ -1,0 +1,988 @@
+{
+  "id": "level1-story07",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Lo de siempre, para dos",
+  "title_en": "The Usual, for Two",
+  "summary_en": "For years a waiter serves the same couple every Friday, until one night the husband arrives alone and orders for two, and the waiter must decide whether to sit down with him.",
+  "names": [
+    "Ramón",
+    "Julio",
+    "Teresa"
+  ],
+  "paragraphs": [
+    "Ramón trabaja en un pequeño restaurante, en una calle tranquila de la ciudad. Tiene 50 años y lleva casi 20 en el mismo lugar. No es un sitio grande ni bonito, pero la comida es buena y la gente siempre vuelve.",
+    "Durante muchos años, Julio y Teresa volvieron cada semana, el mismo día: el viernes. Llegaban a las 9 de la noche y se sentaban en la misma mesa, cerca de la puerta. Él era alto, serio, de pocas palabras. Ella era pequeña, hablaba mucho y tenía una voz muy bonita.",
+    "—Lo de siempre, Ramón —decía ella—. Y vino blanco para los dos.",
+    "Ramón no necesitaba la carta. Lo sabía todo. Sabía que Teresa comía poco y hablaba mucho, y que Julio comía todo y escuchaba. Sabía que él siempre pagaba la cuenta, aunque ella decía cada vez: «Hoy pago yo».",
+    "En todos esos años, Ramón conoció un poco su vida. Supo cuando la hija de ellos se casó, cuando Julio dejó su trabajo, cuando el perro de la familia murió. Teresa le contaba todo. A veces también le preguntaba por su vida.",
+    "—¿Y tú, Ramón? ¿Ya tienes novia?",
+    "—Todavía no, señora.",
+    "—Pues no esperes demasiado. La vida pasa muy rápido.",
+    "Un viernes de este año, a las 9 de la noche, la puerta se abrió y entró Julio. Solo. Ramón esperó. Quizás Teresa venía detrás. Pero la puerta se cerró y nadie más entró.",
+    "Julio se sentó en su sitio de siempre. Parecía más viejo y más pequeño. Tenía los ojos rojos.",
+    "—Buenas noches, señor Julio.",
+    "—Buenas noches, Ramón. Lo de siempre. Para dos. Y vino blanco.",
+    "Ramón no preguntó nada. Preparó todo para dos, como siempre. Sirvió el vino a los dos lados. Cuando llegó la comida, Julio no comió. Miró el otro lado, donde la comida de Teresa esperaba.",
+    "—Ella murió hace tres semanas —dijo por fin—. Estaba enferma desde hace un año. No dijo nada a nadie. No quería ver a la gente con esa cara.",
+    "Ramón sintió un dolor en el corazón.",
+    "—Lo siento mucho, señor.",
+    "—Antes de morir, me pidió una cosa. Me dijo: «Tú vas a seguir con los viernes. No quiero que te quedes en casa solo, mirando mis fotos». Y yo le prometí. Pero no sé comer solo, Ramón. En 40 años, nunca comí aquí sin ella.",
+    "Ramón no sabía qué hacer. En 20 años, nunca se sentó con la gente que servía. Su lugar era de pie, con la carta en la mano. Miró a su jefe. El jefe estaba allí, cerca, y lo escuchó todo. Movió la cabeza: sí.",
+    "—¿Puedo? —preguntó Ramón.",
+    "Julio levantó los ojos.",
+    "—¿Tú? ¿Y tu trabajo?",
+    "—Mi jefe dice que hoy sirve él.",
+    "Ramón se sentó en el lugar de Teresa. Era raro. Desde allí, todo parecía otro: la puerta, la luz, la calle. Pensó que ella miraba esto cada semana, durante años.",
+    "Primero comieron sin hablar. Después, Julio empezó a contar cosas. Contó cómo conoció a Teresa en un tren cuando tenían 20 años. Ella le habló durante cuatro horas y él casi no dijo nada.",
+    "—Desde ese día, ella habló por los dos —dijo Julio—. Y yo escuché por los dos.",
+    "Y por primera vez esa noche, su cara cambió un poco.",
+    "Al fin, Julio quiso pagar la cuenta. El jefe no lo permitió.",
+    "—Hoy no, señor. Hoy usted no paga nada.",
+    "Antes de salir, Julio se quedó un minuto en la puerta.",
+    "—Ramón, ¿el próximo viernes tienes trabajo?",
+    "—Sí, señor. Como siempre.",
+    "—Entonces vuelvo. Lo de siempre. Para dos.",
+    "Y volvió. Ahora, cada semana, a las 9 de la noche, Julio llega, se sienta cerca de la puerta y pide para dos. Ramón termina su trabajo un poco antes, y el jefe lo deja. Se sientan juntos, beben vino blanco y hablan. Bueno, Julio habla. Ramón escucha.",
+    "Una noche, Julio lo miró y le preguntó:",
+    "—¿Y tú, Ramón? ¿Ya tienes novia?",
+    "Ramón no dijo nada por un segundo. Era la pregunta de Teresa.",
+    "—Todavía no.",
+    "—Pues no esperes demasiado —dijo Julio—. La vida pasa muy rápido.",
+    "Ramón miró el vino, la luz, la puerta. Y pensó que, de alguna manera, ella todavía estaba en la mesa con ellos."
+  ],
+  "glossary": [
+    {
+      "word": "restaurante",
+      "lemma": "restaurante",
+      "en": "restaurant"
+    },
+    {
+      "word": "viernes",
+      "lemma": "viernes",
+      "en": "Friday"
+    },
+    {
+      "word": "mesa",
+      "lemma": "mesa",
+      "en": "table"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Cuándo llegaban Julio y Teresa?",
+      "a": "Cada semana, a las 9 de la noche.",
+      "q_en": "When did Julio and Teresa arrive?",
+      "a_en": "Every week, at 9 at night."
+    },
+    {
+      "q": "¿Qué pedían siempre?",
+      "a": "Lo de siempre y vino blanco.",
+      "q_en": "What did they always order?",
+      "a_en": "The usual and white wine."
+    },
+    {
+      "q": "¿Por qué llegó Julio solo?",
+      "a": "Porque Teresa murió hace tres semanas.",
+      "q_en": "Why did Julio arrive alone?",
+      "a_en": "Because Teresa died three weeks ago."
+    },
+    {
+      "q": "¿Qué le prometió Julio a Teresa?",
+      "a": "Volver cada semana y no quedarse solo en casa.",
+      "q_en": "What did Julio promise Teresa?",
+      "a_en": "To keep coming back every week and not stay home alone."
+    },
+    {
+      "q": "¿Qué le pregunta Julio a Ramón una noche?",
+      "a": "Si ya tiene novia.",
+      "q_en": "What does Julio ask Ramón one night?",
+      "a_en": "Whether he has a girlfriend yet."
+    }
+  ],
+  "wordCount": 688,
+  "measured": {
+    "coverage": 98.91,
+    "glossedPct": 1.09,
+    "unglossed": 0,
+    "words": 645,
+    "listTokens": 429,
+    "grammarTokens": 209,
+    "nameTokens": 43,
+    "uniqueListWords": 163,
+    "highestRankUsed": 495,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 8
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 3
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 1
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 7
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 1
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 3
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 1
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 1
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 5
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 10
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 3
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 5
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 1
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 3
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 3
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 3
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 1
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 1
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 1
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 2
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 2
+      },
+      {
+        "lemma": "bueno",
+        "rank": 29,
+        "count": 4
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 5
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 7
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 9
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 3
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 3
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 1
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 2
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 4
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 2
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 7
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 5
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 5
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 2
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 1
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 6
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 4
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 4
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 4
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 2
+      },
+      {
+        "lemma": "usted",
+        "rank": 58,
+        "count": 1
+      },
+      {
+        "lemma": "necesitar",
+        "rank": 59,
+        "count": 1
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 2
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 2
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 9
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 6
+      },
+      {
+        "lemma": "señor",
+        "rank": 69,
+        "count": 4
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 2
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 9
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 8
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 3
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 1
+      },
+      {
+        "lemma": "sentir",
+        "rank": 79,
+        "count": 4
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 4
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 3
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 1
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 2
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 1
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 2
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 1
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 7
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 3
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 1
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 2
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 1
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 8
+      },
+      {
+        "lemma": "morir",
+        "rank": 109,
+        "count": 3
+      },
+      {
+        "lemma": "conocer",
+        "rank": 110,
+        "count": 2
+      },
+      {
+        "lemma": "seguir",
+        "rank": 111,
+        "count": 1
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 5
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 3
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 1
+      },
+      {
+        "lemma": "alguno",
+        "rank": 117,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 5
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 2
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 2
+      },
+      {
+        "lemma": "escuchar",
+        "rank": 123,
+        "count": 4
+      },
+      {
+        "lemma": "gente",
+        "rank": 125,
+        "count": 3
+      },
+      {
+        "lemma": "ellos",
+        "rank": 127,
+        "count": 2
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 4
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 3
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 1
+      },
+      {
+        "lemma": "lugar",
+        "rank": 134,
+        "count": 3
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 1
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 3
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 2
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 1
+      },
+      {
+        "lemma": "hoy",
+        "rank": 161,
+        "count": 4
+      },
+      {
+        "lemma": "allí",
+        "rank": 162,
+        "count": 2
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 5
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 2
+      },
+      {
+        "lemma": "demasiado",
+        "rank": 182,
+        "count": 2
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 4
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 4
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 7
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 5
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 1
+      },
+      {
+        "lemma": "cabeza",
+        "rank": 192,
+        "count": 1
+      },
+      {
+        "lemma": "quizá",
+        "rank": 193,
+        "count": 1
+      },
+      {
+        "lemma": "terminar",
+        "rank": 194,
+        "count": 1
+      },
+      {
+        "lemma": "rápido",
+        "rank": 195,
+        "count": 2
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 9
+      },
+      {
+        "lemma": "minuto",
+        "rank": 209,
+        "count": 1
+      },
+      {
+        "lemma": "serio",
+        "rank": 210,
+        "count": 1
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 3
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 4
+      },
+      {
+        "lemma": "cambiar",
+        "rank": 225,
+        "count": 1
+      },
+      {
+        "lemma": "mover",
+        "rank": 226,
+        "count": 1
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 2
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 2
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 1
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 3
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 1
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 4
+      },
+      {
+        "lemma": "manera",
+        "rank": 252,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 1
+      },
+      {
+        "lemma": "jefe",
+        "rank": 255,
+        "count": 5
+      },
+      {
+        "lemma": "señora",
+        "rank": 256,
+        "count": 1
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 2
+      },
+      {
+        "lemma": "corazón",
+        "rank": 262,
+        "count": 1
+      },
+      {
+        "lemma": "luz",
+        "rank": 265,
+        "count": 2
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 2
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 1
+      },
+      {
+        "lemma": "pues",
+        "rank": 272,
+        "count": 2
+      },
+      {
+        "lemma": "perro",
+        "rank": 278,
+        "count": 1
+      },
+      {
+        "lemma": "hija",
+        "rank": 279,
+        "count": 1
+      },
+      {
+        "lemma": "cara",
+        "rank": 280,
+        "count": 2
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 3
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 2
+      },
+      {
+        "lemma": "cerca",
+        "rank": 296,
+        "count": 3
+      },
+      {
+        "lemma": "aunque",
+        "rank": 317,
+        "count": 1
+      },
+      {
+        "lemma": "blanco",
+        "rank": 320,
+        "count": 3
+      },
+      {
+        "lemma": "casar",
+        "rank": 325,
+        "count": 1
+      },
+      {
+        "lemma": "cuatro",
+        "rank": 331,
+        "count": 1
+      },
+      {
+        "lemma": "tranquilo",
+        "rank": 334,
+        "count": 1
+      },
+      {
+        "lemma": "pie",
+        "rank": 346,
+        "count": 1
+      },
+      {
+        "lemma": "prometer",
+        "rank": 347,
+        "count": 1
+      },
+      {
+        "lemma": "próximo",
+        "rank": 349,
+        "count": 1
+      },
+      {
+        "lemma": "bonito",
+        "rank": 356,
+        "count": 2
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 1
+      },
+      {
+        "lemma": "alto",
+        "rank": 365,
+        "count": 1
+      },
+      {
+        "lemma": "preparar",
+        "rank": 381,
+        "count": 1
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 1
+      },
+      {
+        "lemma": "raro",
+        "rank": 396,
+        "count": 1
+      },
+      {
+        "lemma": "carta",
+        "rank": 408,
+        "count": 2
+      },
+      {
+        "lemma": "beber",
+        "rank": 413,
+        "count": 1
+      },
+      {
+        "lemma": "dolor",
+        "rank": 420,
+        "count": 1
+      },
+      {
+        "lemma": "permitir",
+        "rank": 421,
+        "count": 1
+      },
+      {
+        "lemma": "sitio",
+        "rank": 440,
+        "count": 2
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 1
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 1
+      },
+      {
+        "lemma": "detrás",
+        "rank": 458,
+        "count": 1
+      },
+      {
+        "lemma": "servir",
+        "rank": 463,
+        "count": 3
+      },
+      {
+        "lemma": "rojo",
+        "rank": 471,
+        "count": 1
+      },
+      {
+        "lemma": "novia",
+        "rank": 480,
+        "count": 2
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 1
+      },
+      {
+        "lemma": "tren",
+        "rank": 495,
+        "count": 1
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "viernes",
+        "rank": 1001,
+        "forms": [
+          "viernes"
+        ],
+        "count": 4,
+        "glossed": true
+      },
+      {
+        "lemma": "mesa",
+        "rank": 544,
+        "forms": [
+          "mesa"
+        ],
+        "count": 2,
+        "glossed": true
+      },
+      {
+        "lemma": "restaurante",
+        "rank": null,
+        "forms": [
+          "restaurante"
+        ],
+        "count": 1,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2694,
+      "output_tokens": 13816,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.312,
+    "theme": "A waiter in a small restaurant serves the same couple every Friday for years. One Friday only the man comes, and orders for two. Quiet and moving, not tragic in a heavy way."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story07_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 3747,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 292.4
+    }
+  ]
+}

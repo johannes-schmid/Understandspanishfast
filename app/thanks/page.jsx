@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getPaidSession, PRODUCTS, ANKI_DECK } from '@/lib/stripe'
+import { getPaidSession, PRODUCTS, ANKI_DECK, READER_PACK, READER_PACK_2 } from '@/lib/stripe'
 
 export const dynamic = 'force-dynamic'
 export const metadata = { title: 'Thank you — your download is ready', robots: { index: false, follow: false } }
@@ -22,10 +22,19 @@ export default async function ThanksPage({ searchParams }) {
                 {includes.includes('anki') && (
                   <a className="btn btn-coral" href={`/api/anki/download?session_id=${q}`}>Download the Anki deck · {ANKI_DECK.size}</a>
                 )}
+                {includes.includes('readers') && (
+                  <a className="btn btn-coral" href={`/api/anki/download?deck=readers&session_id=${q}`}>Download the stories · {READER_PACK.size}</a>
+                )}
+                {includes.includes('readers2') && (
+                  <a className="btn btn-coral" href={`/api/anki/download?deck=readers2&session_id=${q}`}>Download the Level 2 stories · {READER_PACK_2.size}</a>
+                )}
                 {includes.includes('workbook') && (
                   <a className="btn btn-navy" href={`/api/workbook/download?session_id=${q}`} download>Download the workbook PDF · 4 MB</a>
                 )}
               </div>
+              {(includes.includes('readers') || includes.includes('readers2')) && (
+                <p className="fine wb-start">The .zip holds the PDF book and one MP3 per story. Read a story once, listen to it while you follow the text, then listen again without it.</p>
+              )}
               {includes.includes('anki') && (
                 <p className="fine wb-start">Open the .apkg file in Anki on your computer (double-click it), then sync to your phone. New cards start at word #1. Already imported the free sample? Your progress on the first 100 words carries over.</p>
               )}

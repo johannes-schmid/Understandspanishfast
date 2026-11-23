@@ -1,0 +1,1137 @@
+{
+  "id": "level1-story09",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "La gran comida de papá",
+  "title_en": "Dad's Big Dinner",
+  "summary_en": "A father and his teenage son try to make a special birthday dinner for the mother, but the chicken burns, the dog steals it, and in the end she cooks simple eggs for everyone.",
+  "names": [
+    "Paula",
+    "Pablo",
+    "Nico",
+    "Toby"
+  ],
+  "paragraphs": [
+    "Paula salió de casa a las 8 de la mañana, como cada día. Era su cumpleaños, pero no dijo nada. Paula nunca dice nada.",
+    "Pablo sí lo sabía. El año pasado olvidó el día, y Paula no le habló durante una semana. Este año quería hacer algo bonito.",
+    "Cuando la puerta se cerró, Pablo entró en el cuarto de su hijo. Nico tenía 16 años y todavía estaba en la cama.",
+    "—Arriba, chico. Hoy vamos a preparar una gran comida para tu madre.",
+    "Nico abrió un ojo.",
+    "—¿Nosotros? Papá, tú no sabes hacer comida.",
+    "—Eso no es verdad. Una vez hice comida para cinco amigos.",
+    "—¿Cuándo?",
+    "—Hace 20 años. Antes de conocer a tu madre.",
+    "—¿Y qué pasó?",
+    "Pablo pensó un segundo.",
+    "—Bueno... dos de ellos se pusieron un poco enfermos. Pero solo dos.",
+    "Nico se levantó, muy lento, como un viejo. Pablo ya buscaba un libro que era de su propia madre. Dentro había una foto de un pollo grande y hermoso. Pablo puso la mano sobre la foto.",
+    "—Esto. A tu madre le encanta.",
+    "—Papá, esto parece difícil.",
+    "—Nada es difícil si tienes un buen libro.",
+    "Primero fueron a comprar la comida. Pablo pidió el pollo más grande de todos. Era muy grande, y Nico tuvo que llevarlo con los dos brazos. Pablo pagó y no miró la cuenta.",
+    "—¿Cuánto fue? —preguntó Nico.",
+    "—No importa. Hoy el dinero no importa.",
+    "En casa, Pablo leyó el libro en voz alta, como un soldado que lee una orden.",
+    "—Dos horas, con fuego bajo.",
+    "Pero Pablo no tenía dos horas. Quería todo listo antes de las 6. Así que puso el fuego muy alto.",
+    "—Si está más fuerte, termina más rápido —le dijo a su hijo—. Es fácil.",
+    "—Eso no funciona así, papá.",
+    "—¿Quién es el padre aquí?",
+    "Nico no dijo nada más. Sacó un papel grande y escribió: TE QUEREMOS, MAMÁ. Luego lo puso en la puerta de la casa.",
+    "Después, padre e hijo se sentaron a ver una película.",
+    "—Solo cinco minutos —dijo Pablo—. Luego vuelvo a mirar la comida.",
+    "Pero la película era larga, y Pablo había dormido poco anoche. A los diez minutos ya estaba dormido, con la boca abierta. Poco después, Nico también se quedó dormido.",
+    "Una hora más tarde, algo empezó a sonar en toda la casa. Era el sistema de seguridad.",
+    "Pablo abrió los ojos.",
+    "—¿Qué es eso? ¿La policía?",
+    "—¡Papá, la comida!",
+    "Corrieron a la otra habitación. No se podía ver nada. Había fuego dentro del horno. Pablo lo abrió y sacó la comida. Ya no era hermosa. Estaba negra como la noche.",
+    "Nico la tocó.",
+    "—Papá, esto no es comida. Esto es un arma.",
+    "—¡Abre la puerta de atrás! —dijo Pablo—. ¡Rápido!",
+    "Nico abrió la puerta. Y en ese segundo entró Toby, el perro de la familia. Toby no tenía miedo de nada. Vio la comida negra, la tomó con la boca y salió corriendo a la calle.",
+    "—¡Toby! ¡No! —Pablo corrió detrás de él.",
+    "Esa tarde, el jefe de Paula le dio la tarde libre, y ella volvió a casa antes. Cuando llegó a su calle, vio algo muy raro. Pablo corría detrás del perro, con la ropa negra y la cara negra. El perro llevaba en la boca algo negro y grande. En la puerta de la casa estaba su hijo, también con la cara negra. Y detrás de él, el papel: TE QUEREMOS, MAMÁ.",
+    "—¿Qué pasó aquí? —preguntó Paula.",
+    "Pablo paró de correr. Toby también paró, con la comida en la boca.",
+    "—Era tu comida —dijo Pablo—. Es tu día, querida.",
+    "Paula miró a Pablo. Miró a su hijo. Miró al perro. Y luego se rio. Tanto que tuvo que sentarse en la calle.",
+    "—Hace años que no me pasa esto —dijo.",
+    "Entraron en la casa. Todo estaba negro de arriba abajo. Paula puso música, sacó seis huevos y los puso en el fuego.",
+    "—¿Tú vas a preparar tu propia comida? —preguntó Pablo—. ¿Hoy?",
+    "—Es lo mejor para todos —dijo ella—. Y para la casa.",
+    "Comieron los tres juntos, con un poco de vino para los padres y agua para Nico. Afuera, Toby comía su pollo negro, feliz como un rey.",
+    "—Mamá —preguntó Nico—, ¿qué quieres el próximo año?",
+    "Paula pensó un segundo.",
+    "—Huevos —dijo—. Solo eso. Y que tu padre no toque el horno.",
+    "Pablo levantó su vino.",
+    "—Eso no te lo puedo prometer."
+  ],
+  "glossary": [
+    {
+      "word": "cumpleaños",
+      "lemma": "cumpleaños",
+      "en": "birthday"
+    },
+    {
+      "word": "pollo",
+      "lemma": "pollo",
+      "en": "chicken"
+    },
+    {
+      "word": "horno",
+      "lemma": "horno",
+      "en": "oven"
+    },
+    {
+      "word": "huevos",
+      "lemma": "huevo",
+      "en": "eggs"
+    },
+    {
+      "word": "Huevos",
+      "lemma": "huevo",
+      "en": "eggs"
+    },
+    {
+      "word": "rio",
+      "lemma": "reír",
+      "en": "laughed (se rio = she laughed)"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Por qué Pablo quería hacer algo bonito este año?",
+      "a": "Porque el año pasado olvidó el día de Paula.",
+      "q_en": "Why did Pablo want to do something nice this year?",
+      "a_en": "Because last year he forgot Paula's special day."
+    },
+    {
+      "q": "¿Por qué Pablo puso el fuego muy alto?",
+      "a": "Porque quería terminar más rápido.",
+      "q_en": "Why did Pablo turn the heat up very high?",
+      "a_en": "Because he wanted to finish faster."
+    },
+    {
+      "q": "¿Qué hicieron padre e hijo mientras esperaban?",
+      "a": "Vieron una película y se quedaron dormidos.",
+      "q_en": "What did father and son do while they were waiting?",
+      "a_en": "They watched a movie and fell asleep."
+    },
+    {
+      "q": "¿Qué hizo Toby?",
+      "a": "Tomó la comida con la boca y salió corriendo a la calle.",
+      "q_en": "What did Toby do?",
+      "a_en": "He took the food in his mouth and ran out to the street."
+    },
+    {
+      "q": "¿Quién preparó la comida al final?",
+      "a": "Paula, la madre.",
+      "q_en": "Who made the food in the end?",
+      "a_en": "Paula, the mother."
+    }
+  ],
+  "wordCount": 722,
+  "measured": {
+    "coverage": 98.67,
+    "glossedPct": 1.33,
+    "unglossed": 0,
+    "words": 677,
+    "listTokens": 454,
+    "grammarTokens": 214,
+    "nameTokens": 45,
+    "uniqueListWords": 183,
+    "highestRankUsed": 493,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 18
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 6
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 2
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 6
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 3
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 4
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 5
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 2
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 3
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 8
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 10
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 6
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 2
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 2
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 4
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 6
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 4
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 2
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 1
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 5
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 3
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 5
+      },
+      {
+        "lemma": "bueno",
+        "rank": 29,
+        "count": 2
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 4
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 5
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 5
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 5
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 1
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 4
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 4
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 4
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 2
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 2
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 1
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 6
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 2
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 1
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 2
+      },
+      {
+        "lemma": "tanto",
+        "rank": 52,
+        "count": 1
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 2
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 2
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 3
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 2
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 5
+      },
+      {
+        "lemma": "quién",
+        "rank": 66,
+        "count": 1
+      },
+      {
+        "lemma": "mejor",
+        "rank": 71,
+        "count": 1
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 6
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 5
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 3
+      },
+      {
+        "lemma": "verdad",
+        "rank": 77,
+        "count": 1
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 8
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 2
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 1
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 2
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 1
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 1
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 2
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 1
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 1
+      },
+      {
+        "lemma": "amigo",
+        "rank": 96,
+        "count": 1
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 6
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 3
+      },
+      {
+        "lemma": "poner",
+        "rank": 102,
+        "count": 6
+      },
+      {
+        "lemma": "padre",
+        "rank": 104,
+        "count": 4
+      },
+      {
+        "lemma": "sobre",
+        "rank": 105,
+        "count": 1
+      },
+      {
+        "lemma": "conocer",
+        "rank": 110,
+        "count": 1
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 4
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 3
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 5
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 1
+      },
+      {
+        "lemma": "nosotros",
+        "rank": 124,
+        "count": 1
+      },
+      {
+        "lemma": "ellos",
+        "rank": 127,
+        "count": 1
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 3
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 1
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 1
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 2
+      },
+      {
+        "lemma": "chico",
+        "rank": 141,
+        "count": 1
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 1
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 3
+      },
+      {
+        "lemma": "papá",
+        "rank": 152,
+        "count": 5
+      },
+      {
+        "lemma": "madre",
+        "rank": 154,
+        "count": 4
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 1
+      },
+      {
+        "lemma": "importar",
+        "rank": 157,
+        "count": 2
+      },
+      {
+        "lemma": "hoy",
+        "rank": 161,
+        "count": 3
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 4
+      },
+      {
+        "lemma": "mamá",
+        "rank": 165,
+        "count": 3
+      },
+      {
+        "lemma": "luego",
+        "rank": 166,
+        "count": 3
+      },
+      {
+        "lemma": "policía",
+        "rank": 167,
+        "count": 1
+      },
+      {
+        "lemma": "listo",
+        "rank": 173,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 1
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 1
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 1
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 5
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 1
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 3
+      },
+      {
+        "lemma": "terminar",
+        "rank": 194,
+        "count": 1
+      },
+      {
+        "lemma": "rápido",
+        "rank": 195,
+        "count": 2
+      },
+      {
+        "lemma": "lento",
+        "rank": 196,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 14
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 3
+      },
+      {
+        "lemma": "olvidar",
+        "rank": 204,
+        "count": 1
+      },
+      {
+        "lemma": "minuto",
+        "rank": 209,
+        "count": 2
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 2
+      },
+      {
+        "lemma": "sacar",
+        "rank": 219,
+        "count": 3
+      },
+      {
+        "lemma": "arma",
+        "rank": 223,
+        "count": 1
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 2
+      },
+      {
+        "lemma": "dentro",
+        "rank": 230,
+        "count": 2
+      },
+      {
+        "lemma": "miedo",
+        "rank": 234,
+        "count": 1
+      },
+      {
+        "lemma": "cuánto",
+        "rank": 237,
+        "count": 1
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 1
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 2
+      },
+      {
+        "lemma": "agua",
+        "rank": 248,
+        "count": 1
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 3
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 6
+      },
+      {
+        "lemma": "jefe",
+        "rank": 255,
+        "count": 1
+      },
+      {
+        "lemma": "tocar",
+        "rank": 260,
+        "count": 2
+      },
+      {
+        "lemma": "atrás",
+        "rank": 264,
+        "count": 1
+      },
+      {
+        "lemma": "propio",
+        "rank": 266,
+        "count": 2
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 1
+      },
+      {
+        "lemma": "perro",
+        "rank": 278,
+        "count": 4
+      },
+      {
+        "lemma": "cara",
+        "rank": 280,
+        "count": 2
+      },
+      {
+        "lemma": "fuerte",
+        "rank": 286,
+        "count": 1
+      },
+      {
+        "lemma": "bajo",
+        "rank": 288,
+        "count": 1
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 1
+      },
+      {
+        "lemma": "difícil",
+        "rank": 290,
+        "count": 2
+      },
+      {
+        "lemma": "orden",
+        "rank": 291,
+        "count": 1
+      },
+      {
+        "lemma": "abajo",
+        "rank": 292,
+        "count": 1
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "funcionar",
+        "rank": 295,
+        "count": 1
+      },
+      {
+        "lemma": "correr",
+        "rank": 297,
+        "count": 5
+      },
+      {
+        "lemma": "cinco",
+        "rank": 308,
+        "count": 2
+      },
+      {
+        "lemma": "cuándo",
+        "rank": 309,
+        "count": 1
+      },
+      {
+        "lemma": "libro",
+        "rank": 314,
+        "count": 3
+      },
+      {
+        "lemma": "negro",
+        "rank": 316,
+        "count": 8
+      },
+      {
+        "lemma": "cuarto",
+        "rank": 322,
+        "count": 1
+      },
+      {
+        "lemma": "comprar",
+        "rank": 323,
+        "count": 1
+      },
+      {
+        "lemma": "hermoso",
+        "rank": 328,
+        "count": 2
+      },
+      {
+        "lemma": "afuera",
+        "rank": 338,
+        "count": 1
+      },
+      {
+        "lemma": "fácil",
+        "rank": 340,
+        "count": 1
+      },
+      {
+        "lemma": "escribir",
+        "rank": 341,
+        "count": 1
+      },
+      {
+        "lemma": "encantar",
+        "rank": 344,
+        "count": 1
+      },
+      {
+        "lemma": "prometer",
+        "rank": 347,
+        "count": 1
+      },
+      {
+        "lemma": "próximo",
+        "rank": 349,
+        "count": 1
+      },
+      {
+        "lemma": "seguridad",
+        "rank": 355,
+        "count": 1
+      },
+      {
+        "lemma": "bonito",
+        "rank": 356,
+        "count": 1
+      },
+      {
+        "lemma": "libre",
+        "rank": 359,
+        "count": 1
+      },
+      {
+        "lemma": "rey",
+        "rank": 361,
+        "count": 1
+      },
+      {
+        "lemma": "arriba",
+        "rank": 362,
+        "count": 2
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 2
+      },
+      {
+        "lemma": "alto",
+        "rank": 365,
+        "count": 2
+      },
+      {
+        "lemma": "fuego",
+        "rank": 369,
+        "count": 4
+      },
+      {
+        "lemma": "largo",
+        "rank": 375,
+        "count": 1
+      },
+      {
+        "lemma": "parar",
+        "rank": 378,
+        "count": 2
+      },
+      {
+        "lemma": "preparar",
+        "rank": 381,
+        "count": 2
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 1
+      },
+      {
+        "lemma": "película",
+        "rank": 394,
+        "count": 2
+      },
+      {
+        "lemma": "raro",
+        "rank": 396,
+        "count": 1
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 1
+      },
+      {
+        "lemma": "cama",
+        "rank": 400,
+        "count": 1
+      },
+      {
+        "lemma": "anoche",
+        "rank": 411,
+        "count": 1
+      },
+      {
+        "lemma": "ropa",
+        "rank": 416,
+        "count": 1
+      },
+      {
+        "lemma": "habitación",
+        "rank": 418,
+        "count": 1
+      },
+      {
+        "lemma": "sonar",
+        "rank": 433,
+        "count": 1
+      },
+      {
+        "lemma": "soldado",
+        "rank": 443,
+        "count": 1
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 1
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 2
+      },
+      {
+        "lemma": "boca",
+        "rank": 455,
+        "count": 4
+      },
+      {
+        "lemma": "detrás",
+        "rank": 458,
+        "count": 3
+      },
+      {
+        "lemma": "sistema",
+        "rank": 460,
+        "count": 1
+      },
+      {
+        "lemma": "diez",
+        "rank": 470,
+        "count": 1
+      },
+      {
+        "lemma": "brazo",
+        "rank": 472,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 1
+      },
+      {
+        "lemma": "papel",
+        "rank": 490,
+        "count": 2
+      },
+      {
+        "lemma": "música",
+        "rank": 493,
+        "count": 1
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "pollo",
+        "rank": 1137,
+        "forms": [
+          "pollo"
+        ],
+        "count": 3,
+        "glossed": true
+      },
+      {
+        "lemma": "horno",
+        "rank": null,
+        "forms": [
+          "horno"
+        ],
+        "count": 2,
+        "glossed": true
+      },
+      {
+        "lemma": "huevo",
+        "rank": 745,
+        "forms": [
+          "huevos"
+        ],
+        "count": 2,
+        "glossed": true
+      },
+      {
+        "lemma": "cumpleaños",
+        "rank": 652,
+        "forms": [
+          "cumpleaños"
+        ],
+        "count": 1,
+        "glossed": true
+      },
+      {
+        "lemma": "rio",
+        "rank": null,
+        "forms": [
+          "rio"
+        ],
+        "count": 1,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2958,
+      "output_tokens": 15787,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.352,
+    "theme": "A father and his teenage son try to cook a surprise birthday dinner for the mother. Everything goes wrong. Funny, ends with the family eating something simple together."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story09_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 3869,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 301.2
+    }
+  ]
+}

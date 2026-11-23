@@ -35,6 +35,11 @@ Frequency/word-list pages under `/words/`. Distinct SERP from blog posts — do 
 | most common spanish verbs | /words/most-common-spanish-verbs | 2026-07-23 |
 | spanish frequency list | /words/spanish-frequency-list | 2026-07-23 |
 | most common spanish words / 1000 most common spanish words | /words/most-common-spanish-words | 2026-05 |
+| top 1000 spanish words | /words/top-1000-spanish-words | 2026-11-23 |
+| most common spanish nouns | /words/most-common-spanish-nouns | 2026-11-23 |
+| most common spanish adjectives | /words/most-common-spanish-adjectives | 2026-11-23 |
+| most common spanish adverbs | /words/most-common-spanish-adverbs | 2026-11-23 |
+| spanish connectors | /words/spanish-connectors | 2026-11-23 |
 
 ## Landing / bottom-of-funnel page keywords
 
@@ -46,3 +51,15 @@ Frequency/word-list pages under `/words/`. Distinct SERP from blog posts — do 
 | a frequency dictionary of spanish | /frequency-dictionary-of-spanish | 2026-11-09 |
 | spanish vocabulary workbook pdf | /workbook | 2026-11-09 |
 | spanish anki deck | /anki-spanish-deck | 2026-11-09 |
+| how many spanish words do i know (retarget) | /level-test | 2026-11-23 |
+| how much spanish do i understand (coverage checker) | /how-much-spanish-do-i-understand | 2026-11-23 |
+| spanish shows by difficulty | /spanish-shows-by-difficulty (+ /spanish-shows/[slug]) | 2026-11-23 |
+| printable spanish flashcards | /printable-spanish-flashcards | 2026-11-23 |
+| spanish listening practice / spanish listening deck | /spanish-listening-deck | 2026-11-23 |
+| best spanish anki deck(s) | /best-spanish-anki-decks | 2026-11-23 |
+| spanish top 5000 vocabulary anki | /spanish-top-5000-anki-deck-alternative | 2026-11-23 |
+| refold spanish deck alternative | /refold-spanish-deck-alternative | 2026-11-23 |
+| clozemaster alternative | /clozemaster-alternative | 2026-11-23 |
+| lingvist alternative | /lingvist-alternative | 2026-11-23 |
+| spanish short stories for beginners | /spanish-short-stories-for-beginners | 2026-11-23 |
+| intermediate spanish short stories | /spanish-short-stories-intermediate | 2026-11-23 |

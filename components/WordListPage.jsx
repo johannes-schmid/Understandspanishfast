@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import PdfDownloadForm from '@/components/PdfDownloadForm'
+import AudioDelegate from '@/app/words/_components/AudioDelegate'
 
 const BASE = 'https://mostcommonspanish.com'
 
@@ -43,7 +44,7 @@ export function Crumbs({ items }) {
   )
 }
 
-export function Offline({ source }) {
+export function Offline({ source, anki = false }) {
   return (
     <div className="offline">
       <div className="pdf-slot"><PdfDownloadForm source={source} /></div>
@@ -60,6 +61,7 @@ export function Offline({ source }) {
           <p>All 1,500 words in ranked order, in 30 short units with exercises and an answer key. Print it and work through it with a pen.</p>
           <div className="cta-row">
             <Link className="btn btn-ghost btn-sm" href="/workbook">Get the workbook <Arrow /></Link>
+            {anki && <Link className="link" href="/anki-spanish-deck">Or the Anki deck with audio <Arrow /></Link>}
           </div>
         </div>
       </div>
@@ -111,6 +113,17 @@ export default function WordListPage({
   siblings = [],
   faqs = [],
   showExamples = true,
+  showAudio = false,
+  dateModified = '2026-07-23',
+  coverageLabel,
+  factsNote = 'Share of words in everyday spoken Spanish you’ll recognise after learning the top N.',
+  typeHeader = 'Type',
+  typeOf,
+  listNote,
+  extraSchema = [],
+  anki = false,
+  offlineLead = 'Get the top 1,000 as a free PDF, or work through all 1,500 words on paper with the workbook.',
+  children,
 }) {
   const url = `${BASE}/words/${slug}`
 
@@ -122,7 +135,7 @@ export default function WordListPage({
     url,
     creator: { '@type': 'Organization', name: 'Most Common Spanish', url: BASE },
     publisher: { '@type': 'Organization', name: 'Most Common Spanish', url: BASE },
-    dateModified: '2026-07-23',
+    dateModified,
   }
 
   const breadcrumbSchema = {
@@ -150,6 +163,8 @@ export default function WordListPage({
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(datasetSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {extraSchema.map((sc, i) => <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(sc) }} />)}
+      {showAudio && <AudioDelegate />}
 
       <div className="wrap pg">
         <Crumbs items={[{ href: '/', label: 'Home' }, { href: '/words', label: 'Spanish Words' }, { label: breadcrumbName || title }]} />
@@ -167,12 +182,12 @@ export default function WordListPage({
             <div className="facts-top">
               <div>
                 <div className="facts-num tab">{coverage}</div>
-                <div className="facts-lbl">{level ? 'of everyday spoken Spanish' : 'ranked by frequency'}</div>
+                <div className="facts-lbl">{coverageLabel || (level ? 'of everyday spoken Spanish' : 'ranked by frequency')}</div>
               </div>
               <span className="mono tab">{words.length.toLocaleString('en')} WORDS</span>
             </div>
             <CoverageBars level={level} />
-            <p className="facts-note">Share of words in everyday spoken Spanish you’ll recognise after learning the top N.</p>
+            <p className="facts-note">{factsNote}</p>
           </aside>
         </div>
 
@@ -184,14 +199,15 @@ export default function WordListPage({
 
         <div className="card list-card wl">
           <div className="list-bar">
-            <span className="wl-count tab">{words.length.toLocaleString('en')} words, most frequent first</span>
+            <span className="wl-count tab">{listNote || `${words.length.toLocaleString('en')} words, most frequent first`}</span>
             <Link className="link" href="/words/most-common-spanish-words">Search and mark words as learned <Arrow /></Link>
           </div>
           <table>
             <thead>
               <tr>
-                <th>Rank</th><th>Word</th><th>Type</th><th>Meaning</th>
+                <th>Rank</th><th>Word</th><th>{typeHeader}</th><th>Meaning</th>
                 {showExamples && <th>Example</th>}
+                {showAudio && <th><span className="sr-only">Audio</span></th>}
               </tr>
             </thead>
             <tbody>
@@ -201,11 +217,21 @@ export default function WordListPage({
                   <tr key={w.rank}>
                     <td className="rk tab">#{w.rank}</td>
                     <td className="w">{w.word}<span className="w-sub">{meanings[0]}</span></td>
-                    <td className="pos">{POS_LABEL[w.pos] || w.pos}</td>
+                    <td className="pos">{typeOf ? typeOf(w) : (POS_LABEL[w.pos] || w.pos)}</td>
                     <td className="mn">{meanings.slice(0, 3).join(', ')}</td>
                     {showExamples && (
                       <td className="ex">
-                        {w.example_es ? <><span className="es">{w.example_es}</span>{w.example_en && <small>{w.example_en}</small>}</> : null}
+                        {w.example_es ? <>
+                          {showAudio && w.sentence_audio && (
+                            <button type="button" className="say say-ex" data-say={w.sentence_audio} aria-pressed="false" aria-label="Play sentence" />
+                          )}
+                          <span className="es">{w.example_es}</span>{w.example_en && <small>{w.example_en}</small>}
+                        </> : null}
+                      </td>
+                    )}
+                    {showAudio && (
+                      <td className="acts-cell">
+                        {w.audio && <button type="button" className="say" data-say={w.audio} aria-pressed="false" aria-label={`Play ${w.word}`} />}
                       </td>
                     )}
                   </tr>
@@ -215,12 +241,14 @@ export default function WordListPage({
           </table>
         </div>
 
+        {children}
+
         <section className="sec-sm">
           <div className="sec-head">
             <h2>Take the list offline</h2>
-            <p className="lead">Get the top 1,000 as a free PDF, or work through all 1,500 words on paper with the workbook.</p>
+            <p className="lead">{offlineLead}</p>
           </div>
-          <Offline source={slug} />
+          <Offline source={slug} anki={anki} />
         </section>
 
         {faqs.length > 0 && <FaqSection faqs={faqs} />}

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Suspense } from 'react'
 import WorkbookCover from '@/components/WorkbookCover'
 import SampleNote from '@/components/SampleNote'
+import { productSchema } from '@/lib/productSchema'
 
 export const metadata = {
   title: 'Spanish Vocabulary Workbook PDF: Top 1,500 Words',
@@ -11,17 +12,14 @@ export const metadata = {
   openGraph: { url: 'https://mostcommonspanish.com/workbook', images: ['/workbook/cover.webp'] },
 }
 
-const PRICE = '5.00'
-
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
+const schema = productSchema({
   name: 'The Top 1,500 Spanish Words — Printable Workbook',
   description: 'A printable PDF workbook covering the 1,500 most frequent Spanish words in 30 units, with exercises, review tests and an answer key.',
   image: 'https://mostcommonspanish.com/workbook/cover.webp',
-  brand: { '@type': 'Brand', name: 'Most Common Spanish' },
-  offers: { '@type': 'Offer', price: PRICE, priceCurrency: 'EUR', url: 'https://mostcommonspanish.com/workbook' },
-}
+  sku: 'workbook-1500',
+  price: 500,
+  url: 'https://mostcommonspanish.com/workbook',
+})
 
 const PREVIEWS = [
   { src: '/workbook/words.webp', alt: 'Workbook word page: 25 Spanish words with rank, meaning, example sentence and three review boxes', t: 'Word pages', d: '25 words per page, in frequency order. Meaning, example sentence with translation, and three boxes for your day 1, 3 and 7 reviews.' },
@@ -69,7 +67,7 @@ function BuyBox() {
 export default function WorkbookPage() {
   return (
     <div className="cl cl-home">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <section className="hero wb-hero">
         <div className="wrap wb-hero-grid">

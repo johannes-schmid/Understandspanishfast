@@ -1,0 +1,355 @@
+[
+ {
+  "rank": 1501,
+  "word": "sí",
+  "pos": "adv.",
+  "meanings": [
+   "yes",
+   "indeed, really"
+  ],
+  "example_es": "Sí, claro, mañana te llamo después del trabajo.",
+  "example_en": "Yes, of course, I'll call you tomorrow after work.",
+  "cognate": false
+ },
+ {
+  "rank": 1502,
+  "word": "gracias",
+  "pos": "intj.",
+  "meanings": [
+   "thank you",
+   "thanks"
+  ],
+  "example_es": "Muchas gracias por ayudarme con la casa.",
+  "example_en": "Thank you so much for helping me with the house.",
+  "cognate": false
+ },
+ {
+  "rank": 1503,
+  "word": "hola",
+  "pos": "intj.",
+  "meanings": [
+   "hello",
+   "hi"
+  ],
+  "example_es": "Hola, ¿qué tal? Hace mucho tiempo que no te veo.",
+  "example_en": "Hi, how are you? I haven't seen you in a long time.",
+  "cognate": false
+ },
+ {
+  "rank": 1504,
+  "word": "tan",
+  "pos": "adv.",
+  "meanings": [
+   "so",
+   "such",
+   "as (in comparisons)"
+  ],
+  "example_es": "¿Por qué estás tan cansado hoy?",
+  "example_en": "Why are you so tired today?",
+  "cognate": false
+ },
+ {
+  "rank": 1505,
+  "word": "favor",
+  "pos": "n.m.",
+  "meanings": [
+   "favor",
+   "please (in por favor)"
+  ],
+  "example_es": "¿Me haces un favor? Cierra la puerta, por favor.",
+  "example_en": "Can you do me a favor? Close the door, please.",
+  "cognate": true
+ },
+ {
+  "rank": 1506,
+  "word": "acuerdo",
+  "pos": "n.m.",
+  "meanings": [
+   "agreement",
+   "deal"
+  ],
+  "example_es": "Llegamos a un acuerdo con el jefe sobre el dinero.",
+  "example_en": "We reached an agreement with the boss about the money.",
+  "cognate": false
+ },
+ {
+  "rank": 1507,
+  "word": "momento",
+  "pos": "n.m.",
+  "meanings": [
+   "moment",
+   "time"
+  ],
+  "example_es": "Espera un momento, ahora vuelvo.",
+  "example_en": "Wait a moment, I'll be right back.",
+  "cognate": true
+ },
+ {
+  "rank": 1508,
+  "word": "problema",
+  "pos": "n.m.",
+  "meanings": [
+   "problem",
+   "trouble"
+  ],
+  "example_es": "No hay problema, yo puedo pagar la cena.",
+  "example_en": "No problem, I can pay for dinner.",
+  "cognate": true
+ },
+ {
+  "rank": 1509,
+  "word": "vale",
+  "pos": "intj.",
+  "meanings": [
+   "okay",
+   "all right"
+  ],
+  "example_es": "Vale, nos vemos mañana en la oficina.",
+  "example_en": "Okay, see you tomorrow at the office.",
+  "cognate": false
+ },
+ {
+  "rank": 1510,
+  "word": "persona",
+  "pos": "n.f.",
+  "meanings": [
+   "person",
+   "people (plural)"
+  ],
+  "example_es": "Es una buena persona, puedes confiar en ella.",
+  "example_en": "She's a good person, you can trust her.",
+  "cognate": true
+ },
+ {
+  "rank": 1511,
+  "word": "parte",
+  "pos": "n.f.",
+  "meanings": [
+   "part",
+   "place, somewhere (in alguna parte)"
+  ],
+  "example_es": "Dejé las llaves en alguna parte de la casa.",
+  "example_en": "I left the keys somewhere in the house.",
+  "cognate": true
+ },
+ {
+  "rank": 1512,
+  "word": "idea",
+  "pos": "n.f.",
+  "meanings": [
+   "idea",
+   "clue (in no tengo idea)"
+  ],
+  "example_es": "No tengo ni idea de dónde está mi teléfono.",
+  "example_en": "I have no idea where my phone is.",
+  "cognate": true
+ },
+ {
+  "rank": 1513,
+  "word": "forma",
+  "pos": "n.f.",
+  "meanings": [
+   "way",
+   "shape, form"
+  ],
+  "example_es": "No hay otra forma de pagar el alquiler este mes.",
+  "example_en": "There's no other way to pay the rent this month.",
+  "cognate": true
+ },
+ {
+  "rank": 1514,
+  "word": "maldito",
+  "pos": "adj.",
+  "meanings": [
+   "damn, damned",
+   "cursed"
+  ],
+  "example_es": "¡Este maldito coche no funciona otra vez!",
+  "example_en": "This damn car isn't working again!",
+  "cognate": false
+ },
+ {
+  "rank": 1515,
+  "word": "por supuesto",
+  "pos": "expr.",
+  "meanings": [
+   "of course",
+   "certainly"
+  ],
+  "example_es": "Por supuesto que puedes quedarte en mi casa esta noche.",
+  "example_en": "Of course you can stay at my place tonight.",
+  "cognate": false
+ },
+ {
+  "rank": 1516,
+  "word": "adiós",
+  "pos": "intj.",
+  "meanings": [
+   "goodbye",
+   "bye"
+  ],
+  "example_es": "Me voy a casa, adiós a todos.",
+  "example_en": "I'm going home, bye everyone.",
+  "cognate": false
+ },
+ {
+  "rank": 1517,
+  "word": "importante",
+  "pos": "adj.",
+  "meanings": [
+   "important"
+  ],
+  "example_es": "Tengo una reunión importante mañana en el trabajo.",
+  "example_en": "I have an important meeting at work tomorrow.",
+  "cognate": true
+ },
+ {
+  "rank": 1518,
+  "word": "doctor",
+  "pos": "n.m.",
+  "meanings": [
+   "doctor"
+  ],
+  "example_es": "La doctora dice que necesito descansar una semana.",
+  "example_en": "The doctor says I need to rest for a week.",
+  "cognate": true
+ },
+ {
+  "rank": 1519,
+  "word": "coche",
+  "pos": "n.m.",
+  "meanings": [
+   "car"
+  ],
+  "example_es": "Mi coche no funciona otra vez, tengo que llevarlo a arreglar.",
+  "example_en": "My car isn't working again, I have to take it to get fixed.",
+  "cognate": false
+ },
+ {
+  "rank": 1520,
+  "word": "final",
+  "pos": "n.m.",
+  "meanings": [
+   "end",
+   "ending"
+  ],
+  "example_es": "No me gustó el final de la película.",
+  "example_en": "I didn't like the ending of the movie.",
+  "cognate": true
+ },
+ {
+  "rank": 1521,
+  "word": "posible",
+  "pos": "adj.",
+  "meanings": [
+   "possible"
+  ],
+  "example_es": "¿Es posible cambiar la cita para el viernes?",
+  "example_en": "Is it possible to change the appointment to Friday?",
+  "cognate": true
+ },
+ {
+  "rank": 1522,
+  "word": "coger",
+  "pos": "v.",
+  "meanings": [
+   "to take",
+   "to grab",
+   "to catch"
+  ],
+  "example_es": "Voy a coger el autobús de las ocho.",
+  "example_en": "I'm going to take the eight o'clock bus.",
+  "cognate": false
+ },
+ {
+  "rank": 1523,
+  "word": "plan",
+  "pos": "n.m.",
+  "meanings": [
+   "plan"
+  ],
+  "example_es": "¿Tienes algún plan para este fin de semana?",
+  "example_en": "Do you have any plans for this weekend?",
+  "cognate": true
+ },
+ {
+  "rank": 1524,
+  "word": "capitán",
+  "pos": "n.m.",
+  "meanings": [
+   "captain"
+  ],
+  "example_es": "El capitán dice que el barco sale en una hora.",
+  "example_en": "The captain says the ship leaves in an hour.",
+  "cognate": true
+ },
+ {
+  "rank": 1525,
+  "word": "exactamente",
+  "pos": "adv.",
+  "meanings": [
+   "exactly"
+  ],
+  "example_es": "Eso es exactamente lo que quería decir.",
+  "example_en": "That's exactly what I wanted to say.",
+  "cognate": true
+ },
+ {
+  "rank": 1526,
+  "word": "correcto",
+  "pos": "adj.",
+  "meanings": [
+   "correct",
+   "right"
+  ],
+  "example_es": "Creo que tomaste la decisión correcta.",
+  "example_en": "I think you made the right decision.",
+  "cognate": true
+ },
+ {
+  "rank": 1527,
+  "word": "par",
+  "pos": "n.m.",
+  "meanings": [
+   "pair",
+   "couple",
+   "a few"
+  ],
+  "example_es": "Solo necesito un par de días para terminar.",
+  "example_en": "I just need a couple of days to finish.",
+  "cognate": false
+ },
+ {
+  "rank": 1528,
+  "word": "idiota",
+  "pos": "n.",
+  "meanings": [
+   "idiot"
+  ],
+  "example_es": "Fui un idiota, perdóname por lo de anoche.",
+  "example_en": "I was an idiot, forgive me for last night.",
+  "cognate": true
+ },
+ {
+  "rank": 1529,
+  "word": "perfecto",
+  "pos": "adj.",
+  "meanings": [
+   "perfect"
+  ],
+  "example_es": "La casa es perfecta para nuestra familia.",
+  "example_en": "The house is perfect for our family.",
+  "cognate": true
+ },
+ {
+  "rank": 1530,
+  "word": "probablemente",
+  "pos": "adv.",
+  "meanings": [
+   "probably"
+  ],
+  "example_es": "Probablemente llegue tarde, hay mucho tráfico.",
+  "example_en": "I'll probably be late, there's a lot of traffic.",
+  "cognate": true
+ }
+]

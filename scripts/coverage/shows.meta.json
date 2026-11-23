@@ -1,0 +1,130 @@
+{
+ "la-casa-de-papel": {
+  "title": "La casa de papel",
+  "english": "Money Heist",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2017-2021",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "las-chicas-del-cable": {
+  "title": "Las chicas del cable",
+  "english": "Cable Girls",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2017-2020",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "gran-hotel": {
+  "title": "Gran Hotel",
+  "english": "Grand Hotel",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2011-2013",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "velvet": {
+  "title": "Velvet",
+  "english": "Velvet",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2014-2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-ministerio-del-tiempo": {
+  "title": "El Ministerio del Tiempo",
+  "english": "The Ministry of Time",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2015-2020",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-internado": {
+  "title": "El internado",
+  "english": "The Boarding School",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2007-2010",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "fisica-o-quimica": {
+  "title": "Física o química",
+  "english": "Physics or Chemistry",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2008-2011",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-barco": {
+  "title": "El barco",
+  "english": "The Boat",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2011-2013",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "isabel": {
+  "title": "Isabel",
+  "english": "Isabel",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2012-2014",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "cuentame-como-paso": {
+  "title": "Cuéntame cómo pasó",
+  "english": "Remember When",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2001-2023",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "la-que-se-avecina": {
+  "title": "La que se avecina",
+  "english": "La que se avecina",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2007-",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "los-serrano": {
+  "title": "Los Serrano",
+  "english": "Los Serrano",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2003-2008",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-chapo": {
+  "title": "El Chapo",
+  "english": "El Chapo",
+  "type": "TV series",
+  "country": "Mexico / USA",
+  "years": "2017-2018",
+  "accent": "Mexican Spanish"
+ },
+ "oscuro-deseo": {
+  "title": "Oscuro deseo",
+  "english": "Dark Desire",
+  "type": "TV series",
+  "country": "Mexico",
+  "years": "2020-2022",
+  "accent": "Mexican Spanish"
+ },
+ "vis-a-vis": {
+  "title": "Vis a vis",
+  "english": "Locked Up",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2015-2019",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "radio-ambulante": {
+  "title": "Radio Ambulante",
+  "english": "Radio Ambulante",
+  "type": "Podcast",
+  "country": "Latin America",
+  "years": "2012-",
+  "accent": "Latin American Spanish (mixed)"
+ }
+}

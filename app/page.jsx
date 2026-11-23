@@ -235,8 +235,8 @@ export default function Landing() {
       <section className="sec shop" id="workbooks" style={{ paddingTop: 40 }}>
         <div className="wrap">
           <div className="sec-head">
-            <h2>Learn the 1,500 on paper, in Anki, or both</h2>
-            <p className="lead">The words that cover 80% of everyday Spanish, in frequency order. A printable workbook with exercises, an Anki deck with audio, or the two together.</p>
+            <h2>Start with 500 words, then go to 1,500</h2>
+            <p className="lead">Short stories for the first 500 words. Then the 1,500 that cover 80% of everyday Spanish: a printable workbook, an Anki deck with audio, the two together, or ten longer stories.</p>
           </div>
           <ShopProducts headingLevel="h3" />
           <p className="fine sp-secure">One-time payment. Instant download. <Link href="/shop" style={{ color: 'var(--navy)', fontWeight: 600 }}>Compare them in the shop</Link></p>

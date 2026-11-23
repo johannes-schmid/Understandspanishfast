@@ -1,0 +1,1091 @@
+{
+  "id": "level1-story01",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "La carta de papá",
+  "title_en": "Dad's Letter",
+  "summary_en": "A man in his forties receives a letter from the father who walked out twenty years ago, and after a long night of torn-up drafts he decides to write back a few honest lines.",
+  "names": [
+    "Daniel",
+    "Laura",
+    "Ana"
+  ],
+  "paragraphs": [
+    "Daniel tiene 44 años, una esposa, dos hijos y un trabajo que no le gusta mucho. Cada día hace lo mismo: sale de casa antes de las 8, trabaja, come algo rápido y vuelve a las seis. Sus hijos le piden un perro cada semana, y cada semana él dice que no. Es una vida tranquila. No es una vida mala.",
+    "Un día llegó una carta. No era una cuenta. No era de ninguna compañía. Era una carta de verdad, escrita a mano. Daniel miró el nombre de quien la enviaba y se quedó sin palabras.",
+    "Era de su padre.",
+    "Su padre dejó a la familia hace 20 años. Una noche dijo que salía a fumar y nunca volvió. Durante años, cuando alguien preguntaba por él, su madre decía:",
+    "—Salió a fumar. Todavía está fumando.",
+    "Daniel tenía 24 años entonces. Su hermana Ana tenía 19. Su madre trabajó duro, sin ayuda de nadie, para pagar la casa y la escuela de Ana. Murió hace tres años. El padre no vino.",
+    "Daniel no abrió la carta. La puso con las cuentas, porque le parecía lo mismo: algo que no quería mirar, pero que un día iba a tener que pagar.",
+    "Esa noche, Laura la encontró.",
+    "—¿Qué es esto? —preguntó.",
+    "—Una carta.",
+    "—Ya veo que es una carta, Daniel. ¿De quién?",
+    "—De mi padre.",
+    "Laura se sentó.",
+    "—¿Tu padre? ¿El que salió a fumar?",
+    "—Ese.",
+    "—¿Y qué dice?",
+    "—No sé. No la abrí.",
+    "—¿Por qué no?",
+    "—Porque si la abro, tengo que hacer algo. Y si no la abro, no tengo que hacer nada.",
+    "Laura lo miró como miraba a sus hijos cuando decían algo tonto.",
+    "—Eso no es verdad, cariño. No hacer nada también es una respuesta.",
+    "Al otro día, Daniel llamó a su hermana.",
+    "—Papá me escribió —le dijo.",
+    "Ana no habló por casi un minuto.",
+    "—¿A ti también? —preguntó ella al fin.",
+    "—¿Cómo que a mí también?",
+    "—Me escribió hace un mes. No te conté nada porque no sabía cómo.",
+    "—¿Y tú qué hiciste?",
+    "—Le escribí. Tres líneas. Le dije que estoy bien, que tengo un perro y que no quiero su dinero.",
+    "—¿Te pidió algo? ¿Dinero?",
+    "—No. Eso fue lo raro. No pidió nada. Sólo quería saber si estábamos vivos.",
+    "—¿Y por qué le contaste lo del perro?",
+    "—No sé. Era verdad, y era fácil. Las cosas difíciles no las escribí.",
+    "Esa noche, cuando todos dormían, Daniel abrió la carta. Era corta, en un solo papel. Su padre escribía como un niño, con mucho cuidado.",
+    "«Querido Daniel: Sé que no tengo derecho a escribirte. No te voy a pedir perdón, porque perdón es una palabra muy pequeña para lo que hice. Estoy viejo y un poco enfermo, pero no te escribo por eso. Te escribo porque pienso en ti cada día. Si quieres, puedes escribirme. Si no, lo entiendo. Tu padre.»",
+    "Abajo había una línea más: «Ana me contó que tiene un perro. ¿Tú también?»",
+    "Daniel leyó la carta tres veces. Esperaba sentir algo grande: miedo, amor, dolor. Pero sólo sintió algo raro, como cuando uno encuentra una foto vieja de alguien que ya no recuerda bien.",
+    "Buscó un papel y empezó a escribir. «Querido papá». No. Era demasiado. «Papá». Tampoco. «Señor». Era peor, y un poco tonto.",
+    "Escribió cinco cartas y las rompió todas. En una le decía todo lo que pensaba de él. En otra le contaba toda su vida, como si fueran amigos. En otra sólo había una palabra que no debía escribir.",
+    "A las dos de la mañana, Laura bajó. Lo encontró en el cuarto, con muchos papeles rotos.",
+    "—¿Qué haces?",
+    "—Le escribo a mi padre. Creo.",
+    "—¿Y qué le dices?",
+    "—Ese es el asunto. Tengo 20 años de cosas para decirle y no puedo escribir ni una línea.",
+    "Laura se sentó a su lado y tomó una de las cartas rotas.",
+    "—Esta empieza con «Señor» —dijo.",
+    "—Sí. Esa no funcionó.",
+    "—No tienes que decirle 20 años de cosas esta noche, Daniel. Sólo una.",
+    "—¿Cuál?",
+    "—La verdad. Lo que tú quieras que sepa hoy. Lo demás puede esperar.",
+    "Daniel tomó otro papel. Pensó mucho. Luego escribió: «Recibí tu carta. Estoy bien. Tengo una esposa, dos hijos y un trabajo que no me gusta mucho. No tengo perro. Mamá murió hace tres años. No sé si te puedo perdonar. Pero puedes escribir otra vez. Daniel.»",
+    "Laura la leyó.",
+    "—¿Lo del perro tiene que estar?",
+    "—Él preguntó.",
+    "—Es justo —dijo ella.",
+    "No era una carta maravillosa. No iba a cambiar el pasado. Pero era verdadera, y al otro día, antes de ir al trabajo, Daniel la envió.",
+    "Esa noche, mientras comían, su hijo pequeño preguntó lo mismo de siempre:",
+    "—Papá, ¿podemos tener un perro?",
+    "Daniel lo pensó un poco.",
+    "—Quizá —dijo.",
+    "Y por primera vez en mucho tiempo, no le pareció una mala palabra."
+  ],
+  "glossary": [],
+  "questions": [
+    {
+      "q": "¿Cuántos años hace que el padre dejó a la familia?",
+      "a": "Hace 20 años.",
+      "q_en": "How many years ago did the father leave the family?",
+      "a_en": "Twenty years ago."
+    },
+    {
+      "q": "¿Dónde puso Daniel la carta el primer día?",
+      "a": "La puso con las cuentas.",
+      "q_en": "Where did Daniel put the letter on the first day?",
+      "a_en": "He put it with the bills."
+    },
+    {
+      "q": "¿Qué le escribió Ana a su padre?",
+      "a": "Que está bien, que tiene un perro y que no quiere su dinero.",
+      "q_en": "What did Ana write to her father?",
+      "a_en": "That she is fine, that she has a dog, and that she doesn't want his money."
+    },
+    {
+      "q": "¿Cuántas cartas rompió Daniel?",
+      "a": "Rompió cinco cartas.",
+      "q_en": "How many letters did Daniel tear up?",
+      "a_en": "He tore up five letters."
+    },
+    {
+      "q": "¿Qué dijo Daniel cuando su hijo preguntó por un perro?",
+      "a": "Dijo «quizá».",
+      "q_en": "What did Daniel say when his son asked about a dog?",
+      "a_en": "He said \"maybe.\""
+    }
+  ],
+  "wordCount": 791,
+  "measured": {
+    "coverage": 100,
+    "glossedPct": 0,
+    "unglossed": 0,
+    "words": 767,
+    "listTokens": 529,
+    "grammarTokens": 238,
+    "nameTokens": 24,
+    "uniqueListWords": 183,
+    "highestRankUsed": 491,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 26
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 6
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 4
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 15
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 2
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 7
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 11
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 6
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 6
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 4
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 14
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 7
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 3
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 7
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 1
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 3
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 7
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 5
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 2
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 3
+      },
+      {
+        "lemma": "creer",
+        "rank": 25,
+        "count": 1
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 2
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 4
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 12
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 4
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 14
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 1
+      },
+      {
+        "lemma": "deber",
+        "rank": 34,
+        "count": 1
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 1
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 7
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 1
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 3
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 1
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 1
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 4
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 4
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 6
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 2
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 1
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 6
+      },
+      {
+        "lemma": "sólo",
+        "rank": 51,
+        "count": 4
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 4
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 2
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 4
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 6
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 3
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 2
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 4
+      },
+      {
+        "lemma": "quién",
+        "rank": 66,
+        "count": 1
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 1
+      },
+      {
+        "lemma": "porque",
+        "rank": 68,
+        "count": 5
+      },
+      {
+        "lemma": "señor",
+        "rank": 69,
+        "count": 2
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 1
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 8
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 3
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 1
+      },
+      {
+        "lemma": "verdad",
+        "rank": 77,
+        "count": 4
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 2
+      },
+      {
+        "lemma": "sentir",
+        "rank": 79,
+        "count": 2
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 2
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 3
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 4
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 2
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 1
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 2
+      },
+      {
+        "lemma": "gustar",
+        "rank": 88,
+        "count": 2
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 5
+      },
+      {
+        "lemma": "encontrar",
+        "rank": 92,
+        "count": 3
+      },
+      {
+        "lemma": "ti",
+        "rank": 94,
+        "count": 2
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 1
+      },
+      {
+        "lemma": "amigo",
+        "rank": 96,
+        "count": 1
+      },
+      {
+        "lemma": "alguien",
+        "rank": 97,
+        "count": 2
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 1
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 2
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 4
+      },
+      {
+        "lemma": "poner",
+        "rank": 102,
+        "count": 1
+      },
+      {
+        "lemma": "mí",
+        "rank": 103,
+        "count": 1
+      },
+      {
+        "lemma": "padre",
+        "rank": 104,
+        "count": 8
+      },
+      {
+        "lemma": "uno",
+        "rank": 107,
+        "count": 1
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 1
+      },
+      {
+        "lemma": "morir",
+        "rank": 109,
+        "count": 2
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 3
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 2
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 1
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 5
+      },
+      {
+        "lemma": "ayudar",
+        "rank": 118,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 5
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 1
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 1
+      },
+      {
+        "lemma": "entender",
+        "rank": 126,
+        "count": 1
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 3
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 3
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 2
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 1
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 1
+      },
+      {
+        "lemma": "nombre",
+        "rank": 148,
+        "count": 1
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "niño",
+        "rank": 150,
+        "count": 1
+      },
+      {
+        "lemma": "papá",
+        "rank": 152,
+        "count": 4
+      },
+      {
+        "lemma": "ninguno",
+        "rank": 153,
+        "count": 1
+      },
+      {
+        "lemma": "madre",
+        "rank": 154,
+        "count": 2
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 4
+      },
+      {
+        "lemma": "hoy",
+        "rank": 161,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 5
+      },
+      {
+        "lemma": "mamá",
+        "rank": 165,
+        "count": 1
+      },
+      {
+        "lemma": "luego",
+        "rank": 166,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 2
+      },
+      {
+        "lemma": "recordar",
+        "rank": 177,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 2
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 4
+      },
+      {
+        "lemma": "demasiado",
+        "rank": 182,
+        "count": 1
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 2
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 4
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 6
+      },
+      {
+        "lemma": "quizá",
+        "rank": 193,
+        "count": 1
+      },
+      {
+        "lemma": "rápido",
+        "rank": 195,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 2
+      },
+      {
+        "lemma": "malo",
+        "rank": 203,
+        "count": 2
+      },
+      {
+        "lemma": "cariño",
+        "rank": 206,
+        "count": 1
+      },
+      {
+        "lemma": "minuto",
+        "rank": 209,
+        "count": 1
+      },
+      {
+        "lemma": "amor",
+        "rank": 211,
+        "count": 1
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 2
+      },
+      {
+        "lemma": "cambiar",
+        "rank": 225,
+        "count": 1
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 1
+      },
+      {
+        "lemma": "miedo",
+        "rank": 234,
+        "count": 1
+      },
+      {
+        "lemma": "cuál",
+        "rank": 239,
+        "count": 1
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 2
+      },
+      {
+        "lemma": "mientras",
+        "rank": 242,
+        "count": 1
+      },
+      {
+        "lemma": "mes",
+        "rank": 245,
+        "count": 1
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 2
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 1
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 4
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 2
+      },
+      {
+        "lemma": "cuidado",
+        "rank": 253,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 5
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 1
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 1
+      },
+      {
+        "lemma": "esposa",
+        "rank": 275,
+        "count": 2
+      },
+      {
+        "lemma": "perro",
+        "rank": 278,
+        "count": 7
+      },
+      {
+        "lemma": "fumar",
+        "rank": 284,
+        "count": 4
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 1
+      },
+      {
+        "lemma": "difícil",
+        "rank": 290,
+        "count": 1
+      },
+      {
+        "lemma": "abajo",
+        "rank": 292,
+        "count": 1
+      },
+      {
+        "lemma": "funcionar",
+        "rank": 295,
+        "count": 1
+      },
+      {
+        "lemma": "justo",
+        "rank": 303,
+        "count": 1
+      },
+      {
+        "lemma": "cinco",
+        "rank": 308,
+        "count": 1
+      },
+      {
+        "lemma": "cuarto",
+        "rank": 322,
+        "count": 1
+      },
+      {
+        "lemma": "hermana",
+        "rank": 327,
+        "count": 2
+      },
+      {
+        "lemma": "tranquilo",
+        "rank": 334,
+        "count": 1
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 1
+      },
+      {
+        "lemma": "fácil",
+        "rank": 340,
+        "count": 1
+      },
+      {
+        "lemma": "escribir",
+        "rank": 341,
+        "count": 17
+      },
+      {
+        "lemma": "tonto",
+        "rank": 350,
+        "count": 2
+      },
+      {
+        "lemma": "tampoco",
+        "rank": 357,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 1
+      },
+      {
+        "lemma": "recibir",
+        "rank": 374,
+        "count": 1
+      },
+      {
+        "lemma": "asunto",
+        "rank": 382,
+        "count": 1
+      },
+      {
+        "lemma": "vivo",
+        "rank": 386,
+        "count": 1
+      },
+      {
+        "lemma": "perdón",
+        "rank": 387,
+        "count": 2
+      },
+      {
+        "lemma": "enviar",
+        "rank": 388,
+        "count": 2
+      },
+      {
+        "lemma": "peor",
+        "rank": 390,
+        "count": 1
+      },
+      {
+        "lemma": "bajar",
+        "rank": 392,
+        "count": 1
+      },
+      {
+        "lemma": "raro",
+        "rank": 396,
+        "count": 2
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 1
+      },
+      {
+        "lemma": "derecho",
+        "rank": 401,
+        "count": 1
+      },
+      {
+        "lemma": "carta",
+        "rank": 408,
+        "count": 11
+      },
+      {
+        "lemma": "duro",
+        "rank": 410,
+        "count": 1
+      },
+      {
+        "lemma": "verdadero",
+        "rank": 412,
+        "count": 1
+      },
+      {
+        "lemma": "respuesta",
+        "rank": 419,
+        "count": 1
+      },
+      {
+        "lemma": "dolor",
+        "rank": 420,
+        "count": 1
+      },
+      {
+        "lemma": "compañía",
+        "rank": 423,
+        "count": 1
+      },
+      {
+        "lemma": "perdonar",
+        "rank": 426,
+        "count": 1
+      },
+      {
+        "lemma": "línea",
+        "rank": 434,
+        "count": 3
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 1
+      },
+      {
+        "lemma": "demás",
+        "rank": 468,
+        "count": 1
+      },
+      {
+        "lemma": "romper",
+        "rank": 469,
+        "count": 3
+      },
+      {
+        "lemma": "maravilloso",
+        "rank": 475,
+        "count": 1
+      },
+      {
+        "lemma": "papel",
+        "rank": 490,
+        "count": 4
+      },
+      {
+        "lemma": "cortar",
+        "rank": 491,
+        "count": 1
+      }
+    ],
+    "outOfList": []
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2860,
+      "output_tokens": 11900,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.274,
+    "theme": "A man in his forties gets a letter from the father who left the family twenty years ago. He has to decide whether to answer. Quiet, adult, a little funny, ends with a small decision, not a big reunion."
+  },
+  "audio": [
+    {
+      "kind": "isabel",
+      "accent": "Mexico",
+      "file": "level1-story01_isabel.mp3",
+      "voice": {
+        "voice_id": "rixsIpPlTphvsJd2mI03",
+        "name": "isabel",
+        "accent": "Mexico"
+      },
+      "characters": 4285,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9
+    },
+    {
+      "kind": "enrique",
+      "accent": "Mexico",
+      "file": "level1-story01_enrique.mp3",
+      "voice": {
+        "voice_id": "gbTn1bmCvNgk0QEAVyfM",
+        "name": "enrique",
+        "accent": "Mexico"
+      },
+      "characters": 4285,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9
+    },
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story01_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 4285,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9
+    }
+  ]
+}

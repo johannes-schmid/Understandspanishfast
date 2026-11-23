@@ -1,0 +1,1089 @@
+{
+  "id": "level1-story02",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Lo que no es mío",
+  "title_en": "What Is Not Mine",
+  "summary_en": "Lucía, a tired single mother who is behind on her rent, finds a wallet full of money on the bus and must decide whether to keep it or return it to the old man in the photo inside.",
+  "names": [
+    "Lucía",
+    "Sofía",
+    "Andrés",
+    "Tomás"
+  ],
+  "paragraphs": [
+    "Lucía subió al autobús a las seis de la tarde. Después de diez horas de trabajo, sólo quería llegar a casa y dormir. Se sentó atrás, cerca de la puerta. Entonces vio algo negro abajo, junto a su pie. Era una cartera de hombre, vieja y grande.",
+    "Lucía miró a la gente. Nadie parecía buscar nada. Un chico escuchaba música. Una señora dormía. Ella tomó la cartera y la abrió con cuidado.",
+    "Dentro había dinero. Mucho dinero. Lucía lo contó dos veces, sin sacarlo. Casi dos mil.",
+    "También había una foto. Un hombre muy viejo tenía a un niño pequeño en los brazos. Los dos parecían muy felices. Detrás de la foto, alguien había escrito: «Andrés y Tomás». Y abajo, un número.",
+    "Lucía cerró la cartera y la puso entre sus cosas. Su corazón iba muy rápido.",
+    "Pensó en la casa. Debía mucho dinero, y si no pagaba antes del fin de mes, ella y su hija tenían que salir. Pensó en Sofía, que necesitaba ropa nueva para la escuela, porque la vieja ya era pequeña. Con ese dinero, todo era fácil. Por primera vez en un año, podía dormir tranquila.",
+    "Esa noche, cuando Sofía ya dormía, Lucía llamó a su hermana.",
+    "—Encontré una cartera en el autobús. Con mucho dinero.",
+    "—¿Cuánto?",
+    "—Casi dos mil.",
+    "—¡Dios! ¿Y qué vas a hacer?",
+    "—No sé. Hay un número. Creo que es de él.",
+    "—Lucía, escucha. Trabajas todos los días y nunca te queda nada. Esto es suerte. Por una vez, la vida te da algo.",
+    "—Pero no es mío.",
+    "—Mira, alguien que lleva tanto dinero en la calle tiene más en casa. Créeme.",
+    "—Quizás.",
+    "—Piensa en Sofía.",
+    "Lucía no dijo nada más. Después de la llamada, sacó la foto y la miró mucho tiempo. El viejo no parecía rico. Su ropa era vieja, como la de ella. Y el niño tenía los mismos ojos que Sofía, grandes y negros.",
+    "No durmió bien. A las seis de la mañana, llamó al número. Un hombre habló, con voz lenta:",
+    "—¿Sí?",
+    "—¿Señor Andrés? Disculpe la hora. Creo que tengo algo suyo.",
+    "Por un segundo, nadie dijo nada.",
+    "—¿Mi cartera? ¿Usted la tiene? ¡Dios mío! La busqué toda la noche. Volví al autobús, a la calle, a todos lados…",
+    "Lucía llevó a Sofía a la escuela y después fue a ver al viejo. Vivía en una casa pequeña, en una calle larga y tranquila. Andrés abrió la puerta antes de que ella llamara. Era el hombre de la foto, pero más viejo, y caminaba muy lento.",
+    "—Pase, pase, señorita.",
+    "La casa tenía pocas cosas: una cama, unos libros, muchas fotos del niño. Lucía le dio la cartera. Andrés no contó el dinero. Primero sacó la foto y la tocó con cuidado, como si fuera algo vivo.",
+    "—Esto es lo que más me importa —dijo—. El dinero también, claro. Era para un viaje. Mi hijo vive en otro país con su familia. Tomás es el hijo de mi hijo. Ya tiene seis años, y no lo veo desde que era un bebé. Tres años esperé ese viaje.",
+    "Andrés sacó algo de dinero y se lo quiso dar.",
+    "—Tome. Usted lo necesita. Lo veo en su cara.",
+    "Lucía miró el dinero. Pensó en la casa, en la ropa de Sofía, en su hermana.",
+    "—Sí, lo necesito —dijo—. Pero no así. Usted lo necesita más. Ese niño lo espera.",
+    "Andrés la miró sin decir nada. Después le preguntó su nombre y su número, y lo escribió en un papel.",
+    "Pasó una semana. Lucía todavía no tenía el dinero para la casa, y a veces pensaba que su hermana tenía razón, que ella era una tonta.",
+    "Una tarde, recibió una carta. Dentro había una foto nueva: Andrés y Tomás, juntos, en un lugar con mucha luz. El viejo tenía al niño de la mano y los dos estaban felices. Y había un papel:",
+    "«Querida Lucía: Mi hijo tiene una compañía. Él vive lejos, pero su negocio tiene un lugar aquí, en esta ciudad. Necesitan a alguien para trabajar, alguien en quien se pueda confiar. Le hablé de usted. No me diga que no. Andrés.»",
+    "Tres días después, recibió una llamada. Era un hombre joven, con la voz de Andrés.",
+    "—¿Usted es Lucía? Mi padre no deja de hablar de usted. ¿Puede venir mañana?",
+    "Lucía miró la foto del viejo y el niño. Y esa noche, por primera vez en mucho tiempo, durmió tranquila."
+  ],
+  "glossary": [
+    {
+      "word": "autobús",
+      "lemma": "autobús",
+      "en": "bus"
+    },
+    {
+      "word": "cartera",
+      "lemma": "cartera",
+      "en": "wallet"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Qué había dentro de lo que encontró Lucía?",
+      "a": "Mucho dinero, una foto y un número.",
+      "q_en": "What was inside the thing Lucía found?",
+      "a_en": "A lot of money, a photo and a number."
+    },
+    {
+      "q": "¿Por qué necesitaba Lucía el dinero?",
+      "a": "Porque debía dinero de la casa y su hija necesitaba ropa nueva.",
+      "q_en": "Why did Lucía need the money?",
+      "a_en": "Because she owed money for the house and her daughter needed new clothes."
+    },
+    {
+      "q": "¿Qué le dijo su hermana?",
+      "a": "Que el dinero era su suerte y que pensara en Sofía.",
+      "q_en": "What did her sister tell her?",
+      "a_en": "That the money was her luck and that she should think about Sofía."
+    },
+    {
+      "q": "¿Para qué era el dinero de Andrés?",
+      "a": "Para un viaje: ir a ver a su hijo y a Tomás.",
+      "q_en": "What was Andrés's money for?",
+      "a_en": "For a trip: to go see his son and Tomás."
+    },
+    {
+      "q": "¿Qué había en la carta que recibió Lucía?",
+      "a": "Una foto nueva de Andrés y Tomás, y un trabajo para ella.",
+      "q_en": "What was in the letter Lucía received?",
+      "a_en": "A new photo of Andrés and Tomás, and a job for her."
+    }
+  ],
+  "wordCount": 733,
+  "measured": {
+    "coverage": 98.72,
+    "glossedPct": 1.28,
+    "unglossed": 0,
+    "words": 701,
+    "listTokens": 456,
+    "grammarTokens": 236,
+    "nameTokens": 32,
+    "uniqueListWords": 186,
+    "highestRankUsed": 493,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 18
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 1
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 2
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 13
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 6
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 1
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 1
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 3
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 2
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 8
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 6
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 3
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 2
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 4
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 1
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 2
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 4
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 3
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 3
+      },
+      {
+        "lemma": "creer",
+        "rank": 25,
+        "count": 3
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 3
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 2
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 3
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 4
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 10
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 5
+      },
+      {
+        "lemma": "deber",
+        "rank": 34,
+        "count": 1
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 3
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 4
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 5
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 3
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 1
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 1
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 3
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 5
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 1
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 1
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 1
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 7
+      },
+      {
+        "lemma": "sólo",
+        "rank": 51,
+        "count": 1
+      },
+      {
+        "lemma": "tanto",
+        "rank": 52,
+        "count": 1
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 2
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 2
+      },
+      {
+        "lemma": "hombre",
+        "rank": 56,
+        "count": 5
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 5
+      },
+      {
+        "lemma": "usted",
+        "rank": 58,
+        "count": 6
+      },
+      {
+        "lemma": "necesitar",
+        "rank": 59,
+        "count": 5
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 2
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 2
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 5
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 6
+      },
+      {
+        "lemma": "dios",
+        "rank": 65,
+        "count": 2
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 5
+      },
+      {
+        "lemma": "porque",
+        "rank": 68,
+        "count": 1
+      },
+      {
+        "lemma": "señor",
+        "rank": 69,
+        "count": 1
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 2
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 3
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 5
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 7
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 1
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 5
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 1
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 3
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 1
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 2
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 2
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 3
+      },
+      {
+        "lemma": "encontrar",
+        "rank": 92,
+        "count": 1
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 1
+      },
+      {
+        "lemma": "alguien",
+        "rank": 97,
+        "count": 4
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 2
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 2
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 2
+      },
+      {
+        "lemma": "poner",
+        "rank": 102,
+        "count": 1
+      },
+      {
+        "lemma": "padre",
+        "rank": 104,
+        "count": 1
+      },
+      {
+        "lemma": "nuevo",
+        "rank": 106,
+        "count": 2
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 1
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 2
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 4
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 3
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 2
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 3
+      },
+      {
+        "lemma": "mío",
+        "rank": 122,
+        "count": 2
+      },
+      {
+        "lemma": "escuchar",
+        "rank": 123,
+        "count": 2
+      },
+      {
+        "lemma": "gente",
+        "rank": 125,
+        "count": 1
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 1
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 1
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 2
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 11
+      },
+      {
+        "lemma": "lugar",
+        "rank": 134,
+        "count": 2
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 2
+      },
+      {
+        "lemma": "claro",
+        "rank": 136,
+        "count": 1
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 5
+      },
+      {
+        "lemma": "chico",
+        "rank": 141,
+        "count": 1
+      },
+      {
+        "lemma": "vivir",
+        "rank": 143,
+        "count": 4
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 1
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 2
+      },
+      {
+        "lemma": "nombre",
+        "rank": 148,
+        "count": 1
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "niño",
+        "rank": 150,
+        "count": 6
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 1
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 2
+      },
+      {
+        "lemma": "importar",
+        "rank": 157,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 1
+      },
+      {
+        "lemma": "razón",
+        "rank": 171,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 9
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 1
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 2
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 2
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 1
+      },
+      {
+        "lemma": "quizá",
+        "rank": 193,
+        "count": 1
+      },
+      {
+        "lemma": "rápido",
+        "rank": 195,
+        "count": 1
+      },
+      {
+        "lemma": "lento",
+        "rank": 196,
+        "count": 2
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 2
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 1
+      },
+      {
+        "lemma": "disculpar",
+        "rank": 218,
+        "count": 1
+      },
+      {
+        "lemma": "sacar",
+        "rank": 219,
+        "count": 4
+      },
+      {
+        "lemma": "suerte",
+        "rank": 221,
+        "count": 1
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 2
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 1
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 1
+      },
+      {
+        "lemma": "dentro",
+        "rank": 230,
+        "count": 2
+      },
+      {
+        "lemma": "cuánto",
+        "rank": 237,
+        "count": 1
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 2
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 3
+      },
+      {
+        "lemma": "mes",
+        "rank": 245,
+        "count": 1
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 6
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 1
+      },
+      {
+        "lemma": "cuidado",
+        "rank": 253,
+        "count": 2
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 2
+      },
+      {
+        "lemma": "señora",
+        "rank": 256,
+        "count": 1
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 1
+      },
+      {
+        "lemma": "número",
+        "rank": 259,
+        "count": 4
+      },
+      {
+        "lemma": "tocar",
+        "rank": 260,
+        "count": 1
+      },
+      {
+        "lemma": "corazón",
+        "rank": 262,
+        "count": 1
+      },
+      {
+        "lemma": "atrás",
+        "rank": 264,
+        "count": 1
+      },
+      {
+        "lemma": "luz",
+        "rank": 265,
+        "count": 1
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 1
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 2
+      },
+      {
+        "lemma": "hija",
+        "rank": 279,
+        "count": 1
+      },
+      {
+        "lemma": "cara",
+        "rank": 280,
+        "count": 1
+      },
+      {
+        "lemma": "abajo",
+        "rank": 292,
+        "count": 2
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "cerca",
+        "rank": 296,
+        "count": 1
+      },
+      {
+        "lemma": "joven",
+        "rank": 312,
+        "count": 1
+      },
+      {
+        "lemma": "mil",
+        "rank": 313,
+        "count": 2
+      },
+      {
+        "lemma": "libro",
+        "rank": 314,
+        "count": 1
+      },
+      {
+        "lemma": "negro",
+        "rank": 316,
+        "count": 2
+      },
+      {
+        "lemma": "hermana",
+        "rank": 327,
+        "count": 3
+      },
+      {
+        "lemma": "tranquilo",
+        "rank": 334,
+        "count": 3
+      },
+      {
+        "lemma": "caminar",
+        "rank": 335,
+        "count": 1
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 2
+      },
+      {
+        "lemma": "negocio",
+        "rank": 337,
+        "count": 1
+      },
+      {
+        "lemma": "fácil",
+        "rank": 340,
+        "count": 1
+      },
+      {
+        "lemma": "escribir",
+        "rank": 341,
+        "count": 2
+      },
+      {
+        "lemma": "pie",
+        "rank": 346,
+        "count": 1
+      },
+      {
+        "lemma": "tonto",
+        "rank": 350,
+        "count": 1
+      },
+      {
+        "lemma": "subir",
+        "rank": 352,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 8
+      },
+      {
+        "lemma": "bebé",
+        "rank": 368,
+        "count": 1
+      },
+      {
+        "lemma": "recibir",
+        "rank": 374,
+        "count": 2
+      },
+      {
+        "lemma": "largo",
+        "rank": 375,
+        "count": 1
+      },
+      {
+        "lemma": "país",
+        "rank": 379,
+        "count": 1
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 1
+      },
+      {
+        "lemma": "lejos",
+        "rank": 393,
+        "count": 1
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 3
+      },
+      {
+        "lemma": "cama",
+        "rank": 400,
+        "count": 1
+      },
+      {
+        "lemma": "carta",
+        "rank": 408,
+        "count": 1
+      },
+      {
+        "lemma": "ropa",
+        "rank": 416,
+        "count": 3
+      },
+      {
+        "lemma": "compañía",
+        "rank": 423,
+        "count": 1
+      },
+      {
+        "lemma": "confiar",
+        "rank": 424,
+        "count": 1
+      },
+      {
+        "lemma": "viaje",
+        "rank": 436,
+        "count": 2
+      },
+      {
+        "lemma": "suyo",
+        "rank": 438,
+        "count": 1
+      },
+      {
+        "lemma": "detrás",
+        "rank": 458,
+        "count": 1
+      },
+      {
+        "lemma": "señorita",
+        "rank": 462,
+        "count": 1
+      },
+      {
+        "lemma": "diez",
+        "rank": 470,
+        "count": 1
+      },
+      {
+        "lemma": "brazo",
+        "rank": 472,
+        "count": 1
+      },
+      {
+        "lemma": "rico",
+        "rank": 482,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 2
+      },
+      {
+        "lemma": "papel",
+        "rank": 490,
+        "count": 2
+      },
+      {
+        "lemma": "música",
+        "rank": 493,
+        "count": 1
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "cartera",
+        "rank": 1187,
+        "forms": [
+          "cartera"
+        ],
+        "count": 6,
+        "glossed": true
+      },
+      {
+        "lemma": "autobús",
+        "rank": 989,
+        "forms": [
+          "autobús"
+        ],
+        "count": 3,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2759,
+      "output_tokens": 14207,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.32,
+    "theme": "A woman in her thirties finds a wallet with a lot of money on the bus. Inside is a photo of an old man and a child. She needs the money herself. Ends with what she decides and a small surprise."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story02_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 3885,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 297.9
+    }
+  ]
+}

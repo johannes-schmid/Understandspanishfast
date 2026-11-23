@@ -1,0 +1,1125 @@
+{
+  "id": "level1-story06",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "El perro de al lado",
+  "title_en": "The Dog Next Door",
+  "summary_en": "A lonely widow in her seventies is annoyed by the new neighbours' dog that keeps getting into her garden, but she slowly comes to wait for it every day, and when it stops coming she finally knocks on the neighbours' door.",
+  "names": [
+    "Pilar",
+    "Antonio",
+    "Clara",
+    "Hugo"
+  ],
+  "paragraphs": [
+    "Pilar tiene 74 años. Vive en una casa pequeña, en una calle tranquila del pueblo. No vive con nadie. Su Antonio murió hace tres años. Desde entonces, todos sus días son iguales. Se levanta, come algo, lee un poco y trabaja en su jardín.",
+    "El jardín era de Antonio. Él amaba sus flores rojas y blancas. Ahora ella las cuida, porque es una manera de estar con él.",
+    "Un día llegó una familia nueva a la casa de al lado: un hombre joven, una mujer y un perro grande y negro. Pilar los miró desde la puerta. No salió a hablar con ellos. No le gusta la gente nueva, y le gustan menos los perros.",
+    "Dos días después, el perro estaba en su tierra. Nadie sabe cómo entró. Estaba encima de las flores de Antonio, muy feliz, con tierra en la cara.",
+    "—¡Fuera! ¡Fuera de aquí! —dijo Pilar con voz fuerte.",
+    "El perro la miró un segundo y salió corriendo.",
+    "Al otro día volvió. Y al otro también. Pilar puso una caja grande en el lugar por donde entraba. El perro encontró otro camino. Ella pensó en llamar a la policía, pero le pareció demasiado. Pensó en ir a la casa de al lado y hablar con la familia nueva, pero no fue. Tenía otras cosas que hacer, se dijo. La verdad es que no quería.",
+    "—Este perro tonto me va a matar —le dijo una noche a la foto de Antonio—. Tú sabes cuánto trabajo es todo esto.",
+    "Antonio, como siempre, no dijo nada.",
+    "Pasó una semana. Después, dos. El perro venía cada día, a la misma hora, después de comer. Ya no tocaba las flores. Se sentaba al lado de Pilar mientras ella trabajaba en la tierra. No rompía nada. Solo miraba.",
+    "Un día Pilar le habló.",
+    "—¿Y tú qué quieres? ¿No tienes casa?",
+    "El perro puso la cabeza sobre su pie.",
+    "—Bueno —dijo ella—. Pero las flores no se tocan.",
+    "Desde ese día, todo empezó a cambiar. Pilar le daba agua. Después, un poco de comida. Le puso un nombre: Rey, porque entraba en su casa como si fuera de él. Le hablaba de Antonio, de sus hijos que vivían lejos, de la ciudad donde trabajó durante 30 años. Rey escuchaba todo. Era bueno escuchando, mejor que mucha gente.",
+    "Una noche su hijo la llamó desde la ciudad.",
+    "—Mamá, ¿cómo estás? Te oigo más feliz.",
+    "—Tengo un amigo nuevo —dijo ella.",
+    "—¿Un amigo? ¿Un hombre?",
+    "—Algo así. Es negro, grande y come mucho.",
+    "Su hijo no entendió nada, y Pilar no le dijo más.",
+    "Un día, el perro no llegó. Pilar lo esperó a la hora de siempre. Esperó una hora más. Luego, dos. No podía leer. No podía hacer nada.",
+    "—Qué tonta eres, Pilar —se dijo—. Es solo un perro. Y ni siquiera es tuyo.",
+    "Pero su corazón no le hacía caso.",
+    "Al otro día tampoco vino. Esa noche Pilar casi no durmió. Pensaba en cosas malas: un perro solo en la calle, de noche, perdido.",
+    "Por la mañana se puso su mejor ropa, salió de casa y llamó a la puerta de al lado. Abrió una mujer joven, con un bebé en los brazos.",
+    "—Buenos días —dijo Pilar—. Perdón por molestar. Yo vivo aquí al lado. ¿Dónde está su perro? ¿Está bien?",
+    "La mujer la miró sin entender. Luego abrió mucho los ojos.",
+    "—¡Usted es la señora de las flores! —dijo—. Pase, pase. Me llamo Clara.",
+    "Dentro, el perro estaba en una cama pequeña. Estaba enfermo. Cuando vio a Pilar, se levantó y fue hacia ella, lento, pero feliz.",
+    "—Comió algo malo en la calle —dijo Clara—. Lo llevamos al médico. Ya está mejor, pero tiene que estar en casa unos días.",
+    "Entonces llegó un hombre joven.",
+    "—Es Hugo —dijo Clara—. Hugo, es la señora de las flores.",
+    "—¡Por fin! —dijo él—. Señora, perdón por todo. Sabemos que nuestro perro va a su casa cada día. Queríamos ir a hablar con usted, pero teníamos miedo. Pensamos que usted nos odiaba.",
+    "Pilar miró al perro. El perro la miró a ella.",
+    "—Antes, sí —dijo—. Un poco.",
+    "Hugo y Clara se miraron.",
+    "—¿Cómo se llama? —preguntó Pilar.",
+    "—No tiene nombre todavía —dijo Clara—. Es nuevo en la familia, como nosotros.",
+    "—Yo lo llamo Rey.",
+    "—Rey. Me gusta. Entonces se llama Rey.",
+    "Esa tarde, Pilar se quedó dos horas con ellos. Habló de Antonio, de las flores, de la ciudad. Hugo le preguntó si podía ayudarla con el jardín una vez a la semana. Clara le pidió algo más difícil: cuidar a Rey cuando ellos trabajan.",
+    "—No sé —dijo Pilar—. Es mucho trabajo.",
+    "Pero ya estaba pensando en la comida que le iba a comprar."
+  ],
+  "glossary": [
+    {
+      "word": "jardín",
+      "lemma": "jardín",
+      "en": "garden"
+    },
+    {
+      "word": "flores",
+      "lemma": "flor",
+      "en": "flowers"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Por qué cuida Pilar las flores?",
+      "a": "Porque eran de Antonio, y es una manera de estar con él.",
+      "q_en": "Why does Pilar look after the flowers?",
+      "a_en": "Because they were Antonio's, and it is a way of being with him."
+    },
+    {
+      "q": "¿Qué hizo Pilar cuando el perro entró la primera vez?",
+      "a": "Le dijo con voz fuerte: «¡Fuera de aquí!».",
+      "q_en": "What did Pilar do when the dog came in the first time?",
+      "a_en": "She told it loudly: \"Get out of here!\""
+    },
+    {
+      "q": "¿Qué nombre le puso Pilar al perro?",
+      "a": "Le puso Rey.",
+      "q_en": "What name did Pilar give the dog?",
+      "a_en": "She called it Rey (King)."
+    },
+    {
+      "q": "¿Por qué no llegó el perro un día?",
+      "a": "Porque comió algo malo en la calle y estaba enfermo.",
+      "q_en": "Why didn't the dog come one day?",
+      "a_en": "Because it ate something bad in the street and was sick."
+    },
+    {
+      "q": "¿Qué le pidió Clara a Pilar?",
+      "a": "Le pidió cuidar a Rey cuando ellos trabajan.",
+      "q_en": "What did Clara ask Pilar?",
+      "a_en": "She asked her to look after Rey while they are at work."
+    }
+  ],
+  "wordCount": 775,
+  "measured": {
+    "coverage": 98.65,
+    "glossedPct": 1.35,
+    "unglossed": 0,
+    "words": 741,
+    "listTokens": 500,
+    "grammarTokens": 231,
+    "nameTokens": 34,
+    "uniqueListWords": 192,
+    "highestRankUsed": 485,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 21
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 11
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 5
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 7
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 2
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 4
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 3
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 1
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 10
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 16
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 3
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 3
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 2
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 1
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 1
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 2
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 8
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 2
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 2
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 1
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 1
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 3
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 3
+      },
+      {
+        "lemma": "bueno",
+        "rank": 29,
+        "count": 3
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 13
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 5
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 3
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 4
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 1
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 1
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 1
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 4
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 3
+      },
+      {
+        "lemma": "nos",
+        "rank": 40,
+        "count": 1
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 2
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 1
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 6
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 4
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 2
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 5
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 3
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 2
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 4
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 4
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 2
+      },
+      {
+        "lemma": "hombre",
+        "rank": 56,
+        "count": 3
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 5
+      },
+      {
+        "lemma": "usted",
+        "rank": 58,
+        "count": 3
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 12
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 2
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 7
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 7
+      },
+      {
+        "lemma": "nuestro",
+        "rank": 64,
+        "count": 1
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 7
+      },
+      {
+        "lemma": "porque",
+        "rank": 68,
+        "count": 2
+      },
+      {
+        "lemma": "mejor",
+        "rank": 71,
+        "count": 3
+      },
+      {
+        "lemma": "dónde",
+        "rank": 73,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 3
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 4
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 3
+      },
+      {
+        "lemma": "verdad",
+        "rank": 77,
+        "count": 1
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 8
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 1
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 1
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 3
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 1
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 3
+      },
+      {
+        "lemma": "matar",
+        "rank": 86,
+        "count": 1
+      },
+      {
+        "lemma": "gustar",
+        "rank": 88,
+        "count": 3
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 1
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 4
+      },
+      {
+        "lemma": "encontrar",
+        "rank": 92,
+        "count": 1
+      },
+      {
+        "lemma": "oír",
+        "rank": 93,
+        "count": 1
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 3
+      },
+      {
+        "lemma": "amigo",
+        "rank": 96,
+        "count": 2
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 3
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 1
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 1
+      },
+      {
+        "lemma": "poner",
+        "rank": 102,
+        "count": 4
+      },
+      {
+        "lemma": "sobre",
+        "rank": 105,
+        "count": 1
+      },
+      {
+        "lemma": "nuevo",
+        "rank": 106,
+        "count": 5
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 2
+      },
+      {
+        "lemma": "morir",
+        "rank": 109,
+        "count": 1
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 3
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 1
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 1
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 3
+      },
+      {
+        "lemma": "ayudar",
+        "rank": 118,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 6
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 2
+      },
+      {
+        "lemma": "escuchar",
+        "rank": 123,
+        "count": 2
+      },
+      {
+        "lemma": "nosotros",
+        "rank": 124,
+        "count": 1
+      },
+      {
+        "lemma": "gente",
+        "rank": 125,
+        "count": 2
+      },
+      {
+        "lemma": "entender",
+        "rank": 126,
+        "count": 2
+      },
+      {
+        "lemma": "ellos",
+        "rank": 127,
+        "count": 3
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 1
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 4
+      },
+      {
+        "lemma": "lugar",
+        "rank": 134,
+        "count": 1
+      },
+      {
+        "lemma": "perder",
+        "rank": 137,
+        "count": 1
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 4
+      },
+      {
+        "lemma": "mujer",
+        "rank": 139,
+        "count": 3
+      },
+      {
+        "lemma": "vivir",
+        "rank": 143,
+        "count": 4
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 4
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 1
+      },
+      {
+        "lemma": "nombre",
+        "rank": 148,
+        "count": 2
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 3
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 1
+      },
+      {
+        "lemma": "menos",
+        "rank": 158,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 2
+      },
+      {
+        "lemma": "mamá",
+        "rank": 165,
+        "count": 1
+      },
+      {
+        "lemma": "luego",
+        "rank": 166,
+        "count": 2
+      },
+      {
+        "lemma": "policía",
+        "rank": 167,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 1
+      },
+      {
+        "lemma": "demasiado",
+        "rank": 182,
+        "count": 1
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 2
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 2
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 2
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 3
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 1
+      },
+      {
+        "lemma": "cabeza",
+        "rank": 192,
+        "count": 1
+      },
+      {
+        "lemma": "lento",
+        "rank": 196,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 6
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 1
+      },
+      {
+        "lemma": "malo",
+        "rank": 203,
+        "count": 2
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 1
+      },
+      {
+        "lemma": "amar",
+        "rank": 217,
+        "count": 1
+      },
+      {
+        "lemma": "cambiar",
+        "rank": 225,
+        "count": 1
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 1
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 1
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 3
+      },
+      {
+        "lemma": "dentro",
+        "rank": 230,
+        "count": 1
+      },
+      {
+        "lemma": "hacia",
+        "rank": 233,
+        "count": 1
+      },
+      {
+        "lemma": "miedo",
+        "rank": 234,
+        "count": 1
+      },
+      {
+        "lemma": "cuánto",
+        "rank": 237,
+        "count": 1
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 3
+      },
+      {
+        "lemma": "caso",
+        "rank": 240,
+        "count": 1
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 2
+      },
+      {
+        "lemma": "mientras",
+        "rank": 242,
+        "count": 1
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 2
+      },
+      {
+        "lemma": "agua",
+        "rank": 248,
+        "count": 1
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 1
+      },
+      {
+        "lemma": "manera",
+        "rank": 252,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 2
+      },
+      {
+        "lemma": "señora",
+        "rank": 256,
+        "count": 3
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 1
+      },
+      {
+        "lemma": "tocar",
+        "rank": 260,
+        "count": 2
+      },
+      {
+        "lemma": "corazón",
+        "rank": 262,
+        "count": 1
+      },
+      {
+        "lemma": "tierra",
+        "rank": 263,
+        "count": 3
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 5
+      },
+      {
+        "lemma": "perro",
+        "rank": 278,
+        "count": 16
+      },
+      {
+        "lemma": "cara",
+        "rank": 280,
+        "count": 1
+      },
+      {
+        "lemma": "fuerte",
+        "rank": 286,
+        "count": 1
+      },
+      {
+        "lemma": "igual",
+        "rank": 287,
+        "count": 1
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 1
+      },
+      {
+        "lemma": "difícil",
+        "rank": 290,
+        "count": 1
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "correr",
+        "rank": 297,
+        "count": 1
+      },
+      {
+        "lemma": "siquiera",
+        "rank": 299,
+        "count": 1
+      },
+      {
+        "lemma": "camino",
+        "rank": 305,
+        "count": 1
+      },
+      {
+        "lemma": "joven",
+        "rank": 312,
+        "count": 3
+      },
+      {
+        "lemma": "negro",
+        "rank": 316,
+        "count": 2
+      },
+      {
+        "lemma": "blanco",
+        "rank": 320,
+        "count": 1
+      },
+      {
+        "lemma": "comprar",
+        "rank": 323,
+        "count": 1
+      },
+      {
+        "lemma": "tranquilo",
+        "rank": 334,
+        "count": 1
+      },
+      {
+        "lemma": "pie",
+        "rank": 346,
+        "count": 1
+      },
+      {
+        "lemma": "tonto",
+        "rank": 350,
+        "count": 2
+      },
+      {
+        "lemma": "odiar",
+        "rank": 351,
+        "count": 1
+      },
+      {
+        "lemma": "cuidar",
+        "rank": 353,
+        "count": 2
+      },
+      {
+        "lemma": "tampoco",
+        "rank": 357,
+        "count": 1
+      },
+      {
+        "lemma": "rey",
+        "rank": 361,
+        "count": 6
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 1
+      },
+      {
+        "lemma": "bebé",
+        "rank": 368,
+        "count": 1
+      },
+      {
+        "lemma": "tuyo",
+        "rank": 371,
+        "count": 1
+      },
+      {
+        "lemma": "perdón",
+        "rank": 387,
+        "count": 2
+      },
+      {
+        "lemma": "pueblo",
+        "rank": 391,
+        "count": 1
+      },
+      {
+        "lemma": "lejos",
+        "rank": 393,
+        "count": 1
+      },
+      {
+        "lemma": "cama",
+        "rank": 400,
+        "count": 1
+      },
+      {
+        "lemma": "médico",
+        "rank": 402,
+        "count": 1
+      },
+      {
+        "lemma": "ropa",
+        "rank": 416,
+        "count": 1
+      },
+      {
+        "lemma": "encima",
+        "rank": 441,
+        "count": 1
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 1
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 2
+      },
+      {
+        "lemma": "romper",
+        "rank": 469,
+        "count": 1
+      },
+      {
+        "lemma": "rojo",
+        "rank": 471,
+        "count": 1
+      },
+      {
+        "lemma": "brazo",
+        "rank": 472,
+        "count": 1
+      },
+      {
+        "lemma": "caja",
+        "rank": 476,
+        "count": 1
+      },
+      {
+        "lemma": "molestar",
+        "rank": 478,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 1
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "flor",
+        "rank": 720,
+        "forms": [
+          "flores"
+        ],
+        "count": 7,
+        "glossed": true
+      },
+      {
+        "lemma": "jardín",
+        "rank": 1126,
+        "forms": [
+          "jardín"
+        ],
+        "count": 3,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2899,
+      "output_tokens": 10927,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.255,
+    "theme": "A widow in her seventies is annoyed that the new neighbours' dog keeps coming into her garden. Slowly she starts waiting for it. Ends with her meeting the neighbours."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story06_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 4144,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 321.1
+    }
+  ]
+}

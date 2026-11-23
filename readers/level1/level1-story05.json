@@ -1,0 +1,1152 @@
+{
+  "id": "level1-story05",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Otra vez en casa",
+  "title_en": "Home Again",
+  "summary_en": "After losing her job, thirty-year-old Marta moves back in with her overprotective mother, until one night her parents come home very late and she discovers they have a life of their own.",
+  "names": [
+    "Marta",
+    "Carmen",
+    "Pedro"
+  ],
+  "paragraphs": [
+    "Marta tenía 30 años cuando perdió su trabajo. La compañía cerró en una semana. Su jefa solo le dijo que lo sentía mucho. Sin trabajo, Marta no podía pagar su cuarto en la ciudad. Entonces hizo algo que nunca pensó hacer: volvió a vivir con sus padres, en el pueblo.",
+    "Su madre, Carmen, la esperaba en la puerta.",
+    "—¡Mi niña! —dijo, y le tomó las dos manos—. ¡Estás muy cambiada! ¿Comes bien en la ciudad?",
+    "—Yo también estoy feliz de verte, mamá.",
+    "Su padre, Pedro, salió detrás de ella con un libro en la mano. No dijo mucho. Solo le tocó la cabeza, como cuando era niña.",
+    "Su habitación estaba igual. Las mismas fotos de la escuela, los mismos libros viejos, la misma cama pequeña. Marta se sentó y miró todo. Parecía que el tiempo no había pasado.",
+    "Y para su madre, el tiempo realmente no había pasado.",
+    "La primera mañana, Carmen abrió la puerta a las seis.",
+    "—¡Arriba! La gente que busca trabajo no duerme hasta tarde.",
+    "—Mamá, son las seis.",
+    "—Por eso. Ya es tarde.",
+    "Y todo el día era así. ¿Comiste? ¿Adónde vas? ¿Con quién? ¿Llevas ropa suficiente? ¿Por qué no llamas a tus amigos de la escuela? Uno es médico ahora, ¿sabes? Y está casado, con dos hijos.",
+    "Una noche, Marta quiso salir con unos amigos del pueblo.",
+    "—¿A qué hora vuelves? —preguntó su madre.",
+    "—No sé, mamá. Tarde.",
+    "—¿Cómo que no sabes? En esta casa se vuelve antes de la una.",
+    "—Mamá, tengo 30 años.",
+    "—En esta casa tienes 15.",
+    "Marta miró a su padre. Pedro levantó los ojos del libro, pero no dijo nada. Marta vio algo en su cara. Parecía que se estaba riendo.",
+    "Así pasó un mes. Marta buscaba trabajo todos los días. Escribía cartas, enviaba mensajes, hacía llamadas. Nadie le daba una respuesta. Y cada noche, en su cama de niña, se sentía un poco más pequeña.",
+    "Entonces, una noche, todo cambió. Sus padres bajaron con ropa nueva. Carmen llevaba algo rojo, muy bonito. Pedro no tenía su libro.",
+    "—¿Adónde van? —preguntó Marta.",
+    "—Afuera —dijo su madre.",
+    "—¿Afuera dónde? ¿Con quién?",
+    "—Con amigos. No nos esperes, cariño.",
+    "Y salieron.",
+    "Marta se quedó en la casa, sin nadie. Comió algo, miró una película, leyó un poco. A las 12, sus padres todavía no estaban. A la una, tampoco. A las dos, Marta estaba en la puerta, con todas las luces de la casa y con mucho miedo. Llamó a su madre tres veces. Nada.",
+    "Casi a las tres, por fin, llegaron. Venían juntos por la calle, riendo como dos jóvenes.",
+    "—¿Saben qué hora es? —dijo Marta—. ¡No llamaron! ¡No enviaron ni un mensaje! ¡Pensé que algo malo había pasado!",
+    "Pedro miró a su esposa.",
+    "—Tiene razón, Carmen.",
+    "—Sí, tiene razón —dijo Carmen, muy seria—. Perdón, hija. No va a pasar otra vez.",
+    "Marta los miró. Entonces oyó sus propias palabras, y la voz con que las había dicho. Era la voz de su madre. Los tres empezaron a reír, ahí mismo, en la puerta.",
+    "Después se sentaron juntos y Pedro trajo vino.",
+    "—¿Adónde fueron? —preguntó Marta.",
+    "—A la fiesta del pueblo —dijo su padre—. Hay música cada fin de semana. Vamos desde hace 30 años.",
+    "—¿Desde hace tanto? ¿Y por qué nunca me lo contaron?",
+    "—Porque cuando eras niña, no podíamos ir mucho —dijo Carmen—. Después te fuiste a la ciudad. Y este mes... no queríamos dejarte aquí sin nadie. Tenía miedo por ti.",
+    "—Tu madre casi no duerme desde que llegaste —dijo Pedro—. Cada noche entra a tu habitación para ver si estás bien.",
+    "—¿Como cuando era niña?",
+    "—Como siempre —dijo Carmen.",
+    "Bebió un poco de vino y miró a Pedro. —Cuando yo tenía 30 años, tu padre perdió su trabajo. Tú eras un bebé. No teníamos dinero, y yo tenía mucho miedo. Fue muy difícil. Pero una noche, unos amigos nos llevaron a esa fiesta. Y por unas horas, nos olvidamos de todo.",
+    "—Y aprendimos algo —dijo Pedro—. La vida es dura. Pero igual hay que salir a bailar.",
+    "Marta miró a sus padres. No eran solo «mamá» y «papá». Eran un hombre y una mujer, con su propia vida, sus propios miedos y sus propias fiestas. Antes, nunca los había visto así.",
+    "El próximo fin de semana, Carmen bajó con su ropa roja. Pedro la esperaba en la puerta. Y Marta también estaba lista.",
+    "—¿Y tú adónde vas? —preguntó su madre.",
+    "—Con mis padres —dijo Marta—. Y vuelvo cuando quiera.",
+    "Carmen abrió la boca para decir algo. Luego la cerró. Luego la abrió otra vez.",
+    "—¿Llevas ropa suficiente?",
+    "—Sí, mamá.",
+    "Y por primera vez en un mes, esa pregunta no le molestó."
+  ],
+  "glossary": [
+    {
+      "word": "riendo",
+      "lemma": "reír",
+      "en": "laughing"
+    },
+    {
+      "word": "reír",
+      "lemma": "reír",
+      "en": "to laugh"
+    },
+    {
+      "word": "bailar",
+      "lemma": "bailar",
+      "en": "to dance"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Por qué volvió Marta a casa de sus padres?",
+      "a": "Porque perdió su trabajo y no podía pagar su cuarto en la ciudad.",
+      "q_en": "Why did Marta go back to her parents' house?",
+      "a_en": "Because she lost her job and couldn't pay for her room in the city."
+    },
+    {
+      "q": "¿A qué hora abrió Carmen la puerta la primera mañana?",
+      "a": "A las seis.",
+      "q_en": "What time did Carmen open the door the first morning?",
+      "a_en": "At six."
+    },
+    {
+      "q": "¿Adónde fueron Carmen y Pedro esa noche?",
+      "a": "A la fiesta del pueblo.",
+      "q_en": "Where did Carmen and Pedro go that night?",
+      "a_en": "To the town party."
+    },
+    {
+      "q": "¿Qué le pasó a Pedro cuando Carmen tenía 30 años?",
+      "a": "Perdió su trabajo.",
+      "q_en": "What happened to Pedro when Carmen was 30?",
+      "a_en": "He lost his job."
+    },
+    {
+      "q": "¿Qué hizo Marta el próximo fin de semana?",
+      "a": "Fue a la fiesta con sus padres.",
+      "q_en": "What did Marta do the next weekend?",
+      "a_en": "She went to the party with her parents."
+    }
+  ],
+  "wordCount": 767,
+  "measured": {
+    "coverage": 99.45,
+    "glossedPct": 0.55,
+    "unglossed": 0,
+    "words": 733,
+    "listTokens": 500,
+    "grammarTokens": 229,
+    "nameTokens": 34,
+    "uniqueListWords": 195,
+    "highestRankUsed": 493,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 17
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 9
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 6
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 10
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 7
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 4
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 5
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 2
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 1
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 14
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 15
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 3
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 3
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 1
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 4
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 2
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 3
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 3
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 3
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 1
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 2
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 1
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 4
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 5
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 6
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 2
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 1
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 1
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 4
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 1
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 7
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 5
+      },
+      {
+        "lemma": "nos",
+        "rank": 40,
+        "count": 3
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 2
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 3
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 1
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 2
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 6
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 2
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 1
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 3
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 5
+      },
+      {
+        "lemma": "tanto",
+        "rank": 52,
+        "count": 1
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 3
+      },
+      {
+        "lemma": "hombre",
+        "rank": 56,
+        "count": 1
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 2
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 2
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 1
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 7
+      },
+      {
+        "lemma": "quién",
+        "rank": 66,
+        "count": 2
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 4
+      },
+      {
+        "lemma": "porque",
+        "rank": 68,
+        "count": 1
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 2
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 3
+      },
+      {
+        "lemma": "dónde",
+        "rank": 73,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 4
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 4
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 3
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 4
+      },
+      {
+        "lemma": "sentir",
+        "rank": 79,
+        "count": 2
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 4
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 4
+      },
+      {
+        "lemma": "ahí",
+        "rank": 82,
+        "count": 1
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 4
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 2
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 3
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 1
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 4
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 5
+      },
+      {
+        "lemma": "oír",
+        "rank": 93,
+        "count": 1
+      },
+      {
+        "lemma": "ti",
+        "rank": 94,
+        "count": 1
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 2
+      },
+      {
+        "lemma": "amigo",
+        "rank": 96,
+        "count": 4
+      },
+      {
+        "lemma": "hasta",
+        "rank": 98,
+        "count": 1
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 3
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 2
+      },
+      {
+        "lemma": "padre",
+        "rank": 104,
+        "count": 9
+      },
+      {
+        "lemma": "nuevo",
+        "rank": 106,
+        "count": 1
+      },
+      {
+        "lemma": "uno",
+        "rank": 107,
+        "count": 1
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 1
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 3
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 2
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 1
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 5
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 3
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 2
+      },
+      {
+        "lemma": "gente",
+        "rank": 125,
+        "count": 1
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 2
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 4
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 3
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 1
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 2
+      },
+      {
+        "lemma": "perder",
+        "rank": 137,
+        "count": 2
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 2
+      },
+      {
+        "lemma": "mujer",
+        "rank": 139,
+        "count": 1
+      },
+      {
+        "lemma": "vivir",
+        "rank": 143,
+        "count": 1
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 3
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 1
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 2
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 1
+      },
+      {
+        "lemma": "papá",
+        "rank": 152,
+        "count": 1
+      },
+      {
+        "lemma": "madre",
+        "rank": 154,
+        "count": 8
+      },
+      {
+        "lemma": "tres",
+        "rank": 156,
+        "count": 3
+      },
+      {
+        "lemma": "traer",
+        "rank": 163,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 5
+      },
+      {
+        "lemma": "mamá",
+        "rank": 165,
+        "count": 6
+      },
+      {
+        "lemma": "luego",
+        "rank": 166,
+        "count": 2
+      },
+      {
+        "lemma": "razón",
+        "rank": 171,
+        "count": 2
+      },
+      {
+        "lemma": "listo",
+        "rank": 173,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 3
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 3
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 5
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 1
+      },
+      {
+        "lemma": "cabeza",
+        "rank": 192,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 3
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 3
+      },
+      {
+        "lemma": "malo",
+        "rank": 203,
+        "count": 1
+      },
+      {
+        "lemma": "olvidar",
+        "rank": 204,
+        "count": 1
+      },
+      {
+        "lemma": "cariño",
+        "rank": 206,
+        "count": 1
+      },
+      {
+        "lemma": "serio",
+        "rank": 210,
+        "count": 1
+      },
+      {
+        "lemma": "todavía",
+        "rank": 212,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 2
+      },
+      {
+        "lemma": "cambiar",
+        "rank": 225,
+        "count": 2
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 2
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 1
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 3
+      },
+      {
+        "lemma": "miedo",
+        "rank": 234,
+        "count": 4
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 1
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 2
+      },
+      {
+        "lemma": "mes",
+        "rank": 245,
+        "count": 3
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 1
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 2
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 1
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 3
+      },
+      {
+        "lemma": "jefa",
+        "rank": 255,
+        "count": 1
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 3
+      },
+      {
+        "lemma": "tocar",
+        "rank": 260,
+        "count": 1
+      },
+      {
+        "lemma": "luz",
+        "rank": 265,
+        "count": 1
+      },
+      {
+        "lemma": "propio",
+        "rank": 266,
+        "count": 4
+      },
+      {
+        "lemma": "realmente",
+        "rank": 269,
+        "count": 1
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 2
+      },
+      {
+        "lemma": "esposa",
+        "rank": 275,
+        "count": 1
+      },
+      {
+        "lemma": "suficiente",
+        "rank": 276,
+        "count": 2
+      },
+      {
+        "lemma": "hija",
+        "rank": 279,
+        "count": 1
+      },
+      {
+        "lemma": "cara",
+        "rank": 280,
+        "count": 1
+      },
+      {
+        "lemma": "igual",
+        "rank": 287,
+        "count": 2
+      },
+      {
+        "lemma": "difícil",
+        "rank": 290,
+        "count": 1
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 1
+      },
+      {
+        "lemma": "joven",
+        "rank": 312,
+        "count": 1
+      },
+      {
+        "lemma": "libro",
+        "rank": 314,
+        "count": 4
+      },
+      {
+        "lemma": "fiesta",
+        "rank": 315,
+        "count": 3
+      },
+      {
+        "lemma": "cuarto",
+        "rank": 322,
+        "count": 1
+      },
+      {
+        "lemma": "casar",
+        "rank": 325,
+        "count": 1
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 2
+      },
+      {
+        "lemma": "afuera",
+        "rank": 338,
+        "count": 2
+      },
+      {
+        "lemma": "escribir",
+        "rank": 341,
+        "count": 1
+      },
+      {
+        "lemma": "próximo",
+        "rank": 349,
+        "count": 1
+      },
+      {
+        "lemma": "bonito",
+        "rank": 356,
+        "count": 1
+      },
+      {
+        "lemma": "tampoco",
+        "rank": 357,
+        "count": 1
+      },
+      {
+        "lemma": "adónde",
+        "rank": 360,
+        "count": 4
+      },
+      {
+        "lemma": "arriba",
+        "rank": 362,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 1
+      },
+      {
+        "lemma": "bebé",
+        "rank": 368,
+        "count": 1
+      },
+      {
+        "lemma": "niña",
+        "rank": 372,
+        "count": 5
+      },
+      {
+        "lemma": "perdón",
+        "rank": 387,
+        "count": 1
+      },
+      {
+        "lemma": "enviar",
+        "rank": 388,
+        "count": 2
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 2
+      },
+      {
+        "lemma": "pueblo",
+        "rank": 391,
+        "count": 3
+      },
+      {
+        "lemma": "bajar",
+        "rank": 392,
+        "count": 2
+      },
+      {
+        "lemma": "película",
+        "rank": 394,
+        "count": 1
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 2
+      },
+      {
+        "lemma": "cama",
+        "rank": 400,
+        "count": 2
+      },
+      {
+        "lemma": "médico",
+        "rank": 402,
+        "count": 1
+      },
+      {
+        "lemma": "carta",
+        "rank": 408,
+        "count": 1
+      },
+      {
+        "lemma": "duro",
+        "rank": 410,
+        "count": 1
+      },
+      {
+        "lemma": "beber",
+        "rank": 413,
+        "count": 1
+      },
+      {
+        "lemma": "ropa",
+        "rank": 416,
+        "count": 4
+      },
+      {
+        "lemma": "habitación",
+        "rank": 418,
+        "count": 2
+      },
+      {
+        "lemma": "respuesta",
+        "rank": 419,
+        "count": 1
+      },
+      {
+        "lemma": "compañía",
+        "rank": 423,
+        "count": 1
+      },
+      {
+        "lemma": "mensaje",
+        "rank": 442,
+        "count": 2
+      },
+      {
+        "lemma": "aprender",
+        "rank": 447,
+        "count": 1
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 1
+      },
+      {
+        "lemma": "boca",
+        "rank": 455,
+        "count": 1
+      },
+      {
+        "lemma": "detrás",
+        "rank": 458,
+        "count": 1
+      },
+      {
+        "lemma": "rojo",
+        "rank": 471,
+        "count": 2
+      },
+      {
+        "lemma": "molestar",
+        "rank": 478,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 2
+      },
+      {
+        "lemma": "música",
+        "rank": 493,
+        "count": 1
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "reír",
+        "rank": 1099,
+        "forms": [
+          "riendo",
+          "reír"
+        ],
+        "count": 3,
+        "glossed": true
+      },
+      {
+        "lemma": "bailar",
+        "rank": 538,
+        "forms": [
+          "bailar"
+        ],
+        "count": 1,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 3019,
+      "output_tokens": 17031,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.378,
+    "theme": "A woman of thirty loses her job and moves back in with her parents. Her mother still treats her like a teenager. Funny and warm, ends with the daughter seeing her parents differently."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story05_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 4265,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 330.6
+    }
+  ]
+}

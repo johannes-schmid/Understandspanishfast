@@ -1,0 +1,1737 @@
+{
+ "urls": {
+  "v2018": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2018/raw/es.zip",
+  "v2024": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/raw/es.zip"
+ },
+ "shows": {
+  "cuentame-como-paso": {
+   "imdb": "tt0302447",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt0551683",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2001/551683/6665026.xml",
+     "cs": 27162,
+     "us": 105725,
+     "off": 2713286141
+    },
+    {
+     "season": "1",
+     "episode": "10",
+     "imdb": "tt0551699",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2001/551699/6668882.xml",
+     "cs": 35289,
+     "us": 141506,
+     "off": 2839527132
+    },
+    {
+     "season": "1",
+     "episode": "20",
+     "imdb": "tt0551686",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/551686/6681885.xml",
+     "cs": 33601,
+     "us": 135473,
+     "off": 1493282183
+    },
+    {
+     "season": "1",
+     "episode": "29",
+     "imdb": "tt0551631",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/551631/6693973.xml",
+     "cs": 40062,
+     "us": 164179,
+     "off": 1572994253
+    },
+    {
+     "season": "3",
+     "episode": "9",
+     "imdb": "tt0875678",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2003/875678/6836777.xml",
+     "cs": 43716,
+     "us": 185162,
+     "off": 73059834
+    },
+    {
+     "season": "4",
+     "episode": "6",
+     "imdb": "tt0551629",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2003/551629/6837577.xml",
+     "cs": 41113,
+     "us": 173740,
+     "off": 118154483
+    },
+    {
+     "season": "5",
+     "episode": "1",
+     "imdb": "tt0551700",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/551700/6845021.xml",
+     "cs": 52913,
+     "us": 218489,
+     "off": 4944062795
+    },
+    {
+     "season": "5",
+     "episode": "12",
+     "imdb": "tt0551696",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/551696/6845036.xml",
+     "cs": 33822,
+     "us": 150716,
+     "off": 4795404565
+    },
+    {
+     "season": "6",
+     "episode": "10",
+     "imdb": "tt0551644",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2005/551644/6818573.xml",
+     "cs": 41222,
+     "us": 182303,
+     "off": 1263430128
+    },
+    {
+     "season": "7",
+     "episode": "5",
+     "imdb": "tt0551601",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2005/551601/6958634.xml",
+     "cs": 46141,
+     "us": 202187,
+     "off": 1476867737
+    },
+    {
+     "season": "7",
+     "episode": "15",
+     "imdb": "tt0551670",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2005/551670/6958648.xml",
+     "cs": 57607,
+     "us": 259387,
+     "off": 1361524260
+    },
+    {
+     "season": "8",
+     "episode": "8",
+     "imdb": "tt0895807",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2006/895807/6958667.xml",
+     "cs": 39356,
+     "us": 176698,
+     "off": 2500298864
+    },
+    {
+     "season": "8",
+     "episode": "18",
+     "imdb": "tt0952800",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/952800/6958682.xml",
+     "cs": 33613,
+     "us": 137938,
+     "off": 2926656970
+    },
+    {
+     "season": "11",
+     "episode": "8",
+     "imdb": "tt1536604",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1536604/6837611.xml",
+     "cs": 52923,
+     "us": 234622,
+     "off": 2179981281
+    }
+   ]
+  },
+  "el-ministerio-del-tiempo": {
+   "imdb": "tt4136774",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt4371472",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4371472/6408229.xml",
+     "cs": 31877,
+     "us": 125912,
+     "off": 672536523
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt4385514",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4385514/6644827.xml",
+     "cs": 36945,
+     "us": 145763,
+     "off": 644770307
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt4385520",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4385520/6644828.xml",
+     "cs": 29779,
+     "us": 117551,
+     "off": 516136635
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt4383892",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4383892/6644829.xml",
+     "cs": 33649,
+     "us": 132051,
+     "off": 658411750
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt4385522",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4385522/6130707.xml",
+     "cs": 37995,
+     "us": 144784,
+     "off": 542348364
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt4385524",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4385524/6316551.xml",
+     "cs": 38185,
+     "us": 147415,
+     "off": 321054755
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt4385526",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4385526/6644832.xml",
+     "cs": 36436,
+     "us": 147141,
+     "off": 557094824
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt4383956",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4383956/6155508.xml",
+     "cs": 36384,
+     "us": 142728,
+     "off": 389005886
+    },
+    {
+     "season": "2",
+     "episode": "1",
+     "imdb": "tt4550122",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4550122/6510462.xml",
+     "cs": 35672,
+     "us": 138921,
+     "off": 5569718405
+    },
+    {
+     "season": "2",
+     "episode": "3",
+     "imdb": "tt4559302",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4559302/6533414.xml",
+     "cs": 38693,
+     "us": 147884,
+     "off": 5679099996
+    },
+    {
+     "season": "2",
+     "episode": "4",
+     "imdb": "tt4559304",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4559304/6543233.xml",
+     "cs": 38935,
+     "us": 154896,
+     "off": 5680679885
+    },
+    {
+     "season": "2",
+     "episode": "5",
+     "imdb": "tt4559306",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4559306/6554378.xml",
+     "cs": 35556,
+     "us": 138064,
+     "off": 5644078184
+    },
+    {
+     "season": "2",
+     "episode": "6",
+     "imdb": "tt4559308",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4559308/6561965.xml",
+     "cs": 37891,
+     "us": 149282,
+     "off": 5553042695
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt4559310",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4559310/6573180.xml",
+     "cs": 35094,
+     "us": 135622,
+     "off": 5574194875
+    }
+   ]
+  },
+  "gran-hotel": {
+   "imdb": "tt2006421",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt2071784",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2071784/6446588.xml",
+     "cs": 32558,
+     "us": 122773,
+     "off": 4022752559
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt2090875",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2090875/6441114.xml",
+     "cs": 34810,
+     "us": 126138,
+     "off": 4008935073
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt2119743",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2119743/6441117.xml",
+     "cs": 32304,
+     "us": 121382,
+     "off": 4133381183
+    },
+    {
+     "season": "2",
+     "episode": "1",
+     "imdb": "tt2433924",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2433924/6441122.xml",
+     "cs": 34989,
+     "us": 132307,
+     "off": 6807872793
+    },
+    {
+     "season": "2",
+     "episode": "4",
+     "imdb": "tt2478846",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2478846/6441125.xml",
+     "cs": 38307,
+     "us": 143566,
+     "off": 6580228119
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt2516194",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2516194/6441128.xml",
+     "cs": 33855,
+     "us": 130375,
+     "off": 6443008511
+    },
+    {
+     "season": "3",
+     "episode": "2",
+     "imdb": "tt2665160",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2665160/6443993.xml",
+     "cs": 38312,
+     "us": 142854,
+     "off": 991912880
+    },
+    {
+     "season": "3",
+     "episode": "6",
+     "imdb": "tt2735586",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2735586/6444001.xml",
+     "cs": 31472,
+     "us": 121163,
+     "off": 961816841
+    },
+    {
+     "season": "3",
+     "episode": "9",
+     "imdb": "tt2787378",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2787378/6444004.xml",
+     "cs": 29216,
+     "us": 113277,
+     "off": 1092630417
+    },
+    {
+     "season": "3",
+     "episode": "12",
+     "imdb": "tt2848956",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2848956/6444393.xml",
+     "cs": 34321,
+     "us": 132960,
+     "off": 998024265
+    },
+    {
+     "season": "3",
+     "episode": "15",
+     "imdb": "tt2904382",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2904382/6444398.xml",
+     "cs": 40466,
+     "us": 152934,
+     "off": 874612626
+    },
+    {
+     "season": "3",
+     "episode": "18",
+     "imdb": "tt2947384",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2947384/6444401.xml",
+     "cs": 30072,
+     "us": 114944,
+     "off": 884337212
+    },
+    {
+     "season": "3",
+     "episode": "21",
+     "imdb": "tt2992698",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2992698/6444405.xml",
+     "cs": 33798,
+     "us": 126339,
+     "off": 1216515103
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt2006421",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/2006421/1956001043.xml",
+     "cs": 21687,
+     "us": 90817,
+     "off": 5490407602
+    }
+   ]
+  },
+  "el-internado": {
+   "imdb": "tt1024810",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt1040636",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/1040636/6536667.xml",
+     "cs": 26333,
+     "us": 98492,
+     "off": 2969902861
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt1057720",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/1057720/6478933.xml",
+     "cs": 28550,
+     "us": 112291,
+     "off": 3125487097
+    },
+    {
+     "season": "2",
+     "episode": "5",
+     "imdb": "tt1154199",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/1154199/6478940.xml",
+     "cs": 27524,
+     "us": 104510,
+     "off": 3005969658
+    },
+    {
+     "season": "3",
+     "episode": "2",
+     "imdb": "tt1228333",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1228333/6536671.xml",
+     "cs": 31870,
+     "us": 120490,
+     "off": 4534731669
+    },
+    {
+     "season": "3",
+     "episode": "7",
+     "imdb": "tt1245379",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1245379/6538527.xml",
+     "cs": 28545,
+     "us": 106675,
+     "off": 4726274194
+    },
+    {
+     "season": "4",
+     "episode": "3",
+     "imdb": "tt1320318",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1320318/6536673.xml",
+     "cs": 27730,
+     "us": 102623,
+     "off": 4451881351
+    },
+    {
+     "season": "4",
+     "episode": "8",
+     "imdb": "tt1339827",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1339827/6538547.xml",
+     "cs": 32350,
+     "us": 120984,
+     "off": 4627487108
+    },
+    {
+     "season": "5",
+     "episode": "2",
+     "imdb": "tt1442835",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1442835/6538554.xml",
+     "cs": 29792,
+     "us": 111622,
+     "off": 2354663940
+    },
+    {
+     "season": "5",
+     "episode": "7",
+     "imdb": "tt1461980",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1461980/6538560.xml",
+     "cs": 31469,
+     "us": 119227,
+     "off": 2327011134
+    },
+    {
+     "season": "6",
+     "episode": "3",
+     "imdb": "tt1559421",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1559421/6538571.xml",
+     "cs": 26189,
+     "us": 99392,
+     "off": 2353648921
+    },
+    {
+     "season": "6",
+     "episode": "8",
+     "imdb": "tt1590854",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1590854/6538585.xml",
+     "cs": 31541,
+     "us": 118640,
+     "off": 3555745727
+    },
+    {
+     "season": "6",
+     "episode": "13",
+     "imdb": "tt1611313",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1611313/6545257.xml",
+     "cs": 27300,
+     "us": 105359,
+     "off": 3707399409
+    },
+    {
+     "season": "7",
+     "episode": "5",
+     "imdb": "tt1687384",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1687384/6538599.xml",
+     "cs": 30478,
+     "us": 117976,
+     "off": 3508733157
+    },
+    {
+     "season": "7",
+     "episode": "10",
+     "imdb": "tt1725246",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1725246/6538607.xml",
+     "cs": 31652,
+     "us": 119046,
+     "off": 3727351733
+    }
+   ]
+  },
+  "el-barco": {
+   "imdb": "tt1788634",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt1820903",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1820903/5042015.xml",
+     "cs": 36433,
+     "us": 132033,
+     "off": 3960703759
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt1831924",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1831924/5441634.xml",
+     "cs": 38546,
+     "us": 144190,
+     "off": 4308790207
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt1837164",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1837164/5764666.xml",
+     "cs": 35553,
+     "us": 132819,
+     "off": 3960522084
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt1842627",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1842627/4997317.xml",
+     "cs": 34120,
+     "us": 131986,
+     "off": 3961834773
+    },
+    {
+     "season": "2",
+     "episode": "2",
+     "imdb": "tt2058831",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2058831/4469657.xml",
+     "cs": 31123,
+     "us": 116936,
+     "off": 4044734797
+    },
+    {
+     "season": "2",
+     "episode": "3",
+     "imdb": "tt2058830",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2058830/5168958.xml",
+     "cs": 36040,
+     "us": 135110,
+     "off": 4191769652
+    },
+    {
+     "season": "2",
+     "episode": "4",
+     "imdb": "tt2073242",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2073242/4829407.xml",
+     "cs": 29182,
+     "us": 109209,
+     "off": 4329918650
+    },
+    {
+     "season": "2",
+     "episode": "6",
+     "imdb": "tt2088230",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2088230/4829409.xml",
+     "cs": 33430,
+     "us": 124183,
+     "off": 4118843914
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt2093472",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2093472/4829410.xml",
+     "cs": 32089,
+     "us": 122677,
+     "off": 3974502964
+    },
+    {
+     "season": "2",
+     "episode": "8",
+     "imdb": "tt2097473",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2097473/4469669.xml",
+     "cs": 27611,
+     "us": 102529,
+     "off": 4109391082
+    },
+    {
+     "season": "2",
+     "episode": "9",
+     "imdb": "tt2102666",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2102666/4469670.xml",
+     "cs": 29243,
+     "us": 109896,
+     "off": 4260586451
+    },
+    {
+     "season": "2",
+     "episode": "11",
+     "imdb": "tt2114656",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2114656/4469672.xml",
+     "cs": 25914,
+     "us": 96877,
+     "off": 3963710994
+    },
+    {
+     "season": "2",
+     "episode": "12",
+     "imdb": "tt2120930",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2120930/4469674.xml",
+     "cs": 29875,
+     "us": 109357,
+     "off": 4028221295
+    },
+    {
+     "season": "2",
+     "episode": "13",
+     "imdb": "tt2127698",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2127698/4469675.xml",
+     "cs": 29221,
+     "us": 112143,
+     "off": 4286865834
+    }
+   ]
+  },
+  "isabel": {
+   "imdb": "tt2011533",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt2058381",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2058381/6918455.xml",
+     "cs": 35277,
+     "us": 136872,
+     "off": 4043345511
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt2400658",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2400658/6918456.xml",
+     "cs": 34599,
+     "us": 135513,
+     "off": 6473566883
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt2414732",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2414732/6918458.xml",
+     "cs": 34297,
+     "us": 134481,
+     "off": 6686929450
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt2326631",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2326631/6918461.xml",
+     "cs": 33721,
+     "us": 132254,
+     "off": 6702864831
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt2444618",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2444618/6918459.xml",
+     "cs": 36371,
+     "us": 142124,
+     "off": 6520356757
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt2460004",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2460004/6918460.xml",
+     "cs": 40257,
+     "us": 155909,
+     "off": 6503524791
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt2474766",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2474766/6918463.xml",
+     "cs": 40263,
+     "us": 153536,
+     "off": 6666902116
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt2326633",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2326633/6918462.xml",
+     "cs": 34415,
+     "us": 132322,
+     "off": 6656155715
+    },
+    {
+     "season": "1",
+     "episode": "9",
+     "imdb": "tt2500142",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2500142/6918464.xml",
+     "cs": 40773,
+     "us": 156508,
+     "off": 6744934697
+    },
+    {
+     "season": "1",
+     "episode": "10",
+     "imdb": "tt2511802",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2511802/6918271.xml",
+     "cs": 39595,
+     "us": 154763,
+     "off": 6451213994
+    },
+    {
+     "season": "1",
+     "episode": "11",
+     "imdb": "tt2538684",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2538684/6918465.xml",
+     "cs": 40886,
+     "us": 159230,
+     "off": 6448966548
+    },
+    {
+     "season": "1",
+     "episode": "12",
+     "imdb": "tt2538734",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2538734/6918466.xml",
+     "cs": 39160,
+     "us": 153784,
+     "off": 6684515256
+    },
+    {
+     "season": "1",
+     "episode": "13",
+     "imdb": "tt2554096",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2554096/6918467.xml",
+     "cs": 38393,
+     "us": 151572,
+     "off": 6749908231
+    }
+   ]
+  },
+  "las-chicas-del-cable": {
+   "imdb": "tt5674718",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt5870522",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/5870522/6986048.xml",
+     "cs": 29248,
+     "us": 114774,
+     "off": 4410946437
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt6109058",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6109058/6986049.xml",
+     "cs": 28163,
+     "us": 111237,
+     "off": 4417824163
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt6538456",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6538456/6986050.xml",
+     "cs": 36300,
+     "us": 144973,
+     "off": 4388301130
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt6538458",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6538458/6986051.xml",
+     "cs": 26483,
+     "us": 104741,
+     "off": 4427111832
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt6538462",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6538462/6986052.xml",
+     "cs": 29315,
+     "us": 116685,
+     "off": 4376429918
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt6538464",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6538464/6986053.xml",
+     "cs": 35163,
+     "us": 140373,
+     "off": 4410072249
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt6538466",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6538466/6986054.xml",
+     "cs": 29206,
+     "us": 116236,
+     "off": 4353576558
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt5870528",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/5870528/6986055.xml",
+     "cs": 26885,
+     "us": 107428,
+     "off": 4396961194
+    }
+   ]
+  },
+  "el-chapo": {
+   "imdb": "tt6692188",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt6692198",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6692198/7014089.xml",
+     "cs": 19896,
+     "us": 76688,
+     "off": 4376616918
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt6843056",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6843056/7014122.xml",
+     "cs": 19128,
+     "us": 71930,
+     "off": 4433556781
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt6865914",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/6865914/7017481.xml",
+     "cs": 18130,
+     "us": 68702,
+     "off": 4415561147
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt7028366",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/7028366/7014624.xml",
+     "cs": 19205,
+     "us": 72965,
+     "off": 4415274348
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt7028368",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/7028368/7017491.xml",
+     "cs": 12841,
+     "us": 47497,
+     "off": 4402896230
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt7028374",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/7028374/7017465.xml",
+     "cs": 14658,
+     "us": 55565,
+     "off": 4418410961
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt7028380",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2017/7028380/7017449.xml",
+     "cs": 12384,
+     "us": 45715,
+     "off": 4359774114
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt7028388",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/0/7028388/7017437.xml",
+     "cs": 10566,
+     "us": 41415,
+     "off": 6811032151
+    },
+    {
+     "season": "1",
+     "episode": "9",
+     "imdb": "tt7028392",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/0/7028392/7017414.xml",
+     "cs": 13775,
+     "us": 54328,
+     "off": 6811320787
+    }
+   ]
+  },
+  "fisica-o-quimica": {
+   "imdb": "tt1153059",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt1178308",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1178308/5911704.xml",
+     "cs": 41837,
+     "us": 159089,
+     "off": 4588328179
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt1185514",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1185514/5911705.xml",
+     "cs": 44093,
+     "us": 170970,
+     "off": 4711762659
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt1192734",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1192734/5912631.xml",
+     "cs": 43163,
+     "us": 166090,
+     "off": 4496923847
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt1200502",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1200502/5912634.xml",
+     "cs": 42114,
+     "us": 162716,
+     "off": 4497065102
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt1208159",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1208159/5911706.xml",
+     "cs": 37038,
+     "us": 143443,
+     "off": 4523091150
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt1212280",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1212280/5912636.xml",
+     "cs": 36837,
+     "us": 142567,
+     "off": 4549911381
+    },
+    {
+     "season": "2",
+     "episode": "2",
+     "imdb": "tt1294352",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1294352/5914123.xml",
+     "cs": 38631,
+     "us": 149004,
+     "off": 4681327410
+    },
+    {
+     "season": "2",
+     "episode": "4",
+     "imdb": "tt1301820",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1301820/5914125.xml",
+     "cs": 43026,
+     "us": 161736,
+     "off": 4519315688
+    },
+    {
+     "season": "2",
+     "episode": "5",
+     "imdb": "tt1304117",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1304117/5914126.xml",
+     "cs": 33856,
+     "us": 127625,
+     "off": 4656218212
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt1312455",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1312455/5914130.xml",
+     "cs": 38314,
+     "us": 142877,
+     "off": 4464793052
+    },
+    {
+     "season": "2",
+     "episode": "8",
+     "imdb": "tt1316718",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1316718/5914272.xml",
+     "cs": 41064,
+     "us": 155058,
+     "off": 4717115187
+    },
+    {
+     "season": "2",
+     "episode": "10",
+     "imdb": "tt1323643",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1323643/5914274.xml",
+     "cs": 40373,
+     "us": 153092,
+     "off": 4616014353
+    },
+    {
+     "season": "2",
+     "episode": "11",
+     "imdb": "tt1327062",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1327062/5914276.xml",
+     "cs": 40548,
+     "us": 155297,
+     "off": 4470642839
+    },
+    {
+     "season": "2",
+     "episode": "13",
+     "imdb": "tt1333140",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1333140/5914279.xml",
+     "cs": 36337,
+     "us": 134549,
+     "off": 4588627050
+    }
+   ]
+  },
+  "la-que-se-avecina": {
+   "imdb": "tt0922037",
+   "files": [
+    {
+     "season": "2",
+     "episode": "1",
+     "imdb": "tt1214389",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1214389/6602451.xml",
+     "cs": 59028,
+     "us": 241808,
+     "off": 4716837294
+    },
+    {
+     "season": "2",
+     "episode": "2",
+     "imdb": "tt1218172",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1218172/6602452.xml",
+     "cs": 47235,
+     "us": 186961,
+     "off": 4498145031
+    },
+    {
+     "season": "2",
+     "episode": "4",
+     "imdb": "tt1222155",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1222155/6602454.xml",
+     "cs": 57715,
+     "us": 237981,
+     "off": 4652088544
+    },
+    {
+     "season": "2",
+     "episode": "5",
+     "imdb": "tt1224970",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1224970/6602455.xml",
+     "cs": 47017,
+     "us": 194073,
+     "off": 4678311322
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt1231715",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1231715/6602457.xml",
+     "cs": 49665,
+     "us": 197278,
+     "off": 4519793093
+    },
+    {
+     "season": "2",
+     "episode": "8",
+     "imdb": "tt1234986",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1234986/6602458.xml",
+     "cs": 50051,
+     "us": 203719,
+     "off": 4690296057
+    },
+    {
+     "season": "2",
+     "episode": "10",
+     "imdb": "tt1239782",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1239782/6602460.xml",
+     "cs": 55921,
+     "us": 223439,
+     "off": 4630060986
+    },
+    {
+     "season": "2",
+     "episode": "12",
+     "imdb": "tt1261596",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1261596/6602462.xml",
+     "cs": 59885,
+     "us": 241820,
+     "off": 4594493093
+    },
+    {
+     "season": "2",
+     "episode": "13",
+     "imdb": "tt1265440",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1265440/6602463.xml",
+     "cs": 60312,
+     "us": 248098,
+     "off": 4687884935
+    },
+    {
+     "season": "2",
+     "episode": "15",
+     "imdb": "tt1286361",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/1286361/6602465.xml",
+     "cs": 50447,
+     "us": 205036,
+     "off": 4478309184
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0922037",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/922037/1958480145.xml",
+     "cs": 53471,
+     "us": 219011,
+     "off": 4026451324
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0922037",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/922037/1958626975.xml",
+     "cs": 68664,
+     "us": 271165,
+     "off": 4026575532
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0922037",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/922037/1958627416.xml",
+     "cs": 76397,
+     "us": 309594,
+     "off": 4026719967
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0922037",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/922037/1958738541.xml",
+     "cs": 70527,
+     "us": 287007,
+     "off": 4026504900
+    }
+   ]
+  },
+  "velvet": {
+   "imdb": "tt2955402",
+   "files": [
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt3590432",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3590432/6473631.xml",
+     "cs": 37851,
+     "us": 149570,
+     "off": 5185497901
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt3604702",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3604702/7067063.xml",
+     "cs": 35814,
+     "us": 142148,
+     "off": 5173440088
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt3604716",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3604716/7067082.xml",
+     "cs": 31229,
+     "us": 121835,
+     "off": 5423241248
+    },
+    {
+     "season": "1",
+     "episode": "9",
+     "imdb": "tt3604714",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3604714/7067719.xml",
+     "cs": 36856,
+     "us": 145467,
+     "off": 5132359813
+    },
+    {
+     "season": "1",
+     "episode": "13",
+     "imdb": "tt3604724",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3604724/7067717.xml",
+     "cs": 41098,
+     "us": 163089,
+     "off": 5163053242
+    },
+    {
+     "season": "1",
+     "episode": "14",
+     "imdb": "tt3659234",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3659234/7067735.xml",
+     "cs": 42994,
+     "us": 173048,
+     "off": 5444716002
+    },
+    {
+     "season": "1",
+     "episode": "15",
+     "imdb": "tt3659232",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3659232/7068693.xml",
+     "cs": 38049,
+     "us": 154103,
+     "off": 5318907894
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt2955402",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2955402/1960878710.xml",
+     "cs": 44552,
+     "us": 183400,
+     "off": 6367515810
+    }
+   ]
+  },
+  "vis-a-vis": {
+   "imdb": "tt4524056",
+   "files": [
+    {
+     "season": "2",
+     "episode": "5",
+     "imdb": "tt5609208",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/5609208/6765089.xml",
+     "cs": 31842,
+     "us": 124641,
+     "off": 5617754324
+    },
+    {
+     "season": "2",
+     "episode": "7",
+     "imdb": "tt5609214",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/5609214/6765091.xml",
+     "cs": 31719,
+     "us": 125454,
+     "off": 5659603185
+    },
+    {
+     "season": "2",
+     "episode": "13",
+     "imdb": "tt5609232",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/5609232/6765074.xml",
+     "cs": 27358,
+     "us": 107833,
+     "off": 5608818584
+    }
+   ]
+  },
+  "los-serrano": {
+   "imdb": "tt0362372",
+   "files": [
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711063.xml",
+     "cs": 60512,
+     "us": 262813,
+     "off": 3019852041
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711064.xml",
+     "cs": 53244,
+     "us": 226738,
+     "off": 3019642025
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711065.xml",
+     "cs": 53608,
+     "us": 227150,
+     "off": 3019695374
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711066.xml",
+     "cs": 53081,
+     "us": 225380,
+     "off": 3019749087
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711067.xml",
+     "cs": 53826,
+     "us": 230728,
+     "off": 3019535339
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711068.xml",
+     "cs": 52650,
+     "us": 230970,
+     "off": 3019589270
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt0362372",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2003/362372/1956711069.xml",
+     "cs": 49663,
+     "us": 213352,
+     "off": 3019802273
+    }
+   ]
+  },
+  "la-casa-de-papel": {
+   "imdb": "tt6468322",
+   "files": [
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt6468322",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/6468322/1957385832.xml",
+     "cs": 21283,
+     "us": 81255,
+     "off": 8266710149
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt6468322",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/6468322/1957489531.xml",
+     "cs": 15324,
+     "us": 58863,
+     "off": 8266694719
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt6468322",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/6468322/1957489532.xml",
+     "cs": 16033,
+     "us": 62729,
+     "off": 8266678580
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt6468322",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/6468322/1957489533.xml",
+     "cs": 16153,
+     "us": 64809,
+     "off": 8266731538
+    }
+   ]
+  },
+  "oscuro-deseo": {
+   "imdb": "tt12540080",
+   "files": [
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534668.xml",
+     "cs": 17327,
+     "us": 65137,
+     "off": 9453591709
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534670.xml",
+     "cs": 15437,
+     "us": 57632,
+     "off": 9453805386
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534673.xml",
+     "cs": 15024,
+     "us": 57385,
+     "off": 9453905743
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534675.xml",
+     "cs": 13442,
+     "us": 52093,
+     "off": 9453578160
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534678.xml",
+     "cs": 18395,
+     "us": 68566,
+     "off": 9453626691
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534681.xml",
+     "cs": 17817,
+     "us": 69813,
+     "off": 9453427992
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534684.xml",
+     "cs": 15869,
+     "us": 58283,
+     "off": 9453939972
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534687.xml",
+     "cs": 14992,
+     "us": 56418,
+     "off": 9453661155
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534690.xml",
+     "cs": 14325,
+     "us": 55661,
+     "off": 9453676254
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534692.xml",
+     "cs": 17441,
+     "us": 65516,
+     "off": 9453609143
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1957534695.xml",
+     "cs": 15606,
+     "us": 58672,
+     "off": 9453546072
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1961034303.xml",
+     "cs": 13172,
+     "us": 49135,
+     "off": 9453988087
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1961034305.xml",
+     "cs": 15970,
+     "us": 59959,
+     "off": 9453707448
+    },
+    {
+     "season": "?",
+     "episode": null,
+     "imdb": "tt12540080",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2020/12540080/1961034308.xml",
+     "cs": 16849,
+     "us": 63245,
+     "off": 9453723525
+    }
+   ]
+  },
+  "radio-ambulante": {
+   "transcripts": [
+    "https://radioambulante.org/transcripcion/destino-desconocido-transcripcion",
+    "https://radioambulante.org/transcripcion/bienvenidos-al-rodeo-transcripcion",
+    "https://radioambulante.org/transcripcion/bogota-pintada-transcripcion",
+    "https://radioambulante.org/transcripcion/el-contagio-transcripcion",
+    "https://radioambulante.org/transcripcion/historia-clinica-transcripcion",
+    "https://radioambulante.org/transcripcion/las-ninas-y-el-monte-transcripcion",
+    "https://radioambulante.org/transcripcion/partida-de-nacimiento-transcripcion",
+    "https://radioambulante.org/transcripcion/puerta-por-puerta-transcripcion",
+    "https://radioambulante.org/transcripcion/su-pequeno-y-propio-mar-transcripcion",
+    "https://radioambulante.org/transcripcion/el-palabrero-parte-1-agente-secreto-transcripcion"
+   ]
+  }
+ }
+}

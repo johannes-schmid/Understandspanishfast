@@ -6,7 +6,7 @@ const URL = `${BASE}/words`
 
 export const metadata = {
   title: 'Spanish Vocabulary — Frequency-Ranked Word Lists',
-  description: 'Learn Spanish vocabulary the efficient way: word lists ranked by real-world frequency. Top 100, top 500, the 1,000 most common words, and the most common verbs — with coverage stats and examples.',
+  description: 'Learn Spanish vocabulary the efficient way: word lists ranked by real-world frequency. Top 100, 500 and 1,000, plus verbs, nouns, adjectives, adverbs and connectors.',
   alternates: { canonical: URL },
   openGraph: { type: 'website' },
 }
@@ -15,8 +15,16 @@ const CARDS = [
   { href: '/words/most-common-spanish-words', title: '1,000 most common Spanish words', coverage: '~74–80% COVERAGE', desc: 'The full interactive frequency list. Search, filter by word type, hide the English to test yourself, and mark words as learned.' },
   { href: '/words/top-100-spanish-words', title: 'Top 100 Spanish words', coverage: '~50% COVERAGE', desc: 'The highest-value place to start: 100 words that make up half of everyday speech.' },
   { href: '/words/top-500-spanish-words', title: 'Top 500 Spanish words', coverage: '~67% COVERAGE', desc: 'Two of every three words in conversation. The point where you stop feeling lost.' },
-  { href: '/words/most-common-spanish-verbs', title: 'Most common Spanish verbs', coverage: 'TOP 150 VERBS', desc: 'The verbs that carry the action of most sentences — ser, estar, tener, hacer, ir and the rest.' },
+  { href: '/words/top-1000-spanish-words', title: 'Top 1000 Spanish words', coverage: '~74% COVERAGE', desc: 'The strict ranking from #1 to #1,000, with native audio for every word and example sentence.' },
   { href: '/words/spanish-frequency-list', title: 'Spanish frequency list and method', coverage: 'HOW THE DATA WORKS', desc: 'The corpus behind the ranking and exactly how word counts map to comprehension.' },
+]
+
+const BY_TYPE = [
+  { href: '/words/most-common-spanish-verbs', title: 'Most common Spanish verbs', coverage: 'TOP 150 VERBS', desc: 'The verbs that carry the action of most sentences: ser, estar, tener, hacer, ir and the rest.' },
+  { href: '/words/most-common-spanish-nouns', title: 'Most common Spanish nouns', coverage: 'TOP 300 NOUNS', desc: 'Every noun shown with el or la, plus the gender rules and the exceptions worth knowing.' },
+  { href: '/words/most-common-spanish-adjectives', title: 'Most common Spanish adjectives', coverage: '191 ADJECTIVES', desc: 'Ranked with feminine forms, so you can make them agree from day one.' },
+  { href: '/words/most-common-spanish-adverbs', title: 'Most common Spanish adverbs', coverage: '95 ADVERBS', desc: 'Time, place and degree words like ya, aquí and muy, grouped by what they do.' },
+  { href: '/words/spanish-connectors', title: 'Spanish connectors', coverage: 'LINKING WORDS', desc: 'Pero, porque, aunque and phrases like sin embargo and por eso that hold sentences together.' },
 ]
 
 const FAQS = [
@@ -88,6 +96,20 @@ export default function Page() {
             </Link>
           ))}
         </div>
+
+        <section className="hub-sub">
+          <h2>By word type</h2>
+          <div className="hub by-type">
+            {BY_TYPE.map((c) => (
+              <Link key={c.href} href={c.href} className="card hub-card">
+                <div><span className="chip tab">{c.coverage}</span></div>
+                <h3 className="hub-h">{c.title}</h3>
+                <p>{c.desc}</p>
+                <span className="link">Open <Arrow /></span>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <section className="sec-sm">
           <div className="sec-head">

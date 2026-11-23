@@ -1,0 +1,99 @@
+@page { size: A4; margin: 18mm 20mm 20mm }
+@page cover { margin: 0 }
+:root {
+  --navy: #14204a; --ink-2: #4b5478; --ink-3: #636a8c;
+  --line: #d9ddf0; --line-2: #e9ecf8; --tint: #f3f4fc;
+  --coral: #f26b3a; --coral-ink: #c4461a; --coral-soft: #fde9e0;
+  --sans: 'Plus Jakarta Sans', sans-serif; --mono: 'JetBrains Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0 }
+html, body { background: #fff }
+body { font-family: var(--sans); color: var(--navy); font-size: 10pt; line-height: 1.5; -webkit-print-color-adjust: exact; print-color-adjust: exact }
+.tab { font-variant-numeric: tabular-nums }
+.mono { font-family: var(--mono); font-size: 7.4pt; letter-spacing: .06em; font-weight: 500; color: var(--ink-3) }
+.sec { break-before: page }
+h2 { font-size: 22pt; line-height: 1.08; letter-spacing: -.035em; font-weight: 800; margin-bottom: 4mm; text-wrap: balance }
+.lead { font-size: 10.5pt; line-height: 1.55; color: var(--ink-2); max-width: 140mm; margin-bottom: 6mm }
+
+/* cover */
+.cover { page: cover; height: 297mm; padding: 20mm 20mm 18mm; color: #fcfcff; display: grid; grid-template-rows: auto 1fr auto auto; position: relative;
+  background: radial-gradient(120mm 90mm at 88% 6%, rgba(201,195,242,.45), rgba(201,195,242,0) 70%), linear-gradient(160deg, #1b2a5e, #14204a 60%, #101a3d) }
+.cv-top { display: flex; justify-content: space-between }
+.cv-top .mono, .cv-foot .mono { color: rgba(252,252,255,.72) }
+.cv-map { align-self: center; justify-self: end; width: 92mm }
+.cv-map .map i { background: rgba(252,252,255,.13) }
+.cv-map .map i.on { background: var(--coral) }
+.cv-map p { font-size: 8.4pt; color: rgba(252,252,255,.72); margin-top: 3mm; line-height: 1.45 }
+.cv-level { font-family: var(--mono); font-size: 9pt; font-weight: 600; letter-spacing: .04em; color: var(--coral) }
+.cv-title { font-size: 44pt; line-height: 1; letter-spacing: -.04em; font-weight: 800; margin-top: 4mm; max-width: 160mm; text-wrap: balance }
+.cv-en { font-size: 13pt; color: rgba(252,252,255,.78); margin-top: 4mm; font-weight: 500 }
+.cv-sum { font-size: 10.5pt; line-height: 1.55; color: rgba(252,252,255,.78); max-width: 120mm; margin-top: 6mm }
+.cv-foot { display: grid; grid-template-columns: repeat(3, auto); justify-content: space-between; margin-top: 14mm; padding-top: 5mm; border-top: .8pt solid rgba(252,252,255,.2) }
+.cv-foot b { display: block; font-size: 20pt; letter-spacing: -.03em; color: #fcfcff; line-height: 1.1; font-weight: 800 }
+
+/* word map: one cell per list word, lit when the story uses it */
+.map { display: grid; grid-template-columns: repeat(25, 1fr); gap: .9mm }
+.map i { aspect-ratio: 1; border-radius: .5mm; background: var(--line-2) }
+.map i.on { background: var(--navy) }
+
+/* before you read */
+.howto { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; margin: 2mm 0 10mm }
+.howto ol { list-style: none; counter-reset: s; display: grid; gap: 3mm }
+.howto li { counter-increment: s; padding-left: 7mm; position: relative; color: var(--ink-2); font-size: 9.6pt }
+.howto li::before { content: counter(s); position: absolute; left: 0; top: .2mm; font-family: var(--mono); font-size: 8pt; font-weight: 600; color: var(--coral-ink) }
+.howto li b { color: var(--navy) }
+.cast { background: var(--tint); border-radius: 3mm; padding: 5mm 6mm }
+.cast h3, .h3 { font-size: 10.5pt; font-weight: 700; margin-bottom: 2.5mm }
+.cast p { font-size: 9.4pt; color: var(--ink-2) }
+.audio { margin-top: 3mm; font-size: 9.4pt; color: var(--ink-2) }
+.audio b { color: var(--navy) }
+
+/* story */
+.story-head { margin: 0 0 9mm; padding-bottom: 5mm; border-bottom: .8pt solid var(--line) }
+.story-head h1 { font-size: 30pt; line-height: 1.02; letter-spacing: -.04em; font-weight: 800; text-wrap: balance }
+.story-head p { color: var(--ink-3); margin-top: 2mm; font-size: 10pt }
+.para { display: grid; grid-template-columns: 1fr 38mm; column-gap: 8mm; margin-bottom: 3.4mm; break-inside: avoid }
+.para p { font-size: 12pt; line-height: 1.62; letter-spacing: -.003em; hyphens: manual; text-wrap: pretty }
+.para.dlg { margin-bottom: 1.6mm }
+.g { text-decoration: underline dotted var(--coral); text-decoration-thickness: 1.2pt; text-underline-offset: 2.4pt }
+.g sup, .notes b { font-family: var(--mono); font-size: 6.6pt; font-weight: 600; color: var(--coral-ink) }
+.g sup { margin-left: .3mm; vertical-align: 4pt }
+.notes { padding-top: 1.4mm; display: grid; gap: 1.6mm; align-content: start }
+.notes div { font-size: 8pt; line-height: 1.35; color: var(--ink-2) }
+.notes div i { font-style: normal; font-weight: 700; color: var(--navy) }
+.fin { margin-top: 8mm; font-family: var(--mono); font-size: 8pt; color: var(--ink-3); letter-spacing: .08em }
+
+/* glossary */
+.gloss { display: grid; grid-template-columns: 10mm 45mm 40mm 1fr; column-gap: 4mm; font-size: 10pt; margin-top: 2mm }
+.gloss > div { display: contents }
+.gloss span { padding: 2.4mm 0; border-top: .6pt solid var(--line-2) }
+.gloss .n { font-family: var(--mono); font-size: 8pt; color: var(--coral-ink); font-weight: 600; padding-top: 3mm }
+.gloss .w { font-weight: 700 }
+.gloss .l { color: var(--ink-3) }
+
+/* questions */
+.qs { list-style: none; display: grid; gap: 7mm; margin-top: 4mm; counter-reset: q }
+.qs li { counter-increment: q; display: grid; grid-template-columns: 9mm 1fr; break-inside: avoid }
+.qs li::before { content: counter(q); font-family: var(--mono); font-size: 9pt; font-weight: 600; color: var(--coral-ink); padding-top: .8mm }
+.qs .q { font-size: 12pt; font-weight: 600; line-height: 1.4 }
+.qs .lines { grid-column: 2; margin-top: 2mm; height: 16mm; background: repeating-linear-gradient(to bottom, transparent 0 7.4mm, var(--line) 7.4mm 8mm) }
+.keys { list-style: none; display: grid; gap: 4.5mm; margin-top: 4mm; counter-reset: k }
+.keys li { counter-increment: k; display: grid; grid-template-columns: 9mm 1fr 1fr; column-gap: 6mm; break-inside: avoid }
+.keys li::before { content: counter(k); font-family: var(--mono); font-size: 9pt; font-weight: 600; color: var(--coral-ink) }
+.keys .es { font-weight: 600 }
+.keys .es span, .keys .en span { display: block; font-weight: 400; color: var(--ink-2); margin-top: .8mm }
+.keys .en { color: var(--ink-3); font-size: 9pt }
+
+/* coverage */
+.cov-top { display: grid; grid-template-columns: 62mm 1fr; gap: 10mm; align-items: start; margin: 4mm 0 8mm }
+.big { font-size: 54pt; font-weight: 800; letter-spacing: -.05em; line-height: .9 }
+.big small { font-size: 22pt; letter-spacing: -.03em }
+.cov-top dl { display: grid; grid-template-columns: auto 1fr; gap: 1.6mm 5mm; margin-top: 5mm; font-size: 9pt }
+.cov-top dt { font-family: var(--mono); font-size: 8.4pt; font-weight: 600; text-align: right }
+.cov-top dd { color: var(--ink-2) }
+.note { font-size: 9pt; color: var(--ink-2); line-height: 1.55; max-width: 165mm; margin-bottom: 3mm }
+.note b { color: var(--navy) }
+.used { columns: 6; column-gap: 5mm; font-size: 7.8pt; line-height: 1.6; margin-top: 3mm }
+.used span { display: block; break-inside: avoid; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.used span em { font-style: normal; font-family: var(--mono); font-size: 6.6pt; color: var(--ink-3); display: inline-block; width: 7mm }
+.colophon { margin-top: 10mm; padding-top: 4mm; border-top: .6pt solid var(--line-2); font-size: 7.8pt; color: var(--ink-3) }

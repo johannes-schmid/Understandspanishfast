@@ -226,3 +226,56 @@
 .cl .pg-head.solo .cta-row{margin-top:30px}
 @media (max-width:900px){.cl .dt td.f:last-child{grid-row:auto;grid-column:1/-1}}
 .cl .dt .cbar{padding-top:3px}
+
+/* audio playback on server-rendered word lists */
+.cl .say{position:relative;flex:none;width:34px;height:34px;border:0;border-radius:10px;background:var(--paper-2);box-shadow:0 0 0 1px var(--line) inset;color:var(--navy);display:inline-grid;place-items:center;cursor:pointer;transition:transform 160ms var(--ease-out),background-color 160ms ease,color 160ms ease}
+.cl .say::after{content:"";position:absolute;inset:-5px}
+.cl .say::before{content:"";width:11px;height:12px;background:currentColor;clip-path:polygon(15% 0,100% 50%,15% 100%);transform:translateX(1px)}
+.cl .say:active{transform:scale(.94)}
+.cl .say.on{background:var(--navy);color:var(--paper);box-shadow:none}
+.cl .say-ex{width:22px;height:22px;border-radius:7px;margin-right:9px;vertical-align:-4px}
+.cl .say-ex::after{inset:-11px}
+.cl .say-ex::before{width:8px;height:9px}
+@media (hover:hover) and (pointer:fine){.cl .say:not(.on):hover{box-shadow:0 0 0 1px var(--lilac) inset}}
+.cl .wl td.acts-cell{width:58px;text-align:right}
+
+/* notes under a list (gender rules, agreement, connector groups) */
+.cl .notes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.cl .note{padding:26px 28px}
+.cl .note h3{font-size:19px;letter-spacing:-.02em;line-height:1.3}
+.cl .note p{font-size:15px;color:var(--ink-2);line-height:1.6;margin-top:8px}
+.cl .note p strong{color:var(--navy)}
+.cl .note .terms{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.cl .note .terms span{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 11px;border-radius:9px;background:var(--paper-2);box-shadow:0 0 0 1px var(--line-2) inset;font-size:14px;font-weight:700;color:var(--navy)}
+.cl .note .terms span i{font:500 11px/1 var(--mono);font-style:normal;color:var(--ink-3)}
+.cl .src{font-size:13.5px;color:var(--ink-3);margin-top:14px;line-height:1.5}
+.cl .src a{color:var(--ink-2)}
+.cl .wl td.parts{width:170px;font-size:13.5px;color:var(--ink-3)}
+.cl .wl td.parts b{color:var(--navy);font-weight:700}
+
+/* hub: word-type group */
+.cl .hub-sub{margin-top:72px}
+.cl .hub-sub h2{font-size:clamp(26px,2.8vw,34px)}
+.cl .hub-card .hub-h{font-size:21px;line-height:1.25;letter-spacing:-.02em;font-weight:700;margin:16px 0 8px}
+.cl .hub.by-type{grid-template-columns:repeat(6,1fr);margin-top:28px}
+.cl .hub.by-type .hub-card{grid-column:span 2}
+.cl .hub.by-type .hub-card:nth-child(n+4){grid-column:span 3}
+
+@media (max-width:1100px){
+  .cl .hub.by-type{grid-template-columns:1fr 1fr}
+  .cl .hub.by-type .hub-card,.cl .hub.by-type .hub-card:nth-child(n+4){grid-column:auto}
+  .cl .hub.by-type .hub-card:first-child{grid-column:1/-1}
+}
+@media (max-width:900px){
+  .cl .notes{grid-template-columns:1fr;gap:14px}
+  .cl .note{padding:22px 20px}
+  .cl .hub.by-type{grid-template-columns:1fr}
+  .cl .hub-sub{margin-top:56px}
+  .cl .wl td.acts-cell{width:auto}
+  .cl .wl table.phr tr{display:block}
+  .cl .wl table.phr td{display:block}
+  .cl .wl table.phr td.pos,.cl .wl table.phr td.mn{display:none}
+  .cl .wl table.phr td.ex{margin-top:4px}
+  .cl .wl td.parts{width:auto;margin-top:6px}
+}
+@media (prefers-reduced-motion:reduce){.cl .say{transition:none}}

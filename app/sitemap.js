@@ -6,8 +6,19 @@ const BASE = 'https://mostcommonspanish.com'
 const STATIC_ROUTES = [
   { path: '', priority: 1.0, changefreq: 'weekly', modified: '2026-11-08' },
   { path: 'words', priority: 0.9, changefreq: 'weekly', modified: '2026-11-08' },
-  { path: 'level-test', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
-  { path: 'shop', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
+  { path: 'level-test', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'how-much-spanish-do-i-understand', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'spanish-shows-by-difficulty', priority: 0.8, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'printable-spanish-flashcards', priority: 0.8, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'bundle', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'spanish-short-stories-for-beginners', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'spanish-short-stories-intermediate', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'best-spanish-anki-decks', priority: 0.8, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'spanish-top-5000-anki-deck-alternative', priority: 0.7, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'refold-spanish-deck-alternative', priority: 0.7, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'clozemaster-alternative', priority: 0.7, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'lingvist-alternative', priority: 0.7, changefreq: 'monthly', modified: '2026-11-23' },
+  { path: 'shop', priority: 0.9, changefreq: 'monthly', modified: '2026-11-23' },
   { path: 'workbook', priority: 0.9, changefreq: 'monthly', modified: '2026-11-09' },
   { path: 'spanish-vocabulary-app', priority: 0.8, changefreq: 'monthly', modified: '2026-11-08' },
   { path: 'vs-anki', priority: 0.8, changefreq: 'monthly', modified: '2026-11-08' },
@@ -60,12 +71,22 @@ export default function sitemap() {
     priority: 0.7,
   }))
 
+  const NEW_WORD_PAGES = ['top-1000-spanish-words', 'most-common-spanish-nouns', 'most-common-spanish-adjectives', 'most-common-spanish-adverbs', 'spanish-connectors']
   const wordEntries = listRouteDirs('words').map((slug) => ({
     url: `${BASE}/words/${slug}`,
-    lastModified: new Date(slug === 'most-common-spanish-words-pdf' ? '2026-11-09' : FALLBACK_MODIFIED),
+    lastModified: new Date(
+      NEW_WORD_PAGES.includes(slug) ? '2026-11-23' : slug === 'most-common-spanish-words-pdf' ? '2026-11-09' : FALLBACK_MODIFIED
+    ),
     changeFrequency: 'weekly',
     priority: 0.9,
   }))
 
-  return [...staticEntries, ...blogEntries, ...wordEntries]
+  const showEntries = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'shows.json'), 'utf8')).shows.map((s) => ({
+    url: `${BASE}/spanish-shows/${s.slug}`,
+    lastModified: new Date('2026-11-23'),
+    changeFrequency: 'monthly',
+    priority: 0.6,
+  }))
+
+  return [...staticEntries, ...blogEntries, ...wordEntries, ...showEntries]
 }

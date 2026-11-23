@@ -21,6 +21,8 @@ export default function Terms() {
             <h2>Intellectual property</h2>
             <p>All content on this site, including vocabulary data, example sentences, and written articles, is the property of Most Common Spanish. Do not reproduce or redistribute without permission.</p>
 
+            <h2 id="refunds">Refunds</h2>
+            <p>All products are digital downloads, delivered instantly after payment. If a product is not right for you, email <a href="mailto:hello@mostcommonspanish.com">hello@mostcommonspanish.com</a> within 14 days of your purchase and we will refund the full price. No questions asked, no return needed.</p>
             <h2>Disclaimer</h2>
             <p>The site is provided &ldquo;as is&rdquo; without warranties of any kind. We make no guarantees about learning outcomes or availability of the service.</p>
 

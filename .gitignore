@@ -17,3 +17,9 @@ workbook/build/
 scripts/anki/.venv/
 .env*
 workbook/out/*.apkg
+scripts/deck3000/.cache/
+workbook/audio-3000/
+readers/**/*.mp3
+readers/**/*.pdf
+readers/**/*.zip
+samples/**/*.mp3

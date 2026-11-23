@@ -1,0 +1,1093 @@
+{
+  "id": "level1-story04",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Un hombre en casa",
+  "title_en": "A Man at Home",
+  "summary_en": "After forty years at the same company, Manuel retires and spends his first week at home turning his wife Rosa's quiet routine upside down, until an old photo helps them find something to share.",
+  "names": [
+    "Manuel",
+    "Rosa"
+  ],
+  "paragraphs": [
+    "Manuel trabajó 40 años en la misma compañía. El último día, su equipo le hizo una pequeña fiesta. Hubo comida, vino y muchas palabras bonitas. El jefe le dio la mano y le dijo:",
+    "—Ahora tiene todo el tiempo del mundo, Manuel. Usted es un hombre libre.",
+    "Manuel volvió a casa con una caja de papeles y una foto del equipo. Su esposa, Rosa, lo esperaba en la puerta.",
+    "—Bienvenido a tu nueva vida —le dijo ella con cariño.",
+    "Pero Rosa no sabía lo que venía.",
+    "Rosa tenía su propia manera de vivir. Cada mañana se levantaba a las 8, leía un poco en la cama y después salía a comprar cosas para la casa. A las 11 llamaba a su hermana. Por la tarde se sentaba con un libro y un poco de música. Así fueron sus días durante muchos años. Pero ahora había un hombre en la casa. Todo el día.",
+    "El primer día, Manuel se despertó a las 6, como siempre. Su cuerpo no sabía que ya no tenía trabajo. Se levantó, abrió todas las puertas y puso la música muy alta.",
+    "—¿Qué haces? —preguntó Rosa desde la cama—. ¡Son las 6!",
+    "—Ya lo sé. Pero no puedo dormir. ¿Qué hacemos hoy?",
+    "—Yo voy a dormir dos horas más. Tú, no sé.",
+    "El segundo día, Manuel quiso ir con ella a comprar. En la calle lo miraba todo y preguntaba por todo.",
+    "—¿Cuánto pagas por esto? ¡Es demasiado dinero!",
+    "—Manuel, siempre pago eso.",
+    "—Pues siempre pagas demasiado. Yo conozco un sitio donde lo dan por menos.",
+    "Rosa no dijo nada. Pero esa noche durmió mal.",
+    "Al otro día, Manuel quiso ayudar en casa. Cambió todas las cosas de lugar. Puso los libros en otro cuarto, la ropa en otro lado, y las llaves... nadie sabía dónde.",
+    "—¿Dónde están mis llaves? —preguntó Rosa.",
+    "—En un lugar mejor —dijo Manuel, muy feliz—. Es un sistema nuevo. Así lo hacíamos en la compañía.",
+    "—Esto no es tu compañía, Manuel. Es mi casa.",
+    "—Nuestra casa —dijo él.",
+    "Rosa buscó sus llaves durante una hora.",
+    "El cuarto día, cuando Rosa llamó a su hermana, Manuel se sentó a su lado. Escuchaba todo y también quería hablar.",
+    "—Dile a tu hermana que su hijo debe buscar un trabajo serio.",
+    "—¡Manuel, cállate!",
+    "Al otro lado de la línea, su hermana preguntó:",
+    "—¿Es Manuel? ¿Está todo el día en casa? Pobre de ti.",
+    "Por la tarde, Rosa intentó leer su libro. Manuel pasó por el cuarto una vez. Y otra vez. Y otra vez.",
+    "—¿Qué lees?",
+    "—Un libro.",
+    "—¿Es bueno?",
+    "—Lo era.",
+    "Manuel se sentó frente a ella y la miró.",
+    "—¿Necesitas algo? —preguntó Rosa.",
+    "—No. Solo te miro.",
+    "Rosa cerró el libro.",
+    "Cuando acabó la semana, Rosa no pudo más.",
+    "—Manuel, tenemos que hablar. Te quiero mucho, pero así no podemos seguir. Necesitas algo que hacer. Algo tuyo.",
+    "Manuel no dijo nada por un minuto. Después se sentó en la cama, con la caja de la compañía en las manos.",
+    "—Durante 40 años fui alguien —dijo en voz baja—. Todos los días alguien me necesitaba. Me llamaban, me preguntaban cosas. Ahora me levanto y no sé qué hacer con el día. Me siento un poco perdido.",
+    "Rosa lo miró. Por primera vez en toda la semana, lo entendió. Se sentó a su lado y tomó su mano.",
+    "—Yo también me sentí así —dijo—. Cuando los niños se fueron de casa. Pasé un año sin saber qué hacer.",
+    "—Nunca me lo dijiste.",
+    "—Tú estabas en el trabajo. Siempre estabas en el trabajo.",
+    "Manuel abrió la caja. Entre los papeles había una foto vieja. No era del equipo. Eran ellos dos, muy jóvenes, en un campo cerca del pueblo de Rosa.",
+    "—¿Recuerdas este día? —preguntó él.",
+    "—Claro. Caminamos desde la mañana hasta la noche. Tú me hablaste de tus sueños. Querías conocer todo el país.",
+    "—Y después empecé a trabajar y nunca tuve tiempo.",
+    "Rosa miró la foto un largo minuto. Después dijo:",
+    "—Se me ocurre algo. Las mañanas son mías. Tú haces lo que quieras, pero lejos de mis llaves. Y por las tardes, caminamos juntos. Un poco cada día. Cuando estemos listos, tomamos un tren y volvemos a ese campo. Y después, a otro lugar. Y a otro.",
+    "—¿Todo el país? —preguntó Manuel.",
+    "—Poco a poco. Ya tenemos tiempo.",
+    "Manuel la miró como ese día en el campo.",
+    "—Estoy de acuerdo —dijo.",
+    "Esa tarde salieron juntos a caminar. Fueron por la calle hasta la escuela, y luego un poco más lejos. Manuel hablaba de los lugares que quería ver. Rosa escuchaba. Hacía años que no caminaban así, juntos.",
+    "En la puerta de casa, Manuel se detuvo.",
+    "—Mañana pongo todas tus cosas en su lugar —prometió.",
+    "—Y mañana duermes hasta las 8 —dijo ella.",
+    "—Eso va a ser más difícil —dijo Manuel.",
+    "Pero lo intentó."
+  ],
+  "glossary": [],
+  "questions": [
+    {
+      "q": "¿Cuántos años trabajó Manuel en la compañía?",
+      "a": "Trabajó 40 años.",
+      "q_en": "How many years did Manuel work at the company?",
+      "a_en": "He worked 40 years."
+    },
+    {
+      "q": "¿A qué hora se despertó Manuel el primer día?",
+      "a": "Se despertó a las 6.",
+      "q_en": "What time did Manuel wake up on the first day?",
+      "a_en": "He woke up at 6."
+    },
+    {
+      "q": "¿Qué hizo Manuel con las cosas de la casa?",
+      "a": "Las cambió de lugar, y Rosa no encontraba sus llaves.",
+      "q_en": "What did Manuel do with the things in the house?",
+      "a_en": "He moved them around, and Rosa couldn't find her keys."
+    },
+    {
+      "q": "¿Por qué se siente mal Manuel?",
+      "a": "Porque ya nadie lo necesita y no sabe qué hacer con el día.",
+      "q_en": "Why does Manuel feel bad?",
+      "a_en": "Because nobody needs him anymore and he doesn't know what to do with his day."
+    },
+    {
+      "q": "¿Qué van a hacer Manuel y Rosa por las tardes?",
+      "a": "Van a caminar juntos.",
+      "q_en": "What are Manuel and Rosa going to do in the afternoons?",
+      "a_en": "They are going to walk together."
+    }
+  ],
+  "wordCount": 793,
+  "measured": {
+    "coverage": 100,
+    "glossedPct": 0,
+    "unglossed": 0,
+    "words": 755,
+    "listTokens": 510,
+    "grammarTokens": 245,
+    "nameTokens": 38,
+    "uniqueListWords": 189,
+    "highestRankUsed": 495,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 20
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 6
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 3
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 6
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 3
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 5
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 9
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 3
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 2
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 6
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 14
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 7
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 4
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 1
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 4
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 7
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 3
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 2
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 2
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 3
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 2
+      },
+      {
+        "lemma": "bueno",
+        "rank": 29,
+        "count": 1
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 4
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 13
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 12
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 4
+      },
+      {
+        "lemma": "deber",
+        "rank": 34,
+        "count": 1
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 2
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 3
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 3
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 4
+      },
+      {
+        "lemma": "pasar",
+        "rank": 39,
+        "count": 2
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 4
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 5
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 4
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 2
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 4
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 8
+      },
+      {
+        "lemma": "venir",
+        "rank": 49,
+        "count": 2
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 3
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 2
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 1
+      },
+      {
+        "lemma": "hombre",
+        "rank": 56,
+        "count": 2
+      },
+      {
+        "lemma": "usted",
+        "rank": 58,
+        "count": 1
+      },
+      {
+        "lemma": "necesitar",
+        "rank": 59,
+        "count": 3
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 13
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 4
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 4
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 6
+      },
+      {
+        "lemma": "nuestro",
+        "rank": 64,
+        "count": 1
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 3
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 3
+      },
+      {
+        "lemma": "mejor",
+        "rank": 71,
+        "count": 1
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 2
+      },
+      {
+        "lemma": "dónde",
+        "rank": 73,
+        "count": 2
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 5
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 2
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 1
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 9
+      },
+      {
+        "lemma": "sentir",
+        "rank": 79,
+        "count": 2
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 2
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 4
+      },
+      {
+        "lemma": "salir",
+        "rank": 83,
+        "count": 2
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 2
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 2
+      },
+      {
+        "lemma": "ti",
+        "rank": 94,
+        "count": 1
+      },
+      {
+        "lemma": "alguien",
+        "rank": 97,
+        "count": 2
+      },
+      {
+        "lemma": "hasta",
+        "rank": 98,
+        "count": 3
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 1
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 2
+      },
+      {
+        "lemma": "poner",
+        "rank": 102,
+        "count": 3
+      },
+      {
+        "lemma": "nuevo",
+        "rank": 106,
+        "count": 2
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 4
+      },
+      {
+        "lemma": "conocer",
+        "rank": 110,
+        "count": 2
+      },
+      {
+        "lemma": "seguir",
+        "rank": 111,
+        "count": 1
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 7
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 1
+      },
+      {
+        "lemma": "ayudar",
+        "rank": 118,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 6
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 1
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 2
+      },
+      {
+        "lemma": "mío",
+        "rank": 122,
+        "count": 1
+      },
+      {
+        "lemma": "escuchar",
+        "rank": 123,
+        "count": 2
+      },
+      {
+        "lemma": "entender",
+        "rank": 126,
+        "count": 1
+      },
+      {
+        "lemma": "ellos",
+        "rank": 127,
+        "count": 1
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 1
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 1
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 2
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 1
+      },
+      {
+        "lemma": "lugar",
+        "rank": 134,
+        "count": 5
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 2
+      },
+      {
+        "lemma": "claro",
+        "rank": 136,
+        "count": 1
+      },
+      {
+        "lemma": "perder",
+        "rank": 137,
+        "count": 1
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 5
+      },
+      {
+        "lemma": "mundo",
+        "rank": 140,
+        "count": 1
+      },
+      {
+        "lemma": "acabar",
+        "rank": 142,
+        "count": 1
+      },
+      {
+        "lemma": "vivir",
+        "rank": 143,
+        "count": 1
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 2
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 5
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 3
+      },
+      {
+        "lemma": "niño",
+        "rank": 150,
+        "count": 1
+      },
+      {
+        "lemma": "entrar",
+        "rank": 151,
+        "count": 1
+      },
+      {
+        "lemma": "menos",
+        "rank": 158,
+        "count": 1
+      },
+      {
+        "lemma": "mal",
+        "rank": 159,
+        "count": 1
+      },
+      {
+        "lemma": "hoy",
+        "rank": 161,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 8
+      },
+      {
+        "lemma": "luego",
+        "rank": 166,
+        "count": 1
+      },
+      {
+        "lemma": "último",
+        "rank": 168,
+        "count": 1
+      },
+      {
+        "lemma": "listo",
+        "rank": 173,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "recordar",
+        "rank": 177,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "demasiado",
+        "rank": 182,
+        "count": 2
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 2
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 2
+      },
+      {
+        "lemma": "intentar",
+        "rank": 186,
+        "count": 2
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 3
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 1
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 4
+      },
+      {
+        "lemma": "cariño",
+        "rank": 206,
+        "count": 1
+      },
+      {
+        "lemma": "minuto",
+        "rank": 209,
+        "count": 2
+      },
+      {
+        "lemma": "serio",
+        "rank": 210,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 5
+      },
+      {
+        "lemma": "cambiar",
+        "rank": 225,
+        "count": 1
+      },
+      {
+        "lemma": "ocurrir",
+        "rank": 232,
+        "count": 1
+      },
+      {
+        "lemma": "cuánto",
+        "rank": 237,
+        "count": 1
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 1
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 1
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 3
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 4
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 1
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 3
+      },
+      {
+        "lemma": "manera",
+        "rank": 252,
+        "count": 1
+      },
+      {
+        "lemma": "abrir",
+        "rank": 254,
+        "count": 2
+      },
+      {
+        "lemma": "jefe",
+        "rank": 255,
+        "count": 1
+      },
+      {
+        "lemma": "propio",
+        "rank": 266,
+        "count": 1
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 4
+      },
+      {
+        "lemma": "acuerdo",
+        "rank": 268,
+        "count": 1
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 3
+      },
+      {
+        "lemma": "pues",
+        "rank": 272,
+        "count": 1
+      },
+      {
+        "lemma": "esposa",
+        "rank": 275,
+        "count": 1
+      },
+      {
+        "lemma": "cuerpo",
+        "rank": 281,
+        "count": 1
+      },
+      {
+        "lemma": "detener",
+        "rank": 283,
+        "count": 1
+      },
+      {
+        "lemma": "bajo",
+        "rank": 288,
+        "count": 1
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 3
+      },
+      {
+        "lemma": "difícil",
+        "rank": 290,
+        "count": 1
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "cerca",
+        "rank": 296,
+        "count": 1
+      },
+      {
+        "lemma": "joven",
+        "rank": 312,
+        "count": 1
+      },
+      {
+        "lemma": "libro",
+        "rank": 314,
+        "count": 5
+      },
+      {
+        "lemma": "fiesta",
+        "rank": 315,
+        "count": 1
+      },
+      {
+        "lemma": "equipo",
+        "rank": 321,
+        "count": 3
+      },
+      {
+        "lemma": "cuarto",
+        "rank": 322,
+        "count": 3
+      },
+      {
+        "lemma": "comprar",
+        "rank": 323,
+        "count": 2
+      },
+      {
+        "lemma": "hermana",
+        "rank": 327,
+        "count": 4
+      },
+      {
+        "lemma": "caminar",
+        "rank": 335,
+        "count": 4
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 1
+      },
+      {
+        "lemma": "prometer",
+        "rank": 347,
+        "count": 1
+      },
+      {
+        "lemma": "bonito",
+        "rank": 356,
+        "count": 1
+      },
+      {
+        "lemma": "libre",
+        "rank": 359,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 3
+      },
+      {
+        "lemma": "alto",
+        "rank": 365,
+        "count": 1
+      },
+      {
+        "lemma": "sueño",
+        "rank": 367,
+        "count": 1
+      },
+      {
+        "lemma": "tuyo",
+        "rank": 371,
+        "count": 1
+      },
+      {
+        "lemma": "largo",
+        "rank": 375,
+        "count": 1
+      },
+      {
+        "lemma": "país",
+        "rank": 379,
+        "count": 2
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 1
+      },
+      {
+        "lemma": "pueblo",
+        "rank": 391,
+        "count": 1
+      },
+      {
+        "lemma": "lejos",
+        "rank": 393,
+        "count": 2
+      },
+      {
+        "lemma": "cama",
+        "rank": 400,
+        "count": 3
+      },
+      {
+        "lemma": "llave",
+        "rank": 403,
+        "count": 4
+      },
+      {
+        "lemma": "despertar",
+        "rank": 404,
+        "count": 1
+      },
+      {
+        "lemma": "ropa",
+        "rank": 416,
+        "count": 1
+      },
+      {
+        "lemma": "compañía",
+        "rank": 423,
+        "count": 4
+      },
+      {
+        "lemma": "campo",
+        "rank": 428,
+        "count": 3
+      },
+      {
+        "lemma": "frente",
+        "rank": 429,
+        "count": 1
+      },
+      {
+        "lemma": "línea",
+        "rank": 434,
+        "count": 1
+      },
+      {
+        "lemma": "sitio",
+        "rank": 440,
+        "count": 1
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 3
+      },
+      {
+        "lemma": "pobre",
+        "rank": 457,
+        "count": 1
+      },
+      {
+        "lemma": "sistema",
+        "rank": 460,
+        "count": 1
+      },
+      {
+        "lemma": "bienvenido",
+        "rank": 467,
+        "count": 1
+      },
+      {
+        "lemma": "caja",
+        "rank": 476,
+        "count": 3
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 1
+      },
+      {
+        "lemma": "papel",
+        "rank": 490,
+        "count": 2
+      },
+      {
+        "lemma": "música",
+        "rank": 493,
+        "count": 2
+      },
+      {
+        "lemma": "tren",
+        "rank": 495,
+        "count": 1
+      }
+    ],
+    "outOfList": []
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 88,
+      "output_tokens": 11843,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 0
+    },
+    "estCostUsd": 0.261,
+    "theme": "A man retires after forty years at the same company. His first week at home he disturbs his wife's routine in every possible way. Gently funny, ends with the two of them finding something to do together."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story04_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 4326,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 333.5
+    }
+  ]
+}

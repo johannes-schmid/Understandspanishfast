@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { productSchema } from '@/lib/productSchema'
 
 const PAGE_URL = 'https://mostcommonspanish.com/anki-spanish-deck'
 const TITLE = 'Spanish Anki Deck: The 1,500 Most Common Words'
@@ -12,15 +13,14 @@ export const metadata = {
   openGraph: { title: TITLE, description: DESC, url: PAGE_URL, type: 'website', images: ['https://mostcommonspanish.com/anki/card-preview.webp'] },
 }
 
-const productSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
+const schema = productSchema({
   name: 'The Top 1,500 Spanish Words — Anki Deck',
   description: 'A Spanish Anki deck (.apkg) of the 1,500 most frequent words in rank order, with native audio for every word and example sentence, translations and pictures.',
   image: 'https://mostcommonspanish.com/anki/card-preview.webp',
-  brand: { '@type': 'Brand', name: 'Most Common Spanish' },
-  offers: { '@type': 'Offer', price: '9.00', priceCurrency: 'EUR', availability: 'https://schema.org/InStock', url: PAGE_URL },
-}
+  sku: 'anki-1500',
+  price: 900,
+  url: PAGE_URL,
+})
 
 const FAQ = [
   { q: 'What is in the deck?', a: '1,500 notes, one per word, ranked #1 to #1,500 by frequency. Each note has the word with its article, meaning, part of speech, an example sentence with translation, audio for the word and the sentence, and a picture for about 1,200 of the words.' },
@@ -48,7 +48,7 @@ const INSIDE = [
 export default function AnkiDeck() {
   return (
     <div className="cl cl-home">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <section className="hero wb-hero">

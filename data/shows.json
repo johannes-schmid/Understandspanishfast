@@ -1,0 +1,2381 @@
+{
+ "updated": "2026-11-23",
+ "shows": [
+  {
+   "slug": "las-chicas-del-cable",
+   "title": "Las chicas del cable",
+   "english": "Cable Girls",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2017-2020",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 8,
+    "unitLabel": "episodes",
+    "words": 43049,
+    "uniqueForms": 4932
+   },
+   "coverage": {
+    "100": 72.6,
+    "500": 86.9,
+    "1000": 91,
+    "1500": 92.7
+   },
+   "listOnly": {
+    "100": 40.5,
+    "500": 54.8,
+    "1000": 58.9,
+    "1500": 60.6
+   },
+   "functionShare": 32.1,
+   "nextWords": [
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 21
+    },
+    {
+     "w": "engañar",
+     "rank": 1497,
+     "meaning": "to deceive",
+     "n": 20
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 20
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 16
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 15
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 14
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 13
+    },
+    {
+     "w": "empleado",
+     "rank": 1202,
+     "meaning": "employee",
+     "n": 13
+    },
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 12
+    },
+    {
+     "w": "recuperar",
+     "rank": 1146,
+     "meaning": "to recover",
+     "n": 12
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 11
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 11
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 92
+    },
+    {
+     "w": "gracias",
+     "n": 83
+    },
+    {
+     "w": "momento",
+     "n": 51
+    },
+    {
+     "w": "telefonista",
+     "n": 31
+    },
+    {
+     "w": "operadora",
+     "n": 26
+    },
+    {
+     "w": "problema",
+     "n": 26
+    },
+    {
+     "w": "persona",
+     "n": 25
+    },
+    {
+     "w": "hola",
+     "n": 25
+    },
+    {
+     "w": "final",
+     "n": 20
+    },
+    {
+     "w": "telefonistas",
+     "n": 19
+    },
+    {
+     "w": "abonados",
+     "n": 18
+    },
+    {
+     "w": "pensión",
+     "n": 15
+    },
+    {
+     "w": "majestad",
+     "n": 15
+    },
+    {
+     "w": "despacho",
+     "n": 15
+    },
+    {
+     "w": "decisión",
+     "n": 14
+    }
+   ],
+   "difficultyRank": 1
+  },
+  {
+   "slug": "velvet",
+   "title": "Velvet",
+   "english": "Velvet",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2014-2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 8,
+    "unitLabel": "episodes",
+    "words": 59116,
+    "uniqueForms": 5335
+   },
+   "coverage": {
+    "100": 72.6,
+    "500": 86.3,
+    "1000": 90.6,
+    "1500": 92.3
+   },
+   "listOnly": {
+    "100": 40.3,
+    "500": 54.1,
+    "1000": 58.3,
+    "1500": 60.1
+   },
+   "functionShare": 32.2,
+   "nextWords": [
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 27
+    },
+    {
+     "w": "moda",
+     "rank": 1403,
+     "meaning": "fashion",
+     "n": 22
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 22
+    },
+    {
+     "w": "disfrutar",
+     "rank": 1204,
+     "meaning": "to enjoy",
+     "n": 22
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 21
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 19
+    },
+    {
+     "w": "besar",
+     "rank": 1451,
+     "meaning": "to kiss",
+     "n": 17
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 16
+    },
+    {
+     "w": "empleado",
+     "rank": 1202,
+     "meaning": "employee",
+     "n": 15
+    },
+    {
+     "w": "coser",
+     "rank": 1419,
+     "meaning": "to sew",
+     "n": 14
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 14
+    },
+    {
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 13
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 170
+    },
+    {
+     "w": "favor",
+     "n": 143
+    },
+    {
+     "w": "galerías",
+     "n": 112
+    },
+    {
+     "w": "momento",
+     "n": 71
+    },
+    {
+     "w": "perfecto",
+     "n": 43
+    },
+    {
+     "w": "colección",
+     "n": 42
+    },
+    {
+     "w": "hola",
+     "n": 40
+    },
+    {
+     "w": "taller",
+     "n": 33
+    },
+    {
+     "w": "idea",
+     "n": 32
+    },
+    {
+     "w": "problema",
+     "n": 27
+    },
+    {
+     "w": "desfile",
+     "n": 27
+    },
+    {
+     "w": "adiós",
+     "n": 24
+    },
+    {
+     "w": "perfecta",
+     "n": 22
+    },
+    {
+     "w": "persona",
+     "n": 20
+    },
+    {
+     "w": "final",
+     "n": 19
+    }
+   ],
+   "difficultyRank": 2
+  },
+  {
+   "slug": "gran-hotel",
+   "title": "Gran Hotel",
+   "english": "Grand Hotel",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2011-2013",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 87044,
+    "uniqueForms": 7809
+   },
+   "coverage": {
+    "100": 71.1,
+    "500": 85.5,
+    "1000": 89.5,
+    "1500": 91.7
+   },
+   "listOnly": {
+    "100": 39.4,
+    "500": 53.8,
+    "1000": 57.8,
+    "1500": 60
+   },
+   "functionShare": 31.7,
+   "nextWords": [
+    {
+     "w": "julio",
+     "rank": 1296,
+     "meaning": "July",
+     "n": 152
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 69
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 53
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 43
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 43
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 38
+    },
+    {
+     "w": "recuperar",
+     "rank": 1146,
+     "meaning": "to recover",
+     "n": 34
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 32
+    },
+    {
+     "w": "cometer",
+     "rank": 1297,
+     "meaning": "to commit",
+     "n": 29
+    },
+    {
+     "w": "desgracia",
+     "rank": 1476,
+     "meaning": "misfortune",
+     "n": 27
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 27
+    },
+    {
+     "w": "dispuesto",
+     "rank": 1135,
+     "meaning": "willing",
+     "n": 26
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hotel",
+     "n": 431
+    },
+    {
+     "w": "gracias",
+     "n": 168
+    },
+    {
+     "w": "favor",
+     "n": 149
+    },
+    {
+     "w": "detective",
+     "n": 91
+    },
+    {
+     "w": "momento",
+     "n": 79
+    },
+    {
+     "w": "persona",
+     "n": 52
+    },
+    {
+     "w": "doncella",
+     "n": 47
+    },
+    {
+     "w": "documento",
+     "n": 43
+    },
+    {
+     "w": "problema",
+     "n": 36
+    },
+    {
+     "w": "director",
+     "n": 36
+    },
+    {
+     "w": "ante",
+     "n": 36
+    },
+    {
+     "w": "doctor",
+     "n": 36
+    },
+    {
+     "w": "camarero",
+     "n": 34
+    },
+    {
+     "w": "posible",
+     "n": 29
+    },
+    {
+     "w": "ma",
+     "n": 29
+    }
+   ],
+   "difficultyRank": 3
+  },
+  {
+   "slug": "cuentame-como-paso",
+   "title": "Cuéntame cómo pasó",
+   "english": "Remember When",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2001-2023",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 100012,
+    "uniqueForms": 8938
+   },
+   "coverage": {
+    "100": 71.3,
+    "500": 84.9,
+    "1000": 88.9,
+    "1500": 90.9
+   },
+   "listOnly": {
+    "100": 39.2,
+    "500": 52.8,
+    "1000": 56.8,
+    "1500": 58.8
+   },
+   "functionShare": 32.1,
+   "nextWords": [
+    {
+     "w": "barrio",
+     "rank": 1055,
+     "meaning": "neighborhood",
+     "n": 80
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 40
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 38
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 34
+    },
+    {
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 33
+    },
+    {
+     "w": "a menudo",
+     "rank": 1131,
+     "meaning": "often",
+     "n": 32
+    },
+    {
+     "w": "política",
+     "rank": 1075,
+     "meaning": "politics",
+     "n": 30
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 26
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 26
+    },
+    {
+     "w": "pecado",
+     "rank": 1082,
+     "meaning": "sin",
+     "n": 24
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 23
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 22
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hola",
+     "n": 164
+    },
+    {
+     "w": "gracias",
+     "n": 157
+    },
+    {
+     "w": "adiós",
+     "n": 105
+    },
+    {
+     "w": "momento",
+     "n": 71
+    },
+    {
+     "w": "favor",
+     "n": 59
+    },
+    {
+     "w": "luto",
+     "n": 48
+    },
+    {
+     "w": "joder",
+     "n": 47
+    },
+    {
+     "w": "cago",
+     "n": 40
+    },
+    {
+     "w": "televisión",
+     "n": 37
+    },
+    {
+     "w": "ministerio",
+     "n": 37
+    },
+    {
+     "w": "imprenta",
+     "n": 32
+    },
+    {
+     "w": "quebrados",
+     "n": 30
+    },
+    {
+     "w": "pesetas",
+     "n": 29
+    },
+    {
+     "w": "final",
+     "n": 28
+    },
+    {
+     "w": "idea",
+     "n": 26
+    }
+   ],
+   "difficultyRank": 4
+  },
+  {
+   "slug": "fisica-o-quimica",
+   "title": "Física o química",
+   "english": "Physics or Chemistry",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2008-2011",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 105563,
+    "uniqueForms": 8658
+   },
+   "coverage": {
+    "100": 73,
+    "500": 86,
+    "1000": 89.2,
+    "1500": 90.8
+   },
+   "listOnly": {
+    "100": 41.5,
+    "500": 54.5,
+    "1000": 57.7,
+    "1500": 59.3
+   },
+   "functionShare": 31.5,
+   "nextWords": [
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 54
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 42
+    },
+    {
+     "w": "examen",
+     "rank": 1145,
+     "meaning": "exam",
+     "n": 32
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 32
+    },
+    {
+     "w": "polvo",
+     "rank": 1221,
+     "meaning": "dust",
+     "n": 28
+    },
+    {
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 26
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 26
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "joder",
+     "n": 209
+    },
+    {
+     "w": "hola",
+     "n": 187
+    },
+    {
+     "w": "gracias",
+     "n": 164
+    },
+    {
+     "w": "favor",
+     "n": 148
+    },
+    {
+     "w": "momento",
+     "n": 92
+    },
+    {
+     "w": "puta",
+     "n": 84
+    },
+    {
+     "w": "mierda",
+     "n": 80
+    },
+    {
+     "w": "idea",
+     "n": 80
+    },
+    {
+     "w": "problema",
+     "n": 75
+    },
+    {
+     "w": "coño",
+     "n": 68
+    },
+    {
+     "w": "alumnos",
+     "n": 57
+    },
+    {
+     "w": "móvil",
+     "n": 50
+    },
+    {
+     "w": "gilipollas",
+     "n": 50
+    },
+    {
+     "w": "profesor",
+     "n": 42
+    },
+    {
+     "w": "sexo",
+     "n": 41
+    }
+   ],
+   "difficultyRank": 5
+  },
+  {
+   "slug": "isabel",
+   "title": "Isabel",
+   "english": "Isabel",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2012-2014",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 13,
+    "unitLabel": "episodes",
+    "words": 93193,
+    "uniqueForms": 8174
+   },
+   "coverage": {
+    "100": 68.4,
+    "500": 83.5,
+    "1000": 88.3,
+    "1500": 90.6
+   },
+   "listOnly": {
+    "100": 34.2,
+    "500": 49.3,
+    "1000": 54.1,
+    "1500": 56.3
+   },
+   "functionShare": 34.3,
+   "nextWords": [
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 85
+    },
+    {
+     "w": "rogar",
+     "rank": 1389,
+     "meaning": "to beg / to plead",
+     "n": 74
+    },
+    {
+     "w": "negociar",
+     "rank": 1259,
+     "meaning": "to negotiate",
+     "n": 68
+    },
+    {
+     "w": "reino",
+     "rank": 1144,
+     "meaning": "kingdom",
+     "n": 61
+    },
+    {
+     "w": "palacio",
+     "rank": 1365,
+     "meaning": "palace",
+     "n": 58
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 54
+    },
+    {
+     "w": "ordenar",
+     "rank": 1049,
+     "meaning": "to organize",
+     "n": 52
+    },
+    {
+     "w": "tropa",
+     "rank": 1007,
+     "meaning": "troop",
+     "n": 49
+    },
+    {
+     "w": "apoyo",
+     "rank": 1235,
+     "meaning": "support",
+     "n": 45
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 42
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 40
+    },
+    {
+     "w": "judío",
+     "rank": 1063,
+     "meaning": "Jewish",
+     "n": 37
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "majestad",
+     "n": 327
+    },
+    {
+     "w": "gracias",
+     "n": 128
+    },
+    {
+     "w": "bula",
+     "n": 107
+    },
+    {
+     "w": "alteza",
+     "n": 93
+    },
+    {
+     "w": "momento",
+     "n": 89
+    },
+    {
+     "w": "favor",
+     "n": 82
+    },
+    {
+     "w": "monseñor",
+     "n": 76
+    },
+    {
+     "w": "princesa",
+     "n": 69
+    },
+    {
+     "w": "duque",
+     "n": 60
+    },
+    {
+     "w": "cardenal",
+     "n": 53
+    },
+    {
+     "w": "honor",
+     "n": 46
+    },
+    {
+     "w": "eminencia",
+     "n": 46
+    },
+    {
+     "w": "problema",
+     "n": 43
+    },
+    {
+     "w": "heredera",
+     "n": 40
+    },
+    {
+     "w": "excelencia",
+     "n": 39
+    }
+   ],
+   "difficultyRank": 6
+  },
+  {
+   "slug": "oscuro-deseo",
+   "title": "Oscuro deseo",
+   "english": "Dark Desire",
+   "type": "TV series",
+   "country": "Mexico",
+   "years": "2020-2022",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 13,
+    "unitLabel": "episodes",
+    "words": 30454,
+    "uniqueForms": 4060
+   },
+   "coverage": {
+    "100": 71,
+    "500": 84.2,
+    "1000": 88.5,
+    "1500": 90.4
+   },
+   "listOnly": {
+    "100": 39.1,
+    "500": 52.4,
+    "1000": 56.7,
+    "1500": 58.5
+   },
+   "functionShare": 31.9,
+   "nextWords": [
+    {
+     "w": "celular",
+     "rank": 1197,
+     "meaning": "cell phone",
+     "n": 36
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 19
+    },
+    {
+     "w": "planear",
+     "rank": 1200,
+     "meaning": "to plan",
+     "n": 14
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 14
+    },
+    {
+     "w": "investigar",
+     "rank": 1098,
+     "meaning": "to investigate",
+     "n": 13
+    },
+    {
+     "w": "muchísimo",
+     "rank": 1081,
+     "meaning": "very much",
+     "n": 12
+    },
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 11
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 10
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 81
+    },
+    {
+     "w": "puta",
+     "n": 72
+    },
+    {
+     "w": "gracias",
+     "n": 70
+    },
+    {
+     "w": "hotel",
+     "n": 47
+    },
+    {
+     "w": "carajo",
+     "n": 38
+    },
+    {
+     "w": "hola",
+     "n": 38
+    },
+    {
+     "w": "momento",
+     "n": 31
+    },
+    {
+     "w": "cabrón",
+     "n": 30
+    },
+    {
+     "w": "video",
+     "n": 27
+    },
+    {
+     "w": "licenciada",
+     "n": 24
+    },
+    {
+     "w": "güey",
+     "n": 20
+    },
+    {
+     "w": "mierda",
+     "n": 16
+    },
+    {
+     "w": "pinche",
+     "n": 15
+    },
+    {
+     "w": "chingados",
+     "n": 14
+    },
+    {
+     "w": "fiscalía",
+     "n": 14
+    }
+   ],
+   "difficultyRank": 7
+  },
+  {
+   "slug": "el-barco",
+   "title": "El barco",
+   "english": "The Boat",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2011-2013",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 76382,
+    "uniqueForms": 8016
+   },
+   "coverage": {
+    "100": 69.2,
+    "500": 83.2,
+    "1000": 87.2,
+    "1500": 89.1
+   },
+   "listOnly": {
+    "100": 37.5,
+    "500": 51.5,
+    "1000": 55.5,
+    "1500": 57.4
+   },
+   "functionShare": 31.7,
+   "nextWords": [
+    {
+     "w": "cubrir",
+     "rank": 1011,
+     "meaning": "to cover",
+     "n": 48
+    },
+    {
+     "w": "puerto",
+     "rank": 1435,
+     "meaning": "port (harbor)",
+     "n": 32
+    },
+    {
+     "w": "besar",
+     "rank": 1451,
+     "meaning": "to kiss",
+     "n": 29
+    },
+    {
+     "w": "rumbo",
+     "rank": 1287,
+     "meaning": "direction; course; path (literal and metaphorical)",
+     "n": 28
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 26
+    },
+    {
+     "w": "milla",
+     "rank": 1035,
+     "meaning": "mile",
+     "n": 23
+    },
+    {
+     "w": "tripulación",
+     "rank": 1226,
+     "meaning": "crew",
+     "n": 23
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 22
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 21
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 20
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "capitán",
+     "n": 322
+    },
+    {
+     "w": "favor",
+     "n": 180
+    },
+    {
+     "w": "burbuja",
+     "n": 142
+    },
+    {
+     "w": "gracias",
+     "n": 116
+    },
+    {
+     "w": "hola",
+     "n": 98
+    },
+    {
+     "w": "joder",
+     "n": 79
+    },
+    {
+     "w": "coño",
+     "n": 77
+    },
+    {
+     "w": "momento",
+     "n": 57
+    },
+    {
+     "w": "camarote",
+     "n": 52
+    },
+    {
+     "w": "doctora",
+     "n": 51
+    },
+    {
+     "w": "problema",
+     "n": 49
+    },
+    {
+     "w": "mierda",
+     "n": 41
+    },
+    {
+     "w": "oficial",
+     "n": 35
+    },
+    {
+     "w": "accidente",
+     "n": 31
+    },
+    {
+     "w": "pato",
+     "n": 30
+    }
+   ],
+   "difficultyRank": 8
+  },
+  {
+   "slug": "el-internado",
+   "title": "El internado",
+   "english": "The Boarding School",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2007-2010",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 71283,
+    "uniqueForms": 7761
+   },
+   "coverage": {
+    "100": 69.8,
+    "500": 83.5,
+    "1000": 87.1,
+    "1500": 88.9
+   },
+   "listOnly": {
+    "100": 40.9,
+    "500": 54.6,
+    "1000": 58.2,
+    "1500": 60
+   },
+   "functionShare": 28.9,
+   "nextWords": [
+    {
+     "w": "marco",
+     "rank": 1500,
+     "meaning": "frame",
+     "n": 201
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 31
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 24
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 99
+    },
+    {
+     "w": "mierda",
+     "n": 67
+    },
+    {
+     "w": "hola",
+     "n": 66
+    },
+    {
+     "w": "internado",
+     "n": 64
+    },
+    {
+     "w": "joder",
+     "n": 63
+    },
+    {
+     "w": "momento",
+     "n": 47
+    },
+    {
+     "w": "ei",
+     "n": 40
+    },
+    {
+     "w": "coño",
+     "n": 37
+    },
+    {
+     "w": "puta",
+     "n": 34
+    },
+    {
+     "w": "medicinas",
+     "n": 33
+    },
+    {
+     "w": "idea",
+     "n": 31
+    },
+    {
+     "w": "gnomo",
+     "n": 30
+    },
+    {
+     "w": "pistola",
+     "n": 29
+    },
+    {
+     "w": "pasadizos",
+     "n": 27
+    },
+    {
+     "w": "profesora",
+     "n": 24
+    }
+   ],
+   "difficultyRank": 9
+  },
+  {
+   "slug": "el-ministerio-del-tiempo",
+   "title": "El Ministerio del Tiempo",
+   "english": "The Ministry of Time",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2015-2020",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 82397,
+    "uniqueForms": 9174
+   },
+   "coverage": {
+    "100": 68.5,
+    "500": 82.6,
+    "1000": 86.7,
+    "1500": 88.9
+   },
+   "listOnly": {
+    "100": 35.7,
+    "500": 49.9,
+    "1000": 54,
+    "1500": 56.1
+   },
+   "functionShare": 32.8,
+   "nextWords": [
+    {
+     "w": "época",
+     "rank": 1016,
+     "meaning": "period",
+     "n": 84
+    },
+    {
+     "w": "viajar",
+     "rank": 1023,
+     "meaning": "to travel",
+     "n": 83
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 30
+    },
+    {
+     "w": "engañar",
+     "rank": 1497,
+     "meaning": "to deceive",
+     "n": 26
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 23
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 23
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 22
+    },
+    {
+     "w": "teatro",
+     "rank": 1240,
+     "meaning": "theater",
+     "n": 20
+    },
+    {
+     "w": "gloria",
+     "rank": 1149,
+     "meaning": "glory",
+     "n": 20
+    },
+    {
+     "w": "fecha",
+     "rank": 1288,
+     "meaning": "date (exact day)",
+     "n": 20
+    },
+    {
+     "w": "reconocer",
+     "rank": 1014,
+     "meaning": "to recognize",
+     "n": 19
+    },
+    {
+     "w": "ofrecer",
+     "rank": 1048,
+     "meaning": "to offer",
+     "n": 19
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 156
+    },
+    {
+     "w": "favor",
+     "n": 120
+    },
+    {
+     "w": "misión",
+     "n": 86
+    },
+    {
+     "w": "momento",
+     "n": 54
+    },
+    {
+     "w": "secreto",
+     "n": 46
+    },
+    {
+     "w": "problema",
+     "n": 46
+    },
+    {
+     "w": "honor",
+     "n": 41
+    },
+    {
+     "w": "español",
+     "n": 41
+    },
+    {
+     "w": "idea",
+     "n": 36
+    },
+    {
+     "w": "hola",
+     "n": 30
+    },
+    {
+     "w": "joder",
+     "n": 29
+    },
+    {
+     "w": "mierda",
+     "n": 26
+    },
+    {
+     "w": "doctor",
+     "n": 26
+    },
+    {
+     "w": "coño",
+     "n": 25
+    },
+    {
+     "w": "capitán",
+     "n": 24
+    }
+   ],
+   "difficultyRank": 10
+  },
+  {
+   "slug": "los-serrano",
+   "title": "Los Serrano",
+   "english": "Los Serrano",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2003-2008",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 7,
+    "unitLabel": "episodes",
+    "words": 58206,
+    "uniqueForms": 6486
+   },
+   "coverage": {
+    "100": 70.7,
+    "500": 83,
+    "1000": 86.6,
+    "1500": 88.4
+   },
+   "listOnly": {
+    "100": 39.4,
+    "500": 51.7,
+    "1000": 55.3,
+    "1500": 57.1
+   },
+   "functionShare": 31.3,
+   "nextWords": [
+    {
+     "w": "examen",
+     "rank": 1145,
+     "meaning": "exam",
+     "n": 31
+    },
+    {
+     "w": "moto",
+     "rank": 1370,
+     "meaning": "motorcycle",
+     "n": 22
+    },
+    {
+     "w": "kilómetro",
+     "rank": 1186,
+     "meaning": "kilometer",
+     "n": 21
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 20
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 18
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 17
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hola",
+     "n": 97
+    },
+    {
+     "w": "favor",
+     "n": 94
+    },
+    {
+     "w": "joder",
+     "n": 88
+    },
+    {
+     "w": "mecha",
+     "n": 66
+    },
+    {
+     "w": "gracias",
+     "n": 65
+    },
+    {
+     "w": "coño",
+     "n": 44
+    },
+    {
+     "w": "taberna",
+     "n": 38
+    },
+    {
+     "w": "momento",
+     "n": 35
+    },
+    {
+     "w": "problema",
+     "n": 33
+    },
+    {
+     "w": "conde",
+     "n": 33
+    },
+    {
+     "w": "cago",
+     "n": 32
+    },
+    {
+     "w": "curro",
+     "n": 31
+    },
+    {
+     "w": "chaval",
+     "n": 31
+    },
+    {
+     "w": "mierda",
+     "n": 27
+    },
+    {
+     "w": "euros",
+     "n": 25
+    }
+   ],
+   "difficultyRank": 11
+  },
+  {
+   "slug": "vis-a-vis",
+   "title": "Vis a vis",
+   "english": "Locked Up",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2015-2019",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 3,
+    "unitLabel": "episodes",
+    "words": 15978,
+    "uniqueForms": 3098
+   },
+   "coverage": {
+    "100": 69.1,
+    "500": 82.3,
+    "1000": 86,
+    "1500": 88.1
+   },
+   "listOnly": {
+    "100": 37,
+    "500": 50.2,
+    "1000": 54,
+    "1500": 56.1
+   },
+   "functionShare": 32,
+   "nextWords": [
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 12
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 9
+    },
+    {
+     "w": "deporte",
+     "rank": 1299,
+     "meaning": "sport",
+     "n": 8
+    },
+    {
+     "w": "celda",
+     "rank": 1333,
+     "meaning": "cell",
+     "n": 7
+    },
+    {
+     "w": "cocinar",
+     "rank": 1122,
+     "meaning": "to cook",
+     "n": 7
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 7
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 44
+    },
+    {
+     "w": "gracias",
+     "n": 24
+    },
+    {
+     "w": "joder",
+     "n": 23
+    },
+    {
+     "w": "cojones",
+     "n": 19
+    },
+    {
+     "w": "mierda",
+     "n": 16
+    },
+    {
+     "w": "perrea",
+     "n": 16
+    },
+    {
+     "w": "hola",
+     "n": 14
+    },
+    {
+     "w": "vis",
+     "n": 14
+    },
+    {
+     "w": "coño",
+     "n": 14
+    },
+    {
+     "w": "basta",
+     "n": 13
+    },
+    {
+     "w": "favor",
+     "n": 11
+    },
+    {
+     "w": "momento",
+     "n": 10
+    },
+    {
+     "w": "cago",
+     "n": 9
+    },
+    {
+     "w": "atún",
+     "n": 9
+    },
+    {
+     "w": "puto",
+     "n": 9
+    }
+   ],
+   "difficultyRank": 12
+  },
+  {
+   "slug": "el-chapo",
+   "title": "El Chapo",
+   "english": "El Chapo",
+   "type": "TV series",
+   "country": "Mexico / USA",
+   "years": "2017-2018",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 9,
+    "unitLabel": "episodes",
+    "words": 17965,
+    "uniqueForms": 3136
+   },
+   "coverage": {
+    "100": 66.6,
+    "500": 80.8,
+    "1000": 85.4,
+    "1500": 88.1
+   },
+   "listOnly": {
+    "100": 34.7,
+    "500": 48.9,
+    "1000": 53.5,
+    "1500": 56.2
+   },
+   "functionShare": 31.9,
+   "nextWords": [
+    {
+     "w": "patrón",
+     "rank": 1488,
+     "meaning": "pattern",
+     "n": 57
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 26
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 11
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 9
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 9
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "cabrón",
+     "n": 66
+    },
+    {
+     "w": "gracias",
+     "n": 49
+    },
+    {
+     "w": "favor",
+     "n": 48
+    },
+    {
+     "w": "compadre",
+     "n": 30
+    },
+    {
+     "w": "cardenal",
+     "n": 25
+    },
+    {
+     "w": "pendejo",
+     "n": 20
+    },
+    {
+     "w": "nubes",
+     "n": 18
+    },
+    {
+     "w": "sequía",
+     "n": 18
+    },
+    {
+     "w": "destejer",
+     "n": 18
+    },
+    {
+     "w": "información",
+     "n": 18
+    },
+    {
+     "w": "chingada",
+     "n": 17
+    },
+    {
+     "w": "pinche",
+     "n": 15
+    },
+    {
+     "w": "penal",
+     "n": 15
+    },
+    {
+     "w": "licenciada",
+     "n": 15
+    },
+    {
+     "w": "momento",
+     "n": 14
+    }
+   ],
+   "difficultyRank": 13
+  },
+  {
+   "slug": "la-casa-de-papel",
+   "title": "La casa de papel",
+   "english": "Money Heist",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2017-2021",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 4,
+    "unitLabel": "episodes",
+    "words": 11923,
+    "uniqueForms": 2517
+   },
+   "coverage": {
+    "100": 67.2,
+    "500": 80.6,
+    "1000": 85.4,
+    "1500": 87.8
+   },
+   "listOnly": {
+    "100": 35.3,
+    "500": 48.7,
+    "1000": 53.6,
+    "1500": 55.9
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "túnel",
+     "rank": 1243,
+     "meaning": "tunnel",
+     "n": 24
+    },
+    {
+     "w": "cubrir",
+     "rank": 1011,
+     "meaning": "to cover",
+     "n": 11
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 9
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 9
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 8
+    },
+    {
+     "w": "sótano",
+     "rank": 1322,
+     "meaning": "basement",
+     "n": 7
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 7
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 30
+    },
+    {
+     "w": "inspectora",
+     "n": 28
+    },
+    {
+     "w": "favor",
+     "n": 24
+    },
+    {
+     "w": "joder",
+     "n": 24
+    },
+    {
+     "w": "coño",
+     "n": 21
+    },
+    {
+     "w": "momento",
+     "n": 16
+    },
+    {
+     "w": "coronel",
+     "n": 16
+    },
+    {
+     "w": "plan",
+     "n": 16
+    },
+    {
+     "w": "rehenes",
+     "n": 15
+    },
+    {
+     "w": "euros",
+     "n": 12
+    },
+    {
+     "w": "puto",
+     "n": 11
+    },
+    {
+     "w": "atraco",
+     "n": 11
+    },
+    {
+     "w": "herramientas",
+     "n": 10
+    },
+    {
+     "w": "mierda",
+     "n": 10
+    },
+    {
+     "w": "cojones",
+     "n": 10
+    }
+   ],
+   "difficultyRank": 14
+  },
+  {
+   "slug": "radio-ambulante",
+   "title": "Radio Ambulante",
+   "english": "Radio Ambulante",
+   "type": "Podcast",
+   "country": "Latin America",
+   "years": "2012-",
+   "accent": "Latin American Spanish (mixed)",
+   "sample": {
+    "units": 10,
+    "unitLabel": "episode transcripts",
+    "words": 74649,
+    "uniqueForms": 8256
+   },
+   "coverage": {
+    "100": 65.2,
+    "500": 79.9,
+    "1000": 84.5,
+    "1500": 87.2
+   },
+   "listOnly": {
+    "100": 29.6,
+    "500": 44.4,
+    "1000": 49,
+    "1500": 51.6
+   },
+   "functionShare": 35.6,
+   "nextWords": [
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 66
+    },
+    {
+     "w": "nadar",
+     "rank": 1326,
+     "meaning": "to swim",
+     "n": 48
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 37
+    },
+    {
+     "w": "celda",
+     "rank": 1333,
+     "meaning": "cell",
+     "n": 32
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 28
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 27
+    },
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 24
+    },
+    {
+     "w": "reconocer",
+     "rank": 1014,
+     "meaning": "to recognize",
+     "n": 23
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 23
+    },
+    {
+     "w": "sensación",
+     "rank": 1354,
+     "meaning": "feeling",
+     "n": 21
+    },
+    {
+     "w": "nacimiento",
+     "rank": 1492,
+     "meaning": "birth",
+     "n": 21
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 21
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "momento",
+     "n": 181
+    },
+    {
+     "w": "personas",
+     "n": 86
+    },
+    {
+     "w": "hospital",
+     "n": 66
+    },
+    {
+     "w": "situación",
+     "n": 53
+    },
+    {
+     "w": "proceso",
+     "n": 53
+    },
+    {
+     "w": "partera",
+     "n": 35
+    },
+    {
+     "w": "información",
+     "n": 34
+    },
+    {
+     "w": "persona",
+     "n": 32
+    },
+    {
+     "w": "episodio",
+     "n": 31
+    },
+    {
+     "w": "detención",
+     "n": 31
+    },
+    {
+     "w": "idea",
+     "n": 31
+    },
+    {
+     "w": "meningitis",
+     "n": 31
+    },
+    {
+     "w": "pandilla",
+     "n": 31
+    },
+    {
+     "w": "graffiti",
+     "n": 30
+    },
+    {
+     "w": "militares",
+     "n": 28
+    }
+   ],
+   "difficultyRank": 15
+  },
+  {
+   "slug": "la-que-se-avecina",
+   "title": "La que se avecina",
+   "english": "La que se avecina",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2007-",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 122178,
+    "uniqueForms": 12238
+   },
+   "coverage": {
+    "100": 67.5,
+    "500": 80.3,
+    "1000": 84.4,
+    "1500": 86.6
+   },
+   "listOnly": {
+    "100": 37.2,
+    "500": 49.9,
+    "1000": 54,
+    "1500": 56.2
+   },
+   "functionShare": 30.4,
+   "nextWords": [
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 122
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 72
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 58
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 56
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 43
+    },
+    {
+     "w": "asistente",
+     "rank": 1269,
+     "meaning": "assistant",
+     "n": 42
+    },
+    {
+     "w": "asco",
+     "rank": 1408,
+     "meaning": "disgust",
+     "n": 41
+    },
+    {
+     "w": "engañar",
+     "rank": 1497,
+     "meaning": "to deceive",
+     "n": 39
+    },
+    {
+     "w": "desayunar",
+     "rank": 1056,
+     "meaning": "to have breakfast",
+     "n": 35
+    },
+    {
+     "w": "contratar",
+     "rank": 1236,
+     "meaning": "to hire",
+     "n": 34
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "presidente",
+     "n": 147
+    },
+    {
+     "w": "euros",
+     "n": 143
+    },
+    {
+     "w": "gracias",
+     "n": 140
+    },
+    {
+     "w": "hola",
+     "n": 123
+    },
+    {
+     "w": "favor",
+     "n": 122
+    },
+    {
+     "w": "coño",
+     "n": 107
+    },
+    {
+     "w": "mierda",
+     "n": 81
+    },
+    {
+     "w": "tele",
+     "n": 79
+    },
+    {
+     "w": "joder",
+     "n": 72
+    },
+    {
+     "w": "momento",
+     "n": 67
+    },
+    {
+     "w": "conserje",
+     "n": 64
+    },
+    {
+     "w": "puta",
+     "n": 57
+    },
+    {
+     "w": "timbre",
+     "n": 54
+    },
+    {
+     "w": "cuqui",
+     "n": 53
+    },
+    {
+     "w": "gay",
+     "n": 51
+    }
+   ],
+   "difficultyRank": 16
+  }
+ ]
+}

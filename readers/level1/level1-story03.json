@@ -1,0 +1,1056 @@
+{
+  "id": "level1-story03",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Una llamada después de diez años",
+  "title_en": "A Call After Ten Years",
+  "summary_en": "After ten years of silence, Marcos's childhood friend Raúl calls to ask for money for his sick daughter, and Marcos must choose between his wife's doubts and his own memories.",
+  "names": [
+    "Marcos",
+    "Elena",
+    "Raúl"
+  ],
+  "paragraphs": [
+    "Una noche, cuando Marcos y Elena acababan de comer, alguien llamó. Marcos no conocía el número. Pensó no tomar la llamada, pero al fin la tomó.",
+    "—¿Sí?",
+    "—¿Marcos? Soy yo, Raúl. Raúl, de la escuela. ¿Te acuerdas de mí?",
+    "Marcos se quedó callado un segundo. Diez años. Diez años sin una palabra, sin una carta, sin nada. Y ahora, esa voz. La misma voz de siempre.",
+    "—Claro que me acuerdo, hombre. ¿Cómo estás? ¿Dónde estás?",
+    "—Estoy aquí, en la ciudad. Volví hace dos semanas. Oye, Marcos, sé que no te llamé en mucho tiempo. Perdón. La vida es así. Uno se va, uno se olvida de todo...",
+    "Elena miraba a Marcos desde el otro lado de la habitación. Con los ojos le preguntaba: ¿quién es?",
+    "—Raúl —le dijo Marcos a ella, sin voz, solo con la boca.",
+    "Elena cerró los ojos. Ella conocía ese nombre. Conocía las historias.",
+    "—Marcos, necesito hablar contigo de algo serio —siguió Raúl—. Mi hija está enferma. Necesita un médico, uno bueno, y yo no tengo dinero. Me faltan cinco mil. Te lo pago en medio año. Te lo prometo.",
+    "Marcos no dijo nada. Cinco mil era mucho dinero. No era todo lo que tenían, pero era casi todo.",
+    "—Déjame pensar, Raúl. Te llamo mañana.",
+    "—Claro. Lo entiendo. Eres un buen amigo, Marcos. Siempre lo fuiste.",
+    "Después de la llamada, Elena se sentó a su lado.",
+    "—No, Marcos.",
+    "—¿No qué?",
+    "—No le des ese dinero. Tú sabes cómo es él.",
+    "—Su hija está enferma.",
+    "—¿Y tú cómo sabes que eso es verdad? Hace diez años también tenía una historia. ¿Recuerdas? El negocio, el amigo de un amigo, el dinero que iba a volver en un mes. Nunca volvió. Ni el dinero ni él.",
+    "Marcos se levantó y caminó hasta la puerta. Elena tenía razón. Él lo sabía. Raúl le pidió dinero una vez, hace mucho, y después se fue de la ciudad sin decir nada. Marcos perdió dos mil y, durante mucho tiempo, también perdió el sueño.",
+    "Pero había otras cosas que Elena no conocía.",
+    "—Cuando yo tenía diez años —dijo Marcos—, mi padre se fue de casa. Mi madre trabajaba todo el día. Yo no comía bien, no dormía bien. En la escuela nadie me hablaba. Solo Raúl. Él me traía comida de su casa. Su madre le preparaba dos comidas, una para él y otra para mí. Él nunca me lo dijo, pero yo lo sabía.",
+    "Elena no dijo nada.",
+    "—Y una vez, unos chicos mayores me esperaron en la calle, detrás de la escuela. Eran cuatro. Raúl llegó corriendo y peleó con ellos. Le rompieron un brazo. Por mí.",
+    "—Eso fue hace mucho tiempo, cariño.",
+    "—Sí. Pero yo no lo olvido.",
+    "Elena tomó su mano.",
+    "—Yo no te digo que lo odies. Te digo que tengas cuidado. Tenemos una familia. Tenemos a los niños. Ese dinero es para la escuela de ellos, para su futuro.",
+    "—Lo sé.",
+    "—¿Entonces?",
+    "—Entonces no sé.",
+    "Esa noche Marcos no durmió. Pensaba en Raúl a los diez años, con el brazo roto, y en el Raúl de ahora, un hombre que ya no conocía. ¿Cuál de los dos lo llamó? ¿El amigo o el extraño?",
+    "A las seis de la mañana se levantó, buscó una foto vieja en una caja y la miró mucho tiempo. Dos chicos frente a la escuela, juntos, felices. Uno de ellos tenía el brazo en blanco, pero reía con los ojos.",
+    "Más tarde, llamó a Raúl.",
+    "—Raúl, soy yo. Escucha. No te voy a dar cinco mil. Tampoco te voy a decir que no.",
+    "—No entiendo.",
+    "—Quiero conocer a tu hija. Quiero hablar con el médico. Si todo es verdad, yo mismo le pago al médico. No a ti. Al médico.",
+    "Raúl se calló. Marcos esperó. Un segundo. Dos. Cinco.",
+    "—¿No confías en mí?",
+    "—Quiero confiar en ti —dijo Marcos—. Por eso te pido esto. Tú me ayudaste cuando yo no tenía nada. Ahora yo te quiero ayudar. Pero a mi manera.",
+    "—Déjame pensar —dijo Raúl al fin, con una voz más baja—. Te llamo mañana.",
+    "La llamada terminó. Elena estaba en la puerta. Lo escuchó todo.",
+    "—¿Va a llamar?",
+    "—No sé —dijo Marcos—. Quizás sí. Quizás no.",
+    "Sacó la foto otra vez y la miró. Afuera empezaba el día. Por primera vez en diez años, él esperaba una llamada de Raúl. Y por primera vez, no sabía qué quería oír."
+  ],
+  "glossary": [
+    {
+      "word": "reía",
+      "lemma": "reír",
+      "en": "to laugh"
+    }
+  ],
+  "questions": [
+    {
+      "q": "¿Cuántos años pasaron sin hablar Marcos y Raúl?",
+      "a": "Diez años.",
+      "q_en": "How many years did Marcos and Raúl go without talking?",
+      "a_en": "Ten years."
+    },
+    {
+      "q": "¿Qué le pide Raúl a Marcos?",
+      "a": "Cinco mil para el médico de su hija.",
+      "q_en": "What does Raúl ask Marcos for?",
+      "a_en": "Five thousand for his daughter's doctor."
+    },
+    {
+      "q": "¿Por qué Elena no confía en Raúl?",
+      "a": "Porque hace diez años él pidió dinero y nunca lo pagó.",
+      "q_en": "Why doesn't Elena trust Raúl?",
+      "a_en": "Because ten years ago he asked for money and never paid it back."
+    },
+    {
+      "q": "¿Qué hizo Raúl por Marcos en la escuela?",
+      "a": "Le traía comida y peleó con unos chicos por él.",
+      "q_en": "What did Raúl do for Marcos at school?",
+      "a_en": "He brought him food and fought some boys for him."
+    },
+    {
+      "q": "¿Qué quiere hacer Marcos al fin?",
+      "a": "Quiere conocer a la hija y pagarle al médico él mismo.",
+      "q_en": "What does Marcos want to do in the end?",
+      "a_en": "He wants to meet the daughter and pay the doctor himself."
+    }
+  ],
+  "wordCount": 728,
+  "measured": {
+    "coverage": 99.85,
+    "glossedPct": 0.15,
+    "unglossed": 0,
+    "words": 686,
+    "listTokens": 477,
+    "grammarTokens": 208,
+    "nameTokens": 42,
+    "uniqueListWords": 181,
+    "highestRankUsed": 485,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 21
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 6
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 5
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 10
+      },
+      {
+        "lemma": "haber",
+        "rank": 5,
+        "count": 1
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 2
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 4
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 12
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 7
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 12
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 5
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 5
+      },
+      {
+        "lemma": "si",
+        "rank": 14,
+        "count": 1
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 2
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 5
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 7
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 11
+      },
+      {
+        "lemma": "aquí",
+        "rank": 21,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 3
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 1
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 1
+      },
+      {
+        "lemma": "bueno",
+        "rank": 29,
+        "count": 2
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 7
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 6
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 13
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 2
+      },
+      {
+        "lemma": "dar",
+        "rank": 35,
+        "count": 2
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 3
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 1
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 3
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 1
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 2
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 3
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 5
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 3
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 4
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 3
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 6
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 7
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 3
+      },
+      {
+        "lemma": "hombre",
+        "rank": 56,
+        "count": 2
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 4
+      },
+      {
+        "lemma": "necesitar",
+        "rank": 59,
+        "count": 2
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 2
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 1
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 2
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 3
+      },
+      {
+        "lemma": "quién",
+        "rank": 66,
+        "count": 1
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 11
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 4
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 2
+      },
+      {
+        "lemma": "dónde",
+        "rank": 73,
+        "count": 1
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 7
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 6
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 2
+      },
+      {
+        "lemma": "verdad",
+        "rank": 77,
+        "count": 2
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 2
+      },
+      {
+        "lemma": "volver",
+        "rank": 80,
+        "count": 3
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 5
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 2
+      },
+      {
+        "lemma": "tomar",
+        "rank": 87,
+        "count": 3
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 2
+      },
+      {
+        "lemma": "oír",
+        "rank": 93,
+        "count": 2
+      },
+      {
+        "lemma": "ti",
+        "rank": 94,
+        "count": 2
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 1
+      },
+      {
+        "lemma": "amigo",
+        "rank": 96,
+        "count": 4
+      },
+      {
+        "lemma": "alguien",
+        "rank": 97,
+        "count": 1
+      },
+      {
+        "lemma": "hasta",
+        "rank": 98,
+        "count": 1
+      },
+      {
+        "lemma": "sin",
+        "rank": 100,
+        "count": 5
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 2
+      },
+      {
+        "lemma": "mí",
+        "rank": 103,
+        "count": 4
+      },
+      {
+        "lemma": "padre",
+        "rank": 104,
+        "count": 1
+      },
+      {
+        "lemma": "uno",
+        "rank": 107,
+        "count": 4
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 2
+      },
+      {
+        "lemma": "conocer",
+        "rank": 110,
+        "count": 6
+      },
+      {
+        "lemma": "seguir",
+        "rank": 111,
+        "count": 1
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 2
+      },
+      {
+        "lemma": "ayudar",
+        "rank": 118,
+        "count": 2
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 1
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 1
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 2
+      },
+      {
+        "lemma": "escuchar",
+        "rank": 123,
+        "count": 2
+      },
+      {
+        "lemma": "entender",
+        "rank": 126,
+        "count": 2
+      },
+      {
+        "lemma": "ellos",
+        "rank": 127,
+        "count": 3
+      },
+      {
+        "lemma": "vida",
+        "rank": 128,
+        "count": 1
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 2
+      },
+      {
+        "lemma": "dinero",
+        "rank": 133,
+        "count": 7
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 1
+      },
+      {
+        "lemma": "claro",
+        "rank": 136,
+        "count": 2
+      },
+      {
+        "lemma": "perder",
+        "rank": 137,
+        "count": 2
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 2
+      },
+      {
+        "lemma": "chico",
+        "rank": 141,
+        "count": 2
+      },
+      {
+        "lemma": "acabar",
+        "rank": 142,
+        "count": 1
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 1
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 3
+      },
+      {
+        "lemma": "nombre",
+        "rank": 148,
+        "count": 1
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "niño",
+        "rank": 150,
+        "count": 1
+      },
+      {
+        "lemma": "madre",
+        "rank": 154,
+        "count": 2
+      },
+      {
+        "lemma": "traer",
+        "rank": 163,
+        "count": 1
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 1
+      },
+      {
+        "lemma": "razón",
+        "rank": 171,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "contigo",
+        "rank": 175,
+        "count": 1
+      },
+      {
+        "lemma": "recordar",
+        "rank": 177,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 1
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 2
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 1
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 2
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "segundo",
+        "rank": 190,
+        "count": 2
+      },
+      {
+        "lemma": "quizá",
+        "rank": 193,
+        "count": 2
+      },
+      {
+        "lemma": "terminar",
+        "rank": 194,
+        "count": 1
+      },
+      {
+        "lemma": "comer",
+        "rank": 201,
+        "count": 4
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 1
+      },
+      {
+        "lemma": "olvidar",
+        "rank": 204,
+        "count": 2
+      },
+      {
+        "lemma": "cariño",
+        "rank": 206,
+        "count": 1
+      },
+      {
+        "lemma": "serio",
+        "rank": 210,
+        "count": 1
+      },
+      {
+        "lemma": "sentar",
+        "rank": 213,
+        "count": 1
+      },
+      {
+        "lemma": "sacar",
+        "rank": 219,
+        "count": 1
+      },
+      {
+        "lemma": "historia",
+        "rank": 222,
+        "count": 2
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 1
+      },
+      {
+        "lemma": "ojo",
+        "rank": 228,
+        "count": 3
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 2
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 1
+      },
+      {
+        "lemma": "cuál",
+        "rank": 239,
+        "count": 1
+      },
+      {
+        "lemma": "medio",
+        "rank": 243,
+        "count": 1
+      },
+      {
+        "lemma": "mes",
+        "rank": 245,
+        "count": 1
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 2
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 1
+      },
+      {
+        "lemma": "pagar",
+        "rank": 251,
+        "count": 2
+      },
+      {
+        "lemma": "manera",
+        "rank": 252,
+        "count": 1
+      },
+      {
+        "lemma": "cuidado",
+        "rank": 253,
+        "count": 1
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 2
+      },
+      {
+        "lemma": "número",
+        "rank": 259,
+        "count": 1
+      },
+      {
+        "lemma": "lado",
+        "rank": 267,
+        "count": 2
+      },
+      {
+        "lemma": "acuerdo",
+        "rank": 268,
+        "count": 1
+      },
+      {
+        "lemma": "junto",
+        "rank": 271,
+        "count": 1
+      },
+      {
+        "lemma": "hija",
+        "rank": 279,
+        "count": 3
+      },
+      {
+        "lemma": "bajo",
+        "rank": 288,
+        "count": 1
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 1
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "correr",
+        "rank": 297,
+        "count": 1
+      },
+      {
+        "lemma": "acordar",
+        "rank": 298,
+        "count": 1
+      },
+      {
+        "lemma": "cinco",
+        "rank": 308,
+        "count": 4
+      },
+      {
+        "lemma": "mil",
+        "rank": 313,
+        "count": 4
+      },
+      {
+        "lemma": "blanco",
+        "rank": 320,
+        "count": 1
+      },
+      {
+        "lemma": "cuatro",
+        "rank": 331,
+        "count": 1
+      },
+      {
+        "lemma": "caminar",
+        "rank": 335,
+        "count": 1
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 5
+      },
+      {
+        "lemma": "negocio",
+        "rank": 337,
+        "count": 1
+      },
+      {
+        "lemma": "afuera",
+        "rank": 338,
+        "count": 1
+      },
+      {
+        "lemma": "prometer",
+        "rank": 347,
+        "count": 1
+      },
+      {
+        "lemma": "odiar",
+        "rank": 351,
+        "count": 1
+      },
+      {
+        "lemma": "tampoco",
+        "rank": 357,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 2
+      },
+      {
+        "lemma": "mayor",
+        "rank": 366,
+        "count": 1
+      },
+      {
+        "lemma": "sueño",
+        "rank": 367,
+        "count": 1
+      },
+      {
+        "lemma": "preparar",
+        "rank": 381,
+        "count": 1
+      },
+      {
+        "lemma": "perdón",
+        "rank": 387,
+        "count": 1
+      },
+      {
+        "lemma": "cerrar",
+        "rank": 389,
+        "count": 1
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 1
+      },
+      {
+        "lemma": "médico",
+        "rank": 402,
+        "count": 4
+      },
+      {
+        "lemma": "extraño",
+        "rank": 405,
+        "count": 1
+      },
+      {
+        "lemma": "carta",
+        "rank": 408,
+        "count": 1
+      },
+      {
+        "lemma": "faltar",
+        "rank": 409,
+        "count": 1
+      },
+      {
+        "lemma": "pelear",
+        "rank": 415,
+        "count": 1
+      },
+      {
+        "lemma": "habitación",
+        "rank": 418,
+        "count": 1
+      },
+      {
+        "lemma": "confiar",
+        "rank": 424,
+        "count": 2
+      },
+      {
+        "lemma": "frente",
+        "rank": 429,
+        "count": 1
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 2
+      },
+      {
+        "lemma": "levantar",
+        "rank": 454,
+        "count": 2
+      },
+      {
+        "lemma": "boca",
+        "rank": 455,
+        "count": 1
+      },
+      {
+        "lemma": "detrás",
+        "rank": 458,
+        "count": 1
+      },
+      {
+        "lemma": "romper",
+        "rank": 469,
+        "count": 2
+      },
+      {
+        "lemma": "diez",
+        "rank": 470,
+        "count": 6
+      },
+      {
+        "lemma": "brazo",
+        "rank": 472,
+        "count": 3
+      },
+      {
+        "lemma": "futuro",
+        "rank": 474,
+        "count": 1
+      },
+      {
+        "lemma": "caja",
+        "rank": 476,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 4
+      }
+    ],
+    "outOfList": [
+      {
+        "lemma": "reír",
+        "rank": 1099,
+        "forms": [
+          "reía"
+        ],
+        "count": 1,
+        "glossed": true
+      }
+    ]
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2831,
+      "output_tokens": 10603,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.248,
+    "theme": "An old friend calls a man after ten years and asks to borrow money. The man's wife does not trust the friend. A story about loyalty and memory, ends with a decision that is neither yes nor no."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story03_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 3874,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 305.1
+    }
+  ]
+}

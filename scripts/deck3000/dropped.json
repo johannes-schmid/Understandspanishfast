@@ -1,0 +1,55 @@
+{
+ "function_word": [
+  "de→de",
+  "que→que",
+  "la→la",
+  "a→a",
+  "y→y",
+  "en→en",
+  "por→por",
+  "me→me",
+  "se→se",
+  "mi→mi",
+  "su→su",
+  "del→del",
+  "al→al",
+  "donde→donde",
+  "vosotros→vosotros",
+  "quien→quien",
+  "cuanto→cuanto"
+ ],
+ "sound_interjection": [
+  "oh→oh",
+  "eh→eh",
+  "ah→ah"
+ ],
+ "duplicate": [
+  "mira→mirar",
+  "debe→deber",
+  "pasa→pasar",
+  "gran→grande",
+  "hacerlo→hacer",
+  "jefe→jefe",
+  "escucha→escuchar",
+  "déjame→dejar",
+  "1→primero",
+  "vetar→ir",
+  "trata→tratar",
+  "queda→quedar",
+  "dame→dar",
+  "amo→amar",
+  "dime→decir"
+ ],
+ "profanity": [
+  "mierda→mierda",
+  "puta→puta",
+  "joder→joder"
+ ],
+ "foreign": [
+  "hey→hey",
+  "ok→ok"
+ ],
+ "not_a_word": [
+  "mas→más"
+ ]
+}

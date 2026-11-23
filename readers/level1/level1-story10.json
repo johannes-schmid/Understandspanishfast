@@ -1,0 +1,977 @@
+{
+  "id": "level1-story10",
+  "level": 1,
+  "rankLimit": 500,
+  "title": "Mensajes para otro",
+  "title_en": "Messages for Someone Else",
+  "summary_en": "A lonely night guard keeps getting messages from a woman writing to her missing brother, pretends to be him for a week, and finally calls her to tell her the truth.",
+  "names": [
+    "Alberto",
+    "Nuria",
+    "Jorge"
+  ],
+  "paragraphs": [
+    "Alberto tiene 58 años y vive solo en un cuarto pequeño de la ciudad. Trabaja de noche en una compañía de seguridad. Cuida una puerta grande, mira la calle y espera la mañana. Su esposa se fue hace mucho tiempo. Su hijo vive lejos, en otro país. Casi nadie le escribe.",
+    "Una noche recibió un mensaje de un número que no conocía.",
+    "«Jorge, ¿estás bien? Mamá pregunta por ti. Llámame, por lo menos. Nuria.»",
+    "Alberto pensó que el mensaje no era para él. No escribió nada y siguió con su trabajo.",
+    "Al otro día llegó otro mensaje del mismo número.",
+    "«Jorge, sé que no quieres hablar conmigo. Pero mamá está enferma. Solo dime que estás vivo.»",
+    "Después llegaron más. Uno cada noche, casi siempre a la misma hora, a las dos de la mañana. Alberto los leía mientras la ciudad dormía.",
+    "«Hoy mamá preguntó por ti otra vez. Le dije que tienes mucho trabajo. Le miento todos los días, Jorge.»",
+    "«Recuerdo cuando éramos niños y me llevabas de la mano a la escuela. ¿Dónde estás?»",
+    "«Encontré una foto de los dos en una fiesta de papá. Tú tenías diez años y yo seis. ¡Qué felices éramos!»",
+    "Alberto no sabía quién era Jorge, ni quién era Nuria. Pero empezó a esperar los mensajes. Le parecía que conocía a esta familia. A veces pensaba en su propio hijo. No lo llamaba desde hacía dos años. No pelearon nunca. Solo dejaron de hablar.",
+    "Una noche llegó un mensaje que lo dejó pensando hasta la mañana.",
+    "«Jorge, el médico dice que a mamá le queda poco tiempo. Ella solo quiere oír tu voz. Te lo pido. Una vez. Solo una.»",
+    "Alberto miró esas palabras durante mucho tiempo. Sabía que no debía hacer nada. No era su asunto. Pero esa mujer no tenía a nadie, y escribía cada noche a un hermano que no estaba. Y él también sabía qué es esperar una respuesta que nunca llega.",
+    "Entonces escribió: «Estoy bien. Perdón.»",
+    "La respuesta llegó en un minuto.",
+    "«¡Jorge! ¡Dios mío! ¿Dónde estás? ¿Por qué no me llamas?»",
+    "Alberto no sabía qué decir. Escribió: «Ahora no puedo hablar. Dile a mamá que la quiero mucho.»",
+    "«Se lo voy a decir hoy mismo. Va a estar muy feliz.»",
+    "Durante una semana, Alberto fue Jorge. Nuria le contaba cosas de su madre, del médico, de su trabajo en una escuela, de su perro viejo. Él escribía pocas palabras, pero las escribía con cuidado. Cada noche se sentía un poco mejor, y un poco peor. Mejor porque alguien lo esperaba. Peor porque sabía que estaba mintiendo, y que no podía seguir así.",
+    "Entonces llegó el último mensaje.",
+    "«Mamá quiere verte antes de morir. Ven mañana por la tarde, a casa. Te espero. No me dejes otra vez.»",
+    "Alberto no durmió ese día. Pensó en Jorge, en Nuria, en la madre enferma, en su propio hijo. Por la tarde, la llamó.",
+    "—¿Jorge? —dijo la voz de una mujer joven—. ¿Eres tú?",
+    "—No —dijo Alberto—. No soy Jorge. Me llamo Alberto.",
+    "Ella no dijo nada por un largo tiempo.",
+    "—¿Quién es usted? —preguntó al fin.",
+    "—Hace un mes que recibo sus mensajes. Creo que este número ya no es de su hermano. Ahora es mío.",
+    "—Entonces… «dile a mamá que la quiero»… ¿eso lo escribió usted?",
+    "—Sí. Perdón. No quería hacerle mal. Usted no tenía a nadie, y yo… no sé. Quise ayudar. Pero hice mal.",
+    "—Mi madre estuvo feliz por primera vez en mucho tiempo —dijo Nuria. Su voz era dura—. ¿Y ahora qué le digo?",
+    "—La verdad, quizás. O nada. Usted la conoce mejor que yo.",
+    "Nuria calló otra vez. Alberto pensó que iba a cortar la llamada.",
+    "—¿Sabe dónde está mi hermano? —preguntó ella.",
+    "—No. Lo siento mucho.",
+    "—Yo tampoco. —Su voz ya no era dura—. Pero usted me escribió, Alberto. Usted leyó todo. Él nunca lo hizo.",
+    "—¿Puedo hacer algo por ella? ¿Por usted?",
+    "—No sé. Déjeme pensar. Yo lo llamo después.",
+    "Y cortó.",
+    "Esa noche, en el trabajo, Alberto no recibió ningún mensaje. Miró la calle durante mucho tiempo. Después buscó otro número, uno que no usaba desde hacía dos años: el de su hijo.",
+    "Escribió: «Hijo, soy papá. ¿Cómo estás?»",
+    "Y, como Nuria, empezó a esperar."
+  ],
+  "glossary": [],
+  "questions": [
+    {
+      "q": "¿Dónde trabaja Alberto?",
+      "a": "En una compañía de seguridad, de noche.",
+      "q_en": "Where does Alberto work?",
+      "a_en": "At a security company, at night."
+    },
+    {
+      "q": "¿Para quién son los mensajes?",
+      "a": "Para Jorge, el hermano de Nuria.",
+      "q_en": "Who are the messages for?",
+      "a_en": "For Jorge, Nuria's brother."
+    },
+    {
+      "q": "¿Qué le pasa a la madre de Nuria?",
+      "a": "Está enferma y le queda poco tiempo.",
+      "q_en": "What is happening to Nuria's mother?",
+      "a_en": "She is sick and has little time left."
+    },
+    {
+      "q": "¿Qué escribe Alberto la primera vez?",
+      "a": "«Estoy bien. Perdón.»",
+      "q_en": "What does Alberto write the first time?",
+      "a_en": "\"I'm fine. Sorry.\""
+    },
+    {
+      "q": "¿A quién escribe Alberto al fin de la historia?",
+      "a": "A su hijo.",
+      "q_en": "Who does Alberto write to at the end of the story?",
+      "a_en": "To his son."
+    }
+  ],
+  "wordCount": 701,
+  "measured": {
+    "coverage": 100,
+    "glossedPct": 0,
+    "unglossed": 0,
+    "words": 671,
+    "listTokens": 467,
+    "grammarTokens": 204,
+    "nameTokens": 30,
+    "uniqueListWords": 169,
+    "highestRankUsed": 491,
+    "lemmasUsed": [
+      {
+        "lemma": "ser",
+        "rank": 1,
+        "count": 20
+      },
+      {
+        "lemma": "estar",
+        "rank": 2,
+        "count": 12
+      },
+      {
+        "lemma": "ir",
+        "rank": 3,
+        "count": 3
+      },
+      {
+        "lemma": "tener",
+        "rank": 4,
+        "count": 5
+      },
+      {
+        "lemma": "qué",
+        "rank": 6,
+        "count": 5
+      },
+      {
+        "lemma": "hacer",
+        "rank": 7,
+        "count": 9
+      },
+      {
+        "lemma": "poder",
+        "rank": 8,
+        "count": 3
+      },
+      {
+        "lemma": "te",
+        "rank": 9,
+        "count": 2
+      },
+      {
+        "lemma": "con",
+        "rank": 10,
+        "count": 2
+      },
+      {
+        "lemma": "decir",
+        "rank": 11,
+        "count": 12
+      },
+      {
+        "lemma": "querer",
+        "rank": 12,
+        "count": 7
+      },
+      {
+        "lemma": "saber",
+        "rank": 13,
+        "count": 6
+      },
+      {
+        "lemma": "ver",
+        "rank": 15,
+        "count": 2
+      },
+      {
+        "lemma": "bien",
+        "rank": 16,
+        "count": 2
+      },
+      {
+        "lemma": "eso",
+        "rank": 17,
+        "count": 4
+      },
+      {
+        "lemma": "pero",
+        "rank": 18,
+        "count": 6
+      },
+      {
+        "lemma": "yo",
+        "rank": 20,
+        "count": 5
+      },
+      {
+        "lemma": "este",
+        "rank": 22,
+        "count": 1
+      },
+      {
+        "lemma": "ese",
+        "rank": 23,
+        "count": 1
+      },
+      {
+        "lemma": "esto",
+        "rank": 24,
+        "count": 1
+      },
+      {
+        "lemma": "creer",
+        "rank": 25,
+        "count": 1
+      },
+      {
+        "lemma": "ya",
+        "rank": 27,
+        "count": 2
+      },
+      {
+        "lemma": "como",
+        "rank": 28,
+        "count": 1
+      },
+      {
+        "lemma": "le",
+        "rank": 30,
+        "count": 7
+      },
+      {
+        "lemma": "todo",
+        "rank": 31,
+        "count": 2
+      },
+      {
+        "lemma": "lo",
+        "rank": 32,
+        "count": 10
+      },
+      {
+        "lemma": "más",
+        "rank": 33,
+        "count": 1
+      },
+      {
+        "lemma": "deber",
+        "rank": 34,
+        "count": 1
+      },
+      {
+        "lemma": "muy",
+        "rank": 36,
+        "count": 1
+      },
+      {
+        "lemma": "ahora",
+        "rank": 37,
+        "count": 3
+      },
+      {
+        "lemma": "algo",
+        "rank": 38,
+        "count": 1
+      },
+      {
+        "lemma": "tú",
+        "rank": 41,
+        "count": 2
+      },
+      {
+        "lemma": "así",
+        "rank": 42,
+        "count": 1
+      },
+      {
+        "lemma": "dejar",
+        "rank": 43,
+        "count": 4
+      },
+      {
+        "lemma": "hablar",
+        "rank": 44,
+        "count": 3
+      },
+      {
+        "lemma": "nada",
+        "rank": 45,
+        "count": 4
+      },
+      {
+        "lemma": "cuando",
+        "rank": 46,
+        "count": 1
+      },
+      {
+        "lemma": "otro",
+        "rank": 47,
+        "count": 7
+      },
+      {
+        "lemma": "cómo",
+        "rank": 48,
+        "count": 1
+      },
+      {
+        "lemma": "mucho",
+        "rank": 50,
+        "count": 7
+      },
+      {
+        "lemma": "él",
+        "rank": 54,
+        "count": 4
+      },
+      {
+        "lemma": "esperar",
+        "rank": 55,
+        "count": 6
+      },
+      {
+        "lemma": "pensar",
+        "rank": 57,
+        "count": 6
+      },
+      {
+        "lemma": "usted",
+        "rank": 58,
+        "count": 7
+      },
+      {
+        "lemma": "día",
+        "rank": 60,
+        "count": 3
+      },
+      {
+        "lemma": "cosa",
+        "rank": 61,
+        "count": 1
+      },
+      {
+        "lemma": "ella",
+        "rank": 62,
+        "count": 4
+      },
+      {
+        "lemma": "mirar",
+        "rank": 63,
+        "count": 3
+      },
+      {
+        "lemma": "dios",
+        "rank": 65,
+        "count": 1
+      },
+      {
+        "lemma": "quién",
+        "rank": 66,
+        "count": 3
+      },
+      {
+        "lemma": "llamar",
+        "rank": 67,
+        "count": 7
+      },
+      {
+        "lemma": "porque",
+        "rank": 68,
+        "count": 2
+      },
+      {
+        "lemma": "tiempo",
+        "rank": 70,
+        "count": 6
+      },
+      {
+        "lemma": "mejor",
+        "rank": 71,
+        "count": 3
+      },
+      {
+        "lemma": "nunca",
+        "rank": 72,
+        "count": 3
+      },
+      {
+        "lemma": "dónde",
+        "rank": 73,
+        "count": 3
+      },
+      {
+        "lemma": "año",
+        "rank": 74,
+        "count": 4
+      },
+      {
+        "lemma": "dos",
+        "rank": 75,
+        "count": 4
+      },
+      {
+        "lemma": "solo",
+        "rank": 76,
+        "count": 5
+      },
+      {
+        "lemma": "verdad",
+        "rank": 77,
+        "count": 1
+      },
+      {
+        "lemma": "casa",
+        "rank": 78,
+        "count": 1
+      },
+      {
+        "lemma": "sentir",
+        "rank": 79,
+        "count": 2
+      },
+      {
+        "lemma": "vez",
+        "rank": 81,
+        "count": 6
+      },
+      {
+        "lemma": "parecer",
+        "rank": 84,
+        "count": 1
+      },
+      {
+        "lemma": "entonces",
+        "rank": 85,
+        "count": 3
+      },
+      {
+        "lemma": "quedar",
+        "rank": 89,
+        "count": 1
+      },
+      {
+        "lemma": "llevar",
+        "rank": 90,
+        "count": 1
+      },
+      {
+        "lemma": "noche",
+        "rank": 91,
+        "count": 7
+      },
+      {
+        "lemma": "encontrar",
+        "rank": 92,
+        "count": 1
+      },
+      {
+        "lemma": "oír",
+        "rank": 93,
+        "count": 1
+      },
+      {
+        "lemma": "ti",
+        "rank": 94,
+        "count": 2
+      },
+      {
+        "lemma": "llegar",
+        "rank": 95,
+        "count": 6
+      },
+      {
+        "lemma": "alguien",
+        "rank": 97,
+        "count": 1
+      },
+      {
+        "lemma": "hasta",
+        "rank": 98,
+        "count": 1
+      },
+      {
+        "lemma": "grande",
+        "rank": 99,
+        "count": 1
+      },
+      {
+        "lemma": "también",
+        "rank": 101,
+        "count": 1
+      },
+      {
+        "lemma": "uno",
+        "rank": 107,
+        "count": 2
+      },
+      {
+        "lemma": "siempre",
+        "rank": 108,
+        "count": 1
+      },
+      {
+        "lemma": "morir",
+        "rank": 109,
+        "count": 1
+      },
+      {
+        "lemma": "conocer",
+        "rank": 110,
+        "count": 3
+      },
+      {
+        "lemma": "seguir",
+        "rank": 111,
+        "count": 2
+      },
+      {
+        "lemma": "poco",
+        "rank": 112,
+        "count": 4
+      },
+      {
+        "lemma": "antes",
+        "rank": 113,
+        "count": 1
+      },
+      {
+        "lemma": "ni",
+        "rank": 114,
+        "count": 1
+      },
+      {
+        "lemma": "hijo",
+        "rank": 115,
+        "count": 5
+      },
+      {
+        "lemma": "ayudar",
+        "rank": 118,
+        "count": 1
+      },
+      {
+        "lemma": "trabajar",
+        "rank": 119,
+        "count": 5
+      },
+      {
+        "lemma": "nadie",
+        "rank": 120,
+        "count": 3
+      },
+      {
+        "lemma": "primero",
+        "rank": 121,
+        "count": 1
+      },
+      {
+        "lemma": "mío",
+        "rank": 122,
+        "count": 2
+      },
+      {
+        "lemma": "mismo",
+        "rank": 129,
+        "count": 3
+      },
+      {
+        "lemma": "hora",
+        "rank": 131,
+        "count": 1
+      },
+      {
+        "lemma": "buscar",
+        "rank": 135,
+        "count": 1
+      },
+      {
+        "lemma": "después",
+        "rank": 138,
+        "count": 3
+      },
+      {
+        "lemma": "mujer",
+        "rank": 139,
+        "count": 2
+      },
+      {
+        "lemma": "vivir",
+        "rank": 143,
+        "count": 3
+      },
+      {
+        "lemma": "desde",
+        "rank": 145,
+        "count": 2
+      },
+      {
+        "lemma": "mañana",
+        "rank": 147,
+        "count": 4
+      },
+      {
+        "lemma": "mano",
+        "rank": 149,
+        "count": 1
+      },
+      {
+        "lemma": "niño",
+        "rank": 150,
+        "count": 1
+      },
+      {
+        "lemma": "papá",
+        "rank": 152,
+        "count": 2
+      },
+      {
+        "lemma": "ninguno",
+        "rank": 153,
+        "count": 1
+      },
+      {
+        "lemma": "madre",
+        "rank": 154,
+        "count": 3
+      },
+      {
+        "lemma": "menos",
+        "rank": 158,
+        "count": 1
+      },
+      {
+        "lemma": "mal",
+        "rank": 159,
+        "count": 2
+      },
+      {
+        "lemma": "conmigo",
+        "rank": 160,
+        "count": 1
+      },
+      {
+        "lemma": "hoy",
+        "rank": 161,
+        "count": 2
+      },
+      {
+        "lemma": "preguntar",
+        "rank": 164,
+        "count": 4
+      },
+      {
+        "lemma": "mamá",
+        "rank": 165,
+        "count": 7
+      },
+      {
+        "lemma": "último",
+        "rank": 168,
+        "count": 1
+      },
+      {
+        "lemma": "viejo",
+        "rank": 174,
+        "count": 1
+      },
+      {
+        "lemma": "recordar",
+        "rank": 177,
+        "count": 1
+      },
+      {
+        "lemma": "empezar",
+        "rank": 180,
+        "count": 2
+      },
+      {
+        "lemma": "pedir",
+        "rank": 181,
+        "count": 1
+      },
+      {
+        "lemma": "semana",
+        "rank": 183,
+        "count": 1
+      },
+      {
+        "lemma": "cada",
+        "rank": 185,
+        "count": 3
+      },
+      {
+        "lemma": "puerta",
+        "rank": 187,
+        "count": 1
+      },
+      {
+        "lemma": "familia",
+        "rank": 188,
+        "count": 1
+      },
+      {
+        "lemma": "contar",
+        "rank": 189,
+        "count": 1
+      },
+      {
+        "lemma": "quizá",
+        "rank": 193,
+        "count": 1
+      },
+      {
+        "lemma": "hermano",
+        "rank": 197,
+        "count": 3
+      },
+      {
+        "lemma": "usar",
+        "rank": 199,
+        "count": 1
+      },
+      {
+        "lemma": "tarde",
+        "rank": 202,
+        "count": 2
+      },
+      {
+        "lemma": "minuto",
+        "rank": 209,
+        "count": 1
+      },
+      {
+        "lemma": "casi",
+        "rank": 227,
+        "count": 2
+      },
+      {
+        "lemma": "ciudad",
+        "rank": 229,
+        "count": 2
+      },
+      {
+        "lemma": "feliz",
+        "rank": 238,
+        "count": 3
+      },
+      {
+        "lemma": "pequeño",
+        "rank": 241,
+        "count": 1
+      },
+      {
+        "lemma": "mientras",
+        "rank": 242,
+        "count": 1
+      },
+      {
+        "lemma": "mes",
+        "rank": 245,
+        "count": 1
+      },
+      {
+        "lemma": "leer",
+        "rank": 247,
+        "count": 2
+      },
+      {
+        "lemma": "dormir",
+        "rank": 249,
+        "count": 2
+      },
+      {
+        "lemma": "palabra",
+        "rank": 250,
+        "count": 2
+      },
+      {
+        "lemma": "cuidado",
+        "rank": 253,
+        "count": 1
+      },
+      {
+        "lemma": "fin",
+        "rank": 258,
+        "count": 1
+      },
+      {
+        "lemma": "número",
+        "rank": 259,
+        "count": 4
+      },
+      {
+        "lemma": "propio",
+        "rank": 266,
+        "count": 2
+      },
+      {
+        "lemma": "esposa",
+        "rank": 275,
+        "count": 1
+      },
+      {
+        "lemma": "perro",
+        "rank": 278,
+        "count": 1
+      },
+      {
+        "lemma": "durante",
+        "rank": 289,
+        "count": 3
+      },
+      {
+        "lemma": "callar",
+        "rank": 293,
+        "count": 3
+      },
+      {
+        "lemma": "joven",
+        "rank": 312,
+        "count": 1
+      },
+      {
+        "lemma": "fiesta",
+        "rank": 315,
+        "count": 1
+      },
+      {
+        "lemma": "cuarto",
+        "rank": 322,
+        "count": 1
+      },
+      {
+        "lemma": "escuela",
+        "rank": 336,
+        "count": 2
+      },
+      {
+        "lemma": "escribir",
+        "rank": 341,
+        "count": 10
+      },
+      {
+        "lemma": "cuidar",
+        "rank": 353,
+        "count": 1
+      },
+      {
+        "lemma": "seguridad",
+        "rank": 355,
+        "count": 1
+      },
+      {
+        "lemma": "tampoco",
+        "rank": 357,
+        "count": 1
+      },
+      {
+        "lemma": "foto",
+        "rank": 364,
+        "count": 1
+      },
+      {
+        "lemma": "recibir",
+        "rank": 374,
+        "count": 3
+      },
+      {
+        "lemma": "largo",
+        "rank": 375,
+        "count": 1
+      },
+      {
+        "lemma": "país",
+        "rank": 379,
+        "count": 1
+      },
+      {
+        "lemma": "asunto",
+        "rank": 382,
+        "count": 1
+      },
+      {
+        "lemma": "perdón",
+        "rank": 387,
+        "count": 2
+      },
+      {
+        "lemma": "peor",
+        "rank": 390,
+        "count": 2
+      },
+      {
+        "lemma": "lejos",
+        "rank": 393,
+        "count": 1
+      },
+      {
+        "lemma": "seis",
+        "rank": 397,
+        "count": 1
+      },
+      {
+        "lemma": "médico",
+        "rank": 402,
+        "count": 2
+      },
+      {
+        "lemma": "duro",
+        "rank": 410,
+        "count": 2
+      },
+      {
+        "lemma": "pelear",
+        "rank": 415,
+        "count": 1
+      },
+      {
+        "lemma": "respuesta",
+        "rank": 419,
+        "count": 2
+      },
+      {
+        "lemma": "compañía",
+        "rank": 423,
+        "count": 1
+      },
+      {
+        "lemma": "mentir",
+        "rank": 425,
+        "count": 2
+      },
+      {
+        "lemma": "mensaje",
+        "rank": 442,
+        "count": 8
+      },
+      {
+        "lemma": "enfermo",
+        "rank": 445,
+        "count": 2
+      },
+      {
+        "lemma": "diez",
+        "rank": 470,
+        "count": 1
+      },
+      {
+        "lemma": "voz",
+        "rank": 485,
+        "count": 4
+      },
+      {
+        "lemma": "cortar",
+        "rank": 491,
+        "count": 2
+      }
+    ],
+    "outOfList": []
+  },
+  "generation": {
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2644,
+      "output_tokens": 11895,
+      "cache_creation_input_tokens": 4775,
+      "cache_read_input_tokens": 4775
+    },
+    "estCostUsd": 0.273,
+    "theme": "A man keeps receiving phone messages meant for someone else: a woman writing to her brother, who no longer answers. He decides to reply. Ends with him telling her the truth."
+  },
+  "audio": [
+    {
+      "kind": "javier",
+      "accent": "Spain",
+      "file": "level1-story10_javier.mp3",
+      "voice": {
+        "voice_id": "eHAEFkimnYz57pupUMcq",
+        "name": "javier",
+        "accent": "Spain"
+      },
+      "characters": 3865,
+      "model": "eleven_multilingual_v2",
+      "speed": 0.9,
+      "seconds": 303.0
+    }
+  ]
+}

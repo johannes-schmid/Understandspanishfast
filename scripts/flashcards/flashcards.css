@@ -1,0 +1,80 @@
+@page { size: A4; margin: 0 }
+:root {
+  --navy: #14204a; --ink-2: #4b5478; --ink-3: #6a7194;
+  --line: #d9ddf0; --cut: #e2e5f3; --tint: #f3f4fc; --peri: #e3e6fb;
+  --coral: #f26b3a; --coral-ink: #c4461a; --coral-soft: #fde9e0;
+  --sans: 'Plus Jakarta Sans', sans-serif; --mono: 'JetBrains Mono', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0 }
+html, body { background: #fff }
+body { font-family: var(--sans); color: var(--navy); -webkit-print-color-adjust: exact; print-color-adjust: exact; font-variant-numeric: tabular-nums }
+b { font-weight: 700 }
+
+.page { width: 210mm; height: 297mm; position: relative; overflow: hidden; break-after: page; page-break-after: always }
+
+/* card sheets */
+.cm { position: absolute; background: var(--navy) }
+.cm.v { width: .3pt; height: 7mm; margin-left: -.15pt }
+.cm.h { height: .3pt; width: 7mm; margin-top: -.15pt }
+.cell { position: absolute; width: 90mm; height: 54mm; box-shadow: inset 0 0 0 .3pt var(--cut) }
+.slug { position: absolute; left: 30mm; right: 30mm; bottom: 4mm; display: flex; justify-content: space-between; font-family: var(--mono); font-size: 6pt; letter-spacing: .04em; color: var(--ink-3) }
+
+.face { position: absolute; inset: 0; padding: 4.6mm 5.4mm 4.2mm; display: flex; flex-direction: column; overflow: hidden }
+.top { display: flex; justify-content: space-between; align-items: baseline; gap: 3mm; flex: none }
+.rk { font-family: var(--mono); font-size: 7.4pt; font-weight: 600; color: var(--coral-ink); letter-spacing: .02em }
+.pos { font-size: 7pt; font-weight: 600; color: var(--ink-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+
+.front .hw { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; font-weight: 800; letter-spacing: -.03em; line-height: 1.04; overflow: hidden; padding: 0 1mm }
+.hw.xl { font-size: 32pt }
+.hw.l { font-size: 26pt }
+.hw.m { font-size: 21pt }
+.hw.s { font-size: 17pt }
+.hw .art { font-weight: 600; color: var(--ink-3); letter-spacing: -.01em; font-size: .66em }
+.front .bot { flex: none; display: flex; justify-content: space-between; font-size: 6.2pt; color: var(--ink-3); font-weight: 500 }
+.front .bot span:first-child { font-weight: 700; color: var(--navy) }
+
+.back .top .pos { color: var(--ink-3); font-weight: 600; font-style: normal }
+.back .mn { flex: none; margin-top: 2.6mm; font-size: 13pt; font-weight: 700; line-height: 1.22; letter-spacing: -.01em; overflow: hidden }
+.back .mn i { font-style: normal; color: var(--ink-3); font-weight: 500 }
+.back .ex { margin-top: auto; padding-top: 2.2mm; border-top: .5pt solid var(--line); font-size: 8.6pt; line-height: 1.38; min-height: 0; overflow: hidden }
+.back .ex .es { color: var(--navy); font-weight: 500 }
+.back .ex .es b { color: var(--coral-ink); font-weight: 700 }
+.back .ex .en { color: var(--ink-3); margin-top: .6mm; font-size: .92em }
+
+/* cover */
+.cover { padding: 18mm 18mm 14mm; display: flex; flex-direction: column }
+.cv-top, .cv-foot { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 7.2pt; font-weight: 500; letter-spacing: .08em; color: var(--ink-3) }
+.cv-foot { margin-top: auto; padding-top: 4mm; border-top: .5pt solid var(--line); letter-spacing: .04em }
+.cv-main { margin-top: 20mm; position: relative; z-index: 2 }
+.cv-num { font-size: 104pt; font-weight: 800; letter-spacing: -.06em; line-height: .86; color: var(--coral) }
+.cover h1 { margin-top: 7mm; font-size: 32pt; line-height: 1.04; letter-spacing: -.035em; font-weight: 800 }
+.cover .cv-main p { margin-top: 5mm; font-size: 11.5pt; line-height: 1.55; color: var(--ink-2); max-width: 118mm }
+.stack { position: relative; height: 112mm; margin-top: 8mm }
+.stack .card { position: absolute; width: 90mm; height: 54mm; border-radius: 2.4mm; background: #fff; box-shadow: 0 0 0 .5pt var(--line), 0 2.5mm 7mm -2mm rgba(20,32,74,.22) }
+.stack .c1 { left: 0; top: 48mm; transform: rotate(-4deg) }
+.stack .c2 { left: 34mm; top: 6mm; transform: rotate(5deg) }
+.stack .c3 { left: 82mm; top: 40mm; transform: rotate(3deg) }
+.cv-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6mm; margin-top: 6mm }
+.cv-facts div { display: flex; flex-direction: column; gap: 1mm }
+.cv-facts b { font-size: 20pt; font-weight: 800; letter-spacing: -.03em }
+.cv-facts span { font-size: 8.6pt; color: var(--ink-2); line-height: 1.4 }
+
+/* how-to */
+.howto { padding: 20mm 18mm 14mm; font-size: 10pt; line-height: 1.55; color: var(--ink-2) }
+.howto h2 { font-size: 24pt; line-height: 1.05; letter-spacing: -.035em; font-weight: 800; color: var(--navy); margin-bottom: 10mm }
+.howto h3 { font-size: 11pt; font-weight: 800; letter-spacing: -.01em; color: var(--navy); margin: 0 0 2.6mm }
+.howto b { color: var(--navy) }
+.howto .cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 10mm; margin-bottom: 12mm }
+.howto ol { padding-left: 4.6mm; display: grid; gap: 1.8mm }
+.howto ol li::marker { font-family: var(--mono); font-size: 8pt; color: var(--coral-ink); font-weight: 600 }
+.howto .cols p { margin-bottom: 2.6mm }
+.boxes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-bottom: 12mm }
+.boxes div { background: var(--tint); border-radius: 3mm; padding: 4.2mm 4.4mm }
+.boxes b { display: block; font-size: 12pt; font-weight: 800; letter-spacing: -.02em }
+.boxes span { display: block; font-family: var(--mono); font-size: 7.2pt; color: var(--coral-ink); font-weight: 600; margin: .6mm 0 2mm }
+.boxes p { font-size: 9.2pt; line-height: 1.45 }
+.tips { display: grid; grid-template-columns: 1fr 1fr; gap: 4.4mm 10mm; margin-bottom: 12mm }
+.tips p { font-size: 9.6pt }
+.tips i { font-style: normal; font-weight: 700; color: var(--navy) }
+.next { border-top: .5pt solid var(--line); padding-top: 5mm }
+.next p { max-width: 160mm }
