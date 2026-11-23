@@ -38,7 +38,7 @@ const COVERAGE = [
   { words: '500 words', pct: '67%', w: 67, key: true },
   { words: '1,000 words', pct: '74%', w: 74 },
   { words: '1,500 words', pct: '80%', w: 80 },
-  { words: '2,000 words', pct: '~84%', w: 84, est: true },
+  { words: '2,000 words', pct: '~84%', w: 84, approx: true },
 ]
 
 const GUIDES = [
@@ -126,7 +126,7 @@ export default function Landing() {
             <div className="card cov-chart" role="img" aria-label="Share of everyday Spanish covered by number of words learned: 100 words 50%, 500 words 67%, 1,000 words 74%, 1,500 words 80%, 2,000 words about 84%.">
               <div className="bars">
                 {COVERAGE.map((c) => (
-                  <div key={c.words} className={`bar${c.key ? ' key' : ''}${c.est ? ' est' : ''}`}>
+                  <div key={c.words} className={`bar${c.key ? ' key' : ''}${c.approx ? ' approx' : ''}`}>
                     <span className="mono tab">{c.words}</span>
                     <div className="track"><div className="fill" style={{ width: `${c.w}%` }} /></div>
                     <span className="pct tab">{c.pct}</span>

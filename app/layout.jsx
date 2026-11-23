@@ -63,9 +63,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${fraunces.variable} ${cabinet.variable} ${jakarta.variable} ${jbmono.variable}`}>
       <head>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+        <link rel="icon" type="image/svg+xml" href="/icon.svg?v=3" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
         <meta name="theme-color" content="#E8EBFB" />
       </head>
       <body>
