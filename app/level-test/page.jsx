@@ -3,6 +3,10 @@ import LevelTestClient from '@/components/LevelTestClient'
 import { words } from '@/data/words'
 import { MILESTONES } from '@/lib/coverage'
 import '../clarity-leveltest.css'
+import '../clarity-coverage.css'
+import showsData from '@/data/shows.json'
+
+const SHOWS = showsData.shows.map(({ slug, title, type, country, coverage, easiness }) => ({ slug, title, type, country, coverage, easiness }))
 
 const pool = words.map(({ rank, word, meanings }) => [rank, word, Array.isArray(meanings) ? meanings[0] : meanings])
 
@@ -86,7 +90,7 @@ export default function LevelTest() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <LevelTestClient pool={pool} />
+      <LevelTestClient pool={pool} shows={SHOWS} />
       <div className="cl cl-home">
         <section className="sec ct-sec">
           <div className="wrap lt-method">

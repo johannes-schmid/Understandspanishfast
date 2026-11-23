@@ -83,8 +83,16 @@
   .cl .lt-shared b{font-size:22px}
   .cl .pg-head.solo + .lt{margin-top:24px}
   .cl .pg-head.solo .lead{font-size:16px}
+  .cl .lt{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){
   .cl .lt-word{animation:none}
   .cl .lt-track i{transition:none}
 }
+.cl .lt-watch{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2)}
+.cl .lt-watch a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 2px;border-bottom:1px solid var(--line-2);text-decoration:none;color:inherit;transition:background-color 160ms ease}
+@media (hover:hover) and (pointer:fine){.cl .lt-watch a:hover{background:var(--paper-2)}}
+.cl .lt-watch a>span:first-child b{display:block;font-size:16px;letter-spacing:-.015em}
+.cl .lt-watch a>span:first-child span{display:block;font-size:13px;color:var(--ink-3);margin-top:2px}
+.cl .lt-watch-v{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.cl .lt-watch-v b{font:700 16px/1 var(--sans)}

@@ -126,5 +126,597 @@
   "country": "Latin America",
   "years": "2012-",
   "accent": "Latin American Spanish (mixed)"
+ },
+ "aguila-roja": {
+  "title": "Águila Roja",
+  "english": "Red Eagle",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2009-2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "sin-identidad": {
+  "title": "Sin identidad",
+  "english": "Without Identity",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2014-2015",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "volver": {
+  "title": "Volver",
+  "english": "Volver",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2006",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "todo-sobre-mi-madre": {
+  "title": "Todo sobre mi madre",
+  "english": "All About My Mother",
+  "type": "Film",
+  "country": "Spain",
+  "years": "1999",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "mujeres-al-borde-de-un-ataque-de-nervios": {
+  "title": "Mujeres al borde de un ataque de nervios",
+  "english": "Women on the Verge of a Nervous Breakdown",
+  "type": "Film",
+  "country": "Spain",
+  "years": "1988",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "ocho-apellidos-vascos": {
+  "title": "Ocho apellidos vascos",
+  "english": "Spanish Affair",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2014",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "campeones": {
+  "title": "Campeones",
+  "english": "Champions",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2018",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-laberinto-del-fauno": {
+  "title": "El laberinto del fauno",
+  "english": "Pan's Labyrinth",
+  "type": "Film",
+  "country": "Spain / Mexico",
+  "years": "2006",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-orfanato": {
+  "title": "El orfanato",
+  "english": "The Orphanage",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2007",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "mar-adentro": {
+  "title": "Mar adentro",
+  "english": "The Sea Inside",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2004",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "celda-211": {
+  "title": "Celda 211",
+  "english": "Cell 211",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2009",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-hoyo": {
+  "title": "El hoyo",
+  "english": "The Platform",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2019",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "contratiempo": {
+  "title": "Contratiempo",
+  "english": "The Invisible Guest",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "dolor-y-gloria": {
+  "title": "Dolor y gloria",
+  "english": "Pain and Glory",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2019",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "la-piel-que-habito": {
+  "title": "La piel que habito",
+  "english": "The Skin I Live In",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2011",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "hable-con-ella": {
+  "title": "Hable con ella",
+  "english": "Talk to Her",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2002",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "rec": {
+  "title": "[REC]",
+  "english": "[REC]",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2007",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "tres-metros-sobre-el-cielo": {
+  "title": "Tres metros sobre el cielo",
+  "english": "Three Steps Above Heaven",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2010",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "padre-no-hay-mas-que-uno": {
+  "title": "Padre no hay más que uno",
+  "english": "Father There Is Only One",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2019",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "los-lunes-al-sol": {
+  "title": "Los lunes al sol",
+  "english": "Mondays in the Sun",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2002",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "la-isla-minima": {
+  "title": "La isla mínima",
+  "english": "Marshland",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2014",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "toc-toc": {
+  "title": "Toc Toc",
+  "english": "Toc Toc",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2017",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-bar": {
+  "title": "El bar",
+  "english": "The Bar",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2017",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "roma": {
+  "title": "Roma",
+  "english": "Roma",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2018",
+  "accent": "Mexican Spanish"
+ },
+ "relatos-salvajes": {
+  "title": "Relatos salvajes",
+  "english": "Wild Tales",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2014",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "el-secreto-de-sus-ojos": {
+  "title": "El secreto de sus ojos",
+  "english": "The Secret in Their Eyes",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2009",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "y-tu-mama-tambien": {
+  "title": "Y tu mamá también",
+  "english": "Y Tu Mamá También",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2001",
+  "accent": "Mexican Spanish"
+ },
+ "amores-perros": {
+  "title": "Amores perros",
+  "english": "Amores Perros",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2000",
+  "accent": "Mexican Spanish"
+ },
+ "diarios-de-motocicleta": {
+  "title": "Diarios de motocicleta",
+  "english": "The Motorcycle Diaries",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2004",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "nueve-reinas": {
+  "title": "Nueve reinas",
+  "english": "Nine Queens",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2000",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "el-crimen-del-padre-amaro": {
+  "title": "El crimen del padre Amaro",
+  "english": "The Crime of Father Amaro",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2002",
+  "accent": "Mexican Spanish"
+ },
+ "machuca": {
+  "title": "Machuca",
+  "english": "Machuca",
+  "type": "Film",
+  "country": "Chile",
+  "years": "2004",
+  "accent": "Chilean Spanish"
+ },
+ "una-mujer-fantastica": {
+  "title": "Una mujer fantástica",
+  "english": "A Fantastic Woman",
+  "type": "Film",
+  "country": "Chile",
+  "years": "2017",
+  "accent": "Chilean Spanish"
+ },
+ "el-ciudadano-ilustre": {
+  "title": "El ciudadano ilustre",
+  "english": "The Distinguished Citizen",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2016",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "ya-no-estoy-aqui": {
+  "title": "Ya no estoy aquí",
+  "english": "I'm No Longer Here",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2019",
+  "accent": "Mexican Spanish"
+ },
+ "el-abrazo-de-la-serpiente": {
+  "title": "El abrazo de la serpiente",
+  "english": "Embrace of the Serpent",
+  "type": "Film",
+  "country": "Colombia",
+  "years": "2015",
+  "accent": "Colombian Spanish"
+ },
+ "no-se-aceptan-devoluciones": {
+  "title": "No se aceptan devoluciones",
+  "english": "Instructions Not Included",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2013",
+  "accent": "Mexican Spanish"
+ },
+ "el-hijo-de-la-novia": {
+  "title": "El hijo de la novia",
+  "english": "Son of the Bride",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2001",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "un-cuento-chino": {
+  "title": "Un cuento chino",
+  "english": "Chinese Take-Away",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2011",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "carlos-rey-emperador": {
+  "title": "Carlos, rey emperador",
+  "english": "Charles, King and Emperor",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2015-2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "olmos-y-robles": {
+  "title": "Olmos y Robles",
+  "english": "Olmos and Robles",
+  "type": "TV series",
+  "country": "Spain",
+  "years": "2015-2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "ocho-apellidos-catalanes": {
+  "title": "Ocho apellidos catalanes",
+  "english": "Spanish Affair 2",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2015",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "los-amantes-pasajeros": {
+  "title": "Los amantes pasajeros",
+  "english": "I'm So Excited!",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2013",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "biutiful": {
+  "title": "Biutiful",
+  "english": "Biutiful",
+  "type": "Film",
+  "country": "Spain / Mexico",
+  "years": "2010",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "mientras-duermes": {
+  "title": "Mientras duermes",
+  "english": "Sleep Tight",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2011",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-cuerpo": {
+  "title": "El cuerpo",
+  "english": "The Body",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2012",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "julieta": {
+  "title": "Julieta",
+  "english": "Julieta",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "los-abrazos-rotos": {
+  "title": "Los abrazos rotos",
+  "english": "Broken Embraces",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2009",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "torrente": {
+  "title": "Torrente, el brazo tonto de la ley",
+  "english": "Torrente, the Dumb Arm of the Law",
+  "type": "Film",
+  "country": "Spain",
+  "years": "1998",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-dia-de-la-bestia": {
+  "title": "El día de la bestia",
+  "english": "The Day of the Beast",
+  "type": "Film",
+  "country": "Spain",
+  "years": "1995",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "tesis": {
+  "title": "Tesis",
+  "english": "Thesis",
+  "type": "Film",
+  "country": "Spain",
+  "years": "1996",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "la-comunidad": {
+  "title": "La comunidad",
+  "english": "Common Wealth",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2000",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "las-brujas-de-zugarramurdi": {
+  "title": "Las brujas de Zugarramurdi",
+  "english": "Witching and Bitching",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2013",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "kiki-el-amor-se-hace": {
+  "title": "Kiki, el amor se hace",
+  "english": "Kiki, Love to Love",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "que-dios-nos-perdone": {
+  "title": "Que Dios nos perdone",
+  "english": "May God Save Us",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "tarde-para-la-ira": {
+  "title": "Tarde para la ira",
+  "english": "The Fury of a Patient Man",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2016",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-reino": {
+  "title": "El reino",
+  "english": "The Realm",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2018",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "truman": {
+  "title": "Truman",
+  "english": "Truman",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2015",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "todos-lo-saben": {
+  "title": "Todos lo saben",
+  "english": "Everybody Knows",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2018",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "el-guardian-invisible": {
+  "title": "El guardián invisible",
+  "english": "The Invisible Guardian",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2017",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "palmeras-en-la-nieve": {
+  "title": "Palmeras en la nieve",
+  "english": "Palm Trees in the Snow",
+  "type": "Film",
+  "country": "Spain",
+  "years": "2015",
+  "accent": "Castilian Spanish (Spain)"
+ },
+ "sin-nombre": {
+  "title": "Sin nombre",
+  "english": "Sin Nombre",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2009",
+  "accent": "Mexican Spanish"
+ },
+ "rudo-y-cursi": {
+  "title": "Rudo y Cursi",
+  "english": "Rudo y Cursi",
+  "type": "Film",
+  "country": "Mexico",
+  "years": "2008",
+  "accent": "Mexican Spanish"
+ },
+ "el-clan": {
+  "title": "El clan",
+  "english": "The Clan",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2015",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "carancho": {
+  "title": "Carancho",
+  "english": "Carancho",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2010",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "elefante-blanco": {
+  "title": "Elefante blanco",
+  "english": "White Elephant",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2012",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "la-odisea-de-los-giles": {
+  "title": "La odisea de los giles",
+  "english": "Heroic Losers",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2019",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "medianeras": {
+  "title": "Medianeras",
+  "english": "Sidewalls",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2011",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "el-aura": {
+  "title": "El aura",
+  "english": "The Aura",
+  "type": "Film",
+  "country": "Argentina",
+  "years": "2005",
+  "accent": "Rioplatense Spanish (Argentina)"
+ },
+ "gloria": {
+  "title": "Gloria",
+  "english": "Gloria",
+  "type": "Film",
+  "country": "Chile",
+  "years": "2013",
+  "accent": "Chilean Spanish"
+ },
+ "pajaros-de-verano": {
+  "title": "Pájaros de verano",
+  "english": "Birds of Passage",
+  "type": "Film",
+  "country": "Colombia",
+  "years": "2018",
+  "accent": "Colombian Spanish"
+ },
+ "juan-de-los-muertos": {
+  "title": "Juan de los Muertos",
+  "english": "Juan of the Dead",
+  "type": "Film",
+  "country": "Cuba",
+  "years": "2011",
+  "accent": "Cuban Spanish"
+ },
+ "conducta": {
+  "title": "Conducta",
+  "english": "Behavior",
+  "type": "Film",
+  "country": "Cuba",
+  "years": "2014",
+  "accent": "Cuban Spanish"
+ },
+ "la-teta-asustada": {
+  "title": "La teta asustada",
+  "english": "The Milk of Sorrow",
+  "type": "Film",
+  "country": "Peru",
+  "years": "2009",
+  "accent": "Peruvian Spanish"
  }
 }

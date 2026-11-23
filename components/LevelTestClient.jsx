@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
 import { coveragePct, MILESTONES } from '@/lib/coverage'
+import { fit, picksFor } from '@/lib/watchFit'
 
 const BANDS = [
   { from: 1, to: 100 },
@@ -89,26 +90,36 @@ function recommendation(n, bands) {
       href: '/study', cta: 'Start for free', price: 'Free',
     }
   }
-  if (n < 1000) {
+  if (n < 500) {
     return {
-      key: 'workbook',
-      title: `Work through ranks ${fmt(from)} to 1,500 on paper`,
-      body: '30 units of 50 words in rank order, with exercises, review tests and an answer key. Skip the units you already know.',
-      href: '/workbook', cta: 'Get the workbook', price: '€5',
+      key: 'readers1',
+      title: 'Read and hear the first 500 words in real stories',
+      body: 'Ten short stories for adults built only from the top 500 words, each with an MP3 read by a native speaker. The bridge between word lists and real Spanish.',
+      href: '/spanish-short-stories-for-beginners', cta: 'See the 10 stories', price: '€9',
+    }
+  }
+  if (n < MAX - 50) {
+    return {
+      key: 'anki',
+      title: `Close the gap from ${fmt(from)} to 1,500`,
+      body: 'The full top 1,500 as a ready-made Anki deck with native audio and example sentences. Suspend the cards you know and drill the rest. At 1,500 words most shows below become watchable.',
+      href: '/anki-spanish-deck', cta: 'Get the Anki deck', price: '€9',
     }
   }
   return {
-    key: 'anki',
-    title: n >= MAX - 50 ? 'Keep all 1,500 words fresh' : `Close the gap from ${fmt(from)} to 1,500`,
-    body: 'The full top 1,500 as a ready-made Anki deck with native audio and example sentences. Suspend the cards you know and drill the rest.',
-    href: '/anki-spanish-deck', cta: 'Get the Anki deck', price: '€9',
+    key: 'readers2',
+    title: 'You know the 1,500. Now train your ear',
+    body: 'Ten longer stories built from the 1,500 words you know, each with an MP3. The step between vocabulary and following real episodes.',
+    href: '/spanish-short-stories-intermediate', cta: 'See the Level 2 stories', price: '€9',
   }
 }
 
 const OTHERS = [
   { key: 'study', label: 'Free flashcards', href: '/study' },
-  { key: 'workbook', label: 'Workbook PDF · €5', href: '/workbook' },
+  { key: 'readers1', label: 'Stories, Level 1 · €9', href: '/spanish-short-stories-for-beginners' },
   { key: 'anki', label: 'Anki deck · €9', href: '/anki-spanish-deck' },
+  { key: 'bundle', label: 'Workbook + Anki · €12', href: '/bundle' },
+  { key: 'readers2', label: 'Stories, Level 2 · €9', href: '/spanish-short-stories-intermediate' },
 ]
 
 function Arrow() {
@@ -137,7 +148,7 @@ function setUrl(n) {
   } catch {}
 }
 
-export default function LevelTestClient({ pool }) {
+export default function LevelTestClient({ pool, shows = [] }) {
   const [deck, setDeck] = useState(null)
   const [answers, setAnswers] = useState([])
   const [shared, setShared] = useState(null)
@@ -266,7 +277,7 @@ export default function LevelTestClient({ pool }) {
               </aside>
             </>
           ) : (
-            <Result result={result} share={share} copied={copied} restart={restart} />
+            <Result result={result} share={share} copied={copied} restart={restart} shows={shows} />
           )}
         </section>
       </div>
@@ -274,13 +285,14 @@ export default function LevelTestClient({ pool }) {
   )
 }
 
-function Result({ result, share, copied, restart }) {
+function Result({ result, share, copied, restart, shows }) {
   const { estimate, fakeYes, bands, missed } = result
   const pct = coveragePct(estimate)
   const { passed, next } = milestoneInfo(estimate)
   const rec = recommendation(estimate, bands)
   const weak = bands.find((b) => b.p < 0.85)
   const nextWords = (weak ? missed.filter((w) => w.rank >= weak.from) : missed).slice(0, 6)
+  const picks = shows.length ? picksFor(shows, Math.max(estimate, 100)) : []
 
   return (
     <>
@@ -334,6 +346,26 @@ function Result({ result, share, copied, restart }) {
                 </li>
               ))}
             </ul>
+          </>
+        )}
+
+        {picks.length > 0 && (
+          <>
+            <h2 className="lt-h">{picks.some((x) => fit(x, Math.max(estimate, 100)).key !== 'later') ? 'What you can watch at your level' : 'The easiest titles for you, once you reach 1,000 words'}</h2>
+            <ul className="lt-watch">
+              {picks.map((s) => {
+                const f = fit(s, Math.max(estimate, 100))
+                return (
+                  <li key={s.slug}>
+                    <Link href={`/spanish-shows/${s.slug}`}>
+                      <span><b>{s.title}</b><span>{s.type === 'Film' ? 'Film' : 'Series'} · {s.country} · easiness {s.easiness}/100</span></span>
+                      <span className="lt-watch-v"><b className="tab">{Math.round(f.value)}%</b><span className={`sx-tag sx-${f.key}`}>{f.label}</span></span>
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+            <p className="q-hint"><Link className="tlink" href="/spanish-shows-by-difficulty">See all {shows.length} titles for your level</Link>. Your result is saved there automatically.</p>
           </>
         )}
 

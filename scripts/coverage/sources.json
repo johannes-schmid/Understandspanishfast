@@ -1732,6 +1732,2168 @@
     "https://radioambulante.org/transcripcion/su-pequeno-y-propio-mar-transcripcion",
     "https://radioambulante.org/transcripcion/el-palabrero-parte-1-agente-secreto-transcripcion"
    ]
+  },
+  "aguila-roja": {
+   "imdb": "tt1381020",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt1384349",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1384349/4412735.xml",
+     "cs": 40682,
+     "us": 158425,
+     "off": 2256171223
+    },
+    {
+     "season": "2",
+     "episode": "1",
+     "imdb": "tt1580279",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1580279/4412633.xml",
+     "cs": 33069,
+     "us": 129144,
+     "off": 3843873511
+    },
+    {
+     "season": "3",
+     "episode": "1",
+     "imdb": "tt1731959",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1731959/4412685.xml",
+     "cs": 37733,
+     "us": 145737,
+     "off": 3813114141
+    },
+    {
+     "season": "4",
+     "episode": "1",
+     "imdb": "tt2089597",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2089597/4434664.xml",
+     "cs": 37853,
+     "us": 147444,
+     "off": 3960869470
+    },
+    {
+     "season": "5",
+     "episode": "1",
+     "imdb": "tt2901788",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2901788/5012741.xml",
+     "cs": 38352,
+     "us": 148221,
+     "off": 995139159
+    },
+    {
+     "season": "6",
+     "episode": "1",
+     "imdb": "tt3861164",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3861164/5829602.xml",
+     "cs": 30520,
+     "us": 112606,
+     "off": 5113066840
+    },
+    {
+     "season": "7",
+     "episode": "1",
+     "imdb": "tt3861166",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3861166/6306828.xml",
+     "cs": 32618,
+     "us": 136581,
+     "off": 345033185
+    },
+    {
+     "season": "8",
+     "episode": "1",
+     "imdb": "tt4423692",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4423692/6694026.xml",
+     "cs": 33863,
+     "us": 134129,
+     "off": 492690204
+    },
+    {
+     "season": "9",
+     "episode": "1",
+     "imdb": "tt5230282",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/5230282/6662972.xml",
+     "cs": 34413,
+     "us": 136341,
+     "off": 5685454951
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt1386918",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1386918/4412736.xml",
+     "cs": 35635,
+     "us": 139304,
+     "off": 2158113222
+    },
+    {
+     "season": "2",
+     "episode": "2",
+     "imdb": "tt1584681",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1584681/4412637.xml",
+     "cs": 29437,
+     "us": 111934,
+     "off": 3587481061
+    },
+    {
+     "season": "3",
+     "episode": "2",
+     "imdb": "tt1736244",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1736244/4412686.xml",
+     "cs": 37773,
+     "us": 143643,
+     "off": 3836169097
+    },
+    {
+     "season": "4",
+     "episode": "2",
+     "imdb": "tt2094743",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/2094743/4434666.xml",
+     "cs": 37186,
+     "us": 148056,
+     "off": 4073818300
+    },
+    {
+     "season": "5",
+     "episode": "2",
+     "imdb": "tt2917314",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2917314/5012752.xml",
+     "cs": 41147,
+     "us": 161543,
+     "off": 827295812
+    }
+   ]
+  },
+  "sin-identidad": {
+   "imdb": "tt3351126",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt3670996",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3670996/6186131.xml",
+     "cs": 35053,
+     "us": 141066,
+     "off": 5328634366
+    },
+    {
+     "season": "2",
+     "episode": "1",
+     "imdb": "tt3677460",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3677460/6186086.xml",
+     "cs": 31238,
+     "us": 116421,
+     "off": 472304230
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt3670998",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3670998/6186134.xml",
+     "cs": 47265,
+     "us": 189990,
+     "off": 5275316726
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt3671002",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3671002/6186135.xml",
+     "cs": 48172,
+     "us": 194375,
+     "off": 5404217831
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt3671004",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3671004/6186137.xml",
+     "cs": 43923,
+     "us": 178133,
+     "off": 5059893920
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt3671006",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3671006/6186138.xml",
+     "cs": 41673,
+     "us": 169216,
+     "off": 5267340874
+    },
+    {
+     "season": "1",
+     "episode": "6",
+     "imdb": "tt3677444",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3677444/6186139.xml",
+     "cs": 40901,
+     "us": 161607,
+     "off": 5409858130
+    },
+    {
+     "season": "1",
+     "episode": "7",
+     "imdb": "tt3677446",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3677446/6186140.xml",
+     "cs": 42320,
+     "us": 170093,
+     "off": 5122755038
+    },
+    {
+     "season": "1",
+     "episode": "8",
+     "imdb": "tt3677452",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3677452/6186141.xml",
+     "cs": 36917,
+     "us": 146950,
+     "off": 5100562342
+    },
+    {
+     "season": "1",
+     "episode": "9",
+     "imdb": "tt3677454",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3677454/6186142.xml",
+     "cs": 30289,
+     "us": 115475,
+     "off": 5417626985
+    }
+   ]
+  },
+  "volver": {
+   "imdb": "tt0441909",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0441909",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2006/441909/5868290.xml",
+     "cs": 60313,
+     "us": 234637,
+     "off": 2582271770
+    },
+    {
+     "imdb": "tt0441909",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2006/441909/1954446673.xml",
+     "cs": 60313,
+     "us": 234637,
+     "off": 3689885796
+    },
+    {
+     "imdb": "tt0441909",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2006/441909/3082566.xml",
+     "cs": 58178,
+     "us": 234410,
+     "off": 2582391970
+    }
+   ]
+  },
+  "todo-sobre-mi-madre": {
+   "imdb": "tt0185125",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0185125",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1999/185125/4921851.xml",
+     "cs": 53507,
+     "us": 205172,
+     "off": 6884591502
+    },
+    {
+     "imdb": "tt0185125",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1999/185125/1953464287.xml",
+     "cs": 53507,
+     "us": 205172,
+     "off": 2394385041
+    },
+    {
+     "imdb": "tt0185125",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1999/185125/3611999.xml",
+     "cs": 52684,
+     "us": 203628,
+     "off": 6884538716
+    }
+   ]
+  },
+  "mujeres-al-borde-de-un-ataque-de-nervios": {
+   "imdb": "tt0095675",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0095675",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1988/95675/5561839.xml",
+     "cs": 47863,
+     "us": 190296,
+     "off": 4975962981
+    },
+    {
+     "imdb": "tt0095675",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1988/95675/1954147349.xml",
+     "cs": 47863,
+     "us": 190296,
+     "off": 1498009099
+    },
+    {
+     "imdb": "tt0095675",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1988/95675/3160470.xml",
+     "cs": 47838,
+     "us": 190275,
+     "off": 4976058998
+    }
+   ]
+  },
+  "ocho-apellidos-vascos": {
+   "imdb": "tt2955316",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2955316",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/2955316/5762639.xml",
+     "cs": 60389,
+     "us": 230828,
+     "off": 5466382163
+    },
+    {
+     "imdb": "tt2955316",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2014/2955316/1954340779.xml",
+     "cs": 60389,
+     "us": 230828,
+     "off": 7250916119
+    },
+    {
+     "imdb": "tt2955316",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/2955316/5830012.xml",
+     "cs": 59461,
+     "us": 230708,
+     "off": 5466322599
+    }
+   ]
+  },
+  "campeones": {
+   "imdb": "tt6793580",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt6793580",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6793580/1956751494.xml",
+     "cs": 64821,
+     "us": 266398,
+     "off": 8601996006
+    }
+   ]
+  },
+  "el-laberinto-del-fauno": {
+   "imdb": "tt0457430",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0457430",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2006/457430/6773954.xml",
+     "cs": 31549,
+     "us": 129982,
+     "off": 2444625147
+    },
+    {
+     "imdb": "tt0457430",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2006/457430/1955354107.xml",
+     "cs": 31549,
+     "us": 129982,
+     "off": 3698137146
+    },
+    {
+     "imdb": "tt0457430",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2006/457430/6239260.xml",
+     "cs": 35397,
+     "us": 129550,
+     "off": 2444813299
+    }
+   ]
+  },
+  "el-orfanato": {
+   "imdb": "tt0464141",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0464141",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/464141/6336490.xml",
+     "cs": 40379,
+     "us": 164660,
+     "off": 3074729639
+    },
+    {
+     "imdb": "tt0464141",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/464141/1954917763.xml",
+     "cs": 40379,
+     "us": 164660,
+     "off": 3992335228
+    },
+    {
+     "imdb": "tt0464141",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/464141/3445265.xml",
+     "cs": 27401,
+     "us": 105924,
+     "off": 3074823822
+    }
+   ]
+  },
+  "mar-adentro": {
+   "imdb": "tt0369702",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0369702",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/369702/5265684.xml",
+     "cs": 53345,
+     "us": 204326,
+     "off": 4868280087
+    },
+    {
+     "imdb": "tt0369702",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2004/369702/1953806915.xml",
+     "cs": 53345,
+     "us": 204326,
+     "off": 3333429077
+    },
+    {
+     "imdb": "tt0369702",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/369702/6505165.xml",
+     "cs": 53390,
+     "us": 204300,
+     "off": 4867952318
+    }
+   ]
+  },
+  "celda-211": {
+   "imdb": "tt1242422",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1242422",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1242422/3868805.xml",
+     "cs": 52846,
+     "us": 201929,
+     "off": 2259309152
+    },
+    {
+     "imdb": "tt1242422",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/1242422/1952534390.xml",
+     "cs": 52846,
+     "us": 201929,
+     "off": 4942020737
+    },
+    {
+     "imdb": "tt1242422",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1242422/3672297.xml",
+     "cs": 50926,
+     "us": 201819,
+     "off": 2259207086
+    }
+   ]
+  },
+  "el-hoyo": {
+   "imdb": "tt8228288",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt8228288",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8228288/1957349960.xml",
+     "cs": 31364,
+     "us": 123754,
+     "off": 9149895627
+    },
+    {
+     "imdb": "tt8228288",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8228288/1956727764.xml",
+     "cs": 29325,
+     "us": 123724,
+     "off": 9149866196
+    },
+    {
+     "imdb": "tt8228288",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8228288/1956704588.xml",
+     "cs": 29509,
+     "us": 123539,
+     "off": 9149836581
+    }
+   ]
+  },
+  "contratiempo": {
+   "imdb": "tt4857264",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4857264",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4857264/1956200152.xml",
+     "cs": 44717,
+     "us": 180008,
+     "off": 7808742262
+    },
+    {
+     "imdb": "tt4857264",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4857264/1957516054.xml",
+     "cs": 45706,
+     "us": 180008,
+     "off": 7808787085
+    },
+    {
+     "imdb": "tt4857264",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4857264/1957786531.xml",
+     "cs": 45445,
+     "us": 172616,
+     "off": 7808696711
+    }
+   ]
+  },
+  "dolor-y-gloria": {
+   "imdb": "tt8291806",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt8291806",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8291806/1956433538.xml",
+     "cs": 54017,
+     "us": 220392,
+     "off": 9155636809
+    },
+    {
+     "imdb": "tt8291806",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8291806/1956402654.xml",
+     "cs": 54047,
+     "us": 220392,
+     "off": 9155745060
+    },
+    {
+     "imdb": "tt8291806",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/8291806/1956629861.xml",
+     "cs": 51184,
+     "us": 208675,
+     "off": 9155585519
+    }
+   ]
+  },
+  "la-piel-que-habito": {
+   "imdb": "tt1189073",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1189073",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1189073/5148967.xml",
+     "cs": 49517,
+     "us": 188252,
+     "off": 4192196194
+    },
+    {
+     "imdb": "tt1189073",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1189073/1953690768.xml",
+     "cs": 49517,
+     "us": 188252,
+     "off": 5714179390
+    },
+    {
+     "imdb": "tt1189073",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1189073/6105435.xml",
+     "cs": 36342,
+     "us": 150930,
+     "off": 4192128720
+    }
+   ]
+  },
+  "hable-con-ella": {
+   "imdb": "tt0287467",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0287467",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/287467/3630305.xml",
+     "cs": 44450,
+     "us": 172078,
+     "off": 1652444540
+    },
+    {
+     "imdb": "tt0287467",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2002/287467/1952269154.xml",
+     "cs": 44450,
+     "us": 172078,
+     "off": 2805405237
+    },
+    {
+     "imdb": "tt0287467",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/287467/4471318.xml",
+     "cs": 43211,
+     "us": 171951,
+     "off": 1652356861
+    }
+   ]
+  },
+  "rec": {
+   "imdb": "tt1038988",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1038988",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/1038988/1961344283.xml",
+     "cs": 33922,
+     "us": 139994,
+     "off": 3952077605
+    },
+    {
+     "imdb": "tt1038988",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2007/1038988/3739400.xml",
+     "cs": 33395,
+     "us": 135710,
+     "off": 3041750302
+    },
+    {
+     "imdb": "tt1038988",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2007/1038988/1952395174.xml",
+     "cs": 33395,
+     "us": 135710,
+     "off": 3952145122
+    }
+   ]
+  },
+  "tres-metros-sobre-el-cielo": {
+   "imdb": "tt1648216",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1648216",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1648216/4817845.xml",
+     "cs": 24797,
+     "us": 107314,
+     "off": 3608972651
+    },
+    {
+     "imdb": "tt1648216",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2010/1648216/1953360916.xml",
+     "cs": 24797,
+     "us": 107314,
+     "off": 5209637567
+    }
+   ]
+  },
+  "padre-no-hay-mas-que-uno": {
+   "imdb": "tt9427166",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt9427166",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/9427166/1956562480.xml",
+     "cs": 69125,
+     "us": 283957,
+     "off": 9279680615
+    }
+   ]
+  },
+  "los-lunes-al-sol": {
+   "imdb": "tt0319769",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0319769",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/319769/4997018.xml",
+     "cs": 44076,
+     "us": 173692,
+     "off": 1548923630
+    },
+    {
+     "imdb": "tt0319769",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/319769/3293363.xml",
+     "cs": 44172,
+     "us": 173692,
+     "off": 1548967808
+    },
+    {
+     "imdb": "tt0319769",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2002/319769/1953539247.xml",
+     "cs": 44076,
+     "us": 173692,
+     "off": 2882667294
+    }
+   ]
+  },
+  "la-isla-minima": {
+   "imdb": "tt3253930",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3253930",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3253930/6008327.xml",
+     "cs": 38213,
+     "us": 148791,
+     "off": 5475791354
+    },
+    {
+     "imdb": "tt3253930",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2014/3253930/1954587629.xml",
+     "cs": 38213,
+     "us": 148791,
+     "off": 7240131575
+    },
+    {
+     "imdb": "tt3253930",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3253930/6010251.xml",
+     "cs": 37438,
+     "us": 147102,
+     "off": 5475829670
+    }
+   ]
+  },
+  "toc-toc": {
+   "imdb": "tt6060156",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt6060156",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/6060156/1955839489.xml",
+     "cs": 65411,
+     "us": 258498,
+     "off": 8222679782
+    }
+   ]
+  },
+  "el-bar": {
+   "imdb": "tt5121816",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt5121816",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/5121816/1956200176.xml",
+     "cs": 60026,
+     "us": 253054,
+     "off": 8156197424
+    }
+   ]
+  },
+  "roma": {
+   "imdb": "tt6155172",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt6155172",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6155172/1956150375.xml",
+     "cs": 58300,
+     "us": 237368,
+     "off": 8544015960
+    },
+    {
+     "imdb": "tt6155172",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6155172/1956150312.xml",
+     "cs": 37931,
+     "us": 150171,
+     "off": 8543939882
+    },
+    {
+     "imdb": "tt6155172",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6155172/1956655643.xml",
+     "cs": 37935,
+     "us": 150171,
+     "off": 8543977919
+    }
+   ]
+  },
+  "relatos-salvajes": {
+   "imdb": "tt3011894",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3011894",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3011894/6363327.xml",
+     "cs": 51765,
+     "us": 225797,
+     "off": 5431466638
+    },
+    {
+     "imdb": "tt3011894",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2014/3011894/1954944625.xml",
+     "cs": 51765,
+     "us": 225797,
+     "off": 7201667096
+    },
+    {
+     "imdb": "tt3011894",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2014/3011894/6056300.xml",
+     "cs": 47728,
+     "us": 189207,
+     "off": 5431566121
+    }
+   ]
+  },
+  "el-secreto-de-sus-ojos": {
+   "imdb": "tt1305806",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1305806",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1305806/3640458.xml",
+     "cs": 61939,
+     "us": 237476,
+     "off": 2336021705
+    },
+    {
+     "imdb": "tt1305806",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/1305806/1952280638.xml",
+     "cs": 61939,
+     "us": 237476,
+     "off": 4665641004
+    },
+    {
+     "imdb": "tt1305806",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1305806/3629850.xml",
+     "cs": 61356,
+     "us": 232903,
+     "off": 2336140436
+    }
+   ]
+  },
+  "y-tu-mama-tambien": {
+   "imdb": "tt0245574",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0245574",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2001/245574/1956393821.xml",
+     "cs": 56710,
+     "us": 212345,
+     "off": 2602409160
+    },
+    {
+     "imdb": "tt0245574",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2001/245574/3085540.xml",
+     "cs": 54817,
+     "us": 212130,
+     "off": 2683601758
+    },
+    {
+     "imdb": "tt0245574",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2001/245574/1951613585.xml",
+     "cs": 54817,
+     "us": 212130,
+     "off": 2602562029
+    }
+   ]
+  },
+  "amores-perros": {
+   "imdb": "tt0245712",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0245712",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2000/245712/6568044.xml",
+     "cs": 40445,
+     "us": 187132,
+     "off": 1825879806
+    },
+    {
+     "imdb": "tt0245712",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2000/245712/1955148421.xml",
+     "cs": 40445,
+     "us": 187132,
+     "off": 2464791000
+    },
+    {
+     "imdb": "tt0245712",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2000/245712/94013.xml",
+     "cs": 40073,
+     "us": 177867,
+     "off": 1825839633
+    }
+   ]
+  },
+  "diarios-de-motocicleta": {
+   "imdb": "tt0318462",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0318462",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/318462/3560614.xml",
+     "cs": 54454,
+     "us": 212928,
+     "off": 4822506579
+    },
+    {
+     "imdb": "tt0318462",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/318462/5465926.xml",
+     "cs": 54406,
+     "us": 212928,
+     "off": 4822561135
+    },
+    {
+     "imdb": "tt0318462",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2004/318462/1952187664.xml",
+     "cs": 54454,
+     "us": 212928,
+     "off": 3193100396
+    }
+   ]
+  },
+  "nueve-reinas": {
+   "imdb": "tt0247586",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0247586",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2000/247586/3879893.xml",
+     "cs": 61993,
+     "us": 268347,
+     "off": 1819609797
+    },
+    {
+     "imdb": "tt0247586",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2000/247586/1952546088.xml",
+     "cs": 61993,
+     "us": 268347,
+     "off": 2465362458
+    },
+    {
+     "imdb": "tt0247586",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2000/247586/3095699.xml",
+     "cs": 50979,
+     "us": 212454,
+     "off": 1819558716
+    }
+   ]
+  },
+  "el-crimen-del-padre-amaro": {
+   "imdb": "tt0313196",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0313196",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/313196/3558724.xml",
+     "cs": 44145,
+     "us": 171821,
+     "off": 1511393706
+    },
+    {
+     "imdb": "tt0313196",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2002/313196/1952185267.xml",
+     "cs": 44145,
+     "us": 171821,
+     "off": 2857003640
+    },
+    {
+     "imdb": "tt0313196",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2002/313196/54895.xml",
+     "cs": 44214,
+     "us": 171819,
+     "off": 1511437953
+    }
+   ]
+  },
+  "machuca": {
+   "imdb": "tt0378284",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0378284",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2004/378284/5064096.xml",
+     "cs": 40255,
+     "us": 161014,
+     "off": 4809138192
+    },
+    {
+     "imdb": "tt0378284",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2004/378284/1953606112.xml",
+     "cs": 40255,
+     "us": 161014,
+     "off": 3292150753
+    }
+   ]
+  },
+  "una-mujer-fantastica": {
+   "imdb": "tt5639354",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt5639354",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/5639354/1960766724.xml",
+     "cs": 31524,
+     "us": 129697,
+     "off": 8178523221
+    }
+   ]
+  },
+  "el-ciudadano-ilustre": {
+   "imdb": "tt4562518",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4562518",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4562518/1956758918.xml",
+     "cs": 52190,
+     "us": 205140,
+     "off": 7793252307
+    }
+   ]
+  },
+  "ya-no-estoy-aqui": {
+   "imdb": "tt4323594",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4323594",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/4323594/1956835898.xml",
+     "cs": 46989,
+     "us": 183069,
+     "off": 9061147182
+    }
+   ]
+  },
+  "el-abrazo-de-la-serpiente": {
+   "imdb": "tt4285496",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4285496",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4285496/6665394.xml",
+     "cs": 25956,
+     "us": 103742,
+     "off": 494086077
+    },
+    {
+     "imdb": "tt4285496",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4285496/6609440.xml",
+     "cs": 25949,
+     "us": 103742,
+     "off": 494134491
+    },
+    {
+     "imdb": "tt4285496",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/4285496/1955245516.xml",
+     "cs": 25956,
+     "us": 103742,
+     "off": 7593914163
+    }
+   ]
+  },
+  "no-se-aceptan-devoluciones": {
+   "imdb": "tt2378281",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2378281",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2378281/1956748128.xml",
+     "cs": 56779,
+     "us": 223413,
+     "off": 6333443786
+    },
+    {
+     "imdb": "tt2378281",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2378281/5862616.xml",
+     "cs": 56942,
+     "us": 223280,
+     "off": 1075959910
+    },
+    {
+     "imdb": "tt2378281",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2378281/1954440983.xml",
+     "cs": 56942,
+     "us": 223280,
+     "off": 6333500671
+    }
+   ]
+  },
+  "el-hijo-de-la-novia": {
+   "imdb": "tt0292542",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0292542",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2001/292542/144224.xml",
+     "cs": 65187,
+     "us": 264540,
+     "off": 2826415501
+    },
+    {
+     "imdb": "tt0292542",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2001/292542/197295.xml",
+     "cs": 65187,
+     "us": 264540,
+     "off": 2736439234
+    },
+    {
+     "imdb": "tt0292542",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2001/292542/62489.xml",
+     "cs": 63975,
+     "us": 234340,
+     "off": 2826226101
+    }
+   ]
+  },
+  "un-cuento-chino": {
+   "imdb": "tt1705786",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1705786",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1705786/5064017.xml",
+     "cs": 29901,
+     "us": 116773,
+     "off": 4042155325
+    },
+    {
+     "imdb": "tt1705786",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1705786/1953606035.xml",
+     "cs": 29901,
+     "us": 116773,
+     "off": 5454894530
+    },
+    {
+     "imdb": "tt1705786",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1705786/4196937.xml",
+     "cs": 29864,
+     "us": 116541,
+     "off": 4042185329
+    }
+   ]
+  },
+  "carlos-rey-emperador": {
+   "imdb": "tt4418020",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt4438206",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4438206/6299328.xml",
+     "cs": 31005,
+     "us": 119681,
+     "off": 507864927
+    },
+    {
+     "season": "1",
+     "episode": "2",
+     "imdb": "tt4444988",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4444988/6306713.xml",
+     "cs": 35040,
+     "us": 135643,
+     "off": 451635712
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt4444994",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4444994/6313352.xml",
+     "cs": 34397,
+     "us": 134049,
+     "off": 466759715
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt4444996",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4444996/6320824.xml",
+     "cs": 32676,
+     "us": 126689,
+     "off": 483057602
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt4445006",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4445006/6329325.xml",
+     "cs": 33095,
+     "us": 126368,
+     "off": 581004054
+    }
+   ]
+  },
+  "olmos-y-robles": {
+   "imdb": "tt4851888",
+   "files": [
+    {
+     "season": "1",
+     "episode": "1",
+     "imdb": "tt4909556",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4909556/6299311.xml",
+     "cs": 47120,
+     "us": 198073,
+     "off": 540504985
+    },
+    {
+     "season": "1",
+     "episode": "3",
+     "imdb": "tt5032782",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/5032782/6314310.xml",
+     "cs": 39621,
+     "us": 172320,
+     "off": 644572469
+    },
+    {
+     "season": "1",
+     "episode": "4",
+     "imdb": "tt5048238",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/5048238/6322041.xml",
+     "cs": 42744,
+     "us": 180736,
+     "off": 528147360
+    },
+    {
+     "season": "1",
+     "episode": "5",
+     "imdb": "tt5048244",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/5048244/6330483.xml",
+     "cs": 46323,
+     "us": 193694,
+     "off": 566863069
+    }
+   ]
+  },
+  "ocho-apellidos-catalanes": {
+   "imdb": "tt3626742",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3626742",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3626742/6987941.xml",
+     "cs": 64538,
+     "us": 236517,
+     "off": 506642496
+    },
+    {
+     "imdb": "tt3626742",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/3626742/1955568262.xml",
+     "cs": 64538,
+     "us": 236517,
+     "off": 7628243534
+    }
+   ]
+  },
+  "los-amantes-pasajeros": {
+   "imdb": "tt2243389",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2243389",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2243389/5454476.xml",
+     "cs": 55875,
+     "us": 210011,
+     "off": 1074386371
+    },
+    {
+     "imdb": "tt2243389",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2243389/1954052665.xml",
+     "cs": 55875,
+     "us": 210011,
+     "off": 6321707009
+    },
+    {
+     "imdb": "tt2243389",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2243389/5124002.xml",
+     "cs": 56080,
+     "us": 209760,
+     "off": 1074330188
+    }
+   ]
+  },
+  "biutiful": {
+   "imdb": "tt1164999",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1164999",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1164999/4416214.xml",
+     "cs": 41444,
+     "us": 166671,
+     "off": 3755722379
+    },
+    {
+     "imdb": "tt1164999",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2010/1164999/1952972952.xml",
+     "cs": 41444,
+     "us": 166671,
+     "off": 5022430828
+    },
+    {
+     "imdb": "tt1164999",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1164999/4217550.xml",
+     "cs": 43740,
+     "us": 166495,
+     "off": 3755536847
+    }
+   ]
+  },
+  "mientras-duermes": {
+   "imdb": "tt1437358",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1437358",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1437358/1957226223.xml",
+     "cs": 35531,
+     "us": 144681,
+     "off": 5430424697
+    },
+    {
+     "imdb": "tt1437358",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1437358/1955964357.xml",
+     "cs": 32361,
+     "us": 138550,
+     "off": 5430392230
+    }
+   ]
+  },
+  "el-cuerpo": {
+   "imdb": "tt1937149",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1937149",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/1937149/5653712.xml",
+     "cs": 53426,
+     "us": 213306,
+     "off": 6427360970
+    },
+    {
+     "imdb": "tt1937149",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2012/1937149/1954239278.xml",
+     "cs": 53426,
+     "us": 213306,
+     "off": 5873603226
+    },
+    {
+     "imdb": "tt1937149",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/1937149/5076334.xml",
+     "cs": 53359,
+     "us": 213153,
+     "off": 6427414499
+    }
+   ]
+  },
+  "julieta": {
+   "imdb": "tt4326444",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4326444",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4326444/1957157158.xml",
+     "cs": 41536,
+     "us": 156520,
+     "off": 7783413374
+    },
+    {
+     "imdb": "tt4326444",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2016/4326444/6815656.xml",
+     "cs": 41579,
+     "us": 156412,
+     "off": 5658711445
+    },
+    {
+     "imdb": "tt4326444",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4326444/1955395885.xml",
+     "cs": 41579,
+     "us": 156412,
+     "off": 7783455016
+    }
+   ]
+  },
+  "los-abrazos-rotos": {
+   "imdb": "tt0913425",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0913425",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/913425/3553017.xml",
+     "cs": 59264,
+     "us": 227120,
+     "off": 2244072506
+    },
+    {
+     "imdb": "tt0913425",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/913425/1952178243.xml",
+     "cs": 59264,
+     "us": 227120,
+     "off": 4723086544
+    },
+    {
+     "imdb": "tt0913425",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/913425/1956945181.xml",
+     "cs": 61066,
+     "us": 226511,
+     "off": 4722943041
+    }
+   ]
+  },
+  "torrente": {
+   "imdb": "tt0120868",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0120868",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1998/120868/6215844.xml",
+     "cs": 47186,
+     "us": 192518,
+     "off": 6102093551
+    },
+    {
+     "imdb": "tt0120868",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1998/120868/1954796461.xml",
+     "cs": 47186,
+     "us": 192518,
+     "off": 2214846179
+    },
+    {
+     "imdb": "tt0120868",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1998/120868/3606865.xml",
+     "cs": 47291,
+     "us": 192508,
+     "off": 6102140839
+    }
+   ]
+  },
+  "el-dia-de-la-bestia": {
+   "imdb": "tt0112922",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0112922",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1995/112922/1957870236.xml",
+     "cs": 41454,
+     "us": 159652,
+     "off": 1928651173
+    },
+    {
+     "imdb": "tt0112922",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1995/112922/5116917.xml",
+     "cs": 40294,
+     "us": 158938,
+     "off": 279076424
+    },
+    {
+     "imdb": "tt0112922",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1995/112922/1953658848.xml",
+     "cs": 40294,
+     "us": 158938,
+     "off": 1928732847
+    }
+   ]
+  },
+  "tesis": {
+   "imdb": "tt0117883",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0117883",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1996/117883/3161016.xml",
+     "cs": 46104,
+     "us": 196959,
+     "off": 3306386419
+    },
+    {
+     "imdb": "tt0117883",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/1996/117883/1951711496.xml",
+     "cs": 46104,
+     "us": 196959,
+     "off": 2036163513
+    },
+    {
+     "imdb": "tt0117883",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/1996/117883/161722.xml",
+     "cs": 49069,
+     "us": 195892,
+     "off": 3306292604
+    }
+   ]
+  },
+  "la-comunidad": {
+   "imdb": "tt0255067",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0255067",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2000/255067/1955896956.xml",
+     "cs": 50673,
+     "us": 216322,
+     "off": 2466707290
+    },
+    {
+     "imdb": "tt0255067",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2000/255067/1956021468.xml",
+     "cs": 53882,
+     "us": 216055,
+     "off": 2466758068
+    },
+    {
+     "imdb": "tt0255067",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2000/255067/6322559.xml",
+     "cs": 26475,
+     "us": 100745,
+     "off": 1855599402
+    }
+   ]
+  },
+  "las-brujas-de-zugarramurdi": {
+   "imdb": "tt2404738",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2404738",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2404738/5480024.xml",
+     "cs": 18687,
+     "us": 71865,
+     "off": 984639166
+    }
+   ]
+  },
+  "kiki-el-amor-se-hace": {
+   "imdb": "tt4922692",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4922692",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4922692/1956082248.xml",
+     "cs": 48025,
+     "us": 196986,
+     "off": 7813484782
+    },
+    {
+     "imdb": "tt4922692",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4922692/1955984196.xml",
+     "cs": 48024,
+     "us": 196986,
+     "off": 7813532913
+    },
+    {
+     "imdb": "tt4922692",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4922692/1958399191.xml",
+     "cs": 49518,
+     "us": 193538,
+     "off": 7813435158
+    }
+   ]
+  },
+  "que-dios-nos-perdone": {
+   "imdb": "tt4944596",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4944596",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4944596/1955987875.xml",
+     "cs": 58382,
+     "us": 227617,
+     "off": 7814571866
+    }
+   ]
+  },
+  "tarde-para-la-ira": {
+   "imdb": "tt4771896",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4771896",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2016/4771896/1955987572.xml",
+     "cs": 34785,
+     "us": 147436,
+     "off": 7803271445
+    }
+   ]
+  },
+  "el-reino": {
+   "imdb": "tt7095482",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt7095482",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/7095482/1956810306.xml",
+     "cs": 65724,
+     "us": 262222,
+     "off": 8634885831
+    }
+   ]
+  },
+  "truman": {
+   "imdb": "tt3754940",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3754940",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3754940/6516419.xml",
+     "cs": 48876,
+     "us": 202363,
+     "off": 445783930
+    },
+    {
+     "imdb": "tt3754940",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/3754940/1955097666.xml",
+     "cs": 48876,
+     "us": 202363,
+     "off": 7548969979
+    },
+    {
+     "imdb": "tt3754940",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3754940/7001143.xml",
+     "cs": 47851,
+     "us": 198308,
+     "off": 445832909
+    }
+   ]
+  },
+  "todos-lo-saben": {
+   "imdb": "tt4964788",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4964788",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/4964788/1956232071.xml",
+     "cs": 43289,
+     "us": 176503,
+     "off": 8517402512
+    },
+    {
+     "imdb": "tt4964788",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/4964788/1956220136.xml",
+     "cs": 43287,
+     "us": 176338,
+     "off": 8517359119
+    }
+   ]
+  },
+  "el-guardian-invisible": {
+   "imdb": "tt4924942",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4924942",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2017/4924942/1955819829.xml",
+     "cs": 54461,
+     "us": 212032,
+     "off": 8151393767
+    }
+   ]
+  },
+  "palmeras-en-la-nieve": {
+   "imdb": "tt3202202",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3202202",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/3202202/6590282.xml",
+     "cs": 59059,
+     "us": 229252,
+     "off": 513446454
+    },
+    {
+     "imdb": "tt3202202",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/3202202/1955170814.xml",
+     "cs": 59059,
+     "us": 229252,
+     "off": 7618238324
+    }
+   ]
+  },
+  "sin-nombre": {
+   "imdb": "tt1127715",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1127715",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/1127715/1961153169.xml",
+     "cs": 18958,
+     "us": 71910,
+     "off": 4636066408
+    }
+   ]
+  },
+  "rudo-y-cursi": {
+   "imdb": "tt0405393",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0405393",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2008/405393/3523038.xml",
+     "cs": 74680,
+     "us": 297352,
+     "off": 4543115613
+    },
+    {
+     "imdb": "tt0405393",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2008/405393/1952142978.xml",
+     "cs": 74680,
+     "us": 297352,
+     "off": 4445240095
+    }
+   ]
+  },
+  "el-clan": {
+   "imdb": "tt4411504",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt4411504",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2015/4411504/6729360.xml",
+     "cs": 50029,
+     "us": 196469,
+     "off": 575283770
+    },
+    {
+     "imdb": "tt4411504",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/4411504/1955309354.xml",
+     "cs": 50029,
+     "us": 196469,
+     "off": 7370963602
+    },
+    {
+     "imdb": "tt4411504",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2015/4411504/1958567164.xml",
+     "cs": 50408,
+     "us": 195262,
+     "off": 7370913088
+    }
+   ]
+  },
+  "carancho": {
+   "imdb": "tt1542852",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1542852",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1542852/3875499.xml",
+     "cs": 58854,
+     "us": 241474,
+     "off": 3619756497
+    },
+    {
+     "imdb": "tt1542852",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2010/1542852/1952541535.xml",
+     "cs": 58854,
+     "us": 241474,
+     "off": 5058857190
+    },
+    {
+     "imdb": "tt1542852",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2010/1542852/5793227.xml",
+     "cs": 58750,
+     "us": 241026,
+     "off": 3619697644
+    }
+   ]
+  },
+  "elefante-blanco": {
+   "imdb": "tt2132324",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2132324",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2132324/5127603.xml",
+     "cs": 45298,
+     "us": 181904,
+     "off": 6490991719
+    },
+    {
+     "imdb": "tt2132324",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2012/2132324/1953669484.xml",
+     "cs": 45298,
+     "us": 181904,
+     "off": 5893293363
+    },
+    {
+     "imdb": "tt2132324",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2012/2132324/4725823.xml",
+     "cs": 45450,
+     "us": 181603,
+     "off": 6491037120
+    }
+   ]
+  },
+  "la-odisea-de-los-giles": {
+   "imdb": "tt10384744",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt10384744",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/10384744/1956783197.xml",
+     "cs": 55005,
+     "us": 230077,
+     "off": 8970415765
+    },
+    {
+     "imdb": "tt10384744",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2019/10384744/1956783198.xml",
+     "cs": 50891,
+     "us": 211602,
+     "off": 8970470877
+    }
+   ]
+  },
+  "medianeras": {
+   "imdb": "tt1235841",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1235841",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1235841/5807332.xml",
+     "cs": 42108,
+     "us": 159932,
+     "off": 4210003291
+    },
+    {
+     "imdb": "tt1235841",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1235841/1954385611.xml",
+     "cs": 42108,
+     "us": 159932,
+     "off": 5424164414
+    },
+    {
+     "imdb": "tt1235841",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2011/1235841/6861876.xml",
+     "cs": 25670,
+     "us": 89323,
+     "off": 4209977518
+    }
+   ]
+  },
+  "el-aura": {
+   "imdb": "tt0420509",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt0420509",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2005/420509/3797921.xml",
+     "cs": 30712,
+     "us": 118814,
+     "off": 1378855734
+    },
+    {
+     "imdb": "tt0420509",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2005/420509/1952458846.xml",
+     "cs": 30712,
+     "us": 118814,
+     "off": 3578346228
+    },
+    {
+     "imdb": "tt0420509",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2005/420509/233843.xml",
+     "cs": 29946,
+     "us": 118476,
+     "off": 1378886548
+    }
+   ]
+  },
+  "gloria": {
+   "imdb": "tt2425486",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt2425486",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2013/2425486/5745543.xml",
+     "cs": 36750,
+     "us": 148988,
+     "off": 1106641000
+    },
+    {
+     "imdb": "tt2425486",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2425486/1954323594.xml",
+     "cs": 36750,
+     "us": 148988,
+     "off": 6339157679
+    },
+    {
+     "imdb": "tt2425486",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2013/2425486/1957807899.xml",
+     "cs": 29085,
+     "us": 120269,
+     "off": 6339128488
+    }
+   ]
+  },
+  "pajaros-de-verano": {
+   "imdb": "tt6386748",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt6386748",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6386748/1956348213.xml",
+     "cs": 17225,
+     "us": 69452,
+     "off": 8555534970
+    },
+    {
+     "imdb": "tt6386748",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6386748/1956334312.xml",
+     "cs": 18309,
+     "us": 69261,
+     "off": 8555516555
+    },
+    {
+     "imdb": "tt6386748",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2018/6386748/1956391163.xml",
+     "cs": 18273,
+     "us": 69204,
+     "off": 8555552301
+    }
+   ]
+  },
+  "juan-de-los-muertos": {
+   "imdb": "tt1838571",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1838571",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1838571/1957830638.xml",
+     "cs": 33859,
+     "us": 138302,
+     "off": 5474525162
+    },
+    {
+     "imdb": "tt1838571",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1838571/1961367667.xml",
+     "cs": 35425,
+     "us": 134475,
+     "off": 5474456322
+    },
+    {
+     "imdb": "tt1838571",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2011/1838571/1955666465.xml",
+     "cs": 33203,
+     "us": 134470,
+     "off": 5474491853
+    }
+   ]
+  },
+  "conducta": {
+   "imdb": "tt3595966",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt3595966",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2014/3595966/1956009630.xml",
+     "cs": 42534,
+     "us": 161563,
+     "off": 6837773553
+    }
+   ]
+  },
+  "la-teta-asustada": {
+   "imdb": "tt1206488",
+   "film": true,
+   "files": [
+    {
+     "imdb": "tt1206488",
+     "v": "v2018",
+     "path": "OpenSubtitles/raw/es/2009/1206488/4986107.xml",
+     "cs": 25819,
+     "us": 100863,
+     "off": 2272712709
+    },
+    {
+     "imdb": "tt1206488",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/1206488/1953528329.xml",
+     "cs": 25819,
+     "us": 100863,
+     "off": 4647279297
+    },
+    {
+     "imdb": "tt1206488",
+     "v": "v2024",
+     "path": "OpenSubtitles/raw/es/2009/1206488/1958177531.xml",
+     "cs": 26811,
+     "us": 100595,
+     "off": 4647237660
+    }
+   ]
   }
  }
 }

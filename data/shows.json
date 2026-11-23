@@ -2,499 +2,928 @@
  "updated": "2026-11-23",
  "shows": [
   {
-   "slug": "las-chicas-del-cable",
-   "title": "Las chicas del cable",
-   "english": "Cable Girls",
-   "type": "TV series",
+   "slug": "julieta",
+   "title": "Julieta",
+   "english": "Julieta",
+   "type": "Film",
    "country": "Spain",
-   "years": "2017-2020",
+   "years": "2016",
    "accent": "Castilian Spanish (Spain)",
    "sample": {
-    "units": 8,
-    "unitLabel": "episodes",
-    "words": 43049,
-    "uniqueForms": 4932
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6782,
+    "uniqueForms": 1622
    },
+   "wpm": 179,
+   "rarePer1000": 61.1,
    "coverage": {
-    "100": 72.6,
-    "500": 86.9,
-    "1000": 91,
-    "1500": 92.7
+    "100": 71.4,
+    "500": 86.3,
+    "1000": 90.4,
+    "1500": 92.6
    },
    "listOnly": {
-    "100": 40.5,
+    "100": 39.9,
     "500": 54.8,
-    "1000": 58.9,
-    "1500": 60.6
+    "1000": 58.8,
+    "1500": 61.1
    },
-   "functionShare": 32.1,
+   "functionShare": 31.5,
    "nextWords": [
     {
-     "w": "encargar",
-     "rank": 1282,
-     "meaning": "to order",
-     "n": 21
+     "w": "pescar",
+     "rank": 1498,
+     "meaning": "to fish",
+     "n": 10
     },
     {
-     "w": "engañar",
-     "rank": 1497,
-     "meaning": "to deceive",
-     "n": 20
-    },
-    {
-     "w": "despedir",
-     "rank": 1156,
-     "meaning": "to fire",
-     "n": 20
-    },
-    {
-     "w": "teléfono",
-     "rank": 1206,
-     "meaning": "phone",
-     "n": 16
+     "w": "campamento",
+     "rank": 1180,
+     "meaning": "camp",
+     "n": 6
     },
     {
      "w": "formar",
      "rank": 1278,
      "meaning": "to form",
-     "n": 15
+     "n": 4
     },
     {
-     "w": "marchar",
-     "rank": 1025,
-     "meaning": "to leave",
-     "n": 14
+     "w": "ofrecer",
+     "rank": 1048,
+     "meaning": "to offer",
+     "n": 4
+    },
+    {
+     "w": "reconocer",
+     "rank": 1014,
+     "meaning": "to recognize",
+     "n": 4
+    },
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 4
+    },
+    {
+     "w": "maravilla",
+     "rank": 1385,
+     "meaning": "wonder",
+     "n": 3
     },
     {
      "w": "maleta",
      "rank": 1085,
      "meaning": "suitcase",
-     "n": 13
-    },
-    {
-     "w": "empleado",
-     "rank": 1202,
-     "meaning": "employee",
-     "n": 13
-    },
-    {
-     "w": "amante",
-     "rank": 1130,
-     "meaning": "lover",
-     "n": 12
-    },
-    {
-     "w": "recuperar",
-     "rank": 1146,
-     "meaning": "to recover",
-     "n": 12
-    },
-    {
-     "w": "celebrar",
-     "rank": 1449,
-     "meaning": "to celebrate",
-     "n": 11
+     "n": 3
     },
     {
      "w": "recoger",
      "rank": 1181,
      "meaning": "to pick up",
-     "n": 11
-    }
-   ],
-   "beyondList": [
-    {
-     "w": "favor",
-     "n": 92
+     "n": 3
     },
     {
-     "w": "gracias",
-     "n": 83
-    },
-    {
-     "w": "momento",
-     "n": 51
-    },
-    {
-     "w": "telefonista",
-     "n": 31
-    },
-    {
-     "w": "operadora",
-     "n": 26
-    },
-    {
-     "w": "problema",
-     "n": 26
-    },
-    {
-     "w": "persona",
-     "n": 25
-    },
-    {
-     "w": "hola",
-     "n": 25
-    },
-    {
-     "w": "final",
-     "n": 20
-    },
-    {
-     "w": "telefonistas",
-     "n": 19
-    },
-    {
-     "w": "abonados",
-     "n": 18
-    },
-    {
-     "w": "pensión",
-     "n": 15
-    },
-    {
-     "w": "majestad",
-     "n": 15
-    },
-    {
-     "w": "despacho",
-     "n": 15
-    },
-    {
-     "w": "decisión",
-     "n": 14
-    }
-   ],
-   "difficultyRank": 1
-  },
-  {
-   "slug": "velvet",
-   "title": "Velvet",
-   "english": "Velvet",
-   "type": "TV series",
-   "country": "Spain",
-   "years": "2014-2016",
-   "accent": "Castilian Spanish (Spain)",
-   "sample": {
-    "units": 8,
-    "unitLabel": "episodes",
-    "words": 59116,
-    "uniqueForms": 5335
-   },
-   "coverage": {
-    "100": 72.6,
-    "500": 86.3,
-    "1000": 90.6,
-    "1500": 92.3
-   },
-   "listOnly": {
-    "100": 40.3,
-    "500": 54.1,
-    "1000": 58.3,
-    "1500": 60.1
-   },
-   "functionShare": 32.2,
-   "nextWords": [
-    {
-     "w": "encargar",
-     "rank": 1282,
-     "meaning": "to order",
-     "n": 27
-    },
-    {
-     "w": "moda",
-     "rank": 1403,
-     "meaning": "fashion",
-     "n": 22
-    },
-    {
-     "w": "cumplir",
-     "rank": 1044,
-     "meaning": "to fulfill",
-     "n": 22
-    },
-    {
-     "w": "disfrutar",
-     "rank": 1204,
-     "meaning": "to enjoy",
-     "n": 22
-    },
-    {
-     "w": "celebrar",
-     "rank": 1449,
-     "meaning": "to celebrate",
-     "n": 21
-    },
-    {
-     "w": "formar",
-     "rank": 1278,
-     "meaning": "to form",
-     "n": 19
-    },
-    {
-     "w": "besar",
-     "rank": 1451,
-     "meaning": "to kiss",
-     "n": 17
-    },
-    {
-     "w": "entregar",
-     "rank": 1275,
-     "meaning": "to deliver",
-     "n": 16
-    },
-    {
-     "w": "empleado",
-     "rank": 1202,
-     "meaning": "employee",
-     "n": 15
-    },
-    {
-     "w": "coser",
-     "rank": 1419,
-     "meaning": "to sew",
-     "n": 14
+     "w": "contratar",
+     "rank": 1236,
+     "meaning": "to hire",
+     "n": 3
     },
     {
      "w": "despedir",
      "rank": 1156,
      "meaning": "to fire",
-     "n": 14
+     "n": 3
     },
     {
-     "w": "lío",
-     "rank": 1059,
-     "meaning": "mess",
-     "n": 13
+     "w": "izquierdo",
+     "rank": 1328,
+     "meaning": "left",
+     "n": 2
     }
    ],
    "beyondList": [
     {
+     "w": "hola",
+     "n": 30
+    },
+    {
      "w": "gracias",
-     "n": 170
+     "n": 10
     },
     {
      "w": "favor",
-     "n": 143
+     "n": 8
     },
     {
-     "w": "galerías",
-     "n": 112
-    },
-    {
-     "w": "momento",
-     "n": 71
-    },
-    {
-     "w": "perfecto",
-     "n": 43
-    },
-    {
-     "w": "colección",
-     "n": 42
-    },
-    {
-     "w": "hola",
-     "n": 40
-    },
-    {
-     "w": "taller",
-     "n": 33
-    },
-    {
-     "w": "idea",
-     "n": 32
-    },
-    {
-     "w": "problema",
-     "n": 27
-    },
-    {
-     "w": "desfile",
-     "n": 27
+     "w": "pontos",
+     "n": 5
     },
     {
      "w": "adiós",
-     "n": 24
+     "n": 4
     },
     {
-     "w": "perfecta",
-     "n": 22
-    },
-    {
-     "w": "persona",
-     "n": 20
+     "w": "profesora",
+     "n": 4
     },
     {
      "w": "final",
-     "n": 19
-    }
-   ],
-   "difficultyRank": 2
-  },
-  {
-   "slug": "gran-hotel",
-   "title": "Gran Hotel",
-   "english": "Grand Hotel",
-   "type": "TV series",
-   "country": "Spain",
-   "years": "2011-2013",
-   "accent": "Castilian Spanish (Spain)",
-   "sample": {
-    "units": 14,
-    "unitLabel": "episodes",
-    "words": 87044,
-    "uniqueForms": 7809
-   },
-   "coverage": {
-    "100": 71.1,
-    "500": 85.5,
-    "1000": 89.5,
-    "1500": 91.7
-   },
-   "listOnly": {
-    "100": 39.4,
-    "500": 53.8,
-    "1000": 57.8,
-    "1500": 60
-   },
-   "functionShare": 31.7,
-   "nextWords": [
-    {
-     "w": "julio",
-     "rank": 1296,
-     "meaning": "July",
-     "n": 152
+     "n": 4
     },
     {
-     "w": "encargar",
-     "rank": 1282,
-     "meaning": "to order",
-     "n": 69
+     "w": "retiro",
+     "n": 4
+    },
+    {
+     "w": "momento",
+     "n": 3
+    },
+    {
+     "w": "embargo",
+     "n": 3
+    },
+    {
+     "w": "casualidad",
+     "n": 3
+    },
+    {
+     "w": "clásica",
+     "n": 3
+    },
+    {
+     "w": "ciervo",
+     "n": 3
+    },
+    {
+     "w": "estación",
+     "n": 3
+    },
+    {
+     "w": "picada",
+     "n": 3
+    }
+   ],
+   "easiness": 93,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 1
+  },
+  {
+   "slug": "mar-adentro",
+   "title": "Mar adentro",
+   "english": "The Sea Inside",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2004",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9687,
+    "uniqueForms": 1929
+   },
+   "wpm": 195,
+   "rarePer1000": 50.2,
+   "coverage": {
+    "100": 73.1,
+    "500": 87.4,
+    "1000": 91.2,
+    "1500": 92.9
+   },
+   "listOnly": {
+    "100": 41.1,
+    "500": 55.4,
+    "1000": 59.2,
+    "1500": 60.9
+   },
+   "functionShare": 32,
+   "nextWords": [
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 10
+    },
+    {
+     "w": "paseo",
+     "rank": 1124,
+     "meaning": "walk",
+     "n": 6
     },
     {
      "w": "marchar",
      "rank": 1025,
      "meaning": "to leave",
-     "n": 53
-    },
-    {
-     "w": "juez",
-     "rank": 1033,
-     "meaning": "judge",
-     "n": 43
-    },
-    {
-     "w": "despedir",
-     "rank": 1156,
-     "meaning": "to fire",
-     "n": 43
-    },
-    {
-     "w": "esconder",
-     "rank": 1047,
-     "meaning": "to hide",
-     "n": 38
-    },
-    {
-     "w": "recuperar",
-     "rank": 1146,
-     "meaning": "to recover",
-     "n": 34
-    },
-    {
-     "w": "entregar",
-     "rank": 1275,
-     "meaning": "to deliver",
-     "n": 32
-    },
-    {
-     "w": "cometer",
-     "rank": 1297,
-     "meaning": "to commit",
-     "n": 29
-    },
-    {
-     "w": "desgracia",
-     "rank": 1476,
-     "meaning": "misfortune",
-     "n": 27
+     "n": 5
     },
     {
      "w": "formar",
      "rank": 1278,
      "meaning": "to form",
-     "n": 27
+     "n": 5
     },
     {
-     "w": "dispuesto",
-     "rank": 1135,
-     "meaning": "willing",
-     "n": 26
+     "w": "olor",
+     "rank": 1080,
+     "meaning": "smell",
+     "n": 4
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 4
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 4
+    },
+    {
+     "w": "apoyo",
+     "rank": 1235,
+     "meaning": "support",
+     "n": 3
+    },
+    {
+     "w": "propiedad",
+     "rank": 1019,
+     "meaning": "property",
+     "n": 3
     }
    ],
    "beyondList": [
     {
-     "w": "hotel",
-     "n": 431
-    },
-    {
-     "w": "gracias",
-     "n": 168
+     "w": "hola",
+     "n": 17
     },
     {
      "w": "favor",
-     "n": 149
-    },
-    {
-     "w": "detective",
-     "n": 91
-    },
-    {
-     "w": "momento",
-     "n": 79
+     "n": 14
     },
     {
      "w": "persona",
-     "n": 52
+     "n": 12
     },
     {
-     "w": "doncella",
-     "n": 47
+     "w": "momento",
+     "n": 11
     },
     {
-     "w": "documento",
-     "n": 43
+     "w": "gracias",
+     "n": 10
     },
     {
-     "w": "problema",
-     "n": 36
+     "w": "adiós",
+     "n": 5
     },
     {
-     "w": "director",
-     "n": 36
+     "w": "sobrino",
+     "n": 4
+    },
+    {
+     "w": "racional",
+     "n": 4
+    },
+    {
+     "w": "personas",
+     "n": 4
+    },
+    {
+     "w": "tetrapléjico",
+     "n": 4
+    },
+    {
+     "w": "señorías",
+     "n": 4
     },
     {
      "w": "ante",
-     "n": 36
+     "n": 3
     },
     {
-     "w": "doctor",
-     "n": 36
+     "w": "ála",
+     "n": 3
     },
     {
-     "w": "camarero",
-     "n": 34
+     "w": "televisión",
+     "n": 3
     },
     {
-     "w": "posible",
-     "n": 29
-    },
-    {
-     "w": "ma",
-     "n": 29
+     "w": "ordenador",
+     "n": 3
     }
    ],
+   "easiness": 92,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 2
+  },
+  {
+   "slug": "todos-lo-saben",
+   "title": "Todos lo saben",
+   "english": "Everybody Knows",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2018",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 5494,
+    "uniqueForms": 1406
+   },
+   "wpm": 163,
+   "rarePer1000": 53.6,
+   "coverage": {
+    "100": 69.2,
+    "500": 85.2,
+    "1000": 89.3,
+    "1500": 91.2
+   },
+   "listOnly": {
+    "100": 42.5,
+    "500": 58.5,
+    "1000": 62.7,
+    "1500": 64.5
+   },
+   "functionShare": 26.7,
+   "nextWords": [
+    {
+     "w": "rogar",
+     "rank": 1389,
+     "meaning": "to beg / to plead",
+     "n": 4
+    },
+    {
+     "w": "orgullo",
+     "rank": 1223,
+     "meaning": "pride",
+     "n": 4
+    },
+    {
+     "w": "de repente",
+     "rank": 1004,
+     "meaning": "suddenly",
+     "n": 3
+    },
+    {
+     "w": "besar",
+     "rank": 1451,
+     "meaning": "to kiss",
+     "n": 3
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 3
+    },
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 2
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "paco",
+     "n": 30
+    },
+    {
+     "w": "laura",
+     "n": 27
+    },
+    {
+     "w": "hola",
+     "n": 14
+    },
+    {
+     "w": "favor",
+     "n": 13
+    },
+    {
+     "w": "gracias",
+     "n": 10
+    },
+    {
+     "w": "fernando",
+     "n": 10
+    },
+    {
+     "w": "dominio",
+     "n": 7
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "mierda",
+     "n": 6
+    },
+    {
+     "w": "gendarmería",
+     "n": 6
+    },
+    {
+     "w": "video",
+     "n": 6
+    },
+    {
+     "w": "problema",
+     "n": 6
+    },
+    {
+     "w": "ana",
+     "n": 5
+    },
+    {
+     "w": "idea",
+     "n": 5
+    },
+    {
+     "w": "puta",
+     "n": 5
+    }
+   ],
+   "easiness": 91,
+   "level": "Easy",
+   "cefr": "A2–B1",
    "difficultyRank": 3
+  },
+  {
+   "slug": "volver",
+   "title": "Volver",
+   "english": "Volver",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2006",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9577,
+    "uniqueForms": 1968
+   },
+   "wpm": 199,
+   "rarePer1000": 63.6,
+   "coverage": {
+    "100": 71.5,
+    "500": 86.8,
+    "1000": 90.7,
+    "1500": 92.3
+   },
+   "listOnly": {
+    "100": 39.9,
+    "500": 55.2,
+    "1000": 59.2,
+    "1500": 60.7
+   },
+   "functionShare": 31.6,
+   "nextWords": [
+    {
+     "w": "incendio",
+     "rank": 1290,
+     "meaning": "fire",
+     "n": 9
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 7
+    },
+    {
+     "w": "a menudo",
+     "rank": 1131,
+     "meaning": "often",
+     "n": 6
+    },
+    {
+     "w": "notar",
+     "rank": 1422,
+     "meaning": "to notice",
+     "n": 5
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 4
+    },
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 4
+    },
+    {
+     "w": "alegría",
+     "rank": 1429,
+     "meaning": "joy",
+     "n": 3
+    },
+    {
+     "w": "cementerio",
+     "rank": 1467,
+     "meaning": "cemetery",
+     "n": 3
+    },
+    {
+     "w": "cocinar",
+     "rank": 1122,
+     "meaning": "to cook",
+     "n": 3
+    },
+    {
+     "w": "ciego",
+     "rank": 1045,
+     "meaning": "blind",
+     "n": 3
+    },
+    {
+     "w": "olor",
+     "rank": 1080,
+     "meaning": "smell",
+     "n": 3
+    },
+    {
+     "w": "muñeca",
+     "rank": 1163,
+     "meaning": "doll",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hola",
+     "n": 23
+    },
+    {
+     "w": "gracias",
+     "n": 22
+    },
+    {
+     "w": "poquito",
+     "n": 13
+    },
+    {
+     "w": "restaurante",
+     "n": 12
+    },
+    {
+     "w": "fatal",
+     "n": 7
+    },
+    {
+     "w": "televisión",
+     "n": 7
+    },
+    {
+     "w": "favor",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 5
+    },
+    {
+     "w": "mojitos",
+     "n": 5
+    },
+    {
+     "w": "cáncer",
+     "n": 5
+    },
+    {
+     "w": "lavabo",
+     "n": 4
+    },
+    {
+     "w": "entierro",
+     "n": 4
+    },
+    {
+     "w": "hospital",
+     "n": 4
+    },
+    {
+     "w": "hippy",
+     "n": 3
+    },
+    {
+     "w": "plástico",
+     "n": 3
+    }
+   ],
+   "easiness": 89,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 4
+  },
+  {
+   "slug": "aguila-roja",
+   "title": "Águila Roja",
+   "english": "Red Eagle",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2009-2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 85855,
+    "uniqueForms": 8002
+   },
+   "wpm": 174,
+   "rarePer1000": 65.1,
+   "coverage": {
+    "100": 71.4,
+    "500": 85.9,
+    "1000": 89.6,
+    "1500": 91.3
+   },
+   "listOnly": {
+    "100": 39.9,
+    "500": 54.4,
+    "1000": 58.1,
+    "1500": 59.9
+   },
+   "functionShare": 31.5,
+   "nextWords": [
+    {
+     "w": "palacio",
+     "rank": 1365,
+     "meaning": "palace",
+     "n": 69
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 41
+    },
+    {
+     "w": "carro",
+     "rank": 1040,
+     "meaning": "car",
+     "n": 39
+    },
+    {
+     "w": "quemar",
+     "rank": 1276,
+     "meaning": "to burn",
+     "n": 28
+    },
+    {
+     "w": "recuperar",
+     "rank": 1146,
+     "meaning": "to recover",
+     "n": 25
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 20
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 20
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 19
+    },
+    {
+     "w": "reino",
+     "rank": 1144,
+     "meaning": "kingdom",
+     "n": 18
+    },
+    {
+     "w": "ofrecer",
+     "rank": 1048,
+     "meaning": "to offer",
+     "n": 18
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 18
+    },
+    {
+     "w": "cobarde",
+     "rank": 1147,
+     "meaning": "coward",
+     "n": 17
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 171
+    },
+    {
+     "w": "comisario",
+     "n": 160
+    },
+    {
+     "w": "marquesa",
+     "n": 118
+    },
+    {
+     "w": "villa",
+     "n": 105
+    },
+    {
+     "w": "gracias",
+     "n": 98
+    },
+    {
+     "w": "majestad",
+     "n": 93
+    },
+    {
+     "w": "águila",
+     "n": 64
+    },
+    {
+     "w": "capitán",
+     "n": 51
+    },
+    {
+     "w": "eminencia",
+     "n": 51
+    },
+    {
+     "w": "momento",
+     "n": 32
+    },
+    {
+     "w": "cardenal",
+     "n": 31
+    },
+    {
+     "w": "chiquillo",
+     "n": 30
+    },
+    {
+     "w": "conde",
+     "n": 30
+    },
+    {
+     "w": "persona",
+     "n": 27
+    },
+    {
+     "w": "posada",
+     "n": 24
+    }
+   ],
+   "easiness": 86,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 5
+  },
+  {
+   "slug": "tarde-para-la-ira",
+   "title": "Tarde para la ira",
+   "english": "The Fury of a Patient Man",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 5363,
+    "uniqueForms": 1153
+   },
+   "wpm": 190,
+   "rarePer1000": 55.6,
+   "coverage": {
+    "100": 74,
+    "500": 86.3,
+    "1000": 89.9,
+    "1500": 91.3
+   },
+   "listOnly": {
+    "100": 42.8,
+    "500": 55.1,
+    "1000": 58.6,
+    "1500": 60.1
+   },
+   "functionShare": 31.2,
+   "nextWords": [
+    {
+     "w": "barrio",
+     "rank": 1055,
+     "meaning": "neighborhood",
+     "n": 10
+    },
+    {
+     "w": "ritmo",
+     "rank": 1364,
+     "meaning": "rhythm",
+     "n": 4
+    },
+    {
+     "w": "alegría",
+     "rank": 1429,
+     "meaning": "joy",
+     "n": 4
+    },
+    {
+     "w": "veinte",
+     "rank": 1254,
+     "meaning": "twenty",
+     "n": 3
+    },
+    {
+     "w": "gimnasio",
+     "rank": 1474,
+     "meaning": "gym",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 20
+    },
+    {
+     "w": "gracias",
+     "n": 17
+    },
+    {
+     "w": "favor",
+     "n": 15
+    },
+    {
+     "w": "coño",
+     "n": 12
+    },
+    {
+     "w": "cago",
+     "n": 11
+    },
+    {
+     "w": "culo",
+     "n": 6
+    },
+    {
+     "w": "mudo",
+     "n": 6
+    },
+    {
+     "w": "gilipollas",
+     "n": 5
+    },
+    {
+     "w": "joder",
+     "n": 4
+    },
+    {
+     "w": "hola",
+     "n": 4
+    },
+    {
+     "w": "móvil",
+     "n": 4
+    },
+    {
+     "w": "comunión",
+     "n": 4
+    },
+    {
+     "w": "poquito",
+     "n": 4
+    },
+    {
+     "w": "parla",
+     "n": 4
+    },
+    {
+     "w": "adiós",
+     "n": 4
+    }
+   ],
+   "easiness": 86,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 6
   },
   {
    "slug": "cuentame-como-paso",
@@ -510,6 +939,8 @@
     "words": 100012,
     "uniqueForms": 8938
    },
+   "wpm": 165,
+   "rarePer1000": 67.9,
    "coverage": {
     "100": 71.3,
     "500": 84.9,
@@ -659,142 +1090,1610 @@
      "n": 26
     }
    ],
-   "difficultyRank": 4
+   "easiness": 85,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 7
   },
   {
-   "slug": "fisica-o-quimica",
-   "title": "Física o química",
-   "english": "Physics or Chemistry",
+   "slug": "las-chicas-del-cable",
+   "title": "Las chicas del cable",
+   "english": "Cable Girls",
    "type": "TV series",
    "country": "Spain",
-   "years": "2008-2011",
+   "years": "2017-2020",
    "accent": "Castilian Spanish (Spain)",
    "sample": {
-    "units": 14,
+    "units": 8,
     "unitLabel": "episodes",
-    "words": 105563,
-    "uniqueForms": 8658
+    "words": 43049,
+    "uniqueForms": 4932
    },
+   "wpm": 237,
+   "rarePer1000": 59.7,
    "coverage": {
-    "100": 73,
-    "500": 86,
-    "1000": 89.2,
-    "1500": 90.8
+    "100": 72.6,
+    "500": 86.9,
+    "1000": 91,
+    "1500": 92.7
    },
    "listOnly": {
-    "100": 41.5,
-    "500": 54.5,
-    "1000": 57.7,
-    "1500": 59.3
+    "100": 40.5,
+    "500": 54.8,
+    "1000": 58.9,
+    "1500": 60.6
    },
-   "functionShare": 31.5,
+   "functionShare": 32.1,
    "nextWords": [
     {
-     "w": "chino",
-     "rank": 1003,
-     "meaning": "Chinese",
-     "n": 54
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 21
     },
     {
-     "w": "reír",
-     "rank": 1099,
-     "meaning": "to laugh",
-     "n": 42
+     "w": "engañar",
+     "rank": 1497,
+     "meaning": "to deceive",
+     "n": 20
     },
     {
-     "w": "examen",
-     "rank": 1145,
-     "meaning": "exam",
-     "n": 32
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 20
     },
     {
-     "w": "pegar",
-     "rank": 1227,
-     "meaning": "to hit",
-     "n": 32
-    },
-    {
-     "w": "polvo",
-     "rank": 1221,
-     "meaning": "dust",
-     "n": 28
-    },
-    {
-     "w": "lío",
-     "rank": 1059,
-     "meaning": "mess",
-     "n": 26
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 16
     },
     {
      "w": "formar",
      "rank": 1278,
      "meaning": "to form",
+     "n": 15
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 14
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 13
+    },
+    {
+     "w": "empleado",
+     "rank": 1202,
+     "meaning": "employee",
+     "n": 13
+    },
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 12
+    },
+    {
+     "w": "recuperar",
+     "rank": 1146,
+     "meaning": "to recover",
+     "n": 12
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 11
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 11
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 92
+    },
+    {
+     "w": "gracias",
+     "n": 83
+    },
+    {
+     "w": "momento",
+     "n": 51
+    },
+    {
+     "w": "telefonista",
+     "n": 31
+    },
+    {
+     "w": "operadora",
+     "n": 26
+    },
+    {
+     "w": "problema",
+     "n": 26
+    },
+    {
+     "w": "persona",
+     "n": 25
+    },
+    {
+     "w": "hola",
+     "n": 25
+    },
+    {
+     "w": "final",
+     "n": 20
+    },
+    {
+     "w": "telefonistas",
+     "n": 19
+    },
+    {
+     "w": "abonados",
+     "n": 18
+    },
+    {
+     "w": "pensión",
+     "n": 15
+    },
+    {
+     "w": "majestad",
+     "n": 15
+    },
+    {
+     "w": "despacho",
+     "n": 15
+    },
+    {
+     "w": "decisión",
+     "n": 14
+    }
+   ],
+   "easiness": 83,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 8
+  },
+  {
+   "slug": "velvet",
+   "title": "Velvet",
+   "english": "Velvet",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2014-2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 8,
+    "unitLabel": "episodes",
+    "words": 59116,
+    "uniqueForms": 5335
+   },
+   "wpm": 250,
+   "rarePer1000": 51.3,
+   "coverage": {
+    "100": 72.6,
+    "500": 86.3,
+    "1000": 90.6,
+    "1500": 92.3
+   },
+   "listOnly": {
+    "100": 40.3,
+    "500": 54.1,
+    "1000": 58.3,
+    "1500": 60.1
+   },
+   "functionShare": 32.2,
+   "nextWords": [
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 27
+    },
+    {
+     "w": "moda",
+     "rank": 1403,
+     "meaning": "fashion",
+     "n": 22
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 22
+    },
+    {
+     "w": "disfrutar",
+     "rank": 1204,
+     "meaning": "to enjoy",
+     "n": 22
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 21
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 19
+    },
+    {
+     "w": "besar",
+     "rank": 1451,
+     "meaning": "to kiss",
+     "n": 17
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 16
+    },
+    {
+     "w": "empleado",
+     "rank": 1202,
+     "meaning": "employee",
+     "n": 15
+    },
+    {
+     "w": "coser",
+     "rank": 1419,
+     "meaning": "to sew",
+     "n": 14
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 14
+    },
+    {
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 13
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 170
+    },
+    {
+     "w": "favor",
+     "n": 143
+    },
+    {
+     "w": "galerías",
+     "n": 112
+    },
+    {
+     "w": "momento",
+     "n": 71
+    },
+    {
+     "w": "perfecto",
+     "n": 43
+    },
+    {
+     "w": "colección",
+     "n": 42
+    },
+    {
+     "w": "hola",
+     "n": 40
+    },
+    {
+     "w": "taller",
+     "n": 33
+    },
+    {
+     "w": "idea",
+     "n": 32
+    },
+    {
+     "w": "problema",
+     "n": 27
+    },
+    {
+     "w": "desfile",
+     "n": 27
+    },
+    {
+     "w": "adiós",
+     "n": 24
+    },
+    {
+     "w": "perfecta",
+     "n": 22
+    },
+    {
+     "w": "persona",
+     "n": 20
+    },
+    {
+     "w": "final",
+     "n": 19
+    }
+   ],
+   "easiness": 83,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 9
+  },
+  {
+   "slug": "conducta",
+   "title": "Conducta",
+   "english": "Behavior",
+   "type": "Film",
+   "country": "Cuba",
+   "years": "2014",
+   "accent": "Cuban Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7781,
+    "uniqueForms": 1528
+   },
+   "wpm": 200,
+   "rarePer1000": 56,
+   "coverage": {
+    "100": 72.1,
+    "500": 86.7,
+    "1000": 89.9,
+    "1500": 91
+   },
+   "listOnly": {
+    "100": 40.6,
+    "500": 55.2,
+    "1000": 58.4,
+    "1500": 59.5
+   },
+   "functionShare": 31.5,
+   "nextWords": [
+    {
+     "w": "curso",
+     "rank": 1087,
+     "meaning": "course",
+     "n": 5
+    },
+    {
+     "w": "resolver",
+     "rank": 1224,
+     "meaning": "to solve",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "profe",
+     "n": 35
+    },
+    {
+     "w": "favor",
+     "n": 15
+    },
+    {
+     "w": "problema",
+     "n": 14
+    },
+    {
+     "w": "mami",
+     "n": 14
+    },
+    {
+     "w": "aula",
+     "n": 11
+    },
+    {
+     "w": "conducta",
+     "n": 11
+    },
+    {
+     "w": "estampita",
+     "n": 10
+    },
+    {
+     "w": "coño",
+     "n": 7
+    },
+    {
+     "w": "trabajadora",
+     "n": 7
+    },
+    {
+     "w": "social",
+     "n": 7
+    },
+    {
+     "w": "mural",
+     "n": 7
+    },
+    {
+     "w": "paloma",
+     "n": 5
+    },
+    {
+     "w": "candela",
+     "n": 5
+    },
+    {
+     "w": "patria",
+     "n": 5
+    },
+    {
+     "w": "sector",
+     "n": 5
+    }
+   ],
+   "easiness": 83,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 10
+  },
+  {
+   "slug": "gran-hotel",
+   "title": "Gran Hotel",
+   "english": "Grand Hotel",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2011-2013",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 87044,
+    "uniqueForms": 7809
+   },
+   "wpm": 238,
+   "rarePer1000": 53.9,
+   "coverage": {
+    "100": 71.1,
+    "500": 85.5,
+    "1000": 89.5,
+    "1500": 91.7
+   },
+   "listOnly": {
+    "100": 39.4,
+    "500": 53.8,
+    "1000": 57.8,
+    "1500": 60
+   },
+   "functionShare": 31.7,
+   "nextWords": [
+    {
+     "w": "julio",
+     "rank": 1296,
+     "meaning": "July",
+     "n": 152
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 69
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 53
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 43
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 43
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 38
+    },
+    {
+     "w": "recuperar",
+     "rank": 1146,
+     "meaning": "to recover",
+     "n": 34
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 32
+    },
+    {
+     "w": "cometer",
+     "rank": 1297,
+     "meaning": "to commit",
+     "n": 29
+    },
+    {
+     "w": "desgracia",
+     "rank": 1476,
+     "meaning": "misfortune",
+     "n": 27
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 27
+    },
+    {
+     "w": "dispuesto",
+     "rank": 1135,
+     "meaning": "willing",
      "n": 26
     }
    ],
    "beyondList": [
     {
-     "w": "joder",
-     "n": 209
-    },
-    {
-     "w": "hola",
-     "n": 187
+     "w": "hotel",
+     "n": 431
     },
     {
      "w": "gracias",
-     "n": 164
+     "n": 168
     },
     {
      "w": "favor",
-     "n": 148
+     "n": 149
+    },
+    {
+     "w": "detective",
+     "n": 91
     },
     {
      "w": "momento",
-     "n": 92
+     "n": 79
     },
     {
-     "w": "puta",
-     "n": 84
+     "w": "persona",
+     "n": 52
     },
     {
-     "w": "mierda",
-     "n": 80
+     "w": "doncella",
+     "n": 47
     },
     {
-     "w": "idea",
-     "n": 80
+     "w": "documento",
+     "n": 43
     },
     {
      "w": "problema",
-     "n": 75
+     "n": 36
+    },
+    {
+     "w": "director",
+     "n": 36
+    },
+    {
+     "w": "ante",
+     "n": 36
+    },
+    {
+     "w": "doctor",
+     "n": 36
+    },
+    {
+     "w": "camarero",
+     "n": 34
+    },
+    {
+     "w": "posible",
+     "n": 29
+    },
+    {
+     "w": "ma",
+     "n": 29
+    }
+   ],
+   "easiness": 81,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 11
+  },
+  {
+   "slug": "palmeras-en-la-nieve",
+   "title": "Palmeras en la nieve",
+   "english": "Palm Trees in the Snow",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2015",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7730,
+    "uniqueForms": 1925
+   },
+   "wpm": 162,
+   "rarePer1000": 69.8,
+   "coverage": {
+    "100": 68.1,
+    "500": 84,
+    "1000": 88.4,
+    "1500": 90.1
+   },
+   "listOnly": {
+    "100": 38.6,
+    "500": 54.5,
+    "1000": 58.9,
+    "1500": 60.6
+   },
+   "functionShare": 29.5,
+   "nextWords": [
+    {
+     "w": "nieve",
+     "rank": 1069,
+     "meaning": "snow",
+     "n": 5
+    },
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 4
+    },
+    {
+     "w": "política",
+     "rank": 1075,
+     "meaning": "politics",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 26
+    },
+    {
+     "w": "massa",
+     "n": 23
+    },
+    {
+     "w": "favor",
+     "n": 16
+    },
+    {
+     "w": "hola",
+     "n": 12
+    },
+    {
+     "w": "ei",
+     "n": 12
+    },
+    {
+     "w": "momento",
+     "n": 11
+    },
+    {
+     "w": "finca",
+     "n": 10
+    },
+    {
+     "w": "you",
+     "n": 7
+    },
+    {
+     "w": "hospital",
+     "n": 6
+    },
+    {
+     "w": "ai",
+     "n": 6
     },
     {
      "w": "coño",
-     "n": 68
+     "n": 6
     },
     {
-     "w": "alumnos",
-     "n": 57
+     "w": "up",
+     "n": 6
     },
     {
-     "w": "móvil",
-     "n": 50
+     "w": "boy",
+     "n": 5
+    },
+    {
+     "w": "patio",
+     "n": 5
+    },
+    {
+     "w": "recado",
+     "n": 5
+    }
+   ],
+   "easiness": 79,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 12
+  },
+  {
+   "slug": "el-orfanato",
+   "title": "El orfanato",
+   "english": "The Orphanage",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2007",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 9855,
+    "uniqueForms": 2223
+   },
+   "wpm": 191,
+   "rarePer1000": 74.6,
+   "coverage": {
+    "100": 68.6,
+    "500": 84.8,
+    "1000": 88.9,
+    "1500": 90.9
+   },
+   "listOnly": {
+    "100": 37.5,
+    "500": 53.7,
+    "1000": 57.8,
+    "1500": 59.7
+   },
+   "functionShare": 31.1,
+   "nextWords": [
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 16
+    },
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 7
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 6
+    },
+    {
+     "w": "moneda",
+     "rank": 1203,
+     "meaning": "coin",
+     "n": 5
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 5
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 21
+    },
+    {
+     "w": "hola",
+     "n": 19
+    },
+    {
+     "w": "ne",
+     "n": 15
+    },
+    {
+     "w": "accidente",
+     "n": 10
+    },
+    {
+     "w": "momento",
+     "n": 10
+    },
+    {
+     "w": "gracias",
+     "n": 9
+    },
+    {
+     "w": "simóoooon",
+     "n": 9
+    },
+    {
+     "w": "tí",
+     "n": 8
+    },
+    {
+     "w": "violación",
+     "n": 7
+    },
+    {
+     "w": "denuncia",
+     "n": 7
+    },
+    {
+     "w": "conserva",
+     "n": 7
+    },
+    {
+     "w": "fé",
+     "n": 7
+    },
+    {
+     "w": "faro",
+     "n": 7
+    },
+    {
+     "w": "euros",
+     "n": 6
+    },
+    {
+     "w": "residencia",
+     "n": 6
+    }
+   ],
+   "easiness": 78,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 13
+  },
+  {
+   "slug": "la-isla-minima",
+   "title": "La isla mínima",
+   "english": "Marshland",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2014",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 4770,
+    "uniqueForms": 1255
+   },
+   "wpm": 201,
+   "rarePer1000": 64.2,
+   "coverage": {
+    "100": 70.8,
+    "500": 84.7,
+    "1000": 88.8,
+    "1500": 90.7
+   },
+   "listOnly": {
+    "100": 40.3,
+    "500": 54.2,
+    "1000": 58.3,
+    "1500": 60.2
+   },
+   "functionShare": 30.5,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 4
+    },
+    {
+     "w": "regalar",
+     "rank": 1121,
+     "meaning": "to give (as a gift)",
+     "n": 4
+    },
+    {
+     "w": "pozo",
+     "rank": 1486,
+     "meaning": "well",
+     "n": 3
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 3
+    },
+    {
+     "w": "contratar",
+     "rank": 1236,
+     "meaning": "to hire",
+     "n": 3
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 3
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 3
+    },
+    {
+     "w": "carretera",
+     "rank": 1108,
+     "meaning": "road",
+     "n": 2
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "coche",
+     "n": 19
+    },
+    {
+     "w": "gracias",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 6
+    },
+    {
+     "w": "coto",
+     "n": 6
+    },
+    {
+     "w": "favor",
+     "n": 5
+    },
+    {
+     "w": "cosecha",
+     "n": 5
+    },
+    {
+     "w": "hotel",
+     "n": 5
+    },
+    {
+     "w": "puntal",
+     "n": 4
+    },
+    {
+     "w": "feria",
+     "n": 4
+    },
+    {
+     "w": "fama",
+     "n": 4
+    },
+    {
+     "w": "momento",
+     "n": 4
+    },
+    {
+     "w": "pa",
+     "n": 4
+    },
+    {
+     "w": "cortijo",
+     "n": 4
+    },
+    {
+     "w": "ptas",
+     "n": 4
+    },
+    {
+     "w": "coño",
+     "n": 4
+    }
+   ],
+   "easiness": 78,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 14
+  },
+  {
+   "slug": "los-lunes-al-sol",
+   "title": "Los lunes al sol",
+   "english": "Mondays in the Sun",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2002",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7383,
+    "uniqueForms": 1484
+   },
+   "wpm": 197,
+   "rarePer1000": 61.1,
+   "coverage": {
+    "100": 70.7,
+    "500": 85.8,
+    "1000": 88.6,
+    "1500": 90.5
+   },
+   "listOnly": {
+    "100": 39.6,
+    "500": 54.6,
+    "1000": 57.4,
+    "1500": 59.3
+   },
+   "functionShare": 31.1,
+   "nextWords": [
+    {
+     "w": "queso",
+     "rank": 1166,
+     "meaning": "cheese",
+     "n": 6
+    },
+    {
+     "w": "crédito",
+     "rank": 1247,
+     "meaning": "loan",
+     "n": 5
+    },
+    {
+     "w": "contratar",
+     "rank": 1236,
+     "meaning": "to hire",
+     "n": 5
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 5
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 5
+    },
+    {
+     "w": "vehículo",
+     "rank": 1250,
+     "meaning": "vehicle",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "joder",
+     "n": 21
+    },
+    {
+     "w": "pesetas",
+     "n": 16
+    },
+    {
+     "w": "puta",
+     "n": 13
+    },
+    {
+     "w": "coño",
+     "n": 11
+    },
+    {
+     "w": "mierda",
+     "n": 10
+    },
+    {
+     "w": "culo",
+     "n": 10
+    },
+    {
+     "w": "hostia",
+     "n": 10
+    },
+    {
+     "w": "hormiga",
+     "n": 10
     },
     {
      "w": "gilipollas",
-     "n": 50
+     "n": 9
     },
     {
-     "w": "profesor",
-     "n": 42
+     "w": "bar",
+     "n": 9
     },
     {
-     "w": "sexo",
-     "n": 41
+     "w": "jodes",
+     "n": 8
+    },
+    {
+     "w": "cojones",
+     "n": 8
+    },
+    {
+     "w": "astillero",
+     "n": 8
+    },
+    {
+     "w": "siameses",
+     "n": 8
+    },
+    {
+     "w": "normal",
+     "n": 8
     }
    ],
-   "difficultyRank": 5
+   "easiness": 78,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 15
+  },
+  {
+   "slug": "oscuro-deseo",
+   "title": "Oscuro deseo",
+   "english": "Dark Desire",
+   "type": "TV series",
+   "country": "Mexico",
+   "years": "2020-2022",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 13,
+    "unitLabel": "episodes",
+    "words": 30454,
+    "uniqueForms": 4060
+   },
+   "wpm": 198,
+   "rarePer1000": 62.4,
+   "coverage": {
+    "100": 71,
+    "500": 84.2,
+    "1000": 88.5,
+    "1500": 90.4
+   },
+   "listOnly": {
+    "100": 39.1,
+    "500": 52.4,
+    "1000": 56.7,
+    "1500": 58.5
+   },
+   "functionShare": 31.9,
+   "nextWords": [
+    {
+     "w": "celular",
+     "rank": 1197,
+     "meaning": "cell phone",
+     "n": 36
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 19
+    },
+    {
+     "w": "planear",
+     "rank": 1200,
+     "meaning": "to plan",
+     "n": 14
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 14
+    },
+    {
+     "w": "investigar",
+     "rank": 1098,
+     "meaning": "to investigate",
+     "n": 13
+    },
+    {
+     "w": "muchísimo",
+     "rank": 1081,
+     "meaning": "very much",
+     "n": 12
+    },
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 11
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 10
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 81
+    },
+    {
+     "w": "puta",
+     "n": 72
+    },
+    {
+     "w": "gracias",
+     "n": 70
+    },
+    {
+     "w": "hotel",
+     "n": 47
+    },
+    {
+     "w": "carajo",
+     "n": 38
+    },
+    {
+     "w": "hola",
+     "n": 38
+    },
+    {
+     "w": "momento",
+     "n": 31
+    },
+    {
+     "w": "cabrón",
+     "n": 30
+    },
+    {
+     "w": "video",
+     "n": 27
+    },
+    {
+     "w": "licenciada",
+     "n": 24
+    },
+    {
+     "w": "güey",
+     "n": 20
+    },
+    {
+     "w": "mierda",
+     "n": 16
+    },
+    {
+     "w": "pinche",
+     "n": 15
+    },
+    {
+     "w": "chingados",
+     "n": 14
+    },
+    {
+     "w": "fiscalía",
+     "n": 14
+    }
+   ],
+   "easiness": 77,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 16
+  },
+  {
+   "slug": "dolor-y-gloria",
+   "title": "Dolor y gloria",
+   "english": "Pain and Glory",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2019",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8872,
+    "uniqueForms": 2036
+   },
+   "wpm": 175,
+   "rarePer1000": 77.2,
+   "coverage": {
+    "100": 70.1,
+    "500": 84.1,
+    "1000": 88.1,
+    "1500": 90.2
+   },
+   "listOnly": {
+    "100": 37.6,
+    "500": 51.6,
+    "1000": 55.5,
+    "1500": 57.7
+   },
+   "functionShare": 32.5,
+   "nextWords": [
+    {
+     "w": "teatro",
+     "rank": 1240,
+     "meaning": "theater",
+     "n": 6
+    },
+    {
+     "w": "reconocer",
+     "rank": 1014,
+     "meaning": "to recognize",
+     "n": 6
+    },
+    {
+     "w": "dibujo",
+     "rank": 1301,
+     "meaning": "drawing",
+     "n": 5
+    },
+    {
+     "w": "viajar",
+     "rank": 1023,
+     "meaning": "to travel",
+     "n": 5
+    },
+    {
+     "w": "coser",
+     "rank": 1419,
+     "meaning": "to sew",
+     "n": 5
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 5
+    },
+    {
+     "w": "personaje",
+     "rank": 1173,
+     "meaning": "character",
+     "n": 4
+    },
+    {
+     "w": "treinta",
+     "rank": 1425,
+     "meaning": "thirty",
+     "n": 4
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 4
+    },
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 4
+    },
+    {
+     "w": "domingo",
+     "rank": 1190,
+     "meaning": "Sunday",
+     "n": 4
+    },
+    {
+     "w": "repetir",
+     "rank": 1339,
+     "meaning": "to repeat",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 24
+    },
+    {
+     "w": "texto",
+     "n": 11
+    },
+    {
+     "w": "cu",
+     "n": 10
+    },
+    {
+     "w": "doctor",
+     "n": 9
+    },
+    {
+     "w": "adiós",
+     "n": 6
+    },
+    {
+     "w": "cueva",
+     "n": 6
+    },
+    {
+     "w": "idea",
+     "n": 6
+    },
+    {
+     "w": "hola",
+     "n": 6
+    },
+    {
+     "w": "heroína",
+     "n": 5
+    },
+    {
+     "w": "infancia",
+     "n": 5
+    },
+    {
+     "w": "adicción",
+     "n": 5
+    },
+    {
+     "w": "monólogo",
+     "n": 5
+    },
+    {
+     "w": "verita",
+     "n": 4
+    },
+    {
+     "w": "interpretación",
+     "n": 4
+    },
+    {
+     "w": "bachillerato",
+     "n": 4
+    }
+   ],
+   "easiness": 76,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 17
+  },
+  {
+   "slug": "amores-perros",
+   "title": "Amores perros",
+   "english": "Amores Perros",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2000",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 5067,
+    "uniqueForms": 1371
+   },
+   "wpm": 161,
+   "rarePer1000": 68.5,
+   "coverage": {
+    "100": 66.4,
+    "500": 83.3,
+    "1000": 87.7,
+    "1500": 89.5
+   },
+   "listOnly": {
+    "100": 42,
+    "500": 58.9,
+    "1000": 63.3,
+    "1500": 65.2
+   },
+   "functionShare": 24.4,
+   "nextWords": [
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 6
+    },
+    {
+     "w": "sábado",
+     "rank": 1169,
+     "meaning": "Saturday",
+     "n": 4
+    },
+    {
+     "w": "efectivo",
+     "rank": 1129,
+     "meaning": "cash",
+     "n": 4
+    },
+    {
+     "w": "alcanzar",
+     "rank": 1281,
+     "meaning": "to reach",
+     "n": 4
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 3
+    },
+    {
+     "w": "agujero",
+     "rank": 1321,
+     "meaning": "hole",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "carajo",
+     "n": 17
+    },
+    {
+     "w": "hola",
+     "n": 16
+    },
+    {
+     "w": "maldito",
+     "n": 14
+    },
+    {
+     "w": "gracias",
+     "n": 12
+    },
+    {
+     "w": "carino",
+     "n": 12
+    },
+    {
+     "w": "favor",
+     "n": 7
+    },
+    {
+     "w": "imbécil",
+     "n": 7
+    },
+    {
+     "w": "maldita",
+     "n": 6
+    },
+    {
+     "w": "cabrón",
+     "n": 6
+    },
+    {
+     "w": "nino",
+     "n": 6
+    },
+    {
+     "w": "idea",
+     "n": 6
+    },
+    {
+     "w": "mierda",
+     "n": 6
+    },
+    {
+     "w": "brother",
+     "n": 6
+    },
+    {
+     "w": "cabrones",
+     "n": 5
+    },
+    {
+     "w": "adiós",
+     "n": 5
+    }
+   ],
+   "easiness": 76,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 18
   },
   {
    "slug": "isabel",
@@ -810,6 +2709,8 @@
     "words": 93193,
     "uniqueForms": 8174
    },
+   "wpm": 206,
+   "rarePer1000": 74.5,
    "coverage": {
     "100": 68.4,
     "500": 83.5,
@@ -959,148 +2860,2512 @@
      "n": 39
     }
    ],
-   "difficultyRank": 6
+   "easiness": 74,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 19
   },
   {
-   "slug": "oscuro-deseo",
-   "title": "Oscuro deseo",
-   "english": "Dark Desire",
-   "type": "TV series",
-   "country": "Mexico",
-   "years": "2020-2022",
-   "accent": "Mexican Spanish",
+   "slug": "el-laberinto-del-fauno",
+   "title": "El laberinto del fauno",
+   "english": "Pan's Labyrinth",
+   "type": "Film",
+   "country": "Spain / Mexico",
+   "years": "2006",
+   "accent": "Castilian Spanish (Spain)",
    "sample": {
-    "units": 13,
-    "unitLabel": "episodes",
-    "words": 30454,
-    "uniqueForms": 4060
+    "units": 2,
+    "unitLabel": "film",
+    "words": 6767,
+    "uniqueForms": 1424
    },
+   "wpm": null,
+   "rarePer1000": 67.4,
    "coverage": {
-    "100": 71,
-    "500": 84.2,
-    "1000": 88.5,
-    "1500": 90.4
+    "100": 67.4,
+    "500": 84,
+    "1000": 88.4,
+    "1500": 90.5
    },
    "listOnly": {
-    "100": 39.1,
-    "500": 52.4,
-    "1000": 56.7,
-    "1500": 58.5
+    "100": 35.6,
+    "500": 52.1,
+    "1000": 56.6,
+    "1500": 58.6
    },
-   "functionShare": 31.9,
+   "functionShare": 31.8,
    "nextWords": [
     {
-     "w": "celular",
-     "rank": 1197,
-     "meaning": "cell phone",
-     "n": 36
+     "w": "reino",
+     "rank": 1144,
+     "meaning": "kingdom",
+     "n": 7
     },
     {
-     "w": "teléfono",
-     "rank": 1206,
-     "meaning": "phone",
-     "n": 19
+     "w": "curar",
+     "rank": 1305,
+     "meaning": "to cure",
+     "n": 6
     },
     {
-     "w": "planear",
-     "rank": 1200,
-     "meaning": "to plan",
-     "n": 14
+     "w": "vigilancia",
+     "rank": 1325,
+     "meaning": "surveillance",
+     "n": 5
+    },
+    {
+     "w": "conejo",
+     "rank": 1294,
+     "meaning": "rabbit",
+     "n": 5
+    },
+    {
+     "w": "veinte",
+     "rank": 1254,
+     "meaning": "twenty",
+     "n": 4
+    },
+    {
+     "w": "precisamente",
+     "rank": 1264,
+     "meaning": "precisely",
+     "n": 4
+    },
+    {
+     "w": "cazar",
+     "rank": 1499,
+     "meaning": "to hunt",
+     "n": 4
     },
     {
      "w": "entregar",
      "rank": 1275,
      "meaning": "to deliver",
-     "n": 14
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 17
     },
     {
-     "w": "investigar",
-     "rank": 1098,
-     "meaning": "to investigate",
+     "w": "princesa",
      "n": 13
     },
     {
-     "w": "muchísimo",
-     "rank": 1081,
-     "meaning": "very much",
+     "w": "coño",
+     "n": 13
+    },
+    {
+     "w": "bodega",
      "n": 12
     },
     {
-     "w": "amante",
-     "rank": 1130,
-     "meaning": "lover",
+     "w": "puta",
+     "n": 9
+    },
+    {
+     "w": "monte",
+     "n": 8
+    },
+    {
+     "w": "hola",
+     "n": 7
+    },
+    {
+     "w": "tabaco",
+     "n": 7
+    },
+    {
+     "w": "hadas",
+     "n": 6
+    },
+    {
+     "w": "fauno",
+     "n": 6
+    },
+    {
+     "w": "accidente",
+     "n": 6
+    },
+    {
+     "w": "obedecerme",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 5
+    },
+    {
+     "w": "molino",
+     "n": 5
+    },
+    {
+     "w": "mierda",
+     "n": 5
+    }
+   ],
+   "easiness": 74,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 20
+  },
+  {
+   "slug": "el-cuerpo",
+   "title": "El cuerpo",
+   "english": "The Body",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2012",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8222,
+    "uniqueForms": 1810
+   },
+   "wpm": 184,
+   "rarePer1000": 67.1,
+   "coverage": {
+    "100": 70.1,
+    "500": 83.4,
+    "1000": 87.2,
+    "1500": 89.7
+   },
+   "listOnly": {
+    "100": 38.5,
+    "500": 51.8,
+    "1000": 55.6,
+    "1500": 58.1
+   },
+   "functionShare": 31.6,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 20
+    },
+    {
+     "w": "vigilar",
+     "rank": 1158,
+     "meaning": "to watch",
+     "n": 12
+    },
+    {
+     "w": "cero",
+     "rank": 1212,
+     "meaning": "zero",
+     "n": 7
+    },
+    {
+     "w": "fecha",
+     "rank": 1288,
+     "meaning": "date (exact day)",
+     "n": 6
+    },
+    {
+     "w": "rastro",
+     "rank": 1462,
+     "meaning": "trace",
+     "n": 6
+    },
+    {
+     "w": "contratar",
+     "rank": 1236,
+     "meaning": "to hire",
+     "n": 6
+    },
+    {
+     "w": "fallar",
+     "rank": 1335,
+     "meaning": "to fail",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 19
+    },
+    {
+     "w": "coche",
+     "n": 18
+    },
+    {
+     "w": "depósito",
+     "n": 17
+    },
+    {
+     "w": "móvil",
+     "n": 16
+    },
+    {
+     "w": "cadáver",
+     "n": 14
+    },
+    {
+     "w": "alonso",
      "n": 11
+    },
+    {
+     "w": "gracias",
+     "n": 10
+    },
+    {
+     "w": "joder",
+     "n": 9
+    },
+    {
+     "w": "infarto",
+     "n": 8
+    },
+    {
+     "w": "laboratorio",
+     "n": 8
+    },
+    {
+     "w": "forense",
+     "n": 6
+    },
+    {
+     "w": "autopsia",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "cardíaco",
+     "n": 6
+    },
+    {
+     "w": "imposible",
+     "n": 6
+    }
+   ],
+   "easiness": 74,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 21
+  },
+  {
+   "slug": "gloria",
+   "title": "Gloria",
+   "english": "Gloria",
+   "type": "Film",
+   "country": "Chile",
+   "years": "2013",
+   "accent": "Chilean Spanish",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 9905,
+    "uniqueForms": 1419
+   },
+   "wpm": 170,
+   "rarePer1000": 73.6,
+   "coverage": {
+    "100": 69,
+    "500": 82.7,
+    "1000": 86.8,
+    "1500": 89.6
+   },
+   "listOnly": {
+    "100": 38.5,
+    "500": 52.2,
+    "1000": 56.3,
+    "1500": 59.1
+   },
+   "functionShare": 30.5,
+   "nextWords": [
+    {
+     "w": "gloria",
+     "rank": 1149,
+     "meaning": "glory",
+     "n": 83
+    },
+    {
+     "w": "marino",
+     "rank": 1453,
+     "meaning": "sailor",
+     "n": 11
+    },
+    {
+     "w": "doce",
+     "rank": 1262,
+     "meaning": "twelve",
+     "n": 8
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 8
+    },
+    {
+     "w": "distinto",
+     "rank": 1251,
+     "meaning": "different",
+     "n": 8
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 8
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 6
+    },
+    {
+     "w": "embarazada",
+     "rank": 1041,
+     "meaning": "pregnant",
+     "n": 6
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 6
+    },
+    {
+     "w": "pieza",
+     "rank": 1020,
+     "meaning": "piece",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hola",
+     "n": 45
+    },
+    {
+     "w": "gracias",
+     "n": 42
+    },
+    {
+     "w": "chao",
+     "n": 25
+    },
+    {
+     "w": "favor",
+     "n": 18
+    },
+    {
+     "w": "aló",
+     "n": 15
+    },
+    {
+     "w": "súper",
+     "n": 11
+    },
+    {
+     "w": "poquito",
+     "n": 9
+    },
+    {
+     "w": "mierda",
+     "n": 9
+    },
+    {
+     "w": "pucha",
+     "n": 8
+    },
+    {
+     "w": "momento",
+     "n": 8
+    },
+    {
+     "w": "anestesia",
+     "n": 8
+    },
+    {
+     "w": "esqueleto",
+     "n": 8
+    },
+    {
+     "w": "completo",
+     "n": 8
+    },
+    {
+     "w": "ef",
+     "n": 7
+    },
+    {
+     "w": "menea",
+     "n": 7
+    }
+   ],
+   "easiness": 74,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 22
+  },
+  {
+   "slug": "hable-con-ella",
+   "title": "Hable con ella",
+   "english": "Talk to Her",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2002",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7555,
+    "uniqueForms": 1728
+   },
+   "wpm": 225,
+   "rarePer1000": 70.1,
+   "coverage": {
+    "100": 71.2,
+    "500": 84.8,
+    "1000": 88.6,
+    "1500": 90.7
+   },
+   "listOnly": {
+    "100": 38.8,
+    "500": 52.3,
+    "1000": 56.2,
+    "1500": 58.3
+   },
+   "functionShare": 32.4,
+   "nextWords": [
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 6
+    },
+    {
+     "w": "viajar",
+     "rank": 1023,
+     "meaning": "to travel",
+     "n": 5
+    },
+    {
+     "w": "guía",
+     "rank": 1249,
+     "meaning": "guide",
+     "n": 5
+    },
+    {
+     "w": "sábado",
+     "rank": 1169,
+     "meaning": "Saturday",
+     "n": 4
+    },
+    {
+     "w": "dato",
+     "rank": 1028,
+     "meaning": "piece of information",
+     "n": 3
+    },
+    {
+     "w": "terreno",
+     "rank": 1468,
+     "meaning": "land",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hola",
+     "n": 26
+    },
+    {
+     "w": "gracias",
+     "n": 19
+    },
+    {
+     "w": "favor",
+     "n": 15
+    },
+    {
+     "w": "adiós",
+     "n": 9
+    },
+    {
+     "w": "toros",
+     "n": 8
+    },
+    {
+     "w": "doctor",
+     "n": 7
+    },
+    {
+     "w": "momento",
+     "n": 7
+    },
+    {
+     "w": "clínica",
+     "n": 6
+    },
+    {
+     "w": "toro",
+     "n": 6
+    },
+    {
+     "w": "cu",
+     "n": 6
+    },
+    {
+     "w": "emerge",
+     "n": 6
+    },
+    {
+     "w": "consulta",
+     "n": 5
+    },
+    {
+     "w": "problema",
+     "n": 5
+    },
+    {
+     "w": "problemas",
+     "n": 4
+    },
+    {
+     "w": "hotel",
+     "n": 4
+    }
+   ],
+   "easiness": 72,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 23
+  },
+  {
+   "slug": "la-comunidad",
+   "title": "La comunidad",
+   "english": "Common Wealth",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2000",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 11589,
+    "uniqueForms": 2533
+   },
+   "wpm": 194,
+   "rarePer1000": 71.4,
+   "coverage": {
+    "100": 68.4,
+    "500": 82.8,
+    "1000": 87.5,
+    "1500": 89.9
+   },
+   "listOnly": {
+    "100": 38.5,
+    "500": 52.8,
+    "1000": 57.5,
+    "1500": 60
+   },
+   "functionShare": 30,
+   "nextWords": [
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 20
+    },
+    {
+     "w": "ron",
+     "rank": 1091,
+     "meaning": "rum",
+     "n": 14
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 9
+    },
+    {
+     "w": "torre",
+     "rank": 1029,
+     "meaning": "tower",
+     "n": 8
+    },
+    {
+     "w": "combustible",
+     "rank": 1285,
+     "meaning": "fuel",
+     "n": 6
+    },
+    {
+     "w": "ala",
+     "rank": 1118,
+     "meaning": "wing",
+     "n": 6
+    },
+    {
+     "w": "botella",
+     "rank": 1030,
+     "meaning": "bottle",
+     "n": 5
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 5
+    },
+    {
+     "w": "ventaja",
+     "rank": 1415,
+     "meaning": "advantage",
+     "n": 5
+    },
+    {
+     "w": "quemar",
+     "rank": 1276,
+     "meaning": "to burn",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "timbre",
+     "n": 27
+    },
+    {
+     "w": "puta",
+     "n": 14
+    },
+    {
+     "w": "favor",
+     "n": 14
+    },
+    {
+     "w": "gracias",
+     "n": 14
+    },
+    {
+     "w": "capitán",
+     "n": 11
+    },
+    {
+     "w": "hola",
+     "n": 10
+    },
+    {
+     "w": "momento",
+     "n": 8
+    },
+    {
+     "w": "huracán",
+     "n": 8
+    },
+    {
+     "w": "administrador",
+     "n": 7
+    },
+    {
+     "w": "aterrizar",
+     "n": 7
+    },
+    {
+     "w": "discoteca",
+     "n": 6
+    },
+    {
+     "w": "atención",
+     "n": 6
+    },
+    {
+     "w": "mierda",
+     "n": 6
+    },
+    {
+     "w": "accidente",
+     "n": 6
+    },
+    {
+     "w": "aterrizaje",
+     "n": 6
+    }
+   ],
+   "easiness": 72,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 24
+  },
+  {
+   "slug": "la-odisea-de-los-giles",
+   "title": "La odisea de los giles",
+   "english": "Heroic Losers",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2019",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8622,
+    "uniqueForms": 1870
+   },
+   "wpm": 181,
+   "rarePer1000": 70.7,
+   "coverage": {
+    "100": 70.2,
+    "500": 84.3,
+    "1000": 87.6,
+    "1500": 89.5
+   },
+   "listOnly": {
+    "100": 37.1,
+    "500": 51.2,
+    "1000": 54.5,
+    "1500": 56.4
+   },
+   "functionShare": 33.1,
+   "nextWords": [
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 14
+    },
+    {
+     "w": "aviso",
+     "rank": 1375,
+     "meaning": "notice",
+     "n": 13
+    },
+    {
+     "w": "crédito",
+     "rank": 1247,
+     "meaning": "loan",
+     "n": 7
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 6
+    },
+    {
+     "w": "ala",
+     "rank": 1118,
+     "meaning": "wing",
+     "n": 4
+    },
+    {
+     "w": "campamento",
+     "rank": 1180,
+     "meaning": "camp",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 29
+    },
+    {
+     "w": "hola",
+     "n": 22
+    },
+    {
+     "w": "idea",
+     "n": 17
+    },
+    {
+     "w": "favor",
+     "n": 16
+    },
+    {
+     "w": "batería",
+     "n": 15
+    },
+    {
+     "w": "bóveda",
+     "n": 14
+    },
+    {
+     "w": "cooperativa",
+     "n": 13
+    },
+    {
+     "w": "gracias",
+     "n": 11
+    },
+    {
+     "w": "doctor",
+     "n": 10
+    },
+    {
+     "w": "guita",
+     "n": 9
+    },
+    {
+     "w": "mierda",
+     "n": 9
+    },
+    {
+     "w": "momento",
+     "n": 9
+    },
+    {
+     "w": "personas",
+     "n": 8
+    },
+    {
+     "w": "torta",
+     "n": 7
+    },
+    {
+     "w": "culo",
+     "n": 7
+    }
+   ],
+   "easiness": 72,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 25
+  },
+  {
+   "slug": "truman",
+   "title": "Truman",
+   "english": "Truman",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2015",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8293,
+    "uniqueForms": 1664
+   },
+   "wpm": 242,
+   "rarePer1000": 64.6,
+   "coverage": {
+    "100": 73.1,
+    "500": 86.1,
+    "1000": 89.2,
+    "1500": 90.8
+   },
+   "listOnly": {
+    "100": 41.6,
+    "500": 54.6,
+    "1000": 57.7,
+    "1500": 59.2
+   },
+   "functionShare": 31.5,
+   "nextWords": [
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 10
     },
     {
      "w": "despedir",
      "rank": 1156,
      "meaning": "to fire",
      "n": 10
+    },
+    {
+     "w": "teatro",
+     "rank": 1240,
+     "meaning": "theater",
+     "n": 5
+    },
+    {
+     "w": "desayunar",
+     "rank": 1056,
+     "meaning": "to have breakfast",
+     "n": 5
+    },
+    {
+     "w": "parque",
+     "rank": 1054,
+     "meaning": "park",
+     "n": 4
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 4
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 4
+    },
+    {
+     "w": "terapia",
+     "rank": 1477,
+     "meaning": "therapy",
+     "n": 3
+    },
+    {
+     "w": "guía",
+     "rank": 1249,
+     "meaning": "guide",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 35
+    },
+    {
+     "w": "hola",
+     "n": 15
+    },
+    {
+     "w": "idea",
+     "n": 12
+    },
+    {
+     "w": "adiós",
+     "n": 10
+    },
+    {
+     "w": "favor",
+     "n": 8
+    },
+    {
+     "w": "par",
+     "n": 7
+    },
+    {
+     "w": "urnas",
+     "n": 7
+    },
+    {
+     "w": "mierda",
+     "n": 6
+    },
+    {
+     "w": "querés",
+     "n": 6
+    },
+    {
+     "w": "tenés",
+     "n": 5
+    },
+    {
+     "w": "sabés",
+     "n": 5
+    },
+    {
+     "w": "final",
+     "n": 5
+    },
+    {
+     "w": "momento",
+     "n": 5
+    },
+    {
+     "w": "perfecto",
+     "n": 5
+    },
+    {
+     "w": "the",
+     "n": 5
+    }
+   ],
+   "easiness": 71,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 26
+  },
+  {
+   "slug": "mientras-duermes",
+   "title": "Mientras duermes",
+   "english": "Sleep Tight",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2011",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 4962,
+    "uniqueForms": 1160
+   },
+   "wpm": 254,
+   "rarePer1000": 56.2,
+   "coverage": {
+    "100": 70.9,
+    "500": 85.6,
+    "1000": 88.8,
+    "1500": 90.7
+   },
+   "listOnly": {
+    "100": 40.5,
+    "500": 55.1,
+    "1000": 58.4,
+    "1500": 60.3
+   },
+   "functionShare": 30.4,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 9
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 6
+    },
+    {
+     "w": "ascensor",
+     "rank": 1494,
+     "meaning": "elevator",
+     "n": 5
+    },
+    {
+     "w": "asco",
+     "rank": 1408,
+     "meaning": "disgust",
+     "n": 3
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 17
+    },
+    {
+     "w": "favor",
+     "n": 15
+    },
+    {
+     "w": "senorita",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 11
+    },
+    {
+     "w": "radio",
+     "n": 10
+    },
+    {
+     "w": "mierda",
+     "n": 9
+    },
+    {
+     "w": "momento",
+     "n": 7
+    },
+    {
+     "w": "gemidos",
+     "n": 7
+    },
+    {
+     "w": "conserje",
+     "n": 6
+    },
+    {
+     "w": "manana",
+     "n": 5
+    },
+    {
+     "w": "problema",
+     "n": 5
+    },
+    {
+     "w": "chao",
+     "n": 5
+    },
+    {
+     "w": "bichos",
+     "n": 5
+    },
+    {
+     "w": "joder",
+     "n": 4
+    },
+    {
+     "w": "oficina",
+     "n": 4
+    }
+   ],
+   "easiness": 71,
+   "level": "Easy",
+   "cefr": "A2–B1",
+   "difficultyRank": 27
+  },
+  {
+   "slug": "biutiful",
+   "title": "Biutiful",
+   "english": "Biutiful",
+   "type": "Film",
+   "country": "Spain / Mexico",
+   "years": "2010",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7588,
+    "uniqueForms": 1638
+   },
+   "wpm": 279,
+   "rarePer1000": 63.3,
+   "coverage": {
+    "100": 70.6,
+    "500": 85.8,
+    "1000": 89.5,
+    "1500": 91.3
+   },
+   "listOnly": {
+    "100": 38.8,
+    "500": 54,
+    "1000": 57.7,
+    "1500": 59.5
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 14
+    },
+    {
+     "w": "nieve",
+     "rank": 1069,
+     "meaning": "snow",
+     "n": 6
+    },
+    {
+     "w": "cementerio",
+     "rank": 1467,
+     "meaning": "cemetery",
+     "n": 4
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 4
+    },
+    {
+     "w": "quemar",
+     "rank": 1276,
+     "meaning": "to burn",
+     "n": 4
     }
    ],
    "beyondList": [
     {
      "w": "favor",
-     "n": 81
+     "n": 23
     },
     {
      "w": "puta",
-     "n": 72
-    },
-    {
-     "w": "gracias",
-     "n": 70
-    },
-    {
-     "w": "hotel",
-     "n": 47
-    },
-    {
-     "w": "carajo",
-     "n": 38
-    },
-    {
-     "w": "hola",
-     "n": 38
-    },
-    {
-     "w": "momento",
-     "n": 31
-    },
-    {
-     "w": "cabrón",
-     "n": 30
-    },
-    {
-     "w": "video",
-     "n": 27
-    },
-    {
-     "w": "licenciada",
-     "n": 24
-    },
-    {
-     "w": "güey",
-     "n": 20
+     "n": 21
     },
     {
      "w": "mierda",
-     "n": 16
+     "n": 18
     },
     {
-     "w": "pinche",
+     "w": "coño",
+     "n": 13
+    },
+    {
+     "w": "joder",
+     "n": 11
+    },
+    {
+     "w": "gracias",
+     "n": 8
+    },
+    {
+     "w": "adiós",
+     "n": 7
+    },
+    {
+     "w": "hola",
+     "n": 5
+    },
+    {
+     "w": "chocolate",
+     "n": 5
+    },
+    {
+     "w": "nen",
+     "n": 5
+    },
+    {
+     "w": "cenizas",
+     "n": 5
+    },
+    {
+     "w": "bodega",
+     "n": 5
+    },
+    {
+     "w": "uxball",
+     "n": 5
+    },
+    {
+     "w": "quietas",
+     "n": 4
+    },
+    {
+     "w": "pestañas",
+     "n": 4
+    }
+   ],
+   "easiness": 69,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 28
+  },
+  {
+   "slug": "el-aura",
+   "title": "El aura",
+   "english": "The Aura",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2005",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 4928,
+    "uniqueForms": 1198
+   },
+   "wpm": 250,
+   "rarePer1000": 58,
+   "coverage": {
+    "100": 69.5,
+    "500": 84.8,
+    "1000": 88.4,
+    "1500": 90.4
+   },
+   "listOnly": {
+    "100": 37.7,
+    "500": 53,
+    "1000": 56.6,
+    "1500": 58.6
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "cazar",
+     "rank": 1499,
+     "meaning": "to hunt",
+     "n": 11
+    },
+    {
+     "w": "lunes",
+     "rank": 1128,
+     "meaning": "Monday",
+     "n": 7
+    },
+    {
+     "w": "julio",
+     "rank": 1296,
+     "meaning": "July",
+     "n": 6
+    },
+    {
+     "w": "celular",
+     "rank": 1197,
+     "meaning": "cell phone",
+     "n": 3
+    },
+    {
+     "w": "camioneta",
+     "rank": 1090,
+     "meaning": "pickup truck",
+     "n": 3
+    },
+    {
+     "w": "olor",
+     "rank": 1080,
+     "meaning": "smell",
+     "n": 3
+    },
+    {
+     "w": "kilómetro",
+     "rank": 1186,
+     "meaning": "kilometer",
+     "n": 3
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "casino",
      "n": 15
     },
     {
-     "w": "chingados",
+     "w": "vení",
+     "n": 10
+    },
+    {
+     "w": "puta",
+     "n": 10
+    },
+    {
+     "w": "mierda",
+     "n": 8
+    },
+    {
+     "w": "guita",
+     "n": 7
+    },
+    {
+     "w": "sos",
+     "n": 7
+    },
+    {
+     "w": "tenés",
+     "n": 7
+    },
+    {
+     "w": "pelotudo",
+     "n": 7
+    },
+    {
+     "w": "sabés",
+     "n": 6
+    },
+    {
+     "w": "blindado",
+     "n": 6
+    },
+    {
+     "w": "boludo",
+     "n": 5
+    },
+    {
+     "w": "carajo",
+     "n": 5
+    },
+    {
+     "w": "cabaña",
+     "n": 5
+    },
+    {
+     "w": "querés",
+     "n": 5
+    },
+    {
+     "w": "problema",
+     "n": 4
+    }
+   ],
+   "easiness": 69,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 29
+  },
+  {
+   "slug": "contratiempo",
+   "title": "Contratiempo",
+   "english": "The Invisible Guest",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8224,
+    "uniqueForms": 1828
+   },
+   "wpm": 202,
+   "rarePer1000": 69.7,
+   "coverage": {
+    "100": 68.9,
+    "500": 83,
+    "1000": 87.2,
+    "1500": 89.5
+   },
+   "listOnly": {
+    "100": 35.5,
+    "500": 49.6,
+    "1000": 53.8,
+    "1500": 56.1
+   },
+   "functionShare": 33.4,
+   "nextWords": [
+    {
+     "w": "amante",
+     "rank": 1130,
+     "meaning": "lover",
+     "n": 13
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 10
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 9
+    },
+    {
+     "w": "conductor",
+     "rank": 1386,
+     "meaning": "driver",
+     "n": 7
+    },
+    {
+     "w": "teoría",
+     "rank": 1217,
+     "meaning": "theory (everyday sense)",
+     "n": 6
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 6
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 4
+    },
+    {
+     "w": "falso",
+     "rank": 1005,
+     "meaning": "false",
+     "n": 4
+    },
+    {
+     "w": "vigilar",
+     "rank": 1158,
+     "meaning": "to watch",
+     "n": 4
+    },
+    {
+     "w": "pieza",
+     "rank": 1020,
+     "meaning": "piece",
+     "n": 4
+    },
+    {
+     "w": "ocultar",
+     "rank": 1482,
+     "meaning": "to hide",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hotel",
+     "n": 21
+    },
+    {
+     "w": "móvil",
+     "n": 20
+    },
+    {
+     "w": "favor",
+     "n": 17
+    },
+    {
+     "w": "gracias",
+     "n": 16
+    },
+    {
+     "w": "hola",
+     "n": 16
+    },
+    {
+     "w": "coche",
      "n": 14
     },
     {
      "w": "fiscalía",
-     "n": 14
+     "n": 11
+    },
+    {
+     "w": "accidente",
+     "n": 11
+    },
+    {
+     "w": "ciervo",
+     "n": 10
+    },
+    {
+     "w": "crimen",
+     "n": 7
+    },
+    {
+     "w": "arranca",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "cadáver",
+     "n": 6
+    },
+    {
+     "w": "reserva",
+     "n": 5
+    },
+    {
+     "w": "desaparición",
+     "n": 5
     }
    ],
-   "difficultyRank": 7
+   "easiness": 69,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 30
+  },
+  {
+   "slug": "que-dios-nos-perdone",
+   "title": "Que Dios nos perdone",
+   "english": "May God Save Us",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8566,
+    "uniqueForms": 1873
+   },
+   "wpm": 190,
+   "rarePer1000": 71.6,
+   "coverage": {
+    "100": 70,
+    "500": 83.7,
+    "1000": 87.6,
+    "1500": 89.4
+   },
+   "listOnly": {
+    "100": 38.9,
+    "500": 52.6,
+    "1000": 56.5,
+    "1500": 58.2
+   },
+   "functionShare": 31.1,
+   "nextWords": [
+    {
+     "w": "notar",
+     "rank": 1422,
+     "meaning": "to notice",
+     "n": 7
+    },
+    {
+     "w": "repetir",
+     "rank": 1339,
+     "meaning": "to repeat",
+     "n": 6
+    },
+    {
+     "w": "cartera",
+     "rank": 1187,
+     "meaning": "wallet",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 22
+    },
+    {
+     "w": "gracias",
+     "n": 18
+    },
+    {
+     "w": "puta",
+     "n": 17
+    },
+    {
+     "w": "coño",
+     "n": 14
+    },
+    {
+     "w": "adiós",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 10
+    },
+    {
+     "w": "momento",
+     "n": 7
+    },
+    {
+     "w": "maricón",
+     "n": 7
+    },
+    {
+     "w": "gilipollas",
+     "n": 7
+    },
+    {
+     "w": "ancianas",
+     "n": 7
+    },
+    {
+     "w": "inspector",
+     "n": 7
+    },
+    {
+     "w": "joder",
+     "n": 6
+    },
+    {
+     "w": "imposible",
+     "n": 6
+    },
+    {
+     "w": "cojones",
+     "n": 6
+    },
+    {
+     "w": "pumba",
+     "n": 5
+    }
+   ],
+   "easiness": 69,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 31
+  },
+  {
+   "slug": "la-piel-que-habito",
+   "title": "La piel que habito",
+   "english": "The Skin I Live In",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2011",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 12987,
+    "uniqueForms": 2941
+   },
+   "wpm": 197,
+   "rarePer1000": 80.6,
+   "coverage": {
+    "100": 68.1,
+    "500": 83.2,
+    "1000": 87.6,
+    "1500": 89.6
+   },
+   "listOnly": {
+    "100": 38.7,
+    "500": 53.8,
+    "1000": 58.2,
+    "1500": 60.2
+   },
+   "functionShare": 29.4,
+   "nextWords": [
+    {
+     "w": "ocultar",
+     "rank": 1482,
+     "meaning": "to hide",
+     "n": 8
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 7
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 7
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 7
+    },
+    {
+     "w": "ira",
+     "rank": 1267,
+     "meaning": "anger",
+     "n": 6
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 6
+    },
+    {
+     "w": "cubrir",
+     "rank": 1011,
+     "meaning": "to cover",
+     "n": 6
+    },
+    {
+     "w": "sociedad",
+     "rank": 1089,
+     "meaning": "society",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 24
+    },
+    {
+     "w": "favor",
+     "n": 21
+    },
+    {
+     "w": "mutación",
+     "n": 16
+    },
+    {
+     "w": "mutantes",
+     "n": 16
+    },
+    {
+     "w": "nuclear",
+     "n": 13
+    },
+    {
+     "w": "misiles",
+     "n": 12
+    },
+    {
+     "w": "fué",
+     "n": 10
+    },
+    {
+     "w": "mutante",
+     "n": 9
+    },
+    {
+     "w": "coronel",
+     "n": 9
+    },
+    {
+     "w": "hola",
+     "n": 8
+    },
+    {
+     "w": "profesor",
+     "n": 8
+    },
+    {
+     "w": "telepata",
+     "n": 8
+    },
+    {
+     "w": "mierda",
+     "n": 8
+    },
+    {
+     "w": "increible",
+     "n": 7
+    },
+    {
+     "w": "oficina",
+     "n": 7
+    }
+   ],
+   "easiness": 67,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 32
+  },
+  {
+   "slug": "el-hoyo",
+   "title": "El hoyo",
+   "english": "The Platform",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2019",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 10137,
+    "uniqueForms": 1775
+   },
+   "wpm": 180,
+   "rarePer1000": 64.4,
+   "coverage": {
+    "100": 64.5,
+    "500": 81.5,
+    "1000": 86.3,
+    "1500": 88.3
+   },
+   "listOnly": {
+    "100": 33.8,
+    "500": 50.8,
+    "1000": 55.6,
+    "1500": 57.6
+   },
+   "functionShare": 30.7,
+   "nextWords": [
+    {
+     "w": "obvio",
+     "rank": 1382,
+     "meaning": "obvious",
+     "n": 34
+    },
+    {
+     "w": "sobrevivir",
+     "rank": 1015,
+     "meaning": "to survive",
+     "n": 11
+    },
+    {
+     "w": "agujero",
+     "rank": 1321,
+     "meaning": "hole",
+     "n": 8
+    },
+    {
+     "w": "plato",
+     "rank": 1021,
+     "meaning": "dish",
+     "n": 7
+    },
+    {
+     "w": "título",
+     "rank": 1409,
+     "meaning": "title",
+     "n": 7
+    },
+    {
+     "w": "celda",
+     "rank": 1333,
+     "meaning": "cell",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "mierda",
+     "n": 36
+    },
+    {
+     "w": "hoyo",
+     "n": 34
+    },
+    {
+     "w": "panna",
+     "n": 31
+    },
+    {
+     "w": "cotta",
+     "n": 31
+    },
+    {
+     "w": "plataforma",
+     "n": 27
+    },
+    {
+     "w": "personas",
+     "n": 25
+    },
+    {
+     "w": "puta",
+     "n": 24
+    },
+    {
+     "w": "caracol",
+     "n": 22
+    },
+    {
+     "w": "favor",
+     "n": 21
+    },
+    {
+     "w": "raciones",
+     "n": 19
+    },
+    {
+     "w": "solidaridad",
+     "n": 16
+    },
+    {
+     "w": "espontánea",
+     "n": 11
+    },
+    {
+     "w": "puto",
+     "n": 11
+    },
+    {
+     "w": "similares",
+     "n": 10
+    },
+    {
+     "w": "joder",
+     "n": 10
+    }
+   ],
+   "easiness": 66,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 33
+  },
+  {
+   "slug": "el-bar",
+   "title": "El bar",
+   "english": "The Bar",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2017",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9259,
+    "uniqueForms": 1732
+   },
+   "wpm": 255,
+   "rarePer1000": 64.9,
+   "coverage": {
+    "100": 72.3,
+    "500": 85.4,
+    "1000": 88.7,
+    "1500": 90.2
+   },
+   "listOnly": {
+    "100": 40.3,
+    "500": 53.4,
+    "1000": 56.7,
+    "1500": 58.2
+   },
+   "functionShare": 32,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 10
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 9
+    },
+    {
+     "w": "incendio",
+     "rank": 1290,
+     "meaning": "fire",
+     "n": 7
+    },
+    {
+     "w": "fiebre",
+     "rank": 1388,
+     "meaning": "fever",
+     "n": 5
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 37
+    },
+    {
+     "w": "puta",
+     "n": 30
+    },
+    {
+     "w": "joder",
+     "n": 22
+    },
+    {
+     "w": "coño",
+     "n": 15
+    },
+    {
+     "w": "mierda",
+     "n": 14
+    },
+    {
+     "w": "cojones",
+     "n": 14
+    },
+    {
+     "w": "bar",
+     "n": 13
+    },
+    {
+     "w": "hostia",
+     "n": 11
+    },
+    {
+     "w": "pistola",
+     "n": 11
+    },
+    {
+     "w": "bomba",
+     "n": 10
+    },
+    {
+     "w": "maletín",
+     "n": 9
+    },
+    {
+     "w": "gracias",
+     "n": 8
+    },
+    {
+     "w": "momento",
+     "n": 8
+    },
+    {
+     "w": "personas",
+     "n": 8
+    },
+    {
+     "w": "cobertura",
+     "n": 7
+    }
+   ],
+   "easiness": 65,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 34
+  },
+  {
+   "slug": "todo-sobre-mi-madre",
+   "title": "Todo sobre mi madre",
+   "english": "All About My Mother",
+   "type": "Film",
+   "country": "Spain",
+   "years": "1999",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8479,
+    "uniqueForms": 1882
+   },
+   "wpm": 244,
+   "rarePer1000": 73.9,
+   "coverage": {
+    "100": 70.3,
+    "500": 85.1,
+    "1000": 88.7,
+    "1500": 90
+   },
+   "listOnly": {
+    "100": 38.2,
+    "500": 53,
+    "1000": 56.6,
+    "1500": 58
+   },
+   "functionShare": 32.1,
+   "nextWords": [
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 7
+    },
+    {
+     "w": "teatro",
+     "rank": 1240,
+     "meaning": "theater",
+     "n": 4
+    },
+    {
+     "w": "embarazada",
+     "rank": 1041,
+     "meaning": "pregnant",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 26
+    },
+    {
+     "w": "favor",
+     "n": 21
+    },
+    {
+     "w": "hola",
+     "n": 20
+    },
+    {
+     "w": "puta",
+     "n": 17
+    },
+    {
+     "w": "polla",
+     "n": 12
+    },
+    {
+     "w": "hospital",
+     "n": 9
+    },
+    {
+     "w": "tetas",
+     "n": 8
+    },
+    {
+     "w": "poquito",
+     "n": 7
+    },
+    {
+     "w": "adiós",
+     "n": 7
+    },
+    {
+     "w": "bruta",
+     "n": 5
+    },
+    {
+     "w": "autógrafo",
+     "n": 5
+    },
+    {
+     "w": "cocinera",
+     "n": 5
+    },
+    {
+     "w": "par",
+     "n": 5
+    },
+    {
+     "w": "posible",
+     "n": 4
+    },
+    {
+     "w": "momento",
+     "n": 4
+    }
+   ],
+   "easiness": 63,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 35
+  },
+  {
+   "slug": "el-guardian-invisible",
+   "title": "El guardián invisible",
+   "english": "The Invisible Guardian",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2017",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9357,
+    "uniqueForms": 2121
+   },
+   "wpm": 190,
+   "rarePer1000": 83.1,
+   "coverage": {
+    "100": 68.6,
+    "500": 82.4,
+    "1000": 86.9,
+    "1500": 89
+   },
+   "listOnly": {
+    "100": 35.4,
+    "500": 49.2,
+    "1000": 53.7,
+    "1500": 55.8
+   },
+   "functionShare": 33.2,
+   "nextWords": [
+    {
+     "w": "distinto",
+     "rank": 1251,
+     "meaning": "different",
+     "n": 7
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 6
+    },
+    {
+     "w": "utilizar",
+     "rank": 1070,
+     "meaning": "to use",
+     "n": 6
+    },
+    {
+     "w": "oso",
+     "rank": 1283,
+     "meaning": "bear",
+     "n": 4
+    },
+    {
+     "w": "apagar",
+     "rank": 1120,
+     "meaning": "to turn off",
+     "n": 4
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 23
+    },
+    {
+     "w": "harina",
+     "n": 19
+    },
+    {
+     "w": "obrador",
+     "n": 13
+    },
+    {
+     "w": "favor",
+     "n": 13
+    },
+    {
+     "w": "valle",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 10
+    },
+    {
+     "w": "joder",
+     "n": 8
+    },
+    {
+     "w": "cordón",
+     "n": 7
+    },
+    {
+     "w": "coche",
+     "n": 7
+    },
+    {
+     "w": "doctor",
+     "n": 6
+    },
+    {
+     "w": "ritual",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "embargo",
+     "n": 6
+    },
+    {
+     "w": "par",
+     "n": 5
+    },
+    {
+     "w": "puta",
+     "n": 5
+    }
+   ],
+   "easiness": 63,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 36
+  },
+  {
+   "slug": "padre-no-hay-mas-que-uno",
+   "title": "Padre no hay más que uno",
+   "english": "Father There Is Only One",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2019",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 12361,
+    "uniqueForms": 2304
+   },
+   "wpm": 249,
+   "rarePer1000": 72.9,
+   "coverage": {
+    "100": 69.9,
+    "500": 84.5,
+    "1000": 88,
+    "1500": 89.9
+   },
+   "listOnly": {
+    "100": 38.3,
+    "500": 52.9,
+    "1000": 56.4,
+    "1500": 58.3
+   },
+   "functionShare": 31.6,
+   "nextWords": [
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 17
+    },
+    {
+     "w": "viernes",
+     "rank": 1001,
+     "meaning": "Friday",
+     "n": 15
+    },
+    {
+     "w": "disfrutar",
+     "rank": 1204,
+     "meaning": "to enjoy",
+     "n": 9
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 8
+    },
+    {
+     "w": "lunes",
+     "rank": 1128,
+     "meaning": "Monday",
+     "n": 5
+    },
+    {
+     "w": "amanecer",
+     "rank": 1380,
+     "meaning": "dawn",
+     "n": 5
+    },
+    {
+     "w": "desayunar",
+     "rank": 1056,
+     "meaning": "to have breakfast",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 25
+    },
+    {
+     "w": "hola",
+     "n": 20
+    },
+    {
+     "w": "favor",
+     "n": 18
+    },
+    {
+     "w": "chat",
+     "n": 14
+    },
+    {
+     "w": "adiós",
+     "n": 12
+    },
+    {
+     "w": "aplicación",
+     "n": 12
+    },
+    {
+     "w": "castin",
+     "n": 11
+    },
+    {
+     "w": "aniversario",
+     "n": 10
+    },
+    {
+     "w": "enamora",
+     "n": 10
+    },
+    {
+     "w": "moluscos",
+     "n": 9
+    },
+    {
+     "w": "cuñado",
+     "n": 8
+    },
+    {
+     "w": "disfraz",
+     "n": 8
+    },
+    {
+     "w": "pasta",
+     "n": 8
+    },
+    {
+     "w": "momento",
+     "n": 7
+    },
+    {
+     "w": "cortinas",
+     "n": 7
+    }
+   ],
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 37
   },
   {
    "slug": "el-barco",
@@ -1116,6 +5381,8 @@
     "words": 76382,
     "uniqueForms": 8016
    },
+   "wpm": 195,
+   "rarePer1000": 86.8,
    "coverage": {
     "100": 69.2,
     "500": 83.2,
@@ -1253,118 +5520,972 @@
      "n": 30
     }
    ],
-   "difficultyRank": 8
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 38
   },
   {
-   "slug": "el-internado",
-   "title": "El internado",
-   "english": "The Boarding School",
+   "slug": "los-serrano",
+   "title": "Los Serrano",
+   "english": "Los Serrano",
    "type": "TV series",
    "country": "Spain",
-   "years": "2007-2010",
+   "years": "2003-2008",
    "accent": "Castilian Spanish (Spain)",
    "sample": {
-    "units": 14,
+    "units": 7,
     "unitLabel": "episodes",
-    "words": 71283,
-    "uniqueForms": 7761
+    "words": 58206,
+    "uniqueForms": 6486
    },
+   "wpm": 188,
+   "rarePer1000": 76.3,
    "coverage": {
-    "100": 69.8,
-    "500": 83.5,
-    "1000": 87.1,
-    "1500": 88.9
+    "100": 70.7,
+    "500": 83,
+    "1000": 86.6,
+    "1500": 88.4
    },
    "listOnly": {
-    "100": 40.9,
-    "500": 54.6,
-    "1000": 58.2,
-    "1500": 60
+    "100": 39.4,
+    "500": 51.7,
+    "1000": 55.3,
+    "1500": 57.1
    },
-   "functionShare": 28.9,
+   "functionShare": 31.3,
    "nextWords": [
     {
-     "w": "marco",
-     "rank": 1500,
-     "meaning": "frame",
-     "n": 201
+     "w": "examen",
+     "rank": 1145,
+     "meaning": "exam",
+     "n": 31
     },
     {
-     "w": "esconder",
-     "rank": 1047,
-     "meaning": "to hide",
-     "n": 31
+     "w": "moto",
+     "rank": 1370,
+     "meaning": "motorcycle",
+     "n": 22
+    },
+    {
+     "w": "kilómetro",
+     "rank": 1186,
+     "meaning": "kilometer",
+     "n": 21
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 20
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 18
     },
     {
      "w": "pegar",
      "rank": 1227,
      "meaning": "to hit",
-     "n": 24
+     "n": 17
     }
    ],
    "beyondList": [
     {
-     "w": "gracias",
-     "n": 99
-    },
-    {
-     "w": "mierda",
-     "n": 67
-    },
-    {
      "w": "hola",
-     "n": 66
+     "n": 97
     },
     {
-     "w": "internado",
-     "n": 64
+     "w": "favor",
+     "n": 94
     },
     {
      "w": "joder",
-     "n": 63
+     "n": 88
     },
     {
-     "w": "momento",
-     "n": 47
+     "w": "mecha",
+     "n": 66
     },
     {
-     "w": "ei",
-     "n": 40
+     "w": "gracias",
+     "n": 65
     },
     {
      "w": "coño",
-     "n": 37
+     "n": 44
     },
     {
-     "w": "puta",
-     "n": 34
+     "w": "taberna",
+     "n": 38
     },
     {
-     "w": "medicinas",
+     "w": "momento",
+     "n": 35
+    },
+    {
+     "w": "problema",
      "n": 33
     },
     {
-     "w": "idea",
+     "w": "conde",
+     "n": 33
+    },
+    {
+     "w": "cago",
+     "n": 32
+    },
+    {
+     "w": "curro",
      "n": 31
     },
     {
-     "w": "gnomo",
-     "n": 30
+     "w": "chaval",
+     "n": 31
     },
     {
-     "w": "pistola",
-     "n": 29
-    },
-    {
-     "w": "pasadizos",
+     "w": "mierda",
      "n": 27
     },
     {
-     "w": "profesora",
-     "n": 24
+     "w": "euros",
+     "n": 25
     }
    ],
-   "difficultyRank": 9
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 39
+  },
+  {
+   "slug": "juan-de-los-muertos",
+   "title": "Juan de los Muertos",
+   "english": "Juan of the Dead",
+   "type": "Film",
+   "country": "Cuba",
+   "years": "2011",
+   "accent": "Cuban Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 4641,
+    "uniqueForms": 1345
+   },
+   "wpm": 173,
+   "rarePer1000": 83.6,
+   "coverage": {
+    "100": 67.8,
+    "500": 82.5,
+    "1000": 86.2,
+    "1500": 88.3
+   },
+   "listOnly": {
+    "100": 37.4,
+    "500": 52.1,
+    "1000": 55.8,
+    "1500": 57.9
+   },
+   "functionShare": 30.4,
+   "nextWords": [
+    {
+     "w": "sobrevivir",
+     "rank": 1015,
+     "meaning": "to survive",
+     "n": 9
+    },
+    {
+     "w": "carro",
+     "rank": 1040,
+     "meaning": "car",
+     "n": 7
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 3
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 3
+    },
+    {
+     "w": "rodilla",
+     "rank": 1046,
+     "meaning": "knee",
+     "n": 2
+    },
+    {
+     "w": "combate",
+     "rank": 1279,
+     "meaning": "fight",
+     "n": 2
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "coño",
+     "n": 19
+    },
+    {
+     "w": "pinga",
+     "n": 11
+    },
+    {
+     "w": "favor",
+     "n": 10
+    },
+    {
+     "w": "chama",
+     "n": 10
+    },
+    {
+     "w": "cojones",
+     "n": 8
+    },
+    {
+     "w": "brother",
+     "n": 7
+    },
+    {
+     "w": "disidentes",
+     "n": 6
+    },
+    {
+     "w": "you",
+     "n": 6
+    },
+    {
+     "w": "gracias",
+     "n": 5
+    },
+    {
+     "w": "jodas",
+     "n": 5
+    },
+    {
+     "w": "plan",
+     "n": 5
+    },
+    {
+     "w": "filo",
+     "n": 4
+    },
+    {
+     "w": "cabrón",
+     "n": 4
+    },
+    {
+     "w": "tremendo",
+     "n": 4
+    },
+    {
+     "w": "maricón",
+     "n": 4
+    }
+   ],
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 40
+  },
+  {
+   "slug": "el-chapo",
+   "title": "El Chapo",
+   "english": "El Chapo",
+   "type": "TV series",
+   "country": "Mexico / USA",
+   "years": "2017-2018",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 9,
+    "unitLabel": "episodes",
+    "words": 17965,
+    "uniqueForms": 3136
+   },
+   "wpm": 141,
+   "rarePer1000": 84.3,
+   "coverage": {
+    "100": 66.6,
+    "500": 80.8,
+    "1000": 85.4,
+    "1500": 88.1
+   },
+   "listOnly": {
+    "100": 34.7,
+    "500": 48.9,
+    "1000": 53.5,
+    "1500": 56.2
+   },
+   "functionShare": 31.9,
+   "nextWords": [
+    {
+     "w": "patrón",
+     "rank": 1488,
+     "meaning": "pattern",
+     "n": 57
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 26
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 11
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 9
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 9
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "cabrón",
+     "n": 66
+    },
+    {
+     "w": "gracias",
+     "n": 49
+    },
+    {
+     "w": "favor",
+     "n": 48
+    },
+    {
+     "w": "compadre",
+     "n": 30
+    },
+    {
+     "w": "cardenal",
+     "n": 25
+    },
+    {
+     "w": "pendejo",
+     "n": 20
+    },
+    {
+     "w": "nubes",
+     "n": 18
+    },
+    {
+     "w": "sequía",
+     "n": 18
+    },
+    {
+     "w": "destejer",
+     "n": 18
+    },
+    {
+     "w": "información",
+     "n": 18
+    },
+    {
+     "w": "chingada",
+     "n": 17
+    },
+    {
+     "w": "pinche",
+     "n": 15
+    },
+    {
+     "w": "penal",
+     "n": 15
+    },
+    {
+     "w": "licenciada",
+     "n": 15
+    },
+    {
+     "w": "momento",
+     "n": 14
+    }
+   ],
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 41
+  },
+  {
+   "slug": "machuca",
+   "title": "Machuca",
+   "english": "Machuca",
+   "type": "Film",
+   "country": "Chile",
+   "years": "2004",
+   "accent": "Chilean Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 5631,
+    "uniqueForms": 1439
+   },
+   "wpm": 187,
+   "rarePer1000": 59.8,
+   "coverage": {
+    "100": 64.6,
+    "500": 80.3,
+    "1000": 85.3,
+    "1500": 87.7
+   },
+   "listOnly": {
+    "100": 35.4,
+    "500": 51.1,
+    "1000": 56.1,
+    "1500": 58.6
+   },
+   "functionShare": 29.1,
+   "nextWords": [
+    {
+     "w": "bandera",
+     "rank": 1447,
+     "meaning": "flag",
+     "n": 11
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 11
+    },
+    {
+     "w": "cobarde",
+     "rank": 1147,
+     "meaning": "coward",
+     "n": 7
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 7
+    },
+    {
+     "w": "granja",
+     "rank": 1112,
+     "meaning": "farm",
+     "n": 4
+    },
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 4
+    },
+    {
+     "w": "lavar",
+     "rank": 1371,
+     "meaning": "to wash",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "idiota",
+     "n": 37
+    },
+    {
+     "w": "mierda",
+     "n": 30
+    },
+    {
+     "w": "hola",
+     "n": 28
+    },
+    {
+     "w": "puta",
+     "n": 23
+    },
+    {
+     "w": "favor",
+     "n": 20
+    },
+    {
+     "w": "gracias",
+     "n": 17
+    },
+    {
+     "w": "pedro",
+     "n": 8
+    },
+    {
+     "w": "banderitas",
+     "n": 8
+    },
+    {
+     "w": "adiós",
+     "n": 7
+    },
+    {
+     "w": "pituco",
+     "n": 7
+    },
+    {
+     "w": "comunistas",
+     "n": 6
+    },
+    {
+     "w": "nacionalismo",
+     "n": 6
+    },
+    {
+     "w": "nacionalistas",
+     "n": 6
+    },
+    {
+     "w": "nacionalista",
+     "n": 6
+    },
+    {
+     "w": "chao",
+     "n": 6
+    }
+   ],
+   "easiness": 62,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 42
+  },
+  {
+   "slug": "kiki-el-amor-se-hace",
+   "title": "Kiki, el amor se hace",
+   "english": "Kiki, Love to Love",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8503,
+    "uniqueForms": 1638
+   },
+   "wpm": 263,
+   "rarePer1000": 70.2,
+   "coverage": {
+    "100": 74.2,
+    "500": 85.5,
+    "1000": 88.6,
+    "1500": 89.9
+   },
+   "listOnly": {
+    "100": 43.4,
+    "500": 54.7,
+    "1000": 57.9,
+    "1500": 59.2
+   },
+   "functionShare": 30.7,
+   "nextWords": [
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 6
+    },
+    {
+     "w": "muchísimo",
+     "rank": 1081,
+     "meaning": "very much",
+     "n": 4
+    },
+    {
+     "w": "embarazada",
+     "rank": 1041,
+     "meaning": "pregnant",
+     "n": 4
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 4
+    },
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "coño",
+     "n": 14
+    },
+    {
+     "w": "puta",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 12
+    },
+    {
+     "w": "gracias",
+     "n": 12
+    },
+    {
+     "w": "favor",
+     "n": 11
+    },
+    {
+     "w": "momento",
+     "n": 10
+    },
+    {
+     "w": "pico",
+     "n": 9
+    },
+    {
+     "w": "bonobo",
+     "n": 9
+    },
+    {
+     "w": "euros",
+     "n": 7
+    },
+    {
+     "w": "normal",
+     "n": 7
+    },
+    {
+     "w": "apestoso",
+     "n": 6
+    },
+    {
+     "w": "joder",
+     "n": 6
+    },
+    {
+     "w": "orgasmo",
+     "n": 6
+    },
+    {
+     "w": "bragas",
+     "n": 6
+    },
+    {
+     "w": "gasolinera",
+     "n": 5
+    }
+   ],
+   "easiness": 60,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 43
+  },
+  {
+   "slug": "fisica-o-quimica",
+   "title": "Física o química",
+   "english": "Physics or Chemistry",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2008-2011",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 105563,
+    "uniqueForms": 8658
+   },
+   "wpm": 305,
+   "rarePer1000": 74.1,
+   "coverage": {
+    "100": 73,
+    "500": 86,
+    "1000": 89.2,
+    "1500": 90.8
+   },
+   "listOnly": {
+    "100": 41.5,
+    "500": 54.5,
+    "1000": 57.7,
+    "1500": 59.3
+   },
+   "functionShare": 31.5,
+   "nextWords": [
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 54
+    },
+    {
+     "w": "reír",
+     "rank": 1099,
+     "meaning": "to laugh",
+     "n": 42
+    },
+    {
+     "w": "examen",
+     "rank": 1145,
+     "meaning": "exam",
+     "n": 32
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 32
+    },
+    {
+     "w": "polvo",
+     "rank": 1221,
+     "meaning": "dust",
+     "n": 28
+    },
+    {
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 26
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 26
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "joder",
+     "n": 209
+    },
+    {
+     "w": "hola",
+     "n": 187
+    },
+    {
+     "w": "gracias",
+     "n": 164
+    },
+    {
+     "w": "favor",
+     "n": 148
+    },
+    {
+     "w": "momento",
+     "n": 92
+    },
+    {
+     "w": "puta",
+     "n": 84
+    },
+    {
+     "w": "mierda",
+     "n": 80
+    },
+    {
+     "w": "idea",
+     "n": 80
+    },
+    {
+     "w": "problema",
+     "n": 75
+    },
+    {
+     "w": "coño",
+     "n": 68
+    },
+    {
+     "w": "alumnos",
+     "n": 57
+    },
+    {
+     "w": "móvil",
+     "n": 50
+    },
+    {
+     "w": "gilipollas",
+     "n": 50
+    },
+    {
+     "w": "profesor",
+     "n": 42
+    },
+    {
+     "w": "sexo",
+     "n": 41
+    }
+   ],
+   "easiness": 59,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 44
+  },
+  {
+   "slug": "roma",
+   "title": "Roma",
+   "english": "Roma",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2018",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 11347,
+    "uniqueForms": 1817
+   },
+   "wpm": 178,
+   "rarePer1000": 82.7,
+   "coverage": {
+    "100": 67.1,
+    "500": 82.1,
+    "1000": 86,
+    "1500": 87.9
+   },
+   "listOnly": {
+    "100": 37.5,
+    "500": 52.4,
+    "1000": 56.4,
+    "1500": 58.3
+   },
+   "functionShare": 29.6,
+   "nextWords": [
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 12
+    },
+    {
+     "w": "apagar",
+     "rank": 1120,
+     "meaning": "to turn off",
+     "n": 10
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 9
+    },
+    {
+     "w": "aventura",
+     "rank": 1414,
+     "meaning": "adventure",
+     "n": 9
+    },
+    {
+     "w": "ola",
+     "rank": 1417,
+     "meaning": "wave",
+     "n": 9
+    },
+    {
+     "w": "dato",
+     "rank": 1028,
+     "meaning": "piece of information",
+     "n": 8
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 6
+    },
+    {
+     "w": "nadar",
+     "rank": 1326,
+     "meaning": "to swim",
+     "n": 6
+    },
+    {
+     "w": "quemar",
+     "rank": 1276,
+     "meaning": "to burn",
+     "n": 6
+    },
+    {
+     "w": "bendecir",
+     "rank": 1460,
+     "meaning": "to bless",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 63
+    },
+    {
+     "w": "hola",
+     "n": 51
+    },
+    {
+     "w": "doctora",
+     "n": 47
+    },
+    {
+     "w": "gracias",
+     "n": 43
+    },
+    {
+     "w": "doctor",
+     "n": 32
+    },
+    {
+     "w": "ahorita",
+     "n": 21
+    },
+    {
+     "w": "orilla",
+     "n": 11
+    },
+    {
+     "w": "coche",
+     "n": 11
+    },
+    {
+     "w": "falda",
+     "n": 10
+    },
+    {
+     "w": "adiós",
+     "n": 8
+    },
+    {
+     "w": "momento",
+     "n": 8
+    },
+    {
+     "w": "horrible",
+     "n": 8
+    },
+    {
+     "w": "tantito",
+     "n": 7
+    },
+    {
+     "w": "pediatra",
+     "n": 7
+    },
+    {
+     "w": "profesor",
+     "n": 6
+    }
+   ],
+   "easiness": 59,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 45
   },
   {
    "slug": "el-ministerio-del-tiempo",
@@ -1380,6 +6501,8 @@
     "words": 82397,
     "uniqueForms": 9174
    },
+   "wpm": 229,
+   "rarePer1000": 74.7,
    "coverage": {
     "100": 68.5,
     "500": 82.6,
@@ -1529,136 +6652,692 @@
      "n": 24
     }
    ],
-   "difficultyRank": 10
+   "easiness": 58,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 46
   },
   {
-   "slug": "los-serrano",
-   "title": "Los Serrano",
-   "english": "Los Serrano",
-   "type": "TV series",
-   "country": "Spain",
-   "years": "2003-2008",
-   "accent": "Castilian Spanish (Spain)",
+   "slug": "no-se-aceptan-devoluciones",
+   "title": "No se aceptan devoluciones",
+   "english": "Instructions Not Included",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2013",
+   "accent": "Mexican Spanish",
    "sample": {
-    "units": 7,
-    "unitLabel": "episodes",
-    "words": 58206,
-    "uniqueForms": 6486
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8817,
+    "uniqueForms": 1971
    },
+   "wpm": 180,
+   "rarePer1000": 76,
    "coverage": {
-    "100": 70.7,
-    "500": 83,
-    "1000": 86.6,
-    "1500": 88.4
+    "100": 67,
+    "500": 82.2,
+    "1000": 85.9,
+    "1500": 87.6
    },
    "listOnly": {
-    "100": 39.4,
-    "500": 51.7,
+    "100": 36.3,
+    "500": 51.5,
     "1000": 55.3,
-    "1500": 57.1
+    "1500": 56.9
    },
-   "functionShare": 31.3,
+   "functionShare": 30.7,
    "nextWords": [
     {
-     "w": "examen",
-     "rank": 1145,
-     "meaning": "exam",
-     "n": 31
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 8
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 6
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 6
+    },
+    {
+     "w": "lanzar",
+     "rank": 1298,
+     "meaning": "to throw",
+     "n": 6
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 6
+    },
+    {
+     "w": "visitar",
+     "rank": 1199,
+     "meaning": "to visit",
+     "n": 5
+    },
+    {
+     "w": "vencer",
+     "rank": 1398,
+     "meaning": "to defeat",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 20
+    },
+    {
+     "w": "gracias",
+     "n": 16
+    },
+    {
+     "w": "stuntman",
+     "n": 14
+    },
+    {
+     "w": "cha",
+     "n": 11
+    },
+    {
+     "w": "hola",
+     "n": 11
+    },
+    {
+     "w": "pa",
+     "n": 11
+    },
+    {
+     "w": "my",
+     "n": 9
+    },
+    {
+     "w": "there",
+     "n": 9
+    },
+    {
+     "w": "taxi",
+     "n": 8
+    },
+    {
+     "w": "acción",
+     "n": 8
+    },
+    {
+     "w": "better",
+     "n": 8
+    },
+    {
+     "w": "with",
+     "n": 8
+    },
+    {
+     "w": "ahh",
+     "n": 6
+    },
+    {
+     "w": "idea",
+     "n": 6
+    },
+    {
+     "w": "on",
+     "n": 6
+    }
+   ],
+   "easiness": 58,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 47
+  },
+  {
+   "slug": "mujeres-al-borde-de-un-ataque-de-nervios",
+   "title": "Mujeres al borde de un ataque de nervios",
+   "english": "Women on the Verge of a Nervous Breakdown",
+   "type": "Film",
+   "country": "Spain",
+   "years": "1988",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7842,
+    "uniqueForms": 1767
+   },
+   "wpm": 268,
+   "rarePer1000": 72.7,
+   "coverage": {
+    "100": 71.1,
+    "500": 84.3,
+    "1000": 87.6,
+    "1500": 89.7
+   },
+   "listOnly": {
+    "100": 41.1,
+    "500": 54.3,
+    "1000": 57.6,
+    "1500": 59.7
+   },
+   "functionShare": 30,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 22
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 13
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 7
     },
     {
      "w": "moto",
      "rank": 1370,
      "meaning": "motorcycle",
-     "n": 22
+     "n": 6
     },
     {
-     "w": "kilómetro",
-     "rank": 1186,
-     "meaning": "kilometer",
-     "n": 21
+     "w": "teatro",
+     "rank": 1240,
+     "meaning": "theater",
+     "n": 6
     },
     {
-     "w": "reír",
-     "rank": 1099,
-     "meaning": "to laugh",
-     "n": 20
+     "w": "reconocer",
+     "rank": 1014,
+     "meaning": "to recognize",
+     "n": 6
     },
     {
-     "w": "respetar",
-     "rank": 1420,
-     "meaning": "to respect",
+     "w": "lío",
+     "rank": 1059,
+     "meaning": "mess",
+     "n": 5
+    },
+    {
+     "w": "cómodo",
+     "rank": 1138,
+     "meaning": "comfortable",
+     "n": 5
+    },
+    {
+     "w": "arrestar",
+     "rank": 1115,
+     "meaning": "to arrest",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
      "n": 18
+    },
+    {
+     "w": "gracias",
+     "n": 17
+    },
+    {
+     "w": "momento",
+     "n": 15
+    },
+    {
+     "w": "manana",
+     "n": 13
+    },
+    {
+     "w": "shiitas",
+     "n": 13
+    },
+    {
+     "w": "senora",
+     "n": 12
+    },
+    {
+     "w": "gazpacho",
+     "n": 12
+    },
+    {
+     "w": "carino",
+     "n": 10
+    },
+    {
+     "w": "terroristas",
+     "n": 8
+    },
+    {
+     "w": "apartamento",
+     "n": 7
+    },
+    {
+     "w": "terraza",
+     "n": 6
+    },
+    {
+     "w": "taxi",
+     "n": 6
+    },
+    {
+     "w": "café",
+     "n": 6
+    },
+    {
+     "w": "almagro",
+     "n": 6
+    },
+    {
+     "w": "mierda",
+     "n": 4
+    }
+   ],
+   "easiness": 57,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 48
+  },
+  {
+   "slug": "ocho-apellidos-vascos",
+   "title": "Ocho apellidos vascos",
+   "english": "Spanish Affair",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2014",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 10175,
+    "uniqueForms": 1827
+   },
+   "wpm": 248,
+   "rarePer1000": 71,
+   "coverage": {
+    "100": 72.8,
+    "500": 84.7,
+    "1000": 87.5,
+    "1500": 89
+   },
+   "listOnly": {
+    "100": 41.4,
+    "500": 53.3,
+    "1000": 56,
+    "1500": 57.5
+   },
+   "functionShare": 31.4,
+   "nextWords": [
+    {
+     "w": "diversión",
+     "rank": 1273,
+     "meaning": "fun",
+     "n": 6
+    },
+    {
+     "w": "muchísimo",
+     "rank": 1081,
+     "meaning": "very much",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "hostia",
+     "n": 28
+    },
+    {
+     "w": "aita",
+     "n": 28
+    },
+    {
+     "w": "aúpa",
+     "n": 15
+    },
+    {
+     "w": "agur",
+     "n": 15
+    },
+    {
+     "w": "favor",
+     "n": 14
+    },
+    {
+     "w": "vasco",
+     "n": 12
+    },
+    {
+     "w": "sevillano",
+     "n": 12
+    },
+    {
+     "w": "vascos",
+     "n": 11
+    },
+    {
+     "w": "puta",
+     "n": 11
+    },
+    {
+     "w": "color",
+     "n": 11
+    },
+    {
+     "w": "hostias",
+     "n": 10
+    },
+    {
+     "w": "cago",
+     "n": 9
+    },
+    {
+     "w": "especial",
+     "n": 9
+    },
+    {
+     "w": "momento",
+     "n": 9
+    },
+    {
+     "w": "eskerrik",
+     "n": 9
+    }
+   ],
+   "easiness": 57,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 49
+  },
+  {
+   "slug": "los-amantes-pasajeros",
+   "title": "Los amantes pasajeros",
+   "english": "I'm So Excited!",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2013",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8605,
+    "uniqueForms": 2067
+   },
+   "wpm": 211,
+   "rarePer1000": 82.6,
+   "coverage": {
+    "100": 68.4,
+    "500": 82.8,
+    "1000": 86.6,
+    "1500": 88.4
+   },
+   "listOnly": {
+    "100": 36.8,
+    "500": 51.1,
+    "1000": 54.9,
+    "1500": 56.7
+   },
+   "functionShare": 31.7,
+   "nextWords": [
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 13
+    },
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 5
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 5
+    },
+    {
+     "w": "alegría",
+     "rank": 1429,
+     "meaning": "joy",
+     "n": 4
     },
     {
      "w": "pegar",
      "rank": 1227,
      "meaning": "to hit",
-     "n": 17
+     "n": 4
+    },
+    {
+     "w": "celebrar",
+     "rank": 1449,
+     "meaning": "to celebrate",
+     "n": 4
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 4
     }
    ],
    "beyondList": [
     {
-     "w": "hola",
-     "n": 97
-    },
-    {
      "w": "favor",
-     "n": 94
+     "n": 21
     },
     {
-     "w": "joder",
-     "n": 88
-    },
-    {
-     "w": "mecha",
-     "n": 66
-    },
-    {
-     "w": "gracias",
-     "n": 65
-    },
-    {
-     "w": "coño",
-     "n": 44
-    },
-    {
-     "w": "taberna",
-     "n": 38
+     "w": "hola",
+     "n": 16
     },
     {
      "w": "momento",
-     "n": 35
+     "n": 13
     },
     {
-     "w": "problema",
-     "n": 33
+     "w": "gracias",
+     "n": 13
     },
     {
-     "w": "conde",
-     "n": 33
+     "w": "na",
+     "n": 10
     },
     {
-     "w": "cago",
-     "n": 32
+     "w": "aterrizar",
+     "n": 9
     },
     {
-     "w": "curro",
-     "n": 31
+     "w": "aterrizaje",
+     "n": 8
     },
     {
-     "w": "chaval",
-     "n": 31
+     "w": "pasajeros",
+     "n": 7
     },
     {
-     "w": "mierda",
-     "n": 27
+     "w": "alcohol",
+     "n": 7
     },
     {
-     "w": "euros",
-     "n": 25
+     "w": "cabina",
+     "n": 7
+    },
+    {
+     "w": "pilotos",
+     "n": 7
+    },
+    {
+     "w": "polla",
+     "n": 7
+    },
+    {
+     "w": "galán",
+     "n": 7
+    },
+    {
+     "w": "fatal",
+     "n": 7
+    },
+    {
+     "w": "maricón",
+     "n": 6
     }
    ],
-   "difficultyRank": 11
+   "easiness": 56,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 50
+  },
+  {
+   "slug": "elefante-blanco",
+   "title": "Elefante blanco",
+   "english": "White Elephant",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2012",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7113,
+    "uniqueForms": 1487
+   },
+   "wpm": 230,
+   "rarePer1000": 69.7,
+   "coverage": {
+    "100": 66.8,
+    "500": 82.3,
+    "1000": 86,
+    "1500": 88.4
+   },
+   "listOnly": {
+    "100": 37.1,
+    "500": 52.7,
+    "1000": 56.4,
+    "1500": 58.7
+   },
+   "functionShare": 29.6,
+   "nextWords": [
+    {
+     "w": "bendecir",
+     "rank": 1460,
+     "meaning": "to bless",
+     "n": 15
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 9
+    },
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 7
+    },
+    {
+     "w": "rogar",
+     "rank": 1389,
+     "meaning": "to beg / to plead",
+     "n": 7
+    },
+    {
+     "w": "construir",
+     "rank": 1009,
+     "meaning": "to build",
+     "n": 6
+    },
+    {
+     "w": "barrio",
+     "rank": 1055,
+     "meaning": "neighborhood",
+     "n": 5
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "vení",
+     "n": 20
+    },
+    {
+     "w": "favor",
+     "n": 18
+    },
+    {
+     "w": "villa",
+     "n": 17
+    },
+    {
+     "w": "hola",
+     "n": 16
+    },
+    {
+     "w": "gracias",
+     "n": 15
+    },
+    {
+     "w": "querés",
+     "n": 15
+    },
+    {
+     "w": "puta",
+     "n": 15
+    },
+    {
+     "w": "monito",
+     "n": 14
+    },
+    {
+     "w": "tenés",
+     "n": 12
+    },
+    {
+     "w": "amén",
+     "n": 11
+    },
+    {
+     "w": "capilla",
+     "n": 9
+    },
+    {
+     "w": "pará",
+     "n": 9
+    },
+    {
+     "w": "pibes",
+     "n": 7
+    },
+    {
+     "w": "gracia",
+     "n": 7
+    },
+    {
+     "w": "fruto",
+     "n": 7
+    }
+   ],
+   "easiness": 56,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 51
   },
   {
    "slug": "vis-a-vis",
@@ -1674,6 +7353,8 @@
     "words": 15978,
     "uniqueForms": 3098
    },
+   "wpm": 179,
+   "rarePer1000": 94.3,
    "coverage": {
     "100": 69.1,
     "500": 82.3,
@@ -1793,271 +7474,670 @@
      "n": 9
     }
    ],
-   "difficultyRank": 12
+   "easiness": 56,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 52
   },
   {
-   "slug": "el-chapo",
-   "title": "El Chapo",
-   "english": "El Chapo",
-   "type": "TV series",
-   "country": "Mexico / USA",
-   "years": "2017-2018",
-   "accent": "Mexican Spanish",
-   "sample": {
-    "units": 9,
-    "unitLabel": "episodes",
-    "words": 17965,
-    "uniqueForms": 3136
-   },
-   "coverage": {
-    "100": 66.6,
-    "500": 80.8,
-    "1000": 85.4,
-    "1500": 88.1
-   },
-   "listOnly": {
-    "100": 34.7,
-    "500": 48.9,
-    "1000": 53.5,
-    "1500": 56.2
-   },
-   "functionShare": 31.9,
-   "nextWords": [
-    {
-     "w": "patrón",
-     "rank": 1488,
-     "meaning": "pattern",
-     "n": 57
-    },
-    {
-     "w": "cruzar",
-     "rank": 1093,
-     "meaning": "to cross",
-     "n": 26
-    },
-    {
-     "w": "entregar",
-     "rank": 1275,
-     "meaning": "to deliver",
-     "n": 11
-    },
-    {
-     "w": "encargar",
-     "rank": 1282,
-     "meaning": "to order",
-     "n": 9
-    },
-    {
-     "w": "cumplir",
-     "rank": 1044,
-     "meaning": "to fulfill",
-     "n": 9
-    }
-   ],
-   "beyondList": [
-    {
-     "w": "cabrón",
-     "n": 66
-    },
-    {
-     "w": "gracias",
-     "n": 49
-    },
-    {
-     "w": "favor",
-     "n": 48
-    },
-    {
-     "w": "compadre",
-     "n": 30
-    },
-    {
-     "w": "cardenal",
-     "n": 25
-    },
-    {
-     "w": "pendejo",
-     "n": 20
-    },
-    {
-     "w": "nubes",
-     "n": 18
-    },
-    {
-     "w": "sequía",
-     "n": 18
-    },
-    {
-     "w": "destejer",
-     "n": 18
-    },
-    {
-     "w": "información",
-     "n": 18
-    },
-    {
-     "w": "chingada",
-     "n": 17
-    },
-    {
-     "w": "pinche",
-     "n": 15
-    },
-    {
-     "w": "penal",
-     "n": 15
-    },
-    {
-     "w": "licenciada",
-     "n": 15
-    },
-    {
-     "w": "momento",
-     "n": 14
-    }
-   ],
-   "difficultyRank": 13
-  },
-  {
-   "slug": "la-casa-de-papel",
-   "title": "La casa de papel",
-   "english": "Money Heist",
-   "type": "TV series",
+   "slug": "el-reino",
+   "title": "El reino",
+   "english": "The Realm",
+   "type": "Film",
    "country": "Spain",
-   "years": "2017-2021",
+   "years": "2018",
    "accent": "Castilian Spanish (Spain)",
    "sample": {
-    "units": 4,
-    "unitLabel": "episodes",
-    "words": 11923,
-    "uniqueForms": 2517
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8300,
+    "uniqueForms": 2086
    },
+   "wpm": 159,
+   "rarePer1000": 88.6,
    "coverage": {
-    "100": 67.2,
-    "500": 80.6,
-    "1000": 85.4,
-    "1500": 87.8
+    "100": 65.1,
+    "500": 80.4,
+    "1000": 84.8,
+    "1500": 87.4
    },
    "listOnly": {
-    "100": 35.3,
-    "500": 48.7,
-    "1000": 53.6,
-    "1500": 55.9
+    "100": 38.8,
+    "500": 54.2,
+    "1000": 58.5,
+    "1500": 61.2
    },
-   "functionShare": 31.8,
+   "functionShare": 26.2,
    "nextWords": [
     {
-     "w": "túnel",
-     "rank": 1243,
-     "meaning": "tunnel",
-     "n": 24
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 9
     },
     {
-     "w": "cubrir",
-     "rank": 1011,
-     "meaning": "to cover",
-     "n": 11
+     "w": "evidencia",
+     "rank": 1039,
+     "meaning": "evidence",
+     "n": 8
+    },
+    {
+     "w": "contrario",
+     "rank": 1220,
+     "meaning": "opposite",
+     "n": 7
     },
     {
      "w": "juez",
      "rank": 1033,
      "meaning": "judge",
-     "n": 9
+     "n": 6
     },
     {
-     "w": "pegar",
-     "rank": 1227,
-     "meaning": "to hit",
-     "n": 9
+     "w": "jugo",
+     "rank": 1466,
+     "meaning": "juice",
+     "n": 5
     },
     {
-     "w": "esconder",
-     "rank": 1047,
-     "meaning": "to hide",
+     "w": "orgullo",
+     "rank": 1223,
+     "meaning": "pride",
+     "n": 5
+    },
+    {
+     "w": "política",
+     "rank": 1075,
+     "meaning": "politics",
+     "n": 5
+    },
+    {
+     "w": "despedir",
+     "rank": 1156,
+     "meaning": "to fire",
+     "n": 5
+    },
+    {
+     "w": "ciudadano",
+     "rank": 1175,
+     "meaning": "citizen",
+     "n": 5
+    },
+    {
+     "w": "recoger",
+     "rank": 1181,
+     "meaning": "to pick up",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 21
+    },
+    {
+     "w": "mierda",
+     "n": 17
+    },
+    {
+     "w": "maldita",
+     "n": 17
+    },
+    {
+     "w": "gracias",
+     "n": 15
+    },
+    {
+     "w": "vidal",
+     "n": 15
+    },
+    {
+     "w": "correcto",
+     "n": 14
+    },
+    {
+     "w": "documentos",
+     "n": 10
+    },
+    {
+     "w": "cuadernos",
+     "n": 10
+    },
+    {
+     "w": "oficina",
      "n": 8
     },
     {
-     "w": "sótano",
-     "rank": 1322,
-     "meaning": "basement",
+     "w": "hola",
      "n": 7
     },
     {
-     "w": "entregar",
-     "rank": 1275,
-     "meaning": "to deliver",
+     "w": "puta",
      "n": 7
+    },
+    {
+     "w": "vegetaciones",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "gilipollas",
+     "n": 6
+    },
+    {
+     "w": "vacaciones",
+     "n": 5
+    }
+   ],
+   "easiness": 56,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 53
+  },
+  {
+   "slug": "relatos-salvajes",
+   "title": "Relatos salvajes",
+   "english": "Wild Tales",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2014",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 14431,
+    "uniqueForms": 1814
+   },
+   "wpm": 192,
+   "rarePer1000": 11.5,
+   "coverage": {
+    "100": 66.4,
+    "500": 79.8,
+    "1000": 83.9,
+    "1500": 86.6
+   },
+   "listOnly": {
+    "100": 33.9,
+    "500": 47.3,
+    "1000": 51.4,
+    "1500": 54.1
+   },
+   "functionShare": 32.5,
+   "nextWords": [
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 18
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 30
+    },
+    {
+     "w": "sos",
+     "n": 30
+    },
+    {
+     "w": "hola",
+     "n": 24
+    },
+    {
+     "w": "querés",
+     "n": 22
+    },
+    {
+     "w": "tenés",
+     "n": 18
+    },
+    {
+     "w": "pará",
+     "n": 18
+    },
+    {
+     "w": "basta",
+     "n": 16
+    },
+    {
+     "w": "podes",
+     "n": 12
+    },
+    {
+     "w": "mirá",
+     "n": 12
+    },
+    {
+     "w": "queres",
+     "n": 10
+    },
+    {
+     "w": "esperá",
+     "n": 8
+    },
+    {
+     "w": "perfecto",
+     "n": 8
+    },
+    {
+     "w": "crimen",
+     "n": 8
+    },
+    {
+     "w": "soltala",
+     "n": 8
+    }
+   ],
+   "easiness": 56,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 54
+  },
+  {
+   "slug": "el-crimen-del-padre-amaro",
+   "title": "El crimen del padre Amaro",
+   "english": "The Crime of Father Amaro",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2002",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6382,
+    "uniqueForms": 1598
+   },
+   "wpm": 192,
+   "rarePer1000": 85.8,
+   "coverage": {
+    "100": 67,
+    "500": 81.6,
+    "1000": 85.5,
+    "1500": 87.9
+   },
+   "listOnly": {
+    "100": 35.1,
+    "500": 49.8,
+    "1000": 53.7,
+    "1500": 56.1
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "pecado",
+     "rank": 1082,
+     "meaning": "sin",
+     "n": 19
+    },
+    {
+     "w": "rogar",
+     "rank": 1389,
+     "meaning": "to beg / to plead",
+     "n": 16
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 13
+    },
+    {
+     "w": "sacerdote",
+     "rank": 1413,
+     "meaning": "priest",
+     "n": 7
+    },
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 7
+    },
+    {
+     "w": "lavar",
+     "rank": 1371,
+     "meaning": "to wash",
+     "n": 5
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 4
+    },
+    {
+     "w": "bendecir",
+     "rank": 1460,
+     "meaning": "to bless",
+     "n": 4
+    },
+    {
+     "w": "dato",
+     "rank": 1028,
+     "meaning": "piece of information",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 26
+    },
+    {
+     "w": "hola",
+     "n": 12
+    },
+    {
+     "w": "favor",
+     "n": 9
+    },
+    {
+     "w": "virgen",
+     "n": 9
+    },
+    {
+     "w": "hospital",
+     "n": 8
+    },
+    {
+     "w": "diócesis",
+     "n": 7
+    },
+    {
+     "w": "guerrilleros",
+     "n": 7
+    },
+    {
+     "w": "ante",
+     "n": 7
+    },
+    {
+     "w": "cabrón",
+     "n": 6
+    },
+    {
+     "w": "misa",
+     "n": 6
+    },
+    {
+     "w": "herejes",
+     "n": 6
+    },
+    {
+     "w": "narcos",
+     "n": 5
+    },
+    {
+     "w": "lglesia",
+     "n": 4
+    },
+    {
+     "w": "dispensario",
+     "n": 4
+    },
+    {
+     "w": "excomunión",
+     "n": 4
+    }
+   ],
+   "easiness": 55,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 55
+  },
+  {
+   "slug": "sin-identidad",
+   "title": "Sin identidad",
+   "english": "Without Identity",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2014-2015",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 10,
+    "unitLabel": "episodes",
+    "words": 76359,
+    "uniqueForms": 6615
+   },
+   "wpm": 300,
+   "rarePer1000": 72.4,
+   "coverage": {
+    "100": 71.3,
+    "500": 85.2,
+    "1000": 88.3,
+    "1500": 89.9
+   },
+   "listOnly": {
+    "100": 39.8,
+    "500": 53.8,
+    "1000": 56.8,
+    "1500": 58.5
+   },
+   "functionShare": 31.4,
+   "nextWords": [
+    {
+     "w": "encargar",
+     "rank": 1282,
+     "meaning": "to order",
+     "n": 30
     },
     {
      "w": "teléfono",
      "rank": 1206,
      "meaning": "phone",
-     "n": 6
+     "n": 29
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 26
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 25
+    },
+    {
+     "w": "hígado",
+     "rank": 1461,
+     "meaning": "liver",
+     "n": 23
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 23
     }
    ],
    "beyondList": [
     {
-     "w": "puta",
-     "n": 30
-    },
-    {
-     "w": "inspectora",
-     "n": 28
+     "w": "gracias",
+     "n": 169
     },
     {
      "w": "favor",
-     "n": 24
+     "n": 123
     },
     {
-     "w": "joder",
-     "n": 24
+     "w": "hola",
+     "n": 95
     },
     {
-     "w": "coño",
-     "n": 21
+     "w": "puta",
+     "n": 84
+    },
+    {
+     "w": "convento",
+     "n": 79
+    },
+    {
+     "w": "documentos",
+     "n": 74
     },
     {
      "w": "momento",
-     "n": 16
-    },
-    {
-     "w": "coronel",
-     "n": 16
-    },
-    {
-     "w": "plan",
-     "n": 16
-    },
-    {
-     "w": "rehenes",
-     "n": 15
-    },
-    {
-     "w": "euros",
-     "n": 12
-    },
-    {
-     "w": "puto",
-     "n": 11
-    },
-    {
-     "w": "atraco",
-     "n": 11
-    },
-    {
-     "w": "herramientas",
-     "n": 10
+     "n": 73
     },
     {
      "w": "mierda",
-     "n": 10
+     "n": 72
     },
     {
-     "w": "cojones",
-     "n": 10
+     "w": "joder",
+     "n": 69
+    },
+    {
+     "w": "manana",
+     "n": 66
+    },
+    {
+     "w": "cono",
+     "n": 66
+    },
+    {
+     "w": "clínica",
+     "n": 64
+    },
+    {
+     "w": "doctor",
+     "n": 62
+    },
+    {
+     "w": "nina",
+     "n": 62
+    },
+    {
+     "w": "carino",
+     "n": 45
     }
    ],
-   "difficultyRank": 14
+   "easiness": 54,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 56
+  },
+  {
+   "slug": "el-internado",
+   "title": "El internado",
+   "english": "The Boarding School",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2007-2010",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 14,
+    "unitLabel": "episodes",
+    "words": 71283,
+    "uniqueForms": 7761
+   },
+   "wpm": 228,
+   "rarePer1000": 89.9,
+   "coverage": {
+    "100": 69.8,
+    "500": 83.5,
+    "1000": 87.1,
+    "1500": 88.9
+   },
+   "listOnly": {
+    "100": 40.9,
+    "500": 54.6,
+    "1000": 58.2,
+    "1500": 60
+   },
+   "functionShare": 28.9,
+   "nextWords": [
+    {
+     "w": "marco",
+     "rank": 1500,
+     "meaning": "frame",
+     "n": 201
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 31
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 24
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 99
+    },
+    {
+     "w": "mierda",
+     "n": 67
+    },
+    {
+     "w": "hola",
+     "n": 66
+    },
+    {
+     "w": "internado",
+     "n": 64
+    },
+    {
+     "w": "joder",
+     "n": 63
+    },
+    {
+     "w": "momento",
+     "n": 47
+    },
+    {
+     "w": "ei",
+     "n": 40
+    },
+    {
+     "w": "coño",
+     "n": 37
+    },
+    {
+     "w": "puta",
+     "n": 34
+    },
+    {
+     "w": "medicinas",
+     "n": 33
+    },
+    {
+     "w": "idea",
+     "n": 31
+    },
+    {
+     "w": "gnomo",
+     "n": 30
+    },
+    {
+     "w": "pistola",
+     "n": 29
+    },
+    {
+     "w": "pasadizos",
+     "n": 27
+    },
+    {
+     "w": "profesora",
+     "n": 24
+    }
+   ],
+   "easiness": 54,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 57
   },
   {
    "slug": "radio-ambulante",
@@ -2073,6 +8153,8 @@
     "words": 74649,
     "uniqueForms": 8256
    },
+   "wpm": null,
+   "rarePer1000": 67.5,
    "coverage": {
     "100": 65.2,
     "500": 79.9,
@@ -2222,7 +8304,1436 @@
      "n": 28
     }
    ],
-   "difficultyRank": 15
+   "easiness": 53,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 58
+  },
+  {
+   "slug": "celda-211",
+   "title": "Celda 211",
+   "english": "Cell 211",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2009",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9755,
+    "uniqueForms": 1785
+   },
+   "wpm": 276,
+   "rarePer1000": 70.5,
+   "coverage": {
+    "100": 72.7,
+    "500": 84.8,
+    "1000": 87.6,
+    "1500": 89
+   },
+   "listOnly": {
+    "100": 40,
+    "500": 52.1,
+    "1000": 54.9,
+    "1500": 56.3
+   },
+   "functionShare": 32.7,
+   "nextWords": [
+    {
+     "w": "oreja",
+     "rank": 1205,
+     "meaning": "ear",
+     "n": 9
+    },
+    {
+     "w": "formar",
+     "rank": 1278,
+     "meaning": "to form",
+     "n": 8
+    },
+    {
+     "w": "engañar",
+     "rank": 1497,
+     "meaning": "to deceive",
+     "n": 6
+    },
+    {
+     "w": "página",
+     "rank": 1116,
+     "meaning": "page",
+     "n": 5
+    },
+    {
+     "w": "embarazada",
+     "rank": 1041,
+     "meaning": "pregnant",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 51
+    },
+    {
+     "w": "joder",
+     "n": 27
+    },
+    {
+     "w": "mierda",
+     "n": 26
+    },
+    {
+     "w": "pa",
+     "n": 23
+    },
+    {
+     "w": "cojones",
+     "n": 20
+    },
+    {
+     "w": "coño",
+     "n": 18
+    },
+    {
+     "w": "culo",
+     "n": 15
+    },
+    {
+     "w": "hostia",
+     "n": 14
+    },
+    {
+     "w": "galería",
+     "n": 12
+    },
+    {
+     "w": "hostias",
+     "n": 12
+    },
+    {
+     "w": "rehenes",
+     "n": 12
+    },
+    {
+     "w": "funcionario",
+     "n": 11
+    },
+    {
+     "w": "hijoputa",
+     "n": 10
+    },
+    {
+     "w": "etarras",
+     "n": 10
+    },
+    {
+     "w": "walkie",
+     "n": 8
+    }
+   ],
+   "easiness": 52,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 59
+  },
+  {
+   "slug": "los-abrazos-rotos",
+   "title": "Los abrazos rotos",
+   "english": "Broken Embraces",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2009",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 10130,
+    "uniqueForms": 2299
+   },
+   "wpm": 223,
+   "rarePer1000": 87.8,
+   "coverage": {
+    "100": 68.5,
+    "500": 82.9,
+    "1000": 86.4,
+    "1500": 88.4
+   },
+   "listOnly": {
+    "100": 37.4,
+    "500": 51.7,
+    "1000": 55.2,
+    "1500": 57.2
+   },
+   "functionShare": 31.2,
+   "nextWords": [
+    {
+     "w": "maleta",
+     "rank": 1085,
+     "meaning": "suitcase",
+     "n": 13
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 9
+    },
+    {
+     "w": "urgencia",
+     "rank": 1162,
+     "meaning": "urgency",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 26
+    },
+    {
+     "w": "favor",
+     "n": 26
+    },
+    {
+     "w": "hola",
+     "n": 20
+    },
+    {
+     "w": "rodaje",
+     "n": 13
+    },
+    {
+     "w": "momento",
+     "n": 11
+    },
+    {
+     "w": "the",
+     "n": 11
+    },
+    {
+     "w": "puta",
+     "n": 9
+    },
+    {
+     "w": "director",
+     "n": 8
+    },
+    {
+     "w": "guión",
+     "n": 8
+    },
+    {
+     "w": "final",
+     "n": 8
+    },
+    {
+     "w": "hospital",
+     "n": 7
+    },
+    {
+     "w": "escritor",
+     "n": 6
+    },
+    {
+     "w": "poquito",
+     "n": 6
+    },
+    {
+     "w": "rodar",
+     "n": 6
+    },
+    {
+     "w": "accidente",
+     "n": 6
+    }
+   ],
+   "easiness": 52,
+   "level": "Medium",
+   "cefr": "B1",
+   "difficultyRank": 60
+  },
+  {
+   "slug": "nueve-reinas",
+   "title": "Nueve reinas",
+   "english": "Nine Queens",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2000",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 19415,
+    "uniqueForms": 2043
+   },
+   "wpm": 262,
+   "rarePer1000": 70.2,
+   "coverage": {
+    "100": 69.1,
+    "500": 82.6,
+    "1000": 86,
+    "1500": 88.2
+   },
+   "listOnly": {
+    "100": 37.6,
+    "500": 51.2,
+    "1000": 54.6,
+    "1500": 56.8
+   },
+   "functionShare": 31.4,
+   "nextWords": [
+    {
+     "w": "cheque",
+     "rank": 1213,
+     "meaning": "check",
+     "n": 38
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 30
+    },
+    {
+     "w": "marco",
+     "rank": 1500,
+     "meaning": "frame",
+     "n": 27
+    },
+    {
+     "w": "nene",
+     "rank": 1465,
+     "meaning": "baby",
+     "n": 13
+    },
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 12
+    },
+    {
+     "w": "ofrecer",
+     "rank": 1048,
+     "meaning": "to offer",
+     "n": 11
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "guita",
+     "n": 58
+    },
+    {
+     "w": "querés",
+     "n": 51
+    },
+    {
+     "w": "sos",
+     "n": 46
+    },
+    {
+     "w": "estampillas",
+     "n": 42
+    },
+    {
+     "w": "tenés",
+     "n": 41
+    },
+    {
+     "w": "mierda",
+     "n": 40
+    },
+    {
+     "w": "puta",
+     "n": 35
+    },
+    {
+     "w": "lucas",
+     "n": 34
+    },
+    {
+     "w": "hotel",
+     "n": 34
+    },
+    {
+     "w": "sabés",
+     "n": 31
+    },
+    {
+     "w": "hacés",
+     "n": 28
+    },
+    {
+     "w": "pará",
+     "n": 28
+    },
+    {
+     "w": "favor",
+     "n": 28
+    },
+    {
+     "w": "boludo",
+     "n": 25
+    },
+    {
+     "w": "pelotudo",
+     "n": 25
+    }
+   ],
+   "easiness": 49,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 61
+  },
+  {
+   "slug": "la-casa-de-papel",
+   "title": "La casa de papel",
+   "english": "Money Heist",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2017-2021",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 4,
+    "unitLabel": "episodes",
+    "words": 11923,
+    "uniqueForms": 2517
+   },
+   "wpm": 219,
+   "rarePer1000": 87.9,
+   "coverage": {
+    "100": 67.2,
+    "500": 80.6,
+    "1000": 85.4,
+    "1500": 87.8
+   },
+   "listOnly": {
+    "100": 35.3,
+    "500": 48.7,
+    "1000": 53.6,
+    "1500": 55.9
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "túnel",
+     "rank": 1243,
+     "meaning": "tunnel",
+     "n": 24
+    },
+    {
+     "w": "cubrir",
+     "rank": 1011,
+     "meaning": "to cover",
+     "n": 11
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 9
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 9
+    },
+    {
+     "w": "esconder",
+     "rank": 1047,
+     "meaning": "to hide",
+     "n": 8
+    },
+    {
+     "w": "sótano",
+     "rank": 1322,
+     "meaning": "basement",
+     "n": 7
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 7
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "puta",
+     "n": 30
+    },
+    {
+     "w": "inspectora",
+     "n": 28
+    },
+    {
+     "w": "favor",
+     "n": 24
+    },
+    {
+     "w": "joder",
+     "n": 24
+    },
+    {
+     "w": "coño",
+     "n": 21
+    },
+    {
+     "w": "momento",
+     "n": 16
+    },
+    {
+     "w": "coronel",
+     "n": 16
+    },
+    {
+     "w": "plan",
+     "n": 16
+    },
+    {
+     "w": "rehenes",
+     "n": 15
+    },
+    {
+     "w": "euros",
+     "n": 12
+    },
+    {
+     "w": "puto",
+     "n": 11
+    },
+    {
+     "w": "atraco",
+     "n": 11
+    },
+    {
+     "w": "herramientas",
+     "n": 10
+    },
+    {
+     "w": "mierda",
+     "n": 10
+    },
+    {
+     "w": "cojones",
+     "n": 10
+    }
+   ],
+   "easiness": 49,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 62
+  },
+  {
+   "slug": "medianeras",
+   "title": "Medianeras",
+   "english": "Sidewalls",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2011",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 10757,
+    "uniqueForms": 2733
+   },
+   "wpm": 193,
+   "rarePer1000": 77.8,
+   "coverage": {
+    "100": 62.9,
+    "500": 79.2,
+    "1000": 83.6,
+    "1500": 86.3
+   },
+   "listOnly": {
+    "100": 31,
+    "500": 47.4,
+    "1000": 51.8,
+    "1500": 54.4
+   },
+   "functionShare": 31.8,
+   "nextWords": [
+    {
+     "w": "tanque",
+     "rank": 1097,
+     "meaning": "tank (container, reservoir)",
+     "n": 19
+    },
+    {
+     "w": "nadar",
+     "rank": 1326,
+     "meaning": "to swim",
+     "n": 16
+    },
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 10
+    },
+    {
+     "w": "oreja",
+     "rank": 1205,
+     "meaning": "ear",
+     "n": 6
+    },
+    {
+     "w": "ascensor",
+     "rank": 1494,
+     "meaning": "elevator",
+     "n": 6
+    },
+    {
+     "w": "fallar",
+     "rank": 1335,
+     "meaning": "to fail",
+     "n": 6
+    },
+    {
+     "w": "viajar",
+     "rank": 1023,
+     "meaning": "to travel",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "sargento",
+     "n": 36
+    },
+    {
+     "w": "pelotón",
+     "n": 24
+    },
+    {
+     "w": "norteamericanos",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 12
+    },
+    {
+     "w": "división",
+     "n": 11
+    },
+    {
+     "w": "infantería",
+     "n": 10
+    },
+    {
+     "w": "gracias",
+     "n": 9
+    },
+    {
+     "w": "batallón",
+     "n": 8
+    },
+    {
+     "w": "general",
+     "n": 8
+    },
+    {
+     "w": "tenés",
+     "n": 8
+    },
+    {
+     "w": "idiota",
+     "n": 7
+    },
+    {
+     "w": "reemplazos",
+     "n": 7
+    },
+    {
+     "w": "empuje",
+     "n": 7
+    },
+    {
+     "w": "querés",
+     "n": 7
+    },
+    {
+     "w": "norteamericano",
+     "n": 6
+    }
+   ],
+   "easiness": 47,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 63
+  },
+  {
+   "slug": "el-secreto-de-sus-ojos",
+   "title": "El secreto de sus ojos",
+   "english": "The Secret in Their Eyes",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2009",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 10589,
+    "uniqueForms": 2062
+   },
+   "wpm": 246,
+   "rarePer1000": 86.5,
+   "coverage": {
+    "100": 69.4,
+    "500": 82.5,
+    "1000": 86.2,
+    "1500": 87.8
+   },
+   "listOnly": {
+    "100": 37.1,
+    "500": 50.2,
+    "1000": 53.9,
+    "1500": 55.5
+   },
+   "functionShare": 32.3,
+   "nextWords": [
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 13
+    },
+    {
+     "w": "distinto",
+     "rank": 1251,
+     "meaning": "different",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 38
+    },
+    {
+     "w": "doctor",
+     "n": 26
+    },
+    {
+     "w": "puta",
+     "n": 26
+    },
+    {
+     "w": "ei",
+     "n": 24
+    },
+    {
+     "w": "vení",
+     "n": 22
+    },
+    {
+     "w": "doctora",
+     "n": 20
+    },
+    {
+     "w": "tenés",
+     "n": 17
+    },
+    {
+     "w": "querés",
+     "n": 16
+    },
+    {
+     "w": "pelotudo",
+     "n": 16
+    },
+    {
+     "w": "boludo",
+     "n": 14
+    },
+    {
+     "w": "sos",
+     "n": 13
+    },
+    {
+     "w": "che",
+     "n": 12
+    },
+    {
+     "w": "sabés",
+     "n": 11
+    },
+    {
+     "w": "dejá",
+     "n": 10
+    },
+    {
+     "w": "pará",
+     "n": 10
+    }
+   ],
+   "easiness": 45,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 64
+  },
+  {
+   "slug": "el-clan",
+   "title": "El clan",
+   "english": "The Clan",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2015",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 15161,
+    "uniqueForms": 2004
+   },
+   "wpm": 240,
+   "rarePer1000": 90.1,
+   "coverage": {
+    "100": 67.3,
+    "500": 82.3,
+    "1000": 85.6,
+    "1500": 87.8
+   },
+   "listOnly": {
+    "100": 37,
+    "500": 51.9,
+    "1000": 55.2,
+    "1500": 57.4
+   },
+   "functionShare": 30.4,
+   "nextWords": [
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 30
+    },
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 12
+    },
+    {
+     "w": "juez",
+     "rank": 1033,
+     "meaning": "judge",
+     "n": 10
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 9
+    },
+    {
+     "w": "campeón",
+     "rank": 1132,
+     "meaning": "champion",
+     "n": 9
+    },
+    {
+     "w": "teléfono",
+     "rank": 1206,
+     "meaning": "phone",
+     "n": 8
+    },
+    {
+     "w": "alcanzar",
+     "rank": 1281,
+     "meaning": "to reach",
+     "n": 8
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 7
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 65
+    },
+    {
+     "w": "favor",
+     "n": 65
+    },
+    {
+     "w": "carajo",
+     "n": 33
+    },
+    {
+     "w": "hola",
+     "n": 28
+    },
+    {
+     "w": "tenés",
+     "n": 23
+    },
+    {
+     "w": "pa",
+     "n": 18
+    },
+    {
+     "w": "puta",
+     "n": 17
+    },
+    {
+     "w": "ma",
+     "n": 14
+    },
+    {
+     "w": "mierda",
+     "n": 13
+    },
+    {
+     "w": "basta",
+     "n": 12
+    },
+    {
+     "w": "frene",
+     "n": 12
+    },
+    {
+     "w": "caminá",
+     "n": 11
+    },
+    {
+     "w": "pará",
+     "n": 11
+    },
+    {
+     "w": "mirá",
+     "n": 11
+    },
+    {
+     "w": "vení",
+     "n": 11
+    }
+   ],
+   "easiness": 45,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 65
+  },
+  {
+   "slug": "rec",
+   "title": "[REC]",
+   "english": "[REC]",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2007",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 5768,
+    "uniqueForms": 1292
+   },
+   "wpm": 320,
+   "rarePer1000": 62.1,
+   "coverage": {
+    "100": 68.1,
+    "500": 82.8,
+    "1000": 86.1,
+    "1500": 88
+   },
+   "listOnly": {
+    "100": 38.7,
+    "500": 53.4,
+    "1000": 56.7,
+    "1500": 58.5
+   },
+   "functionShare": 29.4,
+   "nextWords": [
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 12
+    },
+    {
+     "w": "izquierdo",
+     "rank": 1328,
+     "meaning": "left",
+     "n": 7
+    },
+    {
+     "w": "aviso",
+     "rank": 1375,
+     "meaning": "notice",
+     "n": 5
+    },
+    {
+     "w": "apagar",
+     "rank": 1120,
+     "meaning": "to turn off",
+     "n": 5
+    },
+    {
+     "w": "parque",
+     "rank": 1054,
+     "meaning": "park",
+     "n": 4
+    },
+    {
+     "w": "incendio",
+     "rank": 1290,
+     "meaning": "fire",
+     "n": 4
+    },
+    {
+     "w": "repetir",
+     "rank": 1339,
+     "meaning": "to repeat",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "joder",
+     "n": 42
+    },
+    {
+     "w": "favor",
+     "n": 22
+    },
+    {
+     "w": "hostia",
+     "n": 21
+    },
+    {
+     "w": "coño",
+     "n": 19
+    },
+    {
+     "w": "mierda",
+     "n": 18
+    },
+    {
+     "w": "mordido",
+     "n": 15
+    },
+    {
+     "w": "puta",
+     "n": 13
+    },
+    {
+     "w": "bomberos",
+     "n": 12
+    },
+    {
+     "w": "cojones",
+     "n": 11
+    },
+    {
+     "w": "momento",
+     "n": 9
+    },
+    {
+     "w": "bombero",
+     "n": 8
+    },
+    {
+     "w": "hola",
+     "n": 8
+    },
+    {
+     "w": "chsss",
+     "n": 8
+    },
+    {
+     "w": "gritos",
+     "n": 7
+    },
+    {
+     "w": "grabar",
+     "n": 7
+    }
+   ],
+   "easiness": 44,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 66
+  },
+  {
+   "slug": "el-ciudadano-ilustre",
+   "title": "El ciudadano ilustre",
+   "english": "The Distinguished Citizen",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2016",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8870,
+    "uniqueForms": 2152
+   },
+   "wpm": 179,
+   "rarePer1000": 98,
+   "coverage": {
+    "100": 65.1,
+    "500": 78.7,
+    "1000": 82.9,
+    "1500": 85.6
+   },
+   "listOnly": {
+    "100": 32.3,
+    "500": 45.8,
+    "1000": 50,
+    "1500": 52.7
+   },
+   "functionShare": 32.9,
+   "nextWords": [
+    {
+     "w": "personaje",
+     "rank": 1173,
+     "meaning": "character",
+     "n": 11
+    },
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 6
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 5
+    },
+    {
+     "w": "comunidad",
+     "rank": 1272,
+     "meaning": "community",
+     "n": 5
+    },
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 42
+    },
+    {
+     "w": "hola",
+     "n": 16
+    },
+    {
+     "w": "sos",
+     "n": 16
+    },
+    {
+     "w": "favor",
+     "n": 14
+    },
+    {
+     "w": "cancelado",
+     "n": 14
+    },
+    {
+     "w": "literatura",
+     "n": 12
+    },
+    {
+     "w": "mirá",
+     "n": 11
+    },
+    {
+     "w": "tenés",
+     "n": 10
+    },
+    {
+     "w": "artista",
+     "n": 9
+    },
+    {
+     "w": "escritor",
+     "n": 9
+    },
+    {
+     "w": "honor",
+     "n": 8
+    },
+    {
+     "w": "hotel",
+     "n": 8
+    },
+    {
+     "w": "cultura",
+     "n": 8
+    },
+    {
+     "w": "simple",
+     "n": 7
+    },
+    {
+     "w": "entendés",
+     "n": 7
+    }
+   ],
+   "easiness": 39,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 67
+  },
+  {
+   "slug": "ocho-apellidos-catalanes",
+   "title": "Ocho apellidos catalanes",
+   "english": "Spanish Affair 2",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2015",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 11363,
+    "uniqueForms": 2257
+   },
+   "wpm": 222,
+   "rarePer1000": 101.1,
+   "coverage": {
+    "100": 70.9,
+    "500": 81.7,
+    "1000": 85,
+    "1500": 86.5
+   },
+   "listOnly": {
+    "100": 38.6,
+    "500": 49.4,
+    "1000": 52.7,
+    "1500": 54.2
+   },
+   "functionShare": 32.3,
+   "nextWords": [
+    {
+     "w": "sábado",
+     "rank": 1169,
+     "meaning": "Saturday",
+     "n": 12
+    },
+    {
+     "w": "alcalde",
+     "rank": 1350,
+     "meaning": "mayor",
+     "n": 8
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 8
+    },
+    {
+     "w": "regalar",
+     "rank": 1121,
+     "meaning": "to give (as a gift)",
+     "n": 7
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 20
+    },
+    {
+     "w": "catalán",
+     "n": 20
+    },
+    {
+     "w": "yaya",
+     "n": 20
+    },
+    {
+     "w": "momento",
+     "n": 18
+    },
+    {
+     "w": "hostia",
+     "n": 15
+    },
+    {
+     "w": "coño",
+     "n": 15
+    },
+    {
+     "w": "masía",
+     "n": 14
+    },
+    {
+     "w": "hostias",
+     "n": 11
+    },
+    {
+     "w": "vasca",
+     "n": 10
+    },
+    {
+     "w": "español",
+     "n": 10
+    },
+    {
+     "w": "vasco",
+     "n": 10
+    },
+    {
+     "w": "final",
+     "n": 9
+    },
+    {
+     "w": "catalana",
+     "n": 9
+    },
+    {
+     "w": "cojones",
+     "n": 9
+    },
+    {
+     "w": "agur",
+     "n": 9
+    }
+   ],
+   "easiness": 37,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 68
+  },
+  {
+   "slug": "carancho",
+   "title": "Carancho",
+   "english": "Carancho",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2010",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 7934,
+    "uniqueForms": 1613
+   },
+   "wpm": 263,
+   "rarePer1000": 72.9,
+   "coverage": {
+    "100": 67.1,
+    "500": 81.2,
+    "1000": 84.4,
+    "1500": 86.2
+   },
+   "listOnly": {
+    "100": 39,
+    "500": 53.2,
+    "1000": 56.3,
+    "1500": 58.1
+   },
+   "functionShare": 28.1,
+   "nextWords": [
+    {
+     "w": "auto",
+     "rank": 1079,
+     "meaning": "car",
+     "n": 14
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 7
+    },
+    {
+     "w": "placa",
+     "rank": 1266,
+     "meaning": "license plate",
+     "n": 7
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 35
+    },
+    {
+     "w": "pico",
+     "n": 26
+    },
+    {
+     "w": "tenés",
+     "n": 24
+    },
+    {
+     "w": "pará",
+     "n": 21
+    },
+    {
+     "w": "gracias",
+     "n": 21
+    },
+    {
+     "w": "doctora",
+     "n": 18
+    },
+    {
+     "w": "querés",
+     "n": 18
+    },
+    {
+     "w": "vení",
+     "n": 17
+    },
+    {
+     "w": "puta",
+     "n": 15
+    },
+    {
+     "w": "hola",
+     "n": 15
+    },
+    {
+     "w": "mirá",
+     "n": 12
+    },
+    {
+     "w": "accidente",
+     "n": 12
+    },
+    {
+     "w": "sos",
+     "n": 11
+    },
+    {
+     "w": "andá",
+     "n": 10
+    },
+    {
+     "w": "doctor",
+     "n": 10
+    }
+   ],
+   "easiness": 36,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 69
   },
   {
    "slug": "la-que-se-avecina",
@@ -2238,6 +9749,8 @@
     "words": 122178,
     "uniqueForms": 12238
    },
+   "wpm": 241,
+   "rarePer1000": 102.8,
    "coverage": {
     "100": 67.5,
     "500": 80.3,
@@ -2375,7 +9888,1620 @@
      "n": 51
     }
    ],
-   "difficultyRank": 16
+   "easiness": 33,
+   "level": "Hard",
+   "cefr": "B2",
+   "difficultyRank": 70
+  },
+  {
+   "slug": "toc-toc",
+   "title": "Toc Toc",
+   "english": "Toc Toc",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2017",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 10394,
+    "uniqueForms": 2110
+   },
+   "wpm": 287,
+   "rarePer1000": 88.1,
+   "coverage": {
+    "100": 67.3,
+    "500": 81.4,
+    "1000": 84.5,
+    "1500": 86.5
+   },
+   "listOnly": {
+    "100": 36.4,
+    "500": 50.6,
+    "1000": 53.7,
+    "1500": 55.7
+   },
+   "functionShare": 30.8,
+   "nextWords": [
+    {
+     "w": "repetir",
+     "rank": 1339,
+     "meaning": "to repeat",
+     "n": 18
+    },
+    {
+     "w": "terapia",
+     "rank": 1477,
+     "meaning": "therapy",
+     "n": 11
+    },
+    {
+     "w": "pasear",
+     "rank": 1484,
+     "meaning": "to go for a walk",
+     "n": 6
+    },
+    {
+     "w": "a menudo",
+     "rank": 1131,
+     "meaning": "often",
+     "n": 6
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 28
+    },
+    {
+     "w": "doctor",
+     "n": 28
+    },
+    {
+     "w": "fenomenal",
+     "n": 19
+    },
+    {
+     "w": "color",
+     "n": 17
+    },
+    {
+     "w": "favor",
+     "n": 16
+    },
+    {
+     "w": "eces",
+     "n": 16
+    },
+    {
+     "w": "adiós",
+     "n": 14
+    },
+    {
+     "w": "lalalá",
+     "n": 14
+    },
+    {
+     "w": "apa",
+     "n": 12
+    },
+    {
+     "w": "problema",
+     "n": 11
+    },
+    {
+     "w": "ilo",
+     "n": 10
+    },
+    {
+     "w": "pequeñito",
+     "n": 8
+    },
+    {
+     "w": "puta",
+     "n": 8
+    },
+    {
+     "w": "fi",
+     "n": 8
+    },
+    {
+     "w": "persona",
+     "n": 7
+    }
+   ],
+   "easiness": 29,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 71
+  },
+  {
+   "slug": "torrente",
+   "title": "Torrente, el brazo tonto de la ley",
+   "english": "Torrente, the Dumb Arm of the Law",
+   "type": "Film",
+   "country": "Spain",
+   "years": "1998",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6773,
+    "uniqueForms": 1704
+   },
+   "wpm": 246,
+   "rarePer1000": 98.4,
+   "coverage": {
+    "100": 67.4,
+    "500": 80.2,
+    "1000": 83.3,
+    "1500": 85.9
+   },
+   "listOnly": {
+    "100": 37.5,
+    "500": 50.4,
+    "1000": 53.5,
+    "1500": 56.1
+   },
+   "functionShare": 29.8,
+   "nextWords": [
+    {
+     "w": "entregar",
+     "rank": 1275,
+     "meaning": "to deliver",
+     "n": 11
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 11
+    },
+    {
+     "w": "chino",
+     "rank": 1003,
+     "meaning": "Chinese",
+     "n": 10
+    },
+    {
+     "w": "moto",
+     "rank": 1370,
+     "meaning": "motorcycle",
+     "n": 7
+    },
+    {
+     "w": "dato",
+     "rank": 1028,
+     "meaning": "piece of information",
+     "n": 6
+    },
+    {
+     "w": "a menudo",
+     "rank": 1131,
+     "meaning": "often",
+     "n": 6
+    },
+    {
+     "w": "lavar",
+     "rank": 1371,
+     "meaning": "to wash",
+     "n": 6
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 5
+    },
+    {
+     "w": "campeón",
+     "rank": 1132,
+     "meaning": "champion",
+     "n": 4
+    },
+    {
+     "w": "vecino",
+     "rank": 1012,
+     "meaning": "neighbor",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "pa",
+     "n": 26
+    },
+    {
+     "w": "chaval",
+     "n": 26
+    },
+    {
+     "w": "joder",
+     "n": 23
+    },
+    {
+     "w": "coño",
+     "n": 20
+    },
+    {
+     "w": "puta",
+     "n": 12
+    },
+    {
+     "w": "mierda",
+     "n": 9
+    },
+    {
+     "w": "hola",
+     "n": 8
+    },
+    {
+     "w": "chavales",
+     "n": 8
+    },
+    {
+     "w": "cago",
+     "n": 8
+    },
+    {
+     "w": "gilipollas",
+     "n": 8
+    },
+    {
+     "w": "gracias",
+     "n": 8
+    },
+    {
+     "w": "cojones",
+     "n": 8
+    },
+    {
+     "w": "favor",
+     "n": 8
+    },
+    {
+     "w": "restaurante",
+     "n": 7
+    },
+    {
+     "w": "chinita",
+     "n": 7
+    }
+   ],
+   "easiness": 29,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 72
+  },
+  {
+   "slug": "diarios-de-motocicleta",
+   "title": "Diarios de motocicleta",
+   "english": "The Motorcycle Diaries",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2004",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 8006,
+    "uniqueForms": 1979
+   },
+   "wpm": 240,
+   "rarePer1000": 95.1,
+   "coverage": {
+    "100": 63.8,
+    "500": 78.7,
+    "1000": 82.9,
+    "1500": 85.2
+   },
+   "listOnly": {
+    "100": 33.4,
+    "500": 48.3,
+    "1000": 52.4,
+    "1500": 54.7
+   },
+   "functionShare": 30.5,
+   "nextWords": [
+    {
+     "w": "moto",
+     "rank": 1370,
+     "meaning": "motorcycle",
+     "n": 13
+    },
+    {
+     "w": "viajar",
+     "rank": 1023,
+     "meaning": "to travel",
+     "n": 11
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 9
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 8
+    },
+    {
+     "w": "dólar",
+     "rank": 1141,
+     "meaning": "dollar",
+     "n": 6
+    },
+    {
+     "w": "cruzar",
+     "rank": 1093,
+     "meaning": "to cross",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "gracias",
+     "n": 54
+    },
+    {
+     "w": "chipi",
+     "n": 26
+    },
+    {
+     "w": "puta",
+     "n": 22
+    },
+    {
+     "w": "querés",
+     "n": 19
+    },
+    {
+     "w": "mirá",
+     "n": 15
+    },
+    {
+     "w": "sabés",
+     "n": 15
+    },
+    {
+     "w": "doctor",
+     "n": 15
+    },
+    {
+     "w": "carajo",
+     "n": 14
+    },
+    {
+     "w": "che",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 12
+    },
+    {
+     "w": "mierda",
+     "n": 9
+    },
+    {
+     "w": "pato",
+     "n": 9
+    },
+    {
+     "w": "favor",
+     "n": 8
+    },
+    {
+     "w": "chau",
+     "n": 8
+    },
+    {
+     "w": "vení",
+     "n": 8
+    }
+   ],
+   "easiness": 27,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 73
+  },
+  {
+   "slug": "campeones",
+   "title": "Campeones",
+   "english": "Champions",
+   "type": "Film",
+   "country": "Spain",
+   "years": "2018",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 11174,
+    "uniqueForms": 2157
+   },
+   "wpm": 266,
+   "rarePer1000": 86.5,
+   "coverage": {
+    "100": 67.7,
+    "500": 79.7,
+    "1000": 83.1,
+    "1500": 85.4
+   },
+   "listOnly": {
+    "100": 38.6,
+    "500": 50.6,
+    "1000": 53.9,
+    "1500": 56.2
+   },
+   "functionShare": 29.1,
+   "nextWords": [
+    {
+     "w": "entrenador",
+     "rank": 1214,
+     "meaning": "coach",
+     "n": 48
+    },
+    {
+     "w": "sábado",
+     "rank": 1169,
+     "meaning": "Saturday",
+     "n": 18
+    },
+    {
+     "w": "polvo",
+     "rank": 1221,
+     "meaning": "dust",
+     "n": 9
+    },
+    {
+     "w": "marchar",
+     "rank": 1025,
+     "meaning": "to leave",
+     "n": 6
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "mo",
+     "n": 49
+    },
+    {
+     "w": "ivamos",
+     "n": 26
+    },
+    {
+     "w": "nde",
+     "n": 21
+    },
+    {
+     "w": "ivenga",
+     "n": 17
+    },
+    {
+     "w": "idea",
+     "n": 14
+    },
+    {
+     "w": "puta",
+     "n": 13
+    },
+    {
+     "w": "favor",
+     "n": 13
+    },
+    {
+     "w": "ino",
+     "n": 13
+    },
+    {
+     "w": "imuy",
+     "n": 13
+    },
+    {
+     "w": "gracias",
+     "n": 12
+    },
+    {
+     "w": "coño",
+     "n": 11
+    },
+    {
+     "w": "baloncesto",
+     "n": 11
+    },
+    {
+     "w": "ab",
+     "n": 9
+    },
+    {
+     "w": "ieso",
+     "n": 8
+    },
+    {
+     "w": "discapacidad",
+     "n": 7
+    }
+   ],
+   "easiness": 26,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 74
+  },
+  {
+   "slug": "ya-no-estoy-aqui",
+   "title": "Ya no estoy aquí",
+   "english": "I'm No Longer Here",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2019",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6624,
+    "uniqueForms": 1479
+   },
+   "wpm": 235,
+   "rarePer1000": 72.1,
+   "coverage": {
+    "100": 64.2,
+    "500": 78.2,
+    "1000": 82.3,
+    "1500": 83.6
+   },
+   "listOnly": {
+    "100": 34.9,
+    "500": 48.9,
+    "1000": 53,
+    "1500": 54.3
+   },
+   "functionShare": 29.3,
+   "nextWords": [
+    {
+     "w": "barrio",
+     "rank": 1055,
+     "meaning": "neighborhood",
+     "n": 7
+    },
+    {
+     "w": "pintura",
+     "rank": 1252,
+     "meaning": "painting",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "güey",
+     "n": 130
+    },
+    {
+     "w": "verga",
+     "n": 41
+    },
+    {
+     "w": "carnal",
+     "n": 35
+    },
+    {
+     "w": "pinche",
+     "n": 30
+    },
+    {
+     "w": "cumbia",
+     "n": 24
+    },
+    {
+     "w": "chile",
+     "n": 22
+    },
+    {
+     "w": "onda",
+     "n": 18
+    },
+    {
+     "w": "putos",
+     "n": 17
+    },
+    {
+     "w": "vergas",
+     "n": 15
+    },
+    {
+     "w": "cabrón",
+     "n": 14
+    },
+    {
+     "w": "gracias",
+     "n": 13
+    },
+    {
+     "w": "pinches",
+     "n": 13
+    },
+    {
+     "w": "simón",
+     "n": 12
+    },
+    {
+     "w": "hola",
+     "n": 11
+    },
+    {
+     "w": "órale",
+     "n": 11
+    }
+   ],
+   "easiness": 24,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 75
+  },
+  {
+   "slug": "el-dia-de-la-bestia",
+   "title": "El día de la bestia",
+   "english": "The Day of the Beast",
+   "type": "Film",
+   "country": "Spain",
+   "years": "1995",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6764,
+    "uniqueForms": 1542
+   },
+   "wpm": 211,
+   "rarePer1000": 89.4,
+   "coverage": {
+    "100": 61.8,
+    "500": 75.3,
+    "1000": 80.2,
+    "1500": 82.2
+   },
+   "listOnly": {
+    "100": 32.5,
+    "500": 46,
+    "1000": 50.9,
+    "1500": 52.9
+   },
+   "functionShare": 29.3,
+   "nextWords": [
+    {
+     "w": "cruz",
+     "rank": 1376,
+     "meaning": "cross",
+     "n": 9
+    },
+    {
+     "w": "cura",
+     "rank": 1159,
+     "meaning": "cure",
+     "n": 6
+    },
+    {
+     "w": "página",
+     "rank": 1116,
+     "meaning": "page",
+     "n": 6
+    },
+    {
+     "w": "fecha",
+     "rank": 1288,
+     "meaning": "date (exact day)",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "est",
+     "n": 67
+    },
+    {
+     "w": "aqu",
+     "n": 25
+    },
+    {
+     "w": "nde",
+     "n": 20
+    },
+    {
+     "w": "mo",
+     "n": 19
+    },
+    {
+     "w": "programa",
+     "n": 19
+    },
+    {
+     "w": "as",
+     "n": 14
+    },
+    {
+     "w": "favor",
+     "n": 12
+    },
+    {
+     "w": "gracias",
+     "n": 11
+    },
+    {
+     "w": "virgen",
+     "n": 11
+    },
+    {
+     "w": "anti",
+     "n": 11
+    },
+    {
+     "w": "puta",
+     "n": 10
+    },
+    {
+     "w": "joder",
+     "n": 9
+    },
+    {
+     "w": "momento",
+     "n": 8
+    },
+    {
+     "w": "habr",
+     "n": 8
+    },
+    {
+     "w": "coche",
+     "n": 8
+    }
+   ],
+   "easiness": 23,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 76
+  },
+  {
+   "slug": "carlos-rey-emperador",
+   "title": "Carlos, rey emperador",
+   "english": "Charles, King and Emperor",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2015-2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 5,
+    "unitLabel": "episodes",
+    "words": 30290,
+    "uniqueForms": 5164
+   },
+   "wpm": 243,
+   "rarePer1000": 107.7,
+   "coverage": {
+    "100": 62.9,
+    "500": 76.7,
+    "1000": 82,
+    "1500": 84.9
+   },
+   "listOnly": {
+    "100": 28,
+    "500": 41.8,
+    "1000": 47.1,
+    "1500": 50
+   },
+   "functionShare": 34.9,
+   "nextWords": [
+    {
+     "w": "reino",
+     "rank": 1144,
+     "meaning": "kingdom",
+     "n": 66
+    },
+    {
+     "w": "gobernador",
+     "rank": 1330,
+     "meaning": "governor",
+     "n": 28
+    },
+    {
+     "w": "cumplir",
+     "rank": 1044,
+     "meaning": "to fulfill",
+     "n": 28
+    },
+    {
+     "w": "voto",
+     "rank": 1399,
+     "meaning": "vote",
+     "n": 23
+    },
+    {
+     "w": "apoyo",
+     "rank": 1235,
+     "meaning": "support",
+     "n": 21
+    },
+    {
+     "w": "amenaza",
+     "rank": 1337,
+     "meaning": "threat",
+     "n": 19
+    },
+    {
+     "w": "rogar",
+     "rank": 1389,
+     "meaning": "to beg / to plead",
+     "n": 19
+    },
+    {
+     "w": "ordenar",
+     "rank": 1049,
+     "meaning": "to organize",
+     "n": 19
+    },
+    {
+     "w": "respetar",
+     "rank": 1420,
+     "meaning": "to respect",
+     "n": 16
+    },
+    {
+     "w": "compartir",
+     "rank": 1316,
+     "meaning": "to share",
+     "n": 13
+    },
+    {
+     "w": "pertenecer",
+     "rank": 1067,
+     "meaning": "to belong (to)",
+     "n": 12
+    },
+    {
+     "w": "permanecer",
+     "rank": 1495,
+     "meaning": "to remain",
+     "n": 12
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "alteza",
+     "n": 145
+    },
+    {
+     "w": "emperador",
+     "n": 67
+    },
+    {
+     "w": "trono",
+     "n": 29
+    },
+    {
+     "w": "ante",
+     "n": 29
+    },
+    {
+     "w": "favor",
+     "n": 29
+    },
+    {
+     "w": "sobrino",
+     "n": 28
+    },
+    {
+     "w": "expedición",
+     "n": 24
+    },
+    {
+     "w": "duque",
+     "n": 23
+    },
+    {
+     "w": "imperial",
+     "n": 23
+    },
+    {
+     "w": "lealtad",
+     "n": 20
+    },
+    {
+     "w": "vres",
+     "n": 18
+    },
+    {
+     "w": "reverencia",
+     "n": 17
+    },
+    {
+     "w": "decisión",
+     "n": 16
+    },
+    {
+     "w": "majestad",
+     "n": 15
+    },
+    {
+     "w": "honor",
+     "n": 14
+    }
+   ],
+   "easiness": 22,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 77
+  },
+  {
+   "slug": "la-teta-asustada",
+   "title": "La teta asustada",
+   "english": "The Milk of Sorrow",
+   "type": "Film",
+   "country": "Peru",
+   "years": "2009",
+   "accent": "Peruvian Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 4290,
+    "uniqueForms": 1363
+   },
+   "wpm": 198,
+   "rarePer1000": 125.6,
+   "coverage": {
+    "100": 59.9,
+    "500": 73.9,
+    "1000": 79.6,
+    "1500": 81.5
+   },
+   "listOnly": {
+    "100": 31.7,
+    "500": 45.7,
+    "1000": 51.4,
+    "1500": 53.3
+   },
+   "functionShare": 28.3,
+   "nextWords": [
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 3
+    },
+    {
+     "w": "página",
+     "rank": 1116,
+     "meaning": "page",
+     "n": 3
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "sirena",
+     "n": 12
+    },
+    {
+     "w": "gracias",
+     "n": 9
+    },
+    {
+     "w": "iy",
+     "n": 9
+    },
+    {
+     "w": "ataúd",
+     "n": 8
+    },
+    {
+     "w": "icómo",
+     "n": 7
+    },
+    {
+     "w": "regar",
+     "n": 7
+    },
+    {
+     "w": "chis",
+     "n": 7
+    },
+    {
+     "w": "ino",
+     "n": 6
+    },
+    {
+     "w": "doctor",
+     "n": 6
+    },
+    {
+     "w": "ores",
+     "n": 6
+    },
+    {
+     "w": "esms",
+     "n": 5
+    },
+    {
+     "w": "iqué",
+     "n": 5
+    },
+    {
+     "w": "tela",
+     "n": 5
+    },
+    {
+     "w": "em",
+     "n": 4
+    },
+    {
+     "w": "ma",
+     "n": 4
+    }
+   ],
+   "easiness": 21,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 78
+  },
+  {
+   "slug": "el-hijo-de-la-novia",
+   "title": "El hijo de la novia",
+   "english": "Son of the Bride",
+   "type": "Film",
+   "country": "Argentina",
+   "years": "2001",
+   "accent": "Rioplatense Spanish (Argentina)",
+   "sample": {
+    "units": 2,
+    "unitLabel": "film",
+    "words": 22256,
+    "uniqueForms": 2511
+   },
+   "wpm": 328,
+   "rarePer1000": 89.7,
+   "coverage": {
+    "100": 66.8,
+    "500": 80.2,
+    "1000": 83.7,
+    "1500": 85.3
+   },
+   "listOnly": {
+    "100": 37.6,
+    "500": 50.9,
+    "1000": 54.4,
+    "1500": 56
+   },
+   "functionShare": 29.3,
+   "nextWords": [
+    {
+     "w": "jueves",
+     "rank": 1168,
+     "meaning": "Thursday",
+     "n": 12
+    },
+    {
+     "w": "plata",
+     "rank": 1074,
+     "meaning": "money (colloquial, Southern Cone)",
+     "n": 12
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "mirá",
+     "n": 88
+    },
+    {
+     "w": "hola",
+     "n": 73
+    },
+    {
+     "w": "mami",
+     "n": 70
+    },
+    {
+     "w": "papi",
+     "n": 57
+    },
+    {
+     "w": "querés",
+     "n": 56
+    },
+    {
+     "w": "hacés",
+     "n": 46
+    },
+    {
+     "w": "vení",
+     "n": 42
+    },
+    {
+     "w": "pará",
+     "n": 42
+    },
+    {
+     "w": "tenés",
+     "n": 41
+    },
+    {
+     "w": "sabés",
+     "n": 38
+    },
+    {
+     "w": "sos",
+     "n": 36
+    },
+    {
+     "w": "boludo",
+     "n": 34
+    },
+    {
+     "w": "restaurante",
+     "n": 31
+    },
+    {
+     "w": "che",
+     "n": 31
+    },
+    {
+     "w": "mierda",
+     "n": 29
+    }
+   ],
+   "easiness": 19,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 79
+  },
+  {
+   "slug": "olmos-y-robles",
+   "title": "Olmos y Robles",
+   "english": "Olmos and Robles",
+   "type": "TV series",
+   "country": "Spain",
+   "years": "2015-2016",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 4,
+    "unitLabel": "episodes",
+    "words": 28228,
+    "uniqueForms": 4753
+   },
+   "wpm": 243,
+   "rarePer1000": 82.9,
+   "coverage": {
+    "100": 62.8,
+    "500": 74.8,
+    "1000": 79.5,
+    "1500": 81.8
+   },
+   "listOnly": {
+    "100": 33.2,
+    "500": 45.2,
+    "1000": 50,
+    "1500": 52.2
+   },
+   "functionShare": 29.6,
+   "nextWords": [
+    {
+     "w": "alcalde",
+     "rank": 1350,
+     "meaning": "mayor",
+     "n": 35
+    },
+    {
+     "w": "resolver",
+     "rank": 1224,
+     "meaning": "to solve",
+     "n": 22
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "you",
+     "n": 105
+    },
+    {
+     "w": "the",
+     "n": 77
+    },
+    {
+     "w": "gracias",
+     "n": 64
+    },
+    {
+     "w": "it",
+     "n": 63
+    },
+    {
+     "w": "favor",
+     "n": 38
+    },
+    {
+     "w": "that",
+     "n": 37
+    },
+    {
+     "w": "and",
+     "n": 36
+    },
+    {
+     "w": "like",
+     "n": 35
+    },
+    {
+     "w": "in",
+     "n": 34
+    },
+    {
+     "w": "to",
+     "n": 33
+    },
+    {
+     "w": "hola",
+     "n": 32
+    },
+    {
+     "w": "we",
+     "n": 31
+    },
+    {
+     "w": "reliquia",
+     "n": 30
+    },
+    {
+     "w": "was",
+     "n": 29
+    },
+    {
+     "w": "finca",
+     "n": 28
+    }
+   ],
+   "easiness": 19,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 80
+  },
+  {
+   "slug": "tesis",
+   "title": "Tesis",
+   "english": "Thesis",
+   "type": "Film",
+   "country": "Spain",
+   "years": "1996",
+   "accent": "Castilian Spanish (Spain)",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 6541,
+    "uniqueForms": 1814
+   },
+   "wpm": 234,
+   "rarePer1000": 112.5,
+   "coverage": {
+    "100": 66.3,
+    "500": 78,
+    "1000": 81.7,
+    "1500": 83.4
+   },
+   "listOnly": {
+    "100": 38.9,
+    "500": 50.7,
+    "1000": 54.3,
+    "1500": 56.1
+   },
+   "functionShare": 27.4,
+   "nextWords": [
+    {
+     "w": "ala",
+     "rank": 1118,
+     "meaning": "wing",
+     "n": 15
+    },
+    {
+     "w": "vía",
+     "rank": 1340,
+     "meaning": "route",
+     "n": 6
+    },
+    {
+     "w": "fijarse",
+     "rank": 1491,
+     "meaning": "to notice",
+     "n": 5
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "favor",
+     "n": 24
+    },
+    {
+     "w": "hola",
+     "n": 19
+    },
+    {
+     "w": "tesis",
+     "n": 15
+    },
+    {
+     "w": "gracias",
+     "n": 11
+    },
+    {
+     "w": "joder",
+     "n": 11
+    },
+    {
+     "w": "violencia",
+     "n": 10
+    },
+    {
+     "w": "reportaje",
+     "n": 9
+    },
+    {
+     "w": "snuff",
+     "n": 9
+    },
+    {
+     "w": "profesor",
+     "n": 8
+    },
+    {
+     "w": "bla",
+     "n": 8
+    },
+    {
+     "w": "imágenes",
+     "n": 7
+    },
+    {
+     "w": "enano",
+     "n": 7
+    },
+    {
+     "w": "facultad",
+     "n": 6
+    },
+    {
+     "w": "momento",
+     "n": 6
+    },
+    {
+     "w": "yano",
+     "n": 6
+    }
+   ],
+   "easiness": 15,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 81
+  },
+  {
+   "slug": "rudo-y-cursi",
+   "title": "Rudo y Cursi",
+   "english": "Rudo y Cursi",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2008",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 12651,
+    "uniqueForms": 2360
+   },
+   "wpm": 288,
+   "rarePer1000": 88.2,
+   "coverage": {
+    "100": 65.4,
+    "500": 78.9,
+    "1000": 82.5,
+    "1500": 84.2
+   },
+   "listOnly": {
+    "100": 35.2,
+    "500": 48.7,
+    "1000": 52.3,
+    "1500": 54.1
+   },
+   "functionShare": 30.2,
+   "nextWords": [
+    {
+     "w": "fútbol",
+     "rank": 1153,
+     "meaning": "soccer",
+     "n": 27
+    },
+    {
+     "w": "adorar",
+     "rank": 1319,
+     "meaning": "to adore",
+     "n": 8
+    },
+    {
+     "w": "pegar",
+     "rank": 1227,
+     "meaning": "to hit",
+     "n": 8
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "güey",
+     "n": 111
+    },
+    {
+     "w": "pendejo",
+     "n": 48
+    },
+    {
+     "w": "pinche",
+     "n": 45
+    },
+    {
+     "w": "cabrón",
+     "n": 37
+    },
+    {
+     "w": "chinga",
+     "n": 33
+    },
+    {
+     "w": "puta",
+     "n": 27
+    },
+    {
+     "w": "amá",
+     "n": 25
+    },
+    {
+     "w": "gol",
+     "n": 23
+    },
+    {
+     "w": "boludo",
+     "n": 21
+    },
+    {
+     "w": "órale",
+     "n": 20
+    },
+    {
+     "w": "gracias",
+     "n": 20
+    },
+    {
+     "w": "súper",
+     "n": 17
+    },
+    {
+     "w": "güevo",
+     "n": 15
+    },
+    {
+     "w": "mames",
+     "n": 15
+    },
+    {
+     "w": "récord",
+     "n": 15
+    }
+   ],
+   "easiness": 14,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 82
+  },
+  {
+   "slug": "y-tu-mama-tambien",
+   "title": "Y tu mamá también",
+   "english": "Y Tu Mamá También",
+   "type": "Film",
+   "country": "Mexico",
+   "years": "2001",
+   "accent": "Mexican Spanish",
+   "sample": {
+    "units": 1,
+    "unitLabel": "film",
+    "words": 9576,
+    "uniqueForms": 2211
+   },
+   "wpm": 298,
+   "rarePer1000": 110.2,
+   "coverage": {
+    "100": 64.6,
+    "500": 77.7,
+    "1000": 81.7,
+    "1500": 83.8
+   },
+   "listOnly": {
+    "100": 31.9,
+    "500": 45,
+    "1000": 49,
+    "1500": 51.1
+   },
+   "functionShare": 32.7,
+   "nextWords": [
+    {
+     "w": "pasaporte",
+     "rank": 1411,
+     "meaning": "passport",
+     "n": 4
+    }
+   ],
+   "beyondList": [
+    {
+     "w": "güey",
+     "n": 130
+    },
+    {
+     "w": "cabrón",
+     "n": 85
+    },
+    {
+     "w": "mames",
+     "n": 40
+    },
+    {
+     "w": "pendejo",
+     "n": 23
+    },
+    {
+     "w": "pinche",
+     "n": 22
+    },
+    {
+     "w": "hola",
+     "n": 19
+    },
+    {
+     "w": "verga",
+     "n": 19
+    },
+    {
+     "w": "puta",
+     "n": 19
+    },
+    {
+     "w": "neta",
+     "n": 14
+    },
+    {
+     "w": "puto",
+     "n": 13
+    },
+    {
+     "w": "pedo",
+     "n": 13
+    },
+    {
+     "w": "gracias",
+     "n": 13
+    },
+    {
+     "w": "órale",
+     "n": 13
+    },
+    {
+     "w": "favor",
+     "n": 11
+    },
+    {
+     "w": "onda",
+     "n": 11
+    }
+   ],
+   "easiness": 5,
+   "level": "Very hard",
+   "cefr": "C1",
+   "difficultyRank": 83
   }
  ]
 }
